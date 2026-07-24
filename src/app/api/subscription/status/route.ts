@@ -1,23 +1,42 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '../../../../lib/prisma';
+import { cookies } from 'next/headers';
 
 export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
-    const email = searchParams.get('email')?.trim().toLowerCase();
+    const cookieStore = await cookies();
+    const sessionEmail = cookieStore.get('student_session')?.value;
+    const email = (searchParams.get('email') || sessionEmail)?.trim().toLowerCase();
 
-    if (!email) return NextResponse.json({ error: 'Email দাও।' }, { status: 400 });
+    if (!email) return NextResponse.json({ error: 'Email required.' }, { status: 400 });
 
     try {
-        const row = await prisma.paymentRequest.findFirst({
+        const user = await prisma.user.findUnique({
             where: { email },
-            orderBy: { createdAt: 'desc' },
-            select: { status: true, plan: true, amount: true, createdAt: true },
+            select: { isSubscribed: true, plan: true, subscriptionEnd: true }
         });
 
-        if (!row) return NextResponse.json({ found: false });
+        const lastRequest = await prisma.paymentRequest.findFirst({
+            where: { email },
+            orderBy: { createdAt: 'desc' },
+            select: { status: true, plan: true, amount: true },
+        });
 
-        return NextResponse.json({ found: true, status: row.status, plan: row.plan, amount: row.amount });
+        if (!user) {
+            return NextResponse.json({ found: false });
+        }
+
+        const hasExpired = user.subscriptionEnd ? new Date() > new Date(user.subscriptionEnd) : true;
+
+        return NextResponse.json({
+            found: true,
+            isSubscribed: user.isSubscribed,
+            plan: user.plan,
+            subscriptionEnd: user.subscriptionEnd,
+            hasExpired: user.isSubscribed ? hasExpired : true,
+            paymentStatus: lastRequest?.status || null
+        });
     } catch {
-        return NextResponse.json({ error: 'Error checking status।' }, { status: 500 });
+        return NextResponse.json({ error: 'Error checking subscription status.' }, { status: 500 });
     }
 }

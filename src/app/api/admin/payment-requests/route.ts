@@ -27,10 +27,52 @@ export async function PATCH(request: Request) {
         }
 
         try {
+            // Find the request details first
+            const req = await prisma.paymentRequest.findUnique({
+                where: { id: body.id }
+            });
+
+            if (!req) {
+                return NextResponse.json({ error: 'Request not found.' }, { status: 404 });
+            }
+
             const updated = await prisma.paymentRequest.update({
                 where: { id: body.id },
                 data: { status: body.status },
             });
+
+            // If approved, update/create the user's subscription
+            if (body.status === 'APPROVED') {
+                const plan = req.plan || 'spoken';
+                await prisma.user.upsert({
+                    where: { email: req.email },
+                    update: {
+                        isSubscribed: true,
+                        plan,
+                        subscriptionEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) // 1 month
+                    },
+                    create: {
+                        email: req.email,
+                        password: '123456',
+                        isSubscribed: true,
+                        plan,
+                        subscriptionEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000)
+                    }
+                });
+            } else if (body.status === 'REJECTED' || body.status === 'PENDING') {
+                // If rejected, remove subscription access
+                const userExists = await prisma.user.findUnique({ where: { email: req.email } });
+                if (userExists) {
+                    await prisma.user.update({
+                        where: { email: req.email },
+                        data: {
+                            isSubscribed: false,
+                            subscriptionEnd: null
+                        }
+                    });
+                }
+            }
+
             return NextResponse.json({ success: true, item: updated, source: 'database' });
         } catch {
             const updated = await updateLocalPaymentStatus(body.id, body.status);
