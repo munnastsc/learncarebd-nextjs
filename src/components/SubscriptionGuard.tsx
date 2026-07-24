@@ -9,6 +9,7 @@ interface SubscriptionGuardProps {
     isSubscribed: boolean;
     subscriptionEnd: string | null;
     hasExpired: boolean;
+    plan: string | null;
 }
 
 export default function SubscriptionGuard({
@@ -16,6 +17,7 @@ export default function SubscriptionGuard({
     isSubscribed,
     subscriptionEnd,
     hasExpired,
+    plan,
 }: SubscriptionGuardProps) {
     const pathname = usePathname();
     const router = useRouter();
@@ -86,6 +88,71 @@ export default function SubscriptionGuard({
                                 className="flex items-center justify-center gap-2 rounded-xl border border-slate-800 bg-slate-950/60 px-5 py-3 text-sm font-bold text-slate-400 hover:text-white hover:bg-slate-900 transition"
                             >
                                 <LogOut size={16} /> Logout (লগআউট)
+                            </button>
+                        </div>
+
+                        <div className="mt-8 pt-6 border-t border-slate-800/60 text-xs text-slate-500">
+                            যে কোনো সমস্যায় আমাদের সাথে যোগাযোগ করো: support@learncarebd.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+    const isIeltsRoute =
+        pathname.startsWith('/dashboard/reading') ||
+        pathname.startsWith('/dashboard/listening') ||
+        pathname.startsWith('/dashboard/writing') ||
+        pathname.startsWith('/dashboard/speaking') ||
+        pathname.startsWith('/dashboard/band-predictor') ||
+        pathname.startsWith('/dashboard/mock');
+
+    // If they have spoken plan but try to access IELTS route, block and ask to upgrade
+    if (plan === 'spoken' && isIeltsRoute) {
+        return (
+            <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 flex items-center justify-center px-4 relative overflow-hidden">
+                {/* Background glowing effects */}
+                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl" />
+                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500/5 rounded-full blur-3xl" />
+
+                <div className="w-full max-w-lg relative z-10">
+                    <div className="bg-slate-900/70 backdrop-blur-2xl border border-slate-800/80 rounded-3xl p-8 shadow-2xl text-center">
+                        <div className="flex justify-center mb-6">
+                            <div className="relative">
+                                <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-pink-600 to-indigo-500 blur opacity-40 animate-pulse" />
+                                <div className="relative flex h-16 w-16 items-center justify-center rounded-full bg-slate-950 border border-slate-800 text-pink-450 text-indigo-400">
+                                    <Lock size={28} />
+                                </div>
+                            </div>
+                        </div>
+
+                        <span className="inline-flex items-center gap-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-indigo-300 mb-4">
+                            <Sparkles size={10} />
+                            Upgrade Plan Required
+                        </span>
+
+                        <h2 className="text-2xl font-black text-white tracking-tight mb-3">
+                            IELTS ফিচার ব্যবহার করতে আপগ্রেড করো!
+                        </h2>
+
+                        <p className="text-sm text-slate-300 leading-relaxed mb-6 font-medium">
+                            তোমার অ্যাকাউন্টে বর্তমানে শুধুমাত্র **Spoken English Pro** প্ল্যানটি সক্রিয় আছে। IELTS-এর রিডিং, লিসেনিং, রাইটিং, স্পিকিং এবং মক টেস্ট ফিচারগুলো ব্যবহার করতে দয়া করে তোমার সাবস্ক্রিপশন প্ল্যানটি **IELTS + Spoken English**-এ আপগ্রেড করো।
+                        </p>
+
+                        <div className="grid gap-3 sm:grid-cols-2">
+                            <button
+                                onClick={() => router.push('/dashboard/payment?required=ielts_spoken')}
+                                className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-pink-600 to-indigo-600 px-5 py-3 text-sm font-bold text-white hover:from-pink-500 hover:to-indigo-500 transition shadow-lg shadow-pink-500/20"
+                            >
+                                <CreditCard size={16} /> Plan আপগ্রেড করো
+                            </button>
+
+                            <button
+                                onClick={() => router.push('/dashboard')}
+                                className="flex items-center justify-center gap-2 rounded-xl border border-slate-800 bg-slate-950/60 px-5 py-3 text-sm font-bold text-slate-400 hover:text-white hover:bg-slate-900 transition"
+                            >
+                                ড্যাশবোর্ডে ফিরে যাও
                             </button>
                         </div>
 
