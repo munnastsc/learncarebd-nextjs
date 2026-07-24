@@ -10,8 +10,8 @@ const PLANS = {
     spoken: {
         id: 'spoken',
         name: 'Spoken English',
-        price: 49,
-        original: 149,
+        price: 199,
+        original: 399,
         color: 'from-emerald-600 to-teal-600',
         borderColor: 'border-emerald-200',
         bgColor: 'bg-emerald-50',
@@ -28,8 +28,8 @@ const PLANS = {
     ielts_spoken: {
         id: 'ielts_spoken',
         name: 'IELTS + Spoken English',
-        price: 299,
-        original: 499,
+        price: 499,
+        original: 999,
         color: 'from-blue-600 to-indigo-600',
         borderColor: 'border-blue-200',
         bgColor: 'bg-blue-50',
@@ -46,8 +46,8 @@ const PLANS = {
     unlimited_chat: {
         id: 'unlimited_chat',
         name: 'Unlimited AI Chat',
-        price: 499,
-        original: 999,
+        price: 799,
+        original: 1499,
         color: 'from-violet-600 to-purple-600',
         borderColor: 'border-violet-300',
         bgColor: 'bg-violet-50',
@@ -76,9 +76,7 @@ function PaymentContent() {
     };
 
     const [selectedPlan, setSelectedPlan] = useState<PlanId>(getInitialPlan());
-    const [step, setStep] = useState<'plan' | 'pay' | 'activate'>('plan');
-    const [form, setForm] = useState({ email: '', transactionId: '' });
-    const [activateEmail, setActivateEmail] = useState('');
+    const [form, setForm] = useState({ email: '', password: '', transactionId: '' });
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState('');
     const [messageType, setMessageType] = useState<'success' | 'error'>('error');
@@ -95,6 +93,7 @@ function PaymentContent() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     email: form.email,
+                    password: form.password,
                     transactionId: form.transactionId,
                     amount: plan.price,
                     plan: selectedPlan,
@@ -107,37 +106,14 @@ function PaymentContent() {
                 return;
             }
             setMessageType('success');
-            setMessage('Payment request submit হয়েছে। Admin approve করলে নিচের form থেকে activate করো।');
-            setStep('activate');
+            if (data.instantActivation) {
+                setMessage('⚡ পেমেন্ট ভেরিফাই হয়েছে! আপনার প্রিমিয়াম অ্যাকাউন্ট ইনস্ট্যান্ট অ্যাক্টিভেট হয়েছে। লগইন করে প্রিপারেশন শুরু করুন!');
+            } else {
+                setMessage('Payment request সাবমিট হয়েছে। এডমিন ভেরিফাই করে ১-২ ঘণ্টার মধ্যে অ্যাক্টিভেট করে দেবে।');
+            }
         } catch {
             setMessageType('error');
             setMessage('Network সমস্যা। আবার try করো।');
-        } finally {
-            setLoading(false);
-        }
-    };
-
-    const activateSubscription = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setLoading(true);
-        setMessage('');
-        try {
-            const res = await fetch('/api/subscription/activate', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email: activateEmail }),
-            });
-            const data = await res.json();
-            if (!res.ok) {
-                setMessageType('error');
-                setMessage(data.error || 'Activation failed।');
-                return;
-            }
-            setMessageType('success');
-            setMessage('✅ Subscription চালু হয়েছে! Dashboard এ যাও।');
-        } catch {
-            setMessageType('error');
-            setMessage('Activation failed। আবার try করো।');
         } finally {
             setLoading(false);
         }
@@ -169,11 +145,10 @@ function PaymentContent() {
                         <button
                             key={p.id}
                             onClick={() => setSelectedPlan(p.id as PlanId)}
-                            className={`text-left rounded-2xl border-2 p-5 transition ${
-                                selectedPlan === p.id
+                            className={`text-left rounded-2xl border-2 p-5 transition ${selectedPlan === p.id
                                     ? `${p.borderColor} ${p.bgColor} ring-2 ring-offset-1 ${p.borderColor}`
                                     : 'border-slate-200 bg-white hover:border-slate-300'
-                            }`}
+                                }`}
                         >
                             <div className="flex items-start justify-between">
                                 <div>
@@ -189,9 +164,8 @@ function PaymentContent() {
                                         <span className="text-slate-400 text-xs line-through">৳{p.original}</span>
                                     </div>
                                 </div>
-                                <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-1 ${
-                                    selectedPlan === p.id ? 'border-blue-600 bg-blue-600' : 'border-slate-300'
-                                }`}>
+                                <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-1 ${selectedPlan === p.id ? 'border-blue-600 bg-blue-600' : 'border-slate-300'
+                                    }`}>
                                     {selectedPlan === p.id && <div className="w-2 h-2 rounded-full bg-white" />}
                                 </div>
                             </div>
@@ -216,31 +190,46 @@ function PaymentContent() {
 
                 {/* Payment steps */}
                 <div className="mt-8 grid gap-4 lg:grid-cols-2">
-                    {/* Step 1: bKash */}
+                    {/* Step 1: bKash Merchant Payment */}
                     <div className="rounded-2xl border border-slate-200 bg-white p-6">
                         <div className="flex items-center gap-3 mb-4">
                             <span className="w-7 h-7 rounded-full bg-pink-100 text-pink-700 text-xs font-black flex items-center justify-center">১</span>
-                            <h3 className="font-bold text-slate-900">bKash এ Send Money করো</h3>
+                            <h3 className="font-bold text-slate-900">bKash এ Payment করো</h3>
                         </div>
                         <div className="rounded-xl bg-pink-50 border border-pink-100 p-4 text-center">
-                            <p className="text-xs text-pink-600 font-semibold uppercase tracking-wide">bKash Number</p>
-                            <p className="text-2xl font-black text-pink-700 mt-1">01XXXXXXXXXX</p>
-                            <p className="text-xs text-pink-500 mt-1">(Personal/Send Money)</p>
+                            <p className="text-xs text-pink-600 font-semibold uppercase tracking-wide">bKash Merchant Number</p>
+                            <p className="text-2xl font-black text-pink-700 mt-1">01965056156</p>
+                            <p className="text-xs text-pink-500 mt-1">(App-এ "Payment" অথবা *247# ডায়াল করে "Make Payment" করুন)</p>
                         </div>
-                        <div className="mt-4 rounded-xl bg-slate-50 p-4">
+                        
+                        <div className="mt-4 space-y-2 text-xs text-slate-600 bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <p className="font-bold text-slate-800 uppercase tracking-wide text-[9px] mb-1">পেমেন্ট করার নিয়মাবলী (Payment Rules):</p>
+                            <p>১. বিকাশ অ্যাপের <b>"Payment" (পেমেন্ট)</b> অপশনে যান অথবা <b>*247#</b> ডায়াল করে <b>Make Payment</b> সিলেক্ট করুন।</p>
+                            <p>২. মার্চেন্ট নম্বর দিন: <b>01965056156</b></p>
+                            <p>৩. টাকার পরিমাণ দিন: <b>৳{plan.price}</b></p>
+                            <p>৪. পেমেন্ট সম্পন্ন হলে বিকাশ থেকে প্রাপ্ত <b>Transaction ID</b> সংগ্রহ করুন।</p>
+                        </div>
+
+                        <div className="mt-4 rounded-xl bg-indigo-50/30 border border-indigo-100 p-4">
                             <div className="flex justify-between text-sm">
-                                <span className="text-slate-500">Plan</span>
+                                <span className="text-slate-500">Selected Plan</span>
                                 <span className="font-semibold text-slate-900">{plan.name}</span>
                             </div>
                             <div className="flex justify-between text-sm mt-2">
-                                <span className="text-slate-500">Amount</span>
-                                <span className="font-bold text-slate-900">৳{plan.price}</span>
+                                <span className="text-slate-500">Payable Amount</span>
+                                <span className="font-bold text-indigo-700">৳{plan.price}</span>
                             </div>
                         </div>
-                        <p className="mt-3 text-xs text-slate-500">Payment করার পর Transaction ID note করো।</p>
+                        
+                        <div className="mt-3 bg-emerald-50 text-emerald-800 border border-emerald-250 p-3.5 rounded-xl text-xs flex gap-2">
+                            <span className="text-base leading-none">⚡</span>
+                            <p className="font-semibold">
+                                <b>Instant Activation</b>: SMS-ভিত্তিক অটো পেমেন্ট ভেরিফিকেশন সিস্টেম চালু আছে। Transaction ID সাবমিট করার সাথে সাথে আপনার অ্যাকাউন্ট অ্যাক্টিভেট হয়ে যাবে!
+                            </p>
+                        </div>
                     </div>
 
-                    {/* Step 2 & 3 */}
+                    {/* Step 2 */}
                     <div className="space-y-4">
                         <form onSubmit={submitPayment} className="rounded-2xl border border-slate-200 bg-white p-6">
                             <div className="flex items-center gap-3 mb-4">
@@ -258,6 +247,14 @@ function PaymentContent() {
                                 />
                                 <input
                                     className="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-blue-500"
+                                    placeholder="অ্যাকাউন্টের পাসওয়ার্ড (Password)"
+                                    type="password"
+                                    value={form.password}
+                                    onChange={(e) => setForm((p) => ({ ...p, password: e.target.value }))}
+                                    required
+                                />
+                                <input
+                                    className="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-blue-500"
                                     placeholder="bKash Transaction ID"
                                     value={form.transactionId}
                                     onChange={(e) => setForm((p) => ({ ...p, transactionId: e.target.value }))}
@@ -265,37 +262,10 @@ function PaymentContent() {
                                 />
                                 <button
                                     type="submit"
-                                    disabled={loading || step === 'activate'}
+                                    disabled={loading}
                                     className="w-full rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-bold text-white hover:bg-blue-500 disabled:bg-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed"
                                 >
                                     {loading ? 'Submitting...' : 'Submit Request'}
-                                </button>
-                            </div>
-                        </form>
-
-                        <form onSubmit={activateSubscription} className="rounded-2xl border border-emerald-200 bg-emerald-50 p-6">
-                            <div className="flex items-center gap-3 mb-4">
-                                <span className="w-7 h-7 rounded-full bg-emerald-500 text-white text-xs font-black flex items-center justify-center">৩</span>
-                                <h3 className="font-bold text-slate-900">Approve হলে এখানে Email দাও</h3>
-                            </div>
-                            <p className="text-xs text-slate-600 mb-4">
-                                Admin approve করলে (সাধারণত ১-২ ঘণ্টা) শুধু email দিলেই subscription চালু হবে।
-                            </p>
-                            <div className="space-y-3">
-                                <input
-                                    className="w-full rounded-lg border border-emerald-200 bg-white px-3 py-2.5 text-sm outline-none focus:border-emerald-500"
-                                    placeholder="তোমার Email"
-                                    type="email"
-                                    value={activateEmail}
-                                    onChange={(e) => setActivateEmail(e.target.value)}
-                                    required
-                                />
-                                <button
-                                    type="submit"
-                                    disabled={loading}
-                                    className="w-full rounded-lg bg-emerald-600 px-4 py-2.5 text-sm font-bold text-white hover:bg-emerald-500 disabled:bg-slate-200 disabled:cursor-not-allowed"
-                                >
-                                    {loading ? 'Checking...' : 'Subscription Activate করো'}
                                 </button>
                             </div>
                         </form>
@@ -303,88 +273,17 @@ function PaymentContent() {
                 </div>
 
                 {message && (
-                    <div className={`mt-4 rounded-xl px-4 py-3 text-sm font-medium ${
-                        messageType === 'success'
+                    <div className={`mt-4 rounded-xl px-4 py-3 text-sm font-medium ${messageType === 'success'
                             ? 'bg-emerald-50 border border-emerald-200 text-emerald-800'
                             : 'bg-red-50 border border-red-200 text-red-800'
-                    }`}>
+                        }`}>
                         {message}
                         {messageType === 'success' && (
                             <Link href="/dashboard" className="ml-2 underline font-bold">Dashboard →</Link>
                         )}
                     </div>
                 )}
-
-                {/* Status Check */}
-                <StatusChecker />
             </div>
-        </div>
-    );
-}
-
-function StatusChecker() {
-    const [email, setEmail] = useState('');
-    const [result, setResult] = useState<{ found: boolean; status?: string; plan?: string } | null>(null);
-    const [loading, setLoading] = useState(false);
-
-    const checkStatus = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setLoading(true);
-        setResult(null);
-        try {
-            const res = await fetch(`/api/subscription/status?email=${encodeURIComponent(email)}`);
-            const data = await res.json();
-            setResult(data);
-        } catch {
-            setResult(null);
-        } finally {
-            setLoading(false);
-        }
-    };
-
-    return (
-        <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6">
-            <h3 className="font-bold text-slate-900 mb-1">আমার Order এর Status দেখো</h3>
-            <p className="text-xs text-slate-500 mb-4">Payment submit করার পর এখানে email দিয়ে status check করো।</p>
-            <form onSubmit={checkStatus} className="flex gap-3">
-                <input
-                    type="email"
-                    value={email}
-                    onChange={e => setEmail(e.target.value)}
-                    placeholder="তোমার Email"
-                    required
-                    className="flex-1 rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-blue-500"
-                />
-                <button
-                    type="submit"
-                    disabled={loading}
-                    className="rounded-lg bg-slate-900 px-4 py-2.5 text-sm font-bold text-white hover:bg-slate-700 disabled:opacity-50 whitespace-nowrap"
-                >
-                    {loading ? '...' : 'Check করো'}
-                </button>
-            </form>
-
-            {result && (
-                <div className="mt-4">
-                    {!result.found ? (
-                        <p className="text-sm text-slate-500">এই email এ কোনো payment request পাওয়া যায়নি।</p>
-                    ) : result.status === 'PENDING' ? (
-                        <div className="rounded-xl bg-amber-50 border border-amber-200 px-4 py-3">
-                            <p className="text-sm font-bold text-amber-700">⏳ Pending — Admin review করছে</p>
-                            <p className="text-xs text-amber-600 mt-1">সাধারণত ১-২ ঘণ্টার মধ্যে approve হবে।</p>
-                        </div>
-                    ) : result.status === 'APPROVED' ? (
-                        <div className="rounded-xl bg-emerald-50 border border-emerald-200 px-4 py-3">
-                            <p className="text-sm font-bold text-emerald-700">✅ Approved! Subscription activate করো।</p>
-                            <p className="text-xs text-emerald-600 mt-1">উপরের Step ৩ তে email দিয়ে activate করো।</p>
-                        </div>
-                    ) : (
-                        <div className="rounded-xl bg-red-50 border border-red-200 px-4 py-3">
-                            <p className="text-sm font-bold text-red-700">❌ Rejected — Admin এর সাথে যোগাযোগ করো।</p>
-                        </div>
-                    )}
-                </div>
-            )}
         </div>
     );
 }

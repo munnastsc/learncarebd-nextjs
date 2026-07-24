@@ -16,9 +16,22 @@ export function middleware(request: NextRequest) {
         }
     }
 
+    if (pathname.startsWith('/dashboard')) {
+        // Exclude payment page from redirect to allow buying subscription
+        if (pathname === '/dashboard/payment') return NextResponse.next();
+
+        const session = request.cookies.get('student_session')?.value;
+        if (!session) {
+            const url = request.nextUrl.clone();
+            url.pathname = '/login';
+            url.searchParams.set('from', pathname);
+            return NextResponse.redirect(url);
+        }
+    }
+
     return NextResponse.next();
 }
 
 export const config = {
-    matcher: ['/admin/:path*'],
+    matcher: ['/admin/:path*', '/dashboard/:path*'],
 };

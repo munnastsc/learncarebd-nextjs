@@ -42,7 +42,7 @@ function LoginForm() {
                     </div>
                 </div>
                 <h1 className="text-2xl font-black text-white text-center mb-1">Admin Panel</h1>
-                <p className="text-sm text-slate-400 text-center mb-8">ILTES Sathi</p>
+                <p className="text-sm text-slate-400 text-center mb-8">LearnCareBD AI</p>
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <input
                         type="password"

@@ -31,15 +31,19 @@ function WordCard({ word }: { word: typeof VOCABULARY[0] }) {
     const [open, setOpen] = useState(false);
 
     function speak() {
-        if (typeof window !== 'undefined' && window.speechSynthesis) {
-            const utter = new SpeechSynthesisUtterance(word.word);
-            utter.lang = 'en-GB';
-            window.speechSynthesis.speak(utter);
-        }
+        const audio = new Audio(`/api/audio/oxford?word=${encodeURIComponent(word.word)}`);
+        audio.play().catch(() => {
+            // Fallback to Web Speech Synthesis if backend proxy fails
+            if (typeof window !== 'undefined' && window.speechSynthesis) {
+                const utter = new SpeechSynthesisUtterance(word.word);
+                utter.lang = 'en-GB';
+                window.speechSynthesis.speak(utter);
+            }
+        });
     }
 
     return (
-        <div className="rounded-xl border border-slate-200 bg-white overflow-hidden">
+        <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow transition">
             <div className="flex items-center justify-between px-4 py-3 gap-3">
                 <div className="flex items-center gap-3 flex-1 min-w-0">
                     <div className="flex-1 min-w-0">
@@ -57,10 +61,10 @@ function WordCard({ word }: { word: typeof VOCABULARY[0] }) {
                 <div className="flex items-center gap-1.5 shrink-0">
                     <button
                         onClick={speak}
-                        className="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition"
-                        title="Pronunciation"
+                        className="p-1.5 rounded-lg text-teal-600 hover:text-teal-700 hover:bg-teal-50 transition"
+                        title="Pronunciation (Oxford)"
                     >
-                        <Volume2 size={13} />
+                        <Volume2 size={14} />
                     </button>
                     <button
                         onClick={() => setOpen((o) => !o)}
@@ -71,9 +75,38 @@ function WordCard({ word }: { word: typeof VOCABULARY[0] }) {
                 </div>
             </div>
             {open && (
-                <div className="border-t border-slate-100 px-4 py-3 space-y-2 bg-slate-50">
-                    <p className="text-xs text-slate-700">{word.definition}</p>
+                <div className="border-t border-slate-100 px-4 py-3 space-y-3 bg-slate-50/50">
+                    <p className="text-xs font-medium text-slate-700 leading-relaxed"><strong className="text-slate-500">Definition:</strong> {word.definition}</p>
                     <p className="text-xs text-slate-500 italic">"{word.example}"</p>
+                    
+                    {word.pos === 'verb' && word.verbForms && (
+                        <div className="rounded-xl border border-emerald-100 bg-emerald-50/70 p-3 space-y-2">
+                            <p className="text-[10px] font-black uppercase tracking-wider text-emerald-700">Verb Conjugations (ক্রিয়ার রূপভেদ)</p>
+                            <div className="grid grid-cols-5 gap-1.5 text-center">
+                                <div className="rounded-lg bg-white p-1.5 border border-emerald-100 shadow-sm">
+                                    <p className="text-[8px] font-black text-slate-400">V1 (Base)</p>
+                                    <p className="text-xs font-black text-emerald-800">{word.verbForms.v1}</p>
+                                </div>
+                                <div className="rounded-lg bg-white p-1.5 border border-emerald-100 shadow-sm">
+                                    <p className="text-[8px] font-black text-slate-400">V2 (Past)</p>
+                                    <p className="text-xs font-black text-emerald-800">{word.verbForms.v2}</p>
+                                </div>
+                                <div className="rounded-lg bg-white p-1.5 border border-emerald-100 shadow-sm">
+                                    <p className="text-[8px] font-black text-slate-400">V3 (P.P.)</p>
+                                    <p className="text-xs font-black text-emerald-800">{word.verbForms.v3}</p>
+                                </div>
+                                <div className="rounded-lg bg-white p-1.5 border border-emerald-100 shadow-sm">
+                                    <p className="text-[8px] font-black text-slate-400">V-ing</p>
+                                    <p className="text-xs font-black text-emerald-800">{word.verbForms.ving}</p>
+                                </div>
+                                <div className="rounded-lg bg-white p-1.5 border border-emerald-100 shadow-sm">
+                                    <p className="text-[8px] font-black text-slate-400">V-s/es</p>
+                                    <p className="text-xs font-black text-emerald-800">{word.verbForms.ves}</p>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
                     {word.connectorType && (
                         <span className="inline-block rounded bg-teal-50 border border-teal-200 px-2 py-0.5 text-[10px] font-black text-teal-700">
                             {CONNECTOR_TYPE_LABELS[word.connectorType]}
@@ -87,9 +120,9 @@ function WordCard({ word }: { word: typeof VOCABULARY[0] }) {
                             {word.forms.adverb && <span className="rounded bg-amber-100 px-2 py-0.5 text-[10px] font-bold text-amber-700">adv. {word.forms.adverb}</span>}
                         </div>
                     )}
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 pt-1 border-t border-slate-100">
                         <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Topic:</span>
-                        <span className="text-[10px] text-slate-600">
+                        <span className="text-[10px] text-slate-600 font-medium">
                             {TOPICS.find((t) => t.id === word.topic)?.icon} {TOPICS.find((t) => t.id === word.topic)?.label}
                         </span>
                     </div>

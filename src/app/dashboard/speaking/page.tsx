@@ -71,6 +71,39 @@ export default function SpeakingPracticePage() {
     const [speakSeconds, setSpeakSeconds] = useState(120);
     const [timerMode, setTimerMode] = useState<'idle' | 'prep' | 'speak'>('idle');
 
+    // Auto-transcribe states
+    const [autoTranscribe, setAutoTranscribe] = useState(true);
+    const [transcribing, setTranscribing] = useState(false);
+    const autoTranscribeRef = useRef(autoTranscribe);
+
+    useEffect(() => {
+        autoTranscribeRef.current = autoTranscribe;
+    }, [autoTranscribe]);
+
+    const transcribeAudio = async (blob: Blob) => {
+        setTranscribing(true);
+        setError('');
+        try {
+            const formData = new FormData();
+            formData.append('audio', blob, 'speaking-answer.webm');
+            const res = await fetch('/api/speaking/transcribe', {
+                method: 'POST',
+                body: formData,
+            });
+            const data = await res.json();
+            if (!res.ok) {
+                throw new Error(data?.error || 'Transcription failed.');
+            }
+            if (data.transcript) {
+                setManualTranscript(data.transcript);
+            }
+        } catch (err: any) {
+            setError(err.message || 'Auto-transcription failed. আপনি চাইলে নিজে টাইপ করতে পারেন।');
+        } finally {
+            setTranscribing(false);
+        }
+    };
+
     const recorderRef = useRef<MediaRecorder | null>(null);
     const streamRef = useRef<MediaStream | null>(null);
     const chunksRef = useRef<BlobPart[]>([]);
@@ -167,9 +200,13 @@ export default function SpeakingPracticePage() {
             chunksRef.current = [];
             recorder.ondataavailable = (event) => { if (event.data.size > 0) chunksRef.current.push(event.data); };
             recorder.onstop = () => {
-                setAudioBlob(new Blob(chunksRef.current, { type: 'audio/webm' }));
+                const blob = new Blob(chunksRef.current, { type: 'audio/webm' });
+                setAudioBlob(blob);
                 stream.getTracks().forEach((track) => track.stop());
                 streamRef.current = null;
+                if (autoTranscribeRef.current) {
+                    transcribeAudio(blob);
+                }
             };
             recorder.start();
             setIsRecording(true);
@@ -438,17 +475,39 @@ export default function SpeakingPracticePage() {
                                         Audio ready
                                     </span>
                                 )}
+                                {transcribing && (
+                                    <span className="inline-flex items-center gap-1.5 rounded-lg bg-blue-50 px-3 py-1.5 text-xs font-bold text-blue-700 border border-blue-200">
+                                        <Loader2 size={12} className="animate-spin" />
+                                        Auto Transcribing...
+                                    </span>
+                                )}
                             </div>
+
+                            <div className="mt-3 flex items-center gap-2">
+                                <label className="inline-flex items-center gap-2 cursor-pointer text-xs text-slate-600 font-bold select-none">
+                                    <input 
+                                        type="checkbox" 
+                                        checked={autoTranscribe} 
+                                        onChange={(e) => setAutoTranscribe(e.target.checked)}
+                                        className="rounded border-slate-300 text-rose-600 focus:ring-rose-500 h-4 w-4"
+                                    />
+                                    Auto Transcribe (অডিও রেকর্ড শেষ হলে এআই স্বয়ংক্রিয়ভাবে টেক্সট লিখে দেবে)
+                                </label>
+                            </div>
+
                             {audioUrl && <audio className="mt-3 w-full" controls src={audioUrl} />}
 
                             <div className="mt-4">
-                                <label className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400">Transcript (optional)</label>
+                                <label className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400">
+                                    Transcript {transcribing ? '(AI Transcribing...)' : '(optional)'}
+                                </label>
                                 <textarea
                                     value={manualTranscript}
                                     onChange={(e) => setManualTranscript(e.target.value)}
                                     rows={5}
-                                    placeholder="অথবা এখানে আপনার উত্তর type করুন..."
-                                    className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none focus:border-rose-400 focus:bg-white resize-none"
+                                    placeholder={transcribing ? "এআই আপনার অডিও থেকে লেখা অনুবাদ করছে, অনুগ্রহ করে অপেক্ষা করুন..." : "অথবা এখানে আপনার উত্তর type করুন..."}
+                                    disabled={transcribing}
+                                    className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none focus:border-rose-400 focus:bg-white resize-none disabled:opacity-75"
                                 />
                             </div>
 

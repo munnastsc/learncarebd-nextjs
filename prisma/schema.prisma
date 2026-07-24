@@ -1,5 +1,6 @@
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-3.0.x", "debian-openssl-1.1.x", "linux-musl", "linux-musl-openssl-3.0.x", "rhel-openssl-3.0.x", "rhel-openssl-1.1.x"]
 }
 
 datasource db {
@@ -11,6 +12,7 @@ model User {
   id               String         @id @default(cuid())
   name             String?
   email            String         @unique
+  password         String?        @default("123456")
   isSubscribed     Boolean        @default(false)
   plan             String?
   subscriptionEnd  DateTime?

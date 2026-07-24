@@ -62,10 +62,14 @@ export default async function BookDetailsPage({ params, searchParams }: BookPage
     }
 
     if (!records.length) {
-        const localRows = await getLocalBooksByBookNumber(numericBook);
-        if (localRows.length) {
-            records = localRows;
-            recordSource = 'local';
+        try {
+            const localRows = await getLocalBooksByBookNumber(numericBook);
+            if (localRows.length) {
+                records = localRows;
+                recordSource = 'local';
+            }
+        } catch {
+            // ignore, fall through to generated content
         }
     }
 

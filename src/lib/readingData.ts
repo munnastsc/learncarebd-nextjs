@@ -28,13 +28,13 @@ type RawEntry = {
 };
 
 const PDF: Record<number, string> = {
-    9:  '/pdfs/cambridge/Cambridge%20IELTS%2009%20www.iac-uk.com.pdf',
-    10: '/pdfs/cambridge/Cambridge%20IELTS%2010%20www.iac-uk.com.pdf',
-    11: '/pdfs/cambridge/Cambridge%20IELTS%2011%20AC%20www.iac-uk.com.pdf',
-    12: '/pdfs/cambridge/Cambridge%20IELTS%2012%20www.iac-uk.com.pdf',
-    13: '/pdfs/cambridge/Cambridge%20IELTS%2013%20www.iac-uk.com.pdf',
-    14: '/pdfs/cambridge/Cambridge%20IELTS%2014%20www.iac-uk.com.pdf',
-    15: '/pdfs/cambridge/Cambridge%20IELTS%2015.pdf',
+    9:  'https://munnastsc.github.io/iltes-audio/pdfs/cambridge-9.pdf',
+    10: 'https://munnastsc.github.io/iltes-audio/pdfs/cambridge-10.pdf',
+    11: 'https://munnastsc.github.io/iltes-audio/pdfs/cambridge-11.pdf',
+    12: 'https://munnastsc.github.io/iltes-audio/pdfs/cambridge-12.pdf',
+    13: 'https://munnastsc.github.io/iltes-audio/pdfs/cambridge-13.pdf',
+    14: 'https://munnastsc.github.io/iltes-audio/pdfs/cambridge-14.pdf',
+    15: 'https://munnastsc.github.io/iltes-audio/pdfs/cambridge-15.pdf',
 };
 
 const RAW: RawEntry[] = [

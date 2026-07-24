@@ -9,7 +9,7 @@
       "bangla_notes": "এই unit-এ শিখবে: আমি/তুমি/সে পরিচয় দেওয়া। 'I am', 'You are', 'He/She is' — এই তিনটা সবচেয়ে গুরুত্বপূর্ণ। যেমন: 'My name is David.' / 'I'm from England.' / 'She is a teacher.' Hello বলার পর সাধারণত জিজ্ঞেস করে 'How are you?' — উত্তর: 'Fine, thanks!'",
       "tracks": 14,
       "vocabulary": [
-        {"word": "hello", "bangla": "হ্যালো / নমস্কার", "example": "Hello! My name is Sara."},
+        {"word": "hello", "bangla": "হ্যালো", "example": "Hello! My name is Sara."},
         {"word": "name", "bangla": "নাম", "example": "My name is Ahmed."},
         {"word": "country", "bangla": "দেশ", "example": "Which country are you from?"},
         {"word": "meet", "bangla": "দেখা করা", "example": "Nice to meet you!"},

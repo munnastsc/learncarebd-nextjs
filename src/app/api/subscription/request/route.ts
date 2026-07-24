@@ -4,13 +4,14 @@ import { createLocalPaymentRequest, findLocalPaymentByTransaction } from '../../
 import { sendWhatsApp } from '../../../../lib/whatsapp';
 
 const PLAN_LABELS: Record<string, string> = {
-    spoken: 'Spoken English (৳49)',
-    ielts_spoken: 'IELTS + Spoken English (৳299)',
-    unlimited_chat: 'Unlimited AI Chat (৳499)',
+    spoken: 'Spoken English (৳199)',
+    ielts_spoken: 'IELTS + Spoken English (৳499)',
+    unlimited_chat: 'Unlimited AI Chat (৳799)',
 };
 
 type Body = {
     email?: string;
+    password?: string;
     transactionId?: string;
     amount?: number;
     plan?: string;
@@ -20,6 +21,7 @@ export async function POST(request: Request) {
     try {
         const body = (await request.json()) as Body;
         const email = body.email?.trim().toLowerCase();
+        const password = body.password?.trim();
         const transactionId = body.transactionId?.trim().toUpperCase();
         const amount = Number(body.amount || 0);
         const plan = body.plan || 'spoken';
@@ -30,8 +32,57 @@ export async function POST(request: Request) {
 
         try {
             const existing = await prisma.paymentRequest.findUnique({ where: { transactionId } });
+            
+            // Check if user already exists
+            const user = await prisma.user.findUnique({ where: { email } });
+            if (user) {
+                const dbPassword = user.password || '123456';
+                if (password && password !== dbPassword) {
+                    return NextResponse.json({ error: 'Incorrect password for this email account.' }, { status: 401 });
+                }
+            }
+
             if (existing) {
+                if (existing.email === 'SMS_WEBHOOK_RECEIVED' && existing.status === 'APPROVED') {
+                    // Instantly approve since the SMS webhook already received the payment!
+                    await prisma.paymentRequest.update({
+                        where: { transactionId },
+                        data: { email, plan }
+                    });
+
+                    // Activate User Subscription
+                    await prisma.user.upsert({
+                        where: { email },
+                        update: {
+                            password: password || undefined,
+                            isSubscribed: true,
+                            plan,
+                            subscriptionEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000)
+                        },
+                        create: {
+                            email,
+                            password: password || '123456',
+                            isSubscribed: true,
+                            plan,
+                            subscriptionEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000)
+                        }
+                    });
+
+                    return NextResponse.json({ success: true, status: 'APPROVED', instantActivation: true });
+                }
                 return NextResponse.json({ error: 'Transaction ID already submitted.' }, { status: 409 });
+            }
+
+            // Create account immediately in database (isSubscribed will be set to true by Admin or SMS webhook later)
+            if (!user) {
+                await prisma.user.create({
+                    data: {
+                        email,
+                        password: password || '123456',
+                        isSubscribed: false,
+                        plan
+                    }
+                });
             }
 
             const row = await prisma.paymentRequest.create({

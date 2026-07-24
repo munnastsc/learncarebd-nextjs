@@ -206,10 +206,13 @@ export default function BookNavigation({ bookNumber, records, initialModule, ini
     const parts = Array.isArray(content.parts) ? content.parts : [];
     const activePart = parts.find((p) => p.partNumber === selectedPart) || parts[0];
     const youtubeId = selectedModule === 'Listening' ? (currentRecord?.youtubeId ?? null) : null;
-    // Use proxy for local MP3s; skip if YouTube is available
-    const listeningAudioUrl = selectedModule === 'Listening' && !youtubeId
-        ? `/api/audio/stream?book=${bookNumber}&test=${selectedTest}&part=${selectedPart}`
-        : null;
+    const camNum = bookNumber >= 101 ? bookNumber - 100 : bookNumber;
+    const audioSources = selectedModule === 'Listening' && !youtubeId ? [
+        `https://munnastsc.github.io/iltes-audio/cambridge/cam${camNum}-test${selectedTest}-part${selectedPart}.mp3`,
+        `https://www.ieltsxpress.com/wp-content/uploads/audio/cam${camNum}-test${selectedTest}-part${selectedPart}.mp3`,
+        `https://ieltspractice.net/wp-content/uploads/audio/cam${camNum}-test${selectedTest}-part${selectedPart}.mp3`,
+    ] : [];
+    const listeningAudioUrl = audioSources[0] ?? null;
 
     // Reset audio error when audio URL changes
     useEffect(() => { setAudioError(false); }, [listeningAudioUrl]);
@@ -379,13 +382,15 @@ export default function BookNavigation({ bookNumber, records, initialModule, ini
                                 ) : (
                                     <audio
                                         ref={audioRef}
-                                        key={listeningAudioUrl}
+                                        key={`${bookNumber}-${selectedTest}-${selectedPart}`}
                                         controls
                                         preload="metadata"
                                         className="w-full h-10 accent-blue-500"
                                         onError={() => setAudioError(true)}
                                     >
-                                        <source src={listeningAudioUrl} type="audio/mpeg" />
+                                        {audioSources.map((src) => (
+                                            <source key={src} src={src} type="audio/mpeg" />
+                                        ))}
                                     </audio>
                                 )}
                             </div>

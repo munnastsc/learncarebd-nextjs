@@ -116,7 +116,7 @@ function CertificateCard({ name, module: mod, date }: { name: string; module: ty
                     <Award size={32} className="text-white" />
                 </div>
 
-                <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 mb-1">ILTES — Sathi AI</p>
+                <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 mb-1">LearnCareBD AI</p>
                 <h1 className="text-3xl font-black text-slate-900 mb-1">Certificate of Achievement</h1>
                 <p className="text-sm text-slate-500 mb-6">সফলভাবে সম্পন্ন করার স্বীকৃতি</p>
 

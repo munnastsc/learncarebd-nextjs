@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import ChatWidget from '../components/ChatWidget';
 
 export const metadata: Metadata = {
-    title: 'Sathi AI - IELTS Master Coach',
-    description: 'Learn IELTS with Cambridge 1-20 tricks and grammar.',
+    title: 'LearnCareBD AI - IELTS & Spoken English Academy',
+    description: 'Learn IELTS and Spoken English with automated tools, practice exercises, and grammar.',
 };
 
 export default function RootLayout({

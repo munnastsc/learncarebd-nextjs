@@ -86,6 +86,96 @@ export default function ChatWidget() {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const recognitionRef = useRef<any>(null);
 
+    // Dragging state
+    const [position, setPosition] = useState({ x: 0, y: 0 });
+    const [isDragging, setIsDragging] = useState(false);
+    const dragStartRef = useRef({ x: 0, y: 0 });
+    const startPosRef = useRef({ x: 0, y: 0 });
+    const wasDraggedRef = useRef(false);
+
+    const handleMouseDown = (e: React.MouseEvent) => {
+        if (e.button !== 0) return;
+        const target = e.target as HTMLElement;
+        if (isOpen && (target.closest('button') || target.closest('input') || target.closest('select') || target.closest('a'))) {
+            return;
+        }
+        setIsDragging(true);
+        wasDraggedRef.current = false;
+        startPosRef.current = { x: e.clientX, y: e.clientY };
+        dragStartRef.current = {
+            x: e.clientX - position.x,
+            y: e.clientY - position.y
+        };
+        e.preventDefault();
+    };
+
+    const handleTouchStart = (e: React.TouchEvent) => {
+        const target = e.target as HTMLElement;
+        if (isOpen && (target.closest('button') || target.closest('input') || target.closest('select') || target.closest('a'))) {
+            return;
+        }
+        setIsDragging(true);
+        wasDraggedRef.current = false;
+        const touch = e.touches[0];
+        startPosRef.current = { x: touch.clientX, y: touch.clientY };
+        dragStartRef.current = {
+            x: touch.clientX - position.x,
+            y: touch.clientY - position.y
+        };
+    };
+
+    useEffect(() => {
+        if (!isDragging) return;
+
+        const handleMouseMove = (e: MouseEvent) => {
+            const dist = Math.hypot(e.clientX - startPosRef.current.x, e.clientY - startPosRef.current.y);
+            if (dist > 5) {
+                wasDraggedRef.current = true;
+            }
+            setPosition({
+                x: e.clientX - dragStartRef.current.x,
+                y: e.clientY - dragStartRef.current.y
+            });
+        };
+
+        const handleTouchMove = (e: TouchEvent) => {
+            const touch = e.touches[0];
+            const dist = Math.hypot(touch.clientX - startPosRef.current.x, touch.clientY - startPosRef.current.y);
+            if (dist > 5) {
+                wasDraggedRef.current = true;
+            }
+            setPosition({
+                x: touch.clientX - dragStartRef.current.x,
+                y: touch.clientY - dragStartRef.current.y
+            });
+        };
+
+        const handleMouseUp = () => {
+            setIsDragging(false);
+        };
+
+        window.addEventListener('mousemove', handleMouseMove);
+        window.addEventListener('mouseup', handleMouseUp);
+        window.addEventListener('touchmove', handleTouchMove, { passive: false });
+        window.addEventListener('touchend', handleMouseUp);
+
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove);
+            window.removeEventListener('mouseup', handleMouseUp);
+            window.removeEventListener('touchmove', handleTouchMove);
+            window.removeEventListener('touchend', handleMouseUp);
+        };
+    }, [isDragging]);
+
+    const handleButtonClick = (e: React.MouseEvent) => {
+        if (wasDraggedRef.current) {
+            e.preventDefault();
+            e.stopPropagation();
+            return;
+        }
+        setIsOpen(true);
+    };
+
     useEffect(() => {
         const count = getFreeCount();
         setDailyCount(count);
@@ -239,11 +329,20 @@ export default function ChatWidget() {
     const limitReached = isLimitReached();
 
     return (
-        <div className="pointer-events-none fixed bottom-4 right-4 z-50 h-fit w-fit">
+        <div 
+            className="pointer-events-none fixed bottom-0 right-0 sm:bottom-4 sm:right-4 z-50 h-fit w-fit"
+            style={{ transform: `translate(${position.x}px, ${position.y}px)` }}
+        >
             {isOpen ? (
-                <div className="pointer-events-auto flex h-[540px] w-[340px] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl">
+                <div className="pointer-events-auto flex h-[100dvh] sm:h-[540px] w-screen sm:w-[340px] flex-col overflow-hidden sm:rounded-2xl border border-slate-200 bg-white shadow-2xl">
                     {/* Header */}
-                    <div className="flex items-center justify-between bg-gradient-to-r from-indigo-700 to-violet-700 px-4 py-3">
+                    <div 
+                        onMouseDown={handleMouseDown}
+                        onTouchStart={handleTouchStart}
+                        className={`flex items-center justify-between bg-gradient-to-r from-indigo-700 to-violet-700 px-4 py-3 select-none ${
+                            isDragging ? 'cursor-grabbing' : 'cursor-grab'
+                        }`}
+                    >
                         <div className="flex items-center gap-2">
                             <div className="flex h-7 w-7 items-center justify-center rounded-full bg-white/20">
                                 <Bot size={14} className="text-white" />
@@ -451,8 +550,12 @@ export default function ChatWidget() {
                 </div>
             ) : (
                 <button
-                    onClick={() => setIsOpen(true)}
-                    className="pointer-events-auto inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 px-4 py-2.5 text-sm font-bold text-white shadow-lg shadow-indigo-200 transition hover:shadow-indigo-300 hover:scale-105"
+                    onClick={handleButtonClick}
+                    onMouseDown={handleMouseDown}
+                    onTouchStart={handleTouchStart}
+                    className={`pointer-events-auto inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 px-4 py-2.5 text-sm font-bold text-white shadow-lg shadow-indigo-200 transition hover:shadow-indigo-300 hover:scale-105 select-none ${
+                        isDragging ? 'cursor-grabbing' : 'cursor-grab'
+                    }`}
                 >
                     <MessageSquare size={16} />
                     AI Tutor

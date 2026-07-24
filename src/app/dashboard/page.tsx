@@ -65,14 +65,18 @@ export default function DashboardPage() {
                                 PRO ACCOUNT ACTIVE
                             </span>
                             <h1 className="text-3xl font-black text-white lg:text-5xl leading-tight">
-                                IELTS Mastery<br />
-                                <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Library</span>
+                                IELTS Preparation<br />
+                                <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Workspace</span>
                             </h1>
                             <p className="mt-3 text-sm text-slate-400 max-w-xl leading-relaxed">
                                 Cambridge Books 9–20 · Full Mock Tests 1–10 · AI Writing & Speaking Evaluator
                             </p>
                         </div>
                         <div className="flex flex-wrap gap-2">
+                            <Link href="/dashboard/spoken-english"
+                                className="inline-flex items-center gap-2 rounded-xl bg-teal-600 px-4 py-2.5 text-sm font-black text-white hover:bg-teal-500 transition shadow-lg shadow-teal-900/30">
+                                <Radio size={15} /> Spoken English Module
+                            </Link>
                             <Link href="/dashboard/ai-tutor"
                                 className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-bold text-white hover:bg-indigo-500 transition shadow-lg shadow-indigo-900/30">
                                 <Bot size={15} /> AI Tutor
@@ -150,34 +154,6 @@ export default function DashboardPage() {
                         </div>
                         <ChevronRight size={16} className="text-slate-300 group-hover:text-rose-500 transition" />
                     </Link>
-                    <Link href="/dashboard/ai-conversation"
-                        className="group flex items-center gap-4 rounded-2xl border border-rose-100 bg-gradient-to-br from-rose-50 to-orange-50 p-5 shadow-sm hover:shadow-md hover:border-rose-300 transition-all">
-                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-rose-600 group-hover:bg-rose-500 transition shadow-md shadow-rose-200">
-                            <MessageSquare size={22} className="text-white" />
-                        </div>
-                        <div className="flex-1">
-                            <div className="flex items-center gap-2">
-                                <p className="font-black text-slate-900">AI Conversation</p>
-                                <span className="rounded-full bg-rose-100 px-2 py-0.5 text-[10px] font-black text-rose-700">NEW</span>
-                            </div>
-                            <p className="text-xs text-slate-500 mt-0.5">IELTS Speaking · 15 Topics</p>
-                        </div>
-                        <ChevronRight size={16} className="text-slate-300 group-hover:text-rose-500 transition" />
-                    </Link>
-                    <Link href="/dashboard/spoken-english"
-                        className="group flex items-center gap-4 rounded-2xl border border-teal-100 bg-gradient-to-br from-teal-50 to-cyan-50 p-5 shadow-sm hover:shadow-md hover:border-teal-300 transition-all">
-                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-teal-600 group-hover:bg-teal-500 transition shadow-md shadow-teal-200">
-                            <Radio size={22} className="text-white" />
-                        </div>
-                        <div className="flex-1">
-                            <div className="flex items-center gap-2">
-                                <p className="font-black text-slate-900">Spoken English</p>
-                                <span className="rounded-full bg-teal-100 px-2 py-0.5 text-[10px] font-black text-teal-700">NEW</span>
-                            </div>
-                            <p className="text-xs text-slate-500 mt-0.5">Headway Dictation & Shadowing</p>
-                        </div>
-                        <ChevronRight size={16} className="text-slate-300 group-hover:text-teal-500 transition" />
-                    </Link>
                     <Link href="/dashboard/mock"
                         className="group flex items-center gap-4 rounded-2xl border border-violet-100 bg-gradient-to-br from-violet-50 to-purple-50 p-5 shadow-sm hover:shadow-md hover:border-violet-300 transition-all">
                         <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-violet-600 group-hover:bg-violet-500 transition shadow-md shadow-violet-200">
@@ -191,50 +167,6 @@ export default function DashboardPage() {
                             <p className="text-xs text-slate-500 mt-0.5">3 Full Tests · Reading + Writing</p>
                         </div>
                         <ChevronRight size={16} className="text-slate-300 group-hover:text-violet-500 transition" />
-                    </Link>
-                    <Link href="/dashboard/analytics"
-                        className="group flex items-center gap-4 rounded-2xl border border-blue-100 bg-white p-5 shadow-sm hover:shadow-md hover:border-blue-300 transition-all">
-                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-blue-100 group-hover:bg-blue-200 transition">
-                            <BarChart3 size={22} className="text-blue-700" />
-                        </div>
-                        <div className="flex-1">
-                            <p className="font-black text-slate-900">Analytics</p>
-                            <p className="text-xs text-slate-500 mt-0.5">Track Progress & Band Trends</p>
-                        </div>
-                        <ChevronRight size={16} className="text-slate-300 group-hover:text-blue-500 transition" />
-                    </Link>
-                    <Link href="/dashboard/guide"
-                        className="group flex items-center gap-4 rounded-2xl border border-amber-100 bg-white p-5 shadow-sm hover:shadow-md hover:border-amber-300 transition-all">
-                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-amber-100 group-hover:bg-amber-200 transition">
-                            <GraduationCap size={22} className="text-amber-700" />
-                        </div>
-                        <div className="flex-1">
-                            <p className="font-black text-slate-900">IELTS Guide</p>
-                            <p className="text-xs text-slate-500 mt-0.5">Tips, Tricks & Secret Strategies</p>
-                        </div>
-                        <ChevronRight size={16} className="text-slate-300 group-hover:text-amber-500 transition" />
-                    </Link>
-                    <Link href="/dashboard/paraphrase"
-                        className="group flex items-center gap-4 rounded-2xl border border-indigo-100 bg-white p-5 shadow-sm hover:shadow-md hover:border-indigo-300 transition-all">
-                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-indigo-100 group-hover:bg-indigo-200 transition">
-                            <Zap size={22} className="text-indigo-700" />
-                        </div>
-                        <div className="flex-1">
-                            <p className="font-black text-slate-900">Paraphrase Master</p>
-                            <p className="text-xs text-slate-500 mt-0.5">Learn · Quiz · Build · Synonyms</p>
-                        </div>
-                        <ChevronRight size={16} className="text-slate-300 group-hover:text-indigo-500 transition" />
-                    </Link>
-                    <Link href="/dashboard/vocabulary"
-                        className="group flex items-center gap-4 rounded-2xl border border-teal-100 bg-white p-5 shadow-sm hover:shadow-md hover:border-teal-300 transition-all">
-                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-teal-100 group-hover:bg-teal-200 transition">
-                            <BookOpen size={22} className="text-teal-700" />
-                        </div>
-                        <div className="flex-1">
-                            <p className="font-black text-slate-900">Vocabulary Builder</p>
-                            <p className="text-xs text-slate-500 mt-0.5">IPA · বাংলা অর্থ · Flashcard · Quiz</p>
-                        </div>
-                        <ChevronRight size={16} className="text-slate-300 group-hover:text-teal-500 transition" />
                     </Link>
                     <Link href="/dashboard/listening"
                         className="group flex items-center gap-4 rounded-2xl border border-blue-100 bg-white p-5 shadow-sm hover:shadow-md hover:border-blue-300 transition-all">
@@ -258,34 +190,6 @@ export default function DashboardPage() {
                         </div>
                         <ChevronRight size={16} className="text-slate-300 group-hover:text-emerald-500 transition" />
                     </Link>
-                    <Link href="/dashboard/certificate"
-                        className="group flex items-center gap-4 rounded-2xl border border-amber-100 bg-gradient-to-br from-amber-50 to-orange-50 p-5 shadow-sm hover:shadow-md hover:border-amber-300 transition-all">
-                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-amber-500 group-hover:bg-amber-400 transition shadow-md shadow-amber-200">
-                            <Award size={22} className="text-white" />
-                        </div>
-                        <div className="flex-1">
-                            <div className="flex items-center gap-2">
-                                <p className="font-black text-slate-900">Certificate</p>
-                                <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-black text-amber-700">NEW</span>
-                            </div>
-                            <p className="text-xs text-slate-500 mt-0.5">Achievement Badge · Download PDF</p>
-                        </div>
-                        <ChevronRight size={16} className="text-slate-300 group-hover:text-amber-500 transition" />
-                    </Link>
-                    <Link href="/dashboard/grammar"
-                        className="group flex items-center gap-4 rounded-2xl border border-emerald-100 bg-gradient-to-br from-emerald-50 to-teal-50 p-5 shadow-sm hover:shadow-md hover:border-emerald-300 transition-all">
-                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-emerald-600 group-hover:bg-emerald-500 transition shadow-md shadow-emerald-200">
-                            <SpellCheck size={22} className="text-white" />
-                        </div>
-                        <div className="flex-1">
-                            <div className="flex items-center gap-2">
-                                <p className="font-black text-slate-900">Grammar Checker</p>
-                                <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-black text-emerald-700">NEW</span>
-                            </div>
-                            <p className="text-xs text-slate-500 mt-0.5">AI বাংলায় ভুল explain করবে</p>
-                        </div>
-                        <ChevronRight size={16} className="text-slate-300 group-hover:text-emerald-500 transition" />
-                    </Link>
                     <Link href="/dashboard/band-predictor"
                         className="group flex items-center gap-4 rounded-2xl border border-indigo-100 bg-gradient-to-br from-indigo-50 to-blue-50 p-5 shadow-sm hover:shadow-md hover:border-indigo-300 transition-all">
                         <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-indigo-600 group-hover:bg-indigo-500 transition shadow-md shadow-indigo-200">
@@ -300,33 +204,63 @@ export default function DashboardPage() {
                         </div>
                         <ChevronRight size={16} className="text-slate-300 group-hover:text-indigo-500 transition" />
                     </Link>
-                    <Link href="/dashboard/grammar-practice"
-                        className="group flex items-center gap-4 rounded-2xl border border-violet-100 bg-gradient-to-br from-violet-50 to-purple-50 p-5 shadow-sm hover:shadow-md hover:border-violet-300 transition-all">
-                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-violet-600 group-hover:bg-violet-500 transition shadow-md shadow-violet-200">
-                            <Pencil size={22} className="text-white" />
+                    <Link href="/dashboard/guide"
+                        className="group flex items-center gap-4 rounded-2xl border border-amber-100 bg-white p-5 shadow-sm hover:shadow-md hover:border-amber-300 transition-all">
+                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-amber-100 group-hover:bg-amber-200 transition">
+                            <GraduationCap size={22} className="text-amber-700" />
                         </div>
                         <div className="flex-1">
-                            <div className="flex items-center gap-2">
-                                <p className="font-black text-slate-900">Grammar Practice</p>
-                                <span className="rounded-full bg-violet-100 px-2 py-0.5 text-[10px] font-black text-violet-700">NEW</span>
-                            </div>
-                            <p className="text-xs text-slate-500 mt-0.5">Easy → Hard · MCQ · বাংলায় Rule</p>
+                            <p className="font-black text-slate-900">IELTS Guide</p>
+                            <p className="text-xs text-slate-500 mt-0.5">Tips, Tricks & Secret Strategies</p>
+                        </div>
+                        <ChevronRight size={16} className="text-slate-300 group-hover:text-amber-500 transition" />
+                    </Link>
+                    <Link href="/dashboard/spoken-english/grammar-academy"
+                        className="group flex items-center gap-4 rounded-2xl border border-violet-100 bg-white p-5 shadow-sm hover:shadow-md hover:border-violet-300 transition-all">
+                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-violet-100 group-hover:bg-violet-200 transition">
+                            <Pencil size={22} className="text-violet-700" />
+                        </div>
+                        <div className="flex-1">
+                            <p className="font-black text-slate-900">Grammar Academy</p>
+                            <p className="text-xs text-slate-500 mt-0.5">Ground-up lessons & practice for IELTS</p>
                         </div>
                         <ChevronRight size={16} className="text-slate-300 group-hover:text-violet-500 transition" />
                     </Link>
-                    <Link href="/dashboard/stories"
-                        className="group flex items-center gap-4 rounded-2xl border border-rose-100 bg-gradient-to-br from-rose-50 to-pink-50 p-5 shadow-sm hover:shadow-md hover:border-rose-300 transition-all">
-                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-rose-600 group-hover:bg-rose-500 transition shadow-md shadow-rose-200">
-                            <Library size={22} className="text-white" />
+                    <Link href="/dashboard/paraphrase"
+                        className="group flex items-center gap-4 rounded-2xl border border-indigo-100 bg-white p-5 shadow-sm hover:shadow-md hover:border-indigo-300 transition-all">
+                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-indigo-100 group-hover:bg-indigo-200 transition">
+                            <Zap size={22} className="text-indigo-700" />
+                        </div>
+                        <div className="flex-1">
+                            <p className="font-black text-slate-900">Paraphrase Master</p>
+                            <p className="text-xs text-slate-500 mt-0.5">Learn · Quiz · Build · Synonyms</p>
+                        </div>
+                        <ChevronRight size={16} className="text-slate-300 group-hover:text-indigo-500 transition" />
+                    </Link>
+                    <Link href="/dashboard/analytics"
+                        className="group flex items-center gap-4 rounded-2xl border border-blue-100 bg-white p-5 shadow-sm hover:shadow-md hover:border-blue-300 transition-all">
+                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-blue-100 group-hover:bg-blue-200 transition">
+                            <BarChart3 size={22} className="text-blue-700" />
+                        </div>
+                        <div className="flex-1">
+                            <p className="font-black text-slate-900">Analytics</p>
+                            <p className="text-xs text-slate-500 mt-0.5">Track Progress & Band Trends</p>
+                        </div>
+                        <ChevronRight size={16} className="text-slate-300 group-hover:text-blue-500 transition" />
+                    </Link>
+                    <Link href="/dashboard/certificate"
+                        className="group flex items-center gap-4 rounded-2xl border border-amber-100 bg-gradient-to-br from-amber-50 to-orange-50 p-5 shadow-sm hover:shadow-md hover:border-amber-300 transition-all">
+                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-amber-500 group-hover:bg-amber-400 transition shadow-md shadow-amber-200">
+                            <Award size={22} className="text-white" />
                         </div>
                         <div className="flex-1">
                             <div className="flex items-center gap-2">
-                                <p className="font-black text-slate-900">English Stories</p>
-                                <span className="rounded-full bg-rose-100 px-2 py-0.5 text-[10px] font-black text-rose-700">NEW</span>
+                                <p className="font-black text-slate-900">Certificate</p>
+                                <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-black text-amber-700">NEW</span>
                             </div>
-                            <p className="text-xs text-slate-500 mt-0.5">শব্দে click → বাংলা অর্থ · Quiz</p>
+                            <p className="text-xs text-slate-500 mt-0.5">Achievement Badge · Download PDF</p>
                         </div>
-                        <ChevronRight size={16} className="text-slate-300 group-hover:text-rose-500 transition" />
+                        <ChevronRight size={16} className="text-slate-300 group-hover:text-amber-500 transition" />
                     </Link>
                 </div>
 
@@ -341,7 +275,7 @@ export default function DashboardPage() {
                         <p className="text-xs text-green-600 mt-0.5">WhatsApp-এ share করো — বন্ধু join করলে তুমিও benefit পাবে।</p>
                     </div>
                     <a
-                        href={`https://wa.me/?text=${encodeURIComponent('🎓 ILTES Sathi AI — বাংলায় IELTS প্র্যাকটিস! Cambridge Books 9-20, AI Tutor, Speaking Practice, Writing Checker সব একসাথে। এখনই try করো: https://iltes-sathi.com')}`}
+                        href={`https://wa.me/?text=${encodeURIComponent('🎓 LearnCareBD AI — বাংলায় IELTS ও Spoken English প্র্যাকটিস! Cambridge Books 9-20, AI Tutor, Speaking, Writing Checker সব একসাথে। এখনই try করো: https://learncarebd.com')}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-shrink-0 flex items-center gap-2 rounded-xl bg-green-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-green-500 transition shadow-md shadow-green-200"

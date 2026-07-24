@@ -55,7 +55,6 @@ export default function ReadingSession({ data }: Props) {
     const [results, setResults] = useState<boolean[]>([]);
     const [timeLeft, setTimeLeft] = useState(60 * 60);
     const [showExplanations, setShowExplanations] = useState(false);
-    const [mobileTab, setMobileTab] = useState<'pdf' | 'answers'>('pdf');
     const timerRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined);
 
     useEffect(() => {
@@ -146,25 +145,21 @@ export default function ReadingSession({ data }: Props) {
                 </div>
             )}
 
-            {/* Mobile tabs */}
-            <div className="lg:hidden flex border-b border-slate-200 bg-white">
-                {([
-                    { id: 'pdf', label: 'Passages', icon: <BookOpen size={13} /> },
-                    { id: 'answers', label: 'Answers', icon: <ClipboardList size={13} /> },
-                ] as const).map(tab => (
-                    <button
-                        key={tab.id}
-                        onClick={() => setMobileTab(tab.id)}
-                        className={`flex-1 flex items-center justify-center gap-1.5 py-3 text-xs font-bold transition border-b-2 ${
-                            mobileTab === tab.id
-                                ? 'border-emerald-600 text-emerald-700'
-                                : 'border-transparent text-slate-500'
-                        }`}
+            {/* Mobile PDF bar */}
+            {pdfSrc && (
+                <div className="lg:hidden flex items-center gap-2 border-b border-slate-200 bg-emerald-50 px-4 py-2">
+                    <BookOpen size={13} className="text-emerald-700 flex-shrink-0" />
+                    <p className="text-xs text-slate-600 flex-1">Passage পড়তে PDF খোলো, তারপর এখানেই উত্তর দাও।</p>
+                    <a
+                        href={pdfSrc}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-shrink-0 inline-flex items-center gap-1 rounded-lg bg-emerald-600 px-3 py-1.5 text-[11px] font-bold text-white"
                     >
-                        {tab.icon} {tab.label}
-                    </button>
-                ))}
-            </div>
+                        <ExternalLink size={11} /> PDF
+                    </a>
+                </div>
+            )}
 
             {/* Body */}
             <div className="mx-auto max-w-7xl w-full px-4 py-5 flex-1 flex flex-col" style={{ minHeight: 0 }}>
@@ -199,24 +194,11 @@ export default function ReadingSession({ data }: Props) {
                         )}
                         <div className="flex-1 overflow-hidden">
                             {pdfSrc ? (
-                                <object
-                                    data={pdfSrc}
-                                    type="application/pdf"
-                                    className="w-full h-full"
-                                >
-                                    <div className="flex flex-col items-center justify-center h-full gap-4 p-8 text-center">
-                                        <BookOpen size={40} className="text-slate-300" />
-                                        <p className="text-slate-500 text-sm">PDF viewer not supported in this browser.</p>
-                                        <a
-                                            href={pdfSrc}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-emerald-500 transition"
-                                        >
-                                            <ExternalLink size={14} /> Open PDF
-                                        </a>
-                                    </div>
-                                </object>
+                                <iframe
+                                    src={pdfSrc}
+                                    className="w-full h-full border-none"
+                                    title="Reading Passage PDF"
+                                />
                             ) : (
                                 <div className="flex flex-col items-center justify-center h-full gap-3 p-8 text-center">
                                     <BookOpen size={40} className="text-slate-300" />
@@ -267,41 +249,7 @@ export default function ReadingSession({ data }: Props) {
 
                 {/* Mobile layout */}
                 <div className="lg:hidden flex-1">
-                    {mobileTab === 'pdf' && (
-                        <div className="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden">
-                            {passages.length > 0 && (
-                                <div className="px-4 py-3 border-b border-slate-100 space-y-1">
-                                    <p className="text-[11px] font-black uppercase tracking-wider text-slate-400">Passages in this test</p>
-                                    {passages.map((p, i) => (
-                                        <p key={i} className="text-xs font-bold text-slate-700">P{i + 1}: {p}</p>
-                                    ))}
-                                </div>
-                            )}
-                            <div className="p-5 flex flex-col items-center gap-4">
-                                {pdfSrc ? (
-                                    <>
-                                        <BookOpen size={36} className="text-emerald-400" />
-                                        <p className="text-sm text-slate-600 text-center">Open the PDF to read the passages, then switch to Answers tab.</p>
-                                        <a
-                                            href={pdfSrc}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-6 py-3 text-sm font-bold text-white hover:bg-emerald-500 transition w-full justify-center"
-                                        >
-                                            <ExternalLink size={15} /> Open Cambridge PDF
-                                        </a>
-                                    </>
-                                ) : (
-                                    <>
-                                        <BookOpen size={36} className="text-slate-300" />
-                                        <p className="text-sm text-slate-400 text-center">PDF not available for this test.</p>
-                                    </>
-                                )}
-                            </div>
-                        </div>
-                    )}
-                    {mobileTab === 'answers' && (
-                        <div className="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden">
+                    <div className="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden">
                             <div className="flex items-center justify-between border-b border-slate-100 bg-slate-50 px-5 py-3">
                                 <p className="font-black text-slate-900 text-sm">Answer Sheet</p>
                                 <p className="text-[11px] text-slate-500">{answered}/{totalQ}</p>
@@ -333,7 +281,6 @@ export default function ReadingSession({ data }: Props) {
                                 </div>
                             )}
                         </div>
-                    )}
                 </div>
             </div>
         </div>

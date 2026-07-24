@@ -165,8 +165,8 @@ Required JSON shape:
                 if (!parsed) continue;
                 return NextResponse.json({ transcript, ...parsed });
             } catch (e: unknown) {
-                const msg = e instanceof Error ? e.message : '';
-                if (msg.includes('429') || msg.includes('quota')) continue;
+                const msg = String(e instanceof Error ? e.message : e || '').toLowerCase();
+                if (msg.includes('429') || msg.includes('quota') || msg.includes('limit')) continue;
                 break;
             }
         }
