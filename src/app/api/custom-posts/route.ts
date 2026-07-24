@@ -11,10 +11,15 @@ export async function GET() {
             if (res.ok) {
                 const wpPosts = await res.json();
                 for (const wpPost of wpPosts) {
-                    const title = wpPost.title?.rendered || 'Untitled Post';
+                    const title = wpPost.title?.rendered?.trim() || '';
                     const link = wpPost.link || '';
                     const rawExcerpt = wpPost.excerpt?.rendered || '';
                     const cleanExcerpt = rawExcerpt.replace(/<[^>]*>/g, '').trim();
+
+                    // Skip undesired posts
+                    if (!title || title === 'Untitled Post' || title.toLowerCase().includes('must vs. have to') || title.toLowerCase().includes('untitled')) {
+                        continue;
+                    }
 
                     // Check if already exists in DB by link
                     const existing = await prisma.customPost.findFirst({
@@ -49,6 +54,18 @@ export async function GET() {
                     }
                 }
             }
+
+            // Clean up any remaining blacklisted posts in DB
+            await prisma.customPost.deleteMany({
+                where: {
+                    OR: [
+                        { title: '' },
+                        { title: 'Untitled Post' },
+                        { title: { contains: 'Must vs. Have to', mode: 'insensitive' } },
+                        { title: { contains: 'Untitled', mode: 'insensitive' } }
+                    ]
+                }
+            });
         } catch (syncError) {
             console.error('WordPress auto-sync failed:', syncError);
             // Don't crash, serve existing database items
