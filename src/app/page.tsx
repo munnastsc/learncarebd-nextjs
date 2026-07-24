@@ -2,28 +2,41 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { ArrowRight, Radio, GraduationCap, Bot, Sparkles, MessageSquare, BookOpen, ChevronRight } from 'lucide-react';
+import { ArrowRight, Radio, GraduationCap, Sparkles, BookOpen, ChevronRight, Layers } from 'lucide-react';
 
 export default function HomePage() {
     const [wpPosts, setWpPosts] = useState<any[]>([]);
-    const [wpLoading, setWpLoading] = useState(true);
+    const [menuLinks, setMenuLinks] = useState<any[]>([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const fetchPosts = async () => {
+        const loadData = async () => {
             try {
-                const res = await fetch('https://www.learncarebd.com/wp-json/wp/v2/posts?per_page=6');
-                if (res.ok) {
-                    const data = await res.json();
-                    setWpPosts(data);
+                // Fetch dynamic custom posts (which triggers WordPress auto sync)
+                const postsRes = await fetch('/api/custom-posts');
+                if (postsRes.ok) {
+                    const postsData = await postsRes.json();
+                    setWpPosts(postsData);
+                }
+
+                // Fetch dynamic menu links
+                const linksRes = await fetch('/api/menu-links');
+                if (linksRes.ok) {
+                    const linksData = await linksRes.json();
+                    setMenuLinks(linksData);
                 }
             } catch (e) {
-                console.error('Failed to fetch WordPress posts:', e);
+                console.error('Failed to load homepage data:', e);
             } finally {
-                setWpLoading(false);
+                setLoading(false);
             }
         };
-        fetchPosts();
+        loadData();
     }, []);
+
+    const services = wpPosts.filter(p => p.type === 'SERVICE');
+    const books = wpPosts.filter(p => p.type === 'BOOK');
+
     return (
         <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-between overflow-hidden relative selection:bg-teal-500 selection:text-slate-900">
             {/* Background glowing decorations */}
@@ -33,15 +46,33 @@ export default function HomePage() {
             {/* Navigation Header */}
             <header className="border-b border-slate-800/60 bg-slate-900/40 backdrop-blur-md px-6 py-4 relative z-10">
                 <div className="mx-auto max-w-6xl flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                        <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-teal-500 text-slate-950 font-black text-sm">L</span>
+                    <div className="flex items-center gap-3">
+                        <img 
+                            src="https://learncarebd.com/wp-content/uploads/2025/12/Learncare-academy-1-scaled.png" 
+                            alt="LearnCareBD Logo" 
+                            className="h-10 w-auto rounded-lg object-contain"
+                        />
                         <div>
                             <p className="text-xs font-black uppercase tracking-[0.15em] text-teal-400">LearnCareBD AI</p>
                             <p className="text-[10px] text-slate-400">English Learning Platform</p>
                         </div>
                     </div>
+
+                    {/* Dynamic Menu Links */}
+                    <div className="hidden md:flex items-center gap-6">
+                        {menuLinks.map((link) => (
+                            <a 
+                                key={link.id} 
+                                href={link.url} 
+                                className="text-xs font-bold text-slate-300 hover:text-teal-400 transition"
+                            >
+                                {link.label}
+                            </a>
+                        ))}
+                    </div>
+
                     <div className="flex items-center gap-3">
-                        <Link href="/admin/books" className="rounded-xl border border-slate-700 bg-slate-800/40 px-4 py-2 text-xs font-bold text-slate-300 hover:bg-slate-800 transition">
+                        <Link href="/admin/login" className="rounded-xl border border-slate-700 bg-slate-800/40 px-4 py-2 text-xs font-bold text-slate-300 hover:bg-slate-800 transition">
                             Admin Portal
                         </Link>
                     </div>
@@ -69,7 +100,6 @@ export default function HomePage() {
                     
                     {/* Spoken English Card */}
                     <div className="group relative rounded-3xl border border-teal-500/20 bg-slate-900/60 p-8 shadow-2xl hover:border-teal-500/40 transition-all duration-300 hover:shadow-teal-950/20 overflow-hidden flex flex-col justify-between min-h-[380px]">
-                        {/* Glowing hover accent */}
                         <div className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                         
                         <div>
@@ -114,7 +144,6 @@ export default function HomePage() {
 
                     {/* IELTS Preparation Card */}
                     <div className="group relative rounded-3xl border border-indigo-500/20 bg-slate-900/60 p-8 shadow-2xl hover:border-indigo-500/40 transition-all duration-300 hover:shadow-indigo-950/20 overflow-hidden flex flex-col justify-between min-h-[380px]">
-                        {/* Glowing hover accent */}
                         <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
                         <div>
@@ -159,34 +188,40 @@ export default function HomePage() {
 
                 </div>
 
-                {/* WordPress Services / Posts Section */}
-                <div className="mt-20">
-                    <div className="text-center max-w-xl mx-auto mb-10">
+                {/* dynamic OUR SERVICES section */}
+                <div id="services" className="mt-24 scroll-mt-12">
+                    <div className="text-center max-w-xl mx-auto mb-12">
                         <span className="inline-flex items-center gap-1.5 rounded-full border border-teal-500/30 bg-teal-500/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-teal-300 mb-3">
-                            <BookOpen size={10} />
-                            Our Services & Resources
+                            <Layers size={10} />
+                            Our Premium Services
                         </span>
                         <h3 className="text-2xl font-black text-white sm:text-3xl">
-                            আমাদের লেকচার শিট ও গুরুত্বপূর্ণ বুকস
+                            আমাদের প্রিমিয়াম সেবাসমূহ
                         </h3>
                         <p className="mt-2 text-xs text-slate-400">
-                            ওয়ার্ডপ্রেস সাইট থেকে সরাসরি লোড হওয়া প্রিপারেশন ম্যাটেরিয়াল ও স্পেশাল কোর্স সার্ভিসসমূহ।
+                            ইংরেজি শেখা ও ক্যারিয়ার গড়ার লক্ষে তৈরি করা বিশেষ কারিকুলাম ও একাডেমি সার্ভিস।
                         </p>
                     </div>
 
-                    {wpLoading ? (
+                    {loading ? (
                         <div className="flex justify-center py-10">
                             <span className="w-8 h-8 rounded-full border-2 border-slate-800 border-t-teal-500 animate-spin" />
                         </div>
-                    ) : wpPosts.length === 0 ? (
-                        <p className="text-center text-xs text-slate-500 py-6">কোনো সার্ভিস বা পোস্ট পাওয়া যায়নি।</p>
+                    ) : services.length === 0 ? (
+                        <p className="text-center text-xs text-slate-500 py-6">কোনো সার্ভিস পাওয়া যায়নি।</p>
                     ) : (
                         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                            {wpPosts.map((post) => {
-                                const cleanTitle = post.title?.rendered || 'Spoken English & Grammar Session';
-                                const cleanExcerpt = post.excerpt?.rendered 
-                                    ? post.excerpt.rendered.replace(/<[^>]*>/g, '').trim().slice(0, 120) + '...'
-                                    : 'বিস্তারিত বিবরণ পড়তে নিচের লিংকে ক্লিক করুন...';
+                            {services.map((post) => {
+                                let localUrl = post.link || '#';
+                                let isInternal = false;
+                                if (post.link?.includes('one-on-one-english-mentorship')) {
+                                    localUrl = '/courses/one-on-one-english-mentorship';
+                                    isInternal = true;
+                                } else if (post.link?.includes('mastering-spoken-english-pronunciation-challenge-90-day-bootcamp')) {
+                                    localUrl = '/courses/mastering-spoken-english-pronunciation-challenge-90-day-bootcamp';
+                                    isInternal = true;
+                                }
+
                                 return (
                                     <div key={post.id} className="group relative rounded-2xl border border-slate-800 bg-slate-900/40 p-6 flex flex-col justify-between hover:border-slate-700 transition duration-200">
                                         <div>
@@ -194,21 +229,30 @@ export default function HomePage() {
                                                 <Sparkles size={18} />
                                             </div>
                                             <h4 className="font-bold text-white group-hover:text-teal-400 transition text-sm leading-snug">
-                                                {cleanTitle}
+                                                {post.title}
                                             </h4>
                                             <p className="mt-2 text-[11px] text-slate-400 leading-relaxed">
-                                                {cleanExcerpt}
+                                                {post.content}
                                             </p>
                                         </div>
                                         <div className="mt-6 pt-4 border-t border-slate-800/60">
-                                            <a 
-                                                href={post.link} 
-                                                target="_blank" 
-                                                rel="noopener noreferrer"
-                                                className="inline-flex items-center gap-1 text-[11px] font-bold text-teal-400 hover:text-teal-300 transition"
-                                            >
-                                                বিস্তারিত দেখুন <ChevronRight size={12} />
-                                            </a>
+                                            {isInternal ? (
+                                                <Link 
+                                                    href={localUrl}
+                                                    className="inline-flex items-center gap-1 text-[11px] font-bold text-teal-400 hover:text-teal-300 transition"
+                                                >
+                                                    বিস্তারিত দেখুন <ChevronRight size={12} />
+                                                </Link>
+                                            ) : (
+                                                <a 
+                                                    href={localUrl} 
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer"
+                                                    className="inline-flex items-center gap-1 text-[11px] font-bold text-teal-400 hover:text-teal-300 transition"
+                                                >
+                                                    বিস্তারিত দেখুন <ChevronRight size={12} />
+                                                </a>
+                                            )}
                                         </div>
                                     </div>
                                 );
@@ -216,6 +260,64 @@ export default function HomePage() {
                         </div>
                     )}
                 </div>
+
+                {/* dynamic OUR BOOKS section */}
+                <div id="books" className="mt-24 scroll-mt-12">
+                    <div className="text-center max-w-xl mx-auto mb-12">
+                        <span className="inline-flex items-center gap-1.5 rounded-full border border-pink-500/30 bg-pink-500/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-pink-300 mb-3">
+                            <BookOpen size={10} />
+                            Our Preparation Books
+                        </span>
+                        <h3 className="text-2xl font-black text-white sm:text-3xl">
+                            প্রিপারেশন ও গ্রামার বুকস
+                        </h3>
+                        <p className="mt-2 text-xs text-slate-400">
+                            সহজে ডাউনলোড করুন এবং নিজের সুবিধামত পড়ালেখা ও প্র্যাকটিস করুন।
+                        </p>
+                    </div>
+
+                    {loading ? (
+                        <div className="flex justify-center py-10">
+                            <span className="w-8 h-8 rounded-full border-2 border-slate-800 border-t-pink-500 animate-spin" />
+                        </div>
+                    ) : books.length === 0 ? (
+                        <p className="text-center text-xs text-slate-500 py-6">কোনো প্রিপারেশন বুক পাওয়া যায়নি।</p>
+                    ) : (
+                        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                            {books.map((post) => (
+                                <div key={post.id} className="group relative rounded-2xl border border-slate-800 bg-slate-900/40 p-6 flex flex-col justify-between hover:border-slate-700 transition duration-200">
+                                    <div>
+                                        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-850 text-pink-400 mb-4 group-hover:bg-pink-500 group-hover:text-slate-950 transition duration-200">
+                                            <BookOpen size={18} />
+                                        </div>
+                                        <h4 className="font-bold text-white group-hover:text-pink-400 transition text-sm leading-snug">
+                                            {post.title}
+                                        </h4>
+                                        <p className="mt-2 text-[11px] text-slate-400 leading-relaxed">
+                                            {post.content}
+                                        </p>
+                                        {post.price && (
+                                            <span className="inline-block mt-3 px-2 py-0.5 rounded text-[10px] font-bold bg-pink-500/10 border border-pink-500/25 text-pink-300">
+                                                মূল্য: ৳{post.price} BDT
+                                            </span>
+                                        )}
+                                    </div>
+                                    <div className="mt-6 pt-4 border-t border-slate-800/60">
+                                        <a 
+                                            href={post.link || '#'} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-1 text-[11px] font-bold text-pink-400 hover:text-pink-300 transition"
+                                        >
+                                            ডাউনলোড/বিস্তারিত দেখুন <ChevronRight size={12} />
+                                        </a>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
+
             </main>
 
             {/* Footer */}
@@ -225,3 +327,4 @@ export default function HomePage() {
         </div>
     );
 }
+
