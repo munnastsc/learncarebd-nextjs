@@ -1,9 +1,29 @@
 'use client';
 
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 import { ArrowRight, Radio, GraduationCap, Bot, Sparkles, MessageSquare, BookOpen, ChevronRight } from 'lucide-react';
 
 export default function HomePage() {
+    const [wpPosts, setWpPosts] = useState<any[]>([]);
+    const [wpLoading, setWpLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchPosts = async () => {
+            try {
+                const res = await fetch('https://www.learncarebd.com/wp-json/wp/v2/posts?per_page=6');
+                if (res.ok) {
+                    const data = await res.json();
+                    setWpPosts(data);
+                }
+            } catch (e) {
+                console.error('Failed to fetch WordPress posts:', e);
+            } finally {
+                setWpLoading(false);
+            }
+        };
+        fetchPosts();
+    }, []);
     return (
         <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-between overflow-hidden relative selection:bg-teal-500 selection:text-slate-900">
             {/* Background glowing decorations */}
@@ -137,6 +157,64 @@ export default function HomePage() {
                         </div>
                     </div>
 
+                </div>
+
+                {/* WordPress Services / Posts Section */}
+                <div className="mt-20">
+                    <div className="text-center max-w-xl mx-auto mb-10">
+                        <span className="inline-flex items-center gap-1.5 rounded-full border border-teal-500/30 bg-teal-500/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-teal-300 mb-3">
+                            <BookOpen size={10} />
+                            Our Services & Resources
+                        </span>
+                        <h3 className="text-2xl font-black text-white sm:text-3xl">
+                            আমাদের লেকচার শিট ও গুরুত্বপূর্ণ বুকস
+                        </h3>
+                        <p className="mt-2 text-xs text-slate-400">
+                            ওয়ার্ডপ্রেস সাইট থেকে সরাসরি লোড হওয়া প্রিপারেশন ম্যাটেরিয়াল ও স্পেশাল কোর্স সার্ভিসসমূহ।
+                        </p>
+                    </div>
+
+                    {wpLoading ? (
+                        <div className="flex justify-center py-10">
+                            <span className="w-8 h-8 rounded-full border-2 border-slate-800 border-t-teal-500 animate-spin" />
+                        </div>
+                    ) : wpPosts.length === 0 ? (
+                        <p className="text-center text-xs text-slate-500 py-6">কোনো সার্ভিস বা পোস্ট পাওয়া যায়নি।</p>
+                    ) : (
+                        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                            {wpPosts.map((post) => {
+                                const cleanTitle = post.title?.rendered || 'Spoken English & Grammar Session';
+                                const cleanExcerpt = post.excerpt?.rendered 
+                                    ? post.excerpt.rendered.replace(/<[^>]*>/g, '').trim().slice(0, 120) + '...'
+                                    : 'বিস্তারিত বিবরণ পড়তে নিচের লিংকে ক্লিক করুন...';
+                                return (
+                                    <div key={post.id} className="group relative rounded-2xl border border-slate-800 bg-slate-900/40 p-6 flex flex-col justify-between hover:border-slate-700 transition duration-200">
+                                        <div>
+                                            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-850 text-teal-400 mb-4 group-hover:bg-teal-500 group-hover:text-slate-950 transition duration-200">
+                                                <Sparkles size={18} />
+                                            </div>
+                                            <h4 className="font-bold text-white group-hover:text-teal-400 transition text-sm leading-snug">
+                                                {cleanTitle}
+                                            </h4>
+                                            <p className="mt-2 text-[11px] text-slate-400 leading-relaxed">
+                                                {cleanExcerpt}
+                                            </p>
+                                        </div>
+                                        <div className="mt-6 pt-4 border-t border-slate-800/60">
+                                            <a 
+                                                href={post.link} 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-1 text-[11px] font-bold text-teal-400 hover:text-teal-300 transition"
+                                            >
+                                                বিস্তারিত দেখুন <ChevronRight size={12} />
+                                            </a>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    )}
                 </div>
             </main>
 
