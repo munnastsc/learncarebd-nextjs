@@ -16,6 +16,7 @@
     "lucide-react": "^1.11.0",
     "next": "latest",
     "openai": "latest",
+    "papaparse": "^5.5.4",
     "pdfjs-dist": "^5.7.284",
     "react": "latest",
     "react-dom": "latest"
@@ -24,6 +25,7 @@
     "@aws-sdk/client-s3": "^3.1053.0",
     "@tailwindcss/postcss": "^4.2.4",
     "@types/node": "latest",
+    "@types/papaparse": "^5.5.2",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "^10.5.0",

@@ -1,7 +1,9 @@
 'use client';
 
 import { useState, useRef, useEffect, useCallback } from 'react';
-import { Send, RotateCcw, Bot, User, Sparkles, BookOpen, Headphones, PenLine, Mic, MicOff, Volume2, VolumeX, GraduationCap, Lightbulb, ImageIcon, X } from 'lucide-react';
+import Link from 'next/link';
+import { Send, RotateCcw, Bot, User, Sparkles, BookOpen, Headphones, PenLine, Mic, MicOff, Volume2, VolumeX, GraduationCap, Lightbulb, ImageIcon, X, Lock, CreditCard } from 'lucide-react';
+import { useSubscription } from '../../../components/SubscriptionGuard';
 
 type Message = {
     role: 'user' | 'assistant';
@@ -99,6 +101,7 @@ function stripMarkdown(text: string): string {
 }
 
 export default function AiTutorPage() {
+    const { isTrial } = useSubscription();
     const [messages, setMessages] = useState<Message[]>([WELCOME]);
     const [input, setInput] = useState('');
     const [loading, setLoading] = useState(false);
@@ -574,81 +577,101 @@ export default function AiTutorPage() {
                         </div>
                     )}
 
-                    <div className="flex items-end gap-2 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-2.5 focus-within:border-indigo-400 focus-within:bg-white transition">
-                        {/* Image upload button */}
-                        <button
-                            type="button"
-                            onClick={() => fileInputRef.current?.click()}
-                            disabled={loading}
-                            title="ছবি upload করো"
-                            className="mb-0.5 shrink-0 text-slate-400 hover:text-indigo-500 transition disabled:opacity-40"
-                        >
-                            <ImageIcon size={18} />
-                        </button>
-                        <input
-                            ref={fileInputRef}
-                            type="file"
-                            accept="image/*"
-                            capture="environment"
-                            className="hidden"
-                            onChange={handleImageSelect}
-                        />
+                    {isTrial ? (
+                        <div className="rounded-2xl border border-amber-200 bg-amber-50/80 p-5 text-center shadow-sm">
+                            <div className="mx-auto mb-2 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 text-amber-600">
+                                <Lock size={20} />
+                            </div>
+                            <h3 className="text-sm font-black text-slate-900">🔒 AI Tutor Chat শুধুমাত্র পেইড সাবস্ক্রিপশনে উন্মুক্ত!</h3>
+                            <p className="text-xs text-slate-500 mt-1 max-w-md mx-auto">
+                                ফ্রি ট্রায়ালে কেমব্রিজ টেস্ট ৯ থেকে ১৫ এর প্রশ্ন ও প্র্যাকটিস সম্পূর্ণ উন্মুক্ত। আনলিমিটেড এআই টিউটর চ্যাট ব্যবহারের জন্য দয়া করে সাবস্ক্রিপশন নিন।
+                            </p>
+                            <Link
+                                href="/dashboard/payment?required=ielts_spoken"
+                                className="mt-3 inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-2.5 text-xs font-bold text-white hover:bg-indigo-500 transition shadow-md"
+                            >
+                                <CreditCard size={14} /> সাবস্ক্রিপশন নিন ↗
+                            </Link>
+                        </div>
+                    ) : (
+                        <>
+                            <div className="flex items-end gap-2 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-2.5 focus-within:border-indigo-400 focus-within:bg-white transition">
+                                {/* Image upload button */}
+                                <button
+                                    type="button"
+                                    onClick={() => fileInputRef.current?.click()}
+                                    disabled={loading}
+                                    title="ছবি upload করো"
+                                    className="mb-0.5 shrink-0 text-slate-400 hover:text-indigo-500 transition disabled:opacity-40"
+                                >
+                                    <ImageIcon size={18} />
+                                </button>
+                                <input
+                                    ref={fileInputRef}
+                                    type="file"
+                                    accept="image/*"
+                                    capture="environment"
+                                    className="hidden"
+                                    onChange={handleImageSelect}
+                                />
 
-                        <textarea
-                            ref={inputRef}
-                            value={input}
-                            onChange={(e) => setInput(e.target.value)}
-                            onKeyDown={handleKeyDown}
-                            placeholder={isListening ? '🎤 বলো... (শুনছি)' : 'IELTS নিয়ে যেকোনো প্রশ্ন করো... (Enter = send, Shift+Enter = নতুন লাইন)'}
-                            rows={1}
-                            className="flex-1 resize-none bg-transparent text-sm text-slate-800 placeholder-slate-400 outline-none leading-relaxed"
-                            style={{ maxHeight: '120px', overflowY: 'auto' }}
-                            onInput={(e) => {
-                                const el = e.currentTarget;
-                                el.style.height = 'auto';
-                                el.style.height = Math.min(el.scrollHeight, 120) + 'px';
-                            }}
-                            disabled={loading}
-                        />
+                                <textarea
+                                    ref={inputRef}
+                                    value={input}
+                                    onChange={(e) => setInput(e.target.value)}
+                                    onKeyDown={handleKeyDown}
+                                    placeholder={isListening ? '🎤 বলো... (শুনছি)' : 'IELTS নিয়ে যেকোনো প্রশ্ন করো... (Enter = send, Shift+Enter = নতুন লাইন)'}
+                                    rows={1}
+                                    className="flex-1 resize-none bg-transparent text-sm text-slate-800 placeholder-slate-400 outline-none leading-relaxed"
+                                    style={{ maxHeight: '120px', overflowY: 'auto' }}
+                                    onInput={(e) => {
+                                        const el = e.currentTarget;
+                                        el.style.height = 'auto';
+                                        el.style.height = Math.min(el.scrollHeight, 120) + 'px';
+                                    }}
+                                    disabled={loading}
+                                />
 
-                        {/* Voice language toggle (bn/en) */}
-                        <button
-                            type="button"
-                            onClick={() => setVoiceLang(l => l === 'bn-BD' ? 'en-US' : 'bn-BD')}
-                            disabled={loading}
-                            title="Voice language toggle"
-                            className="mb-0.5 shrink-0 rounded px-1 text-[10px] font-bold text-slate-400 hover:text-indigo-500 transition"
-                        >
-                            {voiceLang === 'bn-BD' ? 'বাং' : 'EN'}
-                        </button>
+                                {/* Voice language toggle (bn/en) */}
+                                <button
+                                    type="button"
+                                    onClick={() => setVoiceLang(l => l === 'bn-BD' ? 'en-US' : 'bn-BD')}
+                                    disabled={loading}
+                                    title="Voice language toggle"
+                                    className="mb-0.5 shrink-0 rounded px-1 text-[10px] font-bold text-slate-400 hover:text-indigo-500 transition"
+                                >
+                                    {voiceLang === 'bn-BD' ? 'বাং' : 'EN'}
+                                </button>
 
-                        {/* Voice input button */}
-                        <button
-                            type="button"
-                            onClick={toggleVoiceInput}
-                            disabled={loading}
-                            title={isListening ? 'বন্ধ করো' : 'Voice দিয়ে বলো'}
-                            className={`mb-0.5 shrink-0 transition disabled:opacity-40 ${
-                                isListening
-                                    ? 'animate-pulse text-rose-500'
-                                    : 'text-slate-400 hover:text-indigo-500'
-                            }`}
-                        >
-                            {isListening ? <MicOff size={18} /> : <Mic size={18} />}
-                        </button>
+                                {/* Voice input button */}
+                                <button
+                                    type="button"
+                                    onClick={toggleVoiceInput}
+                                    disabled={loading}
+                                    title={isListening ? 'বন্ধ করো' : 'Voice দিয়ে বলো'}
+                                    className={`mb-0.5 shrink-0 transition disabled:opacity-40 ${
+                                        isListening
+                                            ? 'animate-pulse text-rose-500'
+                                            : 'text-slate-400 hover:text-indigo-500'
+                                    }`}
+                                >
+                                    {isListening ? <MicOff size={18} /> : <Mic size={18} />}
+                                </button>
 
-                        {/* Send button */}
-                        <button
-                            onClick={() => sendMessage()}
-                            disabled={(!input.trim() && !imagePreview) || loading}
-                            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-indigo-600 text-white transition hover:bg-indigo-500 disabled:opacity-40 disabled:cursor-not-allowed"
-                        >
-                            <Send size={15} />
-                        </button>
-                    </div>
-                    <p className="mt-1.5 text-center text-[10px] text-slate-400">
-                        📸 ছবি | 🎤 Voice | ⌨️ Type — যেভাবে সহজ। AI উত্তর সবসময় verify করো।
-                    </p>
+                                {/* Send button */}
+                                <button
+                                    onClick={() => sendMessage()}
+                                    disabled={(!input.trim() && !imagePreview) || loading}
+                                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-indigo-600 text-white transition hover:bg-indigo-500 disabled:opacity-40 disabled:cursor-not-allowed"
+                                >
+                                    <Send size={15} />
+                                </button>
+                            </div>
+                            <p className="mt-1.5 text-center text-[10px] text-slate-400">
+                                📸 ছবি | 🎤 Voice | ⌨️ Type — যেভাবে সহজ। AI উত্তর সবসময় verify করো।
+                            </p>
+                        </>
+                    )}
                 </div>
             </div>
         </div>

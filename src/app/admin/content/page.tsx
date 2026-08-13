@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Sparkles, BookOpen, Layers, Menu, Trash2, Plus, Edit, X, Save, RefreshCw } from 'lucide-react';
+import { Sparkles, BookOpen, Layers, Menu, Trash2, Plus, Edit, X, Save, RefreshCw, Link as LinkIcon, ExternalLink } from 'lucide-react';
 
 type CustomPost = {
     id: string;
@@ -259,9 +259,17 @@ export default function ContentAdminPage() {
                                         <div className="flex-1">
                                             <div className="flex items-center gap-2 mb-2">
                                                 <span className={`text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded ${
-                                                    post.type === 'BOOK' 
-                                                        ? 'bg-pink-500/10 text-pink-300 border border-pink-500/20' 
-                                                        : 'bg-teal-500/10 text-teal-300 border border-teal-500/20'
+                                                    post.type === 'COURSE'
+                                                        ? 'bg-emerald-500/10 text-emerald-300 border border-emerald-500/20'
+                                                        : post.type === 'BOOK' 
+                                                            ? 'bg-pink-500/10 text-pink-300 border border-pink-500/20' 
+                                                            : post.type === 'BLOG'
+                                                                ? 'bg-indigo-500/10 text-indigo-300 border border-indigo-500/20'
+                                                                : post.type === 'NOTICE'
+                                                                    ? 'bg-rose-500/10 text-rose-300 border border-rose-500/20 animate-pulse'
+                                                                    : post.type === 'POST'
+                                                                        ? 'bg-amber-500/10 text-amber-300 border border-amber-500/20'
+                                                                        : 'bg-teal-500/10 text-teal-300 border border-teal-500/20'
                                                 }`}>
                                                     {post.type}
                                                 </span>
@@ -270,6 +278,16 @@ export default function ContentAdminPage() {
                                                         WordPress Synced
                                                     </span>
                                                 )}
+                                                
+                                                <a href={`/blog/${post.id}`} target="_blank" rel="noopener noreferrer" className="text-[10px] flex items-center gap-1 font-black uppercase tracking-wider px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:bg-blue-500/20 transition cursor-pointer">
+                                                    <ExternalLink size={10} /> View Post
+                                                </a>
+                                                <button onClick={() => {
+                                                    navigator.clipboard.writeText(`${window.location.origin}/blog/${post.id}`);
+                                                    alert('URL Copied to clipboard!');
+                                                }} className="text-[10px] flex items-center gap-1 font-black uppercase tracking-wider px-2 py-0.5 rounded bg-slate-500/10 text-slate-300 border border-slate-500/20 hover:bg-slate-500/20 transition cursor-pointer">
+                                                    <LinkIcon size={10} /> Copy URL
+                                                </button>
                                             </div>
                                             <h3 className="font-bold text-white text-sm">{post.title}</h3>
                                             <p className="text-xs text-slate-400 mt-1 line-clamp-2">{post.content}</p>
@@ -377,9 +395,12 @@ export default function ContentAdminPage() {
                                         onChange={(e) => setPostForm({ ...postForm, type: e.target.value })}
                                         className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:border-teal-500 focus:outline-none"
                                     >
+                                        <option value="COURSE">COURSE (কোর্স সমূহ)</option>
                                         <option value="SERVICE">SERVICE (সেবাসমূহ)</option>
                                         <option value="BOOK">BOOK (বই/লেকচার শিট)</option>
                                         <option value="POST">POST (জেনারেল পোস্ট)</option>
+                                        <option value="BLOG">BLOG (ব্লগ পোস্ট)</option>
+                                        <option value="NOTICE">NOTICE (চলমান নোটিশ / হেডলাইন)</option>
                                     </select>
                                 </div>
                                 <div>
@@ -394,14 +415,69 @@ export default function ContentAdminPage() {
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-xs font-bold text-slate-400 mb-1.5">Content (বিবরণ)</label>
+                                    <label className="block text-xs font-bold text-slate-400 mb-1.5 flex justify-between">
+                                        <span>Content (বিবরণ)</span>
+                                        <span className="text-[10px] text-teal-400 font-medium">Supports HTML Code</span>
+                                    </label>
                                     <textarea
                                         rows={4}
                                         value={postForm.content}
                                         onChange={(e) => setPostForm({ ...postForm, content: e.target.value })}
-                                        placeholder="Enter description here..."
-                                        className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:border-teal-500 focus:outline-none resize-none"
+                                        placeholder="Enter description or HTML code here..."
+                                        className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:border-teal-500 focus:outline-none resize-none font-mono"
                                     />
+                                </div>
+                                <div>
+                                    <label className="block text-xs font-bold text-slate-400 mb-1.5">Image File / URL (ছবি আপলোড বা লিংক)</label>
+                                    <div className="flex gap-2 items-center">
+                                        <input
+                                            type="text"
+                                            value={postForm.imageUrl}
+                                            onChange={(e) => setPostForm({ ...postForm, imageUrl: e.target.value })}
+                                            placeholder="Image URL or upload below..."
+                                            className="flex-1 bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:border-teal-500 focus:outline-none"
+                                        />
+                                        <label className="rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-bold px-3 py-2.5 text-slate-350 cursor-pointer transition flex items-center gap-1.5">
+                                            <span>Upload</span>
+                                            <input
+                                                type="file"
+                                                accept="image/*"
+                                                onChange={async (e) => {
+                                                    const file = e.target.files?.[0];
+                                                    if (!file) return;
+                                                    const fd = new FormData();
+                                                    fd.append('file', file);
+                                                    try {
+                                                        const res = await fetch('/api/admin/image/upload', {
+                                                            method: 'POST',
+                                                            body: fd
+                                                        });
+                                                        const data = await res.json();
+                                                        if (data.imageUrl) {
+                                                            setPostForm(prev => ({ ...prev, imageUrl: data.imageUrl }));
+                                                        } else {
+                                                            alert(data.error || 'Upload failed');
+                                                        }
+                                                    } catch (err) {
+                                                        alert('Upload failed due to connection error');
+                                                    }
+                                                }}
+                                                className="hidden"
+                                            />
+                                        </label>
+                                    </div>
+                                    {postForm.imageUrl && (
+                                        <div className="mt-2 p-1.5 bg-slate-950 border border-slate-850 rounded-xl w-fit flex items-center gap-2">
+                                            <img src={postForm.imageUrl} alt="Preview" className="h-10 w-10 object-cover rounded-lg border border-slate-800" />
+                                            <button 
+                                                type="button" 
+                                                onClick={() => setPostForm(prev => ({ ...prev, imageUrl: '' }))}
+                                                className="text-[10px] font-bold text-rose-450 hover:underline px-1.5"
+                                            >
+                                                Remove
+                                            </button>
+                                        </div>
+                                    )}
                                 </div>
                                 <div className="grid grid-cols-2 gap-4">
                                     <div>

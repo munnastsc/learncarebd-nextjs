@@ -1,0 +1,6 @@
+PassengerEnabled on
+PassengerAppRoot /home/learncar/iltes.learncarebd.com
+PassengerBaseURI /
+PassengerNodejs /home/learncar/nodevenv/iltes.learncarebd.com/20/bin/node
+PassengerAppType node
+PassengerStartupFile server.js

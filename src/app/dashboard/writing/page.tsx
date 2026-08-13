@@ -5,6 +5,7 @@ import { useMemo, useState } from 'react';
 import { ChevronLeft, FilePenLine, Loader2, Sparkles, BookOpen } from 'lucide-react';
 import { CAMBRIDGE_WRITING_TASKS, CAMBRIDGE_WRITING_BOOKS, getCambridgeWritingTasks } from '../../../lib/cambridgeWritingTasks';
 import { getWritingImage } from '../../../lib/cambridgeWritingPages';
+import { useSubscription } from '../../../components/SubscriptionGuard';
 
 type TaskType = 'task1' | 'task2';
 
@@ -83,6 +84,7 @@ function CriteriaBar({ label, score }: { label: string; score: number }) {
 }
 
 export default function WritingAIEvaluatorPage() {
+    const { isTrial } = useSubscription();
     const [taskType, setTaskType] = useState<TaskType>('task2');
     const [targetBand, setTargetBand] = useState(7);
     const [prompt, setPrompt] = useState(TASK_2_PROMPTS[0]);
@@ -109,6 +111,10 @@ export default function WritingAIEvaluatorPage() {
     const wordOk = wordCount >= minWords;
 
     const evaluate = async () => {
+        if (isTrial) {
+            setError('ফ্রী ট্রায়াল মোডে AI মূল্যায়ন বন্ধ রয়েছে। এই ফিচারটি ব্যবহার করতে দয়া করে সাবস্ক্রিপশন নিন।');
+            return;
+        }
         setLoading(true);
         setError('');
         setResult(null);

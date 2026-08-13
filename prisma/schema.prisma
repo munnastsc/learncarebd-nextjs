@@ -81,3 +81,34 @@ model MenuLink {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+model Book {
+  id            String      @id @default(cuid())
+  title         String
+  slug          String      @unique
+  description   String      @db.Text
+  imageUrl      String?
+  price         Float
+  originalPrice Float?
+  features      String[]
+  videoUrl      String?
+  landingPageConfig Json?    // Array of strings for feature list
+  isAvailable   Boolean     @default(true)
+  orders        BookOrder[]
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
+
+model BookOrder {
+  id            String   @id @default(cuid())
+  bookId        String
+  book          Book     @relation(fields: [bookId], references: [id])
+  customerName  String
+  phone         String
+  address       String   @db.Text
+  quantity      Int      @default(1)
+  totalAmount   Float
+  status        String   @default("PENDING") // PENDING, CONFIRMED, SHIPPED, DELIVERED, CANCELLED
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle2, AlertCircle, Loader2, Sparkles, Copy, RotateCcw } from 'lucide-react';
+import { useSubscription } from '../../../components/SubscriptionGuard';
 
 type ErrorItem = {
     original: string;
@@ -34,6 +35,7 @@ const SAMPLES = [
 ];
 
 export default function GrammarCheckerPage() {
+    const { isTrial } = useSubscription();
     const [text, setText] = useState('');
     const [result, setResult] = useState<Result | null>(null);
     const [loading, setLoading] = useState(false);
@@ -42,6 +44,16 @@ export default function GrammarCheckerPage() {
 
     async function checkGrammar() {
         if (!text.trim() || loading) return;
+
+        if (isTrial) {
+            const count = parseInt(localStorage.getItem('iltes_grammar_check_count') || '0', 10);
+            if (count >= 3) {
+                setError('ফ্রী ট্রায়াল মোডে ৩ বারের বেশি Grammar Check করা যাবে না। এই ফিচারটি আনলক করতে দয়া করে সাবস্ক্রিপশন নিন।');
+                return;
+            }
+            localStorage.setItem('iltes_grammar_check_count', String(count + 1));
+        }
+
         setLoading(true);
         setResult(null);
         setError('');

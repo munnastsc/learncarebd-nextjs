@@ -2,10 +2,11 @@
 
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
+import { useSubscription } from '../../../../components/SubscriptionGuard';
 import {
     ArrowLeft, Check, CheckCircle2, XCircle, ChevronRight, GraduationCap,
     BookMarked, HelpCircle, Trophy, RefreshCw, Sparkles, X, ChevronDown, Menu, Play,
-    Mic, MicOff, Volume2, Info, CheckCircle, Award, Target, HelpCircle as HelpIcon, ArrowUpRight
+    Mic, MicOff, Volume2, Info, CheckCircle, Award, Target, HelpCircle as HelpIcon, ArrowUpRight, Lock
 } from 'lucide-react';
 import { GRAMMAR_UNITS, type Chapter, type Unit, type QuizQuestion } from '../../../../lib/grammarAcademyData';
 import { SENTENCE_MAKING_RULES, type SentenceRule } from '../../../../lib/sentenceMakingRules';
@@ -36,6 +37,7 @@ const TRANSLATION_CHALLENGES: Record<number, { bengali: string; english: string 
 };
 
 export default function GrammarAcademyPage() {
+    const { isTrial } = useSubscription();
     const [activeChapterId, setActiveChapterId] = useState<number>(1);
     const [activeTab, setActiveTab] = useState<'lesson' | 'builder' | 'quiz'>('lesson');
     
@@ -585,25 +587,36 @@ export default function GrammarAcademyPage() {
                                             {unit.chapters.map(ch => {
                                                 const isActive = activeChapterId === ch.id;
                                                 const isCompleted = completedChapters[ch.id];
+                                                const isLocked = isTrial && ch.id > 1;
                                                 return (
                                                     <button
                                                         key={ch.id}
-                                                        onClick={() => setActiveChapterId(ch.id)}
+                                                        onClick={() => {
+                                                            if (isLocked) {
+                                                                window.location.href = '/dashboard/payment?required=spoken';
+                                                                return;
+                                                            }
+                                                            setActiveChapterId(ch.id);
+                                                        }}
                                                         className={`w-full flex items-center justify-between text-left p-2.5 rounded-xl transition ${
                                                             isActive
                                                                 ? 'bg-indigo-650 text-white font-bold shadow-md shadow-indigo-600/10'
-                                                                : 'hover:bg-slate-100 text-slate-600'
+                                                                : isLocked
+                                                                    ? 'opacity-55 hover:border-amber-400'
+                                                                    : 'hover:bg-slate-100 text-slate-600'
                                                         }`}
                                                     >
                                                         <div className="flex items-center gap-2.5 truncate">
                                                             <span className={`flex-shrink-0 h-5 w-5 rounded-full flex items-center justify-center text-[10px] border ${
                                                                 isActive
                                                                     ? 'bg-white/20 border-white/20 text-white font-bold'
-                                                                    : isCompleted
-                                                                        ? 'bg-emerald-500 border-emerald-500 text-white'
-                                                                        : 'bg-slate-200/85 border-slate-300 text-slate-500'
+                                                                    : isLocked
+                                                                        ? 'bg-amber-100 border-amber-300 text-amber-700'
+                                                                        : isCompleted
+                                                                            ? 'bg-emerald-500 border-emerald-500 text-white'
+                                                                            : 'bg-slate-200/85 border-slate-300 text-slate-500'
                                                             }`}>
-                                                                {isCompleted ? <Check size={10} strokeWidth={3} /> : ch.id}
+                                                                {isLocked ? <Lock size={10} /> : isCompleted ? <Check size={10} strokeWidth={3} /> : ch.id}
                                                             </span>
                                                             <span className="text-xs leading-none truncate block">
                                                                 {ch.title}

@@ -2,8 +2,9 @@
 
 import { useState, useRef, useCallback } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, BookOpen, ChevronDown, ChevronUp, Trophy } from 'lucide-react';
+import { ArrowLeft, BookOpen, ChevronDown, ChevronUp, Trophy, Lock } from 'lucide-react';
 import { STORIES, type Story, type Vocab } from './data';
+import { useSubscription } from '../../../components/SubscriptionGuard';
 
 type PopupState = {
     x: number; y: number;
@@ -289,6 +290,7 @@ function StoryReader({ story, onBack }: { story: Story; onBack: () => void }) {
 }
 
 export default function StoriesPage() {
+    const { isTrial } = useSubscription();
     const [selected, setSelected] = useState<Story | null>(null);
     const [levelFilter, setLevelFilter] = useState('All');
 
@@ -337,16 +339,32 @@ export default function StoriesPage() {
                 <div className="space-y-3">
                     {filtered.map((story, idx) => {
                         const lc = LEVEL_STYLE[story.levelColor];
-                        const num = STORIES.indexOf(story) + 1;
+                        const originalIdx = STORIES.indexOf(story);
+                        const num = originalIdx + 1;
+                        const isLocked = isTrial && originalIdx > 0;
+
                         return (
-                            <button key={story.id} onClick={() => setSelected(story)}
-                                className="w-full text-left rounded-2xl border border-slate-200 bg-white p-5 hover:border-indigo-300 hover:shadow-md transition-all shadow-sm group">
+                            <button key={story.id} 
+                                onClick={() => {
+                                    if (isLocked) {
+                                        window.location.href = '/dashboard/payment?required=spoken';
+                                        return;
+                                    }
+                                    setSelected(story);
+                                }}
+                                className={`w-full text-left rounded-2xl border bg-white p-5 hover:shadow-md transition-all shadow-sm group ${isLocked ? 'border-slate-200 opacity-60 hover:border-amber-400 bg-amber-50/5' : 'border-slate-200 hover:border-indigo-300'}`}
+                            >
                                 <div className="flex items-start justify-between gap-3">
                                     <div className="flex-1">
                                         <div className="flex items-center gap-2 mb-1.5">
                                             <span className="text-xs font-black text-slate-400">#{num}</span>
                                             <span className={`text-[11px] font-bold uppercase px-2 py-0.5 rounded-full ${lc.bg} ${lc.text}`}>{story.level}</span>
                                             <span className="text-[11px] text-slate-500">{story.topic}</span>
+                                            {isLocked && (
+                                                <span className="text-[9px] font-black uppercase bg-amber-500/20 text-amber-700 border border-amber-300/30 px-1.5 py-0.5 rounded">
+                                                    Premium
+                                                </span>
+                                            )}
                                         </div>
                                         <p className="text-base font-black text-slate-900 group-hover:text-indigo-700 transition-colors">{story.title}</p>
                                         <p className="text-sm text-slate-500">{story.subtitle}</p>
@@ -356,8 +374,8 @@ export default function StoriesPage() {
                                             ))}
                                         </div>
                                     </div>
-                                    <div className="flex-shrink-0 flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-100 group-hover:bg-indigo-200 transition">
-                                        <BookOpen size={18} className="text-indigo-600" />
+                                    <div className={`flex-shrink-0 flex h-10 w-10 items-center justify-center rounded-xl transition ${isLocked ? 'bg-amber-100 text-amber-600' : 'bg-indigo-100 text-indigo-600 group-hover:bg-indigo-200'}`}>
+                                        {isLocked ? <Lock size={18} /> : <BookOpen size={18} />}
                                     </div>
                                 </div>
                                 <p className="mt-2 text-xs text-slate-500 flex items-center gap-3">

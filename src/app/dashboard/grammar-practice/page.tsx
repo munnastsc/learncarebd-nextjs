@@ -2,7 +2,8 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, CheckCircle2, XCircle, RotateCcw, Trophy } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, XCircle, RotateCcw, Trophy, Lock } from 'lucide-react';
+import { useSubscription } from '../../../components/SubscriptionGuard';
 
 import { QUESTIONS, type Question, type Difficulty } from '../../../lib/grammarQuestions';
 
@@ -15,6 +16,7 @@ const DIFFICULTY_META: Record<Difficulty, { label: string; textColor: string; bg
 const ALL_TOPICS = ['All', ...Array.from(new Set(QUESTIONS.map(q => q.topic)))];
 
 export default function GrammarPracticePage() {
+    const { isTrial } = useSubscription();
     const [difficulty, setDifficulty] = useState<Difficulty | 'all'>('easy');
     const [topic, setTopic] = useState('All');
     const [answers, setAnswers] = useState<Record<string, string>>({});
@@ -37,7 +39,8 @@ export default function GrammarPracticePage() {
 
     function startQuiz() {
         const pool = difficulty === 'all' ? QUESTIONS : QUESTIONS.filter(x => x.difficulty === difficulty);
-        const shuffled = [...pool].sort(() => Math.random() - 0.5).slice(0, 1000);
+        const limit = isTrial ? 100 : 1000;
+        const shuffled = [...pool].sort(() => Math.random() - 0.5).slice(0, limit);
         setQuizQs(shuffled);
         setQuizIdx(0);
         setQuizScore(0);
@@ -177,7 +180,7 @@ export default function GrammarPracticePage() {
                 )}
 
                 <div className="space-y-4">
-                    {filtered.map((q, idx) => {
+                    {(isTrial ? filtered.slice(0, 100) : filtered).map((q, idx) => {
                         const picked = answers[q.id];
                         const isRevealed = revealed[q.id];
                         const isCorrect = picked === q.answer;
@@ -229,6 +232,23 @@ export default function GrammarPracticePage() {
                             </div>
                         );
                     })}
+
+                    {isTrial && filtered.length > 100 && (
+                        <div className="rounded-2xl border border-slate-200 bg-white p-6 text-center space-y-4 shadow-sm">
+                            <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 text-amber-600">
+                                <Lock size={20} />
+                            </div>
+                            <div>
+                                <h3 className="text-sm font-black text-slate-900">🔒 {filtered.length - 100}টি প্র্যাকটিস কুইজ লকড!</h3>
+                                <p className="text-xs text-slate-500 mt-1">
+                                    আপনি বর্তমানে ফ্রি ট্রায়াল মোডে আছেন। সমস্ত ব্যাকরণ কুইজ এবং ব্যাখ্যা আনলক করতে দয়া করে সাবস্ক্রিপশন নিন।
+                                </p>
+                            </div>
+                            <Link href="/dashboard/payment?required=spoken" className="inline-flex items-center gap-1.5 rounded-xl bg-indigo-600 px-5 py-2.5 text-xs font-bold text-white hover:bg-indigo-500 transition shadow">
+                                আনলক করুন ↗
+                            </Link>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

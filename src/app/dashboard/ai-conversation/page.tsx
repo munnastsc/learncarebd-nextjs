@@ -2,7 +2,8 @@
 
 import { useState, useRef, useEffect, useCallback } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Send, Mic, MicOff, Volume2, RotateCcw, Star, MessageSquare } from 'lucide-react';
+import { ArrowLeft, Send, Mic, MicOff, Volume2, RotateCcw, Star, MessageSquare, Lock, CreditCard } from 'lucide-react';
+import { useSubscription } from '../../../components/SubscriptionGuard';
 
 type Message = { role: 'user' | 'assistant'; content: string; type?: 'feedback' | 'intro' | 'reply' };
 type GeminiHistory = { role: 'user' | 'model'; parts: Array<{ text: string }> };
@@ -69,7 +70,7 @@ function stripMarkdown(t: string) {
     return t.replace(/\*\*([^*]+)\*\*/g, '$1').replace(/💡/g, '').replace(/\n+/g, ' ').trim();
 }
 
-const CONV_FREE_LIMIT = 20;
+const CONV_FREE_LIMIT = 3;
 const UNLIMITED_KEY = 'iltes_conv_unlimited';
 const COUNT_KEY = 'iltes_conv_msg_count';
 
@@ -85,6 +86,7 @@ function getCached() {
 function saveUnlimited(email: string) { localStorage.setItem(UNLIMITED_KEY, email); }
 
 export default function AIConversationPage() {
+    const { isTrial } = useSubscription();
     const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
     const [messages, setMessages] = useState<Message[]>([]);
     const [input, setInput] = useState('');
@@ -138,7 +140,7 @@ export default function AIConversationPage() {
         }
     }
 
-    function isLimitReached() { return freeCount >= CONV_FREE_LIMIT && !isUnlimited; }
+    function isLimitReached() { return isTrial; }
 
     function buildHistory(): GeminiHistory[] {
         return messages.slice(-12).map(m => ({
@@ -294,6 +296,24 @@ export default function AIConversationPage() {
                             💡 AI ভুল correct করবে + Tips দেবে। ১০টা turn পর Feedback বাটন দিয়ে পুরো session-এর বাংলা feedback নাও।
                         </p>
                     </div>
+
+                    {isTrial && (
+                        <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50/90 p-5 text-center shadow-sm">
+                            <div className="mx-auto mb-2 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 text-amber-600">
+                                <Lock size={20} />
+                            </div>
+                            <h3 className="text-sm font-black text-slate-900">🔒 AI Speaking Conversation শুধুমাত্র পেইড সাবস্ক্রিপশনে উন্মুক্ত!</h3>
+                            <p className="text-xs text-slate-500 mt-1 max-w-md mx-auto">
+                                ফ্রি ট্রায়ালে কেমব্রিজ টেস্ট ৯ থেকে ১৫ এর প্রশ্ন ও প্র্যাকটিস সম্পূর্ণ উন্মুক্ত। লাইভ এআই স্পিকিং কনভারসেশন ও ফিডব্যাক ব্যবহারের জন্য দয়া করে সাবস্ক্রিপশন নিন।
+                            </p>
+                            <Link
+                                href="/dashboard/payment?required=ielts_spoken"
+                                className="mt-3 inline-flex items-center gap-2 rounded-xl bg-rose-600 px-5 py-2.5 text-xs font-bold text-white hover:bg-rose-500 transition shadow-md"
+                            >
+                                <CreditCard size={14} /> সাবস্ক্রিপশন নিন ↗
+                            </Link>
+                        </div>
+                    )}
 
                     {/* Topic grid */}
                     <p className="mb-4 text-sm font-black text-slate-700">Topic বেছে নাও:</p>

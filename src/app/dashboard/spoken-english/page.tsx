@@ -44,6 +44,22 @@ export default function SpokenEnglishDashboard() {
             badge: 'RECOMMENDED'
         },
         {
+            title: 'Pronunciation Lab',
+            desc: 'Evaluate and improve your spoken English pronunciation with real-time speech analysis.',
+            href: '/dashboard/spoken-english/pronunciation',
+            icon: <Sparkles className="text-cyan-600" size={24} />,
+            color: 'from-cyan-50 to-blue-50 border-cyan-100 hover:border-cyan-300',
+            badge: 'LIVE SPEAK'
+        },
+        {
+            title: 'Conversational Phrases',
+            desc: 'Learn high-frequency daily phrases with interactive playbacks, MCQ quizzes, and fill-in-the-gap exercises.',
+            href: '/dashboard/spoken-english/conversations',
+            icon: <MessageSquare className="text-emerald-600" size={24} />,
+            color: 'from-emerald-50 to-teal-50 border-emerald-100 hover:border-emerald-300',
+            badge: 'QUIZ & MCQS'
+        },
+        {
             title: 'AI Conversation',
             desc: 'Practice speaking English in real-life contexts with interactive AI audio.',
             href: '/dashboard/ai-conversation',
@@ -95,6 +111,57 @@ export default function SpokenEnglishDashboard() {
 
     return (
         <div className="min-h-screen bg-[#f8fafc]">
+
+            {/* Universal Top Navigation Header */}
+            <header className="border-b border-slate-800 bg-slate-950 px-5 py-3 text-white">
+                <div className="mx-auto max-w-6xl flex flex-wrap items-center justify-between gap-4">
+                    <div className="flex items-center gap-4">
+                        <Link href="/" className="flex items-center gap-2.5 group">
+                            <div className="bg-white px-2 py-1 rounded-lg shadow-sm border border-white/20 flex items-center justify-center group-hover:scale-105 transition">
+                                <img 
+                                    src="https://learncarebd.com/wp-content/uploads/2025/12/Learncare-academy-1-scaled.png" 
+                                    alt="LearnCareBD" 
+                                    className="h-7 w-auto object-contain"
+                                />
+                            </div>
+                            <div>
+                                <p className="text-xs font-black uppercase tracking-wider text-teal-400">Learncare Academy</p>
+                                <p className="text-[9px] text-slate-400">be unstoppable</p>
+                            </div>
+                        </Link>
+                    </div>
+
+                    <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+                        <Link 
+                            href="/" 
+                            className="inline-flex items-center gap-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 px-3.5 py-1.5 text-xs font-bold transition border border-slate-700"
+                        >
+                            🏠 হোম পেজ (Home)
+                        </Link>
+                        <Link 
+                            href="/dashboard" 
+                            className="inline-flex items-center gap-1.5 rounded-xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 px-3 py-1.5 text-xs font-bold transition border border-indigo-500/30"
+                        >
+                            🎓 IELTS Academic
+                        </Link>
+                        <Link 
+                            href="/courses" 
+                            className="inline-flex items-center gap-1.5 rounded-xl bg-teal-500/10 hover:bg-teal-500/20 text-teal-300 px-3 py-1.5 text-xs font-bold transition border border-teal-500/30"
+                        >
+                            📚 Courses
+                        </Link>
+                        <a 
+                            href="https://wa.me/8801714740430" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="hidden sm:inline-flex items-center gap-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1.5 text-xs font-black transition shadow-sm"
+                        >
+                            💬 WA: 01714740430
+                        </a>
+                    </div>
+                </div>
+            </header>
+
             {/* Header Banner */}
             <div className="bg-gradient-to-br from-slate-900 via-teal-950 to-indigo-950 px-6 py-12 lg:px-12 text-white">
                 <div className="mx-auto max-w-6xl">

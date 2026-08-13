@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { Mic, Square, Loader2, ArrowLeft, ClipboardList, Sparkles, Search, Shuffle, Star, Clock3, ChevronLeft } from 'lucide-react';
 import { SPEAKING_TOPICS, type SpeakingTopic } from '../../../lib/speakingTopics';
+import { useSubscription } from '../../../components/SubscriptionGuard';
 
 type ActivePart = 'part1' | 'part2' | 'part3';
 
@@ -53,6 +54,7 @@ function ScoreBar({ label, score }: { label: string; score: number }) {
 }
 
 export default function SpeakingPracticePage() {
+    const { isTrial } = useSubscription();
     const [topicId, setTopicId] = useState(SPEAKING_TOPICS[0]?.id || '');
     const [searchTerm, setSearchTerm] = useState('');
     const [levelFilter, setLevelFilter] = useState<'all' | 'beginner' | 'intermediate' | 'advanced'>('all');
@@ -220,6 +222,10 @@ export default function SpeakingPracticePage() {
     };
 
     const submitForScoring = async () => {
+        if (isTrial) {
+            setError('ফ্রী ট্রায়াল মোডে AI মূল্যায়ন বন্ধ রয়েছে। এই ফিচারটি ব্যবহার করতে দয়া করে সাবস্ক্রিপশন নিন।');
+            return;
+        }
         if (!topic) return;
         setSubmitting(true);
         setError('');

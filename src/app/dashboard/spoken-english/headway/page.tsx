@@ -7,6 +7,7 @@ import {
     Volume2, Info, ArrowLeft, Mic, MicOff, Flame, Trophy,
 } from 'lucide-react';
 import headwayData from '../../../../../data/headway-data.json';
+import { useSubscription } from '../../../../components/SubscriptionGuard';
 
 type Unit = typeof headwayData.units[0];
 type VocabItem = { word: string; bangla: string; example: string };
@@ -138,6 +139,7 @@ function splitIntoDialogueLines(text: string): DialogueLine[] {
 }
 
 export default function SpokenEnglishPage() {
+    const { isTrial } = useSubscription();
     const [selectedUnit, setSelectedUnit] = useState<Unit>(headwayData.units[0]);
     const [plan, setPlan] = useState<string | null>(null);
     const [selectedTrack, setSelectedTrack] = useState(1);
@@ -388,8 +390,8 @@ export default function SpokenEnglishPage() {
                         <p className="mb-3 text-xs font-black uppercase tracking-widest text-slate-500">Unit বেছে নাও</p>
                         <div className="space-y-1 max-h-72 overflow-y-auto pr-1">
                             {headwayData.units.map(u => {
-                                const isFree = u.unit <= 3;
-                                const isLocked = !isFree && plan !== 'spoken' && plan !== 'ielts_spoken';
+                                const isFree = isTrial ? u.unit <= 1 : u.unit <= 3;
+                                const isLocked = isTrial ? u.unit > 1 : (!isFree && plan !== 'spoken' && plan !== 'ielts_spoken');
                                 const done = unitDoneCount(u as Unit);
                                 const isSelected = selectedUnit.unit === u.unit;
                                 return (

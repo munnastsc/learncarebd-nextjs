@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import ExamCountdown from '../../components/ExamCountdown';
 import DailyStudyPlan from '../../components/DailyStudyPlan';
+import { useSubscription } from '../../components/SubscriptionGuard';
 
 type Message = { role: 'user' | 'assistant'; content: string };
 
@@ -20,6 +21,7 @@ const MODULE_DOTS = [
 ];
 
 export default function DashboardPage() {
+    const { isTrial } = useSubscription();
     const [activeTab, setActiveTab] = useState<'cambridge' | 'mock'>('cambridge');
     const [chatInput, setChatInput] = useState('');
     const [chatLoading, setChatLoading] = useState(false);
@@ -55,15 +57,72 @@ export default function DashboardPage() {
     return (
         <div className="min-h-screen bg-[#f5f6fa]">
 
+            {/* Universal Top Navigation Header */}
+            <header className="border-b border-slate-800 bg-slate-950 px-5 py-3 text-white">
+                <div className="mx-auto max-w-7xl flex flex-wrap items-center justify-between gap-4">
+                    <div className="flex items-center gap-4">
+                        <Link href="/" className="flex items-center gap-2.5 group">
+                            <div className="bg-white px-2 py-1 rounded-lg shadow-sm border border-white/20 flex items-center justify-center group-hover:scale-105 transition">
+                                <img 
+                                    src="https://learncarebd.com/wp-content/uploads/2025/12/Learncare-academy-1-scaled.png" 
+                                    alt="LearnCareBD" 
+                                    className="h-7 w-auto object-contain"
+                                />
+                            </div>
+                            <div>
+                                <p className="text-xs font-black uppercase tracking-wider text-teal-400">Learncare Academy</p>
+                                <p className="text-[9px] text-slate-400">be unstoppable</p>
+                            </div>
+                        </Link>
+                    </div>
+
+                    <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+                        <Link 
+                            href="/" 
+                            className="inline-flex items-center gap-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 px-3.5 py-1.5 text-xs font-bold transition border border-slate-700"
+                        >
+                            🏠 হোম পেজ (Home)
+                        </Link>
+                        <Link 
+                            href="/dashboard/spoken-english" 
+                            className="inline-flex items-center gap-1.5 rounded-xl bg-teal-500/10 hover:bg-teal-500/20 text-teal-300 px-3 py-1.5 text-xs font-bold transition border border-teal-500/30"
+                        >
+                            🗣️ Spoken English
+                        </Link>
+                        <Link 
+                            href="/courses" 
+                            className="inline-flex items-center gap-1.5 rounded-xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 px-3 py-1.5 text-xs font-bold transition border border-indigo-500/30"
+                        >
+                            📚 Courses
+                        </Link>
+                        <a 
+                            href="https://wa.me/8801714740430" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="hidden sm:inline-flex items-center gap-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1.5 text-xs font-black transition shadow-sm"
+                        >
+                            💬 WA: 01714740430
+                        </a>
+                    </div>
+                </div>
+            </header>
+
             {/* Hero Banner */}
             <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900 px-5 py-10 lg:px-10">
                 <div className="mx-auto max-w-7xl">
                     <div className="flex flex-wrap items-start justify-between gap-6">
                         <div>
-                            <span className="inline-flex items-center gap-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-indigo-300 mb-3">
-                                <Sparkles size={10} />
-                                PRO ACCOUNT ACTIVE
-                            </span>
+                            {isTrial ? (
+                                <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-amber-300 mb-3 animate-pulse">
+                                    <Sparkles size={10} />
+                                    FREE TRIAL MODE (DEMO ACTIVE)
+                                </span>
+                            ) : (
+                                <span className="inline-flex items-center gap-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-indigo-300 mb-3">
+                                    <Sparkles size={10} />
+                                    PRO ACCOUNT ACTIVE
+                                </span>
+                            )}
                             <h1 className="text-3xl font-black text-white lg:text-5xl leading-tight">
                                 IELTS Preparation<br />
                                 <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Workspace</span>
@@ -99,10 +158,10 @@ export default function DashboardPage() {
                     {/* Quick stats */}
                     <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3">
                         {[
-                            { label: 'Cambridge Books', value: '12', sub: 'Books 9–20', icon: <BookMarked size={16} className="text-blue-400" /> },
-                            { label: 'Full Mock Tests', value: '10', sub: 'Tests 1–10', icon: <FlaskConical size={16} className="text-amber-400" /> },
-                            { label: 'Total Tests', value: '84', sub: '4 per book', icon: <BookOpen size={16} className="text-emerald-400" /> },
-                            { label: 'AI Evaluators', value: '2', sub: 'Writing + Speaking', icon: <Bot size={16} className="text-violet-400" /> },
+                            { label: 'Cambridge Books', value: isTrial ? 'Book 9' : '12', sub: isTrial ? '11 Premium Books Locked' : 'Books 9–20', icon: <BookMarked size={16} className="text-blue-400" /> },
+                            { label: 'Full Mock Tests', value: isTrial ? '0' : '10', sub: isTrial ? '10 Premium Tests Locked' : 'Tests 1–10', icon: <FlaskConical size={16} className="text-amber-400" /> },
+                            { label: 'Total Tests', value: isTrial ? '4' : '84', sub: isTrial ? '80 Premium Tests Locked' : '4 per book', icon: <BookOpen size={16} className="text-emerald-400" /> },
+                            { label: 'AI Evaluators', value: isTrial ? 'Demo' : '2', sub: isTrial ? 'AI evaluations require upgrade' : 'Writing + Speaking', icon: <Bot size={16} className="text-violet-400" /> },
                         ].map((s) => (
                             <div key={s.label} className="rounded-xl border border-white/5 bg-white/5 backdrop-blur-sm px-4 py-3">
                                 <div className="flex items-center gap-2 mb-1">{s.icon}<p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">{s.label}</p></div>
@@ -423,22 +482,31 @@ export default function DashboardPage() {
                         </div>
 
                         <div className="border-t border-slate-100 p-4">
-                            <div className="flex gap-2">
-                                <input
-                                    value={chatInput}
-                                    onChange={(e) => setChatInput(e.target.value)}
-                                    onKeyDown={(e) => { if (e.key === 'Enter') sendChat(); }}
-                                    placeholder="Ask about IELTS..."
-                                    className="flex-1 rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm outline-none focus:border-blue-400 focus:bg-white transition"
-                                />
-                                <button
-                                    onClick={sendChat}
-                                    disabled={!chatInput.trim() || chatLoading}
-                                    className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 text-white hover:bg-blue-500 disabled:opacity-40 transition"
-                                >
-                                    <SendHorizonal size={16} />
-                                </button>
-                            </div>
+                            {isTrial ? (
+                                <div className="rounded-xl border border-amber-200 bg-amber-50/80 p-3 text-center">
+                                    <p className="text-xs font-bold text-slate-800">🔒 AI Coach Chat শুধুমাত্র পেইড সাবস্ক্রিপশনে সক্রিয়</p>
+                                    <Link href="/dashboard/payment?required=ielts_spoken" className="mt-1.5 inline-block text-[11px] font-black text-indigo-600 hover:underline">
+                                        প্ল্যান আপগ্রেড করুন ↗
+                                    </Link>
+                                </div>
+                            ) : (
+                                <div className="flex gap-2">
+                                    <input
+                                        value={chatInput}
+                                        onChange={(e) => setChatInput(e.target.value)}
+                                        onKeyDown={(e) => { if (e.key === 'Enter') sendChat(); }}
+                                        placeholder="Ask about IELTS..."
+                                        className="flex-1 rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm outline-none focus:border-blue-400 focus:bg-white transition"
+                                    />
+                                    <button
+                                        onClick={sendChat}
+                                        disabled={!chatInput.trim() || chatLoading}
+                                        className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 text-white hover:bg-blue-500 disabled:opacity-40 transition"
+                                    >
+                                        <SendHorizonal size={16} />
+                                    </button>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>

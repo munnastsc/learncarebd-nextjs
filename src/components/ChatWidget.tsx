@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { Bot, MessageSquare, Send, X, Mic, MicOff, Volume2, ImageIcon, Infinity } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import { useSubscription } from './SubscriptionGuard';
 
 type Message = {
     role: 'user' | 'assistant';
@@ -12,7 +13,7 @@ type Message = {
 
 type GeminiHistory = { role: 'user' | 'model'; parts: Array<{ text: string }> };
 
-const FREE_LIMIT = 10;
+const FREE_LIMIT = 3;
 
 function getFreeCount(): number {
     if (typeof window === 'undefined') return 0;
@@ -58,6 +59,7 @@ function stripMarkdown(t: string) {
 }
 
 export default function ChatWidget() {
+    const { isTrial } = useSubscription();
     const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState<Message[]>([]);
@@ -201,7 +203,7 @@ export default function ChatWidget() {
     }
 
     function isLimitReached() {
-        return dailyCount >= FREE_LIMIT && !isUnlimited;
+        return isTrial && dailyCount >= FREE_LIMIT;
     }
 
     async function verifyUnlimited() {

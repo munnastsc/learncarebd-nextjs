@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '../../../../lib/prisma';
 import { listLocalPaymentRequests, updateLocalPaymentStatus } from '../../../../lib/localStore';
+import { notifyStudentApproval } from '../../../../lib/email';
 
 type PatchBody = {
     id?: string;
@@ -58,6 +59,12 @@ export async function PATCH(request: Request) {
                         plan,
                         subscriptionEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000)
                     }
+                });
+
+                // Send confirmation email to student
+                await notifyStudentApproval({
+                    email: req.email,
+                    plan: req.plan || 'Spoken English',
                 });
             } else if (body.status === 'REJECTED' || body.status === 'PENDING') {
                 // If rejected, remove subscription access

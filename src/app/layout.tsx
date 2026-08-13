@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import ChatWidget from '../components/ChatWidget';
+import WhatsAppFloating from '../components/WhatsAppFloating';
 
 export const metadata: Metadata = {
     title: 'LearnCareBD AI - IELTS & Spoken English Academy',
@@ -17,6 +18,7 @@ export default function RootLayout({
             <body suppressHydrationWarning className="antialiased bg-slate-50 text-slate-900">
                 {children}
                 <ChatWidget />
+                <WhatsAppFloating />
             </body>
         </html>
     );

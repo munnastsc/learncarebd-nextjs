@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { prisma } from '../../../../lib/prisma';
 import { createLocalPaymentRequest, findLocalPaymentByTransaction } from '../../../../lib/localStore';
 import { sendWhatsApp } from '../../../../lib/whatsapp';
+import { notifyAdminNewOrder } from '../../../../lib/email';
 
 const PLAN_LABELS: Record<string, string> = {
     spoken: 'Spoken English (৳199)',
@@ -89,7 +90,7 @@ export async function POST(request: Request) {
                 data: { email, transactionId, amount, plan, status: 'PENDING' },
             });
 
-            // Notify admin via WhatsApp
+            // Notify admin via WhatsApp and Email
             await sendWhatsApp(
 `🔔 নতুন Order!
 
@@ -100,6 +101,13 @@ export async function POST(request: Request) {
 
 Approve: ${process.env.NEXT_PUBLIC_APP_URL || 'https://iltes.vercel.app'}/admin/orders`
             );
+
+            await notifyAdminNewOrder({
+                email,
+                plan: PLAN_LABELS[plan] || plan,
+                amount,
+                transactionId,
+            });
 
             return NextResponse.json({ success: true, id: row.id, status: row.status, source: 'database' });
         } catch {

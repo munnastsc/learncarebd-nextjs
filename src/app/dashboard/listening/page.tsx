@@ -1,9 +1,17 @@
+'use client';
+
 import Link from 'next/link';
-import { Headphones, ChevronLeft, Play, Lock } from 'lucide-react';
+import { useState } from 'react';
+import { Headphones, ChevronLeft, Play, Lock, Sparkles, X, CreditCard } from 'lucide-react';
 import { getAvailableTests } from '../../../lib/listeningData';
 import { getSimpleListeningTest } from '../../../lib/simpleListeningData';
+import { useSubscription } from '../../../components/SubscriptionGuard';
+import { useRouter } from 'next/navigation';
 
 export default function ListeningPage() {
+    const router = useRouter();
+    const { isTrial } = useSubscription();
+    const [showLockModal, setShowLockModal] = useState(false);
     const tests = getAvailableTests();
 
     const byBook: Record<number, number[]> = {};
@@ -26,8 +34,13 @@ export default function ListeningPage() {
     const youtubeBooks: number[] = [];
     const totalTests = tests.length + youtubeBooks.length * 4;
 
+    const handleLockedClick = (e: React.MouseEvent) => {
+        e.preventDefault();
+        setShowLockModal(true);
+    };
+
     return (
-        <div className="min-h-screen bg-[#f5f6fa]">
+        <div className="min-h-screen bg-[#f5f6fa] relative">
             {/* Header */}
             <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 px-5 py-10 lg:px-10">
                 <div className="mx-auto max-w-4xl">
@@ -39,7 +52,14 @@ export default function ListeningPage() {
                             <Headphones size={26} className="text-blue-400" />
                         </div>
                         <div>
-                            <h1 className="text-3xl font-black text-white">Listening Practice</h1>
+                            <h1 className="text-3xl font-black text-white flex items-center gap-2">
+                                Listening Practice
+                                {isTrial && (
+                                    <span className="text-[10px] font-black uppercase tracking-wider bg-amber-500/20 border border-amber-400/30 px-2 py-0.5 rounded text-amber-300">
+                                        Trial Mode
+                                    </span>
+                                )}
+                            </h1>
                             <p className="text-slate-400 text-sm mt-1">Cambridge IELTS 9–20 · Audio · 40 Questions per test</p>
                         </div>
                     </div>
@@ -60,7 +80,6 @@ export default function ListeningPage() {
 
             {/* Book list */}
             <div className="mx-auto max-w-4xl px-5 py-8 space-y-4">
-                {/* cam9-15: MP3 quiz mode */}
                 {mp3Books.map(book => {
                     const available = byBook[book] ?? (book >= 16 && book <= 20 ? [1, 2, 3, 4] : undefined);
                     if (!available) {
@@ -81,21 +100,58 @@ export default function ListeningPage() {
                             </div>
                         );
                     }
+
+                    // In Trial Mode, Books 9 through 15 are free, Books 16-20 require subscription
+                    const isBookLocked = isTrial && book > 15;
+
                     return (
-                        <div key={book} className="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden">
-                            <div className="flex items-center gap-3 px-6 py-4 border-b border-slate-100 bg-gradient-to-r from-blue-50 to-indigo-50">
-                                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-100">
-                                    <Headphones size={18} className="text-blue-700" />
-                                </div>
-                                <div className="flex-1">
-                                    <p className="font-black text-slate-900">Cambridge IELTS {book}</p>
-                                    <p className="text-xs text-slate-500">{available.length} tests · 4 sections each · 40 questions</p>
+                        <div key={book} className={`rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden ${isBookLocked ? 'border-amber-250 bg-amber-50/5' : ''}`}>
+                            <div className={`flex items-center justify-between px-6 py-4 border-b border-slate-100 ${isBookLocked ? 'bg-gradient-to-r from-amber-50/40 to-slate-50/50' : 'bg-gradient-to-r from-blue-50 to-indigo-50'}`}>
+                                <div className="flex items-center gap-3">
+                                    <div className={`flex h-9 w-9 items-center justify-center rounded-xl ${isBookLocked ? 'bg-amber-100 text-amber-700' : 'bg-blue-100 text-blue-750'}`}>
+                                        {isBookLocked ? <Lock size={18} /> : <Headphones size={18} />}
+                                    </div>
+                                    <div className="flex-1">
+                                        <p className="font-black text-slate-900 flex items-center gap-2">
+                                            Cambridge IELTS {book}
+                                            {isBookLocked && (
+                                                <span className="text-[9px] font-black uppercase bg-amber-500/20 text-amber-700 border border-amber-300/30 px-1.5 py-0.5 rounded">
+                                                    Premium
+                                                </span>
+                                            )}
+                                        </p>
+                                        <p className="text-xs text-slate-500">{available.length} tests · 4 sections each · 40 questions</p>
+                                    </div>
                                 </div>
                             </div>
                             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-5">
                                 {[1, 2, 3, 4].map(test => {
                                     const ready = available.includes(test);
-                                    return ready ? (
+                                    if (!ready) {
+                                        return (
+                                            <div key={test} className="flex flex-col items-center gap-2 rounded-xl border border-slate-100 bg-slate-50 p-5 opacity-40">
+                                                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white border border-slate-200">
+                                                    <Lock size={16} className="text-slate-400" />
+                                                </div>
+                                                <p className="text-sm font-black text-slate-500">Test {test}</p>
+                                                <p className="text-[11px] text-slate-400">Coming soon</p>
+                                            </div>
+                                        );
+                                    }
+
+                                    return isBookLocked ? (
+                                        <button
+                                            key={test}
+                                            onClick={handleLockedClick}
+                                            className="group flex flex-col items-center gap-2 rounded-xl border border-amber-100 bg-amber-50/20 p-5 hover:bg-amber-50 hover:border-amber-400 hover:shadow-lg transition-all duration-200"
+                                        >
+                                            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white border border-amber-200 transition shadow-sm text-amber-600">
+                                                <Lock size={18} />
+                                            </div>
+                                            <p className="text-sm font-black text-slate-700">Test {test}</p>
+                                            <span className="text-[9px] font-black uppercase text-amber-600">Locked</span>
+                                        </button>
+                                    ) : (
                                         <Link
                                             key={test}
                                             href={`/dashboard/listening/${book}/${test}`}
@@ -107,52 +163,68 @@ export default function ListeningPage() {
                                             <p className="text-sm font-black text-slate-900 group-hover:text-white transition">Test {test}</p>
                                             <p className="text-[11px] text-slate-500 group-hover:text-blue-200 transition">40 questions</p>
                                         </Link>
-                                    ) : (
-                                        <div key={test} className="flex flex-col items-center gap-2 rounded-xl border border-slate-100 bg-slate-50 p-5 opacity-40">
-                                            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white border border-slate-200">
-                                                <Lock size={16} className="text-slate-400" />
-                                            </div>
-                                            <p className="text-sm font-black text-slate-500">Test {test}</p>
-                                            <p className="text-[11px] text-slate-400">Coming soon</p>
-                                        </div>
                                     );
                                 })}
                             </div>
                         </div>
                     );
                 })}
+            </div>
 
-                {/* cam16-20: YouTube mode */}
-                {youtubeBooks.map(book => (
-                    <div key={book} className="rounded-2xl border border-red-100 bg-white shadow-sm overflow-hidden">
-                        <div className="flex items-center gap-3 px-6 py-4 border-b border-red-50 bg-gradient-to-r from-red-50 to-rose-50">
-                            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-red-100">
-                                <Play size={18} className="text-red-600" />
+            {/* Premium Lock Modal */}
+            {showLockModal && (
+                <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4 z-50 animate-fade-in">
+                    <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 max-w-md w-full shadow-2xl text-center relative">
+                        <button 
+                            onClick={() => setShowLockModal(false)}
+                            className="absolute top-4 right-4 text-slate-400 hover:text-white transition"
+                        >
+                            <X size={18} />
+                        </button>
+                        
+                        <div className="flex justify-center mb-6">
+                            <div className="relative">
+                                <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-amber-600 to-indigo-500 blur opacity-45 animate-pulse" />
+                                <div className="relative flex h-16 w-16 items-center justify-center rounded-full bg-slate-950 border border-slate-850 text-amber-400">
+                                    <Lock size={28} />
+                                </div>
                             </div>
-                            <div className="flex-1">
-                                <p className="font-black text-slate-900">Cambridge IELTS {book}</p>
-                                <p className="text-xs text-slate-500">4 tests · YouTube audio · Questions & answers</p>
-                            </div>
-                            <span className="rounded-full bg-red-100 px-3 py-1 text-xs font-bold text-red-600">YouTube</span>
                         </div>
-                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-5">
-                            {[1, 2, 3, 4].map(test => (
-                                <Link
-                                    key={test}
-                                    href={`/dashboard/book/${book}?module=Listening&test=${test}`}
-                                    className="group flex flex-col items-center gap-2 rounded-xl border border-red-100 bg-red-50 p-5 hover:bg-red-600 hover:border-red-600 hover:shadow-lg hover:shadow-red-200 transition-all duration-200"
-                                >
-                                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white group-hover:bg-red-500 border border-red-200 group-hover:border-transparent transition shadow-sm">
-                                        <Play size={18} className="text-red-600 group-hover:text-white transition ml-0.5" />
-                                    </div>
-                                    <p className="text-sm font-black text-slate-900 group-hover:text-white transition">Test {test}</p>
-                                    <p className="text-[11px] text-slate-500 group-hover:text-red-200 transition">40 questions</p>
-                                </Link>
-                            ))}
+
+                        <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-amber-300 mb-4 animate-bounce">
+                            <Sparkles size={10} />
+                            Premium Material Locked
+                        </span>
+
+                        <h2 className="text-xl font-black text-white mb-3">
+                            এই টেস্টটি প্রিমিয়াম মেম্বারদের জন্য!
+                        </h2>
+
+                        <p className="text-xs text-slate-400 leading-relaxed mb-8">
+                            আপনি বর্তমানে ফ্রী ট্রায়াল মোডে আছেন। ট্রায়াল ইউজাররা শুধুমাত্র **Cambridge IELTS Book 9** এর টেস্টগুলো সম্পূর্ণ ফ্রিতে নিয়ে প্র্যাকটিস করতে পারবেন। সমস্ত ক্যামব্রিজ বুক (৯-২০), ফুল লেংথ মক টেস্ট এবং এআই মূল্যায়ন আনলক করতে দয়া করে সাবস্ক্রিপশন প্ল্যানটি অ্যাক্টিভেট করুন।
+                        </p>
+
+                        <div className="grid gap-3 sm:grid-cols-2">
+                            <button
+                                onClick={() => {
+                                    setShowLockModal(false);
+                                    router.push('/dashboard/payment');
+                                }}
+                                className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 px-5 py-3 text-xs font-bold text-slate-950 hover:brightness-110 transition shadow-lg shadow-amber-500/20"
+                            >
+                                <CreditCard size={14} /> সাবস্ক্রিপশন নিন ↗
+                            </button>
+
+                            <button
+                                onClick={() => setShowLockModal(false)}
+                                className="flex items-center justify-center gap-2 rounded-xl border border-slate-800 bg-slate-950/60 px-5 py-3 text-xs font-bold text-slate-400 hover:text-white hover:bg-slate-900 transition"
+                            >
+                                বন্ধ করুন
+                            </button>
                         </div>
                     </div>
-                ))}
-            </div>
+                </div>
+            )}
         </div>
     );
 }
