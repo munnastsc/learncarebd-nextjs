@@ -17,7 +17,7 @@ export default async function BooksGallery() {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* The original hardcoded 3000 words book - keeping it visible in the gallery */}
-                    <Link href="/3000-words" className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-xl transition group flex flex-col block">
+                    <Link href="/books/3000-words" className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-xl transition group flex flex-col block">
                         <div className="bg-slate-100 aspect-[4/3] flex items-center justify-center p-8">
                             <img src="/book-cover.png" alt="3000 Words" className="h-full object-contain drop-shadow-2xl group-hover:scale-105 transition duration-500" />
                         </div>
