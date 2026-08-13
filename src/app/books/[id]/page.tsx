@@ -9,8 +9,9 @@ export default async function DynamicBookPage({ params }: { params: Promise<{ id
         where: { slug: (await params).id }
     });
 
-    // For the original Spoken book page (hardcoded content with 3000 words)
-    if ((await params).id === '3000-words') {
+    const decodedId = decodeURIComponent((await params).id);
+    // For the original Spoken book page (hardcoded content with 3000 words or Bengali slug)
+    if (decodedId === '3000-words' || decodedId === 'শিখতেই-হবে-৩০০০-শব্দ') {
         return <SpokenBookLanding />;
     }
 
