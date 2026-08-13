@@ -1,6 +1,6 @@
 import { prisma } from '../../lib/prisma';
 import Link from 'next/link';
-import { ArrowRight, BookOpen } from 'lucide-react';
+import { ArrowRight, BookOpen, PlayCircle } from 'lucide-react';
 
 export default async function BooksGallery() {
     const books = await prisma.book.findMany({
@@ -12,7 +12,10 @@ export default async function BooksGallery() {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">Our <span className="text-brand">Books</span></h1>
-                    <p className="text-slate-600 max-w-2xl mx-auto text-lg">Browse our collection of highly effective books for spoken English, IELTS, and vocabulary building.</p>
+                    <p className="text-slate-600 max-w-2xl mx-auto text-lg mb-8">Browse our collection of highly effective books for spoken English, IELTS, and vocabulary building.</p>
+                    <Link href="/3000-words" className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 hover:bg-indigo-200 px-6 py-3 rounded-full font-bold transition">
+                        <PlayCircle size={20} /> Access 3000 Words Audio Support App
+                    </Link>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

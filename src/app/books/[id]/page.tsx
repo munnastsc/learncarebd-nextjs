@@ -1,5 +1,5 @@
 import { prisma } from '../../../lib/prisma';
-import SpokenBookDetails from './SpokenBookDetails';
+import SpokenBookLanding from './SpokenBookLanding';
 import { notFound } from 'next/navigation';
 import GenericBookDetails from './GenericBookDetails';
 
@@ -11,7 +11,7 @@ export default async function DynamicBookPage({ params }: { params: Promise<{ id
 
     // For the original Spoken book page (hardcoded content with 3000 words)
     if ((await params).id === '3000-words') {
-        return <SpokenBookDetails />;
+        return <SpokenBookLanding />;
     }
 
     if (!book) {
