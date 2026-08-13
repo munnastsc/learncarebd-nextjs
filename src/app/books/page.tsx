@@ -17,7 +17,7 @@ export default async function BooksGallery() {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* The original hardcoded 3000 words book - keeping it visible in the gallery */}
-                    <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-xl transition group flex flex-col">
+                    <Link href="/3000-words" className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-xl transition group flex flex-col block">
                         <div className="bg-slate-100 aspect-[4/3] flex items-center justify-center p-8">
                             <img src="/book-cover.png" alt="3000 Words" className="h-full object-contain drop-shadow-2xl group-hover:scale-105 transition duration-500" />
                         </div>
@@ -29,16 +29,16 @@ export default async function BooksGallery() {
                             <p className="text-slate-500 text-sm mb-6 flex-1">ইংরেজিতে কথা বলার জন্য প্রয়োজনীয় ৩০০০ শব্দের চমৎকার কালেকশন।</p>
                             <div className="flex items-center justify-between mt-auto">
                                 <div className="text-accent font-black text-2xl">৳ ৪০০</div>
-                                <Link href="/books/3000-words" className="bg-brand hover:bg-brand-dark text-white px-5 py-2.5 rounded-lg text-sm font-bold transition flex items-center gap-2">
+                                <span className="bg-brand hover:bg-brand-dark text-white px-5 py-2.5 rounded-lg text-sm font-bold transition flex items-center gap-2">
                                     View Details <ArrowRight size={16} />
-                                </Link>
+                                </span>
                             </div>
                         </div>
-                    </div>
+                    </Link>
 
                     {/* Dynamic books from DB */}
                     {books.map(book => (
-                        <div key={book.id} className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-xl transition group flex flex-col">
+                        <Link key={book.id} href={`/books/${book.slug}`} className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-xl transition group flex flex-col block">
                             <div className="bg-slate-100 aspect-[4/3] flex items-center justify-center p-8 relative">
                                 {!book.isAvailable && (
                                     <span className="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">Out of Stock</span>
@@ -55,12 +55,12 @@ export default async function BooksGallery() {
                                             <span className="text-slate-400 line-through text-sm">৳ {book.originalPrice}</span>
                                         )}
                                     </div>
-                                    <Link href={`/books/${book.slug}`} className="bg-brand hover:bg-brand-dark text-white px-5 py-2.5 rounded-lg text-sm font-bold transition flex items-center gap-2">
+                                    <span className="bg-brand hover:bg-brand-dark text-white px-5 py-2.5 rounded-lg text-sm font-bold transition flex items-center gap-2">
                                         View Details <ArrowRight size={16} />
-                                    </Link>
+                                    </span>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>
