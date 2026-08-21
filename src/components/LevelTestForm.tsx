@@ -146,7 +146,7 @@ export default function LevelTestForm() {
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
             {/* Progress Bar */}
             <div className="bg-slate-100 h-2 w-full">
-                <div className="bg-indigo-600 h-full transition-all duration-300" style={{ width: \`\${(step / 6) * 100}%\` }}></div>
+                <div className="bg-indigo-600 h-full transition-all duration-300" style={{ width: `${(step / 6) * 100}%` }}></div>
             </div>
 
             <div className="p-8 md:p-12">
