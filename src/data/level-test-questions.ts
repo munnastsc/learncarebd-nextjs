@@ -26,7 +26,7 @@ export interface LiveReadingPassage {
 export const grammarQuestions: Question[] = [
     {
         "id": "g1",
-        "question": "I ___ to the store yesterday.",
+        "question": "I ___ to the market yesterday.",
         "options": [
             "go",
             "went",
@@ -37,17 +37,28 @@ export const grammarQuestions: Question[] = [
     },
     {
         "id": "g2",
-        "question": "She is interested ___ learning English.",
+        "question": "She ___ playing tennis right now.",
         "options": [
-            "in",
-            "on",
-            "at",
-            "with"
+            "is",
+            "are",
+            "am",
+            "be"
         ],
-        "answer": "in"
+        "answer": "is"
     },
     {
         "id": "g3",
+        "question": "They have ___ in this city for 10 years.",
+        "options": [
+            "live",
+            "lives",
+            "lived",
+            "living"
+        ],
+        "answer": "lived"
+    },
+    {
+        "id": "g4",
         "question": "If it rains, we ___ at home.",
         "options": [
             "stay",
@@ -58,521 +69,510 @@ export const grammarQuestions: Question[] = [
         "answer": "will stay"
     },
     {
-        "id": "g4",
-        "question": "They ___ here for three years.",
-        "options": [
-            "are living",
-            "lived",
-            "have lived",
-            "live"
-        ],
-        "answer": "have lived"
-    },
-    {
         "id": "g5",
-        "question": "He is the man ___ car was stolen.",
+        "question": "He is the boy ___ won the first prize.",
         "options": [
             "who",
             "whom",
             "whose",
             "which"
         ],
-        "answer": "whose"
+        "answer": "who"
     },
     {
         "id": "g6",
-        "question": "Grammar Question 6: Select the correct word to complete the sentence.",
+        "question": "I haven't seen him ___ last month.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "for",
+            "since",
+            "from",
+            "in"
         ],
-        "answer": "Option A"
+        "answer": "since"
     },
     {
         "id": "g7",
-        "question": "Grammar Question 7: Select the correct word to complete the sentence.",
+        "question": "She can speak English fluently, ___ she?",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "can",
+            "can't",
+            "does",
+            "doesn't"
         ],
-        "answer": "Option A"
+        "answer": "can't"
     },
     {
         "id": "g8",
-        "question": "Grammar Question 8: Select the correct word to complete the sentence.",
+        "question": "___ you ever been to London?",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "Have",
+            "Has",
+            "Did",
+            "Are"
         ],
-        "answer": "Option A"
+        "answer": "Have"
     },
     {
         "id": "g9",
-        "question": "Grammar Question 9: Select the correct word to complete the sentence.",
+        "question": "The book is ___ the table.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "in",
+            "on",
+            "at",
+            "over"
         ],
-        "answer": "Option A"
+        "answer": "on"
     },
     {
         "id": "g10",
-        "question": "Grammar Question 10: Select the correct word to complete the sentence.",
+        "question": "I look forward to ___ you soon.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "see",
+            "seeing",
+            "saw",
+            "seen"
         ],
-        "answer": "Option A"
+        "answer": "seeing"
     },
     {
         "id": "g11",
-        "question": "Grammar Question 11: Select the correct word to complete the sentence.",
+        "question": "He doesn't have ___ money left.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "some",
+            "any",
+            "many",
+            "few"
         ],
-        "answer": "Option A"
+        "answer": "any"
     },
     {
         "id": "g12",
-        "question": "Grammar Question 12: Select the correct word to complete the sentence.",
+        "question": "She usually ___ up at 6 AM.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "wake",
+            "wakes",
+            "woke",
+            "waking"
         ],
-        "answer": "Option A"
+        "answer": "wakes"
     },
     {
         "id": "g13",
-        "question": "Grammar Question 13: Select the correct word to complete the sentence.",
+        "question": "Neither John ___ Mary came to the party.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "or",
+            "nor",
+            "and",
+            "but"
         ],
-        "answer": "Option A"
+        "answer": "nor"
     },
     {
         "id": "g14",
-        "question": "Grammar Question 14: Select the correct word to complete the sentence.",
+        "question": "By this time next year, I ___ my degree.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "will finish",
+            "will have finished",
+            "finished",
+            "finish"
         ],
-        "answer": "Option A"
+        "answer": "will have finished"
     },
     {
         "id": "g15",
-        "question": "Grammar Question 15: Select the correct word to complete the sentence.",
+        "question": "It's time you ___ to bed.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "go",
+            "went",
+            "gone",
+            "going"
         ],
-        "answer": "Option A"
+        "answer": "went"
     },
     {
         "id": "g16",
-        "question": "Grammar Question 16: Select the correct word to complete the sentence.",
+        "question": "I prefer tea ___ coffee.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "than",
+            "to",
+            "over",
+            "from"
         ],
-        "answer": "Option A"
+        "answer": "to"
     },
     {
         "id": "g17",
-        "question": "Grammar Question 17: Select the correct word to complete the sentence.",
+        "question": "He is ___ honest man.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "a",
+            "an",
+            "the",
+            "no article"
         ],
-        "answer": "Option A"
+        "answer": "an"
     },
     {
         "id": "g18",
-        "question": "Grammar Question 18: Select the correct word to complete the sentence.",
+        "question": "They made him ___ the room.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "clean",
+            "to clean",
+            "cleaned",
+            "cleaning"
         ],
-        "answer": "Option A"
+        "answer": "clean"
     },
     {
         "id": "g19",
-        "question": "Grammar Question 19: Select the correct word to complete the sentence.",
+        "question": "You had better ___ a doctor.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "consult",
+            "to consult",
+            "consulted",
+            "consulting"
         ],
-        "answer": "Option A"
+        "answer": "consult"
     },
     {
         "id": "g20",
-        "question": "Grammar Question 20: Select the correct word to complete the sentence.",
+        "question": "No sooner had he left ___ it started raining.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "when",
+            "then",
+            "than",
+            "and"
         ],
-        "answer": "Option A"
+        "answer": "than"
     },
     {
         "id": "g21",
-        "question": "Grammar Question 21: Select the correct word to complete the sentence.",
+        "question": "I wish I ___ a bird.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "was",
+            "were",
+            "am",
+            "be"
         ],
-        "answer": "Option A"
+        "answer": "were"
     },
     {
         "id": "g22",
-        "question": "Grammar Question 22: Select the correct word to complete the sentence.",
+        "question": "He works hard lest he ___ fail.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "should",
+            "would",
+            "may",
+            "can"
         ],
-        "answer": "Option A"
+        "answer": "should"
     },
     {
         "id": "g23",
-        "question": "Grammar Question 23: Select the correct word to complete the sentence.",
+        "question": "Despite ___ sick, he went to work.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "he was",
+            "being",
+            "of being",
+            "was"
         ],
-        "answer": "Option A"
+        "answer": "being"
     },
     {
         "id": "g24",
-        "question": "Grammar Question 24: Select the correct word to complete the sentence.",
+        "question": "Let's go for a walk, ___?",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "shall we",
+            "will you",
+            "don't we",
+            "aren't we"
         ],
-        "answer": "Option A"
+        "answer": "shall we"
     },
     {
         "id": "g25",
-        "question": "Grammar Question 25: Select the correct word to complete the sentence.",
+        "question": "Do you know where ___?",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "does he live",
+            "he lives",
+            "did he live",
+            "he live"
         ],
-        "answer": "Option A"
+        "answer": "he lives"
     },
     {
         "id": "g26",
-        "question": "Grammar Question 26: Select the correct word to complete the sentence.",
+        "question": "He is so weak that he ___ walk.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "can",
+            "cannot",
+            "could",
+            "could not"
         ],
-        "answer": "Option A"
+        "answer": "cannot"
     },
     {
         "id": "g27",
-        "question": "Grammar Question 27: Select the correct word to complete the sentence.",
+        "question": "I am used to ___ early.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "wake up",
+            "waking up",
+            "woke up",
+            "waken up"
         ],
-        "answer": "Option A"
+        "answer": "waking up"
     },
     {
         "id": "g28",
-        "question": "Grammar Question 28: Select the correct word to complete the sentence.",
+        "question": "If I had known, I ___ helped you.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "will have",
+            "would have",
+            "had",
+            "have"
         ],
-        "answer": "Option A"
+        "answer": "would have"
     },
     {
         "id": "g29",
-        "question": "Grammar Question 29: Select the correct word to complete the sentence.",
+        "question": "The scenery of Kashmir ___ very beautiful.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "is",
+            "are",
+            "were",
+            "have been"
         ],
-        "answer": "Option A"
+        "answer": "is"
     },
     {
         "id": "g30",
-        "question": "Grammar Question 30: Select the correct word to complete the sentence.",
+        "question": "Fifty miles ___ a long distance.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "is",
+            "are",
+            "were",
+            "have"
         ],
-        "answer": "Option A"
+        "answer": "is"
     },
     {
         "id": "g31",
-        "question": "Grammar Question 31: Select the correct word to complete the sentence.",
+        "question": "One of the boys ___ absent yesterday.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "was",
+            "were",
+            "is",
+            "are"
         ],
-        "answer": "Option A"
+        "answer": "was"
     },
     {
         "id": "g32",
-        "question": "Grammar Question 32: Select the correct word to complete the sentence.",
+        "question": "Each of the girls ___ given a prize.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "was",
+            "were",
+            "have",
+            "are"
         ],
-        "answer": "Option A"
+        "answer": "was"
     },
     {
         "id": "g33",
-        "question": "Grammar Question 33: Select the correct word to complete the sentence.",
+        "question": "A number of students ___ present.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "is",
+            "are",
+            "was",
+            "has"
         ],
-        "answer": "Option A"
+        "answer": "are"
     },
     {
         "id": "g34",
-        "question": "Grammar Question 34: Select the correct word to complete the sentence.",
+        "question": "The number of students ___ fifty.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "is",
+            "are",
+            "were",
+            "have"
         ],
-        "answer": "Option A"
+        "answer": "is"
     },
     {
         "id": "g35",
-        "question": "Grammar Question 35: Select the correct word to complete the sentence.",
+        "question": "Bread and butter ___ my favorite breakfast.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "is",
+            "are",
+            "were",
+            "have"
         ],
-        "answer": "Option A"
+        "answer": "is"
     },
     {
         "id": "g36",
-        "question": "Grammar Question 36: Select the correct word to complete the sentence.",
+        "question": "Slow and steady ___ the race.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "win",
+            "wins",
+            "won",
+            "winning"
         ],
-        "answer": "Option A"
+        "answer": "wins"
     },
     {
         "id": "g37",
-        "question": "Grammar Question 37: Select the correct word to complete the sentence.",
+        "question": "Time and tide ___ for none.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "wait",
+            "waits",
+            "waited",
+            "waiting"
         ],
-        "answer": "Option A"
+        "answer": "wait"
     },
     {
         "id": "g38",
-        "question": "Grammar Question 38: Select the correct word to complete the sentence.",
+        "question": "It is I who ___ to blame.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "is",
+            "am",
+            "are",
+            "was"
         ],
-        "answer": "Option A"
+        "answer": "am"
     },
     {
         "id": "g39",
-        "question": "Grammar Question 39: Select the correct word to complete the sentence.",
+        "question": "He as well as his friends ___ guilty.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "is",
+            "are",
+            "were",
+            "have"
         ],
-        "answer": "Option A"
+        "answer": "is"
     },
     {
         "id": "g40",
-        "question": "Grammar Question 40: Select the correct word to complete the sentence.",
+        "question": "Not only he but also his brothers ___ present.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "was",
+            "were",
+            "is",
+            "has"
         ],
-        "answer": "Option A"
+        "answer": "were"
     },
     {
         "id": "g41",
-        "question": "Grammar Question 41: Select the correct word to complete the sentence.",
+        "question": "Either you or he ___ to go.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "has",
+            "have",
+            "are",
+            "were"
         ],
-        "answer": "Option A"
+        "answer": "has"
     },
     {
         "id": "g42",
-        "question": "Grammar Question 42: Select the correct word to complete the sentence.",
+        "question": "Neither of them ___ qualified.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "is",
+            "are",
+            "were",
+            "have"
         ],
-        "answer": "Option A"
+        "answer": "is"
     },
     {
         "id": "g43",
-        "question": "Grammar Question 43: Select the correct word to complete the sentence.",
+        "question": "Many a man ___ died in the war.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "has",
+            "have",
+            "are",
+            "were"
         ],
-        "answer": "Option A"
+        "answer": "has"
     },
     {
         "id": "g44",
-        "question": "Grammar Question 44: Select the correct word to complete the sentence.",
+        "question": "More than one person ___ involved.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "was",
+            "were",
+            "are",
+            "have"
         ],
-        "answer": "Option A"
+        "answer": "was"
     },
     {
         "id": "g45",
-        "question": "Grammar Question 45: Select the correct word to complete the sentence.",
+        "question": "Half of the mangoes ___ rotten.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "is",
+            "are",
+            "was",
+            "has"
         ],
-        "answer": "Option A"
+        "answer": "are"
     },
     {
         "id": "g46",
-        "question": "Grammar Question 46: Select the correct word to complete the sentence.",
+        "question": "Two-thirds of the work ___ been done.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "has",
+            "have",
+            "are",
+            "were"
         ],
-        "answer": "Option A"
+        "answer": "has"
     },
     {
         "id": "g47",
-        "question": "Grammar Question 47: Select the correct word to complete the sentence.",
+        "question": "The jury ___ divided in their opinion.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "was",
+            "were",
+            "is",
+            "has"
         ],
-        "answer": "Option A"
+        "answer": "were"
     },
     {
         "id": "g48",
-        "question": "Grammar Question 48: Select the correct word to complete the sentence.",
+        "question": "The committee ___ formed last year.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "was",
+            "were",
+            "are",
+            "have"
         ],
-        "answer": "Option A"
+        "answer": "was"
     },
     {
         "id": "g49",
-        "question": "Grammar Question 49: Select the correct word to complete the sentence.",
+        "question": "Information ___ power.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "is",
+            "are",
+            "were",
+            "have"
         ],
-        "answer": "Option A"
+        "answer": "is"
     },
     {
         "id": "g50",
-        "question": "Grammar Question 50: Select the correct word to complete the sentence.",
+        "question": "The police ___ searching for the thief.",
         "options": [
-            "Option A",
-            "Option B",
-            "Option C",
-            "Option D"
+            "is",
+            "are",
+            "was",
+            "has"
         ],
-        "answer": "Option A"
+        "answer": "are"
     }
 ];
 
@@ -589,386 +589,390 @@ export const phonicsQuestions: Question[] = [
     },
     {
         "id": "p2",
-        "question": "Identify the silent letter in the word \"KNIFE\"",
+        "question": "Identify the silent letter in the word 'KNOWLEDGE'",
         "options": [
             "K",
             "N",
-            "I",
-            "E"
+            "W",
+            "L"
         ],
         "answer": "K"
     },
     {
         "id": "p3",
-        "question": "Phonics Question 3: Which word has a different vowel sound?",
+        "question": "Which word rhymes with 'Light'?",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "Bite",
+            "Late",
+            "Lit"
         ],
-        "answer": "Word 3"
+        "answer": "Bite"
     },
     {
         "id": "p4",
-        "question": "Phonics Question 4: Which word has a different vowel sound?",
+        "question": "What is the vowel sound in the word 'Tree'?",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "Short E",
+            "Long E",
+            "Short I"
         ],
-        "answer": "Word 3"
+        "answer": "Long E"
     },
     {
         "id": "p5",
-        "question": "Phonics Question 5: Which word has a different vowel sound?",
+        "question": "Which word contains a short 'a' sound?",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "Cake",
+            "Apple",
+            "Car"
         ],
-        "answer": "Word 3"
+        "answer": "Apple"
     },
     {
         "id": "p6",
-        "question": "Phonics Question 6: Which word has a different vowel sound?",
+        "question": "Identify the silent letter in 'HONEST'",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "H",
+            "O",
+            "E",
+            "T"
         ],
-        "answer": "Word 3"
+        "answer": "H"
     },
     {
         "id": "p7",
-        "question": "Phonics Question 7: Which word has a different vowel sound?",
+        "question": "Which word has the same vowel sound as 'Boat'?",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "Coat",
+            "Boot",
+            "Bout"
         ],
-        "answer": "Word 3"
+        "answer": "Coat"
     },
     {
         "id": "p8",
-        "question": "Phonics Question 8: Which word has a different vowel sound?",
+        "question": "What sound does 'ch' make in 'School'?",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "/ch/",
+            "/sh/",
+            "/k/"
         ],
-        "answer": "Word 3"
+        "answer": "/k/"
     },
     {
         "id": "p9",
-        "question": "Phonics Question 9: Which word has a different vowel sound?",
+        "question": "Which word ends with a /z/ sound?",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "Cats",
+            "Dogs",
+            "Books"
         ],
-        "answer": "Word 3"
+        "answer": "Dogs"
     },
     {
         "id": "p10",
-        "question": "Phonics Question 10: Which word has a different vowel sound?",
+        "question": "Identify the silent letter in 'ISLAND'",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "I",
+            "S",
+            "L",
+            "A"
         ],
-        "answer": "Word 3"
+        "answer": "S"
     },
     {
         "id": "p11",
-        "question": "Phonics Question 11: Which word has a different vowel sound?",
+        "question": "Which word has a different vowel sound?",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "Meet",
+            "Seat",
+            "Great"
         ],
-        "answer": "Word 3"
+        "answer": "Great"
     },
     {
         "id": "p12",
-        "question": "Phonics Question 12: Which word has a different vowel sound?",
+        "question": "What is the vowel sound in 'Moon'?",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "Long U",
+            "Short U",
+            "Long O"
         ],
-        "answer": "Word 3"
+        "answer": "Long U"
     },
     {
         "id": "p13",
-        "question": "Phonics Question 13: Which word has a different vowel sound?",
+        "question": "Which word contains the /θ/ (voiceless th) sound?",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "This",
+            "That",
+            "Think"
         ],
-        "answer": "Word 3"
+        "answer": "Think"
     },
     {
         "id": "p14",
-        "question": "Phonics Question 14: Which word has a different vowel sound?",
+        "question": "Identify the silent letter in 'WRIST'",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "W",
+            "R",
+            "I",
+            "S"
         ],
-        "answer": "Word 3"
+        "answer": "W"
     },
     {
         "id": "p15",
-        "question": "Phonics Question 15: Which word has a different vowel sound?",
+        "question": "Which word has the same vowel sound as 'Bird'?",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "Word",
+            "Board",
+            "Beard"
         ],
-        "answer": "Word 3"
+        "answer": "Word"
     },
     {
         "id": "p16",
-        "question": "Phonics Question 16: Which word has a different vowel sound?",
+        "question": "What sound does 'ed' make in 'Played'?",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "/t/",
+            "/d/",
+            "/id/"
         ],
-        "answer": "Word 3"
+        "answer": "/d/"
     },
     {
         "id": "p17",
-        "question": "Phonics Question 17: Which word has a different vowel sound?",
+        "question": "Which word has a different vowel sound?",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "Put",
+            "Cut",
+            "Hut"
         ],
-        "answer": "Word 3"
+        "answer": "Put"
     },
     {
         "id": "p18",
-        "question": "Phonics Question 18: Which word has a different vowel sound?",
+        "question": "Identify the silent letter in 'COMB'",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "C",
+            "O",
+            "M",
+            "B"
         ],
-        "answer": "Word 3"
+        "answer": "B"
     },
     {
         "id": "p19",
-        "question": "Phonics Question 19: Which word has a different vowel sound?",
+        "question": "Which word contains the /ʃ/ (sh) sound?",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "Machine",
+            "Match",
+            "Much"
         ],
-        "answer": "Word 3"
+        "answer": "Machine"
     },
     {
         "id": "p20",
-        "question": "Phonics Question 20: Which word has a different vowel sound?",
+        "question": "What is the vowel sound in 'Boy'?",
         "options": [
-            "Word 1",
-            "Word 2",
-            "Word 3"
+            "/ɔɪ/",
+            "/aɪ/",
+            "/eɪ/"
         ],
-        "answer": "Word 3"
+        "answer": "/ɔɪ/"
     }
 ];
 
-export const readingPassage = `Once upon a time in a small village, there lived an old man who loved to read. Every day, he would sit under the large oak tree and read books aloud to the children. The children loved listening to his stories because he had a very expressive voice.`;
+export const readingPassage = `Marie Curie was a pioneering physicist and chemist. Born in Poland in 1867, she moved to Paris to study. She is famous for her work on radioactivity and was the first woman to win a Nobel Prize. She actually won it twice, in two different sciences: Physics and Chemistry. Despite her brilliant mind, she faced many challenges because she was a woman in a male-dominated field. However, her dedication to science never wavered. Her discoveries have had a profound impact on medicine, especially in the treatment of cancer.`;
 export const readingQuestions: Question[] = [
     {
         "id": "r1",
-        "question": "Where did the old man sit to read?",
+        "question": "Where was Marie Curie born?",
         "options": [
-            "Under an apple tree",
-            "In his house",
-            "Under a large oak tree",
-            "In the library"
+            "Paris",
+            "Poland",
+            "London",
+            "Berlin"
         ],
-        "answer": "Under a large oak tree"
+        "answer": "Poland"
     },
     {
         "id": "r2",
-        "question": "Reading Q2: Based on the passage, what is the answer?",
+        "question": "What is Marie Curie famous for?",
         "options": [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4"
+            "Discovering electricity",
+            "Work on radioactivity",
+            "Inventing the telephone",
+            "Studying biology"
         ],
-        "answer": "Option 1"
+        "answer": "Work on radioactivity"
     },
     {
         "id": "r3",
-        "question": "Reading Q3: Based on the passage, what is the answer?",
+        "question": "How many Nobel Prizes did she win?",
         "options": [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4"
+            "One",
+            "Two",
+            "Three",
+            "None"
         ],
-        "answer": "Option 1"
+        "answer": "Two"
     },
     {
         "id": "r4",
-        "question": "Reading Q4: Based on the passage, what is the answer?",
+        "question": "What fields of science did she win her Nobel Prizes in?",
         "options": [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4"
+            "Physics and Biology",
+            "Chemistry and Medicine",
+            "Physics and Chemistry",
+            "Mathematics and Physics"
         ],
-        "answer": "Option 1"
+        "answer": "Physics and Chemistry"
     },
     {
         "id": "r5",
-        "question": "Reading Q5: Based on the passage, what is the answer?",
+        "question": "What major impact did her discoveries have?",
         "options": [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4"
+            "They helped invent the computer",
+            "They changed how we travel",
+            "They improved cancer treatment",
+            "They advanced space exploration"
         ],
-        "answer": "Option 1"
+        "answer": "They improved cancer treatment"
     }
 ];
 
 export const listeningQuestions: ListeningQuestion[] = [
     {
         "id": "l1",
-        "question": "Listening Q1: Listen to the audio and select the correct answer.",
+        "question": "Listen to the prompt: 'The train departs at 3:15 PM.' When does the train leave?",
         "audioUrl": "",
-        "textPrompt": "[Imagine an audio saying: \"The train leaves at 5 PM\"]",
+        "textPrompt": "Audio Script: 'The train departs at 3:15 PM.'",
         "options": [
-            "4 PM",
-            "5 PM",
-            "6 PM",
-            "7 PM"
+            "3:00 PM",
+            "3:15 PM",
+            "3:30 PM",
+            "3:45 PM"
         ],
-        "answer": "5 PM"
+        "answer": "3:15 PM"
     },
     {
         "id": "l2",
-        "question": "Listening Q2: Listen to the audio and select the correct answer.",
+        "question": "Listen to the prompt: 'I will meet you outside the library.' Where will they meet?",
         "audioUrl": "",
-        "textPrompt": "[Imagine an audio saying: \"The train leaves at 5 PM\"]",
+        "textPrompt": "Audio Script: 'I will meet you outside the library.'",
         "options": [
-            "4 PM",
-            "5 PM",
-            "6 PM",
-            "7 PM"
+            "Inside the library",
+            "At the cafe",
+            "Outside the library",
+            "In the park"
         ],
-        "answer": "5 PM"
+        "answer": "Outside the library"
     },
     {
         "id": "l3",
-        "question": "Listening Q3: Listen to the audio and select the correct answer.",
+        "question": "Listen to the prompt: 'She bought two apples and three oranges.' How many fruits did she buy in total?",
         "audioUrl": "",
-        "textPrompt": "[Imagine an audio saying: \"The train leaves at 5 PM\"]",
+        "textPrompt": "Audio Script: 'She bought two apples and three oranges.'",
         "options": [
-            "4 PM",
-            "5 PM",
-            "6 PM",
-            "7 PM"
+            "Two",
+            "Three",
+            "Five",
+            "Six"
         ],
-        "answer": "5 PM"
+        "answer": "Five"
     },
     {
         "id": "l4",
-        "question": "Listening Q4: Listen to the audio and select the correct answer.",
+        "question": "Listen to the prompt: 'The meeting has been postponed to Friday.' When is the new meeting date?",
         "audioUrl": "",
-        "textPrompt": "[Imagine an audio saying: \"The train leaves at 5 PM\"]",
+        "textPrompt": "Audio Script: 'The meeting has been postponed to Friday.'",
         "options": [
-            "4 PM",
-            "5 PM",
-            "6 PM",
-            "7 PM"
+            "Monday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
         ],
-        "answer": "5 PM"
+        "answer": "Friday"
     },
     {
         "id": "l5",
-        "question": "Listening Q5: Listen to the audio and select the correct answer.",
+        "question": "Listen to the prompt: 'He is wearing a blue shirt and black pants.' What color is his shirt?",
         "audioUrl": "",
-        "textPrompt": "[Imagine an audio saying: \"The train leaves at 5 PM\"]",
+        "textPrompt": "Audio Script: 'He is wearing a blue shirt and black pants.'",
         "options": [
-            "4 PM",
-            "5 PM",
-            "6 PM",
-            "7 PM"
+            "Blue",
+            "Black",
+            "White",
+            "Red"
         ],
-        "answer": "5 PM"
+        "answer": "Blue"
     },
     {
         "id": "l6",
-        "question": "Listening Q6: Listen to the audio and select the correct answer.",
+        "question": "Listen to the prompt: 'The weather will be sunny tomorrow.' What will the weather be like?",
         "audioUrl": "",
-        "textPrompt": "[Imagine an audio saying: \"The train leaves at 5 PM\"]",
+        "textPrompt": "Audio Script: 'The weather will be sunny tomorrow.'",
         "options": [
-            "4 PM",
-            "5 PM",
-            "6 PM",
-            "7 PM"
+            "Rainy",
+            "Cloudy",
+            "Sunny",
+            "Snowy"
         ],
-        "answer": "5 PM"
+        "answer": "Sunny"
     },
     {
         "id": "l7",
-        "question": "Listening Q7: Listen to the audio and select the correct answer.",
+        "question": "Listen to the prompt: 'Please turn off your mobile phones.' What is requested?",
         "audioUrl": "",
-        "textPrompt": "[Imagine an audio saying: \"The train leaves at 5 PM\"]",
+        "textPrompt": "Audio Script: 'Please turn off your mobile phones.'",
         "options": [
-            "4 PM",
-            "5 PM",
-            "6 PM",
-            "7 PM"
+            "Turn on phones",
+            "Turn off phones",
+            "Use phones quietly",
+            "Leave phones at home"
         ],
-        "answer": "5 PM"
+        "answer": "Turn off phones"
     },
     {
         "id": "l8",
-        "question": "Listening Q8: Listen to the audio and select the correct answer.",
+        "question": "Listen to the prompt: 'The concert tickets cost $50 each.' How much is one ticket?",
         "audioUrl": "",
-        "textPrompt": "[Imagine an audio saying: \"The train leaves at 5 PM\"]",
+        "textPrompt": "Audio Script: 'The concert tickets cost $50 each.'",
         "options": [
-            "4 PM",
-            "5 PM",
-            "6 PM",
-            "7 PM"
+            "$15",
+            "$50",
+            "$500",
+            "$5"
         ],
-        "answer": "5 PM"
+        "answer": "$50"
     },
     {
         "id": "l9",
-        "question": "Listening Q9: Listen to the audio and select the correct answer.",
+        "question": "Listen to the prompt: 'My favorite subject is history.' What is their favorite subject?",
         "audioUrl": "",
-        "textPrompt": "[Imagine an audio saying: \"The train leaves at 5 PM\"]",
+        "textPrompt": "Audio Script: 'My favorite subject is history.'",
         "options": [
-            "4 PM",
-            "5 PM",
-            "6 PM",
-            "7 PM"
+            "Math",
+            "Science",
+            "History",
+            "English"
         ],
-        "answer": "5 PM"
+        "answer": "History"
     },
     {
         "id": "l10",
-        "question": "Listening Q10: Listen to the audio and select the correct answer.",
+        "question": "Listen to the prompt: 'Don't forget to lock the door.' What should you remember to do?",
         "audioUrl": "",
-        "textPrompt": "[Imagine an audio saying: \"The train leaves at 5 PM\"]",
+        "textPrompt": "Audio Script: 'Don't forget to lock the door.'",
         "options": [
-            "4 PM",
-            "5 PM",
-            "6 PM",
-            "7 PM"
+            "Open the door",
+            "Lock the door",
+            "Clean the door",
+            "Paint the door"
         ],
-        "answer": "5 PM"
+        "answer": "Lock the door"
     }
 ];
 
@@ -976,79 +980,79 @@ export const translationQuestions: TranslationQuestion[] = [
     {
         "id": "t1",
         "type": "b2e",
-        "question": "আমি ভাত খাই।"
+        "question": "আমি প্রতিদিন সকালে খবরের কাগজ পড়ি।"
     },
     {
         "id": "t2",
         "type": "b2e",
-        "question": "সে গতকাল স্কুলে যায় নি।"
+        "question": "সে কি গতকাল স্কুলে গিয়েছিল?"
     },
     {
         "id": "t3",
         "type": "b2e",
-        "question": "তুমি কি কখনো কক্সবাজার গিয়েছ?"
+        "question": "বৃষ্টি শুরু হওয়ার আগেই আমরা বাড়ি পৌঁছেছিলাম।"
     },
     {
         "id": "t4",
         "type": "b2e",
-        "question": "বৃষ্টি হচ্ছে।"
+        "question": "তুমি কি কখনো লন্ডন গিয়েছ?"
     },
     {
         "id": "t5",
         "type": "b2e",
-        "question": "আমি এই বইটি খুঁজছিলাম।"
+        "question": "আমি যদি পাখি হতাম, আকাশে উড়তাম।"
     },
     {
         "id": "t6",
         "type": "e2b",
-        "question": "He has been reading since morning."
+        "question": "He has been suffering from fever for three days."
     },
     {
         "id": "t7",
         "type": "e2b",
-        "question": "I would rather die than beg."
+        "question": "It is high time we changed our bad habits."
     },
     {
         "id": "t8",
         "type": "e2b",
-        "question": "It is time we changed our bad habits."
+        "question": "No sooner had I reached the station than the train left."
     },
     {
         "id": "t9",
         "type": "e2b",
-        "question": "As soon as he saw the police, he ran away."
+        "question": "Honesty is the best policy."
     },
     {
         "id": "t10",
         "type": "e2b",
-        "question": "Knowledge is power."
+        "question": "I am looking forward to hearing from you."
     }
 ];
 
 export const liveReadingPassages: LiveReadingPassage[] = [
     {
         "id": "lr1",
-        "title": "Passage 1",
-        "content": "English is considered an international language. It is spoken all over the world. To get a good job and communicate globally, learning English is essential."
+        "title": "Passage 1: Global Language",
+        "content": "English is widely spoken around the world. It serves as a global bridge, connecting people from different cultures and backgrounds. Mastering it can open doors to numerous opportunities."
     },
     {
         "id": "lr2",
-        "title": "Passage 2",
-        "content": "Technology has changed the way we live. Today, we can connect with people instantly. However, it also has some negative impacts on our social lives."
+        "title": "Passage 2: Technology",
+        "content": "In today’s digital age, technology is advancing at an unprecedented pace. It has revolutionized the way we work, communicate, and learn, making information instantly accessible."
     },
     {
         "id": "lr3",
-        "title": "Passage 3",
-        "content": "Health is wealth. Without good health, money has no value. We should eat nutritious food and exercise daily to maintain our health."
+        "title": "Passage 3: Environment",
+        "content": "Protecting the environment is crucial for future generations. Simple actions like recycling, reducing plastic use, and planting trees can make a significant difference in combating climate change."
     },
     {
         "id": "lr4",
-        "title": "Passage 4",
-        "content": "Reading books is a wonderful habit. It expands our knowledge, improves our vocabulary, and helps us relax after a long day."
+        "title": "Passage 4: Health",
+        "content": "Maintaining a balanced diet and exercising regularly are key to a healthy life. Physical activity not only strengthens the body but also improves mental well-being."
     },
     {
         "id": "lr5",
-        "title": "Passage 5",
-        "content": "Global warming is a serious issue. The temperature of the earth is rising due to greenhouse gases. We must plant more trees to save our planet."
+        "title": "Passage 5: Reading",
+        "content": "Reading is a journey of the mind. It allows us to explore new worlds, understand different perspectives, and continuously expand our horizons and vocabulary."
     }
 ];
