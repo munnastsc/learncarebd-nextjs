@@ -69,6 +69,7 @@ model CustomPost {
   link        String?  // External WordPress or Custom Link
   imageUrl    String?
   price       Float?
+  category    String?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }

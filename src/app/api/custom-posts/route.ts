@@ -15,7 +15,7 @@ export async function GET() {
 
 export async function POST(req: Request) {
     try {
-        const { title, content, type, link, imageUrl, price } = await req.json();
+        const { title, content, type, link, imageUrl, price, category } = await req.json();
         if (!title || !type) {
             return NextResponse.json({ error: 'Title and Type are required' }, { status: 400 });
         }
@@ -26,7 +26,8 @@ export async function POST(req: Request) {
                 type,
                 link: link || null,
                 imageUrl: imageUrl || null,
-                price: price !== undefined && price !== null ? Number(price) : null
+                price: price !== undefined && price !== null ? Number(price) : null,
+                category: category || null
             }
         });
         return NextResponse.json(post);
@@ -37,7 +38,7 @@ export async function POST(req: Request) {
 
 export async function PUT(req: Request) {
     try {
-        const { id, title, content, type, link, imageUrl, price } = await req.json();
+        const { id, title, content, type, link, imageUrl, price, category } = await req.json();
         const post = await prisma.customPost.update({
             where: { id },
             data: {
@@ -46,7 +47,8 @@ export async function PUT(req: Request) {
                 type,
                 link: link || null,
                 imageUrl: imageUrl || null,
-                price: price !== undefined && price !== null ? Number(price) : null
+                price: price !== undefined && price !== null ? Number(price) : null,
+                category: category || null
             }
         });
         return NextResponse.json(post);

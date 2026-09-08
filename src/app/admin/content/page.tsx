@@ -2,6 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import { Sparkles, BookOpen, Layers, Menu, Trash2, Plus, Edit, X, Save, RefreshCw, Link as LinkIcon, ExternalLink } from 'lucide-react';
+import dynamic from 'next/dynamic';
+import 'react-quill/dist/quill.snow.css';
+
+const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 
 type CustomPost = {
     id: string;
@@ -11,6 +15,7 @@ type CustomPost = {
     link: string | null;
     imageUrl: string | null;
     price: number | null;
+    category: string | null;
     createdAt: string;
 };
 
@@ -36,7 +41,8 @@ export default function ContentAdminPage() {
         type: 'SERVICE',
         link: '',
         imageUrl: '',
-        price: ''
+        price: '',
+        category: ''
     });
 
     const [showMenuModal, setShowMenuModal] = useState(false);
@@ -76,7 +82,8 @@ export default function ContentAdminPage() {
             type: 'SERVICE',
             link: '',
             imageUrl: '',
-            price: ''
+            price: '',
+            category: ''
         });
         setShowPostModal(true);
     };
@@ -89,7 +96,8 @@ export default function ContentAdminPage() {
             type: post.type,
             link: post.link || '',
             imageUrl: post.imageUrl || '',
-            price: post.price !== null ? String(post.price) : ''
+            price: post.price !== null ? String(post.price) : '',
+            category: post.category || ''
         });
         setShowPostModal(true);
     };
@@ -377,7 +385,7 @@ export default function ContentAdminPage() {
                 {/* Post Modal */}
                 {showPostModal && (
                     <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4">
-                        <div className="bg-slate-900 border border-slate-800 w-full max-w-lg rounded-3xl p-6 shadow-2xl relative">
+                        <div className="bg-slate-900 border border-slate-800 w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl p-6 shadow-2xl relative custom-scrollbar">
                             <button 
                                 onClick={() => setShowPostModal(false)}
                                 className="absolute top-4 right-4 text-slate-400 hover:text-white"
@@ -404,6 +412,16 @@ export default function ContentAdminPage() {
                                     </select>
                                 </div>
                                 <div>
+                                    <label className="block text-xs font-bold text-slate-400 mb-1.5">Category (ক্যাটাগরি)</label>
+                                    <input
+                                        type="text"
+                                        value={postForm.category}
+                                        onChange={(e) => setPostForm({ ...postForm, category: e.target.value })}
+                                        placeholder="e.g. Grammar, IELTS Tips, Success Story"
+                                        className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:border-teal-500 focus:outline-none"
+                                    />
+                                </div>
+                                <div>
                                     <label className="block text-xs font-bold text-slate-400 mb-1.5">Title (শিরোনাম)</label>
                                     <input
                                         type="text"
@@ -417,15 +435,16 @@ export default function ContentAdminPage() {
                                 <div>
                                     <label className="block text-xs font-bold text-slate-400 mb-1.5 flex justify-between">
                                         <span>Content (বিবরণ)</span>
-                                        <span className="text-[10px] text-teal-400 font-medium">Supports HTML Code</span>
+                                        <span className="text-[10px] text-teal-400 font-medium">Rich Text Editor</span>
                                     </label>
-                                    <textarea
-                                        rows={4}
-                                        value={postForm.content}
-                                        onChange={(e) => setPostForm({ ...postForm, content: e.target.value })}
-                                        placeholder="Enter description or HTML code here..."
-                                        className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:border-teal-500 focus:outline-none resize-none font-mono"
-                                    />
+                                    <div className="bg-white text-black rounded-xl overflow-hidden">
+                                        <ReactQuill 
+                                            theme="snow" 
+                                            value={postForm.content} 
+                                            onChange={(val) => setPostForm({ ...postForm, content: val })} 
+                                            className="min-h-[200px]"
+                                        />
+                                    </div>
                                 </div>
                                 <div>
                                     <label className="block text-xs font-bold text-slate-400 mb-1.5">Image File / URL (ছবি আপলোড বা লিংক)</label>

@@ -1,0 +1,603 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [
+      {
+        "source": "/%E0%A6%B6%E0%A6%BF%E0%A6%96%E0%A6%A4%E0%A7%87%E0%A6%87-%E0%A6%B9%E0%A6%AC%E0%A7%87-%E0%A7%A9%E0%A7%A6%E0%A7%A6%E0%A7%A6-%E0%A6%B6%E0%A6%AC%E0%A7%8D%E0%A6%A6",
+        "destination": "/3000-words",
+        "regex": "^/%E0%A6%B6%E0%A6%BF%E0%A6%96%E0%A6%A4%E0%A7%87%E0%A6%87-%E0%A6%B9%E0%A6%AC%E0%A7%87-%E0%A7%A9%E0%A7%A6%E0%A7%A6%E0%A7%A6-%E0%A6%B6%E0%A6%AC%E0%A7%8D%E0%A6%A6(?:/)?$"
+      },
+      {
+        "source": "/শিখতেই-হবে-৩০০০-শব্দ",
+        "destination": "/3000-words",
+        "regex": "^/শিখতেই-হবে-৩০০০-শব্দ(?:/)?$"
+      }
+    ],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/book-orders/[id]",
+      "regex": "^/api/book\\-orders/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/book\\-orders/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/books/[id]",
+      "regex": "^/api/books/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/books/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/blog/[id]",
+      "regex": "^/blog/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/blog/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/books/[id]",
+      "regex": "^/books/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/books/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/courses/[slug]",
+      "regex": "^/courses/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/courses/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/dashboard/book/[bookNumber]",
+      "regex": "^/dashboard/book/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbookNumber": "nxtPbookNumber"
+      },
+      "namedRegex": "^/dashboard/book/(?<nxtPbookNumber>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/dashboard/listening/[book]/[test]",
+      "regex": "^/dashboard/listening/([^/]+?)/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbook": "nxtPbook",
+        "nxtPtest": "nxtPtest"
+      },
+      "namedRegex": "^/dashboard/listening/(?<nxtPbook>[^/]+?)/(?<nxtPtest>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/dashboard/reading/[book]/[test]",
+      "regex": "^/dashboard/reading/([^/]+?)/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbook": "nxtPbook",
+        "nxtPtest": "nxtPtest"
+      },
+      "namedRegex": "^/dashboard/reading/(?<nxtPbook>[^/]+?)/(?<nxtPtest>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/3000-words",
+      "regex": "^/3000\\-words(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/3000\\-words(?:/)?$"
+    },
+    {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
+    },
+    {
+      "page": "/admin/books",
+      "regex": "^/admin/books(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/books(?:/)?$"
+    },
+    {
+      "page": "/admin/books/actions",
+      "regex": "^/admin/books/actions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/books/actions(?:/)?$"
+    },
+    {
+      "page": "/admin/books/qa",
+      "regex": "^/admin/books/qa(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/books/qa(?:/)?$"
+    },
+    {
+      "page": "/admin/content",
+      "regex": "^/admin/content(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/content(?:/)?$"
+    },
+    {
+      "page": "/admin/homepage",
+      "regex": "^/admin/homepage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/homepage(?:/)?$"
+    },
+    {
+      "page": "/admin/login",
+      "regex": "^/admin/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/login(?:/)?$"
+    },
+    {
+      "page": "/admin/orders",
+      "regex": "^/admin/orders(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/orders(?:/)?$"
+    },
+    {
+      "page": "/admin/store/books",
+      "regex": "^/admin/store/books(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/store/books(?:/)?$"
+    },
+    {
+      "page": "/admin/store/orders",
+      "regex": "^/admin/store/orders(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/store/orders(?:/)?$"
+    },
+    {
+      "page": "/api/admin/audio/status",
+      "regex": "^/api/admin/audio/status(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/audio/status(?:/)?$"
+    },
+    {
+      "page": "/api/admin/audio/upload",
+      "regex": "^/api/admin/audio/upload(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/audio/upload(?:/)?$"
+    },
+    {
+      "page": "/api/admin/books",
+      "regex": "^/api/admin/books(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/books(?:/)?$"
+    },
+    {
+      "page": "/api/admin/books/bootstrap",
+      "regex": "^/api/admin/books/bootstrap(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/books/bootstrap(?:/)?$"
+    },
+    {
+      "page": "/api/admin/books/import",
+      "regex": "^/api/admin/books/import(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/books/import(?:/)?$"
+    },
+    {
+      "page": "/api/admin/books/qa",
+      "regex": "^/api/admin/books/qa(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/books/qa(?:/)?$"
+    },
+    {
+      "page": "/api/admin/image/upload",
+      "regex": "^/api/admin/image/upload(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/image/upload(?:/)?$"
+    },
+    {
+      "page": "/api/admin/login",
+      "regex": "^/api/admin/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/login(?:/)?$"
+    },
+    {
+      "page": "/api/admin/payment-requests",
+      "regex": "^/api/admin/payment\\-requests(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/payment\\-requests(?:/)?$"
+    },
+    {
+      "page": "/api/admin/users",
+      "regex": "^/api/admin/users(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/users(?:/)?$"
+    },
+    {
+      "page": "/api/audio",
+      "regex": "^/api/audio(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/audio(?:/)?$"
+    },
+    {
+      "page": "/api/audio/oxford",
+      "regex": "^/api/audio/oxford(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/audio/oxford(?:/)?$"
+    },
+    {
+      "page": "/api/audio/stream",
+      "regex": "^/api/audio/stream(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/audio/stream(?:/)?$"
+    },
+    {
+      "page": "/api/auth/login",
+      "regex": "^/api/auth/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/login(?:/)?$"
+    },
+    {
+      "page": "/api/book-orders",
+      "regex": "^/api/book\\-orders(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/book\\-orders(?:/)?$"
+    },
+    {
+      "page": "/api/books",
+      "regex": "^/api/books(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/books(?:/)?$"
+    },
+    {
+      "page": "/api/chat",
+      "regex": "^/api/chat(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/chat(?:/)?$"
+    },
+    {
+      "page": "/api/custom-posts",
+      "regex": "^/api/custom\\-posts(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/custom\\-posts(?:/)?$"
+    },
+    {
+      "page": "/api/generate-exercises",
+      "regex": "^/api/generate\\-exercises(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/generate\\-exercises(?:/)?$"
+    },
+    {
+      "page": "/api/grammar-check",
+      "regex": "^/api/grammar\\-check(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/grammar\\-check(?:/)?$"
+    },
+    {
+      "page": "/api/headway-transcript",
+      "regex": "^/api/headway\\-transcript(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/headway\\-transcript(?:/)?$"
+    },
+    {
+      "page": "/api/homepage-settings",
+      "regex": "^/api/homepage\\-settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/homepage\\-settings(?:/)?$"
+    },
+    {
+      "page": "/api/listening/data",
+      "regex": "^/api/listening/data(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/listening/data(?:/)?$"
+    },
+    {
+      "page": "/api/menu-links",
+      "regex": "^/api/menu\\-links(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/menu\\-links(?:/)?$"
+    },
+    {
+      "page": "/api/paraphrase/check",
+      "regex": "^/api/paraphrase/check(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/paraphrase/check(?:/)?$"
+    },
+    {
+      "page": "/api/progress/attempts",
+      "regex": "^/api/progress/attempts(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/progress/attempts(?:/)?$"
+    },
+    {
+      "page": "/api/speaking/evaluate",
+      "regex": "^/api/speaking/evaluate(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/speaking/evaluate(?:/)?$"
+    },
+    {
+      "page": "/api/speaking/transcribe",
+      "regex": "^/api/speaking/transcribe(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/speaking/transcribe(?:/)?$"
+    },
+    {
+      "page": "/api/speaking-practice",
+      "regex": "^/api/speaking\\-practice(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/speaking\\-practice(?:/)?$"
+    },
+    {
+      "page": "/api/subscription/activate",
+      "regex": "^/api/subscription/activate(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/subscription/activate(?:/)?$"
+    },
+    {
+      "page": "/api/subscription/mock",
+      "regex": "^/api/subscription/mock(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/subscription/mock(?:/)?$"
+    },
+    {
+      "page": "/api/subscription/request",
+      "regex": "^/api/subscription/request(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/subscription/request(?:/)?$"
+    },
+    {
+      "page": "/api/subscription/status",
+      "regex": "^/api/subscription/status(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/subscription/status(?:/)?$"
+    },
+    {
+      "page": "/api/subscription/webhook",
+      "regex": "^/api/subscription/webhook(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/subscription/webhook(?:/)?$"
+    },
+    {
+      "page": "/api/word-context",
+      "regex": "^/api/word\\-context(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/word\\-context(?:/)?$"
+    },
+    {
+      "page": "/api/word-meaning",
+      "regex": "^/api/word\\-meaning(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/word\\-meaning(?:/)?$"
+    },
+    {
+      "page": "/api/writing/evaluate",
+      "regex": "^/api/writing/evaluate(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/writing/evaluate(?:/)?$"
+    },
+    {
+      "page": "/blog",
+      "regex": "^/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog(?:/)?$"
+    },
+    {
+      "page": "/books",
+      "regex": "^/books(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/books(?:/)?$"
+    },
+    {
+      "page": "/courses",
+      "regex": "^/courses(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/courses(?:/)?$"
+    },
+    {
+      "page": "/dashboard",
+      "regex": "^/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard(?:/)?$"
+    },
+    {
+      "page": "/dashboard/ai-conversation",
+      "regex": "^/dashboard/ai\\-conversation(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/ai\\-conversation(?:/)?$"
+    },
+    {
+      "page": "/dashboard/ai-tutor",
+      "regex": "^/dashboard/ai\\-tutor(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/ai\\-tutor(?:/)?$"
+    },
+    {
+      "page": "/dashboard/analytics",
+      "regex": "^/dashboard/analytics(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/analytics(?:/)?$"
+    },
+    {
+      "page": "/dashboard/band-predictor",
+      "regex": "^/dashboard/band\\-predictor(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/band\\-predictor(?:/)?$"
+    },
+    {
+      "page": "/dashboard/certificate",
+      "regex": "^/dashboard/certificate(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/certificate(?:/)?$"
+    },
+    {
+      "page": "/dashboard/grammar",
+      "regex": "^/dashboard/grammar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/grammar(?:/)?$"
+    },
+    {
+      "page": "/dashboard/grammar-practice",
+      "regex": "^/dashboard/grammar\\-practice(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/grammar\\-practice(?:/)?$"
+    },
+    {
+      "page": "/dashboard/guide",
+      "regex": "^/dashboard/guide(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/guide(?:/)?$"
+    },
+    {
+      "page": "/dashboard/listening",
+      "regex": "^/dashboard/listening(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/listening(?:/)?$"
+    },
+    {
+      "page": "/dashboard/mock",
+      "regex": "^/dashboard/mock(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/mock(?:/)?$"
+    },
+    {
+      "page": "/dashboard/paraphrase",
+      "regex": "^/dashboard/paraphrase(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/paraphrase(?:/)?$"
+    },
+    {
+      "page": "/dashboard/payment",
+      "regex": "^/dashboard/payment(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/payment(?:/)?$"
+    },
+    {
+      "page": "/dashboard/reading",
+      "regex": "^/dashboard/reading(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/reading(?:/)?$"
+    },
+    {
+      "page": "/dashboard/speaking",
+      "regex": "^/dashboard/speaking(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/speaking(?:/)?$"
+    },
+    {
+      "page": "/dashboard/spoken-english",
+      "regex": "^/dashboard/spoken\\-english(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/spoken\\-english(?:/)?$"
+    },
+    {
+      "page": "/dashboard/spoken-english/conversations",
+      "regex": "^/dashboard/spoken\\-english/conversations(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/spoken\\-english/conversations(?:/)?$"
+    },
+    {
+      "page": "/dashboard/spoken-english/grammar-academy",
+      "regex": "^/dashboard/spoken\\-english/grammar\\-academy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/spoken\\-english/grammar\\-academy(?:/)?$"
+    },
+    {
+      "page": "/dashboard/spoken-english/headway",
+      "regex": "^/dashboard/spoken\\-english/headway(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/spoken\\-english/headway(?:/)?$"
+    },
+    {
+      "page": "/dashboard/spoken-english/pronunciation",
+      "regex": "^/dashboard/spoken\\-english/pronunciation(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/spoken\\-english/pronunciation(?:/)?$"
+    },
+    {
+      "page": "/dashboard/spoken-english/words",
+      "regex": "^/dashboard/spoken\\-english/words(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/spoken\\-english/words(?:/)?$"
+    },
+    {
+      "page": "/dashboard/stories",
+      "regex": "^/dashboard/stories(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/stories(?:/)?$"
+    },
+    {
+      "page": "/dashboard/vocabulary",
+      "regex": "^/dashboard/vocabulary(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/vocabulary(?:/)?$"
+    },
+    {
+      "page": "/dashboard/writing",
+      "regex": "^/dashboard/writing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/writing(?:/)?$"
+    },
+    {
+      "page": "/level-test",
+      "regex": "^/level\\-test(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/level\\-test(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "functions": {
+    "/api/admin/audio/status": {},
+    "/api/admin/audio/upload": {},
+    "/api/admin/image/upload": {},
+    "/api/audio": {},
+    "/api/audio/oxford": {},
+    "/api/audio/stream": {},
+    "/api/listening/data": {},
+    "/api/paraphrase/check": {},
+    "/api/speaking/evaluate": {},
+    "/api/speaking/transcribe": {}
+  }
+}

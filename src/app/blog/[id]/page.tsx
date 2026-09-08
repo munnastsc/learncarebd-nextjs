@@ -78,9 +78,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
                     )}
 
                     {/* Content */}
-                    <div className="w-full text-slate-300">
+                    <div className="w-full">
                         {/* We use dangerouslySetInnerHTML in case the user scraped raw HTML */}
-                        <div dangerouslySetInnerHTML={{ __html: post.content }} className="w-full overflow-hidden" />
+                        <div dangerouslySetInnerHTML={{ __html: post.content }} className="prose prose-invert prose-teal max-w-none w-full overflow-hidden" />
                     </div>
                 </article>
             </main>
