@@ -20,7 +20,7 @@ export default function AdminRecordsTable({ items }: { items: Record[] }) {
                 <div className="mb-3 rounded-lg border border-rose-200 bg-rose-50 p-3 text-xs">
                     <p className="font-semibold text-rose-700">Delete this record?</p>
                     <div className="mt-2 flex gap-2">
-                        <form action="/admin/books/actions" method="post">
+                        <form action="/ai-26/books/actions" method="post">
                             <input type="hidden" name="actionType" value="deleteRecord" />
                             <input type="hidden" name="id" value={confirmId} />
                             <button
@@ -68,7 +68,7 @@ export default function AdminRecordsTable({ items }: { items: Record[] }) {
                             <td className="border-b border-slate-100 px-2 py-1.5">
                                 <div className="flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity">
                                     <Link
-                                        href={`/admin/books?tab=content&editId=${row.id}`}
+                                        href={`/ai-26/books?tab=content&editId=${row.id}`}
                                         className="inline-flex items-center gap-1 rounded border border-slate-300 bg-white px-2 py-0.5 text-[11px] font-medium text-slate-600 hover:bg-slate-50"
                                     >
                                         <Pencil size={10} /> Edit

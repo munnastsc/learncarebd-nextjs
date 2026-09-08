@@ -1,5 +1,8 @@
 import { prisma } from "../lib/prisma";
 import { getHomepageSettings } from "../lib/homepageSettings";
+import { getDynamicPageContent } from "../lib/dynamicPages";
+import Link from 'next/link';
+import Footer from '../components/Footer';
 
 export const revalidate = 60; // Revalidate every 60 seconds (ISR) for fast Vercel edge caching
 
@@ -7,6 +10,8 @@ import Image from 'next/image';
 
 export default async function HomePage() {
   const settings = await getHomepageSettings();
+  const faqData = await getDynamicPageContent('FAQ_SETTINGS');
+  const faqs = faqData?.faqs || [];
   const menuLinks = await prisma.menuLink.findMany({ orderBy: { order: 'asc' } });
 
   const noticeText =
@@ -153,7 +158,7 @@ export default async function HomePage() {
               </a>
               <a
                 className="hidden md:inline-flex rounded-xl bg-teal-600/20 border border-teal-500/30 text-teal-400 hover:bg-teal-600 hover:text-white px-4 py-2 text-xs font-bold transition"
-                href="/admin/login"
+                href="/ai-26/login"
               >
                 Admin
               </a>
@@ -1745,210 +1750,26 @@ export default async function HomePage() {
             </div>
           </div>
         </section>
-        <footer className="bg-[#020617] pt-20 pb-10 border-t border-slate-800">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid gap-10 lg:grid-cols-4 border-b border-slate-800 pb-12 mb-8 text-sm">
-              <div className="lg:col-span-1">
-                <img
-                  src="https://learncarebd.com/wp-content/uploads/2025/12/Learncare-academy-1-scaled.png"
-                  alt="Logo"
-                  className="h-12 mb-6 object-contain bg-white rounded-md p-1.5"
-                />
-                <p className="text-slate-400 leading-relaxed text-xs mb-6">
-                  LearnCare Academy - বাংলাদেশের সেরা অনলাইন Spoken English ও
-                  IELTS প্ল্যাটফর্ম।
-                </p>
-                <div className="flex items-center gap-4">
-                  <a
-                    href="https://www.facebook.com/LearnCareBD"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="h-8 w-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-[#1877F2] hover:text-white transition"
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="14"
-                      height="14"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                    </svg>
-                  </a>
-                  <a
-                    href="https://www.youtube.com/@LearnCareAcademy"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="h-8 w-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-[#FF0000] hover:text-white transition"
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="14"
-                      height="14"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path>
-                      <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
-                    </svg>
-                  </a>
+        
+        {faqs.length > 0 && (
+            <section className="py-20 bg-white">
+                <div className="max-w-4xl mx-auto px-6">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-black text-slate-900 mb-4 tracking-tight">Frequently Asked Questions</h2>
+                        <p className="text-slate-500">Find answers to common questions about our platform and courses.</p>
+                    </div>
+                    <div className="space-y-4">
+                        {faqs.map((faq: any, i: number) => (
+                            <div key={i} className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                                <h4 className="text-lg font-bold text-slate-900 mb-2">{faq.q}</h4>
+                                <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-              </div>
-              <div>
-                <h4 className="font-bold text-white mb-5 uppercase tracking-wider text-xs">
-                  Important Links
-                </h4>
-                <ul className="space-y-3 text-slate-400 text-xs">
-                  <li>
-                    <a
-                      className="hover:text-emerald-400 transition"
-                      href="#courses"
-                    >
-                      সকল কোর্স
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://learncarebd.com/6409-2/"
-                      target="_blank"
-                      className="hover:text-emerald-400 transition"
-                    >
-                      ফ্রি লেভেল টেস্ট
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="hover:text-emerald-400 transition"
-                      href="/login"
-                    >
-                      স্টুডেন্ট লগইন
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="hover:text-teal-400 transition"
-                      href="/admin/login"
-                    >
-                      অ্যাডমিন প্যানেল
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-bold text-white mb-5 uppercase tracking-wider text-xs">
-                  Services
-                </h4>
-                <ul className="space-y-3 text-slate-400 text-xs">
-                  <li>
-                    <a
-                      className="hover:text-emerald-400 transition"
-                      href="/dashboard/spoken-english"
-                    >
-                      Spoken Hub
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="hover:text-emerald-400 transition"
-                      href="/dashboard"
-                    >
-                      IELTS Hub
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-bold text-white mb-5 uppercase tracking-wider text-xs">
-                  Contact Us
-                </h4>
-                <ul className="space-y-3 text-slate-400 text-xs">
-                  <li>
-                    <a
-                      href={`https://wa.me/88${settings.contact?.whatsappNumber || "01714740430"}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 hover:text-emerald-400 transition"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-message-square text-emerald-400"
-                        aria-hidden="true"
-                      >
-                        <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
-                      </svg>{" "}
-                      +88{/* */}
-                      {settings.contact?.hotlinePhone || "01714740430"}
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href={`mailto:${settings.contact?.emailAddress || "support@learncarebd.com"}`}
-                      className="flex items-center gap-2 hover:text-emerald-400 transition"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-mail text-emerald-400"
-                        aria-hidden="true"
-                      >
-                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                      </svg>{" "}
-                      {/* */}
-                      {settings.contact?.emailAddress ||
-                        "support@learncarebd.com"}
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
-              <p>
-                © {/* */}2026{/* */} LearnCare Academy. All rights reserved.
-              </p>
-              <p>
-                LearnCare Academy Platform Developed by{" "}
-                <a
-                  href="https://www.facebook.com/FaisalHossainWeb"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-bold text-emerald-400 hover:text-emerald-300 underline transition"
-                >
-                  Faisal Hossain
-                </a>
-                <span className="hidden sm:inline"> | </span>
-                <span className="block sm:inline mt-1 sm:mt-0">
-                  Available for{" "}
-                  <span className="text-slate-300 font-medium">
-                    Web Development
-                  </span>{" "}
-                  Projects
-                </span>
-              </p>
-            </div>
-          </div>
-        </footer>
+            </section>
+        )}
+    <Footer />
       </div>
       {/*$*/}
       {/*/$*/}

@@ -148,7 +148,7 @@ export default function DashboardPage() {
                                 className="inline-flex items-center gap-2 rounded-xl bg-rose-600 px-4 py-2.5 text-sm font-bold text-white hover:bg-rose-500 transition shadow-lg shadow-rose-900/30">
                                 <Mic size={15} /> Speaking AI
                             </Link>
-                            <Link href="/admin/books"
+                            <Link href="/ai-26/books"
                                 className="inline-flex items-center gap-2 rounded-xl border border-slate-600 bg-slate-700 px-4 py-2.5 text-sm font-bold text-slate-200 hover:bg-slate-600 transition">
                                 <Layers3 size={15} /> Content
                             </Link>

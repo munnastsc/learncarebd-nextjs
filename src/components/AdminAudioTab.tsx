@@ -12,7 +12,7 @@ export default function AdminAudioTab() {
     const [message, setMessage] = useState<{ type: 'ok' | 'err'; text: string } | null>(null);
 
     useEffect(() => {
-        fetch('/api/admin/audio/status')
+        fetch('/api/ai-26/audio/status')
             .then((r) => r.json())
             .then((d) => { setStatus(d); setLoading(false); })
             .catch(() => setLoading(false));
@@ -30,7 +30,7 @@ export default function AdminAudioTab() {
         form.append('test', String(test));
         form.append('part', String(part));
         try {
-            const res = await fetch('/api/admin/audio/upload', { method: 'POST', body: form });
+            const res = await fetch('/api/ai-26/audio/upload', { method: 'POST', body: form });
             const data = await res.json();
             if (data.ok) {
                 setStatus((prev) =>

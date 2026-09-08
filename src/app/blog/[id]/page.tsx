@@ -31,7 +31,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
                         <ArrowLeft size={16} /> ফিরে যান
                     </Link>
                     <div className="flex items-center gap-4">
-                        <Link href="/admin/content" className="text-xs bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white px-3 py-1.5 rounded-lg transition font-medium border border-slate-700">
+                        <Link href="/ai-26/content" className="text-xs bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white px-3 py-1.5 rounded-lg transition font-medium border border-slate-700">
                             ✏️ Edit Post in Admin
                         </Link>
                         <Link href="/" className="flex items-center gap-3 group">

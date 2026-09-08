@@ -12,14 +12,14 @@
       "entrypoint": "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0lcpsxv.js",
       "matchers": [
         {
-          "regexp": "/:nextData(_next/data/[^/]{1,})?/admin/:path*{(\\\\.json)}?",
-          "originalSource": "/admin/:path*"
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/ai-26/:path*{(\\\\.json)}?",
+          "originalSource": "/ai-26/:path*"
         }
       ],
       "wasm": [],
       "assets": [],
       "env": {
-        "__NEXT_BUILD_ID": "qrM6yuiV4OJicb2ZlKlMa",
+        "__NEXT_BUILD_ID": "fbXopoxfO8HWjYWGLJfEy",
         "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "DE/6Q70OwVmXlhDKhvLu5o7GLXexy+Qy7Q14sn3uhWs=",
         "__NEXT_PREVIEW_MODE_ID": "73519bebbb39c42c15f003e5a312f985",
         "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "72d2755b3e3900df3cab0561a554f945f5794cd73dc30464f63fb2355828ae5a",

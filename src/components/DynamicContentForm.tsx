@@ -62,7 +62,7 @@ export default function DynamicContentForm() {
     };
 
     return (
-        <form action="/admin/books/actions" method="post" className="mt-3 space-y-4">
+        <form action="/ai-26/books/actions" method="post" className="mt-3 space-y-4">
             <input type="hidden" name="actionType" value="structuredSave" />
             
             {/* We stringify the questions to pass them to the backend */}
