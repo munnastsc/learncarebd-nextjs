@@ -20,8 +20,8 @@ export default async function HomePage() {
 
   return (
     <>
-      <div className="min-h-screen bg-[#f1f5f9] text-slate-900 font-sans selection:bg-indigo-600 selection:text-white">
-        <div className="bg-[#020617] text-slate-300 text-[11px] px-4 py-2 border-b border-slate-800/80 sticky top-0 z-50">
+      <div className="min-h-screen bg-[#FAFAFA] text-slate-900 font-sans selection:bg-indigo-600 selection:text-white">
+        <div className="bg-slate-900 text-slate-200 text-[11px] px-4 py-2 border-b border-transparent sticky top-0 z-50">
           <div className="mx-auto max-w-7xl flex items-center justify-between gap-4">
             <div className="flex items-center gap-2 overflow-hidden w-full md:w-auto">
               <span className="bg-rose-600/20 text-rose-400 font-bold px-2 py-0.5 rounded-full uppercase tracking-wider flex-shrink-0 flex items-center gap-1 border border-rose-500/30">
@@ -76,7 +76,7 @@ export default async function HomePage() {
                 href={`https://wa.me/88${settings.contact?.whatsappNumber || "01714740430"}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-emerald-400 transition flex items-center gap-1 text-emerald-400"
+                className="hover:text-emerald-600 transition flex items-center gap-1 text-emerald-400"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ export default async function HomePage() {
             </div>
           </div>
         </div>
-        <header className="bg-[#0f172a]/95 backdrop-blur-xl border-b border-slate-800/60 sticky top-[34px] z-40 shadow-xl shadow-slate-900/5">
+        <header className="bg-white/80 backdrop-blur-2xl border-b border-slate-200/80 sticky top-[34px] z-40 shadow-xl shadow-slate-900/5">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-6">
             <a
               className="flex items-center group flex-shrink-0 transition hover:opacity-90"
@@ -113,9 +113,9 @@ export default async function HomePage() {
                 className="h-10 sm:h-12 w-auto object-contain bg-white rounded-md p-1"
               />
             </a>
-            <nav className="hidden lg:flex items-center gap-8 text-[13px] font-bold text-slate-300">
+            <nav className="hidden lg:flex items-center gap-8 text-[14px] font-bold text-slate-600">
               {menuLinks.map((link) => (
-                <a key={link.id} href={link.url} className="hover:text-emerald-400 transition flex items-center gap-1.5">
+                <a key={link.id} href={link.url} className="hover:text-emerald-600 transition flex items-center gap-1.5">
                   {link.label}
                 </a>
               ))}
@@ -151,7 +151,7 @@ export default async function HomePage() {
                 <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
               </a>
               <a
-                className="rounded-xl border border-slate-700 bg-slate-800/80 px-4 py-2 text-xs font-bold text-slate-300 hover:text-white hover:bg-slate-700 transition"
+                className="rounded-xl border border-slate-700 bg-white shadow-sm border-slate-200 px-4 py-2 text-xs font-bold text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition"
                 href="/login"
               >
                 Login
@@ -165,12 +165,12 @@ export default async function HomePage() {
             </div>
           </div>
         </header>
-        <section className="relative overflow-hidden bg-[#090e1a] pt-16 pb-24 border-b border-slate-800">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-600/20 rounded-full blur-[120px] pointer-events-none"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <section className="relative overflow-hidden bg-[#FAFAFA] pt-20 pb-32 border-b border-slate-200">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-300/20 rounded-full blur-[120px] pointer-events-none"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-300/20 rounded-full blur-[120px] pointer-events-none"></div>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center max-w-4xl mx-auto mb-16">
-              <div className="inline-flex items-center gap-2 rounded-full border border-slate-700/50 bg-slate-800/50 px-4 py-1.5 text-xs font-bold text-slate-300 mb-6 backdrop-blur-md">
+              <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-1.5 text-xs font-bold text-slate-700 shadow-sm mb-6 backdrop-blur-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
@@ -189,23 +189,23 @@ export default async function HomePage() {
                 </svg>
                 <span>{settings.hero?.badge || "দেশের সেরা AI Spoken & IELTS লার্নিং প্ল্যাটফর্ম"}</span>
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-black tracking-tight text-white leading-[1.25]">
+              <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-black tracking-tight text-slate-900 leading-[1.25]">
                 {settings.hero?.title || "সহজ পদ্ধতিতে স্পোকেন ইংলিশ ও"} <br className="hidden md:block" />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">
                   {settings.hero?.highlightText || "IELTS Band 7.5+ প্রস্তুতি"}
                 </span>
               </h1>
-              <p className="mt-6 text-sm sm:text-base text-slate-400 font-medium leading-relaxed max-w-2xl mx-auto">
+              <p className="mt-6 text-sm sm:text-base text-slate-600 font-medium leading-relaxed max-w-2xl text-[15px] mx-auto">
                 {settings.hero?.subtitle || "সঠিক ব্রিটিশ উচ্চারণ (IPA), New Headway ডিকটেশন, Cambridge 9-20 রিয়েল অডিও টেস্ট এবং AI স্পিকিং-রাইটিং মূল্যায়নে সাবলীল ইংরেজি শিখুন ঘরে বসেই।"}
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-6 lg:gap-10 max-w-5xl mx-auto">
               <a
-                className="group relative rounded-3xl border border-emerald-500/30 bg-slate-900/60 p-1 overflow-hidden backdrop-blur-md hover:border-emerald-400/60 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-900/20 block"
+                className="group relative rounded-3xl border border-slate-200/80 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-1 overflow-hidden backdrop-blur-md hover:border-emerald-200 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgb(16,185,129,0.08)] block"
                 href="/dashboard/spoken-english"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-transparent pointer-events-none"></div>
-                <div className="bg-[#0b1320] rounded-[22px] h-full p-6 sm:p-8 flex flex-col relative z-10">
+                <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/50 to-transparent pointer-events-none"></div>
+                <div className="bg-white rounded-[22px] h-full p-6 sm:p-8 flex flex-col relative z-10">
                   <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white mb-6 shadow-lg shadow-emerald-900/50">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -225,15 +225,15 @@ export default async function HomePage() {
                       <rect x="9" y="2" width="6" height="13" rx="3"></rect>
                     </svg>
                   </div>
-                  <h2 className="text-2xl sm:text-3xl font-black text-white mb-2">
+                  <h2 className="text-2xl sm:text-3xl font-black text-slate-900 mb-2">
                     Spoken English Hub
                   </h2>
-                  <p className="text-xs text-slate-400 mb-6 leading-relaxed">
+                  <p className="text-[13px] text-slate-500 mb-6 leading-relaxed">
                     সঠিক ব্রিটিশ উচ্চারণ, ফ্লুয়েন্সি এবং লাইভ প্র্যাকটিস ল্যাব।
                     প্রথমে ফ্রি টুলস ব্যবহার করুন, তারপর প্রিমিয়াম বুটক্যাম্পে
                     আপগ্রেড করুন।
                   </p>
-                  <ul className="space-y-2.5 mb-8 flex-1 text-[13px] text-slate-300 font-medium">
+                  <ul className="space-y-2.5 mb-8 flex-1 text-[14px] text-slate-600 font-medium">
                     <li className="flex items-center gap-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -426,7 +426,7 @@ export default async function HomePage() {
                     </li>
                   </ul>
                   <div className="flex flex-col gap-2 w-full mt-auto">
-                    <div className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 group-hover:bg-emerald-400 text-slate-950 py-3.5 text-[13px] font-black transition-all shadow-lg shadow-emerald-500/20">
+                    <div className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 group-hover:bg-emerald-600 text-white shadow-emerald-500/25 py-3.5 text-[13px] font-black transition-all shadow-lg shadow-emerald-500/20">
                       Start for Free (ফ্রি শুরু করুন){" "}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -445,18 +445,18 @@ export default async function HomePage() {
                         <path d="m12 5 7 7-7 7"></path>
                       </svg>
                     </div>
-                    <p className="text-[10px] text-center text-emerald-200/60 font-medium">
+                    <p className="text-[10px] text-center text-slate-400 font-medium">
                       Start with 100% free tools. Upgrade to Premium anytime.
                     </p>
                   </div>
                 </div>
               </a>
               <a
-                className="group relative rounded-3xl border border-indigo-500/30 bg-slate-900/60 p-1 overflow-hidden backdrop-blur-md hover:border-indigo-400/60 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-900/20 block"
+                className="group relative rounded-3xl border border-slate-200/80 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-1 overflow-hidden backdrop-blur-md hover:border-indigo-200 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgb(99,102,241,0.08)] block"
                 href="/dashboard"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-transparent pointer-events-none"></div>
-                <div className="bg-[#0b1320] rounded-[22px] h-full p-6 sm:p-8 flex flex-col relative z-10">
+                <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-transparent pointer-events-none"></div>
+                <div className="bg-white rounded-[22px] h-full p-6 sm:p-8 flex flex-col relative z-10">
                   <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white mb-6 shadow-lg shadow-indigo-900/50">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -476,14 +476,14 @@ export default async function HomePage() {
                       <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                     </svg>
                   </div>
-                  <h2 className="text-2xl sm:text-3xl font-black text-white mb-2">
+                  <h2 className="text-2xl sm:text-3xl font-black text-slate-900 mb-2">
                     IELTS Band 7.5+
                   </h2>
-                  <p className="text-xs text-slate-400 mb-6 leading-relaxed">
+                  <p className="text-[13px] text-slate-500 mb-6 leading-relaxed">
                     কেমব্রিজ রিয়েল টেস্ট, এআই মূল্যায়ন। প্রথমে ফ্রি মক টেস্ট
                     দিন, তারপর এক্সপার্ট মেন্টরশিপে আপগ্রেড করুন।
                   </p>
-                  <ul className="space-y-2.5 mb-8 flex-1 text-[13px] text-slate-300 font-medium">
+                  <ul className="space-y-2.5 mb-8 flex-1 text-[14px] text-slate-600 font-medium">
                     <li className="flex items-center gap-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -676,7 +676,7 @@ export default async function HomePage() {
                         <path d="m12 5 7 7-7 7"></path>
                       </svg>
                     </div>
-                    <p className="text-[10px] text-center text-indigo-200/60 font-medium">
+                    <p className="text-[10px] text-center text-slate-400 font-medium">
                       Start with 100% free tools. Upgrade to Premium anytime.
                     </p>
                   </div>
