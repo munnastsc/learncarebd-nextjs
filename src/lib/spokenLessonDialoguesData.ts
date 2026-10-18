@@ -2137,4 +2137,1851 @@ export const LESSON_20_DIALOGUES: Record<string, LessonDialogueTurn[]> = {
             "bn_pron": "ইট টেকস about seven working days for urgent delivery।"
         }
     ]
+,
+"lesson-16-present-perfect-continuous": [
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Present Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Present Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Present Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Present Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Present Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Present Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Present Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Present Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Present Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Present Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        }
+    ],
+    "lesson-17-tense-compare-continuous-perfect": [
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I am working\" বনাম \"I have been working for 2 hours\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I am working\" বনাম \"I have been working for 2 hours\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I am working\" বনাম \"I have been working for 2 hours\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I am working\" বনাম \"I have been working for 2 hours\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I am working\" বনাম \"I have been working for 2 hours\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I am working\" বনাম \"I have been working for 2 hours\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I am working\" বনাম \"I have been working for 2 hours\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I am working\" বনাম \"I have been working for 2 hours\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I am working\" বনাম \"I have been working for 2 hours\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I am working\" বনাম \"I have been working for 2 hours\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        }
+    ],
+    "lesson-18-tense-compare-present-perfect-past-simple": [
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I have done\" বনাম \"I did\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I have done\" বনাম \"I did\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I have done\" বনাম \"I did\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I have done\" বনাম \"I did\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I have done\" বনাম \"I did\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I have done\" বনাম \"I did\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I have done\" বনাম \"I did\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I have done\" বনাম \"I did\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I have done\" বনাম \"I did\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Tense Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত \"I have done\" বনাম \"I did\"  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        }
+    ],
+    "lesson-19-past-continuous": [
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        }
+    ],
+    "lesson-20-past-perfect-and-comparison": [
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect & Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect & Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect & Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect & Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect & Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect & Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect & Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect & Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect & Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect & Comparison diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        }
+    ],
+    "lesson-21-past-perfect-continuous": [
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Past Perfect Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        }
+    ],
+    "lesson-22-future-continuous": [
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Continuous diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        }
+    ],
+    "lesson-23-future-perfect-and-continuous": [
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Perfect diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Perfect diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Perfect diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Perfect diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Perfect diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Perfect diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Perfect diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Perfect diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Perfect diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Future Perfect diligently?",
+            "bn": "তুমি কি নিয়মিত ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        }
+    ],
+    "lesson-24-complete-modals": [
+        {
+            "speaker": "A",
+            "en": "Have you been practicing All Modals Mastery diligently?",
+            "bn": "তুমি কি নিয়মিত সম্ভাবনা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing All Modals Mastery diligently?",
+            "bn": "তুমি কি নিয়মিত সম্ভাবনা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing All Modals Mastery diligently?",
+            "bn": "তুমি কি নিয়মিত সম্ভাবনা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing All Modals Mastery diligently?",
+            "bn": "তুমি কি নিয়মিত সম্ভাবনা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing All Modals Mastery diligently?",
+            "bn": "তুমি কি নিয়মিত সম্ভাবনা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing All Modals Mastery diligently?",
+            "bn": "তুমি কি নিয়মিত সম্ভাবনা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing All Modals Mastery diligently?",
+            "bn": "তুমি কি নিয়মিত সম্ভাবনা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing All Modals Mastery diligently?",
+            "bn": "তুমি কি নিয়মিত সম্ভাবনা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing All Modals Mastery diligently?",
+            "bn": "তুমি কি নিয়মিত সম্ভাবনা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing All Modals Mastery diligently?",
+            "bn": "তুমি কি নিয়মিত সম্ভাবনা  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        }
+    ],
+    "lesson-25-be-being-been": [
+        {
+            "speaker": "A",
+            "en": "Have you been practicing The Master Guide diligently?",
+            "bn": "তুমি কি নিয়মিত Be  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing The Master Guide diligently?",
+            "bn": "তুমি কি নিয়মিত Be  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing The Master Guide diligently?",
+            "bn": "তুমি কি নিয়মিত Be  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing The Master Guide diligently?",
+            "bn": "তুমি কি নিয়মিত Be  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing The Master Guide diligently?",
+            "bn": "তুমি কি নিয়মিত Be  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing The Master Guide diligently?",
+            "bn": "তুমি কি নিয়মিত Be  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing The Master Guide diligently?",
+            "bn": "তুমি কি নিয়মিত Be  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing The Master Guide diligently?",
+            "bn": "তুমি কি নিয়মিত Be  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing The Master Guide diligently?",
+            "bn": "তুমি কি নিয়মিত Be  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing The Master Guide diligently?",
+            "bn": "তুমি কি নিয়মিত Be  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        }
+    ],
+    "lesson-26-conditionals": [
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Real-Life Conditionals diligently?",
+            "bn": "তুমি কি নিয়মিত বাস্তব জীবনের শর্তমূলক বাক্য  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Real-Life Conditionals diligently?",
+            "bn": "তুমি কি নিয়মিত বাস্তব জীবনের শর্তমূলক বাক্য  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Real-Life Conditionals diligently?",
+            "bn": "তুমি কি নিয়মিত বাস্তব জীবনের শর্তমূলক বাক্য  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Real-Life Conditionals diligently?",
+            "bn": "তুমি কি নিয়মিত বাস্তব জীবনের শর্তমূলক বাক্য  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Real-Life Conditionals diligently?",
+            "bn": "তুমি কি নিয়মিত বাস্তব জীবনের শর্তমূলক বাক্য  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Real-Life Conditionals diligently?",
+            "bn": "তুমি কি নিয়মিত বাস্তব জীবনের শর্তমূলক বাক্য  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Real-Life Conditionals diligently?",
+            "bn": "তুমি কি নিয়মিত বাস্তব জীবনের শর্তমূলক বাক্য  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Real-Life Conditionals diligently?",
+            "bn": "তুমি কি নিয়মিত বাস্তব জীবনের শর্তমূলক বাক্য  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Real-Life Conditionals diligently?",
+            "bn": "তুমি কি নিয়মিত বাস্তব জীবনের শর্তমূলক বাক্য  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Real-Life Conditionals diligently?",
+            "bn": "তুমি কি নিয়মিত বাস্তব জীবনের শর্তমূলক বাক্য  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        }
+    ],
+    "lesson-27-causative-verbs": [
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Causative Verbs diligently?",
+            "bn": "তুমি কি নিয়মিত কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Causative Verbs diligently?",
+            "bn": "তুমি কি নিয়মিত কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Causative Verbs diligently?",
+            "bn": "তুমি কি নিয়মিত কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Causative Verbs diligently?",
+            "bn": "তুমি কি নিয়মিত কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Causative Verbs diligently?",
+            "bn": "তুমি কি নিয়মিত কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Causative Verbs diligently?",
+            "bn": "তুমি কি নিয়মিত কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Causative Verbs diligently?",
+            "bn": "তুমি কি নিয়মিত কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Causative Verbs diligently?",
+            "bn": "তুমি কি নিয়মিত কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Causative Verbs diligently?",
+            "bn": "তুমি কি নিয়মিত কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Causative Verbs diligently?",
+            "bn": "তুমি কি নিয়মিত কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        }
+    ],
+    "lesson-28-passive-speaking": [
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Passive Voice in Speaking diligently?",
+            "bn": "তুমি কি নিয়মিত দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Passive Voice in Speaking diligently?",
+            "bn": "তুমি কি নিয়মিত দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Passive Voice in Speaking diligently?",
+            "bn": "তুমি কি নিয়মিত দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Passive Voice in Speaking diligently?",
+            "bn": "তুমি কি নিয়মিত দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Passive Voice in Speaking diligently?",
+            "bn": "তুমি কি নিয়মিত দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Passive Voice in Speaking diligently?",
+            "bn": "তুমি কি নিয়মিত দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Passive Voice in Speaking diligently?",
+            "bn": "তুমি কি নিয়মিত দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Passive Voice in Speaking diligently?",
+            "bn": "তুমি কি নিয়মিত দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Passive Voice in Speaking diligently?",
+            "bn": "তুমি কি নিয়মিত দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        },
+        {
+            "speaker": "A",
+            "en": "Have you been practicing Passive Voice in Speaking diligently?",
+            "bn": "তুমি কি নিয়মিত দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান  অনুশীলন করছো?",
+            "ipa": "/hæv juː biːn ˈpræktɪsɪŋ ˈdɪlɪdʒəntli/",
+            "bn_pron": "হ্যাভ ইউ বিন প্র্যাকটিসিং ডিলিজেন্টলি?"
+        },
+        {
+            "speaker": "B",
+            "en": "Yes, I have been practicing every day and seeing great progress.",
+            "bn": "হ্যাঁ, আমি প্রতিদিন অনুশীলন করছি এবং চমৎকার অগ্রগতি দেখছি।",
+            "ipa": "/jes aɪ hæv biːn ˈpræktɪsɪŋ ˈevri deɪ/",
+            "bn_pron": "ইয়েস আই হ্যাভ বিন প্র্যাকটিসিং এভরি ডে।"
+        }
+    ]
 };

@@ -1,6 +1,6 @@
 export interface LessonFillGapItem {
     id: string;
-    num: number;
+    num?: number;
     sentence: string;
     options: string[];
     answer: string;
@@ -22538,6 +22538,18233 @@ export const LESSON_100_FILL_GAPS: Record<string, LessonFillGapItem[]> = {
             "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
             "completedSentence": "It takes about thirty minutes to reach the station.",
             "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        }
+    ]
+,
+"lesson-16-present-perfect-continuous": [
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-1",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-2",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-3",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-4",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-5",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-6",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-7",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-8",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-9",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-10",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-11",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-12",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-13",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-14",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-15",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-16",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-17",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-18",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-19",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-20",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-21",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-22",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-23",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-24",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-25",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-26",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-27",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-28",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-29",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-30",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-31",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-32",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-33",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-34",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-35",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-36",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-37",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-38",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-39",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-40",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-41",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-42",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-43",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-44",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-45",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-46",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-47",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-48",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-49",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-50",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-51",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-52",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-53",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-54",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-55",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-56",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-57",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-58",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-59",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-60",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-61",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-62",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-63",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-64",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-65",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-66",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-67",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-68",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-69",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-70",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-71",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-72",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-73",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-74",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-75",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-76",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-77",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-78",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-79",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-80",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-81",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-82",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-83",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-84",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-85",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-86",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-87",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-88",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-89",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-90",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-91",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-92",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-93",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-94",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-95",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-96",
+            "sentence": "She _____ working diligently for more than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working diligently for more than two years.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-97",
+            "sentence": "She _____ practicing IELTS since early this morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing IELTS since early this morning.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-98",
+            "sentence": "She _____ living happily for the last six months.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been living happily for the last six months.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-99",
+            "sentence": "She _____ waiting patiently since we graduated.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting patiently since we graduated.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-16-present-perfect-continuous-fg-100",
+            "sentence": "She _____ studying online for hours and hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Present Perfect Continuous: have/has been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying online for hours and hours.",
+            "bn": "সে অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        }
+    ],
+    "lesson-17-tense-compare-continuous-perfect": [
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-1",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-2",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-3",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-4",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-5",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-6",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-7",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-8",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-9",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-10",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-11",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-12",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-13",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-14",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-15",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-16",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-17",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-18",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-19",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-20",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-21",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-22",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-23",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-24",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-25",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-26",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-27",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-28",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-29",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-30",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-31",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-32",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-33",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-34",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-35",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-36",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-37",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-38",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-39",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-40",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-41",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-42",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-43",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-44",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-45",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-46",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-47",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-48",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-49",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-50",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-51",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-52",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-53",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-54",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-55",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-56",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-57",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-58",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-59",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-60",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-61",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-62",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-63",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-64",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-65",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-66",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-67",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-68",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-69",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-70",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-71",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-72",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-73",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-74",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-75",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-76",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-77",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-78",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-79",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-80",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-81",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-82",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-83",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-84",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-85",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-86",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-87",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-88",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-89",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-90",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-91",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-92",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-93",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-94",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-95",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-96",
+            "sentence": "She _____ working on this task right now.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on this task right now.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-97",
+            "sentence": "She _____ waiting for the doctor for over two hours.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been waiting for the doctor for over two hours.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-98",
+            "sentence": "She _____ studying English at the moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been studying English at the moment.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-99",
+            "sentence": "She _____ looking for my keys since 9 o'clock.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been looking for my keys since 9 o'clock.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-17-tense-compare-continuous-perfect-fg-100",
+            "sentence": "She _____ cooking dinner all day long.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Continuous vs Perfect Continuous এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been cooking dinner all day long.",
+            "bn": "সে \"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        }
+    ],
+    "lesson-18-tense-compare-present-perfect-past-simple": [
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-1",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-2",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-3",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-4",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-5",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-6",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-7",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-8",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-9",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-10",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-11",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-12",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-13",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-14",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-15",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-16",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-17",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-18",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-19",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-20",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-21",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-22",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-23",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-24",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-25",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-26",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-27",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-28",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-29",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-30",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-31",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-32",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-33",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-34",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-35",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-36",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-37",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-38",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-39",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-40",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-41",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-42",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-43",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-44",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-45",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-46",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-47",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-48",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-49",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-50",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-51",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-52",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-53",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-54",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-55",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-56",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-57",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-58",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-59",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-60",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-61",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-62",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-63",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-64",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-65",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-66",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-67",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-68",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-69",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-70",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-71",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-72",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-73",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-74",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-75",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-76",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-77",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-78",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-79",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-80",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-81",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-82",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-83",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-84",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-85",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-86",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-87",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-88",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-89",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-90",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-91",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-92",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-93",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-94",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-95",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-96",
+            "sentence": "She _____ yesterday afternoon at the office gate.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been yesterday afternoon at the office gate.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-97",
+            "sentence": "She _____ many times before with tremendous enthusiasm.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been many times before with tremendous enthusiasm.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-98",
+            "sentence": "She _____ last night before the deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been last night before the deadline.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-99",
+            "sentence": "She _____ already today in front of everyone.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been already today in front of everyone.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-18-tense-compare-present-perfect-past-simple-fg-100",
+            "sentence": "She _____ two hours ago without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Tense Comparison: Present Perfect vs Past Simple এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been two hours ago without any hesitation.",
+            "bn": "সে \"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        }
+    ],
+    "lesson-19-past-continuous": [
+        {
+            "id": "lesson-19-past-continuous-fg-1",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-2",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-3",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-4",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-5",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-6",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-7",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-8",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-9",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-10",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-11",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-12",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-13",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-14",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-15",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-16",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-17",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-18",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-19",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-20",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-21",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-22",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-23",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-24",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-25",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-26",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-27",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-28",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-29",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-30",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-31",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-32",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-33",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-34",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-35",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-36",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-37",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-38",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-39",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-40",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-41",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-42",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-43",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-44",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-45",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-46",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-47",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-48",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-49",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-50",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-51",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-52",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-53",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-54",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-55",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-56",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-57",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-58",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-59",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-60",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-61",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-62",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-63",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-64",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-65",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-66",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-67",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-68",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-69",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-70",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-71",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-72",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-73",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-74",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-75",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-76",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-77",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-78",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-79",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-80",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-81",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-82",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-83",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-84",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-85",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-86",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-87",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-88",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-89",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-90",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-91",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-92",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-93",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-94",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-95",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-96",
+            "sentence": "She _____ watching television when the lights went out.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been watching television when the lights went out.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-97",
+            "sentence": "She _____ walking in the park while it was raining cats and dogs.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been walking in the park while it was raining cats and dogs.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-98",
+            "sentence": "She _____ preparing dinner at that exact moment.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been preparing dinner at that exact moment.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-99",
+            "sentence": "She _____ talking on the phone when your brother called.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been talking on the phone when your brother called.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-19-past-continuous-fg-100",
+            "sentence": "She _____ driving home all through the evening.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Continuous: was / were + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been driving home all through the evening.",
+            "bn": "সে অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        }
+    ],
+    "lesson-20-past-perfect-and-comparison": [
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-1",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-2",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-3",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-4",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-5",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-6",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-7",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-8",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-9",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-10",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-11",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-12",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-13",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-14",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-15",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-16",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-17",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-18",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-19",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-20",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-21",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-22",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-23",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-24",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-25",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-26",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-27",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-28",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-29",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-30",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-31",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-32",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-33",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-34",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-35",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-36",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-37",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-38",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-39",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-40",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-41",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-42",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-43",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-44",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-45",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-46",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-47",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-48",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-49",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-50",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-51",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-52",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-53",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-54",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-55",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-56",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-57",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-58",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-59",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-60",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-61",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-62",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-63",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-64",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-65",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-66",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-67",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-68",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-69",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-70",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-71",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-72",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-73",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-74",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-75",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-76",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-77",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-78",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-79",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-80",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-81",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-82",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-83",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-84",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-85",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-86",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-87",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-88",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-89",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-90",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-91",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-92",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-93",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-94",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-95",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-96",
+            "sentence": "She _____ before my manager asked for it.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been before my manager asked for it.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-97",
+            "sentence": "She _____ after we reached the railway platform.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been after we reached the railway platform.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-98",
+            "sentence": "She _____ by the time the heavy thunderstorm started.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been by the time the heavy thunderstorm started.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-99",
+            "sentence": "She _____ long before the bell rang loudly.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been long before the bell rang loudly.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-20-past-perfect-and-comparison-fg-100",
+            "sentence": "She _____ just after any accident took place.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "had",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect & Comparison: Past Simple vs Past Perfect এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been just after any accident took place.",
+            "bn": "সে অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        }
+    ],
+    "lesson-21-past-perfect-continuous": [
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-1",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-2",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-3",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-4",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-5",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-6",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-7",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-8",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-9",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-10",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-11",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-12",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-13",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-14",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-15",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-16",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-17",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-18",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-19",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-20",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-21",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-22",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-23",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-24",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-25",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-26",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-27",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-28",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-29",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-30",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-31",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-32",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-33",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-34",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-35",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-36",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-37",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-38",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-39",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-40",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-41",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-42",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-43",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-44",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-45",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-46",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-47",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-48",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-49",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-50",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-51",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-52",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-53",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-54",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-55",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-56",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-57",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-58",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-59",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-60",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-61",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-62",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-63",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-64",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-65",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-66",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-67",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-68",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-69",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-70",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-71",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-72",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-73",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-74",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-75",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-76",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-77",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-78",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-79",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-80",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-81",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-82",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-83",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-84",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-85",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-86",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-87",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-88",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-89",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-90",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-91",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-92",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-93",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-94",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-95",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-96",
+            "sentence": "She _____ for nearly three hours before the doctor finally arrived.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for nearly three hours before the doctor finally arrived.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-97",
+            "sentence": "She _____ since early morning when she scored Band 8.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been since early morning when she scored Band 8.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-98",
+            "sentence": "She _____ for over five years before launching their venture.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for over five years before launching their venture.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-99",
+            "sentence": "She _____ all night long before finding the right hotel.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been all night long before finding the right hotel.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-21-past-perfect-continuous-fg-100",
+            "sentence": "She _____ for several months when the meeting concluded.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Past Perfect Continuous: had been + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for several months when the meeting concluded.",
+            "bn": "সে অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        }
+    ],
+    "lesson-22-future-continuous": [
+        {
+            "id": "lesson-22-future-continuous-fg-1",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-2",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-3",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-4",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-5",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-6",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-7",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-8",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-9",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-10",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-11",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-12",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-13",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-14",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-15",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-16",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-17",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-18",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-19",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-20",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-21",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-22",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-23",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-24",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-25",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-26",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-27",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-28",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-29",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-30",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-31",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-32",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-33",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-34",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-35",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-36",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-37",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-38",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-39",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-40",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-41",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-42",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-43",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-44",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-45",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-46",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-47",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-48",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-49",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-50",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-51",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-52",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-53",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-54",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-55",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-56",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-57",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-58",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-59",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-60",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-61",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-62",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-63",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-64",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-65",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-66",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-67",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-68",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-69",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-70",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-71",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-72",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-73",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-74",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-75",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-76",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-77",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-78",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-79",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-80",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-81",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-82",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-83",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-84",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-85",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-86",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-87",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-88",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-89",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-90",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-91",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-92",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-93",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-94",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-95",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-96",
+            "sentence": "She _____ working on the project at this exact time tomorrow.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been working on the project at this exact time tomorrow.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-97",
+            "sentence": "She _____ traveling to the beach all throughout next month.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been traveling to the beach all throughout next month.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-98",
+            "sentence": "She _____ practicing Spoken English when you arrive at the airport.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been practicing Spoken English when you arrive at the airport.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-99",
+            "sentence": "She _____ attending the workshop during the upcoming vacation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been attending the workshop during the upcoming vacation.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-22-future-continuous-fg-100",
+            "sentence": "She _____ relaxing at home this coming Sunday morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Continuous: will be + V-ing এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been relaxing at home this coming Sunday morning.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        }
+    ],
+    "lesson-23-future-perfect-and-continuous": [
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-1",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-2",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-3",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-4",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-5",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-6",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-7",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-8",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-9",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-10",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-11",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-12",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-13",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-14",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-15",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-16",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-17",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-18",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-19",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-20",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-21",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-22",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-23",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-24",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-25",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-26",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-27",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-28",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-29",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-30",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-31",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-32",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-33",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-34",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-35",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-36",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-37",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-38",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-39",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-40",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-41",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-42",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-43",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-44",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-45",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-46",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-47",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-48",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-49",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-50",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-51",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-52",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-53",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-54",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-55",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-56",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-57",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-58",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-59",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-60",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-61",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-62",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-63",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-64",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-65",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-66",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-67",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-68",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-69",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-70",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-71",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-72",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-73",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-74",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-75",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-76",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-77",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-78",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-79",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-80",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-81",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-82",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-83",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-84",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-85",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-86",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-87",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-88",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-89",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-90",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-91",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-92",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-93",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-94",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-95",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-96",
+            "sentence": "She _____ achieved my Band 8 before the winter begins.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been achieved my Band 8 before the winter begins.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-97",
+            "sentence": "She _____ her university degree by the end of this semester.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been her university degree by the end of this semester.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-98",
+            "sentence": "She _____ to their new residence before the contract expires.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been to their new residence before the contract expires.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-99",
+            "sentence": "She _____ enough financial savings by next December.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been enough financial savings by next December.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-23-future-perfect-and-continuous-fg-100",
+            "sentence": "She _____ our speaking targets in less than two years.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "has been",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Future Perfect: will have + V3 / will have been এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been our speaking targets in less than two years.",
+            "bn": "সে ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        }
+    ],
+    "lesson-24-complete-modals": [
+        {
+            "id": "lesson-24-complete-modals-fg-1",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-2",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-3",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-4",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-5",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-6",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-7",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-8",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-9",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-10",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-11",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-12",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-13",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-14",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-15",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-16",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-17",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-18",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-19",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-20",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-21",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-22",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-23",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-24",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-25",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-26",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-27",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-28",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-29",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-30",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-31",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-32",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-33",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-34",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-35",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-36",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-37",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-38",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-39",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-40",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-41",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-42",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-43",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-44",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-45",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-46",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-47",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-48",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-49",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-50",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-51",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-52",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-53",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-54",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-55",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-56",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-57",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-58",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-59",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-60",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-61",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-62",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-63",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-64",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-65",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-66",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-67",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-68",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-69",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-70",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-71",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-72",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-73",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-74",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-75",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-76",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-77",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-78",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-79",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-80",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-81",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-82",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-83",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-84",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-85",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-86",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-87",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-88",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-89",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-90",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-91",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-92",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-93",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-94",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-95",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-96",
+            "sentence": "She _____ respect the traffic regulations without any hesitation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been respect the traffic regulations without any hesitation.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-97",
+            "sentence": "She _____ help those in urgent need to maintain community harmony.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been help those in urgent need to maintain community harmony.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-98",
+            "sentence": "She _____ rain heavily this evening according to the weather forecast.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been rain heavily this evening according to the weather forecast.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-99",
+            "sentence": "She _____ be interested in the offer if we explain the benefits.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been be interested in the offer if we explain the benefits.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-24-complete-modals-fg-100",
+            "sentence": "She _____ begin our session today right now together.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে All Modals Mastery: May, Might, Must, Ought to, Shall এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been begin our session today right now together.",
+            "bn": "সে সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        }
+    ],
+    "lesson-25-be-being-been": [
+        {
+            "id": "lesson-25-be-being-been-fg-1",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-2",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-3",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-4",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-5",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-6",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-7",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-8",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-9",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-10",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-11",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-12",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-13",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-14",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-15",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-16",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-17",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-18",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-19",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-20",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-21",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-22",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-23",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-24",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-25",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-26",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-27",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-28",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-29",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-30",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-31",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-32",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-33",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-34",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-35",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-36",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-37",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-38",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-39",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-40",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-41",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-42",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-43",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-44",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-45",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-46",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-47",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-48",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-49",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-50",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-51",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-52",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-53",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-54",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-55",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-56",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-57",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-58",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-59",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-60",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-61",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-62",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-63",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-64",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-65",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-66",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-67",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-68",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-69",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-70",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-71",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-72",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-73",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-74",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-75",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-76",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-77",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-78",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-79",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-80",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-81",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-82",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-83",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-84",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-85",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-86",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-87",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-88",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-89",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-90",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-91",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-92",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-93",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-94",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-95",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-96",
+            "sentence": "She _____ London and Paris multiple times in my life.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been London and Paris multiple times in my life.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-97",
+            "sentence": "She _____ prepared by the team with utmost professional care.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been prepared by the team with utmost professional care.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-98",
+            "sentence": "She _____ punctual and honest in all your communications.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been punctual and honest in all your communications.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-99",
+            "sentence": "She _____ he earned everyone's trust without demanding any praise.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been he earned everyone's trust without demanding any praise.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-25-be-being-been-fg-100",
+            "sentence": "She _____ approved by management before the final deadline.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে The Master Guide: Be, Being, Been এর ব্যবহার এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been approved by management before the final deadline.",
+            "bn": "সে Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা) অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        }
+    ],
+    "lesson-26-conditionals": [
+        {
+            "id": "lesson-26-conditionals-fg-1",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-2",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-3",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-4",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-5",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-6",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-7",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-8",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-9",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-10",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-11",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-12",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-13",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-14",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-15",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-16",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-17",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-18",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-19",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-20",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-21",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-22",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-23",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-24",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-25",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-26",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-27",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-28",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-29",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-30",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-31",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-32",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-33",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-34",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-35",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-36",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-37",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-38",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-39",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-40",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-41",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-42",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-43",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-44",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-45",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-46",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-47",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-48",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-49",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-50",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-51",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-52",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-53",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-54",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-55",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-56",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-57",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-58",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-59",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-60",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-61",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-62",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-63",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-64",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-65",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-66",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-67",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-68",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-69",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-70",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-71",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-72",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-73",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-74",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-75",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-76",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-77",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-78",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-79",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-80",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-81",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-82",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-83",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-84",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-85",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-86",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-87",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-88",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-89",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-90",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-91",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-92",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-93",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-94",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-95",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-96",
+            "sentence": "She _____ you will improve rapidly without any shadow of doubt.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been you will improve rapidly without any shadow of doubt.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-97",
+            "sentence": "She _____ I would make education free for every child in our nation.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been I would make education free for every child in our nation.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-98",
+            "sentence": "She _____ we would have caught the flight before the airport gates closed.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we would have caught the flight before the airport gates closed.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-99",
+            "sentence": "She _____ if you were in my position to resolve this family matter.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been if you were in my position to resolve this family matter.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-26-conditionals-fg-100",
+            "sentence": "She _____ we will go on a picnic near the peaceful riverside.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been we will go on a picnic near the peaceful riverside.",
+            "bn": "সে বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        }
+    ],
+    "lesson-27-causative-verbs": [
+        {
+            "id": "lesson-27-causative-verbs-fg-1",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-2",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-3",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-4",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-5",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-6",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-7",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-8",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-9",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-10",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-11",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-12",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-13",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-14",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-15",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-16",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-17",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-18",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-19",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-20",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-21",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-22",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-23",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-24",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-25",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-26",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-27",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-28",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-29",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-30",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-31",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-32",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-33",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-34",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-35",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-36",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-37",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-38",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-39",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-40",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-41",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-42",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-43",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-44",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-45",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-46",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-47",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-48",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-49",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-50",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-51",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-52",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-53",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-54",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-55",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-56",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-57",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-58",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-59",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-60",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-61",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-62",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-63",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-64",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-65",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-66",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-67",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-68",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-69",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-70",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-71",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-72",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-73",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-74",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-75",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-76",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-77",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-78",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-79",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-80",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-81",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-82",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-83",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-84",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-85",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-86",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-87",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-88",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-89",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-90",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-91",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-92",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-93",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-94",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-95",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-96",
+            "sentence": "She _____ email the documents first thing tomorrow morning.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been email the documents first thing tomorrow morning.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-97",
+            "sentence": "She _____ explain the entire scenario without interrupting me.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been explain the entire scenario without interrupting me.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-98",
+            "sentence": "She _____ drive her to the campus safe and sound.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been drive her to the campus safe and sound.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-99",
+            "sentence": "She _____ appreciate real success throughout our lives.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been appreciate real success throughout our lives.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-27-causative-verbs-fg-100",
+            "sentence": "She _____ speak English effortlessly with just twenty minutes daily.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Causative Verbs: Make, Let, Have, Get & Help এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been speak English effortlessly with just twenty minutes daily.",
+            "bn": "সে কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        }
+    ],
+    "lesson-28-passive-speaking": [
+        {
+            "id": "lesson-28-passive-speaking-fg-1",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-2",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-3",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-4",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-5",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-6",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-7",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-8",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-9",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-10",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-11",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-12",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-13",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-14",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-15",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-16",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-17",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-18",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-19",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-20",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-21",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-22",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-23",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-24",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-25",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-26",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-27",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-28",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-29",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-30",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-31",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-32",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-33",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-34",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-35",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-36",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-37",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-38",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-39",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-40",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-41",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-42",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-43",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-44",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-45",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-46",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-47",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-48",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-49",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-50",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-51",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-52",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-53",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-54",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-55",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-56",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-57",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-58",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-59",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-60",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-61",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-62",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-63",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-64",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-65",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-66",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-67",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-68",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-69",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-70",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-71",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-72",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-73",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-74",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-75",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-76",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-77",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-78",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-79",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-80",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-81",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-82",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-83",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-84",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-85",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-86",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-87",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-88",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-89",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-90",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-91",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-92",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-93",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-94",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-95",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-96",
+            "sentence": "She _____ well ahead of schedule by our hardworking engineers.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been well ahead of schedule by our hardworking engineers.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-97",
+            "sentence": "She _____ with delicious biscuits at every meeting session.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been with delicious biscuits at every meeting session.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-98",
+            "sentence": "She _____ for the overseas fellowship out of thousands of applicants.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been for the overseas fellowship out of thousands of applicants.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-99",
+            "sentence": "She _____ among all participants with huge round of applause.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been among all participants with huge round of applause.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
+        },
+        {
+            "id": "lesson-28-passive-speaking-fg-100",
+            "sentence": "She _____ in international conferences to bridge cultural gaps.",
+            "options": [
+                "has been",
+                "is",
+                "was",
+                "will"
+            ],
+            "answer": "is",
+            "explanationBn": "এই বাক্যে সঠিক উত্তর নির্ধারণে Passive Voice in Speaking: am/is/are + V3 & was/were + V3 এর মূল নিয়ম প্রযোজ্য হয়েছে।",
+            "completedSentence": "She has been in international conferences to bridge cultural gaps.",
+            "bn": "সে দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\") অনুযায়ী কাজটি সম্পন্ন করেছে।"
         }
     ]
 };

@@ -12,7 +12,7 @@ export interface SpokenLesson {
     lessonNumber: number;
     title: string;
     subtitle: string;
-    phase: 'to-be' | 'have-has' | 'tenses' | 'modals' | 'power-structures';
+    phase: 'to-be' | 'have-has' | 'tenses' | 'modals' | 'comparisons' | 'power-structures' | 'advanced';
     phaseLabel: string;
     level: 'Beginner' | 'Elementary' | 'Intermediate' | 'Upper-Intermediate';
     concept: {
@@ -2197,6 +2197,1163 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
             subjects: ['It takes', 'It took me', 'It will take', 'How long does it take', 'Why does it take'],
             auxOrVerbs: ['twenty minutes', 'a lot of patience', 'two months', 'hardly any time', 'only five seconds'],
             complements: ['to reach the office', 'to master IELTS speaking', 'to cook this delicious recipe', 'to solve this puzzle', 'to download the application']
+        }
+    },
+    {
+        id: "lesson-16-present-perfect-continuous",
+        lessonNumber: 16,
+        title: "Present Perfect Continuous: have/has been + V-ing",
+        subtitle: "অতীতে শুরু হওয়া কাজ এখনো চলছে, স্থায়িত্ব ও সময়ের পরিমাপ প্রকাশ (Since vs For)",
+        phase: "tenses",
+        phaseLabel: "কাল ও স্থায়িত্ব (Perfect Continuous)",
+        level: "Intermediate",
+        concept: {
+            explanation: "কোনো কাজ অতীতে শুরু হয়ে এখনো চোখের সামনে চলছে এবং বাক্যে সময়ের উল্লেখ থাকে (যেমন: সকাল থেকে, ২ ঘণ্টা ধরে) তখন have been বা has been + Verb-ing বসে। নির্দিষ্ট সময়ের শুরু বোঝালে 'Since' (যেমন: Since morning, Since 2020) এবং মোট সময়ের ব্যাপ্তি বোঝালে 'For' (যেমন: For 2 hours, For three days) বসে।",
+            whenToUse: "কাজের স্থায়িত্ব বা কতক্ষণ ধরে কাজটি চলমান রয়েছে তা সুনির্দিষ্টভাবে তুলে ধরতে।",
+            commonMistake: "বাঙালি শিক্ষার্থীরা ভুল করে বলে 'I am waiting for you since morning' — এটি ভুল! সময় উল্লেখ থাকলে কন্টিনিউয়াস হয় না, অবশ্যই বলতে হবে: 'I have been waiting for you since morning' (বা 'He has been living here for 5 years')।",
+            formulaSummary: "I/We/You/They + have been + V-ing | He/She/It + has been + V-ing (+ since/for + time)"
+        },
+        transformation6Way: {
+            baseConcept: "Present Perfect Continuous: have/has been + V-ing",
+            positive: {
+                formula: "I/We/You/They + have been + V-ing | He/She/It + has been + V-ing (+ since/for + time)",
+                en: "I have been learning English for three months.",
+                bn: "আমি তিন মাস ধরে ইংরেজি শিখছি।",
+                ipa: "/aɪ hæv biːn ˈlɜːnɪŋ ˈɪŋɡlɪʃ fɔː θriː mʌnθs/"
+            },
+            negative: {
+                formula: "Subject + Auxiliary Negative + Verb + Extension",
+                en: "I haven't been sleeping well for the last two days.",
+                bn: "গত দুই দিন ধরে আমার ভালো ঘুম হচ্ছে না।",
+                ipa: "/aɪ hævnt biːn ˈsliːpɪŋ wel fɔː ðə lɑːst tuː deɪz/"
+            },
+            interrogative: {
+                formula: "Auxiliary + Subject + Verb + Extension?",
+                en: "Have you been waiting here for a long time?",
+                bn: "তুমি কি এখানে অনেকক্ষণ ধরে অপেক্ষা করছো?",
+                ipa: "/hæv juː biːn ˈweɪtɪŋ hɪə fɔːr ə lɒŋ taɪm/"
+            },
+            interroNegative: {
+                formula: "Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Haven't you been feeling well lately?",
+                bn: "সাম্প্রতিক সময়ে তোমার কি শরীর ভালো লাগছে না?",
+                ipa: "/hævnt juː biːn ˈfiːlɪŋ wel ˈleɪtli/"
+            },
+            whPositive: {
+                formula: "WH-Word + Auxiliary + Subject + Verb + Extension?",
+                en: "How long have you been living in Dhaka?",
+                bn: "তুমি ঢাকায় কতদিন ধরে বাস করছো?",
+                ipa: "/haʊ lɒŋ hæv juː biːn ˈlɪvɪŋ ɪn ˈdækə/"
+            },
+            whNegative: {
+                formula: "WH-Word + Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Why haven't they been attending the meetings regularly?",
+                bn: "তারা কেন নিয়মিত মিটিংয়ে যোগ দিচ্ছে না?",
+                ipa: "/waɪ hævnt ðeɪ biːn əˈtendɪŋ ðə ˈmiːtɪŋz ˈreɡjələli/"
+            }
+        },
+        realLifeSentences: [
+            { en: "I have been learning English for three months.", bn: "আমি তিন মাস ধরে ইংরেজি শিখছি।", ipa: "/aɪ hæv biːn ˈlɜːnɪŋ ˈɪŋɡlɪʃ fɔː θriː mʌnθs/", context: "দৈনন্দিন বাস্তব প্রয়োগ", type: "positive" },
+            { en: "I haven't been sleeping well for the last two days.", bn: "গত দুই দিন ধরে আমার ভালো ঘুম হচ্ছে না।", ipa: "/aɪ hævnt biːn ˈsliːpɪŋ wel fɔː ðə lɑːst tuː deɪz/", context: "না-বাচক স্পষ্ট বিবৃতি", type: "negative" },
+            { en: "Have you been waiting here for a long time?", bn: "তুমি কি এখানে অনেকক্ষণ ধরে অপেক্ষা করছো?", ipa: "/hæv juː biːn ˈweɪtɪŋ hɪə fɔːr ə lɒŋ taɪm/", context: "ভদ্র ও স্বাভাবিক প্রশ্ন", type: "question" },
+            { en: "How long have you been living in Dhaka?", bn: "তুমি ঢাকায় কতদিন ধরে বাস করছো?", ipa: "/haʊ lɒŋ hæv juː biːn ˈlɪvɪŋ ɪn ˈdækə/", context: "তথ্যবহুল অনুসন্ধানী প্রশ্ন", type: "wh" }
+        ],
+        nativeVariations: {
+            situation: "বলতে চাওয়া: \"আমি তিন মাস ধরে ইংরেজি শিখছি।\"",
+            standard: "I have been learning English for three months.",
+            nativeStyle: "I have been learning English for three months.",
+            waysToSay: [
+                { phrasing: "I have been learning English for three months.", tone: "পেশাদার ও স্পষ্ট", bn: "আমি তিন মাস ধরে ইংরেজি শিখছি।" },
+                { phrasing: "Have you been waiting here for a long time?", tone: "ভদ্র ও চমৎকার", bn: "তুমি কি এখানে অনেকক্ষণ ধরে অপেক্ষা করছো?" },
+                { phrasing: "How long have you been living in Dhaka?", tone: "বিশ্লেষণধর্মী", bn: "তুমি ঢাকায় কতদিন ধরে বাস করছো?" }
+            ],
+            tip: "💡 এই কাঠামোর নিয়মিত চর্চা আপনার স্পিকিংকে আরও সাবলীল ও আন্তর্জাতিক মানের করে তুলবে।"
+        },
+        qaDrill: {
+            targetQuestion: {
+                en: "How long have you been working at your current company?",
+                bn: "তোমার বর্তমান কোম্পানিতে কতদিন ধরে কাজ করছো?",
+                ipa: "/hæv juː biːn/"
+            },
+            possibleAnswers: [
+                { style: "সংক্ষিপ্ত সম্মতি (Short Affirmative)", en: "Yes, absolutely! I find it very rewarding.", bn: "হ্যাঁ, অবশ্যই! এটি আমার কাছে দারুণ ফলপ্রসূ মনে হয়।", ipa: "/jes ˌæbsəˈluːtli/" },
+                { style: "বিস্তারিত উত্তর (Elaborated)", en: "I have been learning English for three months.", bn: "আমি তিন মাস ধরে ইংরেজি শিখছি।", ipa: "/aɪ hæv biːn ˈlɜːnɪŋ ˈɪŋɡlɪʃ fɔː θriː mʌnθs/" },
+                { style: "না-বাচক উত্তর (Polite Negative)", en: "Not quite, but I am planning to start soon.", bn: "পুরোপুরি নয়, তবে খুব শীঘ্রই শুরু করার পরিকল্পনা করছি।", ipa: "/nɒt kwaɪt/" },
+                { style: "বিকল্প বা দ্বিধা (Alternative / Uncertainty)", en: "It varies depending on my daily schedule.", bn: "আমার দৈনন্দিন রুটিনের ওপর ভিত্তি করে এটি পরিবর্তিত হয়।", ipa: "/ɪt ˈveəriz/" }
+            ]
+        },
+        sentenceBuilder: {
+            subjects: ["I have been", "She has been", "They have been", "How long have you been", "We haven't been"],
+            auxOrVerbs: ["working diligently", "practicing IELTS", "living happily", "waiting patiently", "studying online"],
+            complements: ["for more than two years", "since early this morning", "for the last six months", "since we graduated", "for hours and hours"]
+        }
+    },
+    {
+        id: "lesson-17-tense-compare-continuous-perfect",
+        lessonNumber: 17,
+        title: "Tense Comparison: Continuous vs Perfect Continuous",
+        subtitle: "\"I am working\" বনাম \"I have been working for 2 hours\" (সময়ের পার্থক্য)",
+        phase: "comparisons",
+        phaseLabel: "টেন্স তুলনা (Comparison)",
+        level: "Intermediate",
+        concept: {
+            explanation: "Present Continuous (am/is/are + V-ing) কেবল এই মুহূর্তের কাজের ওপর ফোকাস করে (Right now action, কোনো সময়ের উল্লেখ ছাড়া)। অপরদিকে Present Perfect Continuous (have/has been + V-ing) অতীতে কাজ শুরুর পয়েন্ট থেকে এখন পর্যন্ত কাজের স্থায়িত্বের ওপর ফোকাস করে।",
+            whenToUse: "যখন কাজের সাথে সময় যুক্ত হবে (for/since), তখনই Perfect Continuous ব্যবহার করতে হবে। আর যখন সময় থাকবে না, শুধুই এখনকার কাজ বোঝাবে, তখন সাধারণ Continuous।",
+            commonMistake: "কখনোই 'It is raining for two hours' বলবেন না। সময় থাকলে অবশ্যই 'It has been raining for two hours' বলতে হবে।",
+            formulaSummary: "No Time: Subject + am/is/are + V-ing | With Time (since/for): Subject + have/has been + V-ing"
+        },
+        transformation6Way: {
+            baseConcept: "Tense Comparison: Continuous vs Perfect Continuous",
+            positive: {
+                formula: "No Time: Subject + am/is/are + V-ing | With Time (since/for): Subject + have/has been + V-ing",
+                en: "I am reading now, but I have been reading this book for two days.",
+                bn: "আমি এখন পড়ছি, তবে আমি এই বইটি দুই দিন ধরে পড়ছি।",
+                ipa: "/aɪ æm ˈriːdɪŋ naʊ bʌt aɪ hæv biːn ˈriːdɪŋ ðɪs bʊk fɔː tuː deɪz/"
+            },
+            negative: {
+                formula: "Subject + Auxiliary Negative + Verb + Extension",
+                en: "He is not crying, he has just been chopping onions.",
+                bn: "সে কাঁদছে না, সে কিছুক্ষণ ধরে পেঁয়াজ কাটছিল।",
+                ipa: "/hiː ɪz nɒt ˈkraɪɪŋ hiː hæz dʒʌst biːn ˈtʃɒpɪŋ ˈʌnjənz/"
+            },
+            interrogative: {
+                formula: "Auxiliary + Subject + Verb + Extension?",
+                en: "Are you cooking right now, or have you been cooking all afternoon?",
+                bn: "তুমি কি এখন রান্না করছো, নাকি সারা দুপুর ধরে রান্না করছো?",
+                ipa: "/ɑː juː ˈkʊkɪŋ raɪt naʊ ɔː hæv juː biːn ˈkʊkɪŋ ɔːl ˌɑːftəˈnuːn/"
+            },
+            interroNegative: {
+                formula: "Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Aren't you leaving yet? Haven't you been packing since morning?",
+                bn: "তুমি এখনো রওনা হচ্ছ না? সকাল থেকে কি গোছাচ্ছ না?",
+                ipa: "/ɑːnt juː ˈliːvɪŋ jet hævnt juː biːn ˈpækɪŋ sɪns ˈmɔːnɪŋ/"
+            },
+            whPositive: {
+                formula: "WH-Word + Auxiliary + Subject + Verb + Extension?",
+                en: "What are you doing versus what have you been doing all week?",
+                bn: "তুমি এখন কী করছো বনাম পুরো সপ্তাহ জুড়ে কী করছিলে?",
+                ipa: "/wɒt ɑː juː ˈduːɪŋ ˈvɜːsəs wɒt hæv juː biːn ˈduːɪŋ ɔːl wiːk/"
+            },
+            whNegative: {
+                formula: "WH-Word + Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Why aren't you resting if you have been typing for hours?",
+                bn: "তুমি বিশ্রাম নিচ্ছ না কেন যদি তুমি ঘণ্টার পর ঘণ্টা টাইপ করে থাকো?",
+                ipa: "/waɪ ɑːnt juː ˈrestɪŋ ɪf juː hæv biːn ˈtaɪpɪŋ fɔːr ˈaʊəz/"
+            }
+        },
+        realLifeSentences: [
+            { en: "I am reading now, but I have been reading this book for two days.", bn: "আমি এখন পড়ছি, তবে আমি এই বইটি দুই দিন ধরে পড়ছি।", ipa: "/aɪ æm ˈriːdɪŋ naʊ bʌt aɪ hæv biːn ˈriːdɪŋ ðɪs bʊk fɔː tuː deɪz/", context: "দৈনন্দিন বাস্তব প্রয়োগ", type: "positive" },
+            { en: "He is not crying, he has just been chopping onions.", bn: "সে কাঁদছে না, সে কিছুক্ষণ ধরে পেঁয়াজ কাটছিল।", ipa: "/hiː ɪz nɒt ˈkraɪɪŋ hiː hæz dʒʌst biːn ˈtʃɒpɪŋ ˈʌnjənz/", context: "না-বাচক স্পষ্ট বিবৃতি", type: "negative" },
+            { en: "Are you cooking right now, or have you been cooking all afternoon?", bn: "তুমি কি এখন রান্না করছো, নাকি সারা দুপুর ধরে রান্না করছো?", ipa: "/ɑː juː ˈkʊkɪŋ raɪt naʊ ɔː hæv juː biːn ˈkʊkɪŋ ɔːl ˌɑːftəˈnuːn/", context: "ভদ্র ও স্বাভাবিক প্রশ্ন", type: "question" },
+            { en: "What are you doing versus what have you been doing all week?", bn: "তুমি এখন কী করছো বনাম পুরো সপ্তাহ জুড়ে কী করছিলে?", ipa: "/wɒt ɑː juː ˈduːɪŋ ˈvɜːsəs wɒt hæv juː biːn ˈduːɪŋ ɔːl wiːk/", context: "তথ্যবহুল অনুসন্ধানী প্রশ্ন", type: "wh" }
+        ],
+        nativeVariations: {
+            situation: "বলতে চাওয়া: \"আমি এখন পড়ছি, তবে আমি এই বইটি দুই দিন ধরে পড়ছি।\"",
+            standard: "I am reading now, but I have been reading this book for two days.",
+            nativeStyle: "I am reading now, but I have been reading this book for two days.",
+            waysToSay: [
+                { phrasing: "I am reading now, but I have been reading this book for two days.", tone: "পেশাদার ও স্পষ্ট", bn: "আমি এখন পড়ছি, তবে আমি এই বইটি দুই দিন ধরে পড়ছি।" },
+                { phrasing: "Are you cooking right now, or have you been cooking all afternoon?", tone: "ভদ্র ও চমৎকার", bn: "তুমি কি এখন রান্না করছো, নাকি সারা দুপুর ধরে রান্না করছো?" },
+                { phrasing: "What are you doing versus what have you been doing all week?", tone: "বিশ্লেষণধর্মী", bn: "তুমি এখন কী করছো বনাম পুরো সপ্তাহ জুড়ে কী করছিলে?" }
+            ],
+            tip: "💡 এই কাঠামোর নিয়মিত চর্চা আপনার স্পিকিংকে আরও সাবলীল ও আন্তর্জাতিক মানের করে তুলবে।"
+        },
+        qaDrill: {
+            targetQuestion: {
+                en: "Are you waiting for the bus, or have you been waiting here for a long time?",
+                bn: "তুমি কি বাসের অপেক্ষা করছো, নাকি এখানে অনেকক্ষণ ধরে অপেক্ষা করছো?",
+                ipa: "/hæv juː biːn/"
+            },
+            possibleAnswers: [
+                { style: "সংক্ষিপ্ত সম্মতি (Short Affirmative)", en: "Yes, absolutely! I find it very rewarding.", bn: "হ্যাঁ, অবশ্যই! এটি আমার কাছে দারুণ ফলপ্রসূ মনে হয়।", ipa: "/jes ˌæbsəˈluːtli/" },
+                { style: "বিস্তারিত উত্তর (Elaborated)", en: "I am reading now, but I have been reading this book for two days.", bn: "আমি এখন পড়ছি, তবে আমি এই বইটি দুই দিন ধরে পড়ছি।", ipa: "/aɪ æm ˈriːdɪŋ naʊ bʌt aɪ hæv biːn ˈriːdɪŋ ðɪs bʊk fɔː tuː deɪz/" },
+                { style: "না-বাচক উত্তর (Polite Negative)", en: "Not quite, but I am planning to start soon.", bn: "পুরোপুরি নয়, তবে খুব শীঘ্রই শুরু করার পরিকল্পনা করছি।", ipa: "/nɒt kwaɪt/" },
+                { style: "বিকল্প বা দ্বিধা (Alternative / Uncertainty)", en: "It varies depending on my daily schedule.", bn: "আমার দৈনন্দিন রুটিনের ওপর ভিত্তি করে এটি পরিবর্তিত হয়।", ipa: "/ɪt ˈveəriz/" }
+            ]
+        },
+        sentenceBuilder: {
+            subjects: ["I am", "I have been", "She is", "She has been", "Why are you"],
+            auxOrVerbs: ["working on this task", "waiting for the doctor", "studying English", "looking for my keys", "cooking dinner"],
+            complements: ["right now", "for over two hours", "at the moment", "since 9 o'clock", "all day long"]
+        }
+    },
+    {
+        id: "lesson-18-tense-compare-present-perfect-past-simple",
+        lessonNumber: 18,
+        title: "Tense Comparison: Present Perfect vs Past Simple",
+        subtitle: "\"I have done\" বনাম \"I did\" (সমাপ্ত ঘটনা বনাম বর্তমান প্রভাব)",
+        phase: "comparisons",
+        phaseLabel: "টেন্স তুলনা (Comparison)",
+        level: "Intermediate",
+        concept: {
+            explanation: "Past Simple নির্দেশ করে অতীত সময়ের কোনো নির্দিষ্ট সমাপ্ত মুহূর্ত (যেমন: yesterday, last week, in 2021, 2 hours ago)। আর Present Perfect নির্দেশ করে অতীত অভিজ্ঞতার বর্তমান তাৎপর্য বা অনির্দিষ্ট অতীতে ঘটা কাজ (যেমন: already, yet, just, ever, never, so far)।",
+            whenToUse: "সময়ের উল্লেখ সুনির্দিষ্ট থাকলে Past Simple (I met him yesterday)। আর বর্তমানের সাথে ফলাফল সম্পর্কিত থাকলে বা সময় উহ্য থাকলে Present Perfect (I have met him already)।",
+            commonMistake: "'I have seen him yesterday' বলা মস্ত বড় ভুল! নির্দিষ্ট অতীত সময় থাকলে কখনোই Present Perfect হবে না; বলতে হবে 'I saw him yesterday' বা 'I have seen him recently'।",
+            formulaSummary: "Specific Past Time (yesterday/last year): Did / V2 | Unspecified / Experience: Have/Has + V3"
+        },
+        transformation6Way: {
+            baseConcept: "Tense Comparison: Present Perfect vs Past Simple",
+            positive: {
+                formula: "Specific Past Time (yesterday/last year): Did / V2 | Unspecified / Experience: Have/Has + V3",
+                en: "I visited London in 2022, but I have visited many other countries too.",
+                bn: "আমি ২০২২ সালে লন্ডন গিয়েছিলাম, তবে আমি আরও অনেক দেশেও ভ্রমণ করেছি।",
+                ipa: "/aɪ ˈvɪzɪtɪd ˈlʌndən ɪn 2022 bʌt aɪ hæv ˈvɪzɪtɪd ˈmeni ˈʌðə ˈkʌntriz tuː/"
+            },
+            negative: {
+                formula: "Subject + Auxiliary Negative + Verb + Extension",
+                en: "I didn't call him yesterday because I haven't recharged my phone yet.",
+                bn: "আমি তাকে গতকাল কল করিনি কারণ আমি এখনো ফোনে রিচার্জ করিনি।",
+                ipa: "/aɪ dɪdnt kɔːl hɪm ˈjestədeɪ bɪˈkɒz aɪ hævnt riːˈtʃɑːdʒd maɪ fəʊn jet/"
+            },
+            interrogative: {
+                formula: "Auxiliary + Subject + Verb + Extension?",
+                en: "Did you watch the match last night, or have you already seen the highlights?",
+                bn: "তুমি কি কাল রাতে ম্যাচটি দেখেছিলে, নাকি ইতিমধ্যে হাইলাইটস দেখে ফেলেছো?",
+                ipa: "/dɪd juː wɒtʃ ðə mætʃ lɑːst naɪt ɔː hæv juː ɔːlˈredi siːn ðə ˈhaɪlaɪts/"
+            },
+            interroNegative: {
+                formula: "Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Didn't you submit the file, or haven't you finished it yet?",
+                bn: "তুমি ফাইলটা জমা দেওনি, নাকি এখনো শেষ করতে পারোনি?",
+                ipa: "/dɪdnt juː səbˈmɪt ðə faɪl ɔː hævnt juː ˈfɪnɪʃt ɪt jet/"
+            },
+            whPositive: {
+                formula: "WH-Word + Auxiliary + Subject + Verb + Extension?",
+                en: "When did you arrive, and what exciting places have you explored so far?",
+                bn: "তুমি কখন পৌঁছালে, এবং এ পর্যন্ত তুমি কোন চমৎকার জায়গাগুলো ঘুরেছো?",
+                ipa: "/wen dɪd juː əˈraɪv ænd wɒt ɪkˈsaɪtɪŋ ˈpleɪsɪz hæv juː ɪkˈsplɔːd səʊ fɑː/"
+            },
+            whNegative: {
+                formula: "WH-Word + Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Why didn't you inform me when you have already known about the change?",
+                bn: "তুমি আমাকে জানাওনি কেন যেখানে তুমি পরিবর্তনের বিষয়টি আগেই জানতে?",
+                ipa: "/waɪ dɪdnt juː ɪnˈfɔːm miː wen juː hæv ɔːlˈredi nəʊn əˈbaʊt ðə tʃeɪndʒ/"
+            }
+        },
+        realLifeSentences: [
+            { en: "I visited London in 2022, but I have visited many other countries too.", bn: "আমি ২০২২ সালে লন্ডন গিয়েছিলাম, তবে আমি আরও অনেক দেশেও ভ্রমণ করেছি।", ipa: "/aɪ ˈvɪzɪtɪd ˈlʌndən ɪn 2022 bʌt aɪ hæv ˈvɪzɪtɪd ˈmeni ˈʌðə ˈkʌntriz tuː/", context: "দৈনন্দিন বাস্তব প্রয়োগ", type: "positive" },
+            { en: "I didn't call him yesterday because I haven't recharged my phone yet.", bn: "আমি তাকে গতকাল কল করিনি কারণ আমি এখনো ফোনে রিচার্জ করিনি।", ipa: "/aɪ dɪdnt kɔːl hɪm ˈjestədeɪ bɪˈkɒz aɪ hævnt riːˈtʃɑːdʒd maɪ fəʊn jet/", context: "না-বাচক স্পষ্ট বিবৃতি", type: "negative" },
+            { en: "Did you watch the match last night, or have you already seen the highlights?", bn: "তুমি কি কাল রাতে ম্যাচটি দেখেছিলে, নাকি ইতিমধ্যে হাইলাইটস দেখে ফেলেছো?", ipa: "/dɪd juː wɒtʃ ðə mætʃ lɑːst naɪt ɔː hæv juː ɔːlˈredi siːn ðə ˈhaɪlaɪts/", context: "ভদ্র ও স্বাভাবিক প্রশ্ন", type: "question" },
+            { en: "When did you arrive, and what exciting places have you explored so far?", bn: "তুমি কখন পৌঁছালে, এবং এ পর্যন্ত তুমি কোন চমৎকার জায়গাগুলো ঘুরেছো?", ipa: "/wen dɪd juː əˈraɪv ænd wɒt ɪkˈsaɪtɪŋ ˈpleɪsɪz hæv juː ɪkˈsplɔːd səʊ fɑː/", context: "তথ্যবহুল অনুসন্ধানী প্রশ্ন", type: "wh" }
+        ],
+        nativeVariations: {
+            situation: "বলতে চাওয়া: \"আমি ২০২২ সালে লন্ডন গিয়েছিলাম, তবে আমি আরও অনেক দেশেও ভ্রমণ করেছি।\"",
+            standard: "I visited London in 2022, but I have visited many other countries too.",
+            nativeStyle: "I visited London in 2022, but I have visited many other countries too.",
+            waysToSay: [
+                { phrasing: "I visited London in 2022, but I have visited many other countries too.", tone: "পেশাদার ও স্পষ্ট", bn: "আমি ২০২২ সালে লন্ডন গিয়েছিলাম, তবে আমি আরও অনেক দেশেও ভ্রমণ করেছি।" },
+                { phrasing: "Did you watch the match last night, or have you already seen the highlights?", tone: "ভদ্র ও চমৎকার", bn: "তুমি কি কাল রাতে ম্যাচটি দেখেছিলে, নাকি ইতিমধ্যে হাইলাইটস দেখে ফেলেছো?" },
+                { phrasing: "When did you arrive, and what exciting places have you explored so far?", tone: "বিশ্লেষণধর্মী", bn: "তুমি কখন পৌঁছালে, এবং এ পর্যন্ত তুমি কোন চমৎকার জায়গাগুলো ঘুরেছো?" }
+            ],
+            tip: "💡 এই কাঠামোর নিয়মিত চর্চা আপনার স্পিকিংকে আরও সাবলীল ও আন্তর্জাতিক মানের করে তুলবে।"
+        },
+        qaDrill: {
+            targetQuestion: {
+                en: "Have you ever eaten Italian food, or did you try it when you were abroad?",
+                bn: "তুমি কি কখনো ইতালীয় খাবার খেয়েছো, নাকি বিদেশে থাকার সময় চেষ্টা করেছিলে?",
+                ipa: "/hæv juː biːn/"
+            },
+            possibleAnswers: [
+                { style: "সংক্ষিপ্ত সম্মতি (Short Affirmative)", en: "Yes, absolutely! I find it very rewarding.", bn: "হ্যাঁ, অবশ্যই! এটি আমার কাছে দারুণ ফলপ্রসূ মনে হয়।", ipa: "/jes ˌæbsəˈluːtli/" },
+                { style: "বিস্তারিত উত্তর (Elaborated)", en: "I visited London in 2022, but I have visited many other countries too.", bn: "আমি ২০২২ সালে লন্ডন গিয়েছিলাম, তবে আমি আরও অনেক দেশেও ভ্রমণ করেছি।", ipa: "/aɪ ˈvɪzɪtɪd ˈlʌndən ɪn 2022 bʌt aɪ hæv ˈvɪzɪtɪd ˈmeni ˈʌðə ˈkʌntriz tuː/" },
+                { style: "না-বাচক উত্তর (Polite Negative)", en: "Not quite, but I am planning to start soon.", bn: "পুরোপুরি নয়, তবে খুব শীঘ্রই শুরু করার পরিকল্পনা করছি।", ipa: "/nɒt kwaɪt/" },
+                { style: "বিকল্প বা দ্বিধা (Alternative / Uncertainty)", en: "It varies depending on my daily schedule.", bn: "আমার দৈনন্দিন রুটিনের ওপর ভিত্তি করে এটি পরিবর্তিত হয়।", ipa: "/ɪt ˈveəriz/" }
+            ]
+        },
+        sentenceBuilder: {
+            subjects: ["I saw him", "I have seen him", "Did you complete", "Have you completed", "She arrived"],
+            auxOrVerbs: ["yesterday afternoon", "many times before", "last night", "already today", "two hours ago"],
+            complements: ["at the office gate", "with tremendous enthusiasm", "before the deadline", "in front of everyone", "without any hesitation"]
+        }
+    },
+    {
+        id: "lesson-19-past-continuous",
+        lessonNumber: 19,
+        title: "Past Continuous: was / were + V-ing",
+        subtitle: "অতীতে কোনো কাজ চলার মাঝখানে আরেকটি ঘটনা ঘটা (When & While)",
+        phase: "tenses",
+        phaseLabel: "অতীত চলমান (Past Continuous)",
+        level: "Intermediate",
+        concept: {
+            explanation: "অতীতে কোনো নির্দিষ্ট সময়ে একটি কাজ চলছিল (চলমান ছিল) বোঝাতে was/were + Verb-ing ব্যবহৃত হয়। প্রায়ই একটি দীর্ঘ কাজের (Past Continuous) মাঝখানে একটি আকস্মিক ছোট ঘটনা (Past Simple) ঘটার বর্ণনায় When বা While বসে।",
+            whenToUse: "'আমি যখন বাড়ি ফিরছিলাম তখন বৃষ্টি শুরু হয়েছিল' (While I was going home, it began to rain)।",
+            commonMistake: "বাঙালি শিক্ষার্থীরা দুটোতেই সাধারণ অতীত ব্যবহার করে। সঠিকভাবে চলমান কাজটি বোঝাতে 'was/were + ing' ব্যবহার নিশ্চিত করুন।",
+            formulaSummary: "Subject + was/were + Verb-ing | When + Past Simple, While + Past Continuous"
+        },
+        transformation6Way: {
+            baseConcept: "Past Continuous: was / were + V-ing",
+            positive: {
+                formula: "Subject + was/were + Verb-ing | When + Past Simple, While + Past Continuous",
+                en: "I was cooking dinner when the doorbell rang suddenly.",
+                bn: "আমি যখন রাতের খাবার রান্না করছিলাম তখন হঠাৎ দরজার বেল বেজে উঠল।",
+                ipa: "/aɪ wəz ˈkʊkɪŋ ˈdɪnər wen ðə ˈdɔːbel ræŋ ˈsʌdənli/"
+            },
+            negative: {
+                formula: "Subject + Auxiliary Negative + Verb + Extension",
+                en: "They were not paying attention while the teacher was explaining.",
+                bn: "শিক্ষক যখন বুঝিয়ে দিচ্ছিলেন তখন তারা মনোযোগ দিচ্ছিল না।",
+                ipa: "/ðeɪ wɜː nɒt ˈpeɪɪŋ əˈtenʃn waɪl ðə ˈtiːtʃər wəz ɪkˈspleɪnɪŋ/"
+            },
+            interrogative: {
+                formula: "Auxiliary + Subject + Verb + Extension?",
+                en: "Were you sleeping when I called you last night?",
+                bn: "কাল রাতে যখন আমি তোমাকে কল করেছিলাম তুমি কি ঘুমাচ্ছিলে?",
+                ipa: "/wɜː juː ˈsliːpɪŋ wen aɪ kɔːld juː lɑːst naɪt/"
+            },
+            interroNegative: {
+                formula: "Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Wasn't she working on her computer when the power went out?",
+                bn: "বিদ্যুৎ চলে যাওয়ার সময় সে কি কম্পিউটারে কাজ করছিল না?",
+                ipa: "/wɒznt ʃiː ˈwɜːkɪŋ ɒn hɜː kəmˈpjuːtə wen ðə ˈpaʊə went aʊt/"
+            },
+            whPositive: {
+                formula: "WH-Word + Auxiliary + Subject + Verb + Extension?",
+                en: "What were you doing yesterday at 8:00 PM?",
+                bn: "গতকাল রাত ৮টায় তুমি কী করছিলে?",
+                ipa: "/wɒt wɜː juː ˈduːɪŋ ˈjestədeɪ æt eɪt piː em/"
+            },
+            whNegative: {
+                formula: "WH-Word + Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Why weren't you driving carefully when it was raining heavily?",
+                bn: "যখন ভারী বৃষ্টি হচ্ছিল তখন তুমি সাবধানে গাড়ি চালাচ্ছিলে না কেন?",
+                ipa: "/waɪ wɜːnt juː ˈdraɪvɪŋ ˈkeəfəli wen ɪt wəz ˈreɪnɪŋ ˈheɪvɪli/"
+            }
+        },
+        realLifeSentences: [
+            { en: "I was cooking dinner when the doorbell rang suddenly.", bn: "আমি যখন রাতের খাবার রান্না করছিলাম তখন হঠাৎ দরজার বেল বেজে উঠল।", ipa: "/aɪ wəz ˈkʊkɪŋ ˈdɪnər wen ðə ˈdɔːbel ræŋ ˈsʌdənli/", context: "দৈনন্দিন বাস্তব প্রয়োগ", type: "positive" },
+            { en: "They were not paying attention while the teacher was explaining.", bn: "শিক্ষক যখন বুঝিয়ে দিচ্ছিলেন তখন তারা মনোযোগ দিচ্ছিল না।", ipa: "/ðeɪ wɜː nɒt ˈpeɪɪŋ əˈtenʃn waɪl ðə ˈtiːtʃər wəz ɪkˈspleɪnɪŋ/", context: "না-বাচক স্পষ্ট বিবৃতি", type: "negative" },
+            { en: "Were you sleeping when I called you last night?", bn: "কাল রাতে যখন আমি তোমাকে কল করেছিলাম তুমি কি ঘুমাচ্ছিলে?", ipa: "/wɜː juː ˈsliːpɪŋ wen aɪ kɔːld juː lɑːst naɪt/", context: "ভদ্র ও স্বাভাবিক প্রশ্ন", type: "question" },
+            { en: "What were you doing yesterday at 8:00 PM?", bn: "গতকাল রাত ৮টায় তুমি কী করছিলে?", ipa: "/wɒt wɜː juː ˈduːɪŋ ˈjestədeɪ æt eɪt piː em/", context: "তথ্যবহুল অনুসন্ধানী প্রশ্ন", type: "wh" }
+        ],
+        nativeVariations: {
+            situation: "বলতে চাওয়া: \"আমি যখন রাতের খাবার রান্না করছিলাম তখন হঠাৎ দরজার বেল বেজে উঠল।\"",
+            standard: "I was cooking dinner when the doorbell rang suddenly.",
+            nativeStyle: "I was cooking dinner when the doorbell rang suddenly.",
+            waysToSay: [
+                { phrasing: "I was cooking dinner when the doorbell rang suddenly.", tone: "পেশাদার ও স্পষ্ট", bn: "আমি যখন রাতের খাবার রান্না করছিলাম তখন হঠাৎ দরজার বেল বেজে উঠল।" },
+                { phrasing: "Were you sleeping when I called you last night?", tone: "ভদ্র ও চমৎকার", bn: "কাল রাতে যখন আমি তোমাকে কল করেছিলাম তুমি কি ঘুমাচ্ছিলে?" },
+                { phrasing: "What were you doing yesterday at 8:00 PM?", tone: "বিশ্লেষণধর্মী", bn: "গতকাল রাত ৮টায় তুমি কী করছিলে?" }
+            ],
+            tip: "💡 এই কাঠামোর নিয়মিত চর্চা আপনার স্পিকিংকে আরও সাবলীল ও আন্তর্জাতিক মানের করে তুলবে।"
+        },
+        qaDrill: {
+            targetQuestion: {
+                en: "What were you doing when the earthquake occurred yesterday?",
+                bn: "গতকাল ভূমিকম্পের সময় তুমি কী করছিলে?",
+                ipa: "/hæv juː biːn/"
+            },
+            possibleAnswers: [
+                { style: "সংক্ষিপ্ত সম্মতি (Short Affirmative)", en: "Yes, absolutely! I find it very rewarding.", bn: "হ্যাঁ, অবশ্যই! এটি আমার কাছে দারুণ ফলপ্রসূ মনে হয়।", ipa: "/jes ˌæbsəˈluːtli/" },
+                { style: "বিস্তারিত উত্তর (Elaborated)", en: "I was cooking dinner when the doorbell rang suddenly.", bn: "আমি যখন রাতের খাবার রান্না করছিলাম তখন হঠাৎ দরজার বেল বেজে উঠল।", ipa: "/aɪ wəz ˈkʊkɪŋ ˈdɪnər wen ðə ˈdɔːbel ræŋ ˈsʌdənli/" },
+                { style: "না-বাচক উত্তর (Polite Negative)", en: "Not quite, but I am planning to start soon.", bn: "পুরোপুরি নয়, তবে খুব শীঘ্রই শুরু করার পরিকল্পনা করছি।", ipa: "/nɒt kwaɪt/" },
+                { style: "বিকল্প বা দ্বিধা (Alternative / Uncertainty)", en: "It varies depending on my daily schedule.", bn: "আমার দৈনন্দিন রুটিনের ওপর ভিত্তি করে এটি পরিবর্তিত হয়।", ipa: "/ɪt ˈveəriz/" }
+            ]
+        },
+        sentenceBuilder: {
+            subjects: ["I was", "She was", "They were", "Were you", "What were you"],
+            auxOrVerbs: ["watching television", "walking in the park", "preparing dinner", "talking on the phone", "driving home"],
+            complements: ["when the lights went out", "while it was raining cats and dogs", "at that exact moment", "when your brother called", "all through the evening"]
+        }
+    },
+    {
+        id: "lesson-20-past-perfect-and-comparison",
+        lessonNumber: 20,
+        title: "Past Perfect & Comparison: Past Simple vs Past Perfect",
+        subtitle: "অতীতে দুটি ঘটনার মধ্যে যেটি আগে হয়েছিল (had + V3, Before / After)",
+        phase: "comparisons",
+        phaseLabel: "টেন্স তুলনা (Comparison)",
+        level: "Intermediate",
+        concept: {
+            explanation: "অতীতে দুটি কাজ ঘটে থাকলে যে কাজটি তুলনামূলক আগে সম্পন্ন হয়েছিল সেটির ক্ষেত্রে Past Perfect (had + V3) এবং যেটি পরে হয়েছিল সেটির ক্ষেত্রে Past Simple (V2) বসে। Before এর পূর্বে had + V3 বসে, আর After এর পরে had + V3 বসে।",
+            whenToUse: "ট্রেন আসার আগে স্টেশনে পৌঁছানো, ডাক্তার আসার আগে রোগীর সুস্থ হওয়া ইত্যাদি ধারাবাহিক অতীত ক্রম প্রকাশে।",
+            commonMistake: "'Before the train left, we reached' না বলে আগে ঘটা কাজটি 'had + V3' দিয়ে বলতে হবে: 'The train had left before we reached the station'।",
+            formulaSummary: "Earlier Action: had + V3 | Later Action: Past Simple (V2) | Before vs After Rules"
+        },
+        transformation6Way: {
+            baseConcept: "Past Perfect & Comparison: Past Simple vs Past Perfect",
+            positive: {
+                formula: "Earlier Action: had + V3 | Later Action: Past Simple (V2) | Before vs After Rules",
+                en: "The patient had recovered before the doctor arrived.",
+                bn: "ডাক্তার আসার পূর্বেই রোগীটি সুস্থ হয়ে উঠেছিল।",
+                ipa: "/ðə ˈpeɪʃnt hæd rɪˈkʌvəd bɪˈfɔː ðə ˈdɒktər əˈraɪvd/"
+            },
+            negative: {
+                formula: "Subject + Auxiliary Negative + Verb + Extension",
+                en: "I had not realized the truth until he explained everything.",
+                bn: "তিনি সবকিছু ব্যাখ্যা না করা পর্যন্ত আমি সত্যটি বুঝতে পারিনি।",
+                ipa: "/aɪ hæd nɒt ˈrɪəlaɪzd ðə truːθ ənˈtɪl hiː ɪkˈspleɪnd ˈevrɪθɪŋ/"
+            },
+            interrogative: {
+                formula: "Auxiliary + Subject + Verb + Extension?",
+                en: "Had you already locked the main gate before leaving home?",
+                bn: "বাড়ি ছাড়ার আগে তুমি কি প্রধান গেটটি ইতিমধ্যে তালাবদ্ধ করেছিলে?",
+                ipa: "/hæd juː ɔːlˈredi lɒkt ðə meɪn ɡeɪt bɪˈfɔː ˈliːvɪŋ həʊm/"
+            },
+            interroNegative: {
+                formula: "Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Hadn't they informed you before making that major decision?",
+                bn: "সেই বড় সিদ্ধান্তটি নেওয়ার আগে তারা কি তোমাকে জানায়নি?",
+                ipa: "/hædnt ðeɪ ɪnˈfɔːmd juː bɪˈfɔː ˈmeɪkɪŋ ðæt ˈmeɪdʒə dɪˈsɪʒn/"
+            },
+            whPositive: {
+                formula: "WH-Word + Auxiliary + Subject + Verb + Extension?",
+                en: "What had happened before the security arrived at the spot?",
+                bn: "ঘটনাস্থলে নিরাপত্তা কর্মী আসার আগে কী ঘটেছিল?",
+                ipa: "/wɒt hæd ˈhæpənd bɪˈfɔː ðə sɪˈkjʊərəti əˈraɪvd æt ðə spɒt/"
+            },
+            whNegative: {
+                formula: "WH-Word + Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Why hadn't you told me the issue before I finalized the agreement?",
+                bn: "চুক্তিটি চূড়ান্ত করার আগে তুমি আমাকে সমস্যাটি বলোনি কেন?",
+                ipa: "/waɪ hædnt juː təʊld miː ði ˈɪʃuː bɪˈfɔːr aɪ ˈfaɪnəlaɪzd ði əˈɡriːmənt/"
+            }
+        },
+        realLifeSentences: [
+            { en: "The patient had recovered before the doctor arrived.", bn: "ডাক্তার আসার পূর্বেই রোগীটি সুস্থ হয়ে উঠেছিল।", ipa: "/ðə ˈpeɪʃnt hæd rɪˈkʌvəd bɪˈfɔː ðə ˈdɒktər əˈraɪvd/", context: "দৈনন্দিন বাস্তব প্রয়োগ", type: "positive" },
+            { en: "I had not realized the truth until he explained everything.", bn: "তিনি সবকিছু ব্যাখ্যা না করা পর্যন্ত আমি সত্যটি বুঝতে পারিনি।", ipa: "/aɪ hæd nɒt ˈrɪəlaɪzd ðə truːθ ənˈtɪl hiː ɪkˈspleɪnd ˈevrɪθɪŋ/", context: "না-বাচক স্পষ্ট বিবৃতি", type: "negative" },
+            { en: "Had you already locked the main gate before leaving home?", bn: "বাড়ি ছাড়ার আগে তুমি কি প্রধান গেটটি ইতিমধ্যে তালাবদ্ধ করেছিলে?", ipa: "/hæd juː ɔːlˈredi lɒkt ðə meɪn ɡeɪt bɪˈfɔː ˈliːvɪŋ həʊm/", context: "ভদ্র ও স্বাভাবিক প্রশ্ন", type: "question" },
+            { en: "What had happened before the security arrived at the spot?", bn: "ঘটনাস্থলে নিরাপত্তা কর্মী আসার আগে কী ঘটেছিল?", ipa: "/wɒt hæd ˈhæpənd bɪˈfɔː ðə sɪˈkjʊərəti əˈraɪvd æt ðə spɒt/", context: "তথ্যবহুল অনুসন্ধানী প্রশ্ন", type: "wh" }
+        ],
+        nativeVariations: {
+            situation: "বলতে চাওয়া: \"ডাক্তার আসার পূর্বেই রোগীটি সুস্থ হয়ে উঠেছিল।\"",
+            standard: "The patient had recovered before the doctor arrived.",
+            nativeStyle: "The patient had recovered before the doctor arrived.",
+            waysToSay: [
+                { phrasing: "The patient had recovered before the doctor arrived.", tone: "পেশাদার ও স্পষ্ট", bn: "ডাক্তার আসার পূর্বেই রোগীটি সুস্থ হয়ে উঠেছিল।" },
+                { phrasing: "Had you already locked the main gate before leaving home?", tone: "ভদ্র ও চমৎকার", bn: "বাড়ি ছাড়ার আগে তুমি কি প্রধান গেটটি ইতিমধ্যে তালাবদ্ধ করেছিলে?" },
+                { phrasing: "What had happened before the security arrived at the spot?", tone: "বিশ্লেষণধর্মী", bn: "ঘটনাস্থলে নিরাপত্তা কর্মী আসার আগে কী ঘটেছিল?" }
+            ],
+            tip: "💡 এই কাঠামোর নিয়মিত চর্চা আপনার স্পিকিংকে আরও সাবলীল ও আন্তর্জাতিক মানের করে তুলবে।"
+        },
+        qaDrill: {
+            targetQuestion: {
+                en: "Had you eaten lunch before you came to the class today?",
+                bn: "আজ ক্লাসে আসার আগে কি তুমি দুপুরের খাবার খেয়েছিলে?",
+                ipa: "/hæv juː biːn/"
+            },
+            possibleAnswers: [
+                { style: "সংক্ষিপ্ত সম্মতি (Short Affirmative)", en: "Yes, absolutely! I find it very rewarding.", bn: "হ্যাঁ, অবশ্যই! এটি আমার কাছে দারুণ ফলপ্রসূ মনে হয়।", ipa: "/jes ˌæbsəˈluːtli/" },
+                { style: "বিস্তারিত উত্তর (Elaborated)", en: "The patient had recovered before the doctor arrived.", bn: "ডাক্তার আসার পূর্বেই রোগীটি সুস্থ হয়ে উঠেছিল।", ipa: "/ðə ˈpeɪʃnt hæd rɪˈkʌvəd bɪˈfɔː ðə ˈdɒktər əˈraɪvd/" },
+                { style: "না-বাচক উত্তর (Polite Negative)", en: "Not quite, but I am planning to start soon.", bn: "পুরোপুরি নয়, তবে খুব শীঘ্রই শুরু করার পরিকল্পনা করছি।", ipa: "/nɒt kwaɪt/" },
+                { style: "বিকল্প বা দ্বিধা (Alternative / Uncertainty)", en: "It varies depending on my daily schedule.", bn: "আমার দৈনন্দিন রুটিনের ওপর ভিত্তি করে এটি পরিবর্তিত হয়।", ipa: "/ɪt ˈveəriz/" }
+            ]
+        },
+        sentenceBuilder: {
+            subjects: ["I had finished my work", "The train had departed", "She had left the office", "Had you completed the test", "They had warned us"],
+            auxOrVerbs: ["before", "after", "by the time", "long before", "just after"],
+            complements: ["my manager asked for it", "we reached the railway platform", "the heavy thunderstorm started", "the bell rang loudly", "any accident took place"]
+        }
+    },
+    {
+        id: "lesson-21-past-perfect-continuous",
+        lessonNumber: 21,
+        title: "Past Perfect Continuous: had been + V-ing",
+        subtitle: "অতীতের নির্দিষ্ট সময় বা ঘটনার আগ পর্যন্ত কাজটি কতক্ষণ চলছিল",
+        phase: "tenses",
+        phaseLabel: "অতীত স্থায়িত্ব (Past Perfect Continuous)",
+        level: "Upper-Intermediate",
+        concept: {
+            explanation: "অতীতে কোনো ঘটনা ঘটার আগ পর্যন্ত অন্য একটি কাজ কত সময় ধরে বিরতিহীনভাবে চলছিল তা বোঝাতে had been + Verb-ing ব্যবহৃত হয়। এটি অতীত ঘটনার পূর্ববর্তী কাজের ক্লান্তি বা কারণ ব্যাখ্যায় ব্যবহৃত হয়।",
+            whenToUse: "'সে ক্লান্ত ছিল কারণ সে সকাল থেকে দৌড়াচ্ছিল' (He was tired because he had been running since morning)।",
+            commonMistake: "'He was tired because he ran' সাধারণ শোনায়; কাজের স্থায়িত্বের কারণে ক্লান্তি দেখাতে 'had been running' নেটিভ স্পিকারদের নিখুঁত পছন্দ।",
+            formulaSummary: "Subject + had been + Verb-ing (+ since/for + duration before past moment)"
+        },
+        transformation6Way: {
+            baseConcept: "Past Perfect Continuous: had been + V-ing",
+            positive: {
+                formula: "Subject + had been + Verb-ing (+ since/for + duration before past moment)",
+                en: "She had been working for six hours before she finally took a break.",
+                bn: "অবশেষে একটি বিরতি নেওয়ার আগ পর্যন্ত সে ছয় ঘণ্টা ধরে কাজ করছিল।",
+                ipa: "/ʃiː hæd biːn ˈwɜːkɪŋ fɔː sɪks ˈaʊəz bɪˈfɔː ʃiː ˈfaɪnəli tʊk ə breɪk/"
+            },
+            negative: {
+                formula: "Subject + Auxiliary Negative + Verb + Extension",
+                en: "We hadn't been waiting long when the bus arrived.",
+                bn: "বাসটি আসার সময় আমরা খুব বেশি সময় ধরে অপেক্ষা করছিলাম না।",
+                ipa: "/wiː hædnt biːn ˈweɪtɪŋ lɒŋ wen ðə bʌs əˈraɪvd/"
+            },
+            interrogative: {
+                formula: "Auxiliary + Subject + Verb + Extension?",
+                en: "Had you been practicing Spoken English before taking the IELTS exam?",
+                bn: "আইইএলটিএস পরীক্ষা দেওয়ার আগে তুমি কি স্পোকেন ইংলিশ অনুশীলন করছিলে?",
+                ipa: "/hæd juː biːn ˈpræktɪsɪŋ ˈspəʊkən ˈɪŋɡlɪʃ bɪˈfɔː ˈteɪkɪŋ ði ˈaɪelts ɪɡˈzæm/"
+            },
+            interroNegative: {
+                formula: "Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Hadn't it been raining for days before the flood started?",
+                bn: "বন্যা শুরু হওয়ার আগে কি টানা কয়েকদিন ধরে বৃষ্টি হচ্ছিল না?",
+                ipa: "/hædnt ɪt biːn ˈreɪnɪŋ fɔː deɪz bɪˈfɔː ðə flʌd ˈstɑːtɪd/"
+            },
+            whPositive: {
+                formula: "WH-Word + Auxiliary + Subject + Verb + Extension?",
+                en: "How long had you been living abroad before you returned to Bangladesh?",
+                bn: "বাংলাদেশে ফেরার আগে তুমি কত বছর ধরে প্রবাসে বসবাস করছিলে?",
+                ipa: "/haʊ lɒŋ hæd juː biːn ˈlɪvɪŋ əˈbrɔːd bɪˈfɔː juː rɪˈtɜːnd tə ˌbæŋɡləˈdeʃ/"
+            },
+            whNegative: {
+                formula: "WH-Word + Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Why hadn't you been studying when your exams were so close?",
+                bn: "তোমার পরীক্ষা এত কাছে থাকার পরও তুমি কেন পড়ছিলে না?",
+                ipa: "/waɪ hædnt juː biːn ˈstʌdiɪŋ wen jɔːr ɪɡˈzæmz wɜː səʊ kləʊs/"
+            }
+        },
+        realLifeSentences: [
+            { en: "She had been working for six hours before she finally took a break.", bn: "অবশেষে একটি বিরতি নেওয়ার আগ পর্যন্ত সে ছয় ঘণ্টা ধরে কাজ করছিল।", ipa: "/ʃiː hæd biːn ˈwɜːkɪŋ fɔː sɪks ˈaʊəz bɪˈfɔː ʃiː ˈfaɪnəli tʊk ə breɪk/", context: "দৈনন্দিন বাস্তব প্রয়োগ", type: "positive" },
+            { en: "We hadn't been waiting long when the bus arrived.", bn: "বাসটি আসার সময় আমরা খুব বেশি সময় ধরে অপেক্ষা করছিলাম না।", ipa: "/wiː hædnt biːn ˈweɪtɪŋ lɒŋ wen ðə bʌs əˈraɪvd/", context: "না-বাচক স্পষ্ট বিবৃতি", type: "negative" },
+            { en: "Had you been practicing Spoken English before taking the IELTS exam?", bn: "আইইএলটিএস পরীক্ষা দেওয়ার আগে তুমি কি স্পোকেন ইংলিশ অনুশীলন করছিলে?", ipa: "/hæd juː biːn ˈpræktɪsɪŋ ˈspəʊkən ˈɪŋɡlɪʃ bɪˈfɔː ˈteɪkɪŋ ði ˈaɪelts ɪɡˈzæm/", context: "ভদ্র ও স্বাভাবিক প্রশ্ন", type: "question" },
+            { en: "How long had you been living abroad before you returned to Bangladesh?", bn: "বাংলাদেশে ফেরার আগে তুমি কত বছর ধরে প্রবাসে বসবাস করছিলে?", ipa: "/haʊ lɒŋ hæd juː biːn ˈlɪvɪŋ əˈbrɔːd bɪˈfɔː juː rɪˈtɜːnd tə ˌbæŋɡləˈdeʃ/", context: "তথ্যবহুল অনুসন্ধানী প্রশ্ন", type: "wh" }
+        ],
+        nativeVariations: {
+            situation: "বলতে চাওয়া: \"অবশেষে একটি বিরতি নেওয়ার আগ পর্যন্ত সে ছয় ঘণ্টা ধরে কাজ করছিল।\"",
+            standard: "She had been working for six hours before she finally took a break.",
+            nativeStyle: "She had been working for six hours before she finally took a break.",
+            waysToSay: [
+                { phrasing: "She had been working for six hours before she finally took a break.", tone: "পেশাদার ও স্পষ্ট", bn: "অবশেষে একটি বিরতি নেওয়ার আগ পর্যন্ত সে ছয় ঘণ্টা ধরে কাজ করছিল।" },
+                { phrasing: "Had you been practicing Spoken English before taking the IELTS exam?", tone: "ভদ্র ও চমৎকার", bn: "আইইএলটিএস পরীক্ষা দেওয়ার আগে তুমি কি স্পোকেন ইংলিশ অনুশীলন করছিলে?" },
+                { phrasing: "How long had you been living abroad before you returned to Bangladesh?", tone: "বিশ্লেষণধর্মী", bn: "বাংলাদেশে ফেরার আগে তুমি কত বছর ধরে প্রবাসে বসবাস করছিলে?" }
+            ],
+            tip: "💡 এই কাঠামোর নিয়মিত চর্চা আপনার স্পিকিংকে আরও সাবলীল ও আন্তর্জাতিক মানের করে তুলবে।"
+        },
+        qaDrill: {
+            targetQuestion: {
+                en: "Had you been working on this computer for hours before it crashed?",
+                bn: "কম্পিউটারটি নষ্ট হওয়ার আগে কি তুমি কয়েক ঘণ্টা ধরে এতে কাজ করছিলে?",
+                ipa: "/hæv juː biːn/"
+            },
+            possibleAnswers: [
+                { style: "সংক্ষিপ্ত সম্মতি (Short Affirmative)", en: "Yes, absolutely! I find it very rewarding.", bn: "হ্যাঁ, অবশ্যই! এটি আমার কাছে দারুণ ফলপ্রসূ মনে হয়।", ipa: "/jes ˌæbsəˈluːtli/" },
+                { style: "বিস্তারিত উত্তর (Elaborated)", en: "She had been working for six hours before she finally took a break.", bn: "অবশেষে একটি বিরতি নেওয়ার আগ পর্যন্ত সে ছয় ঘণ্টা ধরে কাজ করছিল।", ipa: "/ʃiː hæd biːn ˈwɜːkɪŋ fɔː sɪks ˈaʊəz bɪˈfɔː ʃiː ˈfaɪnəli tʊk ə breɪk/" },
+                { style: "না-বাচক উত্তর (Polite Negative)", en: "Not quite, but I am planning to start soon.", bn: "পুরোপুরি নয়, তবে খুব শীঘ্রই শুরু করার পরিকল্পনা করছি।", ipa: "/nɒt kwaɪt/" },
+                { style: "বিকল্প বা দ্বিধা (Alternative / Uncertainty)", en: "It varies depending on my daily schedule.", bn: "আমার দৈনন্দিন রুটিনের ওপর ভিত্তি করে এটি পরিবর্তিত হয়।", ipa: "/ɪt ˈveəriz/" }
+            ]
+        },
+        sentenceBuilder: {
+            subjects: ["I had been waiting", "She had been studying", "They had been planning", "How long had you been driving", "We had been talking"],
+            auxOrVerbs: ["for nearly three hours", "since early morning", "for over five years", "all night long", "for several months"],
+            complements: ["before the doctor finally arrived", "when she scored Band 8", "before launching their venture", "before finding the right hotel", "when the meeting concluded"]
+        }
+    },
+    {
+        id: "lesson-22-future-continuous",
+        lessonNumber: 22,
+        title: "Future Continuous: will be + V-ing",
+        subtitle: "ভবিষ্যতের কোনো নির্দিষ্ট সময়ে কোনো কাজ চলমান থাকা বোঝাতে",
+        phase: "tenses",
+        phaseLabel: "ভবিষ্যত চলমান (Future Continuous)",
+        level: "Intermediate",
+        concept: {
+            explanation: "ভবিষ্যতের কোনো নির্দিষ্ট সময়ে বা মুহূর্তে কোনো কাজ চলতে থাকবে বা কোনো ব্যক্তি কিছু করতে থাকবে বোঝাতে will be + Verb-ing ব্যবহৃত হয়। এছাড়া ভবিষ্যৎ কর্মসূচির ভদ্র জিজ্ঞাসাতেও এটি ব্যবহৃত হয়।",
+            whenToUse: "'কাল এই সময়ে আমি ট্রেনে ভ্রমণ করতে থাকব' (Tomorrow at this time, I will be traveling on a train)।",
+            commonMistake: "'Tomorrow I will travel' মানে কাল আমি ভ্রমণ করব (সাধারণ ইচ্ছা); কিন্তু 'Tomorrow at 10 AM, I will be flying' মানে নির্দিষ্ট সেই মুহূর্তে কাজটির মাঝপথে থাকব।",
+            formulaSummary: "Subject + will be + Verb-ing (+ at this time tomorrow / next week)"
+        },
+        transformation6Way: {
+            baseConcept: "Future Continuous: will be + V-ing",
+            positive: {
+                formula: "Subject + will be + Verb-ing (+ at this time tomorrow / next week)",
+                en: "This time tomorrow, I will be flying to Singapore.",
+                bn: "আগামীকাল এই সময়ে, আমি সিঙ্গাপুরের উদ্দেশ্যে বিমানে উড়তে থাকব।",
+                ipa: "/ðɪs taɪm təˈmɒrəʊ aɪ wɪl biː ˈflaɪɪŋ tə ˈsɪŋəpɔː/"
+            },
+            negative: {
+                formula: "Subject + Auxiliary Negative + Verb + Extension",
+                en: "I won't be attending the party tomorrow night as I have an exam.",
+                bn: "আগামীকাল রাতে আমি পার্টিতে উপস্থিত থাকব না কারণ আমার পরীক্ষা আছে।",
+                ipa: "/aɪ wəʊnt biː əˈtendɪŋ ðə ˈpɑːti təˈmɒrəʊ naɪt æz aɪ hæv ən ɪɡˈzæm/"
+            },
+            interrogative: {
+                formula: "Auxiliary + Subject + Verb + Extension?",
+                en: "Will you be using your laptop this afternoon, or can I borrow it?",
+                bn: "তুমি কি আজ বিকেলে ল্যাপটপটি ব্যবহার করতে থাকবে, নাকি আমি নিতে পারি?",
+                ipa: "/wɪl juː biː ˈjuːzɪŋ jɔː ˈlæptɒp ðɪs ˌɑːftəˈnuːn ɔː kæn aɪ ˈbɒrəʊ ɪt/"
+            },
+            interroNegative: {
+                formula: "Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Won't you be joining us for the weekend picnic?",
+                bn: "সাপ্তাহিক ছুটির পিকনিকে তুমি কি আমাদের সাথে যোগ দিতে থাকবে না?",
+                ipa: "/wəʊnt juː biː ˈdʒɔɪnɪŋ ʌs fɔː ðə ˈwiːkend ˈpɪknɪk/"
+            },
+            whPositive: {
+                formula: "WH-Word + Auxiliary + Subject + Verb + Extension?",
+                en: "What will you be doing this time next Friday?",
+                bn: "আগামী শুক্রবার এই সময়ে তুমি কী করতে থাকবে?",
+                ipa: "/wɒt wɪl juː biː ˈduːɪŋ ðɪs taɪm nekst ˈfraɪdeɪ/"
+            },
+            whNegative: {
+                formula: "WH-Word + Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Why won't you be staying at the hotel with everyone else?",
+                bn: "অন্য সবার সাথে তুমি হোটেলে অবস্থান করতে থাকবে না কেন?",
+                ipa: "/waɪ wəʊnt juː biː ˈsteɪɪŋ æt ðə həʊˈtel wɪð ˈevriwʌn els/"
+            }
+        },
+        realLifeSentences: [
+            { en: "This time tomorrow, I will be flying to Singapore.", bn: "আগামীকাল এই সময়ে, আমি সিঙ্গাপুরের উদ্দেশ্যে বিমানে উড়তে থাকব।", ipa: "/ðɪs taɪm təˈmɒrəʊ aɪ wɪl biː ˈflaɪɪŋ tə ˈsɪŋəpɔː/", context: "দৈনন্দিন বাস্তব প্রয়োগ", type: "positive" },
+            { en: "I won't be attending the party tomorrow night as I have an exam.", bn: "আগামীকাল রাতে আমি পার্টিতে উপস্থিত থাকব না কারণ আমার পরীক্ষা আছে।", ipa: "/aɪ wəʊnt biː əˈtendɪŋ ðə ˈpɑːti təˈmɒrəʊ naɪt æz aɪ hæv ən ɪɡˈzæm/", context: "না-বাচক স্পষ্ট বিবৃতি", type: "negative" },
+            { en: "Will you be using your laptop this afternoon, or can I borrow it?", bn: "তুমি কি আজ বিকেলে ল্যাপটপটি ব্যবহার করতে থাকবে, নাকি আমি নিতে পারি?", ipa: "/wɪl juː biː ˈjuːzɪŋ jɔː ˈlæptɒp ðɪs ˌɑːftəˈnuːn ɔː kæn aɪ ˈbɒrəʊ ɪt/", context: "ভদ্র ও স্বাভাবিক প্রশ্ন", type: "question" },
+            { en: "What will you be doing this time next Friday?", bn: "আগামী শুক্রবার এই সময়ে তুমি কী করতে থাকবে?", ipa: "/wɒt wɪl juː biː ˈduːɪŋ ðɪs taɪm nekst ˈfraɪdeɪ/", context: "তথ্যবহুল অনুসন্ধানী প্রশ্ন", type: "wh" }
+        ],
+        nativeVariations: {
+            situation: "বলতে চাওয়া: \"আগামীকাল এই সময়ে, আমি সিঙ্গাপুরের উদ্দেশ্যে বিমানে উড়তে থাকব।\"",
+            standard: "This time tomorrow, I will be flying to Singapore.",
+            nativeStyle: "This time tomorrow, I will be flying to Singapore.",
+            waysToSay: [
+                { phrasing: "This time tomorrow, I will be flying to Singapore.", tone: "পেশাদার ও স্পষ্ট", bn: "আগামীকাল এই সময়ে, আমি সিঙ্গাপুরের উদ্দেশ্যে বিমানে উড়তে থাকব।" },
+                { phrasing: "Will you be using your laptop this afternoon, or can I borrow it?", tone: "ভদ্র ও চমৎকার", bn: "তুমি কি আজ বিকেলে ল্যাপটপটি ব্যবহার করতে থাকবে, নাকি আমি নিতে পারি?" },
+                { phrasing: "What will you be doing this time next Friday?", tone: "বিশ্লেষণধর্মী", bn: "আগামী শুক্রবার এই সময়ে তুমি কী করতে থাকবে?" }
+            ],
+            tip: "💡 এই কাঠামোর নিয়মিত চর্চা আপনার স্পিকিংকে আরও সাবলীল ও আন্তর্জাতিক মানের করে তুলবে।"
+        },
+        qaDrill: {
+            targetQuestion: {
+                en: "Will you be practicing English conversation this evening?",
+                bn: "আজ সন্ধ্যায় কি তুমি ইংরেজি কথোপকথন অনুশীলন করতে থাকবে?",
+                ipa: "/hæv juː biːn/"
+            },
+            possibleAnswers: [
+                { style: "সংক্ষিপ্ত সম্মতি (Short Affirmative)", en: "Yes, absolutely! I find it very rewarding.", bn: "হ্যাঁ, অবশ্যই! এটি আমার কাছে দারুণ ফলপ্রসূ মনে হয়।", ipa: "/jes ˌæbsəˈluːtli/" },
+                { style: "বিস্তারিত উত্তর (Elaborated)", en: "This time tomorrow, I will be flying to Singapore.", bn: "আগামীকাল এই সময়ে, আমি সিঙ্গাপুরের উদ্দেশ্যে বিমানে উড়তে থাকব।", ipa: "/ðɪs taɪm təˈmɒrəʊ aɪ wɪl biː ˈflaɪɪŋ tə ˈsɪŋəpɔː/" },
+                { style: "না-বাচক উত্তর (Polite Negative)", en: "Not quite, but I am planning to start soon.", bn: "পুরোপুরি নয়, তবে খুব শীঘ্রই শুরু করার পরিকল্পনা করছি।", ipa: "/nɒt kwaɪt/" },
+                { style: "বিকল্প বা দ্বিধা (Alternative / Uncertainty)", en: "It varies depending on my daily schedule.", bn: "আমার দৈনন্দিন রুটিনের ওপর ভিত্তি করে এটি পরিবর্তিত হয়।", ipa: "/ɪt ˈveəriz/" }
+            ]
+        },
+        sentenceBuilder: {
+            subjects: ["I will be", "She will be", "They will be", "Will you be", "What will you be"],
+            auxOrVerbs: ["working on the project", "traveling to the beach", "practicing Spoken English", "attending the workshop", "relaxing at home"],
+            complements: ["at this exact time tomorrow", "all throughout next month", "when you arrive at the airport", "during the upcoming vacation", "this coming Sunday morning"]
+        }
+    },
+    {
+        id: "lesson-23-future-perfect-and-continuous",
+        lessonNumber: 23,
+        title: "Future Perfect: will have + V3 / will have been",
+        subtitle: "ভবিষ্যতের কোনো নির্দিষ্ট সময়ের মধ্যে কাজ সম্পন্ন হয়ে থাকা (By next month)",
+        phase: "tenses",
+        phaseLabel: "ভবিষ্যত সমাপ্তি (Future Perfect)",
+        level: "Upper-Intermediate",
+        concept: {
+            explanation: "ভবিষ্যতের কোনো নির্দিষ্ট সময়সীমা বা ডেডলাইনের মধ্যে (By next year, By 5 PM, By tomorrow) কোনো কাজ সমাপ্ত হয়ে থাকবে বোঝাতে will have + V3 ব্যবহৃত হয়।",
+            whenToUse: "'আগামী ডিসেম্বরের মধ্যে আমি আমার ডিগ্রি সম্পন্ন করে ফেলব' (By next December, I will have completed my degree)।",
+            commonMistake: "'By 5 PM I will finish' এর বদলে সময়সীমার আগে সমাপ্তি জোর দিতে 'will have finished' ব্যবহার করা ব্যাকরণগতভাবে নিখুঁত।",
+            formulaSummary: "Subject + will have + V3 (+ by + future deadline) | By the time + Present Simple, will have + V3"
+        },
+        transformation6Way: {
+            baseConcept: "Future Perfect: will have + V3 / will have been",
+            positive: {
+                formula: "Subject + will have + V3 (+ by + future deadline) | By the time + Present Simple, will have + V3",
+                en: "By next year, I will have mastered fluent Spoken English.",
+                bn: "আগামী বছরের মধ্যে, আমি অনর্গল স্পোকেন ইংলিশে দক্ষতা অর্জন করে ফেলব।",
+                ipa: "/baɪ nekst jɪər aɪ wɪl hæv ˈmɑːstəd ˈfluːənt ˈspəʊkən ˈɪŋɡlɪʃ/"
+            },
+            negative: {
+                formula: "Subject + Auxiliary Negative + Verb + Extension",
+                en: "They will not have finished the construction by next Monday.",
+                bn: "আগামী সোমবারের মধ্যে তারা নির্মাণ কাজ শেষ করতে পারবে না।",
+                ipa: "/ðeɪ wɪl nɒt hæv ˈfɪnɪʃt ðə kənˈstrʌkʃn baɪ nekst ˈmʌndeɪ/"
+            },
+            interrogative: {
+                formula: "Auxiliary + Subject + Verb + Extension?",
+                en: "Will you have submitted your application by Friday afternoon?",
+                bn: "শুক্রবার বিকেলের মধ্যে কি তুমি তোমার আবেদনপত্র জমা দিয়ে ফেলবে?",
+                ipa: "/wɪl juː hæv səbˈmɪtɪd jɔːr ˌæplɪˈkeɪʃn baɪ ˈfraɪdeɪ ˌɑːftəˈnuːn/"
+            },
+            interroNegative: {
+                formula: "Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Won't you have graduated by the time your brother gets married?",
+                bn: "তোমার ভাইয়ের বিয়ের সময়ের মধ্যে কি তোমার গ্রাজুয়েশন সম্পন্ন হবে না?",
+                ipa: "/wəʊnt juː hæv ˈɡrædʒueɪtɪd baɪ ðə taɪm jɔː ˈbrʌðə ɡets ˈmærid/"
+            },
+            whPositive: {
+                formula: "WH-Word + Auxiliary + Subject + Verb + Extension?",
+                en: "What milestones will you have achieved by the end of this decade?",
+                bn: "এই দশকের শেষের মধ্যে তুমি কোন কোন মাইলফলক অর্জন করে ফেলবে?",
+                ipa: "/wɒt ˈmaɪlstəʊnz wɪl juː hæv əˈtʃiːvd baɪ ði end ɒv ðɪs ˈdekeɪd/"
+            },
+            whNegative: {
+                formula: "WH-Word + Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Why won't they have completed the task before the deadline expires?",
+                bn: "সময়সীমা শেষ হওয়ার আগে তারা কাজটি সম্পন্ন করে ফেলতে পারবে না কেন?",
+                ipa: "/waɪ wəʊnt ðeɪ hæv kəmˈpliːtɪd ðə tɑːsk bɪˈfɔː ðə ˈdedlaɪn ɪkˈspaɪəz/"
+            }
+        },
+        realLifeSentences: [
+            { en: "By next year, I will have mastered fluent Spoken English.", bn: "আগামী বছরের মধ্যে, আমি অনর্গল স্পোকেন ইংলিশে দক্ষতা অর্জন করে ফেলব।", ipa: "/baɪ nekst jɪər aɪ wɪl hæv ˈmɑːstəd ˈfluːənt ˈspəʊkən ˈɪŋɡlɪʃ/", context: "দৈনন্দিন বাস্তব প্রয়োগ", type: "positive" },
+            { en: "They will not have finished the construction by next Monday.", bn: "আগামী সোমবারের মধ্যে তারা নির্মাণ কাজ শেষ করতে পারবে না।", ipa: "/ðeɪ wɪl nɒt hæv ˈfɪnɪʃt ðə kənˈstrʌkʃn baɪ nekst ˈmʌndeɪ/", context: "না-বাচক স্পষ্ট বিবৃতি", type: "negative" },
+            { en: "Will you have submitted your application by Friday afternoon?", bn: "শুক্রবার বিকেলের মধ্যে কি তুমি তোমার আবেদনপত্র জমা দিয়ে ফেলবে?", ipa: "/wɪl juː hæv səbˈmɪtɪd jɔːr ˌæplɪˈkeɪʃn baɪ ˈfraɪdeɪ ˌɑːftəˈnuːn/", context: "ভদ্র ও স্বাভাবিক প্রশ্ন", type: "question" },
+            { en: "What milestones will you have achieved by the end of this decade?", bn: "এই দশকের শেষের মধ্যে তুমি কোন কোন মাইলফলক অর্জন করে ফেলবে?", ipa: "/wɒt ˈmaɪlstəʊnz wɪl juː hæv əˈtʃiːvd baɪ ði end ɒv ðɪs ˈdekeɪd/", context: "তথ্যবহুল অনুসন্ধানী প্রশ্ন", type: "wh" }
+        ],
+        nativeVariations: {
+            situation: "বলতে চাওয়া: \"আগামী বছরের মধ্যে, আমি অনর্গল স্পোকেন ইংলিশে দক্ষতা অর্জন করে ফেলব।\"",
+            standard: "By next year, I will have mastered fluent Spoken English.",
+            nativeStyle: "By next year, I will have mastered fluent Spoken English.",
+            waysToSay: [
+                { phrasing: "By next year, I will have mastered fluent Spoken English.", tone: "পেশাদার ও স্পষ্ট", bn: "আগামী বছরের মধ্যে, আমি অনর্গল স্পোকেন ইংলিশে দক্ষতা অর্জন করে ফেলব।" },
+                { phrasing: "Will you have submitted your application by Friday afternoon?", tone: "ভদ্র ও চমৎকার", bn: "শুক্রবার বিকেলের মধ্যে কি তুমি তোমার আবেদনপত্র জমা দিয়ে ফেলবে?" },
+                { phrasing: "What milestones will you have achieved by the end of this decade?", tone: "বিশ্লেষণধর্মী", bn: "এই দশকের শেষের মধ্যে তুমি কোন কোন মাইলফলক অর্জন করে ফেলবে?" }
+            ],
+            tip: "💡 এই কাঠামোর নিয়মিত চর্চা আপনার স্পিকিংকে আরও সাবলীল ও আন্তর্জাতিক মানের করে তুলবে।"
+        },
+        qaDrill: {
+            targetQuestion: {
+                en: "Will you have finished reading this book by tonight?",
+                bn: "আজ রাতের মধ্যে কি তুমি এই বইটি পড়া শেষ করে ফেলবে?",
+                ipa: "/hæv juː biːn/"
+            },
+            possibleAnswers: [
+                { style: "সংক্ষিপ্ত সম্মতি (Short Affirmative)", en: "Yes, absolutely! I find it very rewarding.", bn: "হ্যাঁ, অবশ্যই! এটি আমার কাছে দারুণ ফলপ্রসূ মনে হয়।", ipa: "/jes ˌæbsəˈluːtli/" },
+                { style: "বিস্তারিত উত্তর (Elaborated)", en: "By next year, I will have mastered fluent Spoken English.", bn: "আগামী বছরের মধ্যে, আমি অনর্গল স্পোকেন ইংলিশে দক্ষতা অর্জন করে ফেলব।", ipa: "/baɪ nekst jɪər aɪ wɪl hæv ˈmɑːstəd ˈfluːənt ˈspəʊkən ˈɪŋɡlɪʃ/" },
+                { style: "না-বাচক উত্তর (Polite Negative)", en: "Not quite, but I am planning to start soon.", bn: "পুরোপুরি নয়, তবে খুব শীঘ্রই শুরু করার পরিকল্পনা করছি।", ipa: "/nɒt kwaɪt/" },
+                { style: "বিকল্প বা দ্বিধা (Alternative / Uncertainty)", en: "It varies depending on my daily schedule.", bn: "আমার দৈনন্দিন রুটিনের ওপর ভিত্তি করে এটি পরিবর্তিত হয়।", ipa: "/ɪt ˈveəriz/" }
+            ]
+        },
+        sentenceBuilder: {
+            subjects: ["By next month I will have", "She will have completed", "They will have moved", "Will you have saved", "We will have achieved"],
+            auxOrVerbs: ["achieved my Band 8", "her university degree", "to their new residence", "enough financial savings", "our speaking targets"],
+            complements: ["before the winter begins", "by the end of this semester", "before the contract expires", "by next December", "in less than two years"]
+        }
+    },
+    {
+        id: "lesson-24-complete-modals",
+        lessonNumber: 24,
+        title: "All Modals Mastery: May, Might, Must, Ought to, Shall",
+        subtitle: "সম্ভাবনা (May/Might), বাধ্যবাধকতা (Must), উপদেশ (Ought to) ও অনুমতি",
+        phase: "modals",
+        phaseLabel: "সকল মডেল ভার্বস (All Modals)",
+        level: "Upper-Intermediate",
+        concept: {
+            explanation: "মোডাল ভার্বস বাক্যের ভাব ও সম্ভাবনা প্রকাশ করে। May (৫০% সম্ভাবনা বা আনুষ্ঠানিক অনুমতি: May I come in?), Might (দুর্বল সম্ভাবনা: It might rain), Must (১০০% অবশ্য পালনীয় বাধ্যবাধকতা বা দৃঢ় অনুমান: You must follow the rules), Ought to (নৈতিক দায়িত্ব: We ought to respect elders), Shall (প্রস্তাব: Shall we go?)।",
+            whenToUse: "সম্ভাবনা, নিশ্চয়তা, অনুমতি, নৈতিক দায়িত্ব এবং ভদ্র পরামর্শের সঠিক তীব্রতা প্রকাশের জন্য।",
+            commonMistake: "মোডাল ভার্বের পর কখনো 'to' বা 's/es' বসে না (He can goes ❌ -> He can go ✔️; You must to study ❌ -> You must study ✔️)। শুধু 'Ought to' এবং 'Have to' তে 'to' থাকে।",
+            formulaSummary: "Subject + Modal (may/might/must/shall/ought to) + V1 (Base Form)"
+        },
+        transformation6Way: {
+            baseConcept: "All Modals Mastery: May, Might, Must, Ought to, Shall",
+            positive: {
+                formula: "Subject + Modal (may/might/must/shall/ought to) + V1 (Base Form)",
+                en: "It may rain this evening, so you ought to carry an umbrella.",
+                bn: "আজ সন্ধ্যায় বৃষ্টি হতে পারে, তাই তোমার একটি ছাতা সাথে নেওয়া উচিত।",
+                ipa: "/ɪt meɪ reɪn ðɪs ˈiːvnɪŋ səʊ juː ɔːt tə ˈkæri ən ʌmˈbrelə/"
+            },
+            negative: {
+                formula: "Subject + Auxiliary Negative + Verb + Extension",
+                en: "You must not share your confidential password with anyone.",
+                bn: "তোমার গোপনীয় পাসওয়ার্ড কারোর সাথেই শেয়ার করা একেবারেই উচিত নয়।",
+                ipa: "/juː mʌst nɒt ʃeə jɔː ˌkɒnfɪˈdenʃl ˈpɑːswɜːd wɪð ˈeniwʌn/"
+            },
+            interrogative: {
+                formula: "Auxiliary + Subject + Verb + Extension?",
+                en: "May I request a brief moment of your valuable time?",
+                bn: "আমি কি আপনার মূল্যবান সময়ের একটি সংক্ষিপ্ত মুহূর্ত পেতে পারি?",
+                ipa: "/meɪ aɪ rɪˈkwest ə briːf ˈməʊmənt ɒv jɔː ˈvæljuəbl taɪm/"
+            },
+            interroNegative: {
+                formula: "Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Might it not be wiser to double check the figures before submission?",
+                bn: "জমা দেওয়ার পূর্বে সংখ্যাগুলো পুনরায় যাচাই করে নেওয়া কি বেশি বিচক্ষণ হবে না?",
+                ipa: "/maɪt ɪt nɒt biː ˈwaɪzə tə ˈdʌbl tʃek ðə ˈfɪɡəz bɪˈfɔː səbˈmɪʃn/"
+            },
+            whPositive: {
+                formula: "WH-Word + Auxiliary + Subject + Verb + Extension?",
+                en: "What ought we to do to protect our surrounding environment?",
+                bn: "আমাদের চারপাশের পরিবেশ রক্ষায় আমাদের নৈতিকভাবে কী করা উচিত?",
+                ipa: "/wɒt ɔːt wiː tə duː tə prəˈtekt ˈaʊə səˈraʊndɪŋ ɪnˈvaɪrənmənt/"
+            },
+            whNegative: {
+                formula: "WH-Word + Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Why must you always doubt your own creative capabilities?",
+                bn: "তুমি কেন সবসময় তোমার নিজের সৃজনশীল সক্ষমতাকে সন্দেহ করবে?",
+                ipa: "/waɪ mʌst juː ˈɔːlweɪz daʊt jɔːr əʊn kriˈeɪtɪv ˌkeɪpəˈbɪlətiz/"
+            }
+        },
+        realLifeSentences: [
+            { en: "It may rain this evening, so you ought to carry an umbrella.", bn: "আজ সন্ধ্যায় বৃষ্টি হতে পারে, তাই তোমার একটি ছাতা সাথে নেওয়া উচিত।", ipa: "/ɪt meɪ reɪn ðɪs ˈiːvnɪŋ səʊ juː ɔːt tə ˈkæri ən ʌmˈbrelə/", context: "দৈনন্দিন বাস্তব প্রয়োগ", type: "positive" },
+            { en: "You must not share your confidential password with anyone.", bn: "তোমার গোপনীয় পাসওয়ার্ড কারোর সাথেই শেয়ার করা একেবারেই উচিত নয়।", ipa: "/juː mʌst nɒt ʃeə jɔː ˌkɒnfɪˈdenʃl ˈpɑːswɜːd wɪð ˈeniwʌn/", context: "না-বাচক স্পষ্ট বিবৃতি", type: "negative" },
+            { en: "May I request a brief moment of your valuable time?", bn: "আমি কি আপনার মূল্যবান সময়ের একটি সংক্ষিপ্ত মুহূর্ত পেতে পারি?", ipa: "/meɪ aɪ rɪˈkwest ə briːf ˈməʊmənt ɒv jɔː ˈvæljuəbl taɪm/", context: "ভদ্র ও স্বাভাবিক প্রশ্ন", type: "question" },
+            { en: "What ought we to do to protect our surrounding environment?", bn: "আমাদের চারপাশের পরিবেশ রক্ষায় আমাদের নৈতিকভাবে কী করা উচিত?", ipa: "/wɒt ɔːt wiː tə duː tə prəˈtekt ˈaʊə səˈraʊndɪŋ ɪnˈvaɪrənmənt/", context: "তথ্যবহুল অনুসন্ধানী প্রশ্ন", type: "wh" }
+        ],
+        nativeVariations: {
+            situation: "বলতে চাওয়া: \"আজ সন্ধ্যায় বৃষ্টি হতে পারে, তাই তোমার একটি ছাতা সাথে নেওয়া উচিত।\"",
+            standard: "It may rain this evening, so you ought to carry an umbrella.",
+            nativeStyle: "It may rain this evening, so you ought to carry an umbrella.",
+            waysToSay: [
+                { phrasing: "It may rain this evening, so you ought to carry an umbrella.", tone: "পেশাদার ও স্পষ্ট", bn: "আজ সন্ধ্যায় বৃষ্টি হতে পারে, তাই তোমার একটি ছাতা সাথে নেওয়া উচিত।" },
+                { phrasing: "May I request a brief moment of your valuable time?", tone: "ভদ্র ও চমৎকার", bn: "আমি কি আপনার মূল্যবান সময়ের একটি সংক্ষিপ্ত মুহূর্ত পেতে পারি?" },
+                { phrasing: "What ought we to do to protect our surrounding environment?", tone: "বিশ্লেষণধর্মী", bn: "আমাদের চারপাশের পরিবেশ রক্ষায় আমাদের নৈতিকভাবে কী করা উচিত?" }
+            ],
+            tip: "💡 এই কাঠামোর নিয়মিত চর্চা আপনার স্পিকিংকে আরও সাবলীল ও আন্তর্জাতিক মানের করে তুলবে।"
+        },
+        qaDrill: {
+            targetQuestion: {
+                en: "May I assist you with carrying these heavy bags?",
+                bn: "এই ভারী ব্যাগগুলো বহনে আমি কি আপনাকে সাহায্য করতে পারি?",
+                ipa: "/hæv juː biːn/"
+            },
+            possibleAnswers: [
+                { style: "সংক্ষিপ্ত সম্মতি (Short Affirmative)", en: "Yes, absolutely! I find it very rewarding.", bn: "হ্যাঁ, অবশ্যই! এটি আমার কাছে দারুণ ফলপ্রসূ মনে হয়।", ipa: "/jes ˌæbsəˈluːtli/" },
+                { style: "বিস্তারিত উত্তর (Elaborated)", en: "It may rain this evening, so you ought to carry an umbrella.", bn: "আজ সন্ধ্যায় বৃষ্টি হতে পারে, তাই তোমার একটি ছাতা সাথে নেওয়া উচিত।", ipa: "/ɪt meɪ reɪn ðɪs ˈiːvnɪŋ səʊ juː ɔːt tə ˈkæri ən ʌmˈbrelə/" },
+                { style: "না-বাচক উত্তর (Polite Negative)", en: "Not quite, but I am planning to start soon.", bn: "পুরোপুরি নয়, তবে খুব শীঘ্রই শুরু করার পরিকল্পনা করছি।", ipa: "/nɒt kwaɪt/" },
+                { style: "বিকল্প বা দ্বিধা (Alternative / Uncertainty)", en: "It varies depending on my daily schedule.", bn: "আমার দৈনন্দিন রুটিনের ওপর ভিত্তি করে এটি পরিবর্তিত হয়।", ipa: "/ɪt ˈveəriz/" }
+            ]
+        },
+        sentenceBuilder: {
+            subjects: ["You must", "We ought to", "It may", "She might", "Shall we"],
+            auxOrVerbs: ["respect the traffic regulations", "help those in urgent need", "rain heavily this evening", "be interested in the offer", "begin our session today"],
+            complements: ["without any hesitation", "to maintain community harmony", "according to the weather forecast", "if we explain the benefits", "right now together"]
+        }
+    },
+    {
+        id: "lesson-25-be-being-been",
+        lessonNumber: 25,
+        title: "The Master Guide: Be, Being, Been এর ব্যবহার",
+        subtitle: "Be (হওয়া/হও), Being (হওয়া অবস্থায়/প্যাসিভ), Been (হয়েছে/ঘুরে আসা)",
+        phase: "advanced",
+        phaseLabel: "উচ্চতর স্পোকেন (Master Guide)",
+        level: "Upper-Intermediate",
+        concept: {
+            explanation: "১. Be: নির্দেশক বা মোডালের পর মূল রূপ (Be quiet! You should be polite)। ২. Being: কন্টিনিউয়াস প্যাসিভ (The road is being repaired) অথবা সাময়িক আচরণ প্রকাশে (Why are you being so rude today?) অথবা হওয়াতে (Being a student, I read books)। ৩. Been: Perfect Tense ও প্যাসিভ (I have been there; It has been completed; He has been sick)।",
+            whenToUse: "স্পোকেন ইংলিশে আত্মবিশ্বাসের সাথে প্যাসিভ এবং নিখুঁত এক্সপ্রেশন তৈরি করতে। 'I have been to Cox's Bazar' মানে আমি সেখানে গিয়ে ঘুরে এসেছি।",
+            commonMistake: "'I am being student' বলা ভুল (সঠিক: I am a student)। কিন্তু কারো সাময়িক অস্বাভাবিক আচরণে 'He is being childish' একদম সঠিক।",
+            formulaSummary: "Modal + be | am/is/are + being + V3 | have/has/had + been + V3 / to [place]"
+        },
+        transformation6Way: {
+            baseConcept: "The Master Guide: Be, Being, Been এর ব্যবহার",
+            positive: {
+                formula: "Modal + be | am/is/are + being + V3 | have/has/had + been + V3 / to [place]",
+                en: "The new bridge is being constructed, and I have been there twice.",
+                bn: "নতুন সেতুটি এখন নির্মাণ করা হচ্ছে, এবং আমি ইতিমধ্যে দুইবার সেখানে গিয়েছি।",
+                ipa: "/ðə njuː brɪdʒ ɪz ˈbiːɪŋ kənˈstrʌktɪd ænd aɪ hæv biːn ðeə twaɪs/"
+            },
+            negative: {
+                formula: "Subject + Auxiliary Negative + Verb + Extension",
+                en: "He wasn't being genuine when he gave that polite compliment.",
+                bn: "সেই ভদ্র প্রশংসা করার সময় তিনি ভেতর থেকে আন্তরিক হচ্ছিলেন না।",
+                ipa: "/hiː ˈwɒznt ˈbiːɪŋ ˈdʒenjuɪn wen hiː ɡeɪv ðæt pəˈlaɪt ˈkɒmplɪmənt/"
+            },
+            interrogative: {
+                formula: "Auxiliary + Subject + Verb + Extension?",
+                en: "Have you ever been to the Sundarbans before?",
+                bn: "তুমি কি এর আগে কখনো সুন্দরবনে ঘুরে এসেছো?",
+                ipa: "/hæv juː ˈevə biːn tə ðə ˈsʊndəbənz bɪˈfɔː/"
+            },
+            interroNegative: {
+                formula: "Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Isn't the issue being addressed by the administration right now?",
+                bn: "সমস্যাটি কি এই মুহূর্তে প্রশাসনের দ্বারা সমাধান করা হচ্ছে না?",
+                ipa: "/ˈɪznt ði ˈɪʃuː ˈbiːɪŋ əˈdrest baɪ ði ədˌmɪnɪˈstreɪʃn raɪt naʊ/"
+            },
+            whPositive: {
+                formula: "WH-Word + Auxiliary + Subject + Verb + Extension?",
+                en: "Where have you been all this time?",
+                bn: "এতক্ষণ তুমি কোথায় ছিলে?",
+                ipa: "/weə hæv juː biːn ɔːl ðɪs taɪm/"
+            },
+            whNegative: {
+                formula: "WH-Word + Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Why is the car not being washed properly today?",
+                bn: "আজ গাড়িটি সঠিকভাবে কেন ধোয়া হচ্ছে না?",
+                ipa: "/waɪ ɪz ðə kɑː nɒt ˈbiːɪŋ wɒʃt ˈprɒpəli təˈdeɪ/"
+            }
+        },
+        realLifeSentences: [
+            { en: "The new bridge is being constructed, and I have been there twice.", bn: "নতুন সেতুটি এখন নির্মাণ করা হচ্ছে, এবং আমি ইতিমধ্যে দুইবার সেখানে গিয়েছি।", ipa: "/ðə njuː brɪdʒ ɪz ˈbiːɪŋ kənˈstrʌktɪd ænd aɪ hæv biːn ðeə twaɪs/", context: "দৈনন্দিন বাস্তব প্রয়োগ", type: "positive" },
+            { en: "He wasn't being genuine when he gave that polite compliment.", bn: "সেই ভদ্র প্রশংসা করার সময় তিনি ভেতর থেকে আন্তরিক হচ্ছিলেন না।", ipa: "/hiː ˈwɒznt ˈbiːɪŋ ˈdʒenjuɪn wen hiː ɡeɪv ðæt pəˈlaɪt ˈkɒmplɪmənt/", context: "না-বাচক স্পষ্ট বিবৃতি", type: "negative" },
+            { en: "Have you ever been to the Sundarbans before?", bn: "তুমি কি এর আগে কখনো সুন্দরবনে ঘুরে এসেছো?", ipa: "/hæv juː ˈevə biːn tə ðə ˈsʊndəbənz bɪˈfɔː/", context: "ভদ্র ও স্বাভাবিক প্রশ্ন", type: "question" },
+            { en: "Where have you been all this time?", bn: "এতক্ষণ তুমি কোথায় ছিলে?", ipa: "/weə hæv juː biːn ɔːl ðɪs taɪm/", context: "তথ্যবহুল অনুসন্ধানী প্রশ্ন", type: "wh" }
+        ],
+        nativeVariations: {
+            situation: "বলতে চাওয়া: \"নতুন সেতুটি এখন নির্মাণ করা হচ্ছে, এবং আমি ইতিমধ্যে দুইবার সেখানে গিয়েছি।\"",
+            standard: "The new bridge is being constructed, and I have been there twice.",
+            nativeStyle: "The new bridge is being constructed, and I have been there twice.",
+            waysToSay: [
+                { phrasing: "The new bridge is being constructed, and I have been there twice.", tone: "পেশাদার ও স্পষ্ট", bn: "নতুন সেতুটি এখন নির্মাণ করা হচ্ছে, এবং আমি ইতিমধ্যে দুইবার সেখানে গিয়েছি।" },
+                { phrasing: "Have you ever been to the Sundarbans before?", tone: "ভদ্র ও চমৎকার", bn: "তুমি কি এর আগে কখনো সুন্দরবনে ঘুরে এসেছো?" },
+                { phrasing: "Where have you been all this time?", tone: "বিশ্লেষণধর্মী", bn: "এতক্ষণ তুমি কোথায় ছিলে?" }
+            ],
+            tip: "💡 এই কাঠামোর নিয়মিত চর্চা আপনার স্পিকিংকে আরও সাবলীল ও আন্তর্জাতিক মানের করে তুলবে।"
+        },
+        qaDrill: {
+            targetQuestion: {
+                en: "Have you ever been to a foreign country for higher studies?",
+                bn: "উচ্চশিক্ষার জন্য তুমি কি কখনো বিদেশে গিয়েছো?",
+                ipa: "/hæv juː biːn/"
+            },
+            possibleAnswers: [
+                { style: "সংক্ষিপ্ত সম্মতি (Short Affirmative)", en: "Yes, absolutely! I find it very rewarding.", bn: "হ্যাঁ, অবশ্যই! এটি আমার কাছে দারুণ ফলপ্রসূ মনে হয়।", ipa: "/jes ˌæbsəˈluːtli/" },
+                { style: "বিস্তারিত উত্তর (Elaborated)", en: "The new bridge is being constructed, and I have been there twice.", bn: "নতুন সেতুটি এখন নির্মাণ করা হচ্ছে, এবং আমি ইতিমধ্যে দুইবার সেখানে গিয়েছি।", ipa: "/ðə njuː brɪdʒ ɪz ˈbiːɪŋ kənˈstrʌktɪd ænd aɪ hæv biːn ðeə twaɪs/" },
+                { style: "না-বাচক উত্তর (Polite Negative)", en: "Not quite, but I am planning to start soon.", bn: "পুরোপুরি নয়, তবে খুব শীঘ্রই শুরু করার পরিকল্পনা করছি।", ipa: "/nɒt kwaɪt/" },
+                { style: "বিকল্প বা দ্বিধা (Alternative / Uncertainty)", en: "It varies depending on my daily schedule.", bn: "আমার দৈনন্দিন রুটিনের ওপর ভিত্তি করে এটি পরিবর্তিত হয়।", ipa: "/ɪt ˈveəriz/" }
+            ]
+        },
+        sentenceBuilder: {
+            subjects: ["I have been to", "The presentation is being", "You should always be", "Being an honest person", "It has already been"],
+            auxOrVerbs: ["London and Paris", "prepared by the team", "punctual and honest", "he earned everyone's trust", "approved by management"],
+            complements: ["multiple times in my life", "with utmost professional care", "in all your communications", "without demanding any praise", "before the final deadline"]
+        }
+    },
+    {
+        id: "lesson-26-conditionals",
+        lessonNumber: 26,
+        title: "Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals",
+        subtitle: "বাস্তব জীবনের শর্তমূলক বাক্য (\"যদি তুমি আসো...\", \"যদি আমি ধনী হতাম...\")",
+        phase: "advanced",
+        phaseLabel: "শর্তমূলক বাক্য (Conditionals)",
+        level: "Upper-Intermediate",
+        concept: {
+            explanation: "১. Zero: চিরন্তন সত্য (If you heat ice, it melts)। ২. 1st: বাস্তব সম্ভাবনা (If you practice daily, you will speak fluently)। ৩. 2nd: কাল্পনিক বর্তমান/অবাস্তব ইচ্ছা (If I were rich, I would help all orphans)। ৪. 3rd: অতীতের আফসোস বা অপরিবর্তনীয় ঘটনা (If you had told me, I would have helped you)।",
+            whenToUse: "শর্ত, ভবিষ্যৎ সম্ভাবনা, কাল্পনিক স্বপ্ন এবং অতীতের অনুশোচনা প্রকাশে।",
+            commonMistake: "'If I will come, I will meet you' বলা ভুল! If ক্লজে কখনোই will বসে না; সঠিক: 'If I come, I will meet you'। আর ২য় কন্ডিশনালে I এর সাথে was না বসে 'were' বসে (If I were you)।",
+            formulaSummary: "1st: If + Present, will + V1 | 2nd: If + Past, would + V1 | 3rd: If + had + V3, would have + V3"
+        },
+        transformation6Way: {
+            baseConcept: "Real-Life Conditionals: 0, 1st, 2nd & 3rd Conditionals",
+            positive: {
+                formula: "1st: If + Present, will + V1 | 2nd: If + Past, would + V1 | 3rd: If + had + V3, would have + V3",
+                en: "If you practice speaking every single day, you will become unstoppable.",
+                bn: "যদি তুমি প্রতিদিন কথা বলা অনুশীলন করো, তবে তুমি অপ্রতিরোধ্য হয়ে উঠবে।",
+                ipa: "/ɪf juː ˈpræktɪs ˈspiːkɪŋ ˈevri ˈsɪŋɡl deɪ juː wɪl bɪˈkʌm ʌnˈstɒpəbl/"
+            },
+            negative: {
+                formula: "Subject + Auxiliary Negative + Verb + Extension",
+                en: "If I had not practiced consistently, I wouldn't have passed the IELTS test.",
+                bn: "যদি আমি ধারাবাহিকভাবে অনুশীলন না করতাম, তবে আমি আইইএলটিএস পরীক্ষায় উত্তীর্ণ হতাম না।",
+                ipa: "/ɪf aɪ hæd nɒt ˈpræktɪst kənˈsɪstəntli aɪ ˈwʊdnt hæv pɑːst ði ˈaɪelts test/"
+            },
+            interrogative: {
+                formula: "Auxiliary + Subject + Verb + Extension?",
+                en: "If you won the lottery tomorrow, what would you do first?",
+                bn: "তুমি যদি কাল লটারি জিতে যাও, তবে তুমি সবার প্রথমে কী করবে?",
+                ipa: "/ɪf juː wʌn ðə ˈlɒtəri təˈmɒrəʊ wɒt wʊd juː duː fɜːst/"
+            },
+            interroNegative: {
+                formula: "Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Wouldn't you help your neighbor if they were in serious trouble?",
+                bn: "তোমার প্রতিবেশী যদি গুরুতর বিপদে পড়ত তুমি কি তাকে সাহায্য করতে না?",
+                ipa: "/ˈwʊdnt juː help jɔː ˈneɪbər ɪf ðeɪ wɜːr ɪn ˈsɪəriəs ˈtrʌbl/"
+            },
+            whPositive: {
+                formula: "WH-Word + Auxiliary + Subject + Verb + Extension?",
+                en: "What will happen if we do not submit the project on time?",
+                bn: "আমরা যদি সময়মতো প্রকল্পটি জমা না দিই তবে কী ঘটবে?",
+                ipa: "/wɒt wɪl ˈhæpən ɪf wiː duː nɒt səbˈmɪt ðə ˈprɒdʒekt ɒn taɪm/"
+            },
+            whNegative: {
+                formula: "WH-Word + Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Why would you decline the offer if they matched your expected salary?",
+                bn: "তারা যদি তোমার কাঙ্ক্ষিত বেতন দিত তবে কেন তুমি প্রস্তাবটি প্রত্যাখ্যান করতে?",
+                ipa: "/waɪ wʊd juː dɪˈklaɪn ði ˈɒfər ɪf ðeɪ mætʃt jɔːr ɪkˈspektɪd ˈsæləri/"
+            }
+        },
+        realLifeSentences: [
+            { en: "If you practice speaking every single day, you will become unstoppable.", bn: "যদি তুমি প্রতিদিন কথা বলা অনুশীলন করো, তবে তুমি অপ্রতিরোধ্য হয়ে উঠবে।", ipa: "/ɪf juː ˈpræktɪs ˈspiːkɪŋ ˈevri ˈsɪŋɡl deɪ juː wɪl bɪˈkʌm ʌnˈstɒpəbl/", context: "দৈনন্দিন বাস্তব প্রয়োগ", type: "positive" },
+            { en: "If I had not practiced consistently, I wouldn't have passed the IELTS test.", bn: "যদি আমি ধারাবাহিকভাবে অনুশীলন না করতাম, তবে আমি আইইএলটিএস পরীক্ষায় উত্তীর্ণ হতাম না।", ipa: "/ɪf aɪ hæd nɒt ˈpræktɪst kənˈsɪstəntli aɪ ˈwʊdnt hæv pɑːst ði ˈaɪelts test/", context: "না-বাচক স্পষ্ট বিবৃতি", type: "negative" },
+            { en: "If you won the lottery tomorrow, what would you do first?", bn: "তুমি যদি কাল লটারি জিতে যাও, তবে তুমি সবার প্রথমে কী করবে?", ipa: "/ɪf juː wʌn ðə ˈlɒtəri təˈmɒrəʊ wɒt wʊd juː duː fɜːst/", context: "ভদ্র ও স্বাভাবিক প্রশ্ন", type: "question" },
+            { en: "What will happen if we do not submit the project on time?", bn: "আমরা যদি সময়মতো প্রকল্পটি জমা না দিই তবে কী ঘটবে?", ipa: "/wɒt wɪl ˈhæpən ɪf wiː duː nɒt səbˈmɪt ðə ˈprɒdʒekt ɒn taɪm/", context: "তথ্যবহুল অনুসন্ধানী প্রশ্ন", type: "wh" }
+        ],
+        nativeVariations: {
+            situation: "বলতে চাওয়া: \"যদি তুমি প্রতিদিন কথা বলা অনুশীলন করো, তবে তুমি অপ্রতিরোধ্য হয়ে উঠবে।\"",
+            standard: "If you practice speaking every single day, you will become unstoppable.",
+            nativeStyle: "If you practice speaking every single day, you will become unstoppable.",
+            waysToSay: [
+                { phrasing: "If you practice speaking every single day, you will become unstoppable.", tone: "পেশাদার ও স্পষ্ট", bn: "যদি তুমি প্রতিদিন কথা বলা অনুশীলন করো, তবে তুমি অপ্রতিরোধ্য হয়ে উঠবে।" },
+                { phrasing: "If you won the lottery tomorrow, what would you do first?", tone: "ভদ্র ও চমৎকার", bn: "তুমি যদি কাল লটারি জিতে যাও, তবে তুমি সবার প্রথমে কী করবে?" },
+                { phrasing: "What will happen if we do not submit the project on time?", tone: "বিশ্লেষণধর্মী", bn: "আমরা যদি সময়মতো প্রকল্পটি জমা না দিই তবে কী ঘটবে?" }
+            ],
+            tip: "💡 এই কাঠামোর নিয়মিত চর্চা আপনার স্পিকিংকে আরও সাবলীল ও আন্তর্জাতিক মানের করে তুলবে।"
+        },
+        qaDrill: {
+            targetQuestion: {
+                en: "What would you buy if you had one million dollars right now?",
+                bn: "এই মুহূর্তে তোমার কাছে এক মিলিয়ন ডলার থাকলে তুমি কী কিনতে?",
+                ipa: "/hæv juː biːn/"
+            },
+            possibleAnswers: [
+                { style: "সংক্ষিপ্ত সম্মতি (Short Affirmative)", en: "Yes, absolutely! I find it very rewarding.", bn: "হ্যাঁ, অবশ্যই! এটি আমার কাছে দারুণ ফলপ্রসূ মনে হয়।", ipa: "/jes ˌæbsəˈluːtli/" },
+                { style: "বিস্তারিত উত্তর (Elaborated)", en: "If you practice speaking every single day, you will become unstoppable.", bn: "যদি তুমি প্রতিদিন কথা বলা অনুশীলন করো, তবে তুমি অপ্রতিরোধ্য হয়ে উঠবে।", ipa: "/ɪf juː ˈpræktɪs ˈspiːkɪŋ ˈevri ˈsɪŋɡl deɪ juː wɪl bɪˈkʌm ʌnˈstɒpəbl/" },
+                { style: "না-বাচক উত্তর (Polite Negative)", en: "Not quite, but I am planning to start soon.", bn: "পুরোপুরি নয়, তবে খুব শীঘ্রই শুরু করার পরিকল্পনা করছি।", ipa: "/nɒt kwaɪt/" },
+                { style: "বিকল্প বা দ্বিধা (Alternative / Uncertainty)", en: "It varies depending on my daily schedule.", bn: "আমার দৈনন্দিন রুটিনের ওপর ভিত্তি করে এটি পরিবর্তিত হয়।", ipa: "/ɪt ˈveəriz/" }
+            ]
+        },
+        sentenceBuilder: {
+            subjects: ["If you join our club", "If I were the prime minister", "If we had left earlier", "What would you do", "If the weather is fine"],
+            auxOrVerbs: ["you will improve rapidly", "I would make education free", "we would have caught the flight", "if you were in my position", "we will go on a picnic"],
+            complements: ["without any shadow of doubt", "for every child in our nation", "before the airport gates closed", "to resolve this family matter", "near the peaceful riverside"]
+        }
+    },
+    {
+        id: "lesson-27-causative-verbs",
+        lessonNumber: 27,
+        title: "Causative Verbs: Make, Let, Have, Get & Help",
+        subtitle: "কাউকে দিয়ে কোনো কাজ করানো বা সুযোগ দেওয়া (\"আমি তাকে দিয়ে করিয়েছি\")",
+        phase: "power-structures",
+        phaseLabel: "প্রযোজক ক্রিয়া (Causative Verbs)",
+        level: "Upper-Intermediate",
+        concept: {
+            explanation: "নিজে না করে অন্যকে দিয়ে কাজ করানোর ক্ষেত্রে Causative Verbs বসে। Make (বাধ্য করা: She made me cry), Let (অনুমতি দেওয়া: Let me go), Have (দায়িত্ব দিয়ে করানো: I will have my mechanic fix it), Get (কনভিন্স বা রাজি করিয়ে করানো - এর সাথে to বসে: I got him to sign the deal), Help (সাহায্য করা: It helps me learn)।",
+            whenToUse: "'আমি আমার চুল কাটিয়েছি' (I had my hair cut) বা 'সে আমাকে দিয়ে কাজটি করিয়েছে' (He made me do the work)।",
+            commonMistake: "Get ছাড়া Make, Let, Have এর পর কখনো 'to' বসে না (He made me to go ❌ -> He made me go ✔️; Let him to speak ❌ -> Let him speak ✔️)।",
+            formulaSummary: "Make/Let/Have + Person + V1 (Base Form) | Get + Person + to + V1"
+        },
+        transformation6Way: {
+            baseConcept: "Causative Verbs: Make, Let, Have, Get & Help",
+            positive: {
+                formula: "Make/Let/Have + Person + V1 (Base Form) | Get + Person + to + V1",
+                en: "The motivational speech made me realize my hidden potential.",
+                bn: "সেই অনুপ্রেরণাদায়ক বক্তব্যটি আমাকে আমার সুপ্ত সম্ভাবনা উপলব্ধি করিয়েছিল।",
+                ipa: "/ðə ˌməʊtɪˈveɪʃənl spiːtʃ meɪd miː ˈrɪəlaɪz maɪ ˈhɪdn pəˈtenʃl/"
+            },
+            negative: {
+                formula: "Subject + Auxiliary Negative + Verb + Extension",
+                en: "Please do not let negative thoughts distract you from your ultimate goals.",
+                bn: "দয়া করে নেতিবাচক চিন্তাকে তোমার চূড়ান্ত লক্ষ্য থেকে বিচ্যুত করতে দিও না।",
+                ipa: "/pliːz duː nɒt let ˈneɡətɪv θɔːts dɪˈstrækt juː frɒm jɔːr ˈʌltɪmət ɡəʊlz/"
+            },
+            interrogative: {
+                formula: "Auxiliary + Subject + Verb + Extension?",
+                en: "Did you get the plumber to fix the water leakage?",
+                bn: "তুমি কি প্লাম্বারকে রাজি করিয়ে পানির লিকেজটি মেরামত করিয়েছিলে?",
+                ipa: "/dɪd juː ɡet ðə ˈplʌmər tə fɪks ðə ˈwɔːtə ˈliːkɪdʒ/"
+            },
+            interroNegative: {
+                formula: "Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Why don't you let your younger brother speak his mind?",
+                bn: "তুমি তোমার ছোট ভাইকে তার মনের কথা বলতে দিচ্ছ না কেন?",
+                ipa: "/waɪ dəʊnt juː let jɔː ˈjʌŋɡə ˈbrʌðə spiːk hɪz maɪnd/"
+            },
+            whPositive: {
+                formula: "WH-Word + Auxiliary + Subject + Verb + Extension?",
+                en: "Who had the air conditioner repaired so efficiently today?",
+                bn: "আজ কে এত দক্ষতার সাথে এসি মেরামত করিয়ে নিয়েছিল?",
+                ipa: "/huː hæd ðiː ˈeə kənˈdɪʃnə rɪˈpeəd səʊ ɪˈfɪʃntli təˈdeɪ/"
+            },
+            whNegative: {
+                formula: "WH-Word + Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Why did you make him apologize when he was innocent?",
+                bn: "সে নির্দোষ হওয়া সত্ত্বেও তুমি তাকে ক্ষমা চাইতে বাধ্য করেছিলে কেন?",
+                ipa: "/waɪ dɪd juː meɪk hɪm əˈpɒlədʒaɪz wen hiː wəz ˈɪnəsnt/"
+            }
+        },
+        realLifeSentences: [
+            { en: "The motivational speech made me realize my hidden potential.", bn: "সেই অনুপ্রেরণাদায়ক বক্তব্যটি আমাকে আমার সুপ্ত সম্ভাবনা উপলব্ধি করিয়েছিল।", ipa: "/ðə ˌməʊtɪˈveɪʃənl spiːtʃ meɪd miː ˈrɪəlaɪz maɪ ˈhɪdn pəˈtenʃl/", context: "দৈনন্দিন বাস্তব প্রয়োগ", type: "positive" },
+            { en: "Please do not let negative thoughts distract you from your ultimate goals.", bn: "দয়া করে নেতিবাচক চিন্তাকে তোমার চূড়ান্ত লক্ষ্য থেকে বিচ্যুত করতে দিও না।", ipa: "/pliːz duː nɒt let ˈneɡətɪv θɔːts dɪˈstrækt juː frɒm jɔːr ˈʌltɪmət ɡəʊlz/", context: "না-বাচক স্পষ্ট বিবৃতি", type: "negative" },
+            { en: "Did you get the plumber to fix the water leakage?", bn: "তুমি কি প্লাম্বারকে রাজি করিয়ে পানির লিকেজটি মেরামত করিয়েছিলে?", ipa: "/dɪd juː ɡet ðə ˈplʌmər tə fɪks ðə ˈwɔːtə ˈliːkɪdʒ/", context: "ভদ্র ও স্বাভাবিক প্রশ্ন", type: "question" },
+            { en: "Who had the air conditioner repaired so efficiently today?", bn: "আজ কে এত দক্ষতার সাথে এসি মেরামত করিয়ে নিয়েছিল?", ipa: "/huː hæd ðiː ˈeə kənˈdɪʃnə rɪˈpeəd səʊ ɪˈfɪʃntli təˈdeɪ/", context: "তথ্যবহুল অনুসন্ধানী প্রশ্ন", type: "wh" }
+        ],
+        nativeVariations: {
+            situation: "বলতে চাওয়া: \"সেই অনুপ্রেরণাদায়ক বক্তব্যটি আমাকে আমার সুপ্ত সম্ভাবনা উপলব্ধি করিয়েছিল।\"",
+            standard: "The motivational speech made me realize my hidden potential.",
+            nativeStyle: "The motivational speech made me realize my hidden potential.",
+            waysToSay: [
+                { phrasing: "The motivational speech made me realize my hidden potential.", tone: "পেশাদার ও স্পষ্ট", bn: "সেই অনুপ্রেরণাদায়ক বক্তব্যটি আমাকে আমার সুপ্ত সম্ভাবনা উপলব্ধি করিয়েছিল।" },
+                { phrasing: "Did you get the plumber to fix the water leakage?", tone: "ভদ্র ও চমৎকার", bn: "তুমি কি প্লাম্বারকে রাজি করিয়ে পানির লিকেজটি মেরামত করিয়েছিলে?" },
+                { phrasing: "Who had the air conditioner repaired so efficiently today?", tone: "বিশ্লেষণধর্মী", bn: "আজ কে এত দক্ষতার সাথে এসি মেরামত করিয়ে নিয়েছিল?" }
+            ],
+            tip: "💡 এই কাঠামোর নিয়মিত চর্চা আপনার স্পিকিংকে আরও সাবলীল ও আন্তর্জাতিক মানের করে তুলবে।"
+        },
+        qaDrill: {
+            targetQuestion: {
+                en: "Could you let me know when the next workshop begins?",
+                bn: "পরবর্তী কর্মশালাটি কখন শুরু হবে তা কি আমাকে দয়া করে জানিয়ে দিতে পারেন?",
+                ipa: "/hæv juː biːn/"
+            },
+            possibleAnswers: [
+                { style: "সংক্ষিপ্ত সম্মতি (Short Affirmative)", en: "Yes, absolutely! I find it very rewarding.", bn: "হ্যাঁ, অবশ্যই! এটি আমার কাছে দারুণ ফলপ্রসূ মনে হয়।", ipa: "/jes ˌæbsəˈluːtli/" },
+                { style: "বিস্তারিত উত্তর (Elaborated)", en: "The motivational speech made me realize my hidden potential.", bn: "সেই অনুপ্রেরণাদায়ক বক্তব্যটি আমাকে আমার সুপ্ত সম্ভাবনা উপলব্ধি করিয়েছিল।", ipa: "/ðə ˌməʊtɪˈveɪʃənl spiːtʃ meɪd miː ˈrɪəlaɪz maɪ ˈhɪdn pəˈtenʃl/" },
+                { style: "না-বাচক উত্তর (Polite Negative)", en: "Not quite, but I am planning to start soon.", bn: "পুরোপুরি নয়, তবে খুব শীঘ্রই শুরু করার পরিকল্পনা করছি।", ipa: "/nɒt kwaɪt/" },
+                { style: "বিকল্প বা দ্বিধা (Alternative / Uncertainty)", en: "It varies depending on my daily schedule.", bn: "আমার দৈনন্দিন রুটিনের ওপর ভিত্তি করে এটি পরিবর্তিত হয়।", ipa: "/ɪt ˈveəriz/" }
+            ]
+        },
+        sentenceBuilder: {
+            subjects: ["I will have my assistant", "Please let me", "She got her brother to", "Hard work makes us", "This app helps you"],
+            auxOrVerbs: ["email the documents", "explain the entire scenario", "drive her to the campus", "appreciate real success", "speak English effortlessly"],
+            complements: ["first thing tomorrow morning", "without interrupting me", "safe and sound", "throughout our lives", "with just twenty minutes daily"]
+        }
+    },
+    {
+        id: "lesson-28-passive-speaking",
+        lessonNumber: 28,
+        title: "Passive Voice in Speaking: am/is/are + V3 & was/were + V3",
+        subtitle: "দৈনন্দিন স্পোকেন ইংলিশে যখন কাজের চেয়ে ফলাফল প্রধান (\"কাউকে জানানো হয়েছে\")",
+        phase: "power-structures",
+        phaseLabel: "প্যাসিভ স্পোকেন (Passive Speaking)",
+        level: "Upper-Intermediate",
+        concept: {
+            explanation: "কে কাজ করেছে তা অপ্রয়োজনীয় বা অজানা থাকলে স্পোকেন ইংলিশে সরাসরি Passive ব্যবহার করা হয়। যেমন: 'অফিস বন্ধ করা হয়েছে' (The office is closed), 'চা পরিবেশন করা হলো' (Tea was served), 'আমাকে জানানো হয়েছে' (I have been informed)।",
+            whenToUse: "খবর, আনুষ্ঠানিক ঘোষণা, অফিসের নিয়ম, এবং দৈনন্দিন জীবনে যখন কাজের ফলাফলের ওপর জোর দিতে হয়।",
+            commonMistake: "প্যাসিভ ভয়েসে Be Verb (am/is/are/was/were/been) এর পর অবশ্যই ভার্বের ৩য় রূপ (Past Participle - V3) বসবে (It was wrote ❌ -> It was written ✔️)।",
+            formulaSummary: "Object + Be Verb (am/is/are/was/were/has been) + V3 (Past Participle)"
+        },
+        transformation6Way: {
+            baseConcept: "Passive Voice in Speaking: am/is/are + V3 & was/were + V3",
+            positive: {
+                formula: "Object + Be Verb (am/is/are/was/were/has been) + V3 (Past Participle)",
+                en: "English is spoken and celebrated all around the globe.",
+                bn: "সারা বিশ্ব জুড়ে ইংরেজি ভাষায় কথা বলা হয় এবং একে সমাদৃত করা হয়।",
+                ipa: "/ˈɪŋɡlɪʃ ɪz ˈspəʊkən ænd ˈselɪbreɪtɪd ɔːl əˈraʊnd ðə ɡləʊb/"
+            },
+            negative: {
+                formula: "Subject + Auxiliary Negative + Verb + Extension",
+                en: "The official announcement was not released until 5:00 PM.",
+                bn: "বিকেল ৫টার আগে সরকারি ঘোষণাটি প্রকাশ করা হয়নি।",
+                ipa: "/ði əˈfɪʃl əˈnaʊnsmənt wəz nɒt rɪˈliːst ənˈtɪl faɪv piː em/"
+            },
+            interrogative: {
+                formula: "Auxiliary + Subject + Verb + Extension?",
+                en: "Were you invited to the annual corporate dinner tonight?",
+                bn: "আজ রাতে বার্ষিক করপোরেট নৈশভোজে কি তোমাকে আমন্ত্রণ জানানো হয়েছিল?",
+                ipa: "/wɜː juː ɪnˈvaɪtɪd tə ði ˈænjuəl ˈkɔːpərət ˈdɪnə təˈnaɪt/"
+            },
+            interroNegative: {
+                formula: "Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Isn't fresh breakfast served every morning at this hotel?",
+                bn: "এই হোটেলে কি প্রতিদিন সকালে তাজা নাস্তা পরিবেশন করা হয় না?",
+                ipa: "/ˈɪznt freʃ ˈbrekfəst sɜːvd ˈevri ˈmɔːnɪŋ æt ðɪs həʊˈtel/"
+            },
+            whPositive: {
+                formula: "WH-Word + Auxiliary + Subject + Verb + Extension?",
+                en: "Where was this beautiful handloom saree crafted?",
+                bn: "এই সুন্দর তাঁতের শাড়িটি কোথায় তৈরি করা হয়েছিল?",
+                ipa: "/weə wəz ðɪs ˈbjuːtɪfl ˈhændluːm ˈsɑːri ˈkrɑːftɪd/"
+            },
+            whNegative: {
+                formula: "WH-Word + Auxiliary Negative + Subject + Verb + Extension?",
+                en: "Why wasn't the broken elevator repaired immediately by maintenance?",
+                bn: "রক্ষণাবেক্ষণ দল অবিলম্বে নষ্ট লিফটটি মেরামত করেনি কেন?",
+                ipa: "/waɪ ˈwɒznt ðə ˈbrəʊkən ˈelɪveɪtə rɪˈpeəd ɪˈmiːdiətli baɪ ˈmeɪntənəns/"
+            }
+        },
+        realLifeSentences: [
+            { en: "English is spoken and celebrated all around the globe.", bn: "সারা বিশ্ব জুড়ে ইংরেজি ভাষায় কথা বলা হয় এবং একে সমাদৃত করা হয়।", ipa: "/ˈɪŋɡlɪʃ ɪz ˈspəʊkən ænd ˈselɪbreɪtɪd ɔːl əˈraʊnd ðə ɡləʊb/", context: "দৈনন্দিন বাস্তব প্রয়োগ", type: "positive" },
+            { en: "The official announcement was not released until 5:00 PM.", bn: "বিকেল ৫টার আগে সরকারি ঘোষণাটি প্রকাশ করা হয়নি।", ipa: "/ði əˈfɪʃl əˈnaʊnsmənt wəz nɒt rɪˈliːst ənˈtɪl faɪv piː em/", context: "না-বাচক স্পষ্ট বিবৃতি", type: "negative" },
+            { en: "Were you invited to the annual corporate dinner tonight?", bn: "আজ রাতে বার্ষিক করপোরেট নৈশভোজে কি তোমাকে আমন্ত্রণ জানানো হয়েছিল?", ipa: "/wɜː juː ɪnˈvaɪtɪd tə ði ˈænjuəl ˈkɔːpərət ˈdɪnə təˈnaɪt/", context: "ভদ্র ও স্বাভাবিক প্রশ্ন", type: "question" },
+            { en: "Where was this beautiful handloom saree crafted?", bn: "এই সুন্দর তাঁতের শাড়িটি কোথায় তৈরি করা হয়েছিল?", ipa: "/weə wəz ðɪs ˈbjuːtɪfl ˈhændluːm ˈsɑːri ˈkrɑːftɪd/", context: "তথ্যবহুল অনুসন্ধানী প্রশ্ন", type: "wh" }
+        ],
+        nativeVariations: {
+            situation: "বলতে চাওয়া: \"সারা বিশ্ব জুড়ে ইংরেজি ভাষায় কথা বলা হয় এবং একে সমাদৃত করা হয়।\"",
+            standard: "English is spoken and celebrated all around the globe.",
+            nativeStyle: "English is spoken and celebrated all around the globe.",
+            waysToSay: [
+                { phrasing: "English is spoken and celebrated all around the globe.", tone: "পেশাদার ও স্পষ্ট", bn: "সারা বিশ্ব জুড়ে ইংরেজি ভাষায় কথা বলা হয় এবং একে সমাদৃত করা হয়।" },
+                { phrasing: "Were you invited to the annual corporate dinner tonight?", tone: "ভদ্র ও চমৎকার", bn: "আজ রাতে বার্ষিক করপোরেট নৈশভোজে কি তোমাকে আমন্ত্রণ জানানো হয়েছিল?" },
+                { phrasing: "Where was this beautiful handloom saree crafted?", tone: "বিশ্লেষণধর্মী", bn: "এই সুন্দর তাঁতের শাড়িটি কোথায় তৈরি করা হয়েছিল?" }
+            ],
+            tip: "💡 এই কাঠামোর নিয়মিত চর্চা আপনার স্পিকিংকে আরও সাবলীল ও আন্তর্জাতিক মানের করে তুলবে।"
+        },
+        qaDrill: {
+            targetQuestion: {
+                en: "Has your passport application been approved by the authorities?",
+                bn: "কর্তৃপক্ষের দ্বারা কি তোমার পাসপোর্ট আবেদন অনুমোদিত হয়েছে?",
+                ipa: "/hæv juː biːn/"
+            },
+            possibleAnswers: [
+                { style: "সংক্ষিপ্ত সম্মতি (Short Affirmative)", en: "Yes, absolutely! I find it very rewarding.", bn: "হ্যাঁ, অবশ্যই! এটি আমার কাছে দারুণ ফলপ্রসূ মনে হয়।", ipa: "/jes ˌæbsəˈluːtli/" },
+                { style: "বিস্তারিত উত্তর (Elaborated)", en: "English is spoken and celebrated all around the globe.", bn: "সারা বিশ্ব জুড়ে ইংরেজি ভাষায় কথা বলা হয় এবং একে সমাদৃত করা হয়।", ipa: "/ˈɪŋɡlɪʃ ɪz ˈspəʊkən ænd ˈselɪbreɪtɪd ɔːl əˈraʊnd ðə ɡləʊb/" },
+                { style: "না-বাচক উত্তর (Polite Negative)", en: "Not quite, but I am planning to start soon.", bn: "পুরোপুরি নয়, তবে খুব শীঘ্রই শুরু করার পরিকল্পনা করছি।", ipa: "/nɒt kwaɪt/" },
+                { style: "বিকল্প বা দ্বিধা (Alternative / Uncertainty)", en: "It varies depending on my daily schedule.", bn: "আমার দৈনন্দিন রুটিনের ওপর ভিত্তি করে এটি পরিবর্তিত হয়।", ipa: "/ɪt ˈveəriz/" }
+            ]
+        },
+        sentenceBuilder: {
+            subjects: ["The project was completed", "Warm tea is served", "I was selected", "The certificates were distributed", "English is widely spoken"],
+            auxOrVerbs: ["well ahead of schedule", "with delicious biscuits", "for the overseas fellowship", "among all participants", "in international conferences"],
+            complements: ["by our hardworking engineers", "at every meeting session", "out of thousands of applicants", "with huge round of applause", "to bridge cultural gaps"]
         }
     }
 ];
