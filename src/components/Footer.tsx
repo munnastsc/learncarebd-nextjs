@@ -10,9 +10,9 @@ export default async function Footer() {
             title: 'Important Links',
             links: [
                 { label: 'সকল কোর্স', url: '/#courses' },
-                { label: 'ফ্রি লেভেল টেস্ট', url: 'https://learncarebd.com/6409-2/' },
-                { label: 'স্টুডেন্ট লগইন', url: '/login' },
-                { label: 'অ্যাডমিন প্যানেল', url: '/ai-26/login' }
+                { label: 'ফ্রি লেভেল টেস্ট', url: '/level-test' },
+                { label: 'বই সম্ভার (Store)', url: '/books' },
+                { label: 'স্টুডেন্ট লগইন', url: '/login' }
             ]
         },
         {

@@ -13,6 +13,8 @@ export default function Navbar() {
                 <div className="hidden md:flex gap-6 items-center">
                     <Link href="/about" className="text-sm font-semibold text-slate-600 hover:text-slate-900">About</Link>
                     <Link href="/#courses" className="text-sm font-semibold text-slate-600 hover:text-slate-900">Courses</Link>
+                    <Link href="/books" className="text-sm font-semibold text-slate-600 hover:text-slate-900">Books</Link>
+                    <Link href="/dashboard" className="text-sm font-semibold text-emerald-600 hover:text-emerald-700">Practice Hub</Link>
                     <Link href="/login" className="text-sm font-bold bg-slate-900 text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition">Login</Link>
                 </div>
             </div>

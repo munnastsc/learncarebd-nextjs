@@ -134,7 +134,19 @@ export default function DashboardPage() {
                         <div className="flex flex-wrap gap-2">
                             <Link href="/dashboard/spoken-english"
                                 className="inline-flex items-center gap-2 rounded-xl bg-teal-600 px-4 py-2.5 text-sm font-black text-white hover:bg-teal-500 transition shadow-lg shadow-teal-900/30">
-                                <Radio size={15} /> Spoken English Module
+                                <Radio size={15} /> Spoken English Hub
+                            </Link>
+                            <Link href="/dashboard/spoken-english/common-mistakes"
+                                className="inline-flex items-center gap-2 rounded-xl border border-rose-500/40 bg-rose-500/10 px-4 py-2.5 text-sm font-bold text-rose-300 hover:bg-rose-500/20 transition">
+                                ⚠️ Common Mistakes
+                            </Link>
+                            <Link href="/dashboard/spoken-english/solo-speech"
+                                className="inline-flex items-center gap-2 rounded-xl border border-teal-500/40 bg-teal-500/10 px-4 py-2.5 text-sm font-bold text-teal-300 hover:bg-teal-500/20 transition">
+                                🎙️ Solo Speech Jam
+                            </Link>
+                            <Link href="/dashboard/spoken-english/patterns"
+                                className="inline-flex items-center gap-2 rounded-xl border border-amber-500/40 bg-amber-500/10 px-4 py-2.5 text-sm font-bold text-amber-300 hover:bg-amber-500/20 transition">
+                                <Layers3 size={15} /> Sentence Formulas
                             </Link>
                             <Link href="/dashboard/ai-tutor"
                                 className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-bold text-white hover:bg-indigo-500 transition shadow-lg shadow-indigo-900/30">
@@ -147,10 +159,6 @@ export default function DashboardPage() {
                             <Link href="/dashboard/speaking"
                                 className="inline-flex items-center gap-2 rounded-xl bg-rose-600 px-4 py-2.5 text-sm font-bold text-white hover:bg-rose-500 transition shadow-lg shadow-rose-900/30">
                                 <Mic size={15} /> Speaking AI
-                            </Link>
-                            <Link href="/ai-26/books"
-                                className="inline-flex items-center gap-2 rounded-xl border border-slate-600 bg-slate-700 px-4 py-2.5 text-sm font-bold text-slate-200 hover:bg-slate-600 transition">
-                                <Layers3 size={15} /> Content
                             </Link>
                         </div>
                     </div>

@@ -156,12 +156,6 @@ export default async function HomePage() {
               >
                 Login
               </a>
-              <a
-                className="hidden md:inline-flex rounded-xl bg-teal-600/20 border border-teal-500/30 text-teal-400 hover:bg-teal-600 hover:text-white px-4 py-2 text-xs font-bold transition"
-                href="/ai-26/login"
-              >
-                Admin
-              </a>
             </div>
           </div>
         </header>
@@ -803,21 +797,20 @@ export default async function HomePage() {
                     </svg>
                   </div>
                   <span className="bg-fuchsia-100 text-fuchsia-800 text-[10px] font-black px-2.5 py-1 rounded-lg uppercase">
-                    24/7 Support
+                    100% Free
                   </span>
                 </div>
                 <h3 className="text-lg font-black text-slate-900 mb-2">
-                  24/7 AI Tutor
+                  Sentence Formulas & Patterns
                 </h3>
                 <p className="text-xs text-slate-600 mb-6 flex-1 leading-relaxed">
-                  Get instant help with grammar, translations, speaking tips, or
-                  any English problem anytime from our smart AI tutor.
+                  ১০০টি জাদুকরী স্পোকেন প্যাটার্ন দিয়ে শত শত বাক্য নিজে নিজে বানিয়ে মুখে বলার ম্যাজিক মেথড।
                 </p>
                 <a
-                  className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-fuchsia-300 hover:text-fuchsia-700 w-full py-2.5 rounded-xl text-xs font-bold transition"
-                  href="/dashboard/spoken-english"
+                  className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-amber-400 hover:text-amber-700 w-full py-2.5 rounded-xl text-xs font-bold transition shadow-xs"
+                  href="/dashboard/spoken-english/patterns"
                 >
-                  Ask Tutor{" "}
+                  Start Building Sentences{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="14"
@@ -837,9 +830,6 @@ export default async function HomePage() {
                 </a>
               </div>
               <div className="bg-[#f8fafc] border border-slate-200 rounded-3xl p-6 hover:shadow-xl transition-all group flex flex-col relative overflow-hidden">
-                <div className="absolute top-0 right-0 bg-emerald-600 text-white text-[10px] font-black px-3 py-1 rounded-bl-lg shadow-sm z-10">
-                  Premium Lock
-                </div>
                 <div className="flex items-center justify-between mb-4">
                   <div className="h-12 w-12 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center">
                     <svg
@@ -859,19 +849,18 @@ export default async function HomePage() {
                     </svg>
                   </div>
                   <span className="bg-emerald-100 text-emerald-800 text-[10px] font-black px-2.5 py-1 rounded-lg uppercase">
-                    4 Units Free
+                    100% Free
                   </span>
                 </div>
                 <h3 className="text-lg font-black text-slate-900 mb-2">
                   Headway Dictation
                 </h3>
                 <p className="text-xs text-slate-600 mb-6 flex-1 leading-relaxed">
-                  New Headway Beginner lessons. প্রথম ৪টি ইউনিট সম্পূর্ণ ফ্রি,
-                  বাকিগুলো আনলক করতে স্পোকেন সাবস্ক্রিপশন প্রয়োজন।
+                  New Headway Beginner lessons. সবকটি ইউনিট সম্পূর্ণ ফ্রি — অডিও শুনে ডিকটেশন, শ্যাডোয়িং ও উচ্চারণ প্র্যাকটিস করুন।
                 </p>
                 <a
                   className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-emerald-300 hover:text-emerald-700 w-full py-2.5 rounded-xl text-xs font-bold transition"
-                  href="/dashboard/spoken-english"
+                  href="/dashboard/spoken-english/headway"
                 >
                   Start Practice{" "}
                   <svg
@@ -927,7 +916,7 @@ export default async function HomePage() {
                 </p>
                 <a
                   className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-sky-300 hover:text-sky-700 w-full py-2.5 rounded-xl text-xs font-bold transition"
-                  href="/dashboard/spoken-english"
+                  href="/dashboard/spoken-english/pronunciation"
                 >
                   Start Practice{" "}
                   <svg
@@ -980,7 +969,7 @@ export default async function HomePage() {
                 </p>
                 <a
                   className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-teal-300 hover:text-teal-700 w-full py-2.5 rounded-xl text-xs font-bold transition"
-                  href="/dashboard/spoken-english"
+                  href="/dashboard/spoken-english/conversations"
                 >
                   Start Practice{" "}
                   <svg
@@ -1038,7 +1027,7 @@ export default async function HomePage() {
                 </p>
                 <a
                   className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-rose-300 hover:text-rose-700 w-full py-2.5 rounded-xl text-xs font-bold transition"
-                  href="/dashboard/spoken-english"
+                  href="/dashboard/ai-conversation"
                 >
                   Start Practice{" "}
                   <svg
@@ -1092,7 +1081,7 @@ export default async function HomePage() {
                 </p>
                 <a
                   className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-green-300 hover:text-green-700 w-full py-2.5 rounded-xl text-xs font-bold transition"
-                  href="/dashboard/spoken-english"
+                  href="/dashboard/stories"
                 >
                   Start Practice{" "}
                   <svg
@@ -1147,7 +1136,7 @@ export default async function HomePage() {
                 </p>
                 <a
                   className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-purple-300 hover:text-purple-700 w-full py-2.5 rounded-xl text-xs font-bold transition"
-                  href="/dashboard/spoken-english"
+                  href="/dashboard/spoken-english/grammar-academy"
                 >
                   Start Practice{" "}
                   <svg
@@ -1201,7 +1190,7 @@ export default async function HomePage() {
                 </p>
                 <a
                   className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-indigo-300 hover:text-indigo-700 w-full py-2.5 rounded-xl text-xs font-bold transition"
-                  href="/dashboard/spoken-english"
+                  href="/dashboard/grammar-practice"
                 >
                   Start Practice{" "}
                   <svg
@@ -1255,7 +1244,7 @@ export default async function HomePage() {
                 </p>
                 <a
                   className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-blue-300 hover:text-blue-700 w-full py-2.5 rounded-xl text-xs font-bold transition"
-                  href="/dashboard/spoken-english"
+                  href="/dashboard/grammar"
                 >
                   Start Practice{" "}
                   <svg
@@ -1311,7 +1300,115 @@ export default async function HomePage() {
                 </p>
                 <a
                   className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-amber-300 hover:text-amber-700 w-full py-2.5 rounded-xl text-xs font-bold transition"
-                  href="/dashboard/spoken-english"
+                  href="/dashboard/spoken-english/words"
+                >
+                  Start Practice{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-arrow-right"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+              <div className="bg-[#f8fafc] border border-slate-200 rounded-3xl p-6 hover:shadow-xl transition-all group flex flex-col">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="h-12 w-12 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-alert-triangle"
+                      aria-hidden="true"
+                    >
+                      <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
+                      <line x1="12" y1="9" x2="12" y2="13"></line>
+                      <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                    </svg>
+                  </div>
+                  <span className="bg-rose-100 text-rose-800 text-[10px] font-black px-2.5 py-1 rounded-lg uppercase">
+                    100% Free
+                  </span>
+                </div>
+                <h3 className="text-lg font-black text-slate-900 mb-2">
+                  Common Mistakes &amp; Confusing Pairs
+                </h3>
+                <p className="text-xs text-slate-600 mb-6 flex-1 leading-relaxed">
+                  বাঙালিদের সবচেয়ে সাধারণ ২৫+ ইংরেজি ভুল যেমন "I am agree", "Cousin brother" এর সুস্পষ্ট নিয়ম ও শুদ্ধ উচ্চারণ।
+                </p>
+                <a
+                  className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-rose-300 hover:text-rose-700 w-full py-2.5 rounded-xl text-xs font-bold transition"
+                  href="/dashboard/spoken-english/common-mistakes"
+                >
+                  Start Practice{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-arrow-right"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+              <div className="bg-[#f8fafc] border border-slate-200 rounded-3xl p-6 hover:shadow-xl transition-all group flex flex-col">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="h-12 w-12 rounded-2xl bg-teal-100 text-teal-600 flex items-center justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-mic"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                      <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                      <line x1="12" y1="19" x2="12" y2="22"></line>
+                    </svg>
+                  </div>
+                  <span className="bg-teal-100 text-teal-800 text-[10px] font-black px-2.5 py-1 rounded-lg uppercase">
+                    100% Free
+                  </span>
+                </div>
+                <h3 className="text-lg font-black text-slate-900 mb-2">
+                  1-Minute Solo Speech Simulator
+                </h3>
+                <p className="text-xs text-slate-600 mb-6 flex-1 leading-relaxed">
+                  কথা বলার পার্টনার ছাড়াই ১৫ সেকেন্ড প্রস্তুতি নিয়ে ৬০ সেকেন্ড অনর্গল বলুন। ভয়েস রেকর্ড ও লাইভ ট্রান্সক্রিপ্ট।
+                </p>
+                <a
+                  className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-teal-300 hover:text-teal-700 w-full py-2.5 rounded-xl text-xs font-bold transition"
+                  href="/dashboard/spoken-english/solo-speech"
                 >
                   Start Practice{" "}
                   <svg

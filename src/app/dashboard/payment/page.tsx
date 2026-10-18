@@ -208,6 +208,12 @@ function PaymentContent() {
                             <p>২. মার্চেন্ট নম্বর দিন: <b>01965056156</b></p>
                             <p>৩. টাকার পরিমাণ দিন: <b>৳{plan.price}</b></p>
                             <p>৪. পেমেন্ট সম্পন্ন হলে বিকাশ থেকে প্রাপ্ত <b>Transaction ID</b> সংগ্রহ করুন।</p>
+                            <div className="pt-2 border-t border-slate-200 flex items-center justify-between text-[11px]">
+                                <span className="text-slate-500">নগদ / রকেট বা সহায়তার জন্য:</span>
+                                <a href="https://wa.me/8801714740430?text=I%20need%20help%20with%20payment" target="_blank" rel="noopener noreferrer" className="font-bold text-emerald-600 hover:underline flex items-center gap-1">
+                                    💬 WhatsApp: 01714740430
+                                </a>
+                            </div>
                         </div>
 
                         <div className="mt-4 rounded-xl bg-indigo-50/30 border border-indigo-100 p-4">

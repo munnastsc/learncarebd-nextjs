@@ -104,8 +104,8 @@ export default function SpokenVocabPage() {
             return savedWords;
         }
         const filtered = (spokenVocabRaw as WordItem[]).filter(w => w.pos === selectedCategory);
-        return isTrial ? filtered.slice(0, 3) : filtered;
-    }, [selectedCategory, savedWords, isTrial]);
+        return filtered;
+    }, [selectedCategory, savedWords]);
 
     // --- Learn Mode State ---
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -355,13 +355,7 @@ export default function SpokenVocabPage() {
                         ] as const).map(([m, label]) => (
                             <button
                                 key={m}
-                                onClick={() => {
-                                    if (isTrial && m === 'quiz') {
-                                        window.location.href = '/dashboard/payment?required=spoken';
-                                        return;
-                                    }
-                                    setMode(m);
-                                }}
+                                onClick={() => setMode(m)}
                                 className={`rounded-lg px-4 py-1.5 text-xs font-bold transition-all ${
                                     mode === m
                                         ? 'bg-white text-slate-900 shadow-sm'
@@ -763,23 +757,6 @@ export default function SpokenVocabPage() {
                                 Next <ChevronRight size={16} />
                             </button>
                         </div>
-
-                        {isTrial && currentIndex === 2 && selectedCategory !== 'saved' && (
-                            <div className="rounded-2xl border border-slate-200 bg-white p-6 text-center space-y-4 shadow-sm mt-6">
-                                <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 text-amber-600">
-                                    <Lock size={20} />
-                                </div>
-                                <div>
-                                    <h3 className="text-sm font-black text-slate-900">🔒 ফ্রী ট্রায়ালে আরও শব্দ লকড!</h3>
-                                    <p className="text-xs text-slate-500 mt-1">
-                                        আপনি বর্তমানে ফ্রি ট্রায়াল মোডে আছেন। এই ক্যাটাগরির সমস্ত শব্দ ও বাক্য প্র্যাকটিস করতে সাবস্ক্রিপশন প্ল্যানটি অ্যাক্টিভেট করুন।
-                                    </p>
-                                </div>
-                                <Link href="/dashboard/payment?required=spoken" className="inline-flex items-center gap-1.5 rounded-xl bg-teal-600 px-5 py-2.5 text-xs font-bold text-white hover:bg-teal-500 transition shadow">
-                                    আনলক করুন ↗
-                                </Link>
-                            </div>
-                        )}
                     </div>
                 )}
             </div>

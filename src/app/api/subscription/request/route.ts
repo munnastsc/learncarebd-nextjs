@@ -99,7 +99,7 @@ export async function POST(request: Request) {
 💰 Amount: ৳${amount}
 🧾 TxID: ${transactionId}
 
-Approve: ${process.env.NEXT_PUBLIC_APP_URL || 'https://iltes.vercel.app'}/admin/orders`
+Approve: ${process.env.NEXT_PUBLIC_APP_URL || 'https://iltes.vercel.app'}/ai-26/orders`
             );
 
             await notifyAdminNewOrder({

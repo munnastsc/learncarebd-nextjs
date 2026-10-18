@@ -390,22 +390,21 @@ export default function SpokenEnglishPage() {
                         <p className="mb-3 text-xs font-black uppercase tracking-widest text-slate-500">Unit বেছে নাও</p>
                         <div className="space-y-1 max-h-72 overflow-y-auto pr-1">
                             {headwayData.units.map(u => {
-                                const isFree = isTrial ? u.unit <= 1 : u.unit <= 3;
-                                const isLocked = isTrial ? u.unit > 1 : (!isFree && plan !== 'spoken' && plan !== 'ielts_spoken');
+                                const isFree = true;
+                                const isLocked = false;
                                 const done = unitDoneCount(u as Unit);
                                 const isSelected = selectedUnit.unit === u.unit;
                                 return (
                                     <button key={u.unit}
                                         onClick={() => {
-                                            if (isLocked) { window.location.href = '/dashboard/payment?required=spoken'; return; }
                                             setSelectedUnit(u as Unit);
                                             setSelectedTrack(1);
                                             setSentenceIdx(0);
                                         }}
-                                        className={`w-full rounded-xl px-3 py-2.5 text-left transition ${isSelected ? 'bg-teal-600 text-white' : isLocked ? 'opacity-50 hover:bg-slate-50 text-slate-400' : 'hover:bg-slate-50 text-slate-700'}`}>
+                                        className={`w-full rounded-xl px-3 py-2.5 text-left transition ${isSelected ? 'bg-teal-600 text-white' : 'hover:bg-slate-50 text-slate-700'}`}>
                                         <div className="flex items-center gap-2">
                                             <span className={`text-xs font-black flex-shrink-0 ${isSelected ? 'text-teal-200' : 'text-teal-600'}`}>
-                                                {isLocked ? '🔒' : u.unit}
+                                                {u.unit}
                                             </span>
                                             <div className="flex-1 min-w-0">
                                                 <p className="text-xs font-extrabold leading-tight truncate">{u.title}</p>

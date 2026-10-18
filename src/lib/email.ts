@@ -44,7 +44,7 @@ export async function notifyAdminNewOrder(data: {
     amount: number;
     transactionId: string;
 }) {
-    const adminEmail = process.env.ADMIN_NOTIFICATION_EMAIL || process.env.ADMIN_EMAIL || 'support@learncarebd.com';
+    const adminEmail = process.env.ADMIN_NOTIFICATION_EMAIL || process.env.ADMIN_EMAIL || 'learncareofficial@gmail.com';
     const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
 
     const html = `
@@ -59,7 +59,7 @@ export async function notifyAdminNewOrder(data: {
                 <p style="margin: 6px 0;"><strong>🧾 Transaction ID:</strong> ${data.transactionId}</p>
             </div>
 
-            <a href="${appUrl}/admin/orders" style="display: inline-block; background-color: #4f46e5; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 10px;">
+            <a href="${appUrl}/ai-26/orders" style="display: inline-block; background-color: #4f46e5; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 10px;">
                 অর্ডার Approve করুন ↗
             </a>
         </div>
@@ -67,7 +67,44 @@ export async function notifyAdminNewOrder(data: {
 
     return sendEmail({
         to: adminEmail,
-        subject: `🔔 নতুন অর্ডার: ${data.email} (৳${data.amount})`,
+        subject: `🔔 নতুন কোর্স অর্ডার: ${data.email} (৳${data.amount})`,
+        html,
+    });
+}
+
+export async function notifyAdminNewBookOrder(data: {
+    customerName: string;
+    phone: string;
+    address: string;
+    bookTitle: string;
+    quantity: number;
+    totalAmount: number;
+}) {
+    const adminEmail = process.env.ADMIN_NOTIFICATION_EMAIL || process.env.ADMIN_EMAIL || 'learncareofficial@gmail.com';
+    const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
+
+    const html = `
+        <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e2e8f0; border-radius: 16px;">
+            <h2 style="color: #0f172a; margin-top: 0;">📚 নতুন বইয়ের অর্ডার এসেছে!</h2>
+            <p style="color: #475569;">LearnCareBD বুক স্টোরে নতুন অর্ডার জমা হয়েছে:</p>
+            
+            <div style="background-color: #f8fafc; padding: 15px; border-radius: 10px; margin: 15px 0;">
+                <p style="margin: 6px 0;"><strong>👤 ক্রেতার নাম:</strong> ${data.customerName}</p>
+                <p style="margin: 6px 0;"><strong>📞 মোবাইল নম্বর:</strong> ${data.phone}</p>
+                <p style="margin: 6px 0;"><strong>🏠 ডেলিভারি ঠিকানা:</strong> ${data.address}</p>
+                <p style="margin: 6px 0;"><strong>📖 বই:</strong> ${data.bookTitle} (x${data.quantity})</p>
+                <p style="margin: 6px 0;"><strong>💰 মোট মূল্য:</strong> ৳${data.totalAmount} BDT</p>
+            </div>
+
+            <a href="${appUrl}/ai-26/store/orders" style="display: inline-block; background-color: #0d9488; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 10px;">
+                বুক অর্ডার ম্যানেজ করুন ↗
+            </a>
+        </div>
+    `;
+
+    return sendEmail({
+        to: adminEmail,
+        subject: `📚 নতুন বই অর্ডার: ${data.customerName} - ${data.bookTitle} (৳${data.totalAmount})`,
         html,
     });
 }

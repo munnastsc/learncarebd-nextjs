@@ -62,6 +62,42 @@ const PHRASE_CATEGORIES = [
             { id: 't4', english: 'Where is the nearest currency exchange office?', ipa: '/weər ɪz ðə ˈnɪərɪst ˈkʌrənsi ɪksˈtʃeɪndʒ ˈɒfɪs/', bangla: 'সবচেয়ে কাছের টাকা পরিবর্তনের অফিসটি কোথায়?', context: 'Looking to exchange money.' },
             { id: 't5', english: 'Could you recommend a good local tour guide?', ipa: '/kʊd juː ˌrekəˈmend ə gʊd ˈləʊkl tʊə gaɪd/', bangla: 'ভালো কোনো স্থানীয় গাইড সাজেস্ট করতে পারেন কি?', context: 'Asking for tourist guides.' }
         ]
+    },
+    {
+        id: 'interview',
+        label: 'Job Interview & Career',
+        bangla: 'চাকরির ইন্টারভিউ',
+        phrases: [
+            { id: 'i1', english: 'Could you please introduce yourself briefly?', ipa: '/kʊd juː pliːz ˌɪntrəˈdjuːs jɔːˈself ˈbriːfli/', bangla: 'সংক্ষেপে আপনার নিজের পরিচয় দিতে পারেন কি?', context: 'The most common interview opening question.' },
+            { id: 'i2', english: 'I have three years of experience in project management.', ipa: '/aɪ hæv θriː jɪəz ɒv ɪkˈspɪəriəns ɪn ˈprɒdʒekt ˈmænɪdʒmənt/', bangla: 'প্রজেক্ট পরিচালনায় আমার তিন বছরের অভিজ্ঞতা রয়েছে।', context: 'Stating your work background.' },
+            { id: 'i3', english: 'My greatest strength is my ability to adapt quickly.', ipa: '/maɪ ˈɡreɪtɪst streŋθ ɪz maɪ əˈbɪləti tuː əˈdæpt ˈkwɪkli/', bangla: 'আমার সবচেয়ে বড় শক্তি হলো যেকোনো পরিস্থিতিতে দ্রুত মানিয়ে নেওয়ার ক্ষমতা।', context: 'Highlighting your key strength.' },
+            { id: 'i4', english: 'Where do you see yourself in the next five years?', ipa: '/weə duː juː siː jɔːˈself ɪn ðə nekst faɪv jɪəz/', bangla: 'আগামী পাঁচ বছরে আপনি নিজেকে কোথায় দেখতে চান?', context: 'Inquiring about career aspirations.' },
+            { id: 'i5', english: 'Thank you for giving me this valuable opportunity.', ipa: '/θæŋk juː fɔː ˈɡɪvɪŋ miː ðɪs ˈvæljuəbl ˌɒpəˈtjuːnəti/', bangla: 'এই মূল্যবান সুযোগটি দেওয়ার জন্য আপনাকে আন্তরিক ধন্যবাদ।', context: 'Politely closing an interview.' }
+        ]
+    },
+    {
+        id: 'doctor',
+        label: 'Doctor & Health',
+        bangla: 'ডাক্তারের কাছে ও স্বাস্থ্যসেবা',
+        phrases: [
+            { id: 'd1', english: 'I have had a severe headache and fever since yesterday.', ipa: '/aɪ hæv hæd ə sɪˈvɪə ˈhedeɪk ænd ˈfiːvə sɪns ˈjestədeɪ/', bangla: 'গতকাল থেকে আমার প্রচণ্ড মাথাব্যথা ও জ্বর হচ্ছে।', context: 'Describing common symptoms to a doctor.' },
+            { id: 'd2', english: 'How often should I take this medication?', ipa: '/haʊ ˈɒfn ʃʊd aɪ teɪk ðɪs ˌmedɪˈkeɪʃn/', bangla: 'এই ওষুধটি আমাকে দিনে কতবার খেতে হবে?', context: 'Asking prescription dosage instructions.' },
+            { id: 'd3', english: 'Are there any potential side effects?', ipa: '/ɑː ðeər ˈeni pəˈtenʃl saɪd ɪˈfekts/', bangla: 'এর কি কোনো পার্শ্বপ্রতিক্রিয়া হতে পারে?', context: 'Inquiring about medication safety.' },
+            { id: 'd4', english: 'I would like to book an appointment with Dr. Rahman.', ipa: '/aɪ wʊd laɪk tuː bʊk ən əˈpɔɪntmənt wɪð ˈdɒktə ˈræhmæn/', bangla: 'আমি ডক্টর রহমানের সাথে একটি অ্যাপয়েন্টমেন্ট বুক করতে চাই।', context: 'Scheduling a medical consultation.' },
+            { id: 'd5', english: 'You should get plenty of rest and drink lots of fluids.', ipa: '/juː ʃʊd ɡet ˈplenti ɒv rest ænd drɪŋk lɒts ɒv ˈfluːɪdz/', bangla: 'আপনার প্রচুর বিশ্রাম নেওয়া এবং প্রচুর তরল পান করা উচিত।', context: 'Common recovery advice from a physician.' }
+        ]
+    },
+    {
+        id: 'telephone',
+        label: 'Phone Calls & Messaging',
+        bangla: 'ফোনে কথা বলা ও কল হ্যান্ডলিং',
+        phrases: [
+            { id: 'p1', english: 'Could I speak with Mr. Karim, please?', ipa: '/kʊd aɪ spiːk wɪð ˈmɪstə kəˈriːm pliːz/', bangla: 'আমি কি মিস্টার করিমের সাথে একটু কথা বলতে পারি?', context: 'Polite telephone opening inquiry.' },
+            { id: 'p2', english: 'May I ask who is calling, please?', ipa: '/meɪ aɪ ɑːsk huː ɪz ˈkɔːlɪŋ pliːz/', bangla: 'দয়া করে বলবেন কি কে বলছেন?', context: 'Polite screening question on telephone.' },
+            { id: 'p3', english: 'Could you hold the line for just a moment?', ipa: '/kʊd juː həʊld ðə laɪn fɔː dʒʌst ə ˈməʊmənt/', bangla: 'দয়া করে একটু লাইনে থাকবেন কি?', context: 'Putting a caller on brief hold.' },
+            { id: 'p4', english: 'I\'m afraid he is currently in a meeting.', ipa: '/aɪm əˈfreɪd hiː ɪz ˈkʌrəntli ɪn ə ˈmiːtɪŋ/', bangla: 'দুঃখিত, তিনি এই মুহূর্তে একটি মিটিংয়ে আছেন।', context: 'Explaining person unavailability.' },
+            { id: 'p5', english: 'Could you please ask him to call me back?', ipa: '/kʊd juː pliːz ɑːsk hɪm tuː kɔːl miː bæk/', bangla: 'তাকে কি আমাকে ব্যাক করতে একটু বলবেন?', context: 'Leaving a callback request.' }
+        ]
     }
 ];
 

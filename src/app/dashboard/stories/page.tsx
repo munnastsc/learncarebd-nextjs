@@ -341,18 +341,12 @@ export default function StoriesPage() {
                         const lc = LEVEL_STYLE[story.levelColor];
                         const originalIdx = STORIES.indexOf(story);
                         const num = originalIdx + 1;
-                        const isLocked = isTrial && originalIdx > 0;
+                        const isLocked = false;
 
                         return (
                             <button key={story.id} 
-                                onClick={() => {
-                                    if (isLocked) {
-                                        window.location.href = '/dashboard/payment?required=spoken';
-                                        return;
-                                    }
-                                    setSelected(story);
-                                }}
-                                className={`w-full text-left rounded-2xl border bg-white p-5 hover:shadow-md transition-all shadow-sm group ${isLocked ? 'border-slate-200 opacity-60 hover:border-amber-400 bg-amber-50/5' : 'border-slate-200 hover:border-indigo-300'}`}
+                                onClick={() => setSelected(story)}
+                                className="w-full text-left rounded-2xl border bg-white p-5 hover:shadow-md transition-all shadow-sm group border-slate-200 hover:border-indigo-300"
                             >
                                 <div className="flex items-start justify-between gap-3">
                                     <div className="flex-1">
