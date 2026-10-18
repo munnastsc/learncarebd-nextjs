@@ -1,3 +1,12 @@
+export interface LessonConversationTurn {
+    speaker: 'A' | 'B';
+    type: 'practice' | 'real';
+    en: string;
+    bn: string;
+    ipa: string;
+    bn_pron: string;
+}
+
 export interface SpokenLesson {
     id: string;
     lessonNumber: number;
@@ -44,6 +53,7 @@ export interface SpokenLesson {
             ipa: string;
         }[];
     };
+    conversation?: LessonConversationTurn[];
     sentenceBuilder: {
         subjects: string[];
         auxOrVerbs: string[];
@@ -139,6 +149,88 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
                 { style: 'বিকল্প বা দ্বিধা (Alternative / Uncertainty)', en: 'I\'m not quite sure yet. Let me check my schedule and ping you.', bn: 'আমি এখনো নিশ্চিত নই। একটু রুটিন দেখে তোমাকে জানাচ্ছি।', ipa: '/aɪm nɒt kwaɪt ʃɔː jet let miː tʃek maɪ ˈʃedjuːl ænd pɪŋ juː/' }
             ]
         },
+        conversation: [
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Are you ready for the presentation?",
+                    "bn": "তুমি কি প্রেজেন্টেশনের জন্য প্রস্তুত?",
+                    "ipa": "/ɑː juː ˈredi fɔː ðə ˌpreznˈteɪʃn/",
+                    "bn_pron": "আ ইউ রেডি ফর দা প্রেজেন্টেশন?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Yes, I am completely ready and confident.",
+                    "bn": "হ্যাঁ, আমি পুরোপুরি প্রস্তুত এবং আত্মবিশ্বাসী।",
+                    "ipa": "/jes aɪ æm kəmˈpliːtli ˈredi/",
+                    "bn_pron": "ইয়েস, আই অ্যাম কমপ্লিটলি রেডি অ্যান্ড কনফিডেন্ট।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Is he at the office right now?",
+                    "bn": "সে কি এখন অফিসে আছে?",
+                    "ipa": "/ɪz hiː æt ði ˈɒfɪs raɪt naʊ/",
+                    "bn_pron": "ইয হি অ্যাট দি অফিস রাইট নাও?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "No, he isn't at the office; he is at home.",
+                    "bn": "না, সে অফিসে নেই; সে বাসায় আছে।",
+                    "ipa": "/nəʊ hiː ˈɪznt æt ði ˈɒfɪs/",
+                    "bn_pron": "নো, হি ইযন্ট অ্যাট দি অফিস; হি ইয অ্যাট হোম।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Are they happy with the service?",
+                    "bn": "তারা কি সার্ভিসে সন্তুষ্ট?",
+                    "ipa": "/ɑː ðeɪ ˈhæpi wɪð ðə ˈsɜːvɪs/",
+                    "bn_pron": "আ দেই হ্যাপি উইথ দা সার্ভিস?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Yes, they are very pleased with our quality.",
+                    "bn": "হ্যাঁ, তারা আমাদের সার্ভিসে খুবই সন্তুষ্ট।",
+                    "ipa": "/jes ðeɪ ɑː ˈveri pliːzd/",
+                    "bn_pron": "ইয়েস, দেই আ ভেরি প্লীজড উইথ আওয়ার কোয়ালিটি।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "Hi Faisal! How are you doing today?",
+                    "bn": "হাই ফয়সাল! আজ কেমন আছো?",
+                    "ipa": "/haɪ Faisal haʊ ɑː juː ˈduːɪŋ/",
+                    "bn_pron": "হাই ফয়সাল! হাউ আ ইউ ডুয়িং টুডেই?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "I am doing great, thank you! It's sunny outside.",
+                    "bn": "আমি চমৎকার আছি, ধন্যবাদ! বাইরে দারুণ রোদ।",
+                    "ipa": "/aɪ æm ˈduːɪŋ ɡreɪt θæŋk juː/",
+                    "bn_pron": "আই অ্যাম ডুয়িং গ্রেইট, থ্যাংক ইউ!"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "Are you free for a cup of tea?",
+                    "bn": "এক কাপ চা খাওয়ার মতো কি অবসর আছো?",
+                    "ipa": "/ɑː juː friː fɔːr ə kʌp ɒv tiː/",
+                    "bn_pron": "আ ইউ ফ্রী ফর আ কাপ অফ টি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "Yes, I am totally free! Let's go.",
+                    "bn": "হ্যাঁ, আমি পুরোপুরি ফ্রি! চলো যাই।",
+                    "ipa": "/jes aɪ æm ˈtəʊtəli friː lets ɡəʊ/",
+                    "bn_pron": "ইয়েস, আই অ্যাম টোটালি ফ্রী! লেটস গো।"
+          }
+],
         sentenceBuilder: {
             subjects: ['I am', 'She is', 'They are', 'Are you', 'Why are you'],
             auxOrVerbs: ['always', 'not', 'extremely', 'really', 'proud to be'],
@@ -228,6 +320,56 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
                 { style: 'বিকল্প বা দ্বিধা (Alternative / Uncertainty)', en: 'I was caught in heavy rain and missed the bus.', bn: 'আমি প্রচণ্ড বৃষ্টিতে আটকে গিয়ে বাস মিস করেছিলাম।', ipa: '/aɪ wɒz kɔːt ɪn ˈhevi reɪn ænd mɪst ðə bʌs/' }
             ]
         },
+        conversation: [
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Were you tired after work yesterday?",
+                    "bn": "গতকাল কাজের পর তুমি কি ক্লান্ত ছিলে?",
+                    "ipa": "/wɜː juː ˈtaɪəd ˈɑːftə wɜːk/",
+                    "bn_pron": "ওয়া ইউ টায়াড আফটার ওয়াক?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Yes, I was completely exhausted.",
+                    "bn": "হ্যাঁ, আমি পুরোপুরি ক্লান্ত ছিলাম।",
+                    "ipa": "/jes aɪ wɒz kəmˈpliːtli ɪɡˈzɔːstɪd/",
+                    "bn_pron": "ইয়েস, আই ওয়াজ কমপ্লিটলি এক্সজস্টেড।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Was she present at the morning meeting?",
+                    "bn": "সে কি সকালের মিটিংয়ে উপস্থিত ছিল?",
+                    "ipa": "/wɒz ʃiː ˈpreznt æt ðə ˈmiːtɪŋ/",
+                    "bn_pron": "ওয়াজ শি প্রেজেন্ট অ্যাট দা মিটিং?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "No, she was stuck in traffic.",
+                    "bn": "না, সে যানজটে আটকে ছিল।",
+                    "ipa": "/nəʊ ʃiː wɒz stʌk ɪn ˈtræfɪk/",
+                    "bn_pron": "নো, শি ওয়াজ স্টাক ইন ট্রাফিক।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "Where were you last night? I called you.",
+                    "bn": "গত রাতে তুমি কোথায় ছিলে? আমি কল দিয়েছিলাম।",
+                    "ipa": "/weə wɜː juː lɑːst naɪt aɪ kɔːld juː/",
+                    "bn_pron": "হোয়ার ওয়া ইউ লাস্ট নাইট? আই কল্ড ইউ।"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "I was at my friend's birthday party.",
+                    "bn": "আমি বন্ধুর জন্মদিনের অনুষ্ঠানে ছিলাম।",
+                    "ipa": "/aɪ wɒz æt maɪ frendz ˈbɜːθdeɪ ˈpɑːti/",
+                    "bn_pron": "আই ওয়াজ অ্যাট মাই ফ্রেন্ডস বার্থডেই পার্টি।"
+          }
+],
         sentenceBuilder: {
             subjects: ['I was', 'She was', 'We were', 'Were you', 'Why was he'],
             auxOrVerbs: ['not', 'really', 'extremely', 'so', 'just'],
@@ -321,6 +463,56 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
                 { style: 'বিকল্প বা দ্বিধা (Alternative / Uncertainty)', en: 'I have relevant volunteering experience organizing youth events.', bn: 'তরুণদের ইভেন্ট আয়োজনে আমার প্রাসঙ্গিক ভলান্টিয়ারিং অভিজ্ঞতা আছে।', ipa: '/aɪ hæv ˈreləvənt ˌvɒlənˈtɪərɪŋ ɪkˈspɪəriəns ˈɔːɡənaɪzɪŋ juːθ ɪˈvents/' }
             ]
         },
+        conversation: [
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Do you have a pen I can borrow?",
+                    "bn": "তোমার কাছে কি একটি কলম আছে যা আমি ধার নিতে পারি?",
+                    "ipa": "/duː juː hæv ə pen aɪ kæn ˈbɒrəʊ/",
+                    "bn_pron": "ডু ইউ হ্যাভ আ পেন আই ক্যান বরো?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Yes, I have an extra blue pen in my pocket.",
+                    "bn": "হ্যাঁ, আমার পকেটে অতিরিক্ত একটি নীল কলম আছে।",
+                    "ipa": "/jes aɪ hæv ən ˈekstrə bluː pen/",
+                    "bn_pron": "ইয়েস, আই হ্যাভ অ্যান এক্সট্রা ব্লু পেন।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Does he have a valid driver's license?",
+                    "bn": "তার কি বৈধ ড্রাইভিং লাইসেন্স আছে?",
+                    "ipa": "/dʌz hiː hæv ə ˈvælɪd ˈdraɪvəz ˈlaɪsns/",
+                    "bn_pron": "ডায হি হ্যাভ আ ভ্যালিড ড্রাইভারস লাইসেন্স?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "No, he doesn't have one yet; he is practicing.",
+                    "bn": "না, এখনো নেই; সে ড্রাইভ শেখার প্র্যাকটিস করছে।",
+                    "ipa": "/nəʊ hiː ˈdʌznt hæv wʌn jet/",
+                    "bn_pron": "নো, হি ডাযন্ট হ্যাভ ওয়ান ইয়েট।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "Do you have any plans for tonight?",
+                    "bn": "আজ রাতে তোমার কি কোনো পরিকল্পনা আছে?",
+                    "ipa": "/duː juː hæv ˈeni plænz fɔː təˈnaɪt/",
+                    "bn_pron": "ডু ইউ হ্যাভ এনি প্ল্যানস ফর টুনাট?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "I have an urgent project to finish by midnight.",
+                    "bn": "মধ্যরাতের আগেই আমাকে একটি জরুরি কাজ শেষ করতে হবে।",
+                    "ipa": "/aɪ hæv ən ˈɜːdʒənt ˈprɒdʒekt tə ˈfɪnɪʃ/",
+                    "bn_pron": "আই হ্যাভ অ্যান আর্জেন্ট প্রজেক্ট টু ফিনিশ।"
+          }
+],
         sentenceBuilder: {
             subjects: ['I have', 'She has', 'Do you have', 'We don\'t have', 'Why do you have'],
             auxOrVerbs: ['got', 'enough', 'no', 'a lot of', 'any'],
@@ -410,6 +602,56 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
                 { style: 'বিকল্প বা দ্বিধা (Alternative / Uncertainty)', en: 'I\'m not sure, but there might be one beside the pharmacy.', bn: 'আমি নিশ্চিত নই, তবে ফার্মেসির পাশে একটা থাকতে পারে।', ipa: '/aɪm nɒt ʃɔː bʌt ðeə maɪt biː wʌn bɪˈsaɪd ðə ˈfɑːməsi/' }
             ]
         },
+        conversation: [
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Is there any problem with the connection?",
+                    "bn": "কানেকশনে কি কোনো সমস্যা আছে?",
+                    "ipa": "/ɪz ðeər ˈeni ˈprɒbləm wɪð ðə kəˈnekʃn/",
+                    "bn_pron": "ইয দেয়ার এনি প্রবলেম উইথ দা কানেকশন?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "No, there is no issue; the signal is strong.",
+                    "bn": "না, কোনো সমস্যা নেই; সিগন্যাল বেশ শক্তিশালী।",
+                    "ipa": "/nəʊ ðeər ɪz nəʊ ˈɪʃuː/",
+                    "bn_pron": "নো, দেয়ার ইয নো ইস্যু।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Are there many people waiting in line?",
+                    "bn": "লাইনে কি অনেক মানুষ অপেক্ষা করছে?",
+                    "ipa": "/ɑː ðeə ˈmeni ˈpiːpl ˈweɪtɪŋ ɪn laɪn/",
+                    "bn_pron": "আ দেয়ার মেনি পিপল ওয়েটিং ইন লাইন?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Yes, there are at least twenty people in queue.",
+                    "bn": "হ্যাঁ, লাইনে কমপক্ষে বিশ জন মানুষ দাঁড়িয়ে আছে।",
+                    "ipa": "/jes ðeər ɑːr æt liːst ˈtwenti ˈpiːpl/",
+                    "bn_pron": "ইয়েস, দেয়ার আ অ্যাট লিস্ট টুয়েন্টি পিপল।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "Is there a good coffee shop nearby?",
+                    "bn": "কাছে কি কোনো ভালো কফি শপ আছে?",
+                    "ipa": "/ɪz ðeər ə ɡʊd ˈkɒfi ʃɒp ˌnɪəˈbaɪ/",
+                    "bn_pron": "ইয দেয়ার আ গুড কফি শপ নিয়ারবাই?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "Yes, there is a fantastic cafe around the corner.",
+                    "bn": "হ্যাঁ, ঠিক মোড়ের কাছেই একটি চমৎকার ক্যাফে আছে।",
+                    "ipa": "/jes ðeər ɪz ə fænˈtæstɪk ˈkæfeɪ/",
+                    "bn_pron": "ইয়েস, দেয়ার ইয আ ফ্যান্টাস্টিক ক্যাফে।"
+          }
+],
         sentenceBuilder: {
             subjects: ['There is', 'There are', 'Is there', 'There was', 'Why is there'],
             auxOrVerbs: ['always', 'no', 'a few', 'plenty of', 'hardly any'],
@@ -503,6 +745,56 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
                 { style: 'বিকল্প বা দ্বিধা (Alternative / Uncertainty)', en: 'I\'m a full-time university student majoring in finance.', bn: 'আমি বিশ্ববিদ্যালয়ের ফিন্যান্স ডিপার্টমেন্টের একজন ফুল-টাইম শিক্ষার্থী।', ipa: '/aɪm ə ˈfʊltaɪm ˌjuːnɪˈvɜːsəti ˈstjuːdnt ˈmeɪdʒərɪŋ ɪn faɪˈnæns/' }
             ]
         },
+        conversation: [
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Do you drink tea or coffee in the morning?",
+                    "bn": "সকালে তুমি চা খাও নাকি কফি?",
+                    "ipa": "/duː juː drɪŋk tiː ɔː ˈkɒfi/",
+                    "bn_pron": "ডু ইউ ড্রিংক টি অর কফি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "I always drink a cup of black tea.",
+                    "bn": "আমি সবসময় এক কাপ ব্ল্যাক টি খাই।",
+                    "ipa": "/aɪ ˈɔːlweɪz drɪŋk ə kʌp ɒv blæk tiː/",
+                    "bn_pron": "আই অলওয়েজ ড্রিংক আ কাপ অফ ব্ল্যাক টি।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Does your sister work at a bank?",
+                    "bn": "তোমার বোন কি ব্যাংকে কাজ করে?",
+                    "ipa": "/dʌz jɔː ˈsɪstə wɜːk æt ə bæŋk/",
+                    "bn_pron": "ডায ইয়োর সিস্টার ওয়াক অ্যাট আ ব্যাংক?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "No, she teaches English at a college.",
+                    "bn": "না, সে কলেজে ইংরেজি পড়ায়।",
+                    "ipa": "/nəʊ ʃiː ˈtiːtʃɪz ˈɪŋɡlɪʃ æt ə ˈkɒlɪdʒ/",
+                    "bn_pron": "নো, শি টিচেস ইংলিশ অ্যাট আ কলেজ।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "What do you do on weekends?",
+                    "bn": "ছুটির দিনে তুমি কী করো?",
+                    "ipa": "/wɒt duː juː duː ɒn ˌwiːkˈendz/",
+                    "bn_pron": "ওয়াট ডু ইউ ডু অন উইকএন্ডস?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "I usually read books and play games.",
+                    "bn": "আমি সাধারণত বই পড়ি আর গেম খেলি।",
+                    "ipa": "/aɪ ˈjuːʒʊəli riːd bʊks ænd pleɪ ɡeɪmz/",
+                    "bn_pron": "আই ইউজুয়ালি রীড বুকস অ্যান্ড প্লেই গেইময।"
+          }
+],
         sentenceBuilder: {
             subjects: ['I usually', 'She always', 'They never', 'Do you often', 'Why does he'],
             auxOrVerbs: ['wake up', 'listen to', 'practice', 'read', 'speak'],
@@ -592,6 +884,56 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
                 { style: 'বিকল্প বা দ্বিধা (Alternative / Uncertainty)', en: 'I\'m pausing my search until next month due to exams.', bn: 'পরীক্ষার কারণে আগামী মাস পর্যন্ত খোঁজাখুঁজি বন্ধ রাখছি।', ipa: '/aɪm ˈpɔːzɪŋ maɪ sɜːtʃ ənˈtɪl nekst mʌnθ djuː tə ɪɡˈzæmz/' }
             ]
         },
+        conversation: [
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Do you practice this spoken structure daily?",
+                    "bn": "তুমি কি প্রতিদিন এই স্পোকেন স্ট্রাকচারটি চর্চা করো?",
+                    "ipa": "/duː juː ˈpræktɪs ðɪs ˈspəʊkən ˈstrʌktʃə ˈdeɪli/",
+                    "bn_pron": "ডু ইউ প্র্যাকটিস দিস স্পোকেন স্ট্রাকচার ডেইলি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Yes, I practice it aloud for fifteen minutes every day.",
+                    "bn": "হ্যাঁ, আমি প্রতিদিন পনের মিনিট এটি জোরে জোরে মুখে বলি।",
+                    "ipa": "/jes aɪ ˈpræktɪs ɪt əˈlaʊd/",
+                    "bn_pron": "ইয়েস, আই প্র্যাকটিস ইট অ্যালাউড ফর ফিফটিন মিনিটস।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Does it help improve your fluency and speed?",
+                    "bn": "এটি কি তোমার ফ্লুয়েন্সি ও গতি বাড়াতে সাহায্য করে?",
+                    "ipa": "/dʌz ɪt help ɪmˈpruːv jɔː ˈfluːənsi/",
+                    "bn_pron": "ডায ইট হেল্প ইমপ্রুভ ইয়োর ফ্লুয়েন্সি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Definitely! I can now speak naturally without thinking of rules.",
+                    "bn": "অবশ্যই! এখন নিয়ম না ভেবেই মুখে স্বতঃস্ফূর্তভাবে বাক্য আসে।",
+                    "ipa": "/ˈdefɪnətli aɪ kæn naʊ spiːk ˈnætʃrəli/",
+                    "bn_pron": "ডেফিনেটলি! আই ক্যান নাও স্পীক ন্যাচারালি।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "Could we practice conversation together every evening?",
+                    "bn": "আমরা কি প্রতিদিন সন্ধ্যায় একসাথে স্পোকেন প্র্যাকটিস করতে পারি?",
+                    "ipa": "/kʊd wiː ˈpræktɪs ˌkɒnvəˈseɪʃn təˈɡeðə/",
+                    "bn_pron": "কুড উই প্র্যাকটিস কনভারসেশন টুগেদার?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "That would be wonderful! Let's start from tomorrow.",
+                    "bn": "দারুণ হবে! চলো কাল থেকেই শুরু করা যাক।",
+                    "ipa": "/ðæt wʊd biː ˈwʌndəfl lets stɑːt frɒm təˈmɒrəʊ/",
+                    "bn_pron": "দ্যাট উড বি ওয়ান্ডারফুল! লেটস স্টার্ট ফ্রম টুমরো।"
+          }
+],
         sentenceBuilder: {
             subjects: ['I am currently', 'She is', 'They are', 'Are you', 'Why are you'],
             auxOrVerbs: ['trying to', 'planning to', 'listening to', 'working on', 'looking for'],
@@ -681,6 +1023,56 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
                 { style: 'বিকল্প বা দ্বিধা (Alternative / Uncertainty)', en: 'I had to work overtime on Saturday, so it flew by quickly.', bn: 'শনিবার আমাকে ওভারটাইম করতে হয়েছিল, তাই সময়টা খুব দ্রুত চলে গেল।', ipa: '/aɪ hæd tə wɜːk ˈəʊvətaɪm ɒn ˈsætədeɪ səʊ ɪt fluː baɪ ˈkwɪkli/' }
             ]
         },
+        conversation: [
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Do you practice this spoken structure daily?",
+                    "bn": "তুমি কি প্রতিদিন এই স্পোকেন স্ট্রাকচারটি চর্চা করো?",
+                    "ipa": "/duː juː ˈpræktɪs ðɪs ˈspəʊkən ˈstrʌktʃə ˈdeɪli/",
+                    "bn_pron": "ডু ইউ প্র্যাকটিস দিস স্পোকেন স্ট্রাকচার ডেইলি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Yes, I practice it aloud for fifteen minutes every day.",
+                    "bn": "হ্যাঁ, আমি প্রতিদিন পনের মিনিট এটি জোরে জোরে মুখে বলি।",
+                    "ipa": "/jes aɪ ˈpræktɪs ɪt əˈlaʊd/",
+                    "bn_pron": "ইয়েস, আই প্র্যাকটিস ইট অ্যালাউড ফর ফিফটিন মিনিটস।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Does it help improve your fluency and speed?",
+                    "bn": "এটি কি তোমার ফ্লুয়েন্সি ও গতি বাড়াতে সাহায্য করে?",
+                    "ipa": "/dʌz ɪt help ɪmˈpruːv jɔː ˈfluːənsi/",
+                    "bn_pron": "ডায ইট হেল্প ইমপ্রুভ ইয়োর ফ্লুয়েন্সি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Definitely! I can now speak naturally without thinking of rules.",
+                    "bn": "অবশ্যই! এখন নিয়ম না ভেবেই মুখে স্বতঃস্ফূর্তভাবে বাক্য আসে।",
+                    "ipa": "/ˈdefɪnətli aɪ kæn naʊ spiːk ˈnætʃrəli/",
+                    "bn_pron": "ডেফিনেটলি! আই ক্যান নাও স্পীক ন্যাচারালি।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "Could we practice conversation together every evening?",
+                    "bn": "আমরা কি প্রতিদিন সন্ধ্যায় একসাথে স্পোকেন প্র্যাকটিস করতে পারি?",
+                    "ipa": "/kʊd wiː ˈpræktɪs ˌkɒnvəˈseɪʃn təˈɡeðə/",
+                    "bn_pron": "কুড উই প্র্যাকটিস কনভারসেশন টুগেদার?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "That would be wonderful! Let's start from tomorrow.",
+                    "bn": "দারুণ হবে! চলো কাল থেকেই শুরু করা যাক।",
+                    "ipa": "/ðæt wʊd biː ˈwʌndəfl lets stɑːt frɒm təˈmɒrəʊ/",
+                    "bn_pron": "দ্যাট উড বি ওয়ান্ডারফুল! লেটস স্টার্ট ফ্রম টুমরো।"
+          }
+],
         sentenceBuilder: {
             subjects: ['I decided to', 'She told me', 'Did you', 'We went to', 'Why did you'],
             auxOrVerbs: ['learn', 'visit', 'call', 'buy', 'leave'],
@@ -770,6 +1162,56 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
                 { style: 'বিকল্প বা দ্বিধা (Alternative / Uncertainty)', en: 'I haven\'t had the chance yet due to my busy career.', bn: 'ব্যস্ত ক্যারিয়ারের কারণে এখনো সেই সুযোগ হয়ে ওঠেনি।', ipa: '/aɪ ˈhævnt hæd ðə tʃɑːns jet djuː tə maɪ ˈbɪzi kəˈrɪə/' }
             ]
         },
+        conversation: [
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Do you practice this spoken structure daily?",
+                    "bn": "তুমি কি প্রতিদিন এই স্পোকেন স্ট্রাকচারটি চর্চা করো?",
+                    "ipa": "/duː juː ˈpræktɪs ðɪs ˈspəʊkən ˈstrʌktʃə ˈdeɪli/",
+                    "bn_pron": "ডু ইউ প্র্যাকটিস দিস স্পোকেন স্ট্রাকচার ডেইলি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Yes, I practice it aloud for fifteen minutes every day.",
+                    "bn": "হ্যাঁ, আমি প্রতিদিন পনের মিনিট এটি জোরে জোরে মুখে বলি।",
+                    "ipa": "/jes aɪ ˈpræktɪs ɪt əˈlaʊd/",
+                    "bn_pron": "ইয়েস, আই প্র্যাকটিস ইট অ্যালাউড ফর ফিফটিন মিনিটস।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Does it help improve your fluency and speed?",
+                    "bn": "এটি কি তোমার ফ্লুয়েন্সি ও গতি বাড়াতে সাহায্য করে?",
+                    "ipa": "/dʌz ɪt help ɪmˈpruːv jɔː ˈfluːənsi/",
+                    "bn_pron": "ডায ইট হেল্প ইমপ্রুভ ইয়োর ফ্লুয়েন্সি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Definitely! I can now speak naturally without thinking of rules.",
+                    "bn": "অবশ্যই! এখন নিয়ম না ভেবেই মুখে স্বতঃস্ফূর্তভাবে বাক্য আসে।",
+                    "ipa": "/ˈdefɪnətli aɪ kæn naʊ spiːk ˈnætʃrəli/",
+                    "bn_pron": "ডেফিনেটলি! আই ক্যান নাও স্পীক ন্যাচারালি।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "Could we practice conversation together every evening?",
+                    "bn": "আমরা কি প্রতিদিন সন্ধ্যায় একসাথে স্পোকেন প্র্যাকটিস করতে পারি?",
+                    "ipa": "/kʊd wiː ˈpræktɪs ˌkɒnvəˈseɪʃn təˈɡeðə/",
+                    "bn_pron": "কুড উই প্র্যাকটিস কনভারসেশন টুগেদার?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "That would be wonderful! Let's start from tomorrow.",
+                    "bn": "দারুণ হবে! চলো কাল থেকেই শুরু করা যাক।",
+                    "ipa": "/ðæt wʊd biː ˈwʌndəfl lets stɑːt frɒm təˈmɒrəʊ/",
+                    "bn_pron": "দ্যাট উড বি ওয়ান্ডারফুল! লেটস স্টার্ট ফ্রম টুমরো।"
+          }
+],
         sentenceBuilder: {
             subjects: ['I have already', 'She has just', 'Have you ever', 'We haven\'t', 'Why haven\'t you'],
             auxOrVerbs: ['seen', 'completed', 'tried', 'sent', 'understood'],
@@ -859,6 +1301,56 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
                 { style: 'বিকল্প বা দ্বিধা (Alternative / Uncertainty)', en: 'I am planning to expand my family business to international markets.', bn: 'আমি আমার পারিবারিক ব্যবসাকে আন্তর্জাতিক বাজারে সম্প্রসারিত করার পরিকল্পনা করছি।', ipa: '/aɪ æm ˈplænɪŋ tə ɪkˈspænd maɪ ˈfæməli ˈbɪznɪs tuː ˌɪntəˈnæʃnəl ˈmɑːkɪts/' }
             ]
         },
+        conversation: [
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Do you practice this spoken structure daily?",
+                    "bn": "তুমি কি প্রতিদিন এই স্পোকেন স্ট্রাকচারটি চর্চা করো?",
+                    "ipa": "/duː juː ˈpræktɪs ðɪs ˈspəʊkən ˈstrʌktʃə ˈdeɪli/",
+                    "bn_pron": "ডু ইউ প্র্যাকটিস দিস স্পোকেন স্ট্রাকচার ডেইলি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Yes, I practice it aloud for fifteen minutes every day.",
+                    "bn": "হ্যাঁ, আমি প্রতিদিন পনের মিনিট এটি জোরে জোরে মুখে বলি।",
+                    "ipa": "/jes aɪ ˈpræktɪs ɪt əˈlaʊd/",
+                    "bn_pron": "ইয়েস, আই প্র্যাকটিস ইট অ্যালাউড ফর ফিফটিন মিনিটস।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Does it help improve your fluency and speed?",
+                    "bn": "এটি কি তোমার ফ্লুয়েন্সি ও গতি বাড়াতে সাহায্য করে?",
+                    "ipa": "/dʌz ɪt help ɪmˈpruːv jɔː ˈfluːənsi/",
+                    "bn_pron": "ডায ইট হেল্প ইমপ্রুভ ইয়োর ফ্লুয়েন্সি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Definitely! I can now speak naturally without thinking of rules.",
+                    "bn": "অবশ্যই! এখন নিয়ম না ভেবেই মুখে স্বতঃস্ফূর্তভাবে বাক্য আসে।",
+                    "ipa": "/ˈdefɪnətli aɪ kæn naʊ spiːk ˈnætʃrəli/",
+                    "bn_pron": "ডেফিনেটলি! আই ক্যান নাও স্পীক ন্যাচারালি।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "Could we practice conversation together every evening?",
+                    "bn": "আমরা কি প্রতিদিন সন্ধ্যায় একসাথে স্পোকেন প্র্যাকটিস করতে পারি?",
+                    "ipa": "/kʊd wiː ˈpræktɪs ˌkɒnvəˈseɪʃn təˈɡeðə/",
+                    "bn_pron": "কুড উই প্র্যাকটিস কনভারসেশন টুগেদার?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "That would be wonderful! Let's start from tomorrow.",
+                    "bn": "দারুণ হবে! চলো কাল থেকেই শুরু করা যাক।",
+                    "ipa": "/ðæt wʊd biː ˈwʌndəfl lets stɑːt frɒm təˈmɒrəʊ/",
+                    "bn_pron": "দ্যাট উড বি ওয়ান্ডারফুল! লেটস স্টার্ট ফ্রম টুমরো।"
+          }
+],
         sentenceBuilder: {
             subjects: ['I will', 'She is going to', 'We will', 'Are you going to', 'Why will they'],
             auxOrVerbs: ['call', 'join', 'start', 'buy', 'travel to'],
@@ -952,6 +1444,56 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
                 { style: 'বিকল্প বা দ্বিধা (Alternative / Uncertainty)', en: 'You can check Google Maps or ask that traffic police officer.', bn: 'আপনি গুগল ম্যাপে দেখতে পারেন অথবা ওই ট্রাফিক পুলিশকে জিজ্ঞেস করতে পারেন।', ipa: '/juː kæn tʃek ˈɡuːɡl mæps ɔːr ɑːsk ðæt ˈtræfɪk pəˈliːs ˈɒfɪsə/' }
             ]
         },
+        conversation: [
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Do you practice this spoken structure daily?",
+                    "bn": "তুমি কি প্রতিদিন এই স্পোকেন স্ট্রাকচারটি চর্চা করো?",
+                    "ipa": "/duː juː ˈpræktɪs ðɪs ˈspəʊkən ˈstrʌktʃə ˈdeɪli/",
+                    "bn_pron": "ডু ইউ প্র্যাকটিস দিস স্পোকেন স্ট্রাকচার ডেইলি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Yes, I practice it aloud for fifteen minutes every day.",
+                    "bn": "হ্যাঁ, আমি প্রতিদিন পনের মিনিট এটি জোরে জোরে মুখে বলি।",
+                    "ipa": "/jes aɪ ˈpræktɪs ɪt əˈlaʊd/",
+                    "bn_pron": "ইয়েস, আই প্র্যাকটিস ইট অ্যালাউড ফর ফিফটিন মিনিটস।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Does it help improve your fluency and speed?",
+                    "bn": "এটি কি তোমার ফ্লুয়েন্সি ও গতি বাড়াতে সাহায্য করে?",
+                    "ipa": "/dʌz ɪt help ɪmˈpruːv jɔː ˈfluːənsi/",
+                    "bn_pron": "ডায ইট হেল্প ইমপ্রুভ ইয়োর ফ্লুয়েন্সি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Definitely! I can now speak naturally without thinking of rules.",
+                    "bn": "অবশ্যই! এখন নিয়ম না ভেবেই মুখে স্বতঃস্ফূর্তভাবে বাক্য আসে।",
+                    "ipa": "/ˈdefɪnətli aɪ kæn naʊ spiːk ˈnætʃrəli/",
+                    "bn_pron": "ডেফিনেটলি! আই ক্যান নাও স্পীক ন্যাচারালি।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "Could we practice conversation together every evening?",
+                    "bn": "আমরা কি প্রতিদিন সন্ধ্যায় একসাথে স্পোকেন প্র্যাকটিস করতে পারি?",
+                    "ipa": "/kʊd wiː ˈpræktɪs ˌkɒnvəˈseɪʃn təˈɡeðə/",
+                    "bn_pron": "কুড উই প্র্যাকটিস কনভারসেশন টুগেদার?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "That would be wonderful! Let's start from tomorrow.",
+                    "bn": "দারুণ হবে! চলো কাল থেকেই শুরু করা যাক।",
+                    "ipa": "/ðæt wʊd biː ˈwʌndəfl lets stɑːt frɒm təˈmɒrəʊ/",
+                    "bn_pron": "দ্যাট উড বি ওয়ান্ডারফুল! লেটস স্টার্ট ফ্রম টুমরো।"
+          }
+],
         sentenceBuilder: {
             subjects: ['Could you please', 'I can easily', 'She couldn\'t', 'How can we', 'Why can\'t you'],
             auxOrVerbs: ['explain', 'manage', 'deliver', 'hear', 'solve'],
@@ -1041,6 +1583,56 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
                 { style: 'বিকল্প বা দ্বিধা (Alternative / Uncertainty)', en: 'A balanced approach works best: 5 new words a day in real sentences.', bn: 'ভারসাম্যপূর্ণ কৌশল সবচেয়ে ভালো: প্রতিদিন ৫টি শব্দ বাস্তব বাক্যের মাধ্যমে।', ipa: '/ə ˈbælənst əˈprəʊtʃ wɜːks best faɪv njuː wɜːdz ə deɪ ɪn rɪəl ˈsentənsɪz/' }
             ]
         },
+        conversation: [
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Do you practice this spoken structure daily?",
+                    "bn": "তুমি কি প্রতিদিন এই স্পোকেন স্ট্রাকচারটি চর্চা করো?",
+                    "ipa": "/duː juː ˈpræktɪs ðɪs ˈspəʊkən ˈstrʌktʃə ˈdeɪli/",
+                    "bn_pron": "ডু ইউ প্র্যাকটিস দিস স্পোকেন স্ট্রাকচার ডেইলি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Yes, I practice it aloud for fifteen minutes every day.",
+                    "bn": "হ্যাঁ, আমি প্রতিদিন পনের মিনিট এটি জোরে জোরে মুখে বলি।",
+                    "ipa": "/jes aɪ ˈpræktɪs ɪt əˈlaʊd/",
+                    "bn_pron": "ইয়েস, আই প্র্যাকটিস ইট অ্যালাউড ফর ফিফটিন মিনিটস।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Does it help improve your fluency and speed?",
+                    "bn": "এটি কি তোমার ফ্লুয়েন্সি ও গতি বাড়াতে সাহায্য করে?",
+                    "ipa": "/dʌz ɪt help ɪmˈpruːv jɔː ˈfluːənsi/",
+                    "bn_pron": "ডায ইট হেল্প ইমপ্রুভ ইয়োর ফ্লুয়েন্সি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Definitely! I can now speak naturally without thinking of rules.",
+                    "bn": "অবশ্যই! এখন নিয়ম না ভেবেই মুখে স্বতঃস্ফূর্তভাবে বাক্য আসে।",
+                    "ipa": "/ˈdefɪnətli aɪ kæn naʊ spiːk ˈnætʃrəli/",
+                    "bn_pron": "ডেফিনেটলি! আই ক্যান নাও স্পীক ন্যাচারালি।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "Could we practice conversation together every evening?",
+                    "bn": "আমরা কি প্রতিদিন সন্ধ্যায় একসাথে স্পোকেন প্র্যাকটিস করতে পারি?",
+                    "ipa": "/kʊd wiː ˈpræktɪs ˌkɒnvəˈseɪʃn təˈɡeðə/",
+                    "bn_pron": "কুড উই প্র্যাকটিস কনভারসেশন টুগেদার?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "That would be wonderful! Let's start from tomorrow.",
+                    "bn": "দারুণ হবে! চলো কাল থেকেই শুরু করা যাক।",
+                    "ipa": "/ðæt wʊd biː ˈwʌndəfl lets stɑːt frɒm təˈmɒrəʊ/",
+                    "bn_pron": "দ্যাট উড বি ওয়ান্ডারফুল! লেটস স্টার্ট ফ্রম টুমরো।"
+          }
+],
         sentenceBuilder: {
             subjects: ['You should', 'We must', 'I have to', 'Should we', 'Why should I'],
             auxOrVerbs: ['always', 'never', 'immediately', 'carefully', 'definitely'],
@@ -1130,6 +1722,56 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
                 { style: 'বিকল্প বা দ্বিধা (Alternative / Uncertainty)', en: 'Here, let me prop it open with this wedge.', bn: 'এই নিন, আমি এই জিনিসটা দিয়ে দরজাটা আটকে দিচ্ছি।', ipa: '/hɪə let miː prɒp ɪt ˈəʊpən wɪð ðɪs wedʒ/' }
             ]
         },
+        conversation: [
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Do you practice this spoken structure daily?",
+                    "bn": "তুমি কি প্রতিদিন এই স্পোকেন স্ট্রাকচারটি চর্চা করো?",
+                    "ipa": "/duː juː ˈpræktɪs ðɪs ˈspəʊkən ˈstrʌktʃə ˈdeɪli/",
+                    "bn_pron": "ডু ইউ প্র্যাকটিস দিস স্পোকেন স্ট্রাকচার ডেইলি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Yes, I practice it aloud for fifteen minutes every day.",
+                    "bn": "হ্যাঁ, আমি প্রতিদিন পনের মিনিট এটি জোরে জোরে মুখে বলি।",
+                    "ipa": "/jes aɪ ˈpræktɪs ɪt əˈlaʊd/",
+                    "bn_pron": "ইয়েস, আই প্র্যাকটিস ইট অ্যালাউড ফর ফিফটিন মিনিটস।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Does it help improve your fluency and speed?",
+                    "bn": "এটি কি তোমার ফ্লুয়েন্সি ও গতি বাড়াতে সাহায্য করে?",
+                    "ipa": "/dʌz ɪt help ɪmˈpruːv jɔː ˈfluːənsi/",
+                    "bn_pron": "ডায ইট হেল্প ইমপ্রুভ ইয়োর ফ্লুয়েন্সি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Definitely! I can now speak naturally without thinking of rules.",
+                    "bn": "অবশ্যই! এখন নিয়ম না ভেবেই মুখে স্বতঃস্ফূর্তভাবে বাক্য আসে।",
+                    "ipa": "/ˈdefɪnətli aɪ kæn naʊ spiːk ˈnætʃrəli/",
+                    "bn_pron": "ডেফিনেটলি! আই ক্যান নাও স্পীক ন্যাচারালি।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "Could we practice conversation together every evening?",
+                    "bn": "আমরা কি প্রতিদিন সন্ধ্যায় একসাথে স্পোকেন প্র্যাকটিস করতে পারি?",
+                    "ipa": "/kʊd wiː ˈpræktɪs ˌkɒnvəˈseɪʃn təˈɡeðə/",
+                    "bn_pron": "কুড উই প্র্যাকটিস কনভারসেশন টুগেদার?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "That would be wonderful! Let's start from tomorrow.",
+                    "bn": "দারুণ হবে! চলো কাল থেকেই শুরু করা যাক।",
+                    "ipa": "/ðæt wʊd biː ˈwʌndəfl lets stɑːt frɒm təˈmɒrəʊ/",
+                    "bn_pron": "দ্যাট উড বি ওয়ান্ডারফুল! লেটস স্টার্ট ফ্রম টুমরো।"
+          }
+],
         sentenceBuilder: {
             subjects: ['I\'d like to', 'Would you like to', 'Would you mind', 'She would love to', 'What would you like to'],
             auxOrVerbs: ['order', 'explain', 'helping me with', 'visit', 'know about'],
@@ -1223,6 +1865,56 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
                 { style: 'বিকল্প বা দ্বিধা (Alternative / Uncertainty)', en: 'Now I am so used to speaking that I think in English.', bn: 'এখন আমি বলতে বলতে এত অভ্যস্ত যে মনে মনেও ইংরেজিতে চিন্তা করি।', ipa: '/naʊ aɪ æm səʊ juːst tə ˈspiːkɪŋ ðæt aɪ θɪŋk ɪn ˈɪŋɡlɪʃ/' }
             ]
         },
+        conversation: [
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Do you practice this spoken structure daily?",
+                    "bn": "তুমি কি প্রতিদিন এই স্পোকেন স্ট্রাকচারটি চর্চা করো?",
+                    "ipa": "/duː juː ˈpræktɪs ðɪs ˈspəʊkən ˈstrʌktʃə ˈdeɪli/",
+                    "bn_pron": "ডু ইউ প্র্যাকটিস দিস স্পোকেন স্ট্রাকচার ডেইলি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Yes, I practice it aloud for fifteen minutes every day.",
+                    "bn": "হ্যাঁ, আমি প্রতিদিন পনের মিনিট এটি জোরে জোরে মুখে বলি।",
+                    "ipa": "/jes aɪ ˈpræktɪs ɪt əˈlaʊd/",
+                    "bn_pron": "ইয়েস, আই প্র্যাকটিস ইট অ্যালাউড ফর ফিফটিন মিনিটস।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Does it help improve your fluency and speed?",
+                    "bn": "এটি কি তোমার ফ্লুয়েন্সি ও গতি বাড়াতে সাহায্য করে?",
+                    "ipa": "/dʌz ɪt help ɪmˈpruːv jɔː ˈfluːənsi/",
+                    "bn_pron": "ডায ইট হেল্প ইমপ্রুভ ইয়োর ফ্লুয়েন্সি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Definitely! I can now speak naturally without thinking of rules.",
+                    "bn": "অবশ্যই! এখন নিয়ম না ভেবেই মুখে স্বতঃস্ফূর্তভাবে বাক্য আসে।",
+                    "ipa": "/ˈdefɪnətli aɪ kæn naʊ spiːk ˈnætʃrəli/",
+                    "bn_pron": "ডেফিনেটলি! আই ক্যান নাও স্পীক ন্যাচারালি।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "Could we practice conversation together every evening?",
+                    "bn": "আমরা কি প্রতিদিন সন্ধ্যায় একসাথে স্পোকেন প্র্যাকটিস করতে পারি?",
+                    "ipa": "/kʊd wiː ˈpræktɪs ˌkɒnvəˈseɪʃn təˈɡeðə/",
+                    "bn_pron": "কুড উই প্র্যাকটিস কনভারসেশন টুগেদার?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "That would be wonderful! Let's start from tomorrow.",
+                    "bn": "দারুণ হবে! চলো কাল থেকেই শুরু করা যাক।",
+                    "ipa": "/ðæt wʊd biː ˈwʌndəfl lets stɑːt frɒm təˈmɒrəʊ/",
+                    "bn_pron": "দ্যাট উড বি ওয়ান্ডারফুল! লেটস স্টার্ট ফ্রম টুমরো।"
+          }
+],
         sentenceBuilder: {
             subjects: ['I used to', 'She is used to', 'Did you use to', 'We aren\'t used to', 'Why did you use to'],
             auxOrVerbs: ['play', 'waking up', 'live', 'working under', 'spend money on'],
@@ -1312,6 +2004,56 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
                 { style: 'বিকল্প বা দ্বিধা (Alternative / Uncertainty)', en: 'Could we do it tomorrow instead? I have some chores to finish.', bn: 'কালকে করলে কেমন হয়? আমার বাসার কিছু কাজ বাকি আছে।', ipa: '/kʊd wiː duː ɪt təˈmɒrəʊ ɪnˈsted aɪ hæv sʌm tʃɔːz tə ˈfɪnɪʃ/' }
             ]
         },
+        conversation: [
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Do you practice this spoken structure daily?",
+                    "bn": "তুমি কি প্রতিদিন এই স্পোকেন স্ট্রাকচারটি চর্চা করো?",
+                    "ipa": "/duː juː ˈpræktɪs ðɪs ˈspəʊkən ˈstrʌktʃə ˈdeɪli/",
+                    "bn_pron": "ডু ইউ প্র্যাকটিস দিস স্পোকেন স্ট্রাকচার ডেইলি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Yes, I practice it aloud for fifteen minutes every day.",
+                    "bn": "হ্যাঁ, আমি প্রতিদিন পনের মিনিট এটি জোরে জোরে মুখে বলি।",
+                    "ipa": "/jes aɪ ˈpræktɪs ɪt əˈlaʊd/",
+                    "bn_pron": "ইয়েস, আই প্র্যাকটিস ইট অ্যালাউড ফর ফিফটিন মিনিটস।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Does it help improve your fluency and speed?",
+                    "bn": "এটি কি তোমার ফ্লুয়েন্সি ও গতি বাড়াতে সাহায্য করে?",
+                    "ipa": "/dʌz ɪt help ɪmˈpruːv jɔː ˈfluːənsi/",
+                    "bn_pron": "ডায ইট হেল্প ইমপ্রুভ ইয়োর ফ্লুয়েন্সি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Definitely! I can now speak naturally without thinking of rules.",
+                    "bn": "অবশ্যই! এখন নিয়ম না ভেবেই মুখে স্বতঃস্ফূর্তভাবে বাক্য আসে।",
+                    "ipa": "/ˈdefɪnətli aɪ kæn naʊ spiːk ˈnætʃrəli/",
+                    "bn_pron": "ডেফিনেটলি! আই ক্যান নাও স্পীক ন্যাচারালি।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "Could we practice conversation together every evening?",
+                    "bn": "আমরা কি প্রতিদিন সন্ধ্যায় একসাথে স্পোকেন প্র্যাকটিস করতে পারি?",
+                    "ipa": "/kʊd wiː ˈpræktɪs ˌkɒnvəˈseɪʃn təˈɡeðə/",
+                    "bn_pron": "কুড উই প্র্যাকটিস কনভারসেশন টুগেদার?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "That would be wonderful! Let's start from tomorrow.",
+                    "bn": "দারুণ হবে! চলো কাল থেকেই শুরু করা যাক।",
+                    "ipa": "/ðæt wʊd biː ˈwʌndəfl lets stɑːt frɒm təˈmɒrəʊ/",
+                    "bn_pron": "দ্যাট উড বি ওয়ান্ডারফুল! লেটস স্টার্ট ফ্রম টুমরো।"
+          }
+],
         sentenceBuilder: {
             subjects: ['I feel like', 'She feels like', 'Do you feel like', 'I don\'t feel like', 'What do you feel like'],
             auxOrVerbs: ['eating', 'traveling to', 'having', 'learning', 'talking about'],
@@ -1401,6 +2143,56 @@ export const SPOKEN_LESSONS: SpokenLesson[] = [
                 { style: 'বিকল্প বা দ্বিধা (Alternative / Uncertainty)', en: 'It depends on your consistency; immersion speeds up the timeline.', bn: 'এটা আপনার নিয়মানুবর্তিতার ওপর নির্ভর করে; পরিবেশ তৈরি করলে সময় অনেক কমে আসে।', ipa: '/ɪt dɪˈpendz ɒn jɔː kənˈsɪstənsi ɪˈmɜːʃn spiːdz ʌp ðə ˈtaɪmlaɪn/' }
             ]
         },
+        conversation: [
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Do you practice this spoken structure daily?",
+                    "bn": "তুমি কি প্রতিদিন এই স্পোকেন স্ট্রাকচারটি চর্চা করো?",
+                    "ipa": "/duː juː ˈpræktɪs ðɪs ˈspəʊkən ˈstrʌktʃə ˈdeɪli/",
+                    "bn_pron": "ডু ইউ প্র্যাকটিস দিস স্পোকেন স্ট্রাকচার ডেইলি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Yes, I practice it aloud for fifteen minutes every day.",
+                    "bn": "হ্যাঁ, আমি প্রতিদিন পনের মিনিট এটি জোরে জোরে মুখে বলি।",
+                    "ipa": "/jes aɪ ˈpræktɪs ɪt əˈlaʊd/",
+                    "bn_pron": "ইয়েস, আই প্র্যাকটিস ইট অ্যালাউড ফর ফিফটিন মিনিটস।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "practice",
+                    "en": "Does it help improve your fluency and speed?",
+                    "bn": "এটি কি তোমার ফ্লুয়েন্সি ও গতি বাড়াতে সাহায্য করে?",
+                    "ipa": "/dʌz ɪt help ɪmˈpruːv jɔː ˈfluːənsi/",
+                    "bn_pron": "ডায ইট হেল্প ইমপ্রুভ ইয়োর ফ্লুয়েন্সি?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "practice",
+                    "en": "Definitely! I can now speak naturally without thinking of rules.",
+                    "bn": "অবশ্যই! এখন নিয়ম না ভেবেই মুখে স্বতঃস্ফূর্তভাবে বাক্য আসে।",
+                    "ipa": "/ˈdefɪnətli aɪ kæn naʊ spiːk ˈnætʃrəli/",
+                    "bn_pron": "ডেফিনেটলি! আই ক্যান নাও স্পীক ন্যাচারালি।"
+          },
+          {
+                    "speaker": "A",
+                    "type": "real",
+                    "en": "Could we practice conversation together every evening?",
+                    "bn": "আমরা কি প্রতিদিন সন্ধ্যায় একসাথে স্পোকেন প্র্যাকটিস করতে পারি?",
+                    "ipa": "/kʊd wiː ˈpræktɪs ˌkɒnvəˈseɪʃn təˈɡeðə/",
+                    "bn_pron": "কুড উই প্র্যাকটিস কনভারসেশন টুগেদার?"
+          },
+          {
+                    "speaker": "B",
+                    "type": "real",
+                    "en": "That would be wonderful! Let's start from tomorrow.",
+                    "bn": "দারুণ হবে! চলো কাল থেকেই শুরু করা যাক।",
+                    "ipa": "/ðæt wʊd biː ˈwʌndəfl lets stɑːt frɒm təˈmɒrəʊ/",
+                    "bn_pron": "দ্যাট উড বি ওয়ান্ডারফুল! লেটস স্টার্ট ফ্রম টুমরো।"
+          }
+],
         sentenceBuilder: {
             subjects: ['It takes', 'It took me', 'It will take', 'How long does it take', 'Why does it take'],
             auxOrVerbs: ['twenty minutes', 'a lot of patience', 'two months', 'hardly any time', 'only five seconds'],

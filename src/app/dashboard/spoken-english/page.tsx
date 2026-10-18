@@ -120,12 +120,12 @@ export default function SpokenEnglishDashboard() {
             badgeColor: 'bg-indigo-100 text-indigo-800 border-indigo-300'
         },
         {
-            title: '20 Real-Life Situations Lab',
-            desc: 'সহজ থেকে ইন্টারমিডিয়েট ২০টি বাস্তব জীবনের দৃশ্যপট — কথা শুরু করার ৩টি বাক্য (Ice Breakers), টার্ন-বাই-টার্ন রোলপ্লে ও লাইভ মাইক টেস্ট।',
+            title: '40 Real-Life Situations Lab',
+            desc: 'সহজ থেকে ইন্টারমিডিয়েট ৪০টি বাস্তব জীবনের দৃশ্যপট (প্রতিটিতে ১০টি ডায়ালগ ও উচ্চারণ) — কথা শুরু করার ৩টি বাক্য (Ice Breakers), টার্ন-বাই-টার্ন রোলপ্লে ও লাইভ মাইক টেস্ট।',
             href: '/dashboard/spoken-english/conversations',
             icon: <MessageSquare className="text-emerald-600" size={26} />,
             color: 'from-emerald-50 via-teal-50 to-green-50 border-emerald-200 hover:border-emerald-400 shadow-sm',
-            badge: '🎭 20 SITUATIONS ROLEPLAY',
+            badge: '🎭 40 SITUATIONS ROLEPLAY',
             badgeColor: 'bg-emerald-100 text-emerald-800 border-emerald-300'
         },
         {
