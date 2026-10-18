@@ -18,6 +18,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         '/terms',
         '/privacy',
         '/dashboard/spoken-english',
+        '/dashboard/spoken-english/lessons',
         '/dashboard/spoken-english/patterns',
         '/dashboard/spoken-english/pronunciation',
         '/dashboard/spoken-english/common-mistakes',

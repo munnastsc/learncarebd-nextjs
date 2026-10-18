@@ -1,472 +1,823 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Volume2, Sparkles, CheckCircle2, XCircle, Award, BookOpen, Lock, HelpCircle, MessageSquare } from 'lucide-react';
-import { useSubscription } from '../../../../components/SubscriptionGuard';
+import {
+    ArrowLeft, Volume2, Mic, CheckCircle2, RotateCcw,
+    BookOpen, Layers, Lightbulb, Play, Pause, Flame, Trophy,
+    Sparkles, Check, ChevronRight, HelpCircle, MessageSquare,
+    UserCheck, Users, Headphones, PlayCircle, StopCircle
+} from 'lucide-react';
+import { SITUATIONAL_CONVERSATIONS, type SituationalConversation, type DialogueTurn } from '../../../../lib/spokenConversationsData';
 
-// Categories and Phrases
-type Phrase = {
-    id: string;
-    english: string;
-    ipa: string;
-    bangla: string;
-    context: string;
-};
+export default function SituationalConversationsPage() {
+    // Current Active Situation
+    const [selectedId, setSelectedId] = useState<string>(SITUATIONAL_CONVERSATIONS[0].id);
+    const [levelFilter, setLevelFilter] = useState<'all' | 'Easy' | 'Intermediate'>('all');
+    const [categoryFilter, setCategoryFilter] = useState<string>('all');
+    
+    // View mode: 'dialogue' | 'starters' | 'roleplay' | 'vocabulary'
+    const [activeTab, setActiveTab] = useState<'dialogue' | 'roleplay' | 'starters' | 'vocabulary'>('dialogue');
 
-const PHRASE_CATEGORIES = [
-    {
-        id: 'greetings',
-        label: 'Greetings & Small Talk',
-        bangla: 'পরিচিতি ও শুভেচ্ছা',
-        phrases: [
-            { id: 'g1', english: 'How have you been lately?', ipa: '/haʊ hæv juː biːn ˈleɪtli/', bangla: 'আজকাল কেমন চলছে আপনার?', context: 'Asking about someone\'s well-being after some time.' },
-            { id: 'g2', english: 'Long time no see! What\'s new?', ipa: '/lɒŋ taɪm nəʊ siː lɒt nuː/', bangla: 'অনেক দিন দেখা নেই! নতুন খবর কি?', context: 'Friendly greeting for a friend you haven\'t seen in a while.' },
-            { id: 'g3', english: 'Could you tell me a bit about yourself?', ipa: '/kʊd juː tel miː ə bɪt əˈbaʊt jɔːˈself/', bangla: 'আপনার নিজের সম্পর্কে কিছু বলবেন কি?', context: 'Polite introduction starter in professional or casual settings.' },
-            { id: 'g4', english: 'I\'m really glad we caught up today.', ipa: '/aɪm ˈrɪəli glæd wiː kɔːt ʌp təˈdeɪ/', bangla: 'আজকে দেখা হয়ে খুব ভালো লাগলো।', context: 'Closing a pleasant small talk.' },
-            { id: 'g5', english: 'It was a pleasure meeting you.', ipa: '/ɪt wɒz ə ˈpleʒə ˈmiːtɪŋ juː/', bangla: 'আপনার সাথে দেখা হয়ে খুব ভালো লাগলো।', context: 'Formal way to say goodbye to someone new.' }
-        ]
-    },
-    {
-        id: 'shopping',
-        label: 'Shopping & Prices',
-        bangla: 'কেনাকাটা ও দরদাম',
-        phrases: [
-            { id: 's1', english: 'How much does this pair of shoes cost?', ipa: '/haʊ mʌtʃ dʌz ðɪs peər ɒv ʃuːz kɒst/', bangla: 'এই এক জোড়া জুতোর দাম কত?', context: 'Asking for the price of specific items.' },
-            { id: 's2', english: 'Is there any discount on this item?', ipa: '/ɪz ðeər ˈeni ˈdɪskaʊnt ɒn ðɪs ˈaɪtəm/', bangla: 'এই জিনিসটির ওপর কোনো ছাড় আছে কি?', context: 'Inquiring about special offers.' },
-            { id: 's3', english: 'Do you accept credit cards or mobile banking?', ipa: '/duː juː əkˈsept ˈkredɪt kɑːdz ɔː ˈməʊbaɪl ˈbæŋkɪŋ/', bangla: 'আপনারা কি ক্রেডিট কার্ড বা মোবাইল ব্যাংকিং গ্রহণ করেন?', context: 'Inquiring about payment methods.' },
-            { id: 's4', english: 'Can I try this jacket on, please?', ipa: '/kæn aɪ traɪ ðɪs ˈdʒækɪt ɒn pliːz/', bangla: 'আমি কি এই জ্যাকেটটি ট্রায়াল দিতে পারি?', context: 'Asking to use the fitting room.' },
-            { id: 's5', english: 'This is a bit out of my budget.', ipa: '/ðɪs ɪz ə bɪt aʊt ɒv maɪ ˈbʌdʒɪt/', bangla: 'এটা আমার বাজেটের চেয়ে একটু বেশি।', context: 'Politely declining an expensive item.' }
-        ]
-    },
-    {
-        id: 'restaurant',
-        label: 'At a Restaurant',
-        bangla: 'রেস্টুরেন্টে খাবার অর্ডার',
-        phrases: [
-            { id: 'r1', english: 'Could we have a table for four, please?', ipa: '/kʊd wiː hæv ə ˈteɪbl fɔː pliːz/', bangla: 'আমাদের চারজনের জন্য একটি টেবিল দেওয়া যাবে কি?', context: 'Requesting seating upon arrival.' },
-            { id: 'r2', english: 'What would you recommend from the menu?', ipa: '/wɒt wʊd juː ˌrekəˈmend frɒm ðə ˈmenjuː/', bangla: 'মেনু থেকে আপনি কোন খাবারটি সাজেস্ট করবেন?', context: 'Asking the waiter for recommendations.' },
-            { id: 'r3', english: 'I\'d like to order a grilled chicken sandwich.', ipa: '/aɪd laɪk tuː ˈɔːdər ə grɪld ˈtʃɪkɪn ˈsænwɪdʒ/', bangla: 'আমি একটি গ্রিলড চিকেন স্যান্ডউইচ অর্ডার করতে চাই।', context: 'Placing your food order.' },
-            { id: 'r4', english: 'Could you bring us the bill, please?', ipa: '/kʊd juː brɪŋ ʌs ðə bɪl pliːz/', bangla: 'দয়া করে বিলটা একটু নিয়ে আসবেন?', context: 'Requesting the check.' },
-            { id: 'r5', english: 'Could we get this food packed to go?', ipa: '/kʊd wiː get ðɪs fuːd pækt tuː gəʊ/', bangla: 'খাবারটুকু কি পার্সেল করে দেওয়া যাবে?', context: 'Asking to pack leftover food.' }
-        ]
-    },
-    {
-        id: 'travel',
-        label: 'Travel & Directions',
-        bangla: 'ভ্রমণ ও পথ জিজ্ঞেস করা',
-        phrases: [
-            { id: 't1', english: 'Excuse me, could you tell me how to get to the train station?', ipa: '/ɪkˈskjuːz miː kʊd juː tel miː haʊ tuː get tuː ðə treɪn ˈsteɪʃn/', bangla: 'মাফ করবেন, ট্রেন স্টেশনে কীভাবে যাবো বলতে পারেন?', context: 'Asking for directions politely.' },
-            { id: 't2', english: 'Is this the correct platform for the airport train?', ipa: '/ɪz ðɪs ðə kəˈrekt ˈplætfɔːm fɔː ði ˈeəpɔːt treɪn/', bangla: 'এয়ারপোর্ট ট্রেনের জন্য এটাই কি সঠিক প্ল্যাটফর্ম?', context: 'Verifying boarding location.' },
-            { id: 't3', english: 'How long does it take to reach the city center by bus?', ipa: '/haʊ lɒŋ dʌz ɪt teɪk tuː riːtʃ ðə ˈsɪti ˈsentə baɪ bʌs/', bangla: 'বাসে করে শহরের কেন্দ্রে পৌঁছাতে কত সময় লাগবে?', context: 'Inquiring about travel duration.' },
-            { id: 't4', english: 'Where is the nearest currency exchange office?', ipa: '/weər ɪz ðə ˈnɪərɪst ˈkʌrənsi ɪksˈtʃeɪndʒ ˈɒfɪs/', bangla: 'সবচেয়ে কাছের টাকা পরিবর্তনের অফিসটি কোথায়?', context: 'Looking to exchange money.' },
-            { id: 't5', english: 'Could you recommend a good local tour guide?', ipa: '/kʊd juː ˌrekəˈmend ə gʊd ˈləʊkl tʊə gaɪd/', bangla: 'ভালো কোনো স্থানীয় গাইড সাজেস্ট করতে পারেন কি?', context: 'Asking for tourist guides.' }
-        ]
-    },
-    {
-        id: 'interview',
-        label: 'Job Interview & Career',
-        bangla: 'চাকরির ইন্টারভিউ',
-        phrases: [
-            { id: 'i1', english: 'Could you please introduce yourself briefly?', ipa: '/kʊd juː pliːz ˌɪntrəˈdjuːs jɔːˈself ˈbriːfli/', bangla: 'সংক্ষেপে আপনার নিজের পরিচয় দিতে পারেন কি?', context: 'The most common interview opening question.' },
-            { id: 'i2', english: 'I have three years of experience in project management.', ipa: '/aɪ hæv θriː jɪəz ɒv ɪkˈspɪəriəns ɪn ˈprɒdʒekt ˈmænɪdʒmənt/', bangla: 'প্রজেক্ট পরিচালনায় আমার তিন বছরের অভিজ্ঞতা রয়েছে।', context: 'Stating your work background.' },
-            { id: 'i3', english: 'My greatest strength is my ability to adapt quickly.', ipa: '/maɪ ˈɡreɪtɪst streŋθ ɪz maɪ əˈbɪləti tuː əˈdæpt ˈkwɪkli/', bangla: 'আমার সবচেয়ে বড় শক্তি হলো যেকোনো পরিস্থিতিতে দ্রুত মানিয়ে নেওয়ার ক্ষমতা।', context: 'Highlighting your key strength.' },
-            { id: 'i4', english: 'Where do you see yourself in the next five years?', ipa: '/weə duː juː siː jɔːˈself ɪn ðə nekst faɪv jɪəz/', bangla: 'আগামী পাঁচ বছরে আপনি নিজেকে কোথায় দেখতে চান?', context: 'Inquiring about career aspirations.' },
-            { id: 'i5', english: 'Thank you for giving me this valuable opportunity.', ipa: '/θæŋk juː fɔː ˈɡɪvɪŋ miː ðɪs ˈvæljuəbl ˌɒpəˈtjuːnəti/', bangla: 'এই মূল্যবান সুযোগটি দেওয়ার জন্য আপনাকে আন্তরিক ধন্যবাদ।', context: 'Politely closing an interview.' }
-        ]
-    },
-    {
-        id: 'doctor',
-        label: 'Doctor & Health',
-        bangla: 'ডাক্তারের কাছে ও স্বাস্থ্যসেবা',
-        phrases: [
-            { id: 'd1', english: 'I have had a severe headache and fever since yesterday.', ipa: '/aɪ hæv hæd ə sɪˈvɪə ˈhedeɪk ænd ˈfiːvə sɪns ˈjestədeɪ/', bangla: 'গতকাল থেকে আমার প্রচণ্ড মাথাব্যথা ও জ্বর হচ্ছে।', context: 'Describing common symptoms to a doctor.' },
-            { id: 'd2', english: 'How often should I take this medication?', ipa: '/haʊ ˈɒfn ʃʊd aɪ teɪk ðɪs ˌmedɪˈkeɪʃn/', bangla: 'এই ওষুধটি আমাকে দিনে কতবার খেতে হবে?', context: 'Asking prescription dosage instructions.' },
-            { id: 'd3', english: 'Are there any potential side effects?', ipa: '/ɑː ðeər ˈeni pəˈtenʃl saɪd ɪˈfekts/', bangla: 'এর কি কোনো পার্শ্বপ্রতিক্রিয়া হতে পারে?', context: 'Inquiring about medication safety.' },
-            { id: 'd4', english: 'I would like to book an appointment with Dr. Rahman.', ipa: '/aɪ wʊd laɪk tuː bʊk ən əˈpɔɪntmənt wɪð ˈdɒktə ˈræhmæn/', bangla: 'আমি ডক্টর রহমানের সাথে একটি অ্যাপয়েন্টমেন্ট বুক করতে চাই।', context: 'Scheduling a medical consultation.' },
-            { id: 'd5', english: 'You should get plenty of rest and drink lots of fluids.', ipa: '/juː ʃʊd ɡet ˈplenti ɒv rest ænd drɪŋk lɒts ɒv ˈfluːɪdz/', bangla: 'আপনার প্রচুর বিশ্রাম নেওয়া এবং প্রচুর তরল পান করা উচিত।', context: 'Common recovery advice from a physician.' }
-        ]
-    },
-    {
-        id: 'telephone',
-        label: 'Phone Calls & Messaging',
-        bangla: 'ফোনে কথা বলা ও কল হ্যান্ডলিং',
-        phrases: [
-            { id: 'p1', english: 'Could I speak with Mr. Karim, please?', ipa: '/kʊd aɪ spiːk wɪð ˈmɪstə kəˈriːm pliːz/', bangla: 'আমি কি মিস্টার করিমের সাথে একটু কথা বলতে পারি?', context: 'Polite telephone opening inquiry.' },
-            { id: 'p2', english: 'May I ask who is calling, please?', ipa: '/meɪ aɪ ɑːsk huː ɪz ˈkɔːlɪŋ pliːz/', bangla: 'দয়া করে বলবেন কি কে বলছেন?', context: 'Polite screening question on telephone.' },
-            { id: 'p3', english: 'Could you hold the line for just a moment?', ipa: '/kʊd juː həʊld ðə laɪn fɔː dʒʌst ə ˈməʊmənt/', bangla: 'দয়া করে একটু লাইনে থাকবেন কি?', context: 'Putting a caller on brief hold.' },
-            { id: 'p4', english: 'I\'m afraid he is currently in a meeting.', ipa: '/aɪm əˈfreɪd hiː ɪz ˈkʌrəntli ɪn ə ˈmiːtɪŋ/', bangla: 'দুঃখিত, তিনি এই মুহূর্তে একটি মিটিংয়ে আছেন।', context: 'Explaining person unavailability.' },
-            { id: 'p5', english: 'Could you please ask him to call me back?', ipa: '/kʊd juː pliːz ɑːsk hɪm tuː kɔːl miː bæk/', bangla: 'তাকে কি আমাকে ব্যাক করতে একটু বলবেন?', context: 'Leaving a callback request.' }
-        ]
-    }
-];
+    // Roleplay state
+    const [userRole, setUserRole] = useState<'A' | 'B'>('A');
+    const [roleplayTurnIndex, setRoleplayTurnIndex] = useState(0);
 
-// Interactive Exercises
-type Exercise = {
-    id: string;
-    type: 'MCQ' | 'GAP';
-    question: string;
-    options?: string[];
-    answer: string;
-    hint: string;
-    explanation: string;
-};
+    // Audio Player State
+    const [playingTurnId, setPlayingTurnId] = useState<string | null>(null);
+    const [isAutoPlaying, setIsAutoPlaying] = useState(false);
+    const autoPlayIndexRef = useRef(0);
 
-const EXERCISES: Exercise[] = [
-    {
-        id: 'ex1',
-        type: 'MCQ',
-        question: 'যদি আপনি কারো সাথে অনেকদিন পর দেখা করেন, তবে অভিনন্দন জানাতে নিচের কোনটি বলবেন?',
-        options: ['Long time no see! What\'s new?', 'It was a pleasure meeting you.', 'Excuse me, is this seat taken?', 'Could you bring us the bill?'],
-        answer: 'Long time no see! What\'s new?',
-        hint: 'Hint: এর অর্থ "অনেক দিন দেখা নেই! নতুন কি খবর?"',
-        explanation: 'দীর্ঘদিন পর পরিচিত কারোর সাথে দেখা হলে আমরা "Long time no see!" বা "It\'s been a while!" ব্যবহার করে কথা শুরু করি।'
-    },
-    {
-        id: 'ex2',
-        type: 'GAP',
-        question: 'Complete the phrase to ask for fitting a jacket: "Can I _______ this jacket on, please?"',
-        answer: 'try',
-        hint: 'Hint: পরিধান করে দেখার ইংরেজি শব্দ (৩ অক্ষরের)।',
-        explanation: 'জামা কাপড় গায়ে দিয়ে ট্রায়াল দেওয়ার ফ্রেজটি হলো "try something on"।'
-    },
-    {
-        id: 'ex3',
-        type: 'MCQ',
-        question: 'রেস্টুরেন্টে খাওয়া শেষ করার পর বিল চাওয়ার সঠিক ভদ্র উপায় কোনটি?',
-        options: ['Give me the bill immediately.', 'Could you bring us the bill, please?', 'How much does this food cost?', 'Is there any discount here?'],
-        answer: 'Could you bring us the bill, please?',
-        hint: 'Hint: "Could you..." দিয়ে বিনম্রভাবে শুরু করা বাক্যাংশ।',
-        explanation: 'রেস্টুরেন্টে ওয়েটারকে ডেকে বিল আনতে বিনম্রভাবে "Could you bring us the bill, please?" বলা হয়।'
-    },
-    {
-        id: 'ex4',
-        type: 'GAP',
-        question: 'Complete the direction inquiry: "Excuse me, could you tell me _______ to get to the nearest metro station?"',
-        answer: 'how',
-        hint: 'Hint: কীভাবে বা কোন উপায়ে জিজ্ঞেস করতে এই শব্দটি বসে।',
-        explanation: 'পথ নির্দেশনা জিজ্ঞেস করতে আমরা "how to get to [destination]" ব্যবহার করি।'
-    },
-    {
-        id: 'ex5',
-        type: 'MCQ',
-        question: 'কোনো জিনিস আপনার সাধ্যের বাইরে বা দাম অনেক বেশি হলে ভদ্রভাবে কীভাবে প্রকাশ করবেন?',
-        options: ['This is cheap, I don\'t want it.', 'This is a bit out of my budget.', 'I don\'t have money for this trash.', 'What would you recommend?'],
-        answer: 'This is a bit out of my budget.',
-        hint: 'Hint: "বাজেট" সংবলিত ভদ্র বাক্য।',
-        explanation: '"This is a bit out of my budget" বাক্যটি দামি জিনিস সরাসরি নাকচ না করে ভদ্রভাবে রিজেক্ট করতে সাহায্য করে।'
-    },
-    {
-        id: 'ex6',
-        type: 'GAP',
-        question: 'Complete the greeting: "How _______ you been lately?"',
-        answer: 'have',
-        hint: 'Hint: Present Perfect tense-এর auxiliary verb.',
-        explanation: '"How have you been?" হলো কারো সাম্প্রতিক দিনকাল বা শরীর কেমন যাচ্ছে তা জানার একটি বাচ্য।'
-    },
-    {
-        id: 'ex7',
-        type: 'MCQ',
-        question: 'নতুন কারো সাথে পরিচিত হওয়ার পর বিদায় নেওয়ার সময় কোনটি বলা যায়?',
-        options: ['How have you been?', 'It was a pleasure meeting you.', 'I would like to order dinner.', 'Where is the nearest bank?'],
-        answer: 'It was a pleasure meeting you.',
-        hint: 'Hint: সাক্ষাৎটি আনন্দদায়ক ছিল তা বোঝাতে ব্যবহৃত হয়।',
-        explanation: 'নতুন পরিচিত লোকের সাথে কথা বলা শেষে বিদায় নিতে "It was a pleasure meeting you" বা "Nice meeting you" বলা হয়।'
-    },
-    {
-        id: 'ex8',
-        type: 'GAP',
-        question: 'Complete the shopping discount inquiry: "Is there any _______ on this item?"',
-        answer: 'discount',
-        hint: 'Hint: মূল্য ছাড় বা ছাড়ের ইংরেজি প্রতিশব্দ।',
-        explanation: 'কেনাকাটার সময় কোনো পোশাকে বা জিনিসপত্রে মূল্য ছাড় আছে কিনা জানতে "Is there any discount?" বলা হয়।'
-    }
-];
+    // Mic & Speech Recognition State
+    const [isRecording, setIsRecording] = useState(false);
+    const [activeTurnMicId, setActiveTurnMicId] = useState<string | null>(null);
+    const [spokenTranscript, setSpokenTranscript] = useState('');
+    const [turnAccuracy, setTurnAccuracy] = useState<number | null>(null);
+    const recognitionRef = useRef<any>(null);
 
-export default function ConversationsPage() {
-    const { isTrial } = useSubscription();
-    const [activeTab, setActiveTab] = useState<'learn' | 'exercise'>('learn');
-    const [selectedCategory, setSelectedCategory] = useState('greetings');
-    const [speechPlaying, setSpeechPlaying] = useState<string | null>(null);
+    // Gamification & Completion
+    const [completedConvIds, setCompletedConvIds] = useState<string[]>([]);
+    const [xp, setXp] = useState<number>(0);
 
-    // Exercise States
-    const [exerciseAnswers, setExerciseAnswers] = useState<Record<string, string>>({});
-    const [revealedExercises, setRevealedExercises] = useState<Record<string, boolean>>({});
+    useEffect(() => {
+        const storedXp = Number(localStorage.getItem('spoken_xp') || 0);
+        setXp(storedXp);
 
-    const currentCat = PHRASE_CATEGORIES.find(c => c.id === selectedCategory)!;
-    const catIsLocked = isTrial && selectedCategory !== 'greetings';
+        try {
+            const completed = JSON.parse(localStorage.getItem('completed_situational_convs') || '[]');
+            setCompletedConvIds(completed);
+        } catch { /* ignore */ }
+    }, []);
 
-    function playAudio(text: string, id: string) {
-        if ('speechSynthesis' in window) {
-            window.speechSynthesis.cancel();
-            const utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = 'en-GB';
-            utterance.rate = 0.85;
-            utterance.onstart = () => setSpeechPlaying(id);
-            utterance.onend = () => setSpeechPlaying(null);
-            utterance.onerror = () => setSpeechPlaying(null);
-            window.speechSynthesis.speak(utterance);
-        } else {
-            alert('Your browser does not support text-to-speech.');
+    // Current Active Conversation
+    const currentConv = useMemo(() => {
+        return SITUATIONAL_CONVERSATIONS.find(c => c.id === selectedId) || SITUATIONAL_CONVERSATIONS[0];
+    }, [selectedId]);
+
+    // Filtered Conversations List
+    const filteredConversations = useMemo(() => {
+        return SITUATIONAL_CONVERSATIONS.filter(c => {
+            const matchesLevel = levelFilter === 'all' || c.level === levelFilter;
+            const matchesCategory = categoryFilter === 'all' || c.category === categoryFilter;
+            return matchesLevel && matchesCategory;
+        });
+    }, [levelFilter, categoryFilter]);
+
+    // Stop audio & reset roleplay on situation change
+    useEffect(() => {
+        stopAutoPlay();
+        setRoleplayTurnIndex(0);
+        setSpokenTranscript('');
+        setTurnAccuracy(null);
+        setActiveTurnMicId(null);
+        setIsRecording(false);
+        if (typeof window !== 'undefined') window.speechSynthesis?.cancel();
+    }, [selectedId]);
+
+    // Play Audio for a single text
+    const playAudio = (text: string, onEndCallback?: () => void) => {
+        if (typeof window === 'undefined') return;
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-GB';
+        utterance.rate = 0.95;
+        utterance.onstart = () => setPlayingTurnId(text);
+        utterance.onend = () => {
+            setPlayingTurnId(null);
+            if (onEndCallback) onEndCallback();
+        };
+        utterance.onerror = () => {
+            setPlayingTurnId(null);
+            if (onEndCallback) onEndCallback();
+        };
+        window.speechSynthesis.speak(utterance);
+    };
+
+    // Auto-Play Full Conversation
+    const startAutoPlay = () => {
+        setIsAutoPlaying(true);
+        autoPlayIndexRef.current = 0;
+        playNextTurnInSequence();
+    };
+
+    const stopAutoPlay = () => {
+        setIsAutoPlaying(false);
+        setPlayingTurnId(null);
+        if (typeof window !== 'undefined') window.speechSynthesis?.cancel();
+    };
+
+    const playNextTurnInSequence = () => {
+        const turns = currentConv.dialogue;
+        const idx = autoPlayIndexRef.current;
+
+        if (idx >= turns.length) {
+            setIsAutoPlaying(false);
+            setPlayingTurnId(null);
+            return;
         }
-    }
 
-    const filteredExercises = isTrial ? EXERCISES.slice(0, 3) : EXERCISES;
-    const totalScore = Object.entries(exerciseAnswers).filter(([id, ans]) => {
-        const ex = EXERCISES.find(e => e.id === id);
-        return ex?.answer.toLowerCase().trim() === ans.toLowerCase().trim();
-    }).length;
+        const currentTurn = turns[idx];
+        setPlayingTurnId(currentTurn.id);
+
+        playAudio(currentTurn.en, () => {
+            autoPlayIndexRef.current++;
+            setTimeout(() => {
+                playNextTurnInSequence();
+            }, 700);
+        });
+    };
+
+    // Voice recognition for speaking
+    const startMic = (turnId: string, targetText: string) => {
+        const SpeechRec = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+        if (!SpeechRec) {
+            alert('আপনার ব্রাউজারে ভয়েস রিকগনিশন সাপোর্ট নেই। Chrome বা Edge ব্যবহার করুন।');
+            return;
+        }
+
+        window.speechSynthesis.cancel();
+        const rec = new SpeechRec();
+        rec.continuous = false;
+        rec.interimResults = false;
+        rec.lang = 'en-US';
+
+        rec.onstart = () => {
+            setIsRecording(true);
+            setActiveTurnMicId(turnId);
+            setSpokenTranscript('');
+            setTurnAccuracy(null);
+        };
+
+        rec.onresult = (event: any) => {
+            const spoken = event.results[0][0].transcript;
+            setSpokenTranscript(spoken);
+
+            const clean = (s: string) => s.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
+            const targetWords = clean(targetText).split(/\s+/);
+            const spokenWords = clean(spoken).split(/\s+/);
+
+            let matches = 0;
+            targetWords.forEach(tw => {
+                if (spokenWords.includes(tw)) matches++;
+            });
+
+            const accuracy = Math.round((matches / targetWords.length) * 100);
+            setTurnAccuracy(accuracy);
+
+            if (accuracy >= 70) {
+                awardXp(20);
+            }
+        };
+
+        rec.onerror = () => setIsRecording(false);
+        rec.onend = () => setIsRecording(false);
+
+        recognitionRef.current = rec;
+        try {
+            rec.start();
+        } catch { /* ignore */ }
+    };
+
+    const awardXp = (amount: number) => {
+        const newXp = xp + amount;
+        setXp(newXp);
+        localStorage.setItem('spoken_xp', String(newXp));
+    };
+
+    const markConvDone = (id: string) => {
+        if (!completedConvIds.includes(id)) {
+            const updated = [...completedConvIds, id];
+            setCompletedConvIds(updated);
+            localStorage.setItem('completed_situational_convs', JSON.stringify(updated));
+            awardXp(50);
+        }
+    };
 
     return (
-        <div className="min-h-screen bg-[#f8fafc] px-4 py-8">
-            <div className="mx-auto max-w-4xl">
-                {/* Back button */}
-                <Link href="/dashboard/spoken-english" className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-slate-700 mb-6 transition">
-                    <ArrowLeft size={14} /> Back to Hub
-                </Link>
+        <div className="min-h-screen bg-gradient-to-b from-slate-50 via-teal-50/15 to-white py-8 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto space-y-6">
 
-                {/* Header */}
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
-                    <div>
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-teal-500/20 bg-teal-50/60 px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider text-teal-600 mb-2">
-                            <Sparkles size={10} />
-                            Daily Dialogues
-                        </span>
-                        <h1 className="text-3xl font-black text-slate-900 leading-tight">conversational Phrases</h1>
-                        <p className="text-xs text-slate-500 mt-1">দৈনন্দিন কথোপকথনের প্রয়োজনীয় বাক্য, অডিও ও অনুশীলন কুইজ।</p>
-                    </div>
+                {/* Top Navigation & Status */}
+                <div className="flex items-center justify-between">
+                    <Link
+                        href="/dashboard/spoken-english"
+                        className="inline-flex items-center gap-2 text-xs font-bold text-slate-600 hover:text-teal-600 transition"
+                    >
+                        <ArrowLeft size={16} />
+                        <span>স্পোকেন ইংলিশ ড্যাশবোর্ডে ফিরুন</span>
+                    </Link>
 
-                    {/* Mode Toggle */}
-                    <div className="flex bg-slate-200/60 p-1 rounded-2xl w-fit">
-                        <button
-                            onClick={() => setActiveTab('learn')}
-                            className={`px-4 py-2 text-xs font-bold rounded-xl transition ${activeTab === 'learn' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-900'}`}
-                        >
-                            📖 Learn Phrases
-                        </button>
-                        <button
-                            onClick={() => setActiveTab('exercise')}
-                            className={`px-4 py-2 text-xs font-bold rounded-xl transition ${activeTab === 'exercise' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-900'}`}
-                        >
-                            ✍️ Practice Exercises
-                        </button>
+                    <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-1.5 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full text-xs font-black text-amber-700 shadow-xs">
+                            <Flame size={14} className="text-orange-500 fill-orange-500" />
+                            <span>{xp} XP</span>
+                        </div>
+                        <div className="flex items-center gap-1.5 bg-teal-50 border border-teal-200 px-3 py-1 rounded-full text-xs font-black text-teal-700 shadow-xs">
+                            <Trophy size={14} className="text-teal-600" />
+                            <span>{completedConvIds.length} / {SITUATIONAL_CONVERSATIONS.length} কমপ্লিট</span>
+                        </div>
                     </div>
                 </div>
 
-                {/* LEARN PHRASES TAB */}
-                {activeTab === 'learn' && (
-                    <div className="grid gap-6 md:grid-cols-4">
-                        {/* Categories Sidebar */}
-                        <div className="md:col-span-1 space-y-2">
-                            <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2 px-1">Categories</p>
-                            {PHRASE_CATEGORIES.map(cat => {
-                                const isCatLocked = isTrial && cat.id !== 'greetings';
+                {/* Hero Header */}
+                <div className="rounded-3xl bg-gradient-to-br from-slate-900 via-teal-950 to-slate-900 p-6 sm:p-8 text-white shadow-xl relative overflow-hidden border border-teal-500/20">
+                    <div className="absolute right-0 top-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
+                    <div className="relative z-10 max-w-3xl">
+                        <span className="inline-flex items-center gap-1.5 rounded-full border border-teal-400/30 bg-teal-500/20 px-3.5 py-1 text-[11px] font-black uppercase tracking-wider text-teal-300 mb-3">
+                            <Sparkles size={12} /> 100% FREE · 20 REAL-LIFE SITUATIONAL CONVERSATIONS
+                        </span>
+                        <h1 className="text-2xl sm:text-4xl font-black tracking-tight leading-tight">
+                            Real-Life Conversation Lab: <span className="text-teal-400">সহজ থেকে ইন্টারমিডিয়েট ২০টি পরিস্থিতি</span>
+                        </h1>
+                        <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                            কফি শপ, হোটেল রুম, রেস্তোরাঁ, ডাক্তারখানা, এয়ারপোর্ট, জব ইন্টারভিউ ও সামাজিক আড্ডা—কথা শুরু করার টেকনিক, সম্পূরক প্রশ্ন ও ফুল অডিও রোল-প্লে প্র্যাকটিস।
+                        </p>
+                    </div>
+                </div>
+
+                {/* Filters Ribbon */}
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white p-3 rounded-2xl border border-slate-200 shadow-xs">
+                    {/* Level Pills */}
+                    <div className="flex flex-wrap items-center gap-1.5">
+                        <span className="text-xs font-black text-slate-400 px-2 uppercase">লেভেল:</span>
+                        {[
+                            { id: 'all', label: `সব পরিস্থিতি (${SITUATIONAL_CONVERSATIONS.length})` },
+                            { id: 'Easy', label: 'সহজ / Beginner (১০টি)' },
+                            { id: 'Intermediate', label: 'ইন্টারমিডিয়েট (১০টি)' }
+                        ].map(f => (
+                            <button
+                                key={f.id}
+                                onClick={() => setLevelFilter(f.id as any)}
+                                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition ${
+                                    levelFilter === f.id
+                                        ? 'bg-teal-600 text-white font-black shadow-xs'
+                                        : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
+                                }`}
+                            >
+                                {f.label}
+                            </button>
+                        ))}
+                    </div>
+
+                    {/* Category Filter */}
+                    <div className="flex items-center gap-2">
+                        <span className="text-xs font-black text-slate-400 uppercase">ক্যাটাগরি:</span>
+                        <select
+                            value={categoryFilter}
+                            onChange={e => setCategoryFilter(e.target.value)}
+                            className="text-xs font-bold bg-slate-50 border border-slate-200 rounded-xl px-3 py-1.5 text-slate-700 focus:outline-none focus:border-teal-500"
+                        >
+                            <option value="all">সব ক্যাটাগরি</option>
+                            <option value="Daily Life">দৈনন্দিন জীবন (Daily Life)</option>
+                            <option value="Social">সামাজিক আড্ডা (Social)</option>
+                            <option value="Services">সার্ভিস ও সেবা (Services)</option>
+                            <option value="Travel">ভ্রমণ ও এয়ারপোর্ট (Travel)</option>
+                            <option value="Professional">অফিস ও ইন্টারভিউ (Professional)</option>
+                        </select>
+                    </div>
+                </div>
+
+                {/* Main Content Layout: Sidebar (Col 4) | Dialogue Lab (Col 8) */}
+                <div className="grid gap-6 lg:grid-cols-12">
+
+                    {/* Left: Situations Selector List */}
+                    <div className="lg:col-span-4 space-y-3">
+                        <div className="flex items-center justify-between text-xs font-black text-slate-700 px-1">
+                            <span>বাস্তব পরিস্থিতি সমূহ ({filteredConversations.length} টি)</span>
+                            <span className="text-[11px] text-teal-600">ক্লিক করে প্র্যাকটিস করুন</span>
+                        </div>
+
+                        <div className="space-y-2 max-h-[720px] overflow-y-auto pr-1">
+                            {filteredConversations.map(conv => {
+                                const isSelected = conv.id === currentConv.id;
+                                const isDone = completedConvIds.includes(conv.id);
+
                                 return (
                                     <button
-                                        key={cat.id}
-                                        onClick={() => setSelectedCategory(cat.id)}
-                                        className={`w-full text-left p-3 rounded-2xl border text-xs font-black transition flex items-center justify-between ${
-                                            selectedCategory === cat.id
-                                                ? 'bg-teal-600 border-teal-600 text-white shadow-md shadow-teal-100'
-                                                : 'bg-white border-slate-200 text-slate-700 hover:border-teal-400 hover:bg-teal-50/20'
+                                        key={conv.id}
+                                        onClick={() => setSelectedId(conv.id)}
+                                        className={`w-full text-left p-3.5 rounded-2xl border text-xs transition-all flex items-center justify-between ${
+                                            isSelected
+                                                ? 'bg-teal-600 border-teal-600 text-white shadow-md shadow-teal-600/20'
+                                                : 'bg-white border-slate-200 text-slate-800 hover:border-teal-300 hover:bg-teal-50/20'
                                         }`}
                                     >
-                                        <div className="truncate">
-                                            <p>{cat.label}</p>
-                                            <p className={`text-[10px] font-medium truncate mt-0.5 ${selectedCategory === cat.id ? 'text-teal-100' : 'text-slate-400'}`}>
-                                                {cat.bangla}
-                                            </p>
+                                        <div className="flex items-start gap-3 min-w-0">
+                                            <span className={`flex h-6 w-6 items-center justify-center rounded-lg text-[10px] font-black flex-shrink-0 mt-0.5 ${
+                                                isSelected ? 'bg-white/20 text-white' : 'bg-teal-50 text-teal-700 border border-teal-200'
+                                            }`}>
+                                                {conv.number}
+                                            </span>
+
+                                            <div className="min-w-0">
+                                                <div className="flex items-center gap-1.5">
+                                                    <p className="font-black text-sm truncate">{conv.title}</p>
+                                                    <span className={`text-[9px] font-black px-1.5 py-0.5 rounded ${
+                                                        isSelected ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-600'
+                                                    }`}>
+                                                        {conv.level}
+                                                    </span>
+                                                </div>
+                                                <p className={`text-[11px] font-medium truncate mt-0.5 ${
+                                                    isSelected ? 'text-teal-100' : 'text-slate-500'
+                                                }`}>
+                                                    {conv.titleBn}
+                                                </p>
+                                            </div>
                                         </div>
-                                        {isCatLocked && <Lock size={12} className={selectedCategory === cat.id ? 'text-teal-200' : 'text-slate-400'} />}
+
+                                        <div className="flex-shrink-0 ml-2">
+                                            {isDone ? (
+                                                <span className={`flex h-5 w-5 items-center justify-center rounded-full ${
+                                                    isSelected ? 'bg-white text-teal-700' : 'bg-emerald-100 text-emerald-600'
+                                                }`}>
+                                                    <Check size={12} strokeWidth={3} />
+                                                </span>
+                                            ) : (
+                                                <ChevronRight size={15} className={isSelected ? 'text-teal-200' : 'text-slate-300'} />
+                                            )}
+                                        </div>
                                     </button>
                                 );
                             })}
                         </div>
+                    </div>
 
-                        {/* Phrases Content */}
-                        <div className="md:col-span-3">
-                            {catIsLocked ? (
-                                <div className="rounded-3xl border border-slate-200 bg-white p-8 text-center max-w-md mx-auto shadow-sm space-y-4">
-                                    <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-50 text-amber-500 border border-amber-100">
-                                        <Lock size={22} />
+                    {/* Right: Active Situation Workspace */}
+                    <div className="lg:col-span-8 space-y-6">
+
+                        {/* Card Header & Player Controls */}
+                        <div className="bg-white rounded-3xl p-5 sm:p-6 border border-slate-200 shadow-xs space-y-4">
+                            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-slate-100">
+                                <div>
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 border border-teal-200 uppercase tracking-wider">
+                                            পরিস্থিতি #{currentConv.number} · {currentConv.category}
+                                        </span>
+                                        <span className="text-[10px] font-bold text-slate-400">লেভেল: {currentConv.level}</span>
                                     </div>
-                                    <div>
-                                        <h3 className="text-base font-black text-slate-900">🔒 {currentCat.label} লকড!</h3>
-                                        <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                                            আপনি বর্তমানে ফ্রি ট্রায়াল মোডে আছেন। Greetings ব্যতীত অন্যান্য ক্যাটাগরির সমস্ত ফ্রেজ এবং উচ্চারণ অডিও আনলক করতে দয়া করে সাবস্ক্রিপশন নিন।
-                                        </p>
-                                    </div>
-                                    <Link href="/dashboard/payment?required=spoken" className="inline-flex items-center gap-1.5 rounded-2xl bg-teal-600 px-6 py-3 text-xs font-black text-white hover:bg-teal-500 transition shadow-lg shadow-teal-100">
-                                        আনলক করুন ↗
-                                    </Link>
+                                    <h2 className="text-xl sm:text-2xl font-black text-slate-900 mt-1">
+                                        {currentConv.title}
+                                    </h2>
+                                    <p className="text-xs text-slate-500 font-medium mt-0.5">
+                                        {currentConv.titleBn}
+                                    </p>
+                                    <p className="text-[11px] text-teal-800 bg-teal-50/70 p-2 rounded-xl mt-2 border border-teal-100">
+                                        📍 <b>দৃশ্যপট:</b> {currentConv.sceneDescription}
+                                    </p>
                                 </div>
-                            ) : (
-                                <div className="space-y-4">
-                                    <div className="bg-white border border-slate-200 rounded-3xl p-5 shadow-sm flex items-center justify-between">
-                                        <div>
-                                            <h2 className="text-base font-black text-slate-950">{currentCat.label}</h2>
-                                            <p className="text-xs text-slate-500 mt-0.5">{currentCat.bangla}</p>
-                                        </div>
-                                        <BookOpen size={20} className="text-teal-500" />
-                                    </div>
 
-                                    {currentCat.phrases.map(phrase => (
-                                        <div key={phrase.id} className="bg-white border border-slate-200 rounded-3xl p-5 shadow-sm hover:border-teal-200 transition duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                                            <div className="space-y-1">
-                                                <div className="flex items-center gap-2">
-                                                    <p className="text-base font-extrabold text-slate-900 leading-tight">{phrase.english}</p>
-                                                    <span className="text-[10px] font-mono text-indigo-500 bg-indigo-50 px-2 py-0.5 rounded-lg">
-                                                        {phrase.ipa}
-                                                    </span>
-                                                </div>
-                                                <p className="text-sm font-bold text-teal-700">{phrase.bangla}</p>
-                                                <p className="text-xs text-slate-400 font-semibold italic">💡 Use Case: {phrase.context}</p>
-                                            </div>
+                                <button
+                                    onClick={() => markConvDone(currentConv.id)}
+                                    className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-black transition self-start ${
+                                        completedConvIds.includes(currentConv.id)
+                                            ? 'bg-emerald-50 border border-emerald-200 text-emerald-700'
+                                            : 'bg-teal-600 text-white hover:bg-teal-700 shadow-xs'
+                                    }`}
+                                >
+                                    <CheckCircle2 size={14} />
+                                    <span>{completedConvIds.includes(currentConv.id) ? 'প্র্যাকটিস সম্পন্ন' : 'সম্পন্ন মার্ক করুন (+৫০ XP)'}</span>
+                                </button>
+                            </div>
 
+                            {/* Dialogue Navigation Tabs */}
+                            <div className="flex flex-wrap items-center justify-between gap-2 pt-1">
+                                <div className="flex flex-wrap gap-2">
+                                    {[
+                                        { id: 'dialogue', label: '💬 সম্পূর্ণ ডায়ালগ শুনুন ও পড়ুন', icon: MessageSquare },
+                                        { id: 'roleplay', label: '🎙️ ইন্টারেক্টিভ রোল-প্লে স্পিকিং', icon: UserCheck },
+                                        { id: 'starters', label: '🚀 কথা শুরু ও শেষ করার কৌশল', icon: Sparkles },
+                                        { id: 'vocabulary', label: '💡 নেটিভ ফ্রেজ ও ইডিয়ম', icon: Lightbulb }
+                                    ].map(tab => {
+                                        const Icon = tab.icon;
+                                        const isActive = activeTab === tab.id;
+
+                                        return (
                                             <button
-                                                onClick={() => playAudio(phrase.english, phrase.id)}
-                                                disabled={speechPlaying !== null}
-                                                className={`flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center transition border ${
-                                                    speechPlaying === phrase.id
-                                                        ? 'bg-teal-100 border-teal-200 text-teal-600 animate-pulse'
-                                                        : 'bg-slate-50 border-slate-200 text-slate-650 hover:bg-teal-50 hover:text-teal-600 hover:border-teal-300'
+                                                key={tab.id}
+                                                onClick={() => setActiveTab(tab.id as any)}
+                                                className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold transition ${
+                                                    isActive
+                                                        ? 'bg-teal-600 text-white shadow-xs font-black'
+                                                        : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                                                 }`}
                                             >
-                                                <Volume2 size={16} />
+                                                <Icon size={13} />
+                                                <span>{tab.label}</span>
                                             </button>
-                                        </div>
-                                    ))}
+                                        );
+                                    })}
                                 </div>
-                            )}
-                        </div>
-                    </div>
-                )}
 
-                {/* PRACTICE EXERCISES TAB */}
-                {activeTab === 'exercise' && (
-                    <div className="space-y-6">
-                        {/* Score Banner */}
-                        {Object.keys(exerciseAnswers).length > 0 && (
-                            <div className="bg-indigo-50 border border-indigo-200 rounded-3xl px-6 py-4 flex items-center justify-between shadow-sm">
-                                <div>
-                                    <p className="text-[10px] font-black uppercase tracking-wider text-indigo-500">Your Performance</p>
-                                    <p className="text-base font-black text-slate-900">Score: {totalScore} / {Object.keys(exerciseAnswers).length} Correct</p>
-                                </div>
-                                <button
-                                    onClick={() => { setExerciseAnswers({}); setRevealedExercises({}); }}
-                                    className="rounded-xl border border-rose-200 bg-rose-50 text-xs font-black text-rose-600 px-4 py-2 hover:bg-rose-100 transition"
-                                >
-                                    Reset Quiz
-                                </button>
+                                {/* Full Dialogue Auto-Player */}
+                                {activeTab === 'dialogue' && (
+                                    <button
+                                        onClick={() => {
+                                            if (isAutoPlaying) stopAutoPlay();
+                                            else startAutoPlay();
+                                        }}
+                                        className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black transition shadow-xs ${
+                                            isAutoPlaying
+                                                ? 'bg-rose-600 text-white animate-pulse'
+                                                : 'bg-slate-900 text-white hover:bg-slate-800'
+                                        }`}
+                                    >
+                                        {isAutoPlaying ? <StopCircle size={14} /> : <PlayCircle size={14} />}
+                                        <span>{isAutoPlaying ? 'অটো-প্লে থামান' : 'একটানা পুরোটা শুনুন'}</span>
+                                    </button>
+                                )}
+                            </div>
+                        </div>
+
+                        {/* ══════════════════════════════════════════════════════════════
+                            TAB 1: COMPLETE TURN-BY-TURN DIALOGUE READER
+                           ══════════════════════════════════════════════════════════════ */}
+                        {activeTab === 'dialogue' && (
+                            <div className="space-y-3">
+                                {currentConv.dialogue.map(turn => {
+                                    const isSpeakerA = turn.role === 'A';
+                                    const isPlayingThis = playingTurnId === turn.id;
+                                    const isMicActiveThis = isRecording && activeTurnMicId === turn.id;
+
+                                    return (
+                                        <div
+                                            key={turn.id}
+                                            className={`p-4 rounded-3xl border transition-all ${
+                                                isSpeakerA
+                                                    ? 'bg-white border-slate-200 shadow-xs'
+                                                    : 'bg-teal-50/40 border-teal-200 shadow-xs'
+                                            } ${isPlayingThis ? 'ring-2 ring-teal-500 bg-teal-50/70' : ''}`}
+                                        >
+                                            <div className="flex items-center justify-between pb-2 mb-2 border-b border-black/5">
+                                                <div className="flex items-center gap-2">
+                                                    <span className={`flex h-6 w-6 items-center justify-center rounded-full text-[10px] font-black text-white ${
+                                                        isSpeakerA ? 'bg-indigo-600' : 'bg-teal-600'
+                                                    }`}>
+                                                        {turn.role}
+                                                    </span>
+                                                    <span className="font-black text-xs text-slate-800">
+                                                        {turn.speaker}
+                                                    </span>
+                                                </div>
+
+                                                <div className="flex items-center gap-1.5">
+                                                    <button
+                                                        onClick={() => playAudio(turn.en)}
+                                                        className="p-1.5 rounded-lg bg-white border border-slate-200 text-slate-600 hover:text-teal-700 hover:bg-slate-50 transition"
+                                                        title="শুনুন"
+                                                    >
+                                                        <Volume2 size={14} />
+                                                    </button>
+                                                    <button
+                                                        onClick={() => {
+                                                            if (isMicActiveThis) {
+                                                                if (recognitionRef.current) recognitionRef.current.stop();
+                                                                setIsRecording(false);
+                                                            } else {
+                                                                startMic(turn.id, turn.en);
+                                                            }
+                                                        }}
+                                                        className={`p-1.5 rounded-lg border text-xs transition ${
+                                                            isMicActiveThis
+                                                                ? 'bg-rose-500 text-white animate-pulse border-rose-500'
+                                                                : 'bg-white border-slate-200 text-slate-600 hover:text-teal-700 hover:bg-slate-50'
+                                                        }`}
+                                                        title="মুখে বলে টেস্ট করুন"
+                                                    >
+                                                        <Mic size={14} />
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <p className="text-sm sm:text-base font-black text-slate-900 leading-snug">
+                                                "{turn.en}"
+                                            </p>
+                                            <p className="text-xs font-mono text-teal-700 mt-0.5">
+                                                {turn.ipa}
+                                            </p>
+                                            <p className="text-xs text-slate-600 font-medium mt-1">
+                                                অনুবাদ: {turn.bn}
+                                            </p>
+
+                                            {/* Mic accuracy result */}
+                                            {activeTurnMicId === turn.id && turnAccuracy !== null && (
+                                                <div className="mt-2 p-2 rounded-xl bg-white border border-slate-200 text-xs flex items-center justify-between">
+                                                    <span className="text-[11px] text-slate-600 truncate max-w-[280px]">
+                                                        আপনি বলেছেন: "{spokenTranscript}"
+                                                    </span>
+                                                    <span className={`text-xs font-black flex-shrink-0 ${
+                                                        turnAccuracy >= 70 ? 'text-emerald-600' : 'text-amber-600'
+                                                    }`}>
+                                                        স্কোর: {turnAccuracy}%
+                                                    </span>
+                                                </div>
+                                            )}
+                                        </div>
+                                    );
+                                })}
                             </div>
                         )}
 
-                        {/* Exercises List */}
-                        <div className="space-y-5">
-                            {filteredExercises.map((ex, idx) => {
-                                const userAns = exerciseAnswers[ex.id] || '';
-                                const isRev = revealedExercises[ex.id];
-                                const isCorrect = userAns.toLowerCase().trim() === ex.answer.toLowerCase().trim();
-
-                                return (
-                                    <div key={ex.id} className="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm hover:border-indigo-100 transition duration-200">
-                                        <div className="flex items-center justify-between mb-3">
-                                            <div className="flex items-center gap-2">
-                                                <span className="text-xs font-black text-slate-400">Exercise {idx + 1}</span>
-                                                <span className={`text-[10px] font-bold px-2.5 py-0.5 rounded-full ${
-                                                    ex.type === 'MCQ' ? 'bg-amber-100 text-amber-700' : 'bg-sky-100 text-sky-700'
-                                                }`}>
-                                                    {ex.type}
-                                                </span>
-                                            </div>
-                                            {isRev && (isCorrect ? <CheckCircle2 size={20} className="text-emerald-500" /> : <XCircle size={20} className="text-rose-500" />)}
-                                        </div>
-
-                                        <p className="text-base font-bold text-slate-950 mb-4">{ex.question}</p>
-
-                                        {/* MCQ Rendering */}
-                                        {ex.type === 'MCQ' && ex.options && (
-                                            <div className="grid gap-2 sm:grid-cols-2">
-                                                {ex.options.map(opt => {
-                                                    let cls = 'rounded-xl border px-4 py-3 text-xs font-semibold text-left transition ';
-                                                    if (!isRev) {
-                                                        cls += userAns === opt
-                                                            ? 'border-indigo-500 bg-indigo-50/60 text-indigo-700 font-extrabold'
-                                                            : 'border-slate-200 hover:border-indigo-300 hover:bg-indigo-50/30 text-slate-700 cursor-pointer';
-                                                    } else if (opt === ex.answer) {
-                                                        cls += 'border-emerald-500 bg-emerald-50 text-emerald-800 font-extrabold';
-                                                    } else if (opt === userAns) {
-                                                        cls += 'border-rose-400 bg-rose-50 text-rose-700 font-extrabold';
-                                                    } else {
-                                                        cls += 'border-slate-100 text-slate-400';
-                                                    }
-                                                    return (
-                                                        <button key={opt} onClick={() => { if (!isRev) setExerciseAnswers(a => ({ ...a, [ex.id]: opt })); }} className={cls}>
-                                                            {opt}
-                                                        </button>
-                                                    );
-                                                })}
-                                            </div>
-                                        )}
-
-                                        {/* GAP Rendering */}
-                                        {ex.type === 'GAP' && (
-                                            <div className="flex gap-2 items-center max-w-sm">
-                                                <input
-                                                    type="text"
-                                                    value={userAns}
-                                                    disabled={isRev}
-                                                    placeholder="Type missing word..."
-                                                    onChange={(e) => setExerciseAnswers(a => ({ ...a, [ex.id]: e.target.value }))}
-                                                    className="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-900 focus:border-indigo-500 focus:outline-none disabled:bg-slate-100"
-                                                />
-                                            </div>
-                                        )}
-
-                                        {/* Check button */}
-                                        {userAns && !isRev && (
-                                            <button
-                                                onClick={() => setRevealedExercises(r => ({ ...r, [ex.id]: true }))}
-                                                className="mt-4 w-full sm:w-auto rounded-xl bg-indigo-600 px-5 py-2 text-xs font-bold text-white hover:bg-indigo-500 transition shadow"
-                                            >
-                                                Verify Answer
-                                            </button>
-                                        )}
-
-                                        {/* Feedback & Explanation */}
-                                        {isRev && (
-                                            <div className={`mt-4 rounded-xl p-3.5 ${isCorrect ? 'bg-emerald-50/60 border border-emerald-100' : 'bg-rose-50/60 border border-rose-100'}`}>
-                                                <p className="text-xs font-black mb-1 flex items-center gap-1">
-                                                    {isCorrect ? '✓ Correct Answer!' : '✗ Incorrect Answer!'}
-                                                </p>
-                                                <p className="text-xs text-slate-700">{ex.explanation}</p>
-                                                <p className="text-xs text-indigo-700 font-semibold mt-1">💡 {ex.hint}</p>
-                                            </div>
-                                        )}
-                                    </div>
-                                );
-                            })}
-
-                            {/* Exercises Trial Lock */}
-                            {isTrial && EXERCISES.length > 3 && (
-                                <div className="rounded-3xl border border-slate-200 bg-white p-6 text-center space-y-4 shadow-sm max-w-md mx-auto">
-                                    <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-50 text-amber-500 border border-amber-100">
-                                        <Lock size={20} />
-                                    </div>
+                        {/* ══════════════════════════════════════════════════════════════
+                            TAB 2: INTERACTIVE ROLEPLAY SIMULATOR
+                           ══════════════════════════════════════════════════════════════ */}
+                        {activeTab === 'roleplay' && (
+                            <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs space-y-6">
+                                <div className="p-4 rounded-2xl bg-gradient-to-r from-teal-900 to-slate-900 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                                     <div>
-                                        <h3 className="text-sm font-black text-slate-900">🔒 {EXERCISES.length - 3}টি অনুশীলন কুইজ লকড!</h3>
-                                        <p className="text-xs text-slate-500 mt-1">
-                                            আপনি বর্তমানে ফ্রি ট্রায়াল মোডে আছেন। সবকটি কুইজ, শূন্যস্থান পূরণ ও বিস্তারিত ব্যাখ্যা আনলক করতে দয়া করে সাবস্ক্রিপশন নিন।
-                                        </p>
+                                        <span className="text-[10px] font-black uppercase text-teal-300 tracking-wider">রোল-প্লে সিমুলেটর</span>
+                                        <h3 className="text-base font-black mt-0.5">
+                                            আপনি কোন চরিত্রে কথা বলতে চান বেছে নিন:
+                                        </h3>
                                     </div>
-                                    <Link href="/dashboard/payment?required=spoken" className="inline-flex items-center gap-1.5 rounded-2xl bg-indigo-600 px-5 py-2.5 text-xs font-bold text-white hover:bg-indigo-500 transition shadow">
-                                        আনলক করুন ↗
-                                    </Link>
+
+                                    <div className="inline-flex rounded-xl bg-white/10 p-1 border border-white/10">
+                                        <button
+                                            onClick={() => {
+                                                setUserRole('A');
+                                                setRoleplayTurnIndex(0);
+                                            }}
+                                            className={`px-3 py-1.5 rounded-lg text-xs font-black transition ${
+                                                userRole === 'A' ? 'bg-teal-500 text-white shadow-xs' : 'text-slate-300 hover:text-white'
+                                            }`}
+                                        >
+                                            চরিত্র A ({currentConv.dialogue.find(d => d.role === 'A')?.speaker})
+                                        </button>
+                                        <button
+                                            onClick={() => {
+                                                setUserRole('B');
+                                                setRoleplayTurnIndex(0);
+                                            }}
+                                            className={`px-3 py-1.5 rounded-lg text-xs font-black transition ${
+                                                userRole === 'B' ? 'bg-teal-500 text-white shadow-xs' : 'text-slate-300 hover:text-white'
+                                            }`}
+                                        >
+                                            চরিত্র B ({currentConv.dialogue.find(d => d.role === 'B')?.speaker})
+                                        </button>
+                                    </div>
                                 </div>
-                            )}
-                        </div>
+
+                                {/* Active Roleplay Card */}
+                                {(() => {
+                                    const currentTurn = currentConv.dialogue[roleplayTurnIndex] || currentConv.dialogue[0];
+                                    const isUserTurn = currentTurn.role === userRole;
+
+                                    return (
+                                        <div className={`p-6 rounded-3xl border-2 transition-all ${
+                                            isUserTurn ? 'border-teal-500 bg-teal-50/30' : 'border-slate-200 bg-slate-50'
+                                        }`}>
+                                            <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-200">
+                                                <div className="flex items-center gap-2">
+                                                    <span className={`text-[10px] font-black px-2.5 py-1 rounded-full text-white ${
+                                                        isUserTurn ? 'bg-teal-600' : 'bg-slate-700'
+                                                    }`}>
+                                                        {isUserTurn ? '🎯 আপনার বলার পালা (Your Turn)' : `🤖 অপর পক্ষের পালা (${currentTurn.speaker})`}
+                                                    </span>
+                                                    <span className="text-xs text-slate-400 font-bold">
+                                                        ধাপ {roleplayTurnIndex + 1} / {currentConv.dialogue.length}
+                                                    </span>
+                                                </div>
+
+                                                <button
+                                                    onClick={() => playAudio(currentTurn.en)}
+                                                    className="p-2 rounded-xl bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 flex items-center gap-1 text-xs font-bold"
+                                                >
+                                                    <Volume2 size={14} />
+                                                    <span>আদর্শ উচ্চারণ শুনুন</span>
+                                                </button>
+                                            </div>
+
+                                            <p className="text-lg sm:text-xl font-black text-slate-900 leading-snug">
+                                                "{currentTurn.en}"
+                                            </p>
+                                            <p className="text-xs font-mono text-teal-700 mt-1">
+                                                {currentTurn.ipa}
+                                            </p>
+                                            <p className="text-sm text-slate-600 font-medium mt-2">
+                                                অনুবাদ: {currentTurn.bn}
+                                            </p>
+
+                                            {/* Action for User's Turn */}
+                                            {isUserTurn ? (
+                                                <div className="mt-5 pt-4 border-t border-teal-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                                                    <button
+                                                        onClick={() => {
+                                                            if (isRecording) {
+                                                                if (recognitionRef.current) recognitionRef.current.stop();
+                                                                setIsRecording(false);
+                                                            } else {
+                                                                startMic(currentTurn.id, currentTurn.en);
+                                                            }
+                                                        }}
+                                                        className={`px-5 py-3 rounded-2xl text-xs font-black flex items-center justify-center gap-2 transition ${
+                                                            isRecording
+                                                                ? 'bg-rose-500 text-white animate-pulse'
+                                                                : 'bg-teal-600 text-white hover:bg-teal-700 shadow-md shadow-teal-600/20'
+                                                        }`}
+                                                    >
+                                                        <Mic size={16} />
+                                                        <span>{isRecording ? 'শুনছি... কথা বলুন' : 'মাইক অন করে বাক্যটি বলুন'}</span>
+                                                    </button>
+
+                                                    <button
+                                                        onClick={() => {
+                                                            if (roleplayTurnIndex < currentConv.dialogue.length - 1) {
+                                                                setRoleplayTurnIndex(roleplayTurnIndex + 1);
+                                                                setTurnAccuracy(null);
+                                                                setSpokenTranscript('');
+                                                            }
+                                                        }}
+                                                        className="px-4 py-2.5 rounded-xl text-xs font-bold bg-slate-900 text-white hover:bg-slate-800 transition"
+                                                    >
+                                                        পরবর্তী ধাপে যান ➔
+                                                    </button>
+                                                </div>
+                                            ) : (
+                                                <div className="mt-5 pt-4 border-t border-slate-200 flex items-center justify-between">
+                                                    <button
+                                                        onClick={() => playAudio(currentTurn.en)}
+                                                        className="px-4 py-2 rounded-xl text-xs font-black bg-indigo-600 text-white hover:bg-indigo-700 transition flex items-center gap-1.5"
+                                                    >
+                                                        <Play size={13} />
+                                                        <span>{currentTurn.speaker}-এর কথা শুনুন</span>
+                                                    </button>
+
+                                                    <button
+                                                        onClick={() => {
+                                                            if (roleplayTurnIndex < currentConv.dialogue.length - 1) {
+                                                                setRoleplayTurnIndex(roleplayTurnIndex + 1);
+                                                                setTurnAccuracy(null);
+                                                                setSpokenTranscript('');
+                                                            }
+                                                        }}
+                                                        className="px-4 py-2 rounded-xl text-xs font-bold bg-slate-200 text-slate-800 hover:bg-slate-300 transition"
+                                                    >
+                                                        পরবর্তী ধাপে যান ➔
+                                                    </button>
+                                                </div>
+                                            )}
+
+                                            {/* Score feedback */}
+                                            {turnAccuracy !== null && (
+                                                <div className="mt-3 p-3 rounded-xl bg-white border border-teal-200 text-xs">
+                                                    <div className="flex items-center justify-between font-bold">
+                                                        <span className="text-slate-600">আপনার বলা রূপ: "{spokenTranscript}"</span>
+                                                        <span className={`font-black ${
+                                                            turnAccuracy >= 70 ? 'text-emerald-600' : 'text-amber-600'
+                                                        }`}>
+                                                            অ্যাকুরেসি: {turnAccuracy}%
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+                                    );
+                                })()}
+                            </div>
+                        )}
+
+                        {/* ══════════════════════════════════════════════════════════════
+                            TAB 3: CONVERSATION STARTERS & CLOSERS
+                           ══════════════════════════════════════════════════════════════ */}
+                        {activeTab === 'starters' && (
+                            <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs space-y-6">
+                                {/* Ice Breakers */}
+                                <div>
+                                    <h3 className="text-sm font-black text-slate-900 flex items-center gap-2">
+                                        <Sparkles size={16} className="text-teal-600" /> কীভাবে কথা শুরু করবেন (Conversation Starters / Ice Breakers):
+                                    </h3>
+                                    <p className="text-xs text-slate-500 mt-0.5">
+                                        অচেনা বা নতুন পরিবেশে লজ্জা না পেয়ে কথা শুরু করার সেরা ৩টি বাক্য:
+                                    </p>
+
+                                    <div className="space-y-3 mt-3">
+                                        {currentConv.starters.map((starter, idx) => (
+                                            <div
+                                                key={idx}
+                                                className="p-4 rounded-2xl border border-teal-200 bg-teal-50/40 hover:bg-teal-50 transition"
+                                            >
+                                                <div className="flex items-center justify-between pb-1 border-b border-teal-100">
+                                                    <span className="text-[10px] font-black text-teal-800 uppercase">উপায় #{idx + 1}</span>
+                                                    <button
+                                                        onClick={() => playAudio(starter.en)}
+                                                        className="p-1 rounded-lg bg-white text-teal-700 hover:bg-teal-100"
+                                                    >
+                                                        <Volume2 size={13} />
+                                                    </button>
+                                                </div>
+                                                <p className="text-sm font-black text-slate-900 mt-1">
+                                                    "{starter.en}"
+                                                </p>
+                                                <p className="text-xs text-slate-600 mt-0.5 font-medium">
+                                                    অনুবাদ: {starter.bn}
+                                                </p>
+                                                <p className="text-[11px] text-teal-700 italic mt-1">
+                                                    💡 টিপস: {starter.tip}
+                                                </p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                {/* Follow-Ups (Keeping it alive) */}
+                                <div className="pt-4 border-t border-slate-100">
+                                    <h3 className="text-sm font-black text-slate-900 flex items-center gap-2">
+                                        <RotateCcw size={16} className="text-indigo-600" /> কথা থামতে না দিয়ে এগিয়ে নেওয়ার উপায় (Follow-Ups):
+                                    </h3>
+                                    <div className="space-y-2 mt-3">
+                                        {currentConv.followUps.map((fu, idx) => (
+                                            <div
+                                                key={idx}
+                                                className="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between gap-3 text-xs"
+                                            >
+                                                <div>
+                                                    <p className="font-black text-slate-900">"{fu.en}"</p>
+                                                    <p className="text-slate-500 mt-0.5">{fu.bn}</p>
+                                                </div>
+                                                <button
+                                                    onClick={() => playAudio(fu.en)}
+                                                    className="p-1.5 rounded-lg bg-white border text-slate-600 hover:text-teal-700 flex-shrink-0"
+                                                >
+                                                    <Volume2 size={13} />
+                                                </button>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                {/* Closers */}
+                                <div className="pt-4 border-t border-slate-100">
+                                    <h3 className="text-sm font-black text-slate-900 flex items-center gap-2">
+                                        <CheckCircle2 size={16} className="text-emerald-600" /> মার্জিতভাবে কথা শেষ করে বিদায় নেওয়ার উপায় (Conversation Closers):
+                                    </h3>
+                                    <div className="space-y-2 mt-3">
+                                        {currentConv.closers.map((cl, idx) => (
+                                            <div
+                                                key={idx}
+                                                className="p-3 rounded-xl bg-emerald-50/50 border border-emerald-200 flex items-center justify-between gap-3 text-xs"
+                                            >
+                                                <div>
+                                                    <p className="font-black text-emerald-950">"{cl.en}"</p>
+                                                    <p className="text-emerald-800 mt-0.5">{cl.bn}</p>
+                                                </div>
+                                                <button
+                                                    onClick={() => playAudio(cl.en)}
+                                                    className="p-1.5 rounded-lg bg-white border border-emerald-200 text-emerald-700 hover:bg-emerald-100 flex-shrink-0"
+                                                >
+                                                    <Volume2 size={13} />
+                                                </button>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+
+                        {/* ══════════════════════════════════════════════════════════════
+                            TAB 4: NATIVE PHRASES & IDIOMS
+                           ══════════════════════════════════════════════════════════════ */}
+                        {activeTab === 'vocabulary' && (
+                            <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs space-y-4">
+                                <div>
+                                    <h3 className="text-sm font-black text-slate-900 flex items-center gap-2">
+                                        <Lightbulb size={16} className="text-amber-500" /> এই পরিস্থিতিতে ব্যবহৃত নেটিভ ফ্রেজ ও ইডিয়মসমূহ:
+                                    </h3>
+                                    <p className="text-xs text-slate-500 mt-0.5">
+                                        এই বাক্যগুলো আয়ত্ত করলে আপনার ইংরেজি বইয়ের মতো নয়, একদম নেটিভ স্পিকারের মতো স্বাভাবিক শোনাবে:
+                                    </p>
+                                </div>
+
+                                <div className="grid gap-3 sm:grid-cols-2">
+                                    {currentConv.nativePhrases.map((phrase, idx) => (
+                                        <div
+                                            key={idx}
+                                            className="p-4 rounded-2xl bg-gradient-to-br from-slate-50 to-teal-50/30 border border-slate-200 shadow-xs"
+                                        >
+                                            <div className="flex items-center justify-between pb-1 mb-1 border-b border-slate-200">
+                                                <span className="font-black text-xs text-teal-800">ফ্রেজ #{idx + 1}</span>
+                                                <button
+                                                    onClick={() => playAudio(phrase.phrase)}
+                                                    className="p-1 rounded-lg bg-white border text-teal-700 hover:bg-teal-100"
+                                                >
+                                                    <Volume2 size={13} />
+                                                </button>
+                                            </div>
+                                            <p className="text-sm font-black text-slate-900">
+                                                "{phrase.phrase}"
+                                            </p>
+                                            <p className="text-xs font-bold text-teal-700 mt-0.5">
+                                                বাংলা অর্থ: {phrase.meaning}
+                                            </p>
+                                            <p className="text-[11px] text-slate-500 mt-1 italic">
+                                                ব্যবহারের প্রেক্ষাপট: {phrase.context}
+                                            </p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
                     </div>
-                )}
+                </div>
             </div>
         </div>
     );

@@ -57,6 +57,13 @@ export default function SpokenEnglishDashboard() {
 
     const dailyMissions = [
         {
+            id: 'm0',
+            title: 'স্টেপ-বাই-স্টেপ ১টি লেসনের ৬-ধাপের রূপান্তর প্র্যাকটিস করুন',
+            link: '/dashboard/spoken-english/lessons',
+            icon: '📘',
+            actionText: 'লেসনে যান',
+        },
+        {
             id: 'm1',
             title: 'জিহ্বার জড়তা কাটান (১টি Tongue Twister বলুন)',
             link: '/dashboard/spoken-english/pronunciation',
@@ -86,10 +93,10 @@ export default function SpokenEnglishDashboard() {
         },
         {
             id: 'm5',
-            title: 'বাস্তব জীবনের ৫টি ডায়ালগ শুনুন ও বলুন',
+            title: 'বাস্তব জীবনের ১টি দৃশ্যপটের রোলপ্লে ডায়ালগ চর্চা করুন',
             link: '/dashboard/spoken-english/conversations',
             icon: '🗣️',
-            actionText: 'ডায়ালগ প্র্যাকটিস',
+            actionText: 'রোলপ্লে প্র্যাকটিস',
         },
         {
             id: 'm6',
@@ -103,6 +110,24 @@ export default function SpokenEnglishDashboard() {
     const completedMissionCount = Object.values(completedMissions).filter(Boolean).length;
 
     const features = [
+        {
+            title: 'Step-by-Step Spoken English Mastery',
+            desc: 'am/is/are থেকে শুরু করে সকল Tense, Modals ও Spoken Structures — ৬-ধাপের বাক্য রূপান্তর (+, -, ?, ?-, WH+, WH-), নেটিভ স্টাইল, প্রশ্নোত্তর ও সেন্টেন্স বিল্ডার।',
+            href: '/dashboard/spoken-english/lessons',
+            icon: <BookOpen className="text-indigo-600" size={26} />,
+            color: 'from-indigo-50 via-blue-50 to-purple-50 border-indigo-200 hover:border-indigo-400 shadow-sm',
+            badge: '🌟 FLAGSHIP STEP-BY-STEP COURSE',
+            badgeColor: 'bg-indigo-100 text-indigo-800 border-indigo-300'
+        },
+        {
+            title: '20 Real-Life Situations Lab',
+            desc: 'সহজ থেকে ইন্টারমিডিয়েট ২০টি বাস্তব জীবনের দৃশ্যপট — কথা শুরু করার ৩টি বাক্য (Ice Breakers), টার্ন-বাই-টার্ন রোলপ্লে ও লাইভ মাইক টেস্ট।',
+            href: '/dashboard/spoken-english/conversations',
+            icon: <MessageSquare className="text-emerald-600" size={26} />,
+            color: 'from-emerald-50 via-teal-50 to-green-50 border-emerald-200 hover:border-emerald-400 shadow-sm',
+            badge: '🎭 20 SITUATIONS ROLEPLAY',
+            badgeColor: 'bg-emerald-100 text-emerald-800 border-emerald-300'
+        },
         {
             title: 'Common Mistakes & False Habits',
             desc: 'বাঙালিদের বহুল প্রচলিত ২৫+ ভুল যেমন "I am agree", "Cousin brother", "He told to me"-এর সহজ বাংলা ব্যাখ্যা ও শুদ্ধ রূপ।',
@@ -138,15 +163,6 @@ export default function SpokenEnglishDashboard() {
             color: 'from-cyan-50 to-blue-50 border-cyan-100 hover:border-cyan-300',
             badge: '100% FREE LIVE SPEAK',
             badgeColor: 'bg-cyan-100 text-cyan-800 border-cyan-200'
-        },
-        {
-            title: 'Conversational Phrases & Situations',
-            desc: 'ইন্টারভিউ, রেস্টুরেন্ট, ডাক্তার, শপিং ও এয়ারপোর্টের প্রয়োজনীয় বাক্য ও কুইজ এক্সারসাইজ।',
-            href: '/dashboard/spoken-english/conversations',
-            icon: <MessageSquare className="text-emerald-600" size={24} />,
-            color: 'from-emerald-50 to-teal-50 border-emerald-100 hover:border-emerald-300',
-            badge: 'PRACTICAL DIALOGUES',
-            badgeColor: 'bg-emerald-100 text-emerald-800 border-emerald-200'
         },
         {
             title: 'Headway Audio Dictation',
@@ -391,6 +407,79 @@ export default function SpokenEnglishDashboard() {
                                 </div>
                             );
                         })}
+                    </div>
+                </div>
+            </div>
+
+            {/* New Flagship Courses Showcase */}
+            <div className="mx-auto max-w-6xl px-6 pt-12">
+                <div className="grid md:grid-cols-2 gap-6">
+                    {/* Course 1: Step-by-Step Spoken English Mastery */}
+                    <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-900 via-indigo-950 to-slate-900 p-8 text-white border-2 border-indigo-500/30 shadow-xl flex flex-col justify-between">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-2xl pointer-events-none" />
+                        <div>
+                            <div className="flex items-center gap-2 mb-3">
+                                <span className="rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-400/30 px-3 py-1 text-[10px] font-black uppercase tracking-wider">
+                                    ⭐ মূল স্পোকেন কোর্স (Flagship)
+                                </span>
+                                <span className="rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 px-2.5 py-0.5 text-[10px] font-bold">
+                                    100% Free
+                                </span>
+                            </div>
+                            <h3 className="text-2xl font-black text-white leading-tight">
+                                স্টেপ-বাই-স্টেপ স্পোকেন ইংলিশ মাস্টার কোর্স
+                            </h3>
+                            <p className="mt-2 text-xs sm:text-sm text-indigo-200/90 leading-relaxed">
+                                <code className="bg-indigo-900/60 px-1.5 py-0.5 rounded text-indigo-300 font-mono">am/is/are</code> থেকে শুরু করে সকল Tense, Modals ও স্পোকেন স্ট্রাকচার। প্রতিটি লেসনে সম্পূর্ণ বাংলা ব্যাখ্যা, ৬-ধাপের বাক্য রূপান্তর (+, -, ?, ?-, WH+, WH-), নেটিভ অল্টারনেটিভস ও সেন্টেন্স বিল্ডার।
+                            </p>
+                            <div className="mt-4 flex flex-wrap gap-2 text-[11px] text-indigo-300">
+                                <span className="bg-white/10 px-2.5 py-1 rounded-lg">🔄 ৬-ধাপের রূপান্তর (+, -, ?, ?-, WH+, WH-)</span>
+                                <span className="bg-white/10 px-2.5 py-1 rounded-lg">🎙️ ব্রিটিশ অডিও ও লাইভ মাইক টেস্ট</span>
+                                <span className="bg-white/10 px-2.5 py-1 rounded-lg">❓ ৪-রকমের প্রশ্নোত্তর ড্রিল</span>
+                            </div>
+                        </div>
+                        <div className="mt-6">
+                            <Link
+                                href="/dashboard/spoken-english/lessons"
+                                className="inline-flex items-center justify-center gap-2 w-full rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm px-6 py-3.5 transition shadow-lg shadow-indigo-900/40"
+                            >
+                                লেসনগুলো শুরু করুন <ArrowUpRight size={18} />
+                            </Link>
+                        </div>
+                    </div>
+
+                    {/* Course 2: 20 Real-Life Situations Lab */}
+                    <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-teal-900 via-emerald-950 to-slate-900 p-8 text-white border-2 border-teal-500/30 shadow-xl flex flex-col justify-between">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-teal-500/10 rounded-full blur-2xl pointer-events-none" />
+                        <div>
+                            <div className="flex items-center gap-2 mb-3">
+                                <span className="rounded-full bg-teal-500/20 text-teal-300 border border-teal-400/30 px-3 py-1 text-[10px] font-black uppercase tracking-wider">
+                                    🎭 রিয়েল-লাইফ কনভারসেশন ল্যাব
+                                </span>
+                                <span className="rounded-full bg-amber-500/20 text-amber-300 border border-amber-400/30 px-2.5 py-0.5 text-[10px] font-bold">
+                                    ২০টি দৃশ্যপট
+                                </span>
+                            </div>
+                            <h3 className="text-2xl font-black text-white leading-tight">
+                                ২০টি বাস্তব জীবনের কনভারসেশন সিমুলেটর
+                            </h3>
+                            <p className="mt-2 text-xs sm:text-sm text-teal-200/90 leading-relaxed">
+                                কফি শপ, হোটেল, রেস্টুরেন্ট, ইন্টারভিউ, ডাক্তার ও এয়ারপোর্ট। কথা শুরু করার বাক্য (Ice Breakers), লাইভ মাইক দিয়ে টার্ন-বাই-টার্ন রোলপ্লে এবং ভদ্রভাবে কথা শেষ করার কৌশল।
+                            </p>
+                            <div className="mt-4 flex flex-wrap gap-2 text-[11px] text-teal-300">
+                                <span className="bg-white/10 px-2.5 py-1 rounded-lg">🚀 ৩টি Conversation Starter</span>
+                                <span className="bg-white/10 px-2.5 py-1 rounded-lg">🎙️ Speaker A / B রোলপ্লে</span>
+                                <span className="bg-white/10 px-2.5 py-1 rounded-lg">💡 নেটিভ ফ্রেজ ও ইডিয়ম</span>
+                            </div>
+                        </div>
+                        <div className="mt-6">
+                            <Link
+                                href="/dashboard/spoken-english/conversations"
+                                className="inline-flex items-center justify-center gap-2 w-full rounded-2xl bg-teal-600 hover:bg-teal-500 text-white font-bold text-sm px-6 py-3.5 transition shadow-lg shadow-teal-900/40"
+                            >
+                                কনভারসেশন ল্যাবে যান <ArrowUpRight size={18} />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
