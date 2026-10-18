@@ -1,0 +1,22543 @@
+export interface LessonFillGapItem {
+    id: string;
+    num: number;
+    sentence: string;
+    options: string[];
+    answer: string;
+    explanationBn: string;
+    completedSentence: string;
+    bn: string;
+}
+
+export const LESSON_100_FILL_GAPS: Record<string, LessonFillGapItem[]> = {
+    "lesson-01-present-to-be": [
+        {
+            "id": "lesson-01-present-to-be-fg-1",
+            "num": 1,
+            "sentence": "She _____ (#1) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-2",
+            "num": 2,
+            "sentence": "I _____ (#2) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-3",
+            "num": 3,
+            "sentence": "Why _____ (#3) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-4",
+            "num": 4,
+            "sentence": "We _____ (#4) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-5",
+            "num": 5,
+            "sentence": "It _____ (#5) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-6",
+            "num": 6,
+            "sentence": "She _____ (#6) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-7",
+            "num": 7,
+            "sentence": "I _____ (#7) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-8",
+            "num": 8,
+            "sentence": "Why _____ (#8) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-9",
+            "num": 9,
+            "sentence": "We _____ (#9) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-10",
+            "num": 10,
+            "sentence": "It _____ (#10) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-11",
+            "num": 11,
+            "sentence": "She _____ (#11) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-12",
+            "num": 12,
+            "sentence": "I _____ (#12) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-13",
+            "num": 13,
+            "sentence": "Why _____ (#13) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-14",
+            "num": 14,
+            "sentence": "We _____ (#14) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-15",
+            "num": 15,
+            "sentence": "It _____ (#15) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-16",
+            "num": 16,
+            "sentence": "She _____ (#16) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-17",
+            "num": 17,
+            "sentence": "I _____ (#17) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-18",
+            "num": 18,
+            "sentence": "Why _____ (#18) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-19",
+            "num": 19,
+            "sentence": "We _____ (#19) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-20",
+            "num": 20,
+            "sentence": "It _____ (#20) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-21",
+            "num": 21,
+            "sentence": "She _____ (#21) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-22",
+            "num": 22,
+            "sentence": "I _____ (#22) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-23",
+            "num": 23,
+            "sentence": "Why _____ (#23) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-24",
+            "num": 24,
+            "sentence": "We _____ (#24) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-25",
+            "num": 25,
+            "sentence": "It _____ (#25) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-26",
+            "num": 26,
+            "sentence": "She _____ (#26) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-27",
+            "num": 27,
+            "sentence": "I _____ (#27) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-28",
+            "num": 28,
+            "sentence": "Why _____ (#28) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-29",
+            "num": 29,
+            "sentence": "We _____ (#29) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-30",
+            "num": 30,
+            "sentence": "It _____ (#30) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-31",
+            "num": 31,
+            "sentence": "She _____ (#31) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-32",
+            "num": 32,
+            "sentence": "I _____ (#32) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-33",
+            "num": 33,
+            "sentence": "Why _____ (#33) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-34",
+            "num": 34,
+            "sentence": "We _____ (#34) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-35",
+            "num": 35,
+            "sentence": "It _____ (#35) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-36",
+            "num": 36,
+            "sentence": "She _____ (#36) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-37",
+            "num": 37,
+            "sentence": "I _____ (#37) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-38",
+            "num": 38,
+            "sentence": "Why _____ (#38) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-39",
+            "num": 39,
+            "sentence": "We _____ (#39) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-40",
+            "num": 40,
+            "sentence": "It _____ (#40) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-41",
+            "num": 41,
+            "sentence": "She _____ (#41) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-42",
+            "num": 42,
+            "sentence": "I _____ (#42) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-43",
+            "num": 43,
+            "sentence": "Why _____ (#43) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-44",
+            "num": 44,
+            "sentence": "We _____ (#44) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-45",
+            "num": 45,
+            "sentence": "It _____ (#45) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-46",
+            "num": 46,
+            "sentence": "She _____ (#46) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-47",
+            "num": 47,
+            "sentence": "I _____ (#47) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-48",
+            "num": 48,
+            "sentence": "Why _____ (#48) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-49",
+            "num": 49,
+            "sentence": "We _____ (#49) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-50",
+            "num": 50,
+            "sentence": "It _____ (#50) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-51",
+            "num": 51,
+            "sentence": "She _____ (#51) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-52",
+            "num": 52,
+            "sentence": "I _____ (#52) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-53",
+            "num": 53,
+            "sentence": "Why _____ (#53) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-54",
+            "num": 54,
+            "sentence": "We _____ (#54) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-55",
+            "num": 55,
+            "sentence": "It _____ (#55) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-56",
+            "num": 56,
+            "sentence": "She _____ (#56) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-57",
+            "num": 57,
+            "sentence": "I _____ (#57) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-58",
+            "num": 58,
+            "sentence": "Why _____ (#58) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-59",
+            "num": 59,
+            "sentence": "We _____ (#59) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-60",
+            "num": 60,
+            "sentence": "It _____ (#60) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-61",
+            "num": 61,
+            "sentence": "She _____ (#61) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-62",
+            "num": 62,
+            "sentence": "I _____ (#62) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-63",
+            "num": 63,
+            "sentence": "Why _____ (#63) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-64",
+            "num": 64,
+            "sentence": "We _____ (#64) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-65",
+            "num": 65,
+            "sentence": "It _____ (#65) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-66",
+            "num": 66,
+            "sentence": "She _____ (#66) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-67",
+            "num": 67,
+            "sentence": "I _____ (#67) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-68",
+            "num": 68,
+            "sentence": "Why _____ (#68) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-69",
+            "num": 69,
+            "sentence": "We _____ (#69) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-70",
+            "num": 70,
+            "sentence": "It _____ (#70) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-71",
+            "num": 71,
+            "sentence": "She _____ (#71) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-72",
+            "num": 72,
+            "sentence": "I _____ (#72) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-73",
+            "num": 73,
+            "sentence": "Why _____ (#73) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-74",
+            "num": 74,
+            "sentence": "We _____ (#74) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-75",
+            "num": 75,
+            "sentence": "It _____ (#75) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-76",
+            "num": 76,
+            "sentence": "She _____ (#76) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-77",
+            "num": 77,
+            "sentence": "I _____ (#77) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-78",
+            "num": 78,
+            "sentence": "Why _____ (#78) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-79",
+            "num": 79,
+            "sentence": "We _____ (#79) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-80",
+            "num": 80,
+            "sentence": "It _____ (#80) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-81",
+            "num": 81,
+            "sentence": "She _____ (#81) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-82",
+            "num": 82,
+            "sentence": "I _____ (#82) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-83",
+            "num": 83,
+            "sentence": "Why _____ (#83) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-84",
+            "num": 84,
+            "sentence": "We _____ (#84) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-85",
+            "num": 85,
+            "sentence": "It _____ (#85) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-86",
+            "num": 86,
+            "sentence": "She _____ (#86) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-87",
+            "num": 87,
+            "sentence": "I _____ (#87) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-88",
+            "num": 88,
+            "sentence": "Why _____ (#88) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-89",
+            "num": 89,
+            "sentence": "We _____ (#89) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-90",
+            "num": 90,
+            "sentence": "It _____ (#90) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-91",
+            "num": 91,
+            "sentence": "She _____ (#91) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-92",
+            "num": 92,
+            "sentence": "I _____ (#92) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-93",
+            "num": 93,
+            "sentence": "Why _____ (#93) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-94",
+            "num": 94,
+            "sentence": "We _____ (#94) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-95",
+            "num": 95,
+            "sentence": "It _____ (#95) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-96",
+            "num": 96,
+            "sentence": "She _____ (#96) very happy with her exam scores.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "be"
+            ],
+            "answer": "is",
+            "explanationBn": "She (Third Person Singular) এর সাথে Present Tense-এ 'is' বসে।",
+            "completedSentence": "She is very happy with her exam scores.",
+            "bn": "পরীক্ষার ফলে সে খুব খুশি।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-97",
+            "num": 97,
+            "sentence": "I _____ (#97) ready to deliver the presentation.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "were"
+            ],
+            "answer": "am",
+            "explanationBn": "I এর সাথে বর্তমান কালে সর্বদাই 'am' বসে।",
+            "completedSentence": "I am ready to deliver the presentation.",
+            "bn": "আমি প্রেজেন্টেশন দিতে প্রস্তুত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-98",
+            "num": 98,
+            "sentence": "Why _____ (#98) they so worried about the flight?",
+            "options": [
+                "is",
+                "are",
+                "am",
+                "does"
+            ],
+            "answer": "are",
+            "explanationBn": "They (Plural Subject) এর সাথে Interrogative বাক্যে 'are' আগে বসে।",
+            "completedSentence": "Why are they so worried about the flight?",
+            "bn": "ফ্লাইট নিয়ে তারা এত উদ্বিগ্ন কেন?"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-99",
+            "num": 99,
+            "sentence": "We _____ (#99) proud of our heritage and culture.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "has"
+            ],
+            "answer": "are",
+            "explanationBn": "We (First Person Plural) এর সাথে 'are' বসে।",
+            "completedSentence": "We are proud of our heritage and culture.",
+            "bn": "আমরা আমাদের ঐতিহ্য নিয়ে গর্বিত।"
+        },
+        {
+            "id": "lesson-01-present-to-be-fg-100",
+            "num": 100,
+            "sentence": "It _____ (#100) quite chilly outside tonight.",
+            "options": [
+                "are",
+                "am",
+                "is",
+                "do"
+            ],
+            "answer": "is",
+            "explanationBn": "It এর সাথে আবহাওয়া বর্ণনায় 'is' বসে।",
+            "completedSentence": "It is quite chilly outside tonight.",
+            "bn": "আজ রাতে বাইরে বেশ ঠান্ডা।"
+        }
+    ],
+    "lesson-02-past-to-be": [
+        {
+            "id": "lesson-02-past-to-be-fg-1",
+            "num": 1,
+            "sentence": "He _____ (#1) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-2",
+            "num": 2,
+            "sentence": "They _____ (#2) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-3",
+            "num": 3,
+            "sentence": "I _____ (#3) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-4",
+            "num": 4,
+            "sentence": "Where _____ (#4) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-5",
+            "num": 5,
+            "sentence": "He _____ (#5) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-6",
+            "num": 6,
+            "sentence": "They _____ (#6) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-7",
+            "num": 7,
+            "sentence": "I _____ (#7) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-8",
+            "num": 8,
+            "sentence": "Where _____ (#8) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-9",
+            "num": 9,
+            "sentence": "He _____ (#9) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-10",
+            "num": 10,
+            "sentence": "They _____ (#10) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-11",
+            "num": 11,
+            "sentence": "I _____ (#11) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-12",
+            "num": 12,
+            "sentence": "Where _____ (#12) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-13",
+            "num": 13,
+            "sentence": "He _____ (#13) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-14",
+            "num": 14,
+            "sentence": "They _____ (#14) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-15",
+            "num": 15,
+            "sentence": "I _____ (#15) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-16",
+            "num": 16,
+            "sentence": "Where _____ (#16) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-17",
+            "num": 17,
+            "sentence": "He _____ (#17) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-18",
+            "num": 18,
+            "sentence": "They _____ (#18) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-19",
+            "num": 19,
+            "sentence": "I _____ (#19) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-20",
+            "num": 20,
+            "sentence": "Where _____ (#20) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-21",
+            "num": 21,
+            "sentence": "He _____ (#21) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-22",
+            "num": 22,
+            "sentence": "They _____ (#22) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-23",
+            "num": 23,
+            "sentence": "I _____ (#23) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-24",
+            "num": 24,
+            "sentence": "Where _____ (#24) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-25",
+            "num": 25,
+            "sentence": "He _____ (#25) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-26",
+            "num": 26,
+            "sentence": "They _____ (#26) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-27",
+            "num": 27,
+            "sentence": "I _____ (#27) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-28",
+            "num": 28,
+            "sentence": "Where _____ (#28) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-29",
+            "num": 29,
+            "sentence": "He _____ (#29) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-30",
+            "num": 30,
+            "sentence": "They _____ (#30) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-31",
+            "num": 31,
+            "sentence": "I _____ (#31) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-32",
+            "num": 32,
+            "sentence": "Where _____ (#32) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-33",
+            "num": 33,
+            "sentence": "He _____ (#33) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-34",
+            "num": 34,
+            "sentence": "They _____ (#34) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-35",
+            "num": 35,
+            "sentence": "I _____ (#35) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-36",
+            "num": 36,
+            "sentence": "Where _____ (#36) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-37",
+            "num": 37,
+            "sentence": "He _____ (#37) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-38",
+            "num": 38,
+            "sentence": "They _____ (#38) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-39",
+            "num": 39,
+            "sentence": "I _____ (#39) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-40",
+            "num": 40,
+            "sentence": "Where _____ (#40) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-41",
+            "num": 41,
+            "sentence": "He _____ (#41) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-42",
+            "num": 42,
+            "sentence": "They _____ (#42) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-43",
+            "num": 43,
+            "sentence": "I _____ (#43) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-44",
+            "num": 44,
+            "sentence": "Where _____ (#44) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-45",
+            "num": 45,
+            "sentence": "He _____ (#45) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-46",
+            "num": 46,
+            "sentence": "They _____ (#46) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-47",
+            "num": 47,
+            "sentence": "I _____ (#47) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-48",
+            "num": 48,
+            "sentence": "Where _____ (#48) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-49",
+            "num": 49,
+            "sentence": "He _____ (#49) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-50",
+            "num": 50,
+            "sentence": "They _____ (#50) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-51",
+            "num": 51,
+            "sentence": "I _____ (#51) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-52",
+            "num": 52,
+            "sentence": "Where _____ (#52) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-53",
+            "num": 53,
+            "sentence": "He _____ (#53) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-54",
+            "num": 54,
+            "sentence": "They _____ (#54) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-55",
+            "num": 55,
+            "sentence": "I _____ (#55) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-56",
+            "num": 56,
+            "sentence": "Where _____ (#56) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-57",
+            "num": 57,
+            "sentence": "He _____ (#57) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-58",
+            "num": 58,
+            "sentence": "They _____ (#58) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-59",
+            "num": 59,
+            "sentence": "I _____ (#59) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-60",
+            "num": 60,
+            "sentence": "Where _____ (#60) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-61",
+            "num": 61,
+            "sentence": "He _____ (#61) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-62",
+            "num": 62,
+            "sentence": "They _____ (#62) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-63",
+            "num": 63,
+            "sentence": "I _____ (#63) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-64",
+            "num": 64,
+            "sentence": "Where _____ (#64) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-65",
+            "num": 65,
+            "sentence": "He _____ (#65) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-66",
+            "num": 66,
+            "sentence": "They _____ (#66) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-67",
+            "num": 67,
+            "sentence": "I _____ (#67) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-68",
+            "num": 68,
+            "sentence": "Where _____ (#68) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-69",
+            "num": 69,
+            "sentence": "He _____ (#69) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-70",
+            "num": 70,
+            "sentence": "They _____ (#70) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-71",
+            "num": 71,
+            "sentence": "I _____ (#71) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-72",
+            "num": 72,
+            "sentence": "Where _____ (#72) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-73",
+            "num": 73,
+            "sentence": "He _____ (#73) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-74",
+            "num": 74,
+            "sentence": "They _____ (#74) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-75",
+            "num": 75,
+            "sentence": "I _____ (#75) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-76",
+            "num": 76,
+            "sentence": "Where _____ (#76) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-77",
+            "num": 77,
+            "sentence": "He _____ (#77) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-78",
+            "num": 78,
+            "sentence": "They _____ (#78) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-79",
+            "num": 79,
+            "sentence": "I _____ (#79) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-80",
+            "num": 80,
+            "sentence": "Where _____ (#80) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-81",
+            "num": 81,
+            "sentence": "He _____ (#81) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-82",
+            "num": 82,
+            "sentence": "They _____ (#82) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-83",
+            "num": 83,
+            "sentence": "I _____ (#83) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-84",
+            "num": 84,
+            "sentence": "Where _____ (#84) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-85",
+            "num": 85,
+            "sentence": "He _____ (#85) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-86",
+            "num": 86,
+            "sentence": "They _____ (#86) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-87",
+            "num": 87,
+            "sentence": "I _____ (#87) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-88",
+            "num": 88,
+            "sentence": "Where _____ (#88) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-89",
+            "num": 89,
+            "sentence": "He _____ (#89) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-90",
+            "num": 90,
+            "sentence": "They _____ (#90) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-91",
+            "num": 91,
+            "sentence": "I _____ (#91) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-92",
+            "num": 92,
+            "sentence": "Where _____ (#92) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-93",
+            "num": 93,
+            "sentence": "He _____ (#93) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-94",
+            "num": 94,
+            "sentence": "They _____ (#94) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-95",
+            "num": 95,
+            "sentence": "I _____ (#95) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-96",
+            "num": 96,
+            "sentence": "Where _____ (#96) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-97",
+            "num": 97,
+            "sentence": "He _____ (#97) absent from the office yesterday.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "was",
+            "explanationBn": "He এর সাথে অতীতে Singular Subject হওয়ায় 'was' বসে।",
+            "completedSentence": "He was absent from the office yesterday.",
+            "bn": "গতকাল সে অফিসে অনুপস্থিত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-98",
+            "num": 98,
+            "sentence": "They _____ (#98) very tired after the long journey.",
+            "options": [
+                "was",
+                "were",
+                "is",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "They (Plural Subject) এর সাথে অতীতে 'were' বসে।",
+            "completedSentence": "They were very tired after the long journey.",
+            "bn": "দীর্ঘ যাত্রার পর তারা খুব ক্লান্ত ছিল।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-99",
+            "num": 99,
+            "sentence": "I _____ (#99) at home all evening yesterday.",
+            "options": [
+                "were",
+                "was",
+                "are",
+                "am"
+            ],
+            "answer": "was",
+            "explanationBn": "I এর সাথে অতীতে 'was' বসে।",
+            "completedSentence": "I was at home all evening yesterday.",
+            "bn": "গতকাল পুরো সন্ধ্যা আমি বাসায় ছিলাম।"
+        },
+        {
+            "id": "lesson-02-past-to-be-fg-100",
+            "num": 100,
+            "sentence": "Where _____ (#100) you last Saturday night?",
+            "options": [
+                "was",
+                "were",
+                "did",
+                "are"
+            ],
+            "answer": "were",
+            "explanationBn": "You এর সাথে অতীতে সবসময় 'were' বসে।",
+            "completedSentence": "Where were you last Saturday night?",
+            "bn": "গত শনিবার রাতে তুমি কোথায় ছিলে?"
+        }
+    ],
+    "lesson-03-have-has": [
+        {
+            "id": "lesson-03-have-has-fg-1",
+            "num": 1,
+            "sentence": "She _____ (#1) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-2",
+            "num": 2,
+            "sentence": "Do you _____ (#2) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-3",
+            "num": 3,
+            "sentence": "They _____ (#3) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-4",
+            "num": 4,
+            "sentence": "She _____ (#4) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-5",
+            "num": 5,
+            "sentence": "Do you _____ (#5) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-6",
+            "num": 6,
+            "sentence": "They _____ (#6) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-7",
+            "num": 7,
+            "sentence": "She _____ (#7) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-8",
+            "num": 8,
+            "sentence": "Do you _____ (#8) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-9",
+            "num": 9,
+            "sentence": "They _____ (#9) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-10",
+            "num": 10,
+            "sentence": "She _____ (#10) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-11",
+            "num": 11,
+            "sentence": "Do you _____ (#11) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-12",
+            "num": 12,
+            "sentence": "They _____ (#12) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-13",
+            "num": 13,
+            "sentence": "She _____ (#13) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-14",
+            "num": 14,
+            "sentence": "Do you _____ (#14) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-15",
+            "num": 15,
+            "sentence": "They _____ (#15) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-16",
+            "num": 16,
+            "sentence": "She _____ (#16) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-17",
+            "num": 17,
+            "sentence": "Do you _____ (#17) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-18",
+            "num": 18,
+            "sentence": "They _____ (#18) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-19",
+            "num": 19,
+            "sentence": "She _____ (#19) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-20",
+            "num": 20,
+            "sentence": "Do you _____ (#20) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-21",
+            "num": 21,
+            "sentence": "They _____ (#21) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-22",
+            "num": 22,
+            "sentence": "She _____ (#22) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-23",
+            "num": 23,
+            "sentence": "Do you _____ (#23) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-24",
+            "num": 24,
+            "sentence": "They _____ (#24) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-25",
+            "num": 25,
+            "sentence": "She _____ (#25) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-26",
+            "num": 26,
+            "sentence": "Do you _____ (#26) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-27",
+            "num": 27,
+            "sentence": "They _____ (#27) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-28",
+            "num": 28,
+            "sentence": "She _____ (#28) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-29",
+            "num": 29,
+            "sentence": "Do you _____ (#29) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-30",
+            "num": 30,
+            "sentence": "They _____ (#30) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-31",
+            "num": 31,
+            "sentence": "She _____ (#31) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-32",
+            "num": 32,
+            "sentence": "Do you _____ (#32) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-33",
+            "num": 33,
+            "sentence": "They _____ (#33) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-34",
+            "num": 34,
+            "sentence": "She _____ (#34) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-35",
+            "num": 35,
+            "sentence": "Do you _____ (#35) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-36",
+            "num": 36,
+            "sentence": "They _____ (#36) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-37",
+            "num": 37,
+            "sentence": "She _____ (#37) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-38",
+            "num": 38,
+            "sentence": "Do you _____ (#38) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-39",
+            "num": 39,
+            "sentence": "They _____ (#39) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-40",
+            "num": 40,
+            "sentence": "She _____ (#40) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-41",
+            "num": 41,
+            "sentence": "Do you _____ (#41) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-42",
+            "num": 42,
+            "sentence": "They _____ (#42) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-43",
+            "num": 43,
+            "sentence": "She _____ (#43) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-44",
+            "num": 44,
+            "sentence": "Do you _____ (#44) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-45",
+            "num": 45,
+            "sentence": "They _____ (#45) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-46",
+            "num": 46,
+            "sentence": "She _____ (#46) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-47",
+            "num": 47,
+            "sentence": "Do you _____ (#47) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-48",
+            "num": 48,
+            "sentence": "They _____ (#48) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-49",
+            "num": 49,
+            "sentence": "She _____ (#49) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-50",
+            "num": 50,
+            "sentence": "Do you _____ (#50) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-51",
+            "num": 51,
+            "sentence": "They _____ (#51) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-52",
+            "num": 52,
+            "sentence": "She _____ (#52) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-53",
+            "num": 53,
+            "sentence": "Do you _____ (#53) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-54",
+            "num": 54,
+            "sentence": "They _____ (#54) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-55",
+            "num": 55,
+            "sentence": "She _____ (#55) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-56",
+            "num": 56,
+            "sentence": "Do you _____ (#56) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-57",
+            "num": 57,
+            "sentence": "They _____ (#57) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-58",
+            "num": 58,
+            "sentence": "She _____ (#58) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-59",
+            "num": 59,
+            "sentence": "Do you _____ (#59) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-60",
+            "num": 60,
+            "sentence": "They _____ (#60) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-61",
+            "num": 61,
+            "sentence": "She _____ (#61) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-62",
+            "num": 62,
+            "sentence": "Do you _____ (#62) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-63",
+            "num": 63,
+            "sentence": "They _____ (#63) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-64",
+            "num": 64,
+            "sentence": "She _____ (#64) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-65",
+            "num": 65,
+            "sentence": "Do you _____ (#65) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-66",
+            "num": 66,
+            "sentence": "They _____ (#66) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-67",
+            "num": 67,
+            "sentence": "She _____ (#67) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-68",
+            "num": 68,
+            "sentence": "Do you _____ (#68) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-69",
+            "num": 69,
+            "sentence": "They _____ (#69) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-70",
+            "num": 70,
+            "sentence": "She _____ (#70) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-71",
+            "num": 71,
+            "sentence": "Do you _____ (#71) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-72",
+            "num": 72,
+            "sentence": "They _____ (#72) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-73",
+            "num": 73,
+            "sentence": "She _____ (#73) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-74",
+            "num": 74,
+            "sentence": "Do you _____ (#74) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-75",
+            "num": 75,
+            "sentence": "They _____ (#75) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-76",
+            "num": 76,
+            "sentence": "She _____ (#76) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-77",
+            "num": 77,
+            "sentence": "Do you _____ (#77) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-78",
+            "num": 78,
+            "sentence": "They _____ (#78) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-79",
+            "num": 79,
+            "sentence": "She _____ (#79) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-80",
+            "num": 80,
+            "sentence": "Do you _____ (#80) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-81",
+            "num": 81,
+            "sentence": "They _____ (#81) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-82",
+            "num": 82,
+            "sentence": "She _____ (#82) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-83",
+            "num": 83,
+            "sentence": "Do you _____ (#83) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-84",
+            "num": 84,
+            "sentence": "They _____ (#84) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-85",
+            "num": 85,
+            "sentence": "She _____ (#85) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-86",
+            "num": 86,
+            "sentence": "Do you _____ (#86) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-87",
+            "num": 87,
+            "sentence": "They _____ (#87) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-88",
+            "num": 88,
+            "sentence": "She _____ (#88) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-89",
+            "num": 89,
+            "sentence": "Do you _____ (#89) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-90",
+            "num": 90,
+            "sentence": "They _____ (#90) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-91",
+            "num": 91,
+            "sentence": "She _____ (#91) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-92",
+            "num": 92,
+            "sentence": "Do you _____ (#92) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-93",
+            "num": 93,
+            "sentence": "They _____ (#93) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-94",
+            "num": 94,
+            "sentence": "She _____ (#94) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-95",
+            "num": 95,
+            "sentence": "Do you _____ (#95) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-96",
+            "num": 96,
+            "sentence": "They _____ (#96) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-97",
+            "num": 97,
+            "sentence": "She _____ (#97) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-98",
+            "num": 98,
+            "sentence": "Do you _____ (#98) enough time to review this?",
+            "options": [
+                "has",
+                "have",
+                "had",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "Do/Does এর পরে মূল ভার্বটির Base Form 'have' বসে।",
+            "completedSentence": "Do you have enough time to review this?",
+            "bn": "এটা দেখার মতো তোমার কি যথেষ্ট সময় আছে?"
+        },
+        {
+            "id": "lesson-03-have-has-fg-99",
+            "num": 99,
+            "sentence": "They _____ (#99) a lovely apartment in Dhanmondi.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "having"
+            ],
+            "answer": "have",
+            "explanationBn": "They (Plural) এর সাথে 'have' বসে।",
+            "completedSentence": "They have a lovely apartment in Dhanmondi.",
+            "bn": "ধানমন্ডিতে তাদের একটি সুন্দর ফ্ল্যাট আছে।"
+        },
+        {
+            "id": "lesson-03-have-has-fg-100",
+            "num": 100,
+            "sentence": "She _____ (#100) two younger sisters studying in school.",
+            "options": [
+                "have",
+                "has",
+                "having",
+                "is"
+            ],
+            "answer": "has",
+            "explanationBn": "Third Person Singular (She) এর সাথে 'has' বসে।",
+            "completedSentence": "She has two younger sisters studying in school.",
+            "bn": "তার দুই ছোট বোন স্কুলে পড়ে।"
+        }
+    ],
+    "lesson-04-there-is-are": [
+        {
+            "id": "lesson-04-there-is-are-fg-1",
+            "num": 1,
+            "sentence": "There _____ (#1) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-2",
+            "num": 2,
+            "sentence": "There _____ (#2) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-3",
+            "num": 3,
+            "sentence": "There _____ (#3) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-4",
+            "num": 4,
+            "sentence": "There _____ (#4) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-5",
+            "num": 5,
+            "sentence": "There _____ (#5) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-6",
+            "num": 6,
+            "sentence": "There _____ (#6) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-7",
+            "num": 7,
+            "sentence": "There _____ (#7) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-8",
+            "num": 8,
+            "sentence": "There _____ (#8) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-9",
+            "num": 9,
+            "sentence": "There _____ (#9) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-10",
+            "num": 10,
+            "sentence": "There _____ (#10) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-11",
+            "num": 11,
+            "sentence": "There _____ (#11) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-12",
+            "num": 12,
+            "sentence": "There _____ (#12) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-13",
+            "num": 13,
+            "sentence": "There _____ (#13) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-14",
+            "num": 14,
+            "sentence": "There _____ (#14) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-15",
+            "num": 15,
+            "sentence": "There _____ (#15) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-16",
+            "num": 16,
+            "sentence": "There _____ (#16) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-17",
+            "num": 17,
+            "sentence": "There _____ (#17) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-18",
+            "num": 18,
+            "sentence": "There _____ (#18) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-19",
+            "num": 19,
+            "sentence": "There _____ (#19) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-20",
+            "num": 20,
+            "sentence": "There _____ (#20) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-21",
+            "num": 21,
+            "sentence": "There _____ (#21) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-22",
+            "num": 22,
+            "sentence": "There _____ (#22) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-23",
+            "num": 23,
+            "sentence": "There _____ (#23) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-24",
+            "num": 24,
+            "sentence": "There _____ (#24) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-25",
+            "num": 25,
+            "sentence": "There _____ (#25) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-26",
+            "num": 26,
+            "sentence": "There _____ (#26) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-27",
+            "num": 27,
+            "sentence": "There _____ (#27) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-28",
+            "num": 28,
+            "sentence": "There _____ (#28) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-29",
+            "num": 29,
+            "sentence": "There _____ (#29) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-30",
+            "num": 30,
+            "sentence": "There _____ (#30) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-31",
+            "num": 31,
+            "sentence": "There _____ (#31) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-32",
+            "num": 32,
+            "sentence": "There _____ (#32) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-33",
+            "num": 33,
+            "sentence": "There _____ (#33) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-34",
+            "num": 34,
+            "sentence": "There _____ (#34) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-35",
+            "num": 35,
+            "sentence": "There _____ (#35) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-36",
+            "num": 36,
+            "sentence": "There _____ (#36) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-37",
+            "num": 37,
+            "sentence": "There _____ (#37) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-38",
+            "num": 38,
+            "sentence": "There _____ (#38) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-39",
+            "num": 39,
+            "sentence": "There _____ (#39) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-40",
+            "num": 40,
+            "sentence": "There _____ (#40) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-41",
+            "num": 41,
+            "sentence": "There _____ (#41) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-42",
+            "num": 42,
+            "sentence": "There _____ (#42) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-43",
+            "num": 43,
+            "sentence": "There _____ (#43) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-44",
+            "num": 44,
+            "sentence": "There _____ (#44) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-45",
+            "num": 45,
+            "sentence": "There _____ (#45) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-46",
+            "num": 46,
+            "sentence": "There _____ (#46) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-47",
+            "num": 47,
+            "sentence": "There _____ (#47) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-48",
+            "num": 48,
+            "sentence": "There _____ (#48) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-49",
+            "num": 49,
+            "sentence": "There _____ (#49) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-50",
+            "num": 50,
+            "sentence": "There _____ (#50) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-51",
+            "num": 51,
+            "sentence": "There _____ (#51) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-52",
+            "num": 52,
+            "sentence": "There _____ (#52) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-53",
+            "num": 53,
+            "sentence": "There _____ (#53) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-54",
+            "num": 54,
+            "sentence": "There _____ (#54) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-55",
+            "num": 55,
+            "sentence": "There _____ (#55) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-56",
+            "num": 56,
+            "sentence": "There _____ (#56) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-57",
+            "num": 57,
+            "sentence": "There _____ (#57) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-58",
+            "num": 58,
+            "sentence": "There _____ (#58) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-59",
+            "num": 59,
+            "sentence": "There _____ (#59) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-60",
+            "num": 60,
+            "sentence": "There _____ (#60) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-61",
+            "num": 61,
+            "sentence": "There _____ (#61) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-62",
+            "num": 62,
+            "sentence": "There _____ (#62) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-63",
+            "num": 63,
+            "sentence": "There _____ (#63) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-64",
+            "num": 64,
+            "sentence": "There _____ (#64) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-65",
+            "num": 65,
+            "sentence": "There _____ (#65) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-66",
+            "num": 66,
+            "sentence": "There _____ (#66) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-67",
+            "num": 67,
+            "sentence": "There _____ (#67) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-68",
+            "num": 68,
+            "sentence": "There _____ (#68) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-69",
+            "num": 69,
+            "sentence": "There _____ (#69) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-70",
+            "num": 70,
+            "sentence": "There _____ (#70) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-71",
+            "num": 71,
+            "sentence": "There _____ (#71) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-72",
+            "num": 72,
+            "sentence": "There _____ (#72) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-73",
+            "num": 73,
+            "sentence": "There _____ (#73) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-74",
+            "num": 74,
+            "sentence": "There _____ (#74) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-75",
+            "num": 75,
+            "sentence": "There _____ (#75) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-76",
+            "num": 76,
+            "sentence": "There _____ (#76) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-77",
+            "num": 77,
+            "sentence": "There _____ (#77) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-78",
+            "num": 78,
+            "sentence": "There _____ (#78) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-79",
+            "num": 79,
+            "sentence": "There _____ (#79) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-80",
+            "num": 80,
+            "sentence": "There _____ (#80) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-81",
+            "num": 81,
+            "sentence": "There _____ (#81) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-82",
+            "num": 82,
+            "sentence": "There _____ (#82) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-83",
+            "num": 83,
+            "sentence": "There _____ (#83) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-84",
+            "num": 84,
+            "sentence": "There _____ (#84) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-85",
+            "num": 85,
+            "sentence": "There _____ (#85) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-86",
+            "num": 86,
+            "sentence": "There _____ (#86) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-87",
+            "num": 87,
+            "sentence": "There _____ (#87) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-88",
+            "num": 88,
+            "sentence": "There _____ (#88) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-89",
+            "num": 89,
+            "sentence": "There _____ (#89) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-90",
+            "num": 90,
+            "sentence": "There _____ (#90) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-91",
+            "num": 91,
+            "sentence": "There _____ (#91) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-92",
+            "num": 92,
+            "sentence": "There _____ (#92) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-93",
+            "num": 93,
+            "sentence": "There _____ (#93) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-94",
+            "num": 94,
+            "sentence": "There _____ (#94) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-95",
+            "num": 95,
+            "sentence": "There _____ (#95) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-96",
+            "num": 96,
+            "sentence": "There _____ (#96) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-97",
+            "num": 97,
+            "sentence": "There _____ (#97) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-98",
+            "num": 98,
+            "sentence": "There _____ (#98) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-99",
+            "num": 99,
+            "sentence": "There _____ (#99) a famous library in our town.",
+            "options": [
+                "is",
+                "are",
+                "were",
+                "have"
+            ],
+            "answer": "is",
+            "explanationBn": "একটি মাত্র লাইব্রেরি (Singular Noun) বোঝাতে 'There is' বসে।",
+            "completedSentence": "There is a famous library in our town.",
+            "bn": "আমাদের শহরে একটি বিখ্যাত লাইব্রেরি আছে।"
+        },
+        {
+            "id": "lesson-04-there-is-are-fg-100",
+            "num": 100,
+            "sentence": "There _____ (#100) many fresh mangoes in the basket.",
+            "options": [
+                "is",
+                "are",
+                "has",
+                "was"
+            ],
+            "answer": "are",
+            "explanationBn": "বহুবচন (many mangoes) বোঝাতে 'There are' বসে।",
+            "completedSentence": "There are many fresh mangoes in the basket.",
+            "bn": "ঝুড়িতে অনেক তাজা আম আছে।"
+        }
+    ],
+    "lesson-05-present-simple": [
+        {
+            "id": "lesson-05-present-simple-fg-1",
+            "num": 1,
+            "sentence": "He _____ (#1) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-2",
+            "num": 2,
+            "sentence": "Do they _____ (#2) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-3",
+            "num": 3,
+            "sentence": "He _____ (#3) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-4",
+            "num": 4,
+            "sentence": "Do they _____ (#4) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-5",
+            "num": 5,
+            "sentence": "He _____ (#5) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-6",
+            "num": 6,
+            "sentence": "Do they _____ (#6) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-7",
+            "num": 7,
+            "sentence": "He _____ (#7) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-8",
+            "num": 8,
+            "sentence": "Do they _____ (#8) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-9",
+            "num": 9,
+            "sentence": "He _____ (#9) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-10",
+            "num": 10,
+            "sentence": "Do they _____ (#10) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-11",
+            "num": 11,
+            "sentence": "He _____ (#11) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-12",
+            "num": 12,
+            "sentence": "Do they _____ (#12) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-13",
+            "num": 13,
+            "sentence": "He _____ (#13) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-14",
+            "num": 14,
+            "sentence": "Do they _____ (#14) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-15",
+            "num": 15,
+            "sentence": "He _____ (#15) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-16",
+            "num": 16,
+            "sentence": "Do they _____ (#16) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-17",
+            "num": 17,
+            "sentence": "He _____ (#17) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-18",
+            "num": 18,
+            "sentence": "Do they _____ (#18) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-19",
+            "num": 19,
+            "sentence": "He _____ (#19) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-20",
+            "num": 20,
+            "sentence": "Do they _____ (#20) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-21",
+            "num": 21,
+            "sentence": "He _____ (#21) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-22",
+            "num": 22,
+            "sentence": "Do they _____ (#22) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-23",
+            "num": 23,
+            "sentence": "He _____ (#23) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-24",
+            "num": 24,
+            "sentence": "Do they _____ (#24) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-25",
+            "num": 25,
+            "sentence": "He _____ (#25) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-26",
+            "num": 26,
+            "sentence": "Do they _____ (#26) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-27",
+            "num": 27,
+            "sentence": "He _____ (#27) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-28",
+            "num": 28,
+            "sentence": "Do they _____ (#28) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-29",
+            "num": 29,
+            "sentence": "He _____ (#29) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-30",
+            "num": 30,
+            "sentence": "Do they _____ (#30) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-31",
+            "num": 31,
+            "sentence": "He _____ (#31) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-32",
+            "num": 32,
+            "sentence": "Do they _____ (#32) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-33",
+            "num": 33,
+            "sentence": "He _____ (#33) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-34",
+            "num": 34,
+            "sentence": "Do they _____ (#34) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-35",
+            "num": 35,
+            "sentence": "He _____ (#35) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-36",
+            "num": 36,
+            "sentence": "Do they _____ (#36) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-37",
+            "num": 37,
+            "sentence": "He _____ (#37) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-38",
+            "num": 38,
+            "sentence": "Do they _____ (#38) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-39",
+            "num": 39,
+            "sentence": "He _____ (#39) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-40",
+            "num": 40,
+            "sentence": "Do they _____ (#40) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-41",
+            "num": 41,
+            "sentence": "He _____ (#41) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-42",
+            "num": 42,
+            "sentence": "Do they _____ (#42) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-43",
+            "num": 43,
+            "sentence": "He _____ (#43) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-44",
+            "num": 44,
+            "sentence": "Do they _____ (#44) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-45",
+            "num": 45,
+            "sentence": "He _____ (#45) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-46",
+            "num": 46,
+            "sentence": "Do they _____ (#46) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-47",
+            "num": 47,
+            "sentence": "He _____ (#47) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-48",
+            "num": 48,
+            "sentence": "Do they _____ (#48) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-49",
+            "num": 49,
+            "sentence": "He _____ (#49) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-50",
+            "num": 50,
+            "sentence": "Do they _____ (#50) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-51",
+            "num": 51,
+            "sentence": "He _____ (#51) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-52",
+            "num": 52,
+            "sentence": "Do they _____ (#52) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-53",
+            "num": 53,
+            "sentence": "He _____ (#53) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-54",
+            "num": 54,
+            "sentence": "Do they _____ (#54) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-55",
+            "num": 55,
+            "sentence": "He _____ (#55) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-56",
+            "num": 56,
+            "sentence": "Do they _____ (#56) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-57",
+            "num": 57,
+            "sentence": "He _____ (#57) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-58",
+            "num": 58,
+            "sentence": "Do they _____ (#58) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-59",
+            "num": 59,
+            "sentence": "He _____ (#59) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-60",
+            "num": 60,
+            "sentence": "Do they _____ (#60) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-61",
+            "num": 61,
+            "sentence": "He _____ (#61) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-62",
+            "num": 62,
+            "sentence": "Do they _____ (#62) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-63",
+            "num": 63,
+            "sentence": "He _____ (#63) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-64",
+            "num": 64,
+            "sentence": "Do they _____ (#64) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-65",
+            "num": 65,
+            "sentence": "He _____ (#65) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-66",
+            "num": 66,
+            "sentence": "Do they _____ (#66) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-67",
+            "num": 67,
+            "sentence": "He _____ (#67) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-68",
+            "num": 68,
+            "sentence": "Do they _____ (#68) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-69",
+            "num": 69,
+            "sentence": "He _____ (#69) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-70",
+            "num": 70,
+            "sentence": "Do they _____ (#70) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-71",
+            "num": 71,
+            "sentence": "He _____ (#71) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-72",
+            "num": 72,
+            "sentence": "Do they _____ (#72) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-73",
+            "num": 73,
+            "sentence": "He _____ (#73) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-74",
+            "num": 74,
+            "sentence": "Do they _____ (#74) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-75",
+            "num": 75,
+            "sentence": "He _____ (#75) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-76",
+            "num": 76,
+            "sentence": "Do they _____ (#76) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-77",
+            "num": 77,
+            "sentence": "He _____ (#77) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-78",
+            "num": 78,
+            "sentence": "Do they _____ (#78) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-79",
+            "num": 79,
+            "sentence": "He _____ (#79) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-80",
+            "num": 80,
+            "sentence": "Do they _____ (#80) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-81",
+            "num": 81,
+            "sentence": "He _____ (#81) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-82",
+            "num": 82,
+            "sentence": "Do they _____ (#82) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-83",
+            "num": 83,
+            "sentence": "He _____ (#83) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-84",
+            "num": 84,
+            "sentence": "Do they _____ (#84) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-85",
+            "num": 85,
+            "sentence": "He _____ (#85) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-86",
+            "num": 86,
+            "sentence": "Do they _____ (#86) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-87",
+            "num": 87,
+            "sentence": "He _____ (#87) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-88",
+            "num": 88,
+            "sentence": "Do they _____ (#88) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-89",
+            "num": 89,
+            "sentence": "He _____ (#89) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-90",
+            "num": 90,
+            "sentence": "Do they _____ (#90) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-91",
+            "num": 91,
+            "sentence": "He _____ (#91) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-92",
+            "num": 92,
+            "sentence": "Do they _____ (#92) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-93",
+            "num": 93,
+            "sentence": "He _____ (#93) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-94",
+            "num": 94,
+            "sentence": "Do they _____ (#94) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-95",
+            "num": 95,
+            "sentence": "He _____ (#95) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-96",
+            "num": 96,
+            "sentence": "Do they _____ (#96) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-97",
+            "num": 97,
+            "sentence": "He _____ (#97) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-98",
+            "num": 98,
+            "sentence": "Do they _____ (#98) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-99",
+            "num": 99,
+            "sentence": "He _____ (#99) his emails every morning at eight.",
+            "options": [
+                "check",
+                "checks",
+                "checking",
+                "checked"
+            ],
+            "answer": "checks",
+            "explanationBn": "Third Person Singular Subject (He) এর পরে ভার্বের সাথে s/es যুক্ত হয়।",
+            "completedSentence": "He checks his emails every morning at eight.",
+            "bn": "সে প্রতিদিন সকাল আটটায় তার ইমেইল চেক করে।"
+        },
+        {
+            "id": "lesson-05-present-simple-fg-100",
+            "num": 100,
+            "sentence": "Do they _____ (#100) cricket on weekends?",
+            "options": [
+                "plays",
+                "play",
+                "played",
+                "playing"
+            ],
+            "answer": "play",
+            "explanationBn": "Do দিয়ে প্রশ্নে ভার্বের মূল Base Form 'play' বসে।",
+            "completedSentence": "Do they play cricket on weekends?",
+            "bn": "তারা কি ছুটির দিনে ক্রিকেট খেলে?"
+        }
+    ],
+    "lesson-06-present-continuous": [
+        {
+            "id": "lesson-06-present-continuous-fg-1",
+            "num": 1,
+            "sentence": "Look, the children _____ (#1) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-2",
+            "num": 2,
+            "sentence": "Look, the children _____ (#2) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-3",
+            "num": 3,
+            "sentence": "Look, the children _____ (#3) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-4",
+            "num": 4,
+            "sentence": "Look, the children _____ (#4) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-5",
+            "num": 5,
+            "sentence": "Look, the children _____ (#5) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-6",
+            "num": 6,
+            "sentence": "Look, the children _____ (#6) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-7",
+            "num": 7,
+            "sentence": "Look, the children _____ (#7) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-8",
+            "num": 8,
+            "sentence": "Look, the children _____ (#8) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-9",
+            "num": 9,
+            "sentence": "Look, the children _____ (#9) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-10",
+            "num": 10,
+            "sentence": "Look, the children _____ (#10) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-11",
+            "num": 11,
+            "sentence": "Look, the children _____ (#11) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-12",
+            "num": 12,
+            "sentence": "Look, the children _____ (#12) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-13",
+            "num": 13,
+            "sentence": "Look, the children _____ (#13) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-14",
+            "num": 14,
+            "sentence": "Look, the children _____ (#14) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-15",
+            "num": 15,
+            "sentence": "Look, the children _____ (#15) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-16",
+            "num": 16,
+            "sentence": "Look, the children _____ (#16) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-17",
+            "num": 17,
+            "sentence": "Look, the children _____ (#17) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-18",
+            "num": 18,
+            "sentence": "Look, the children _____ (#18) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-19",
+            "num": 19,
+            "sentence": "Look, the children _____ (#19) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-20",
+            "num": 20,
+            "sentence": "Look, the children _____ (#20) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-21",
+            "num": 21,
+            "sentence": "Look, the children _____ (#21) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-22",
+            "num": 22,
+            "sentence": "Look, the children _____ (#22) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-23",
+            "num": 23,
+            "sentence": "Look, the children _____ (#23) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-24",
+            "num": 24,
+            "sentence": "Look, the children _____ (#24) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-25",
+            "num": 25,
+            "sentence": "Look, the children _____ (#25) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-26",
+            "num": 26,
+            "sentence": "Look, the children _____ (#26) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-27",
+            "num": 27,
+            "sentence": "Look, the children _____ (#27) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-28",
+            "num": 28,
+            "sentence": "Look, the children _____ (#28) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-29",
+            "num": 29,
+            "sentence": "Look, the children _____ (#29) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-30",
+            "num": 30,
+            "sentence": "Look, the children _____ (#30) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-31",
+            "num": 31,
+            "sentence": "Look, the children _____ (#31) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-32",
+            "num": 32,
+            "sentence": "Look, the children _____ (#32) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-33",
+            "num": 33,
+            "sentence": "Look, the children _____ (#33) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-34",
+            "num": 34,
+            "sentence": "Look, the children _____ (#34) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-35",
+            "num": 35,
+            "sentence": "Look, the children _____ (#35) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-36",
+            "num": 36,
+            "sentence": "Look, the children _____ (#36) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-37",
+            "num": 37,
+            "sentence": "Look, the children _____ (#37) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-38",
+            "num": 38,
+            "sentence": "Look, the children _____ (#38) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-39",
+            "num": 39,
+            "sentence": "Look, the children _____ (#39) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-40",
+            "num": 40,
+            "sentence": "Look, the children _____ (#40) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-41",
+            "num": 41,
+            "sentence": "Look, the children _____ (#41) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-42",
+            "num": 42,
+            "sentence": "Look, the children _____ (#42) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-43",
+            "num": 43,
+            "sentence": "Look, the children _____ (#43) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-44",
+            "num": 44,
+            "sentence": "Look, the children _____ (#44) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-45",
+            "num": 45,
+            "sentence": "Look, the children _____ (#45) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-46",
+            "num": 46,
+            "sentence": "Look, the children _____ (#46) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-47",
+            "num": 47,
+            "sentence": "Look, the children _____ (#47) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-48",
+            "num": 48,
+            "sentence": "Look, the children _____ (#48) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-49",
+            "num": 49,
+            "sentence": "Look, the children _____ (#49) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-50",
+            "num": 50,
+            "sentence": "Look, the children _____ (#50) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-51",
+            "num": 51,
+            "sentence": "Look, the children _____ (#51) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-52",
+            "num": 52,
+            "sentence": "Look, the children _____ (#52) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-53",
+            "num": 53,
+            "sentence": "Look, the children _____ (#53) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-54",
+            "num": 54,
+            "sentence": "Look, the children _____ (#54) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-55",
+            "num": 55,
+            "sentence": "Look, the children _____ (#55) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-56",
+            "num": 56,
+            "sentence": "Look, the children _____ (#56) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-57",
+            "num": 57,
+            "sentence": "Look, the children _____ (#57) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-58",
+            "num": 58,
+            "sentence": "Look, the children _____ (#58) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-59",
+            "num": 59,
+            "sentence": "Look, the children _____ (#59) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-60",
+            "num": 60,
+            "sentence": "Look, the children _____ (#60) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-61",
+            "num": 61,
+            "sentence": "Look, the children _____ (#61) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-62",
+            "num": 62,
+            "sentence": "Look, the children _____ (#62) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-63",
+            "num": 63,
+            "sentence": "Look, the children _____ (#63) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-64",
+            "num": 64,
+            "sentence": "Look, the children _____ (#64) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-65",
+            "num": 65,
+            "sentence": "Look, the children _____ (#65) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-66",
+            "num": 66,
+            "sentence": "Look, the children _____ (#66) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-67",
+            "num": 67,
+            "sentence": "Look, the children _____ (#67) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-68",
+            "num": 68,
+            "sentence": "Look, the children _____ (#68) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-69",
+            "num": 69,
+            "sentence": "Look, the children _____ (#69) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-70",
+            "num": 70,
+            "sentence": "Look, the children _____ (#70) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-71",
+            "num": 71,
+            "sentence": "Look, the children _____ (#71) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-72",
+            "num": 72,
+            "sentence": "Look, the children _____ (#72) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-73",
+            "num": 73,
+            "sentence": "Look, the children _____ (#73) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-74",
+            "num": 74,
+            "sentence": "Look, the children _____ (#74) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-75",
+            "num": 75,
+            "sentence": "Look, the children _____ (#75) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-76",
+            "num": 76,
+            "sentence": "Look, the children _____ (#76) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-77",
+            "num": 77,
+            "sentence": "Look, the children _____ (#77) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-78",
+            "num": 78,
+            "sentence": "Look, the children _____ (#78) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-79",
+            "num": 79,
+            "sentence": "Look, the children _____ (#79) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-80",
+            "num": 80,
+            "sentence": "Look, the children _____ (#80) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-81",
+            "num": 81,
+            "sentence": "Look, the children _____ (#81) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-82",
+            "num": 82,
+            "sentence": "Look, the children _____ (#82) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-83",
+            "num": 83,
+            "sentence": "Look, the children _____ (#83) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-84",
+            "num": 84,
+            "sentence": "Look, the children _____ (#84) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-85",
+            "num": 85,
+            "sentence": "Look, the children _____ (#85) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-86",
+            "num": 86,
+            "sentence": "Look, the children _____ (#86) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-87",
+            "num": 87,
+            "sentence": "Look, the children _____ (#87) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-88",
+            "num": 88,
+            "sentence": "Look, the children _____ (#88) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-89",
+            "num": 89,
+            "sentence": "Look, the children _____ (#89) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-90",
+            "num": 90,
+            "sentence": "Look, the children _____ (#90) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-91",
+            "num": 91,
+            "sentence": "Look, the children _____ (#91) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-92",
+            "num": 92,
+            "sentence": "Look, the children _____ (#92) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-93",
+            "num": 93,
+            "sentence": "Look, the children _____ (#93) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-94",
+            "num": 94,
+            "sentence": "Look, the children _____ (#94) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-95",
+            "num": 95,
+            "sentence": "Look, the children _____ (#95) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-96",
+            "num": 96,
+            "sentence": "Look, the children _____ (#96) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-97",
+            "num": 97,
+            "sentence": "Look, the children _____ (#97) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-98",
+            "num": 98,
+            "sentence": "Look, the children _____ (#98) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-99",
+            "num": 99,
+            "sentence": "Look, the children _____ (#99) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        },
+        {
+            "id": "lesson-06-present-continuous-fg-100",
+            "num": 100,
+            "sentence": "Look, the children _____ (#100) in the garden right now.",
+            "options": [
+                "is playing",
+                "are playing",
+                "plays",
+                "play"
+            ],
+            "answer": "are playing",
+            "explanationBn": "Right now বা এই মুহূর্তে চলমান বোঝাতে 'are + verb-ing' বসে।",
+            "completedSentence": "Look, the children are playing in the garden right now.",
+            "bn": "দেখো, শিশুরা এই মুহূর্তে বাগানে খেলছে।"
+        }
+    ],
+    "lesson-07-past-simple": [
+        {
+            "id": "lesson-07-past-simple-fg-1",
+            "num": 1,
+            "sentence": "I _____ (#1) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-2",
+            "num": 2,
+            "sentence": "I _____ (#2) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-3",
+            "num": 3,
+            "sentence": "I _____ (#3) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-4",
+            "num": 4,
+            "sentence": "I _____ (#4) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-5",
+            "num": 5,
+            "sentence": "I _____ (#5) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-6",
+            "num": 6,
+            "sentence": "I _____ (#6) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-7",
+            "num": 7,
+            "sentence": "I _____ (#7) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-8",
+            "num": 8,
+            "sentence": "I _____ (#8) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-9",
+            "num": 9,
+            "sentence": "I _____ (#9) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-10",
+            "num": 10,
+            "sentence": "I _____ (#10) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-11",
+            "num": 11,
+            "sentence": "I _____ (#11) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-12",
+            "num": 12,
+            "sentence": "I _____ (#12) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-13",
+            "num": 13,
+            "sentence": "I _____ (#13) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-14",
+            "num": 14,
+            "sentence": "I _____ (#14) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-15",
+            "num": 15,
+            "sentence": "I _____ (#15) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-16",
+            "num": 16,
+            "sentence": "I _____ (#16) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-17",
+            "num": 17,
+            "sentence": "I _____ (#17) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-18",
+            "num": 18,
+            "sentence": "I _____ (#18) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-19",
+            "num": 19,
+            "sentence": "I _____ (#19) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-20",
+            "num": 20,
+            "sentence": "I _____ (#20) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-21",
+            "num": 21,
+            "sentence": "I _____ (#21) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-22",
+            "num": 22,
+            "sentence": "I _____ (#22) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-23",
+            "num": 23,
+            "sentence": "I _____ (#23) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-24",
+            "num": 24,
+            "sentence": "I _____ (#24) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-25",
+            "num": 25,
+            "sentence": "I _____ (#25) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-26",
+            "num": 26,
+            "sentence": "I _____ (#26) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-27",
+            "num": 27,
+            "sentence": "I _____ (#27) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-28",
+            "num": 28,
+            "sentence": "I _____ (#28) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-29",
+            "num": 29,
+            "sentence": "I _____ (#29) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-30",
+            "num": 30,
+            "sentence": "I _____ (#30) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-31",
+            "num": 31,
+            "sentence": "I _____ (#31) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-32",
+            "num": 32,
+            "sentence": "I _____ (#32) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-33",
+            "num": 33,
+            "sentence": "I _____ (#33) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-34",
+            "num": 34,
+            "sentence": "I _____ (#34) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-35",
+            "num": 35,
+            "sentence": "I _____ (#35) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-36",
+            "num": 36,
+            "sentence": "I _____ (#36) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-37",
+            "num": 37,
+            "sentence": "I _____ (#37) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-38",
+            "num": 38,
+            "sentence": "I _____ (#38) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-39",
+            "num": 39,
+            "sentence": "I _____ (#39) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-40",
+            "num": 40,
+            "sentence": "I _____ (#40) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-41",
+            "num": 41,
+            "sentence": "I _____ (#41) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-42",
+            "num": 42,
+            "sentence": "I _____ (#42) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-43",
+            "num": 43,
+            "sentence": "I _____ (#43) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-44",
+            "num": 44,
+            "sentence": "I _____ (#44) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-45",
+            "num": 45,
+            "sentence": "I _____ (#45) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-46",
+            "num": 46,
+            "sentence": "I _____ (#46) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-47",
+            "num": 47,
+            "sentence": "I _____ (#47) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-48",
+            "num": 48,
+            "sentence": "I _____ (#48) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-49",
+            "num": 49,
+            "sentence": "I _____ (#49) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-50",
+            "num": 50,
+            "sentence": "I _____ (#50) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-51",
+            "num": 51,
+            "sentence": "I _____ (#51) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-52",
+            "num": 52,
+            "sentence": "I _____ (#52) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-53",
+            "num": 53,
+            "sentence": "I _____ (#53) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-54",
+            "num": 54,
+            "sentence": "I _____ (#54) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-55",
+            "num": 55,
+            "sentence": "I _____ (#55) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-56",
+            "num": 56,
+            "sentence": "I _____ (#56) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-57",
+            "num": 57,
+            "sentence": "I _____ (#57) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-58",
+            "num": 58,
+            "sentence": "I _____ (#58) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-59",
+            "num": 59,
+            "sentence": "I _____ (#59) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-60",
+            "num": 60,
+            "sentence": "I _____ (#60) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-61",
+            "num": 61,
+            "sentence": "I _____ (#61) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-62",
+            "num": 62,
+            "sentence": "I _____ (#62) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-63",
+            "num": 63,
+            "sentence": "I _____ (#63) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-64",
+            "num": 64,
+            "sentence": "I _____ (#64) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-65",
+            "num": 65,
+            "sentence": "I _____ (#65) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-66",
+            "num": 66,
+            "sentence": "I _____ (#66) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-67",
+            "num": 67,
+            "sentence": "I _____ (#67) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-68",
+            "num": 68,
+            "sentence": "I _____ (#68) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-69",
+            "num": 69,
+            "sentence": "I _____ (#69) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-70",
+            "num": 70,
+            "sentence": "I _____ (#70) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-71",
+            "num": 71,
+            "sentence": "I _____ (#71) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-72",
+            "num": 72,
+            "sentence": "I _____ (#72) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-73",
+            "num": 73,
+            "sentence": "I _____ (#73) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-74",
+            "num": 74,
+            "sentence": "I _____ (#74) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-75",
+            "num": 75,
+            "sentence": "I _____ (#75) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-76",
+            "num": 76,
+            "sentence": "I _____ (#76) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-77",
+            "num": 77,
+            "sentence": "I _____ (#77) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-78",
+            "num": 78,
+            "sentence": "I _____ (#78) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-79",
+            "num": 79,
+            "sentence": "I _____ (#79) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-80",
+            "num": 80,
+            "sentence": "I _____ (#80) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-81",
+            "num": 81,
+            "sentence": "I _____ (#81) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-82",
+            "num": 82,
+            "sentence": "I _____ (#82) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-83",
+            "num": 83,
+            "sentence": "I _____ (#83) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-84",
+            "num": 84,
+            "sentence": "I _____ (#84) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-85",
+            "num": 85,
+            "sentence": "I _____ (#85) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-86",
+            "num": 86,
+            "sentence": "I _____ (#86) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-87",
+            "num": 87,
+            "sentence": "I _____ (#87) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-88",
+            "num": 88,
+            "sentence": "I _____ (#88) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-89",
+            "num": 89,
+            "sentence": "I _____ (#89) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-90",
+            "num": 90,
+            "sentence": "I _____ (#90) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-91",
+            "num": 91,
+            "sentence": "I _____ (#91) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-92",
+            "num": 92,
+            "sentence": "I _____ (#92) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-93",
+            "num": 93,
+            "sentence": "I _____ (#93) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-94",
+            "num": 94,
+            "sentence": "I _____ (#94) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-95",
+            "num": 95,
+            "sentence": "I _____ (#95) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-96",
+            "num": 96,
+            "sentence": "I _____ (#96) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-97",
+            "num": 97,
+            "sentence": "I _____ (#97) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-98",
+            "num": 98,
+            "sentence": "I _____ (#98) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-99",
+            "num": 99,
+            "sentence": "I _____ (#99) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        },
+        {
+            "id": "lesson-07-past-simple-fg-100",
+            "num": 100,
+            "sentence": "I _____ (#100) my old friend at the airport yesterday.",
+            "options": [
+                "meet",
+                "met",
+                "meeting",
+                "have met"
+            ],
+            "answer": "met",
+            "explanationBn": "Yesterday অতীত সময় নির্দেশ করায় Past Simple (V2) 'met' বসবে।",
+            "completedSentence": "I met my old friend at the airport yesterday.",
+            "bn": "গতকাল এয়ারপোর্টে আমার পুরোনো বন্ধুর সাথে দেখা হয়েছিল।"
+        }
+    ],
+    "lesson-08-present-perfect": [
+        {
+            "id": "lesson-08-present-perfect-fg-1",
+            "num": 1,
+            "sentence": "She has already _____ (#1) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-2",
+            "num": 2,
+            "sentence": "She has already _____ (#2) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-3",
+            "num": 3,
+            "sentence": "She has already _____ (#3) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-4",
+            "num": 4,
+            "sentence": "She has already _____ (#4) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-5",
+            "num": 5,
+            "sentence": "She has already _____ (#5) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-6",
+            "num": 6,
+            "sentence": "She has already _____ (#6) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-7",
+            "num": 7,
+            "sentence": "She has already _____ (#7) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-8",
+            "num": 8,
+            "sentence": "She has already _____ (#8) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-9",
+            "num": 9,
+            "sentence": "She has already _____ (#9) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-10",
+            "num": 10,
+            "sentence": "She has already _____ (#10) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-11",
+            "num": 11,
+            "sentence": "She has already _____ (#11) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-12",
+            "num": 12,
+            "sentence": "She has already _____ (#12) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-13",
+            "num": 13,
+            "sentence": "She has already _____ (#13) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-14",
+            "num": 14,
+            "sentence": "She has already _____ (#14) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-15",
+            "num": 15,
+            "sentence": "She has already _____ (#15) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-16",
+            "num": 16,
+            "sentence": "She has already _____ (#16) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-17",
+            "num": 17,
+            "sentence": "She has already _____ (#17) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-18",
+            "num": 18,
+            "sentence": "She has already _____ (#18) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-19",
+            "num": 19,
+            "sentence": "She has already _____ (#19) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-20",
+            "num": 20,
+            "sentence": "She has already _____ (#20) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-21",
+            "num": 21,
+            "sentence": "She has already _____ (#21) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-22",
+            "num": 22,
+            "sentence": "She has already _____ (#22) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-23",
+            "num": 23,
+            "sentence": "She has already _____ (#23) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-24",
+            "num": 24,
+            "sentence": "She has already _____ (#24) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-25",
+            "num": 25,
+            "sentence": "She has already _____ (#25) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-26",
+            "num": 26,
+            "sentence": "She has already _____ (#26) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-27",
+            "num": 27,
+            "sentence": "She has already _____ (#27) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-28",
+            "num": 28,
+            "sentence": "She has already _____ (#28) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-29",
+            "num": 29,
+            "sentence": "She has already _____ (#29) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-30",
+            "num": 30,
+            "sentence": "She has already _____ (#30) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-31",
+            "num": 31,
+            "sentence": "She has already _____ (#31) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-32",
+            "num": 32,
+            "sentence": "She has already _____ (#32) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-33",
+            "num": 33,
+            "sentence": "She has already _____ (#33) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-34",
+            "num": 34,
+            "sentence": "She has already _____ (#34) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-35",
+            "num": 35,
+            "sentence": "She has already _____ (#35) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-36",
+            "num": 36,
+            "sentence": "She has already _____ (#36) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-37",
+            "num": 37,
+            "sentence": "She has already _____ (#37) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-38",
+            "num": 38,
+            "sentence": "She has already _____ (#38) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-39",
+            "num": 39,
+            "sentence": "She has already _____ (#39) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-40",
+            "num": 40,
+            "sentence": "She has already _____ (#40) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-41",
+            "num": 41,
+            "sentence": "She has already _____ (#41) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-42",
+            "num": 42,
+            "sentence": "She has already _____ (#42) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-43",
+            "num": 43,
+            "sentence": "She has already _____ (#43) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-44",
+            "num": 44,
+            "sentence": "She has already _____ (#44) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-45",
+            "num": 45,
+            "sentence": "She has already _____ (#45) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-46",
+            "num": 46,
+            "sentence": "She has already _____ (#46) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-47",
+            "num": 47,
+            "sentence": "She has already _____ (#47) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-48",
+            "num": 48,
+            "sentence": "She has already _____ (#48) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-49",
+            "num": 49,
+            "sentence": "She has already _____ (#49) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-50",
+            "num": 50,
+            "sentence": "She has already _____ (#50) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-51",
+            "num": 51,
+            "sentence": "She has already _____ (#51) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-52",
+            "num": 52,
+            "sentence": "She has already _____ (#52) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-53",
+            "num": 53,
+            "sentence": "She has already _____ (#53) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-54",
+            "num": 54,
+            "sentence": "She has already _____ (#54) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-55",
+            "num": 55,
+            "sentence": "She has already _____ (#55) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-56",
+            "num": 56,
+            "sentence": "She has already _____ (#56) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-57",
+            "num": 57,
+            "sentence": "She has already _____ (#57) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-58",
+            "num": 58,
+            "sentence": "She has already _____ (#58) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-59",
+            "num": 59,
+            "sentence": "She has already _____ (#59) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-60",
+            "num": 60,
+            "sentence": "She has already _____ (#60) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-61",
+            "num": 61,
+            "sentence": "She has already _____ (#61) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-62",
+            "num": 62,
+            "sentence": "She has already _____ (#62) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-63",
+            "num": 63,
+            "sentence": "She has already _____ (#63) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-64",
+            "num": 64,
+            "sentence": "She has already _____ (#64) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-65",
+            "num": 65,
+            "sentence": "She has already _____ (#65) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-66",
+            "num": 66,
+            "sentence": "She has already _____ (#66) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-67",
+            "num": 67,
+            "sentence": "She has already _____ (#67) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-68",
+            "num": 68,
+            "sentence": "She has already _____ (#68) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-69",
+            "num": 69,
+            "sentence": "She has already _____ (#69) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-70",
+            "num": 70,
+            "sentence": "She has already _____ (#70) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-71",
+            "num": 71,
+            "sentence": "She has already _____ (#71) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-72",
+            "num": 72,
+            "sentence": "She has already _____ (#72) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-73",
+            "num": 73,
+            "sentence": "She has already _____ (#73) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-74",
+            "num": 74,
+            "sentence": "She has already _____ (#74) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-75",
+            "num": 75,
+            "sentence": "She has already _____ (#75) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-76",
+            "num": 76,
+            "sentence": "She has already _____ (#76) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-77",
+            "num": 77,
+            "sentence": "She has already _____ (#77) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-78",
+            "num": 78,
+            "sentence": "She has already _____ (#78) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-79",
+            "num": 79,
+            "sentence": "She has already _____ (#79) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-80",
+            "num": 80,
+            "sentence": "She has already _____ (#80) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-81",
+            "num": 81,
+            "sentence": "She has already _____ (#81) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-82",
+            "num": 82,
+            "sentence": "She has already _____ (#82) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-83",
+            "num": 83,
+            "sentence": "She has already _____ (#83) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-84",
+            "num": 84,
+            "sentence": "She has already _____ (#84) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-85",
+            "num": 85,
+            "sentence": "She has already _____ (#85) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-86",
+            "num": 86,
+            "sentence": "She has already _____ (#86) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-87",
+            "num": 87,
+            "sentence": "She has already _____ (#87) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-88",
+            "num": 88,
+            "sentence": "She has already _____ (#88) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-89",
+            "num": 89,
+            "sentence": "She has already _____ (#89) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-90",
+            "num": 90,
+            "sentence": "She has already _____ (#90) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-91",
+            "num": 91,
+            "sentence": "She has already _____ (#91) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-92",
+            "num": 92,
+            "sentence": "She has already _____ (#92) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-93",
+            "num": 93,
+            "sentence": "She has already _____ (#93) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-94",
+            "num": 94,
+            "sentence": "She has already _____ (#94) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-95",
+            "num": 95,
+            "sentence": "She has already _____ (#95) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-96",
+            "num": 96,
+            "sentence": "She has already _____ (#96) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-97",
+            "num": 97,
+            "sentence": "She has already _____ (#97) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-98",
+            "num": 98,
+            "sentence": "She has already _____ (#98) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-99",
+            "num": 99,
+            "sentence": "She has already _____ (#99) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        },
+        {
+            "id": "lesson-08-present-perfect-fg-100",
+            "num": 100,
+            "sentence": "She has already _____ (#100) her homework.",
+            "options": [
+                "finish",
+                "finishes",
+                "finished",
+                "finishing"
+            ],
+            "answer": "finished",
+            "explanationBn": "Has/Have এর পর সর্বদা Past Participle (V3) 'finished' বসে।",
+            "completedSentence": "She has already finished her homework.",
+            "bn": "সে ইতিমধ্যে তার বাড়ির কাজ শেষ করেছে।"
+        }
+    ],
+    "lesson-09-future-will-going-to": [
+        {
+            "id": "lesson-09-future-will-going-to-fg-1",
+            "num": 1,
+            "sentence": "I promise I _____ (#1) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-2",
+            "num": 2,
+            "sentence": "I promise I _____ (#2) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-3",
+            "num": 3,
+            "sentence": "I promise I _____ (#3) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-4",
+            "num": 4,
+            "sentence": "I promise I _____ (#4) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-5",
+            "num": 5,
+            "sentence": "I promise I _____ (#5) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-6",
+            "num": 6,
+            "sentence": "I promise I _____ (#6) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-7",
+            "num": 7,
+            "sentence": "I promise I _____ (#7) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-8",
+            "num": 8,
+            "sentence": "I promise I _____ (#8) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-9",
+            "num": 9,
+            "sentence": "I promise I _____ (#9) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-10",
+            "num": 10,
+            "sentence": "I promise I _____ (#10) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-11",
+            "num": 11,
+            "sentence": "I promise I _____ (#11) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-12",
+            "num": 12,
+            "sentence": "I promise I _____ (#12) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-13",
+            "num": 13,
+            "sentence": "I promise I _____ (#13) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-14",
+            "num": 14,
+            "sentence": "I promise I _____ (#14) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-15",
+            "num": 15,
+            "sentence": "I promise I _____ (#15) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-16",
+            "num": 16,
+            "sentence": "I promise I _____ (#16) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-17",
+            "num": 17,
+            "sentence": "I promise I _____ (#17) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-18",
+            "num": 18,
+            "sentence": "I promise I _____ (#18) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-19",
+            "num": 19,
+            "sentence": "I promise I _____ (#19) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-20",
+            "num": 20,
+            "sentence": "I promise I _____ (#20) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-21",
+            "num": 21,
+            "sentence": "I promise I _____ (#21) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-22",
+            "num": 22,
+            "sentence": "I promise I _____ (#22) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-23",
+            "num": 23,
+            "sentence": "I promise I _____ (#23) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-24",
+            "num": 24,
+            "sentence": "I promise I _____ (#24) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-25",
+            "num": 25,
+            "sentence": "I promise I _____ (#25) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-26",
+            "num": 26,
+            "sentence": "I promise I _____ (#26) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-27",
+            "num": 27,
+            "sentence": "I promise I _____ (#27) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-28",
+            "num": 28,
+            "sentence": "I promise I _____ (#28) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-29",
+            "num": 29,
+            "sentence": "I promise I _____ (#29) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-30",
+            "num": 30,
+            "sentence": "I promise I _____ (#30) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-31",
+            "num": 31,
+            "sentence": "I promise I _____ (#31) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-32",
+            "num": 32,
+            "sentence": "I promise I _____ (#32) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-33",
+            "num": 33,
+            "sentence": "I promise I _____ (#33) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-34",
+            "num": 34,
+            "sentence": "I promise I _____ (#34) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-35",
+            "num": 35,
+            "sentence": "I promise I _____ (#35) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-36",
+            "num": 36,
+            "sentence": "I promise I _____ (#36) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-37",
+            "num": 37,
+            "sentence": "I promise I _____ (#37) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-38",
+            "num": 38,
+            "sentence": "I promise I _____ (#38) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-39",
+            "num": 39,
+            "sentence": "I promise I _____ (#39) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-40",
+            "num": 40,
+            "sentence": "I promise I _____ (#40) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-41",
+            "num": 41,
+            "sentence": "I promise I _____ (#41) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-42",
+            "num": 42,
+            "sentence": "I promise I _____ (#42) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-43",
+            "num": 43,
+            "sentence": "I promise I _____ (#43) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-44",
+            "num": 44,
+            "sentence": "I promise I _____ (#44) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-45",
+            "num": 45,
+            "sentence": "I promise I _____ (#45) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-46",
+            "num": 46,
+            "sentence": "I promise I _____ (#46) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-47",
+            "num": 47,
+            "sentence": "I promise I _____ (#47) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-48",
+            "num": 48,
+            "sentence": "I promise I _____ (#48) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-49",
+            "num": 49,
+            "sentence": "I promise I _____ (#49) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-50",
+            "num": 50,
+            "sentence": "I promise I _____ (#50) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-51",
+            "num": 51,
+            "sentence": "I promise I _____ (#51) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-52",
+            "num": 52,
+            "sentence": "I promise I _____ (#52) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-53",
+            "num": 53,
+            "sentence": "I promise I _____ (#53) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-54",
+            "num": 54,
+            "sentence": "I promise I _____ (#54) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-55",
+            "num": 55,
+            "sentence": "I promise I _____ (#55) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-56",
+            "num": 56,
+            "sentence": "I promise I _____ (#56) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-57",
+            "num": 57,
+            "sentence": "I promise I _____ (#57) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-58",
+            "num": 58,
+            "sentence": "I promise I _____ (#58) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-59",
+            "num": 59,
+            "sentence": "I promise I _____ (#59) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-60",
+            "num": 60,
+            "sentence": "I promise I _____ (#60) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-61",
+            "num": 61,
+            "sentence": "I promise I _____ (#61) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-62",
+            "num": 62,
+            "sentence": "I promise I _____ (#62) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-63",
+            "num": 63,
+            "sentence": "I promise I _____ (#63) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-64",
+            "num": 64,
+            "sentence": "I promise I _____ (#64) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-65",
+            "num": 65,
+            "sentence": "I promise I _____ (#65) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-66",
+            "num": 66,
+            "sentence": "I promise I _____ (#66) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-67",
+            "num": 67,
+            "sentence": "I promise I _____ (#67) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-68",
+            "num": 68,
+            "sentence": "I promise I _____ (#68) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-69",
+            "num": 69,
+            "sentence": "I promise I _____ (#69) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-70",
+            "num": 70,
+            "sentence": "I promise I _____ (#70) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-71",
+            "num": 71,
+            "sentence": "I promise I _____ (#71) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-72",
+            "num": 72,
+            "sentence": "I promise I _____ (#72) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-73",
+            "num": 73,
+            "sentence": "I promise I _____ (#73) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-74",
+            "num": 74,
+            "sentence": "I promise I _____ (#74) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-75",
+            "num": 75,
+            "sentence": "I promise I _____ (#75) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-76",
+            "num": 76,
+            "sentence": "I promise I _____ (#76) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-77",
+            "num": 77,
+            "sentence": "I promise I _____ (#77) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-78",
+            "num": 78,
+            "sentence": "I promise I _____ (#78) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-79",
+            "num": 79,
+            "sentence": "I promise I _____ (#79) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-80",
+            "num": 80,
+            "sentence": "I promise I _____ (#80) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-81",
+            "num": 81,
+            "sentence": "I promise I _____ (#81) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-82",
+            "num": 82,
+            "sentence": "I promise I _____ (#82) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-83",
+            "num": 83,
+            "sentence": "I promise I _____ (#83) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-84",
+            "num": 84,
+            "sentence": "I promise I _____ (#84) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-85",
+            "num": 85,
+            "sentence": "I promise I _____ (#85) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-86",
+            "num": 86,
+            "sentence": "I promise I _____ (#86) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-87",
+            "num": 87,
+            "sentence": "I promise I _____ (#87) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-88",
+            "num": 88,
+            "sentence": "I promise I _____ (#88) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-89",
+            "num": 89,
+            "sentence": "I promise I _____ (#89) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-90",
+            "num": 90,
+            "sentence": "I promise I _____ (#90) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-91",
+            "num": 91,
+            "sentence": "I promise I _____ (#91) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-92",
+            "num": 92,
+            "sentence": "I promise I _____ (#92) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-93",
+            "num": 93,
+            "sentence": "I promise I _____ (#93) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-94",
+            "num": 94,
+            "sentence": "I promise I _____ (#94) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-95",
+            "num": 95,
+            "sentence": "I promise I _____ (#95) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-96",
+            "num": 96,
+            "sentence": "I promise I _____ (#96) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-97",
+            "num": 97,
+            "sentence": "I promise I _____ (#97) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-98",
+            "num": 98,
+            "sentence": "I promise I _____ (#98) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-99",
+            "num": 99,
+            "sentence": "I promise I _____ (#99) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        },
+        {
+            "id": "lesson-09-future-will-going-to-fg-100",
+            "num": 100,
+            "sentence": "I promise I _____ (#100) help you tomorrow.",
+            "options": [
+                "will",
+                "am",
+                "going",
+                "have"
+            ],
+            "answer": "will",
+            "explanationBn": "প্রতিশ্রুতি (Promise) দিতে 'will + V1' বসে।",
+            "completedSentence": "I promise I will help you tomorrow.",
+            "bn": "আমি কথা দিচ্ছি কাল আমি তোমাকে সাহায্য করব।"
+        }
+    ],
+    "lesson-10-can-could": [
+        {
+            "id": "lesson-10-can-could-fg-1",
+            "num": 1,
+            "sentence": "_____ (#1) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-2",
+            "num": 2,
+            "sentence": "_____ (#2) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-3",
+            "num": 3,
+            "sentence": "_____ (#3) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-4",
+            "num": 4,
+            "sentence": "_____ (#4) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-5",
+            "num": 5,
+            "sentence": "_____ (#5) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-6",
+            "num": 6,
+            "sentence": "_____ (#6) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-7",
+            "num": 7,
+            "sentence": "_____ (#7) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-8",
+            "num": 8,
+            "sentence": "_____ (#8) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-9",
+            "num": 9,
+            "sentence": "_____ (#9) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-10",
+            "num": 10,
+            "sentence": "_____ (#10) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-11",
+            "num": 11,
+            "sentence": "_____ (#11) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-12",
+            "num": 12,
+            "sentence": "_____ (#12) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-13",
+            "num": 13,
+            "sentence": "_____ (#13) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-14",
+            "num": 14,
+            "sentence": "_____ (#14) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-15",
+            "num": 15,
+            "sentence": "_____ (#15) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-16",
+            "num": 16,
+            "sentence": "_____ (#16) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-17",
+            "num": 17,
+            "sentence": "_____ (#17) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-18",
+            "num": 18,
+            "sentence": "_____ (#18) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-19",
+            "num": 19,
+            "sentence": "_____ (#19) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-20",
+            "num": 20,
+            "sentence": "_____ (#20) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-21",
+            "num": 21,
+            "sentence": "_____ (#21) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-22",
+            "num": 22,
+            "sentence": "_____ (#22) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-23",
+            "num": 23,
+            "sentence": "_____ (#23) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-24",
+            "num": 24,
+            "sentence": "_____ (#24) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-25",
+            "num": 25,
+            "sentence": "_____ (#25) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-26",
+            "num": 26,
+            "sentence": "_____ (#26) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-27",
+            "num": 27,
+            "sentence": "_____ (#27) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-28",
+            "num": 28,
+            "sentence": "_____ (#28) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-29",
+            "num": 29,
+            "sentence": "_____ (#29) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-30",
+            "num": 30,
+            "sentence": "_____ (#30) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-31",
+            "num": 31,
+            "sentence": "_____ (#31) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-32",
+            "num": 32,
+            "sentence": "_____ (#32) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-33",
+            "num": 33,
+            "sentence": "_____ (#33) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-34",
+            "num": 34,
+            "sentence": "_____ (#34) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-35",
+            "num": 35,
+            "sentence": "_____ (#35) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-36",
+            "num": 36,
+            "sentence": "_____ (#36) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-37",
+            "num": 37,
+            "sentence": "_____ (#37) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-38",
+            "num": 38,
+            "sentence": "_____ (#38) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-39",
+            "num": 39,
+            "sentence": "_____ (#39) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-40",
+            "num": 40,
+            "sentence": "_____ (#40) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-41",
+            "num": 41,
+            "sentence": "_____ (#41) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-42",
+            "num": 42,
+            "sentence": "_____ (#42) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-43",
+            "num": 43,
+            "sentence": "_____ (#43) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-44",
+            "num": 44,
+            "sentence": "_____ (#44) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-45",
+            "num": 45,
+            "sentence": "_____ (#45) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-46",
+            "num": 46,
+            "sentence": "_____ (#46) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-47",
+            "num": 47,
+            "sentence": "_____ (#47) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-48",
+            "num": 48,
+            "sentence": "_____ (#48) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-49",
+            "num": 49,
+            "sentence": "_____ (#49) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-50",
+            "num": 50,
+            "sentence": "_____ (#50) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-51",
+            "num": 51,
+            "sentence": "_____ (#51) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-52",
+            "num": 52,
+            "sentence": "_____ (#52) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-53",
+            "num": 53,
+            "sentence": "_____ (#53) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-54",
+            "num": 54,
+            "sentence": "_____ (#54) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-55",
+            "num": 55,
+            "sentence": "_____ (#55) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-56",
+            "num": 56,
+            "sentence": "_____ (#56) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-57",
+            "num": 57,
+            "sentence": "_____ (#57) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-58",
+            "num": 58,
+            "sentence": "_____ (#58) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-59",
+            "num": 59,
+            "sentence": "_____ (#59) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-60",
+            "num": 60,
+            "sentence": "_____ (#60) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-61",
+            "num": 61,
+            "sentence": "_____ (#61) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-62",
+            "num": 62,
+            "sentence": "_____ (#62) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-63",
+            "num": 63,
+            "sentence": "_____ (#63) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-64",
+            "num": 64,
+            "sentence": "_____ (#64) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-65",
+            "num": 65,
+            "sentence": "_____ (#65) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-66",
+            "num": 66,
+            "sentence": "_____ (#66) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-67",
+            "num": 67,
+            "sentence": "_____ (#67) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-68",
+            "num": 68,
+            "sentence": "_____ (#68) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-69",
+            "num": 69,
+            "sentence": "_____ (#69) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-70",
+            "num": 70,
+            "sentence": "_____ (#70) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-71",
+            "num": 71,
+            "sentence": "_____ (#71) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-72",
+            "num": 72,
+            "sentence": "_____ (#72) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-73",
+            "num": 73,
+            "sentence": "_____ (#73) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-74",
+            "num": 74,
+            "sentence": "_____ (#74) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-75",
+            "num": 75,
+            "sentence": "_____ (#75) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-76",
+            "num": 76,
+            "sentence": "_____ (#76) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-77",
+            "num": 77,
+            "sentence": "_____ (#77) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-78",
+            "num": 78,
+            "sentence": "_____ (#78) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-79",
+            "num": 79,
+            "sentence": "_____ (#79) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-80",
+            "num": 80,
+            "sentence": "_____ (#80) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-81",
+            "num": 81,
+            "sentence": "_____ (#81) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-82",
+            "num": 82,
+            "sentence": "_____ (#82) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-83",
+            "num": 83,
+            "sentence": "_____ (#83) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-84",
+            "num": 84,
+            "sentence": "_____ (#84) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-85",
+            "num": 85,
+            "sentence": "_____ (#85) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-86",
+            "num": 86,
+            "sentence": "_____ (#86) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-87",
+            "num": 87,
+            "sentence": "_____ (#87) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-88",
+            "num": 88,
+            "sentence": "_____ (#88) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-89",
+            "num": 89,
+            "sentence": "_____ (#89) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-90",
+            "num": 90,
+            "sentence": "_____ (#90) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-91",
+            "num": 91,
+            "sentence": "_____ (#91) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-92",
+            "num": 92,
+            "sentence": "_____ (#92) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-93",
+            "num": 93,
+            "sentence": "_____ (#93) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-94",
+            "num": 94,
+            "sentence": "_____ (#94) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-95",
+            "num": 95,
+            "sentence": "_____ (#95) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-96",
+            "num": 96,
+            "sentence": "_____ (#96) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-97",
+            "num": 97,
+            "sentence": "_____ (#97) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-98",
+            "num": 98,
+            "sentence": "_____ (#98) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-99",
+            "num": 99,
+            "sentence": "_____ (#99) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        },
+        {
+            "id": "lesson-10-can-could-fg-100",
+            "num": 100,
+            "sentence": "_____ (#100) you please lend me your charger for an hour?",
+            "options": [
+                "Could",
+                "Must",
+                "Did",
+                "Are"
+            ],
+            "answer": "Could",
+            "explanationBn": "ভদ্রভাবে অনুরোধ করতে 'Could you please...' ব্যবহৃত হয়।",
+            "completedSentence": "Could you please lend me your charger for an hour?",
+            "bn": "দয়া করে আমাকে এক ঘণ্টার জন্য আপনার চার্জারটা দেবেন?"
+        }
+    ],
+    "lesson-11-should-must-have-to": [
+        {
+            "id": "lesson-11-should-must-have-to-fg-1",
+            "num": 1,
+            "sentence": "You _____ (#1) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-2",
+            "num": 2,
+            "sentence": "You _____ (#2) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-3",
+            "num": 3,
+            "sentence": "You _____ (#3) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-4",
+            "num": 4,
+            "sentence": "You _____ (#4) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-5",
+            "num": 5,
+            "sentence": "You _____ (#5) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-6",
+            "num": 6,
+            "sentence": "You _____ (#6) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-7",
+            "num": 7,
+            "sentence": "You _____ (#7) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-8",
+            "num": 8,
+            "sentence": "You _____ (#8) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-9",
+            "num": 9,
+            "sentence": "You _____ (#9) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-10",
+            "num": 10,
+            "sentence": "You _____ (#10) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-11",
+            "num": 11,
+            "sentence": "You _____ (#11) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-12",
+            "num": 12,
+            "sentence": "You _____ (#12) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-13",
+            "num": 13,
+            "sentence": "You _____ (#13) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-14",
+            "num": 14,
+            "sentence": "You _____ (#14) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-15",
+            "num": 15,
+            "sentence": "You _____ (#15) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-16",
+            "num": 16,
+            "sentence": "You _____ (#16) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-17",
+            "num": 17,
+            "sentence": "You _____ (#17) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-18",
+            "num": 18,
+            "sentence": "You _____ (#18) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-19",
+            "num": 19,
+            "sentence": "You _____ (#19) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-20",
+            "num": 20,
+            "sentence": "You _____ (#20) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-21",
+            "num": 21,
+            "sentence": "You _____ (#21) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-22",
+            "num": 22,
+            "sentence": "You _____ (#22) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-23",
+            "num": 23,
+            "sentence": "You _____ (#23) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-24",
+            "num": 24,
+            "sentence": "You _____ (#24) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-25",
+            "num": 25,
+            "sentence": "You _____ (#25) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-26",
+            "num": 26,
+            "sentence": "You _____ (#26) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-27",
+            "num": 27,
+            "sentence": "You _____ (#27) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-28",
+            "num": 28,
+            "sentence": "You _____ (#28) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-29",
+            "num": 29,
+            "sentence": "You _____ (#29) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-30",
+            "num": 30,
+            "sentence": "You _____ (#30) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-31",
+            "num": 31,
+            "sentence": "You _____ (#31) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-32",
+            "num": 32,
+            "sentence": "You _____ (#32) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-33",
+            "num": 33,
+            "sentence": "You _____ (#33) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-34",
+            "num": 34,
+            "sentence": "You _____ (#34) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-35",
+            "num": 35,
+            "sentence": "You _____ (#35) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-36",
+            "num": 36,
+            "sentence": "You _____ (#36) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-37",
+            "num": 37,
+            "sentence": "You _____ (#37) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-38",
+            "num": 38,
+            "sentence": "You _____ (#38) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-39",
+            "num": 39,
+            "sentence": "You _____ (#39) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-40",
+            "num": 40,
+            "sentence": "You _____ (#40) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-41",
+            "num": 41,
+            "sentence": "You _____ (#41) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-42",
+            "num": 42,
+            "sentence": "You _____ (#42) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-43",
+            "num": 43,
+            "sentence": "You _____ (#43) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-44",
+            "num": 44,
+            "sentence": "You _____ (#44) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-45",
+            "num": 45,
+            "sentence": "You _____ (#45) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-46",
+            "num": 46,
+            "sentence": "You _____ (#46) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-47",
+            "num": 47,
+            "sentence": "You _____ (#47) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-48",
+            "num": 48,
+            "sentence": "You _____ (#48) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-49",
+            "num": 49,
+            "sentence": "You _____ (#49) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-50",
+            "num": 50,
+            "sentence": "You _____ (#50) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-51",
+            "num": 51,
+            "sentence": "You _____ (#51) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-52",
+            "num": 52,
+            "sentence": "You _____ (#52) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-53",
+            "num": 53,
+            "sentence": "You _____ (#53) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-54",
+            "num": 54,
+            "sentence": "You _____ (#54) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-55",
+            "num": 55,
+            "sentence": "You _____ (#55) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-56",
+            "num": 56,
+            "sentence": "You _____ (#56) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-57",
+            "num": 57,
+            "sentence": "You _____ (#57) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-58",
+            "num": 58,
+            "sentence": "You _____ (#58) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-59",
+            "num": 59,
+            "sentence": "You _____ (#59) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-60",
+            "num": 60,
+            "sentence": "You _____ (#60) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-61",
+            "num": 61,
+            "sentence": "You _____ (#61) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-62",
+            "num": 62,
+            "sentence": "You _____ (#62) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-63",
+            "num": 63,
+            "sentence": "You _____ (#63) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-64",
+            "num": 64,
+            "sentence": "You _____ (#64) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-65",
+            "num": 65,
+            "sentence": "You _____ (#65) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-66",
+            "num": 66,
+            "sentence": "You _____ (#66) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-67",
+            "num": 67,
+            "sentence": "You _____ (#67) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-68",
+            "num": 68,
+            "sentence": "You _____ (#68) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-69",
+            "num": 69,
+            "sentence": "You _____ (#69) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-70",
+            "num": 70,
+            "sentence": "You _____ (#70) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-71",
+            "num": 71,
+            "sentence": "You _____ (#71) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-72",
+            "num": 72,
+            "sentence": "You _____ (#72) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-73",
+            "num": 73,
+            "sentence": "You _____ (#73) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-74",
+            "num": 74,
+            "sentence": "You _____ (#74) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-75",
+            "num": 75,
+            "sentence": "You _____ (#75) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-76",
+            "num": 76,
+            "sentence": "You _____ (#76) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-77",
+            "num": 77,
+            "sentence": "You _____ (#77) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-78",
+            "num": 78,
+            "sentence": "You _____ (#78) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-79",
+            "num": 79,
+            "sentence": "You _____ (#79) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-80",
+            "num": 80,
+            "sentence": "You _____ (#80) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-81",
+            "num": 81,
+            "sentence": "You _____ (#81) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-82",
+            "num": 82,
+            "sentence": "You _____ (#82) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-83",
+            "num": 83,
+            "sentence": "You _____ (#83) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-84",
+            "num": 84,
+            "sentence": "You _____ (#84) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-85",
+            "num": 85,
+            "sentence": "You _____ (#85) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-86",
+            "num": 86,
+            "sentence": "You _____ (#86) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-87",
+            "num": 87,
+            "sentence": "You _____ (#87) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-88",
+            "num": 88,
+            "sentence": "You _____ (#88) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-89",
+            "num": 89,
+            "sentence": "You _____ (#89) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-90",
+            "num": 90,
+            "sentence": "You _____ (#90) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-91",
+            "num": 91,
+            "sentence": "You _____ (#91) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-92",
+            "num": 92,
+            "sentence": "You _____ (#92) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-93",
+            "num": 93,
+            "sentence": "You _____ (#93) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-94",
+            "num": 94,
+            "sentence": "You _____ (#94) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-95",
+            "num": 95,
+            "sentence": "You _____ (#95) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-96",
+            "num": 96,
+            "sentence": "You _____ (#96) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-97",
+            "num": 97,
+            "sentence": "You _____ (#97) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-98",
+            "num": 98,
+            "sentence": "You _____ (#98) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-99",
+            "num": 99,
+            "sentence": "You _____ (#99) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        },
+        {
+            "id": "lesson-11-should-must-have-to-fg-100",
+            "num": 100,
+            "sentence": "You _____ (#100) drink plenty of water every single day.",
+            "options": [
+                "should",
+                "would",
+                "could",
+                "did"
+            ],
+            "answer": "should",
+            "explanationBn": "স্বাস্থ্যকর উপদেশ দিতে 'should' বসে।",
+            "completedSentence": "You should drink plenty of water every single day.",
+            "bn": "তোমার প্রতিদিন প্রচুর পানি পান করা উচিত।"
+        }
+    ],
+    "lesson-12-would-would-like": [
+        {
+            "id": "lesson-12-would-would-like-fg-1",
+            "num": 1,
+            "sentence": "What _____ (#1) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-2",
+            "num": 2,
+            "sentence": "What _____ (#2) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-3",
+            "num": 3,
+            "sentence": "What _____ (#3) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-4",
+            "num": 4,
+            "sentence": "What _____ (#4) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-5",
+            "num": 5,
+            "sentence": "What _____ (#5) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-6",
+            "num": 6,
+            "sentence": "What _____ (#6) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-7",
+            "num": 7,
+            "sentence": "What _____ (#7) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-8",
+            "num": 8,
+            "sentence": "What _____ (#8) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-9",
+            "num": 9,
+            "sentence": "What _____ (#9) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-10",
+            "num": 10,
+            "sentence": "What _____ (#10) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-11",
+            "num": 11,
+            "sentence": "What _____ (#11) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-12",
+            "num": 12,
+            "sentence": "What _____ (#12) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-13",
+            "num": 13,
+            "sentence": "What _____ (#13) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-14",
+            "num": 14,
+            "sentence": "What _____ (#14) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-15",
+            "num": 15,
+            "sentence": "What _____ (#15) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-16",
+            "num": 16,
+            "sentence": "What _____ (#16) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-17",
+            "num": 17,
+            "sentence": "What _____ (#17) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-18",
+            "num": 18,
+            "sentence": "What _____ (#18) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-19",
+            "num": 19,
+            "sentence": "What _____ (#19) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-20",
+            "num": 20,
+            "sentence": "What _____ (#20) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-21",
+            "num": 21,
+            "sentence": "What _____ (#21) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-22",
+            "num": 22,
+            "sentence": "What _____ (#22) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-23",
+            "num": 23,
+            "sentence": "What _____ (#23) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-24",
+            "num": 24,
+            "sentence": "What _____ (#24) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-25",
+            "num": 25,
+            "sentence": "What _____ (#25) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-26",
+            "num": 26,
+            "sentence": "What _____ (#26) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-27",
+            "num": 27,
+            "sentence": "What _____ (#27) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-28",
+            "num": 28,
+            "sentence": "What _____ (#28) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-29",
+            "num": 29,
+            "sentence": "What _____ (#29) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-30",
+            "num": 30,
+            "sentence": "What _____ (#30) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-31",
+            "num": 31,
+            "sentence": "What _____ (#31) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-32",
+            "num": 32,
+            "sentence": "What _____ (#32) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-33",
+            "num": 33,
+            "sentence": "What _____ (#33) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-34",
+            "num": 34,
+            "sentence": "What _____ (#34) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-35",
+            "num": 35,
+            "sentence": "What _____ (#35) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-36",
+            "num": 36,
+            "sentence": "What _____ (#36) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-37",
+            "num": 37,
+            "sentence": "What _____ (#37) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-38",
+            "num": 38,
+            "sentence": "What _____ (#38) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-39",
+            "num": 39,
+            "sentence": "What _____ (#39) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-40",
+            "num": 40,
+            "sentence": "What _____ (#40) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-41",
+            "num": 41,
+            "sentence": "What _____ (#41) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-42",
+            "num": 42,
+            "sentence": "What _____ (#42) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-43",
+            "num": 43,
+            "sentence": "What _____ (#43) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-44",
+            "num": 44,
+            "sentence": "What _____ (#44) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-45",
+            "num": 45,
+            "sentence": "What _____ (#45) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-46",
+            "num": 46,
+            "sentence": "What _____ (#46) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-47",
+            "num": 47,
+            "sentence": "What _____ (#47) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-48",
+            "num": 48,
+            "sentence": "What _____ (#48) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-49",
+            "num": 49,
+            "sentence": "What _____ (#49) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-50",
+            "num": 50,
+            "sentence": "What _____ (#50) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-51",
+            "num": 51,
+            "sentence": "What _____ (#51) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-52",
+            "num": 52,
+            "sentence": "What _____ (#52) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-53",
+            "num": 53,
+            "sentence": "What _____ (#53) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-54",
+            "num": 54,
+            "sentence": "What _____ (#54) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-55",
+            "num": 55,
+            "sentence": "What _____ (#55) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-56",
+            "num": 56,
+            "sentence": "What _____ (#56) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-57",
+            "num": 57,
+            "sentence": "What _____ (#57) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-58",
+            "num": 58,
+            "sentence": "What _____ (#58) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-59",
+            "num": 59,
+            "sentence": "What _____ (#59) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-60",
+            "num": 60,
+            "sentence": "What _____ (#60) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-61",
+            "num": 61,
+            "sentence": "What _____ (#61) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-62",
+            "num": 62,
+            "sentence": "What _____ (#62) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-63",
+            "num": 63,
+            "sentence": "What _____ (#63) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-64",
+            "num": 64,
+            "sentence": "What _____ (#64) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-65",
+            "num": 65,
+            "sentence": "What _____ (#65) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-66",
+            "num": 66,
+            "sentence": "What _____ (#66) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-67",
+            "num": 67,
+            "sentence": "What _____ (#67) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-68",
+            "num": 68,
+            "sentence": "What _____ (#68) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-69",
+            "num": 69,
+            "sentence": "What _____ (#69) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-70",
+            "num": 70,
+            "sentence": "What _____ (#70) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-71",
+            "num": 71,
+            "sentence": "What _____ (#71) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-72",
+            "num": 72,
+            "sentence": "What _____ (#72) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-73",
+            "num": 73,
+            "sentence": "What _____ (#73) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-74",
+            "num": 74,
+            "sentence": "What _____ (#74) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-75",
+            "num": 75,
+            "sentence": "What _____ (#75) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-76",
+            "num": 76,
+            "sentence": "What _____ (#76) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-77",
+            "num": 77,
+            "sentence": "What _____ (#77) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-78",
+            "num": 78,
+            "sentence": "What _____ (#78) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-79",
+            "num": 79,
+            "sentence": "What _____ (#79) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-80",
+            "num": 80,
+            "sentence": "What _____ (#80) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-81",
+            "num": 81,
+            "sentence": "What _____ (#81) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-82",
+            "num": 82,
+            "sentence": "What _____ (#82) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-83",
+            "num": 83,
+            "sentence": "What _____ (#83) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-84",
+            "num": 84,
+            "sentence": "What _____ (#84) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-85",
+            "num": 85,
+            "sentence": "What _____ (#85) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-86",
+            "num": 86,
+            "sentence": "What _____ (#86) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-87",
+            "num": 87,
+            "sentence": "What _____ (#87) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-88",
+            "num": 88,
+            "sentence": "What _____ (#88) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-89",
+            "num": 89,
+            "sentence": "What _____ (#89) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-90",
+            "num": 90,
+            "sentence": "What _____ (#90) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-91",
+            "num": 91,
+            "sentence": "What _____ (#91) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-92",
+            "num": 92,
+            "sentence": "What _____ (#92) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-93",
+            "num": 93,
+            "sentence": "What _____ (#93) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-94",
+            "num": 94,
+            "sentence": "What _____ (#94) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-95",
+            "num": 95,
+            "sentence": "What _____ (#95) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-96",
+            "num": 96,
+            "sentence": "What _____ (#96) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-97",
+            "num": 97,
+            "sentence": "What _____ (#97) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-98",
+            "num": 98,
+            "sentence": "What _____ (#98) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-99",
+            "num": 99,
+            "sentence": "What _____ (#99) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        },
+        {
+            "id": "lesson-12-would-would-like-fg-100",
+            "num": 100,
+            "sentence": "What _____ (#100) you like to drink with your meal?",
+            "options": [
+                "would",
+                "will",
+                "do",
+                "are"
+            ],
+            "answer": "would",
+            "explanationBn": "রেস্তোরাঁ ও মেহমানদারিতে ভদ্র অফার করতে 'would like' বসে।",
+            "completedSentence": "What would you like to drink with your meal?",
+            "bn": "খাবারের সাথে আপনি কী পান করতে পছন্দ করবেন?"
+        }
+    ],
+    "lesson-13-used-to": [
+        {
+            "id": "lesson-13-used-to-fg-1",
+            "num": 1,
+            "sentence": "I _____ (#1) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-2",
+            "num": 2,
+            "sentence": "I _____ (#2) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-3",
+            "num": 3,
+            "sentence": "I _____ (#3) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-4",
+            "num": 4,
+            "sentence": "I _____ (#4) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-5",
+            "num": 5,
+            "sentence": "I _____ (#5) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-6",
+            "num": 6,
+            "sentence": "I _____ (#6) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-7",
+            "num": 7,
+            "sentence": "I _____ (#7) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-8",
+            "num": 8,
+            "sentence": "I _____ (#8) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-9",
+            "num": 9,
+            "sentence": "I _____ (#9) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-10",
+            "num": 10,
+            "sentence": "I _____ (#10) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-11",
+            "num": 11,
+            "sentence": "I _____ (#11) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-12",
+            "num": 12,
+            "sentence": "I _____ (#12) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-13",
+            "num": 13,
+            "sentence": "I _____ (#13) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-14",
+            "num": 14,
+            "sentence": "I _____ (#14) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-15",
+            "num": 15,
+            "sentence": "I _____ (#15) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-16",
+            "num": 16,
+            "sentence": "I _____ (#16) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-17",
+            "num": 17,
+            "sentence": "I _____ (#17) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-18",
+            "num": 18,
+            "sentence": "I _____ (#18) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-19",
+            "num": 19,
+            "sentence": "I _____ (#19) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-20",
+            "num": 20,
+            "sentence": "I _____ (#20) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-21",
+            "num": 21,
+            "sentence": "I _____ (#21) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-22",
+            "num": 22,
+            "sentence": "I _____ (#22) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-23",
+            "num": 23,
+            "sentence": "I _____ (#23) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-24",
+            "num": 24,
+            "sentence": "I _____ (#24) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-25",
+            "num": 25,
+            "sentence": "I _____ (#25) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-26",
+            "num": 26,
+            "sentence": "I _____ (#26) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-27",
+            "num": 27,
+            "sentence": "I _____ (#27) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-28",
+            "num": 28,
+            "sentence": "I _____ (#28) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-29",
+            "num": 29,
+            "sentence": "I _____ (#29) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-30",
+            "num": 30,
+            "sentence": "I _____ (#30) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-31",
+            "num": 31,
+            "sentence": "I _____ (#31) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-32",
+            "num": 32,
+            "sentence": "I _____ (#32) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-33",
+            "num": 33,
+            "sentence": "I _____ (#33) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-34",
+            "num": 34,
+            "sentence": "I _____ (#34) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-35",
+            "num": 35,
+            "sentence": "I _____ (#35) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-36",
+            "num": 36,
+            "sentence": "I _____ (#36) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-37",
+            "num": 37,
+            "sentence": "I _____ (#37) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-38",
+            "num": 38,
+            "sentence": "I _____ (#38) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-39",
+            "num": 39,
+            "sentence": "I _____ (#39) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-40",
+            "num": 40,
+            "sentence": "I _____ (#40) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-41",
+            "num": 41,
+            "sentence": "I _____ (#41) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-42",
+            "num": 42,
+            "sentence": "I _____ (#42) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-43",
+            "num": 43,
+            "sentence": "I _____ (#43) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-44",
+            "num": 44,
+            "sentence": "I _____ (#44) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-45",
+            "num": 45,
+            "sentence": "I _____ (#45) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-46",
+            "num": 46,
+            "sentence": "I _____ (#46) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-47",
+            "num": 47,
+            "sentence": "I _____ (#47) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-48",
+            "num": 48,
+            "sentence": "I _____ (#48) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-49",
+            "num": 49,
+            "sentence": "I _____ (#49) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-50",
+            "num": 50,
+            "sentence": "I _____ (#50) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-51",
+            "num": 51,
+            "sentence": "I _____ (#51) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-52",
+            "num": 52,
+            "sentence": "I _____ (#52) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-53",
+            "num": 53,
+            "sentence": "I _____ (#53) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-54",
+            "num": 54,
+            "sentence": "I _____ (#54) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-55",
+            "num": 55,
+            "sentence": "I _____ (#55) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-56",
+            "num": 56,
+            "sentence": "I _____ (#56) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-57",
+            "num": 57,
+            "sentence": "I _____ (#57) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-58",
+            "num": 58,
+            "sentence": "I _____ (#58) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-59",
+            "num": 59,
+            "sentence": "I _____ (#59) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-60",
+            "num": 60,
+            "sentence": "I _____ (#60) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-61",
+            "num": 61,
+            "sentence": "I _____ (#61) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-62",
+            "num": 62,
+            "sentence": "I _____ (#62) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-63",
+            "num": 63,
+            "sentence": "I _____ (#63) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-64",
+            "num": 64,
+            "sentence": "I _____ (#64) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-65",
+            "num": 65,
+            "sentence": "I _____ (#65) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-66",
+            "num": 66,
+            "sentence": "I _____ (#66) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-67",
+            "num": 67,
+            "sentence": "I _____ (#67) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-68",
+            "num": 68,
+            "sentence": "I _____ (#68) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-69",
+            "num": 69,
+            "sentence": "I _____ (#69) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-70",
+            "num": 70,
+            "sentence": "I _____ (#70) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-71",
+            "num": 71,
+            "sentence": "I _____ (#71) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-72",
+            "num": 72,
+            "sentence": "I _____ (#72) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-73",
+            "num": 73,
+            "sentence": "I _____ (#73) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-74",
+            "num": 74,
+            "sentence": "I _____ (#74) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-75",
+            "num": 75,
+            "sentence": "I _____ (#75) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-76",
+            "num": 76,
+            "sentence": "I _____ (#76) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-77",
+            "num": 77,
+            "sentence": "I _____ (#77) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-78",
+            "num": 78,
+            "sentence": "I _____ (#78) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-79",
+            "num": 79,
+            "sentence": "I _____ (#79) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-80",
+            "num": 80,
+            "sentence": "I _____ (#80) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-81",
+            "num": 81,
+            "sentence": "I _____ (#81) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-82",
+            "num": 82,
+            "sentence": "I _____ (#82) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-83",
+            "num": 83,
+            "sentence": "I _____ (#83) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-84",
+            "num": 84,
+            "sentence": "I _____ (#84) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-85",
+            "num": 85,
+            "sentence": "I _____ (#85) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-86",
+            "num": 86,
+            "sentence": "I _____ (#86) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-87",
+            "num": 87,
+            "sentence": "I _____ (#87) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-88",
+            "num": 88,
+            "sentence": "I _____ (#88) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-89",
+            "num": 89,
+            "sentence": "I _____ (#89) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-90",
+            "num": 90,
+            "sentence": "I _____ (#90) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-91",
+            "num": 91,
+            "sentence": "I _____ (#91) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-92",
+            "num": 92,
+            "sentence": "I _____ (#92) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-93",
+            "num": 93,
+            "sentence": "I _____ (#93) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-94",
+            "num": 94,
+            "sentence": "I _____ (#94) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-95",
+            "num": 95,
+            "sentence": "I _____ (#95) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-96",
+            "num": 96,
+            "sentence": "I _____ (#96) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-97",
+            "num": 97,
+            "sentence": "I _____ (#97) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-98",
+            "num": 98,
+            "sentence": "I _____ (#98) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-99",
+            "num": 99,
+            "sentence": "I _____ (#99) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        },
+        {
+            "id": "lesson-13-used-to-fg-100",
+            "num": 100,
+            "sentence": "I _____ (#100) to play football when I was a student.",
+            "options": [
+                "used",
+                "use",
+                "using",
+                "was"
+            ],
+            "answer": "used",
+            "explanationBn": "অতীতের নিয়মিত অভ্যাস বোঝাতে 'used to + V1' বসে।",
+            "completedSentence": "I used to play football when I was a student.",
+            "bn": "ছাত্রাবস্থায় আমি ফুটবল খেলতাম।"
+        }
+    ],
+    "lesson-14-feel-like-want-to": [
+        {
+            "id": "lesson-14-feel-like-want-to-fg-1",
+            "num": 1,
+            "sentence": "I feel like _____ (#1) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-2",
+            "num": 2,
+            "sentence": "I feel like _____ (#2) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-3",
+            "num": 3,
+            "sentence": "I feel like _____ (#3) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-4",
+            "num": 4,
+            "sentence": "I feel like _____ (#4) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-5",
+            "num": 5,
+            "sentence": "I feel like _____ (#5) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-6",
+            "num": 6,
+            "sentence": "I feel like _____ (#6) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-7",
+            "num": 7,
+            "sentence": "I feel like _____ (#7) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-8",
+            "num": 8,
+            "sentence": "I feel like _____ (#8) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-9",
+            "num": 9,
+            "sentence": "I feel like _____ (#9) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-10",
+            "num": 10,
+            "sentence": "I feel like _____ (#10) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-11",
+            "num": 11,
+            "sentence": "I feel like _____ (#11) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-12",
+            "num": 12,
+            "sentence": "I feel like _____ (#12) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-13",
+            "num": 13,
+            "sentence": "I feel like _____ (#13) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-14",
+            "num": 14,
+            "sentence": "I feel like _____ (#14) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-15",
+            "num": 15,
+            "sentence": "I feel like _____ (#15) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-16",
+            "num": 16,
+            "sentence": "I feel like _____ (#16) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-17",
+            "num": 17,
+            "sentence": "I feel like _____ (#17) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-18",
+            "num": 18,
+            "sentence": "I feel like _____ (#18) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-19",
+            "num": 19,
+            "sentence": "I feel like _____ (#19) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-20",
+            "num": 20,
+            "sentence": "I feel like _____ (#20) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-21",
+            "num": 21,
+            "sentence": "I feel like _____ (#21) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-22",
+            "num": 22,
+            "sentence": "I feel like _____ (#22) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-23",
+            "num": 23,
+            "sentence": "I feel like _____ (#23) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-24",
+            "num": 24,
+            "sentence": "I feel like _____ (#24) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-25",
+            "num": 25,
+            "sentence": "I feel like _____ (#25) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-26",
+            "num": 26,
+            "sentence": "I feel like _____ (#26) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-27",
+            "num": 27,
+            "sentence": "I feel like _____ (#27) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-28",
+            "num": 28,
+            "sentence": "I feel like _____ (#28) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-29",
+            "num": 29,
+            "sentence": "I feel like _____ (#29) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-30",
+            "num": 30,
+            "sentence": "I feel like _____ (#30) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-31",
+            "num": 31,
+            "sentence": "I feel like _____ (#31) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-32",
+            "num": 32,
+            "sentence": "I feel like _____ (#32) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-33",
+            "num": 33,
+            "sentence": "I feel like _____ (#33) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-34",
+            "num": 34,
+            "sentence": "I feel like _____ (#34) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-35",
+            "num": 35,
+            "sentence": "I feel like _____ (#35) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-36",
+            "num": 36,
+            "sentence": "I feel like _____ (#36) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-37",
+            "num": 37,
+            "sentence": "I feel like _____ (#37) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-38",
+            "num": 38,
+            "sentence": "I feel like _____ (#38) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-39",
+            "num": 39,
+            "sentence": "I feel like _____ (#39) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-40",
+            "num": 40,
+            "sentence": "I feel like _____ (#40) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-41",
+            "num": 41,
+            "sentence": "I feel like _____ (#41) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-42",
+            "num": 42,
+            "sentence": "I feel like _____ (#42) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-43",
+            "num": 43,
+            "sentence": "I feel like _____ (#43) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-44",
+            "num": 44,
+            "sentence": "I feel like _____ (#44) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-45",
+            "num": 45,
+            "sentence": "I feel like _____ (#45) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-46",
+            "num": 46,
+            "sentence": "I feel like _____ (#46) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-47",
+            "num": 47,
+            "sentence": "I feel like _____ (#47) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-48",
+            "num": 48,
+            "sentence": "I feel like _____ (#48) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-49",
+            "num": 49,
+            "sentence": "I feel like _____ (#49) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-50",
+            "num": 50,
+            "sentence": "I feel like _____ (#50) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-51",
+            "num": 51,
+            "sentence": "I feel like _____ (#51) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-52",
+            "num": 52,
+            "sentence": "I feel like _____ (#52) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-53",
+            "num": 53,
+            "sentence": "I feel like _____ (#53) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-54",
+            "num": 54,
+            "sentence": "I feel like _____ (#54) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-55",
+            "num": 55,
+            "sentence": "I feel like _____ (#55) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-56",
+            "num": 56,
+            "sentence": "I feel like _____ (#56) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-57",
+            "num": 57,
+            "sentence": "I feel like _____ (#57) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-58",
+            "num": 58,
+            "sentence": "I feel like _____ (#58) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-59",
+            "num": 59,
+            "sentence": "I feel like _____ (#59) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-60",
+            "num": 60,
+            "sentence": "I feel like _____ (#60) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-61",
+            "num": 61,
+            "sentence": "I feel like _____ (#61) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-62",
+            "num": 62,
+            "sentence": "I feel like _____ (#62) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-63",
+            "num": 63,
+            "sentence": "I feel like _____ (#63) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-64",
+            "num": 64,
+            "sentence": "I feel like _____ (#64) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-65",
+            "num": 65,
+            "sentence": "I feel like _____ (#65) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-66",
+            "num": 66,
+            "sentence": "I feel like _____ (#66) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-67",
+            "num": 67,
+            "sentence": "I feel like _____ (#67) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-68",
+            "num": 68,
+            "sentence": "I feel like _____ (#68) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-69",
+            "num": 69,
+            "sentence": "I feel like _____ (#69) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-70",
+            "num": 70,
+            "sentence": "I feel like _____ (#70) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-71",
+            "num": 71,
+            "sentence": "I feel like _____ (#71) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-72",
+            "num": 72,
+            "sentence": "I feel like _____ (#72) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-73",
+            "num": 73,
+            "sentence": "I feel like _____ (#73) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-74",
+            "num": 74,
+            "sentence": "I feel like _____ (#74) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-75",
+            "num": 75,
+            "sentence": "I feel like _____ (#75) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-76",
+            "num": 76,
+            "sentence": "I feel like _____ (#76) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-77",
+            "num": 77,
+            "sentence": "I feel like _____ (#77) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-78",
+            "num": 78,
+            "sentence": "I feel like _____ (#78) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-79",
+            "num": 79,
+            "sentence": "I feel like _____ (#79) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-80",
+            "num": 80,
+            "sentence": "I feel like _____ (#80) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-81",
+            "num": 81,
+            "sentence": "I feel like _____ (#81) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-82",
+            "num": 82,
+            "sentence": "I feel like _____ (#82) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-83",
+            "num": 83,
+            "sentence": "I feel like _____ (#83) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-84",
+            "num": 84,
+            "sentence": "I feel like _____ (#84) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-85",
+            "num": 85,
+            "sentence": "I feel like _____ (#85) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-86",
+            "num": 86,
+            "sentence": "I feel like _____ (#86) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-87",
+            "num": 87,
+            "sentence": "I feel like _____ (#87) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-88",
+            "num": 88,
+            "sentence": "I feel like _____ (#88) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-89",
+            "num": 89,
+            "sentence": "I feel like _____ (#89) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-90",
+            "num": 90,
+            "sentence": "I feel like _____ (#90) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-91",
+            "num": 91,
+            "sentence": "I feel like _____ (#91) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-92",
+            "num": 92,
+            "sentence": "I feel like _____ (#92) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-93",
+            "num": 93,
+            "sentence": "I feel like _____ (#93) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-94",
+            "num": 94,
+            "sentence": "I feel like _____ (#94) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-95",
+            "num": 95,
+            "sentence": "I feel like _____ (#95) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-96",
+            "num": 96,
+            "sentence": "I feel like _____ (#96) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-97",
+            "num": 97,
+            "sentence": "I feel like _____ (#97) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-98",
+            "num": 98,
+            "sentence": "I feel like _____ (#98) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-99",
+            "num": 99,
+            "sentence": "I feel like _____ (#99) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        },
+        {
+            "id": "lesson-14-feel-like-want-to-fg-100",
+            "num": 100,
+            "sentence": "I feel like _____ (#100) ice cream right now.",
+            "options": [
+                "eating",
+                "eat",
+                "ate",
+                "to eat"
+            ],
+            "answer": "eating",
+            "explanationBn": "Feel like এর পরে ভার্বের সাথে 'ing' যুক্ত হয় (feel like + V-ing)।",
+            "completedSentence": "I feel like eating ice cream right now.",
+            "bn": "এখন আমার আইসক্রিম খেতে ইচ্ছে করছে।"
+        }
+    ],
+    "lesson-15-it-takes-time": [
+        {
+            "id": "lesson-15-it-takes-time-fg-1",
+            "num": 1,
+            "sentence": "It _____ (#1) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-2",
+            "num": 2,
+            "sentence": "It _____ (#2) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-3",
+            "num": 3,
+            "sentence": "It _____ (#3) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-4",
+            "num": 4,
+            "sentence": "It _____ (#4) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-5",
+            "num": 5,
+            "sentence": "It _____ (#5) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-6",
+            "num": 6,
+            "sentence": "It _____ (#6) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-7",
+            "num": 7,
+            "sentence": "It _____ (#7) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-8",
+            "num": 8,
+            "sentence": "It _____ (#8) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-9",
+            "num": 9,
+            "sentence": "It _____ (#9) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-10",
+            "num": 10,
+            "sentence": "It _____ (#10) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-11",
+            "num": 11,
+            "sentence": "It _____ (#11) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-12",
+            "num": 12,
+            "sentence": "It _____ (#12) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-13",
+            "num": 13,
+            "sentence": "It _____ (#13) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-14",
+            "num": 14,
+            "sentence": "It _____ (#14) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-15",
+            "num": 15,
+            "sentence": "It _____ (#15) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-16",
+            "num": 16,
+            "sentence": "It _____ (#16) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-17",
+            "num": 17,
+            "sentence": "It _____ (#17) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-18",
+            "num": 18,
+            "sentence": "It _____ (#18) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-19",
+            "num": 19,
+            "sentence": "It _____ (#19) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-20",
+            "num": 20,
+            "sentence": "It _____ (#20) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-21",
+            "num": 21,
+            "sentence": "It _____ (#21) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-22",
+            "num": 22,
+            "sentence": "It _____ (#22) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-23",
+            "num": 23,
+            "sentence": "It _____ (#23) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-24",
+            "num": 24,
+            "sentence": "It _____ (#24) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-25",
+            "num": 25,
+            "sentence": "It _____ (#25) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-26",
+            "num": 26,
+            "sentence": "It _____ (#26) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-27",
+            "num": 27,
+            "sentence": "It _____ (#27) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-28",
+            "num": 28,
+            "sentence": "It _____ (#28) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-29",
+            "num": 29,
+            "sentence": "It _____ (#29) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-30",
+            "num": 30,
+            "sentence": "It _____ (#30) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-31",
+            "num": 31,
+            "sentence": "It _____ (#31) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-32",
+            "num": 32,
+            "sentence": "It _____ (#32) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-33",
+            "num": 33,
+            "sentence": "It _____ (#33) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-34",
+            "num": 34,
+            "sentence": "It _____ (#34) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-35",
+            "num": 35,
+            "sentence": "It _____ (#35) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-36",
+            "num": 36,
+            "sentence": "It _____ (#36) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-37",
+            "num": 37,
+            "sentence": "It _____ (#37) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-38",
+            "num": 38,
+            "sentence": "It _____ (#38) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-39",
+            "num": 39,
+            "sentence": "It _____ (#39) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-40",
+            "num": 40,
+            "sentence": "It _____ (#40) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-41",
+            "num": 41,
+            "sentence": "It _____ (#41) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-42",
+            "num": 42,
+            "sentence": "It _____ (#42) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-43",
+            "num": 43,
+            "sentence": "It _____ (#43) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-44",
+            "num": 44,
+            "sentence": "It _____ (#44) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-45",
+            "num": 45,
+            "sentence": "It _____ (#45) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-46",
+            "num": 46,
+            "sentence": "It _____ (#46) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-47",
+            "num": 47,
+            "sentence": "It _____ (#47) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-48",
+            "num": 48,
+            "sentence": "It _____ (#48) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-49",
+            "num": 49,
+            "sentence": "It _____ (#49) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-50",
+            "num": 50,
+            "sentence": "It _____ (#50) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-51",
+            "num": 51,
+            "sentence": "It _____ (#51) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-52",
+            "num": 52,
+            "sentence": "It _____ (#52) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-53",
+            "num": 53,
+            "sentence": "It _____ (#53) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-54",
+            "num": 54,
+            "sentence": "It _____ (#54) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-55",
+            "num": 55,
+            "sentence": "It _____ (#55) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-56",
+            "num": 56,
+            "sentence": "It _____ (#56) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-57",
+            "num": 57,
+            "sentence": "It _____ (#57) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-58",
+            "num": 58,
+            "sentence": "It _____ (#58) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-59",
+            "num": 59,
+            "sentence": "It _____ (#59) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-60",
+            "num": 60,
+            "sentence": "It _____ (#60) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-61",
+            "num": 61,
+            "sentence": "It _____ (#61) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-62",
+            "num": 62,
+            "sentence": "It _____ (#62) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-63",
+            "num": 63,
+            "sentence": "It _____ (#63) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-64",
+            "num": 64,
+            "sentence": "It _____ (#64) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-65",
+            "num": 65,
+            "sentence": "It _____ (#65) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-66",
+            "num": 66,
+            "sentence": "It _____ (#66) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-67",
+            "num": 67,
+            "sentence": "It _____ (#67) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-68",
+            "num": 68,
+            "sentence": "It _____ (#68) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-69",
+            "num": 69,
+            "sentence": "It _____ (#69) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-70",
+            "num": 70,
+            "sentence": "It _____ (#70) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-71",
+            "num": 71,
+            "sentence": "It _____ (#71) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-72",
+            "num": 72,
+            "sentence": "It _____ (#72) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-73",
+            "num": 73,
+            "sentence": "It _____ (#73) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-74",
+            "num": 74,
+            "sentence": "It _____ (#74) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-75",
+            "num": 75,
+            "sentence": "It _____ (#75) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-76",
+            "num": 76,
+            "sentence": "It _____ (#76) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-77",
+            "num": 77,
+            "sentence": "It _____ (#77) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-78",
+            "num": 78,
+            "sentence": "It _____ (#78) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-79",
+            "num": 79,
+            "sentence": "It _____ (#79) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-80",
+            "num": 80,
+            "sentence": "It _____ (#80) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-81",
+            "num": 81,
+            "sentence": "It _____ (#81) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-82",
+            "num": 82,
+            "sentence": "It _____ (#82) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-83",
+            "num": 83,
+            "sentence": "It _____ (#83) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-84",
+            "num": 84,
+            "sentence": "It _____ (#84) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-85",
+            "num": 85,
+            "sentence": "It _____ (#85) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-86",
+            "num": 86,
+            "sentence": "It _____ (#86) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-87",
+            "num": 87,
+            "sentence": "It _____ (#87) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-88",
+            "num": 88,
+            "sentence": "It _____ (#88) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-89",
+            "num": 89,
+            "sentence": "It _____ (#89) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-90",
+            "num": 90,
+            "sentence": "It _____ (#90) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-91",
+            "num": 91,
+            "sentence": "It _____ (#91) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-92",
+            "num": 92,
+            "sentence": "It _____ (#92) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-93",
+            "num": 93,
+            "sentence": "It _____ (#93) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-94",
+            "num": 94,
+            "sentence": "It _____ (#94) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-95",
+            "num": 95,
+            "sentence": "It _____ (#95) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-96",
+            "num": 96,
+            "sentence": "It _____ (#96) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-97",
+            "num": 97,
+            "sentence": "It _____ (#97) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-98",
+            "num": 98,
+            "sentence": "It _____ (#98) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-99",
+            "num": 99,
+            "sentence": "It _____ (#99) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        },
+        {
+            "id": "lesson-15-it-takes-time-fg-100",
+            "num": 100,
+            "sentence": "It _____ (#100) about thirty minutes to reach the station.",
+            "options": [
+                "takes",
+                "take",
+                "taking",
+                "tooked"
+            ],
+            "answer": "takes",
+            "explanationBn": "সময় লাগা বোঝাতে 'It takes + time' বসে।",
+            "completedSentence": "It takes about thirty minutes to reach the station.",
+            "bn": "স্টেশনে পৌঁছাতে প্রায় ত্রিশ মিনিট সময় লাগে।"
+        }
+    ]
+};
