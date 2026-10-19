@@ -24,8 +24,9 @@ export default function SituationalConversationsPage() {
     const [categoryFilter, setCategoryFilter] = useState<string>('all');
     const [searchQuery, setSearchQuery] = useState<string>('');
     
-    // View mode: 'dialogue' | 'roleplay' | 'starters' | 'vocabulary'
-    const [activeTab, setActiveTab] = useState<'dialogue' | 'roleplay' | 'starters' | 'vocabulary'>('dialogue');
+    // View mode: 'dialogue' | 'chaining' | 'roleplay' | 'starters' | 'vocabulary'
+    const [activeTab, setActiveTab] = useState<'dialogue' | 'chaining' | 'roleplay' | 'starters' | 'vocabulary'>('dialogue');
+    const [selectedAltPerTurn, setSelectedAltPerTurn] = useState<Record<string, number>>({});
 
     // Collapsible Briefing Card State
     const [isBriefingExpanded, setIsBriefingExpanded] = useState<boolean>(true);
@@ -86,6 +87,7 @@ export default function SituationalConversationsPage() {
         setTurnAccuracy(null);
         setActiveTurnMicId(null);
         setIsRecording(false);
+        setSelectedAltPerTurn({});
         if (typeof window !== 'undefined') window.speechSynthesis?.cancel();
     }, [selectedId]);
 
@@ -592,6 +594,7 @@ export default function SituationalConversationsPage() {
                                 <div className="flex flex-wrap gap-1.5">
                                     {[
                                         { id: 'dialogue', label: '💬 চ্যাট ডায়ালগ (Chat)', icon: MessageSquare },
+                                        { id: 'chaining', label: '🔗 কথা এগিয়ে নেওয়ার সিক্রেট (Chaining)', icon: Compass },
                                         { id: 'roleplay', label: '🎙️ রোল-প্লে স্পিকিং', icon: UserCheck },
                                         { id: 'starters', label: '🚀 কথা শুরু ও সমাপ্তি', icon: Sparkles },
                                         { id: 'vocabulary', label: '💡 নেটিভ ফ্রেজ ও ইডিয়ম', icon: Lightbulb }
@@ -644,10 +647,10 @@ export default function SituationalConversationsPage() {
                                 {/* Centered Subtitle */}
                                 <div className="text-center pb-3 border-b border-slate-100">
                                     <h3 className="text-base sm:text-lg font-black text-slate-800 tracking-tight">
-                                        Situation Dialogue Practice (১০টি বাস্তবসম্মত ডায়ালগ)
+                                        Situation Dialogue Practice ({currentConv.dialogue.length}টি বাস্তবসম্মত ডায়ালগ)
                                     </h3>
-                                    <p className="text-xs text-slate-400 mt-0.5">
-                                        স্পিকার A ({briefing?.roleA.name || 'Speaker A'}) ও স্পিকার B ({briefing?.roleB.name || 'Speaker B'}) এর কথোপকথন
+                                    <p className="text-xs text-slate-500 mt-0.5">
+                                        স্পিকার A ({briefing?.roleA.name || 'Speaker A'}) ও স্পিকার B ({briefing?.roleB.name || 'Speaker B'}) এর ধারাবাহিক কথোপকথন
                                     </p>
                                 </div>
 
@@ -658,6 +661,15 @@ export default function SituationalConversationsPage() {
                                         const isPlaying = playingTurnId === turn.id;
                                         const isMicActive = isRecording && activeTurnMicId === turn.id;
                                         const roleTitle = turn.roleTitle || (isA ? briefing?.roleA.titleBn : briefing?.roleB.titleBn) || turn.speaker;
+
+                                        // Alternative expression handling (Dropdown state)
+                                        const selectedAltIndex = selectedAltPerTurn[turn.id] ?? 0;
+                                        const hasAltSelected = selectedAltIndex > 0 && turn.alternatives && turn.alternatives[selectedAltIndex - 1];
+                                        const activeAlt = hasAltSelected ? turn.alternatives![selectedAltIndex - 1] : null;
+
+                                        const displayEn = activeAlt ? activeAlt.en : turn.en;
+                                        const displayBn = activeAlt ? activeAlt.bn : turn.bn;
+                                        const displayPron = activeAlt ? activeAlt.bn_pron : turn.bn_pron;
 
                                         return (
                                             <div
@@ -678,9 +690,9 @@ export default function SituationalConversationsPage() {
                                                         : 'bg-indigo-50/70 border border-indigo-100/90'
                                                 } ${isPlaying ? 'ring-2 ring-[#5B4DFB]' : ''}`}>
 
-                                                    {/* Top Header: Role Title Badge + Audio Button */}
+                                                    {/* Top Header: Role Title Badge + Style Indicator + Audio Button */}
                                                     <div className="flex items-center justify-between pb-2 mb-2 border-b border-black/5">
-                                                        <div className="flex items-center gap-2">
+                                                        <div className="flex items-center gap-2 flex-wrap">
                                                             <span className={`text-[10px] font-black px-2 py-0.5 rounded-md uppercase tracking-wider ${
                                                                 isA
                                                                     ? 'bg-purple-100/80 text-purple-800 border border-purple-200'
@@ -691,12 +703,17 @@ export default function SituationalConversationsPage() {
                                                             <span className="text-[10px] text-slate-400 font-bold">
                                                                 #{tIdx + 1}
                                                             </span>
+                                                            {activeAlt && (
+                                                                <span className="text-[10px] font-black px-2 py-0.5 rounded-md bg-indigo-100 text-indigo-800 border border-indigo-200">
+                                                                    🔄 {activeAlt.style.split(' ')[0]}
+                                                                </span>
+                                                            )}
                                                         </div>
 
                                                         <button
-                                                            onClick={() => playAudio(turn.en, isA ? 1.0 : 1.15, 0.95)}
+                                                            onClick={() => playAudio(displayEn, isA ? 1.0 : 1.15, 0.95)}
                                                             className="text-slate-400 hover:text-indigo-600 transition p-1 rounded-lg hover:bg-slate-100 flex-shrink-0"
-                                                            title="শুনুন"
+                                                            title="উচ্চারণ শুনুন"
                                                         >
                                                             <Volume2 size={16} />
                                                         </button>
@@ -704,23 +721,57 @@ export default function SituationalConversationsPage() {
 
                                                     {/* English Bold Text */}
                                                     <h4 className="font-bold text-slate-900 text-base sm:text-lg leading-snug">
-                                                        "{turn.en}"
+                                                        "{displayEn}"
                                                     </h4>
 
                                                     {/* Row 2: Bengali Translation */}
                                                     <p className="text-sm text-slate-700 font-medium mt-1.5 leading-relaxed">
-                                                        {turn.bn}
+                                                        {displayBn}
                                                     </p>
 
-                                                    {/* Row 3: Purple IPA */}
-                                                    <p className="text-xs font-mono text-purple-600 mt-1.5">
-                                                        IPA: {turn.ipa}
-                                                    </p>
+                                                    {/* Row 3: Purple IPA (shown for original) */}
+                                                    {!activeAlt && turn.ipa && (
+                                                        <p className="text-xs font-mono text-purple-600 mt-1.5">
+                                                            IPA: {turn.ipa}
+                                                        </p>
+                                                    )}
 
                                                     {/* Row 4: Orange Pronunciation */}
                                                     <p className="text-xs font-semibold text-orange-600 mt-0.5">
-                                                        🗣️ উচ্চারণ: {turn.bn_pron}
+                                                        🗣️ উচ্চারণ: {displayPron}
                                                     </p>
+
+                                                    {/* Dropdown Selector for saying the same thing in different styles */}
+                                                    {turn.alternatives && turn.alternatives.length > 0 && (
+                                                        <div className="mt-3 pt-2.5 border-t border-dashed border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 bg-slate-50/70 p-2 rounded-xl">
+                                                            <label className="text-[11px] font-bold text-slate-600 flex items-center gap-1.5 flex-shrink-0">
+                                                                <span className="text-indigo-600">🔄</span>
+                                                                <span>একই কথা অন্যভাবে বলুন:</span>
+                                                            </label>
+                                                            <select
+                                                                value={selectedAltIndex}
+                                                                onChange={(e) => {
+                                                                    const val = Number(e.target.value);
+                                                                    setSelectedAltPerTurn(prev => ({ ...prev, [turn.id]: val }));
+                                                                }}
+                                                                className="text-xs font-bold bg-white border border-slate-300 rounded-lg px-2.5 py-1 text-slate-800 focus:outline-none focus:ring-1 focus:ring-[#5B4DFB] cursor-pointer shadow-2xs hover:border-slate-400 transition"
+                                                            >
+                                                                <option value={0}>✨ মূল বাক্য (Original Dialogue)</option>
+                                                                {turn.alternatives.map((alt, aIdx) => (
+                                                                    <option key={aIdx} value={aIdx + 1}>
+                                                                        {alt.style}
+                                                                    </option>
+                                                                ))}
+                                                            </select>
+                                                        </div>
+                                                    )}
+
+                                                    {/* Conversation Chaining Insight Pill */}
+                                                    {turn.continuationTip && (
+                                                        <div className="mt-2 text-[11px] text-indigo-950 bg-indigo-50/90 border border-indigo-200/80 px-2.5 py-1.5 rounded-xl flex items-start gap-1.5 font-medium leading-relaxed">
+                                                            <span className="flex-1">{turn.continuationTip}</span>
+                                                        </div>
+                                                    )}
 
                                                     {/* Mic Practice Bar */}
                                                     <div className="mt-3 pt-2.5 border-t border-black/5 flex items-center justify-between">
@@ -730,7 +781,7 @@ export default function SituationalConversationsPage() {
                                                                     if (recognitionRef.current) recognitionRef.current.stop();
                                                                     setIsRecording(false);
                                                                 } else {
-                                                                    startMic(turn.id, turn.en);
+                                                                    startMic(turn.id, displayEn);
                                                                 }
                                                             }}
                                                             className={`inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg transition ${
@@ -769,6 +820,129 @@ export default function SituationalConversationsPage() {
                                             </div>
                                         );
                                     })}
+                                </div>
+                            </div>
+                        )}
+
+                        {/* ══════════════════════════════════════════════════════════════
+                            TAB: CONVERSATION CHAINING SECRETS (কথার পিঠে কথা বাড়ানো)
+                           ══════════════════════════════════════════════════════════════ */}
+                        {activeTab === 'chaining' && (
+                            <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-2xs space-y-6">
+                                <div className="p-6 rounded-3xl bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-950 text-white space-y-3">
+                                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-black uppercase tracking-wider border border-indigo-400/30">
+                                        <Compass size={14} />
+                                        <span>Master Conversation Chaining</span>
+                                    </div>
+                                    <h3 className="text-xl sm:text-2xl font-black">
+                                        কথার পিঠে কথা বাড়ানোর ৪টি সোনালী নিয়ম (The Chaining Secrets)
+                                    </h3>
+                                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-medium">
+                                        অনেক শিক্ষার্থী ১-২ লাইন বলেই আটকে যান এবং নীরবতা চলে আসে। নেটিভ স্পিকাররা যেভাবে একটি সাধারণ কথা দিয়েও ৩০ মিনিট পর্যন্ত আড্ডা এগিয়ে নেন, তার গোপন ৪টি ফর্মুলা নিচে দেওয়া হলো:
+                                    </p>
+                                </div>
+
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                                    {/* Rule 1: The Answer + Hook */}
+                                    <div className="p-5 rounded-2xl bg-amber-50/70 border border-amber-200/90 space-y-2.5">
+                                        <div className="flex items-center gap-2">
+                                            <span className="flex h-6 w-6 rounded-full bg-amber-500 text-white font-black text-xs items-center justify-center flex-shrink-0">
+                                                ১
+                                            </span>
+                                            <h4 className="font-black text-slate-900 text-sm sm:text-base">
+                                                The Answer + Hook (উত্তর + নতুন প্রশ্ন)
+                                            </h4>
+                                        </div>
+                                        <p className="text-xs text-slate-700 leading-relaxed font-medium">
+                                            কখনো শুধু 'Yes', 'No' বা ১ শব্দে থামবেন না। উত্তরের সাথে সাথে পেছনের কারণ ও অপরপক্ষকে একটি পাল্টা প্রশ্ন ছুঁড়ে দিন।
+                                        </p>
+                                        <div className="p-3 rounded-xl bg-white border border-amber-200 text-xs space-y-1">
+                                            <p className="text-rose-600 font-bold">❌ ভুল পদ্ধতি (Dead End): "Do you like tea?" ➔ "Yes, I do." (কথা শেষ!)</p>
+                                            <p className="text-emerald-700 font-bold">✅ নেটিভ পদ্ধতি: "Yes, absolutely! I drink Earl Grey every morning. How do you usually take yours?"</p>
+                                        </div>
+                                    </div>
+
+                                    {/* Rule 2: Echo & Empathize */}
+                                    <div className="p-5 rounded-2xl bg-indigo-50/70 border border-indigo-200/90 space-y-2.5">
+                                        <div className="flex items-center gap-2">
+                                            <span className="flex h-6 w-6 rounded-full bg-indigo-600 text-white font-black text-xs items-center justify-center flex-shrink-0">
+                                                ২
+                                            </span>
+                                            <h4 className="font-black text-slate-900 text-sm sm:text-base">
+                                                Echo & Empathize (প্রতিধ্বনি ও অনুভূতি স্বীকার)
+                                            </h4>
+                                        </div>
+                                        <p className="text-xs text-slate-700 leading-relaxed font-medium">
+                                            অপরপক্ষ যা বলেছেন তার মূল একটি শব্দ বা অনুভূতি পুনরাবৃত্তি করে সহানুভূতি দেখান। এতে অপরপক্ষ দ্বিগুণ উৎসাহে কথা বলতে শুরু করবে।
+                                        </p>
+                                        <div className="p-3 rounded-xl bg-white border border-indigo-200 text-xs space-y-1">
+                                            <p className="text-rose-600 font-bold">❌ ভুল পদ্ধতি: "My flight got canceled." ➔ "Oh, okay."</p>
+                                            <p className="text-emerald-700 font-bold">✅ নেটিভ পদ্ধতি: "Canceled? Oh no, that's such a nightmare! Were you able to rebook with customer service?"</p>
+                                        </div>
+                                    </div>
+
+                                    {/* Rule 3: Bridge & Pivot */}
+                                    <div className="p-5 rounded-2xl bg-teal-50/70 border border-teal-200/90 space-y-2.5">
+                                        <div className="flex items-center gap-2">
+                                            <span className="flex h-6 w-6 rounded-full bg-teal-600 text-white font-black text-xs items-center justify-center flex-shrink-0">
+                                                ৩
+                                            </span>
+                                            <h4 className="font-black text-slate-900 text-sm sm:text-base">
+                                                Bridge & Pivot (সেতু তৈরি ও মোড় ঘোরানো)
+                                            </h4>
+                                        </div>
+                                        <p className="text-xs text-slate-700 leading-relaxed font-medium">
+                                            একটি বিষয় শেষ হয়ে এলে অপ্রস্তুত না হয়ে 'Speaking of which...', 'That reminds me...', 'By the way...' বলে প্রাসঙ্গিক নতুন বিষয়ে চলে যান।
+                                        </p>
+                                        <div className="p-3 rounded-xl bg-white border border-teal-200 text-xs space-y-1">
+                                            <p className="text-slate-800 font-semibold">🔗 সেতু ফ্রেজ: "Speaking of weekend plans, have you checked the new gallery downtown?"</p>
+                                            <p className="text-teal-800 font-bold">সুবিধা: কোনো ধরনের অস্বস্তিকর নীরবতা ছাড়াই আলোচনা সম্পূর্ণ নতুন দিকে মোড় নেয়।</p>
+                                        </div>
+                                    </div>
+
+                                    {/* Rule 4: Open-Door Closer */}
+                                    <div className="p-5 rounded-2xl bg-purple-50/70 border border-purple-200/90 space-y-2.5">
+                                        <div className="flex items-center gap-2">
+                                            <span className="flex h-6 w-6 rounded-full bg-purple-600 text-white font-black text-xs items-center justify-center flex-shrink-0">
+                                                ৪
+                                            </span>
+                                            <h4 className="font-black text-slate-900 text-sm sm:text-base">
+                                                Open-Door Closer (খোলা দরজায় সমাপ্তি)
+                                            </h4>
+                                        </div>
+                                        <p className="text-xs text-slate-700 leading-relaxed font-medium">
+                                            বিদায় নেওয়ার সময় 'Bye' বলেই শেষ করবেন না। ভবিষ্যতে পুনরায় কথা হওয়ার বা খোঁজ নেওয়ার দরজা সবসময় খোলা রেখে ইতিবাচক সমাপ্তি টানুন।
+                                        </p>
+                                        <div className="p-3 rounded-xl bg-white border border-purple-200 text-xs space-y-1">
+                                            <p className="text-rose-600 font-bold">❌ শীতল বিদায়: "Okay, bye."</p>
+                                            <p className="text-purple-900 font-bold">✅ উষ্ণ বিদায়: "It was so wonderful chatting with you! Let's definitely catch up again next week. Take care!"</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Current Situation Chaining Walkthrough */}
+                                <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+                                    <h4 className="font-black text-slate-900 text-sm flex items-center gap-2">
+                                        <Sparkles size={16} className="text-[#5B4DFB]" />
+                                        চলতি পরিস্থিতি ({currentConv.title}): কীভাবে কথাগুলো একের পর এক এগিয়েছে?
+                                    </h4>
+                                    <div className="space-y-2">
+                                        {currentConv.dialogue.map((turn, idx) => (
+                                            <div key={idx} className="p-3 rounded-xl bg-white border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+                                                <div className="flex items-center gap-2">
+                                                    <span className={`px-2 py-0.5 rounded-md font-black text-[10px] ${
+                                                        turn.role === 'A' ? 'bg-purple-100 text-purple-800' : 'bg-emerald-100 text-emerald-800'
+                                                    }`}>
+                                                        #{idx + 1} {turn.roleTitle || turn.speaker}
+                                                    </span>
+                                                    <span className="font-bold text-slate-900 line-clamp-1">"{turn.en}"</span>
+                                                </div>
+                                                <span className="text-[11px] text-indigo-700 font-medium bg-indigo-50 px-2 py-0.5 rounded-lg flex-shrink-0">
+                                                    {turn.continuationTip}
+                                                </span>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         )}

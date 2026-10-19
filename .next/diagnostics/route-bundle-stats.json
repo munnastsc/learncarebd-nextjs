@@ -18,6 +18,24 @@
     ]
   },
   {
+    "route": "/dashboard/spoken-english/conversations",
+    "firstLoadUncompressedJsBytes": 2587799,
+    "firstLoadChunkPaths": [
+      ".next\\static\\chunks\\0usrj79dc2fr4.js",
+      ".next\\static\\chunks\\0i.l9589uvx0j.js",
+      ".next\\static\\chunks\\0bgzrgrksd7wc.js",
+      ".next\\static\\chunks\\067k08~j-8fzt.js",
+      ".next\\static\\chunks\\170k09wwxwvrd.js",
+      ".next\\static\\chunks\\06cad_yh31343.js",
+      ".next\\static\\chunks\\0-hrh_uw98wb_.js",
+      ".next\\static\\chunks\\0fir4x-jp9vpj.js",
+      ".next\\static\\chunks\\14l~.r2kq13je.js",
+      ".next\\static\\chunks\\17de3gr.q8gh-.js",
+      ".next\\static\\chunks\\04.i-__.as.dk.js",
+      ".next\\static\\chunks\\turbopack-0n_mltyj~u4tv.js"
+    ]
+  },
+  {
     "route": "/dashboard/spoken-english/words",
     "firstLoadUncompressedJsBytes": 1617395,
     "firstLoadChunkPaths": [
@@ -45,24 +63,6 @@
       ".next\\static\\chunks\\067k08~j-8fzt.js",
       ".next\\static\\chunks\\0ep6600jw2etj.js",
       ".next\\static\\chunks\\08lyixhgm~6k9.js",
-      ".next\\static\\chunks\\0-hrh_uw98wb_.js",
-      ".next\\static\\chunks\\0fir4x-jp9vpj.js",
-      ".next\\static\\chunks\\14l~.r2kq13je.js",
-      ".next\\static\\chunks\\17de3gr.q8gh-.js",
-      ".next\\static\\chunks\\04.i-__.as.dk.js",
-      ".next\\static\\chunks\\turbopack-0n_mltyj~u4tv.js"
-    ]
-  },
-  {
-    "route": "/dashboard/spoken-english/conversations",
-    "firstLoadUncompressedJsBytes": 1140993,
-    "firstLoadChunkPaths": [
-      ".next\\static\\chunks\\0usrj79dc2fr4.js",
-      ".next\\static\\chunks\\0i.l9589uvx0j.js",
-      ".next\\static\\chunks\\0bgzrgrksd7wc.js",
-      ".next\\static\\chunks\\067k08~j-8fzt.js",
-      ".next\\static\\chunks\\170k09wwxwvrd.js",
-      ".next\\static\\chunks\\05943sokgv5ij.js",
       ".next\\static\\chunks\\0-hrh_uw98wb_.js",
       ".next\\static\\chunks\\0fir4x-jp9vpj.js",
       ".next\\static\\chunks\\14l~.r2kq13je.js",
