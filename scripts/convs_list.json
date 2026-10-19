@@ -1,0 +1,322 @@
+[
+  {
+    "id": "conv-01-meeting-someone-for-the-first-time",
+    "number": 1,
+    "title": "Meeting Someone for the First Time",
+    "titleBn": "নতুন কারো সাথে প্রথম পরিচয় ও কুশল বিনিময়",
+    "level": "Easy",
+    "category": "Social"
+  },
+  {
+    "id": "conv-02-ordering-coffee-at-a-cafe",
+    "number": 2,
+    "title": "Ordering Coffee at a Cafe",
+    "titleBn": "ক্যাফেতে কফি ও স্ন্যাক্স অর্ডার করা",
+    "level": "Easy",
+    "category": "Services"
+  },
+  {
+    "id": "conv-03-asking-for-directions-on-the-street",
+    "number": 3,
+    "title": "Asking for Directions on the Street",
+    "titleBn": "রাস্তায় পথ ও দিকনির্দেশনা চাওয়া",
+    "level": "Easy",
+    "category": "Travel"
+  },
+  {
+    "id": "conv-04-shopping-for-clothes-sizes",
+    "number": 4,
+    "title": "Shopping for Clothes & Sizes",
+    "titleBn": "পোশাকের দোকানে সাইজ ও ট্রায়াল নেওয়া",
+    "level": "Easy",
+    "category": "Shopping"
+  },
+  {
+    "id": "conv-05-restaurant-dining-splitting-the-bill",
+    "number": 5,
+    "title": "Restaurant Dining & Splitting the Bill",
+    "titleBn": "রেস্টুরেন্টে খাবার অর্ডার ও বিল ভাগাভাগি",
+    "level": "Easy",
+    "category": "Services"
+  },
+  {
+    "id": "conv-06-at-the-doctor-s-symptoms-prescription",
+    "number": 6,
+    "title": "At the Doctor's: Symptoms & Prescription",
+    "titleBn": "ডাক্তারের চেম্বারে লক্ষণ প্রকাশ ও প্রেসক্রিপশন",
+    "level": "Easy",
+    "category": "Services"
+  },
+  {
+    "id": "conv-07-checking-into-a-hotel-room",
+    "number": 7,
+    "title": "Checking into a Hotel Room",
+    "titleBn": "হোটেলে রুম বুকিং ও চেক-ইন করা",
+    "level": "Easy",
+    "category": "Travel"
+  },
+  {
+    "id": "conv-08-catching-up-with-an-old-friend-on-phone",
+    "number": 8,
+    "title": "Catching Up with an Old Friend on Phone",
+    "titleBn": "পুরনো বন্ধুর সাথে ফোনে আড্ডা ও খোঁজ নেওয়া",
+    "level": "Easy",
+    "category": "Social"
+  },
+  {
+    "id": "conv-09-asking-for-help-lost-property",
+    "number": 9,
+    "title": "Asking for Help & Lost Property",
+    "titleBn": "সাহায্য চাওয়া ও হারানো জিনিস খোঁজা",
+    "level": "Easy",
+    "category": "Daily Life"
+  },
+  {
+    "id": "conv-10-talking-about-hobbies-passions",
+    "number": 10,
+    "title": "Talking About Hobbies & Passions",
+    "titleBn": "শখ, আগ্রহ ও অবসর নিয়ে আলোচনা",
+    "level": "Easy",
+    "category": "Social"
+  },
+  {
+    "id": "conv-11-buying-groceries-at-the-supermarket",
+    "number": 11,
+    "title": "Buying Groceries at the Supermarket",
+    "titleBn": "সুপারশপে মুদিপণ্য কেনা ও সেলফ খোঁজা",
+    "level": "Easy",
+    "category": "Shopping"
+  },
+  {
+    "id": "conv-12-taking-a-taxi-ride-sharing",
+    "number": 12,
+    "title": "Taking a Taxi / Ride Sharing",
+    "titleBn": "ট্যাক্সি বা রাইড শেয়ারে গন্তব্যে যাওয়া",
+    "level": "Easy",
+    "category": "Travel"
+  },
+  {
+    "id": "conv-13-making-an-appointment-over-phone",
+    "number": 13,
+    "title": "Making an Appointment over Phone",
+    "titleBn": "ফোনে ডাক্তার বা কাজের অ্যাপয়েন্টমেন্ট নেওয়া",
+    "level": "Easy",
+    "category": "Services"
+  },
+  {
+    "id": "conv-14-at-the-bank-opening-an-account",
+    "number": 14,
+    "title": "At the Bank: Opening an Account",
+    "titleBn": "ব্যাংকে নতুন অ্যাকাউন্ট খোলা ও নিয়ম জানা",
+    "level": "Easy",
+    "category": "Services"
+  },
+  {
+    "id": "conv-15-discussing-daily-weather-rain",
+    "number": 15,
+    "title": "Discussing Daily Weather & Rain",
+    "titleBn": "আবহাওয়া ও বৃষ্টির পূর্বাভাস নিয়ে কথা",
+    "level": "Easy",
+    "category": "Daily Life"
+  },
+  {
+    "id": "conv-16-buying-a-mobile-sim-data-plan",
+    "number": 16,
+    "title": "Buying a Mobile SIM & Data Plan",
+    "titleBn": "মোবাইল সিম ও ইন্টারনেট প্যাকেজ কেনা",
+    "level": "Easy",
+    "category": "Services"
+  },
+  {
+    "id": "conv-17-asking-a-colleague-for-work-advice",
+    "number": 17,
+    "title": "Asking a Colleague for Work Advice",
+    "titleBn": "সহকর্মীর কাছে কাজের টেকনিক্যাল পরামর্শ চাওয়া",
+    "level": "Easy",
+    "category": "Professional"
+  },
+  {
+    "id": "conv-18-inviting-a-friend-to-dinner-at-home",
+    "number": 18,
+    "title": "Inviting a Friend to Dinner at Home",
+    "titleBn": "বন্ধুকে বাসায় রাতের খাবারের দাওয়াত দেওয়া",
+    "level": "Easy",
+    "category": "Social"
+  },
+  {
+    "id": "conv-19-renting-an-apartment-house-viewing",
+    "number": 19,
+    "title": "Renting an Apartment / House Viewing",
+    "titleBn": "ভাড়ার জন্য ফ্ল্যাট দেখতে যাওয়া ও চুক্তি জানা",
+    "level": "Easy",
+    "category": "Daily Life"
+  },
+  {
+    "id": "conv-20-returning-a-defective-item-at-a-store",
+    "number": 20,
+    "title": "Returning a Defective Item at a Store",
+    "titleBn": "দোকানে নষ্ট পণ্য বদলে নেওয়া বা রিফান্ড চাওয়া",
+    "level": "Easy",
+    "category": "Shopping"
+  },
+  {
+    "id": "conv-21-job-interview-background-strengths",
+    "number": 21,
+    "title": "Job Interview: Background & Strengths",
+    "titleBn": "চাকরির ইন্টারভিউ: নিজের দক্ষতা ও অভিজ্ঞতা তুলে ধরা",
+    "level": "Intermediate",
+    "category": "Professional"
+  },
+  {
+    "id": "conv-22-office-meeting-presenting-project-ideas",
+    "number": 22,
+    "title": "Office Meeting: Presenting Project Ideas",
+    "titleBn": "অফিস মিটিংয়ে নতুন প্রজেক্ট আইডিয়া উপস্থাপন",
+    "level": "Intermediate",
+    "category": "Professional"
+  },
+  {
+    "id": "conv-23-polite-disagreement-in-a-meeting",
+    "number": 23,
+    "title": "Polite Disagreement in a Meeting",
+    "titleBn": "ভদ্র ও যুক্তিপূর্ণভাবে দ্বিমত পোষণ করা",
+    "level": "Intermediate",
+    "category": "Professional"
+  },
+  {
+    "id": "conv-24-airport-baggage-drop-boarding-pass",
+    "number": 24,
+    "title": "Airport: Baggage Drop & Boarding Pass",
+    "titleBn": "এয়ারপোর্টে লাগেজ ড্রপ ও বোর্ডিং পাস সংগ্রহ",
+    "level": "Intermediate",
+    "category": "Travel"
+  },
+  {
+    "id": "conv-25-flight-delay-missed-connection-rebooking",
+    "number": 25,
+    "title": "Flight Delay, Missed Connection & Rebooking",
+    "titleBn": "ফ্লাইট বিলম্ব ও বিকল্প টিকিট নিয়ে কথা বলা",
+    "level": "Intermediate",
+    "category": "Travel"
+  },
+  {
+    "id": "conv-26-customer-care-reporting-broadband-outage",
+    "number": 26,
+    "title": "Customer Care: Reporting Broadband Outage",
+    "titleBn": "কাস্টমার কেয়ারে ইন্টারনেট বিভ্রাটের অভিযোগ",
+    "level": "Intermediate",
+    "category": "Services"
+  },
+  {
+    "id": "conv-27-declining-an-invitation-politely-without-offense",
+    "number": 27,
+    "title": "Declining an Invitation Politely Without Offense",
+    "titleBn": "সম্মান বজায় রেখে ভদ্রভাবে কোনো দাওয়াত ফিরিয়ে দেওয়া",
+    "level": "Intermediate",
+    "category": "Social"
+  },
+  {
+    "id": "conv-28-negotiating-freelance-rates-scope-of-work",
+    "number": 28,
+    "title": "Negotiating Freelance Rates & Scope of Work",
+    "titleBn": "ফ্রিল্যান্স কাজের বাজেট ও পারিশ্রমিক নিয়ে সম্মানজনক দরদাম",
+    "level": "Intermediate",
+    "category": "Professional"
+  },
+  {
+    "id": "conv-29-discussing-weekend-plans-road-trip",
+    "number": 29,
+    "title": "Discussing Weekend Plans & Road Trip",
+    "titleBn": "ছুটির দিনে বন্ধুদের সাথে ভ্রমণের রুট প্ল্যান করা",
+    "level": "Intermediate",
+    "category": "Social"
+  },
+  {
+    "id": "conv-30-congratulating-someone-on-promotion-or-success",
+    "number": 30,
+    "title": "Congratulating Someone on Promotion or Success",
+    "titleBn": "নতুন চাকরি বা প্রমোশনে সহকর্মীকে প্রাণঢালা অভিনন্দন",
+    "level": "Intermediate",
+    "category": "Professional"
+  },
+  {
+    "id": "conv-31-expressing-empathy-consoling-a-sad-friend",
+    "number": 31,
+    "title": "Expressing Empathy & Consoling a Sad Friend",
+    "titleBn": "বিপদে বন্ধুকে সান্ত্বনা ও মানসিক সাহস জোগানো",
+    "level": "Intermediate",
+    "category": "Social"
+  },
+  {
+    "id": "conv-32-debating-and-reviewing-a-movie-or-book",
+    "number": 32,
+    "title": "Debating and Reviewing a Movie or Book",
+    "titleBn": "সিনেমা বা বইয়ের প্লট ও মেকিং নিয়ে বুদ্ধিবৃত্তিক আড্ডা",
+    "level": "Intermediate",
+    "category": "Daily Life"
+  },
+  {
+    "id": "conv-33-ordering-takeout-food-resolving-wrong-order",
+    "number": 33,
+    "title": "Ordering Takeout Food & Resolving Wrong Order",
+    "titleBn": "ফোনে খাবার ডেলিভারি ও ভুল খাবার সমাধানের কথোপকথন",
+    "level": "Intermediate",
+    "category": "Services"
+  },
+  {
+    "id": "conv-34-at-the-gym-workout-routine-training",
+    "number": 34,
+    "title": "At the Gym: Workout Routine & Training",
+    "titleBn": "জিমে ফিটনেস রুটিন ও এক্সারসাইজ ফরম নিয়ে কথা",
+    "level": "Intermediate",
+    "category": "Daily Life"
+  },
+  {
+    "id": "conv-35-discussing-monthly-budget-smart-investments",
+    "number": 35,
+    "title": "Discussing Monthly Budget & Smart Investments",
+    "titleBn": "মাসিক বাজেট, সঞ্চয় ও অর্থনৈতিক স্বাধীনতা নিয়ে পরিকল্পনা",
+    "level": "Intermediate",
+    "category": "Daily Life"
+  },
+  {
+    "id": "conv-36-resolving-a-workplace-misunderstanding-calmly",
+    "number": 36,
+    "title": "Resolving a Workplace Misunderstanding Calmly",
+    "titleBn": "কর্মক্ষেত্রে সহকর্মীর সাথে ভুল বোঝাবুঝি শান্তভাবে মেটানো",
+    "level": "Intermediate",
+    "category": "Professional"
+  },
+  {
+    "id": "conv-37-discussing-a-salary-raise-with-manager",
+    "number": 37,
+    "title": "Discussing a Salary Raise with Manager",
+    "titleBn": "ম্যানেজারের সাথে পারফরম্যান্স ও বেতন বৃদ্ধির সেশন",
+    "level": "Intermediate",
+    "category": "Professional"
+  },
+  {
+    "id": "conv-38-emergency-reporting-lost-bag-to-police",
+    "number": 38,
+    "title": "Emergency: Reporting Lost Bag to Police",
+    "titleBn": "জরুরি অবস্থায় পুলিশ স্টেশনে হারানো বা চুরির রিপোর্ট করা",
+    "level": "Intermediate",
+    "category": "Services"
+  },
+  {
+    "id": "conv-39-requesting-sick-leave-or-day-off-from-manager",
+    "number": 39,
+    "title": "Requesting Sick Leave or Day Off from Manager",
+    "titleBn": "হঠাৎ অসুস্থতার কারণে অফিস ম্যানেজারের কাছে ছুটির আবেদন",
+    "level": "Intermediate",
+    "category": "Professional"
+  },
+  {
+    "id": "conv-40-saying-goodbye-networking-future-plans",
+    "number": 40,
+    "title": "Saying Goodbye, Networking & Future Plans",
+    "titleBn": "অনুষ্ঠান শেষে সম্মানজনক বিদায় ও দীর্ঘমেয়াদী যোগাযোগ স্থাপন",
+    "level": "Intermediate",
+    "category": "Social"
+  }
+]

@@ -540,6 +540,12 @@
       "namedRegex": "^/dashboard/spoken\\-english(?:/)?$"
     },
     {
+      "page": "/dashboard/spoken-english/common-mistakes",
+      "regex": "^/dashboard/spoken\\-english/common\\-mistakes(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/spoken\\-english/common\\-mistakes(?:/)?$"
+    },
+    {
       "page": "/dashboard/spoken-english/conversations",
       "regex": "^/dashboard/spoken\\-english/conversations(?:/)?$",
       "routeKeys": {},
@@ -558,10 +564,28 @@
       "namedRegex": "^/dashboard/spoken\\-english/headway(?:/)?$"
     },
     {
+      "page": "/dashboard/spoken-english/lessons",
+      "regex": "^/dashboard/spoken\\-english/lessons(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/spoken\\-english/lessons(?:/)?$"
+    },
+    {
+      "page": "/dashboard/spoken-english/patterns",
+      "regex": "^/dashboard/spoken\\-english/patterns(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/spoken\\-english/patterns(?:/)?$"
+    },
+    {
       "page": "/dashboard/spoken-english/pronunciation",
       "regex": "^/dashboard/spoken\\-english/pronunciation(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/dashboard/spoken\\-english/pronunciation(?:/)?$"
+    },
+    {
+      "page": "/dashboard/spoken-english/solo-speech",
+      "regex": "^/dashboard/spoken\\-english/solo\\-speech(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/spoken\\-english/solo\\-speech(?:/)?$"
     },
     {
       "page": "/dashboard/spoken-english/words",
@@ -588,6 +612,12 @@
       "namedRegex": "^/dashboard/writing(?:/)?$"
     },
     {
+      "page": "/icon.svg",
+      "regex": "^/icon\\.svg(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/icon\\.svg(?:/)?$"
+    },
+    {
       "page": "/level-test",
       "regex": "^/level\\-test(?:/)?$",
       "routeKeys": {},
@@ -598,6 +628,24 @@
       "regex": "^/login(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/privacy",
+      "regex": "^/privacy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy(?:/)?$"
+    },
+    {
+      "page": "/robots.txt",
+      "regex": "^/robots\\.txt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/robots\\.txt(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
     },
     {
       "page": "/terms",

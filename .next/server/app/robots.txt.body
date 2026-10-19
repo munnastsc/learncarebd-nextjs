@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /ai-26/
+Disallow: /api/
+
+Sitemap: https://learncarebd.com/sitemap.xml

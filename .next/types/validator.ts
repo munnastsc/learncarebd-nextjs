@@ -371,6 +371,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../src/app/dashboard/spoken-english/common-mistakes/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/dashboard/spoken-english/common-mistakes">> = Specific
+  const handler = {} as typeof import("../../src/app/dashboard/spoken-english/common-mistakes/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../src/app/dashboard/spoken-english/conversations/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/dashboard/spoken-english/conversations">> = Specific
@@ -398,6 +407,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../src/app/dashboard/spoken-english/lessons/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/dashboard/spoken-english/lessons">> = Specific
+  const handler = {} as typeof import("../../src/app/dashboard/spoken-english/lessons/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../src/app/dashboard/spoken-english/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/dashboard/spoken-english">> = Specific
@@ -407,10 +425,28 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../src/app/dashboard/spoken-english/patterns/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/dashboard/spoken-english/patterns">> = Specific
+  const handler = {} as typeof import("../../src/app/dashboard/spoken-english/patterns/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../src/app/dashboard/spoken-english/pronunciation/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/dashboard/spoken-english/pronunciation">> = Specific
   const handler = {} as typeof import("../../src/app/dashboard/spoken-english/pronunciation/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/dashboard/spoken-english/solo-speech/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/dashboard/spoken-english/solo-speech">> = Specific
+  const handler = {} as typeof import("../../src/app/dashboard/spoken-english/solo-speech/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
@@ -474,6 +510,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   type __IsExpected<Specific extends AppPageConfig<"/">> = Specific
   const handler = {} as typeof import("../../src/app/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/privacy/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/privacy">> = Specific
+  const handler = {} as typeof import("../../src/app/privacy/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

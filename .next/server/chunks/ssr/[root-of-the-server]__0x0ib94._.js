@@ -1,0 +1,59 @@
+module.exports=[950640,(a,b,c)=>{"use strict";Object.defineProperty(c,"__esModule",{value:!0}),Object.defineProperty(c,"InvariantError",{enumerable:!0,get:function(){return d}});class d extends Error{constructor(a,b){super(`Invariant: ${a.endsWith(".")?a:a+"."} This is a bug in Next.js.`,b),this.name="InvariantError"}}},193695,(a,b,c)=>{b.exports=a.x("next/dist/shared/lib/no-fallback-error.external.js",()=>require("next/dist/shared/lib/no-fallback-error.external.js"))},971306,(a,b,c)=>{b.exports=a.r(918622)},179847,a=>{a.n(a.i(403343))},9185,a=>{a.n(a.i(729432))},872842,a=>{a.n(a.i(275164))},454897,a=>{a.n(a.i(330106))},856157,a=>{a.n(a.i(118970))},594331,a=>{a.n(a.i(860644))},715988,a=>{a.n(a.i(856952))},625766,a=>{a.n(a.i(777341))},529725,a=>{a.n(a.i(994290))},605785,a=>{a.n(a.i(790588))},874793,a=>{a.n(a.i(633169))},285826,a=>{a.n(a.i(437111))},721565,a=>{a.n(a.i(741763))},465911,a=>{a.n(a.i(708950))},225128,a=>{a.n(a.i(891562))},740781,a=>{a.n(a.i(449670))},69411,a=>{a.n(a.i(675700))},263081,a=>{a.n(a.i(200276))},862837,a=>{a.n(a.i(640795))},134607,a=>{a.n(a.i(611614))},296338,a=>{a.n(a.i(521751))},550642,a=>{a.n(a.i(512213))},232242,a=>{a.n(a.i(22693))},988530,a=>{a.n(a.i(10531))},508583,a=>{a.n(a.i(901082))},38534,a=>{a.n(a.i(698175))},670408,a=>{a.n(a.i(409095))},722922,a=>{a.n(a.i(496772))},578294,a=>{a.n(a.i(971717))},216625,a=>{a.n(a.i(585034))},488648,a=>{a.n(a.i(368113))},451914,a=>{a.n(a.i(466482))},725466,a=>{a.n(a.i(91505))},463021,(a,b,c)=>{b.exports=a.x("@prisma/client-2c3a283f134fdcb6",()=>require("@prisma/client-2c3a283f134fdcb6"))},766518,a=>{"use strict";let b=a.g.prisma??function(){try{let{PrismaClient:b}=a.r(463021);return new b({log:[]})}catch(a){return console.error("[Prisma] failed to load:",a),null}}();a.s(["prisma",0,b])},522734,(a,b,c)=>{b.exports=a.x("fs",()=>require("fs"))},495774,305885,a=>{"use strict";var b=a.i(907997),c=a.i(395936),d=a.i(766518),e=a.i(522734),f=a.i(814747);let g=f.default.join(process.cwd(),"data");async function h(a){try{let b=await d.prisma.customPost.findFirst({where:{type:a}});if(b&&b.content)return JSON.parse(b.content)}catch{}let b=f.default.join(g,`${a.toLowerCase()}.json`);try{if(e.default.existsSync(b)){let a=e.default.readFileSync(b,"utf-8");return JSON.parse(a)}}catch{}return null}async function i(){let a=await h("FOOTER_SETTINGS"),d=a?.columns||[{title:"Important Links",links:[{label:"সকল কোর্স",url:"/#courses"},{label:"ফ্রি লেভেল টেস্ট",url:"/level-test"},{label:"বই সম্ভার (Store)",url:"/books"},{label:"স্টুডেন্ট লগইন",url:"/login"}]},{title:"Services",links:[{label:"Spoken Hub",url:"/dashboard/spoken-english"},{label:"IELTS Hub",url:"/dashboard"}]}];return(0,b.jsx)("footer",{className:"bg-slate-900 border-t border-slate-800",children:(0,b.jsxs)("div",{className:"max-w-6xl mx-auto px-6 py-16",children:[(0,b.jsxs)("div",{className:"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 border-b border-slate-800 pb-16",children:[(0,b.jsxs)("div",{className:"lg:col-span-1 space-y-6",children:[(0,b.jsxs)("div",{className:"flex items-center gap-3",children:[(0,b.jsx)("div",{className:"h-10 w-10 bg-gradient-to-tr from-teal-500 to-emerald-400 rounded-xl flex items-center justify-center shadow-lg shadow-teal-500/20",children:(0,b.jsx)("span",{className:"text-white font-black text-xl tracking-tighter",children:"IL"})}),(0,b.jsx)("span",{className:"text-2xl font-black text-white tracking-tight",children:"LearnCare"})]}),(0,b.jsx)("p",{className:"text-slate-400 text-sm leading-relaxed max-w-sm",children:"Empowering students with smart learning tools, AI assistance, and premium courses for IELTS and Spoken English."})]}),d.map((a,d)=>(0,b.jsxs)("div",{children:[(0,b.jsx)("h4",{className:"font-bold text-white mb-5 uppercase tracking-wider text-xs",children:a.title}),(0,b.jsx)("ul",{className:"space-y-3 text-slate-400 text-sm",children:a.links.map((a,d)=>(0,b.jsx)("li",{children:(0,b.jsx)(c.default,{href:a.url,className:"hover:text-emerald-400 transition",children:a.label})},d))})]},d))]}),(0,b.jsxs)("div",{className:"flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500",children:[(0,b.jsxs)("p",{children:["© ",new Date().getFullYear()," LearnCare Academy. All rights reserved."]}),(0,b.jsxs)("div",{className:"flex gap-4",children:[(0,b.jsx)(c.default,{href:"/terms",className:"hover:text-slate-300",children:"Terms"}),(0,b.jsx)(c.default,{href:"/privacy",className:"hover:text-slate-300",children:"Privacy Policy"}),(0,b.jsx)(c.default,{href:"/about",className:"hover:text-slate-300",children:"About Us"})]})]})]})})}a.s(["getDynamicPageContent",0,h],305885),a.s(["default",0,i],495774)},110356,a=>{"use strict";var b=a.i(907997),c=a.i(395936);a.s(["default",0,function(){return(0,b.jsx)("nav",{className:"sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-slate-200",children:(0,b.jsxs)("div",{className:"max-w-6xl mx-auto px-6 h-16 flex items-center justify-between",children:[(0,b.jsxs)(c.default,{href:"/",className:"flex items-center gap-2",children:[(0,b.jsx)("div",{className:"h-8 w-8 bg-gradient-to-tr from-teal-500 to-emerald-400 rounded-lg flex items-center justify-center shadow-md shadow-teal-500/20",children:(0,b.jsx)("span",{className:"text-white font-black text-sm tracking-tighter",children:"IL"})}),(0,b.jsx)("span",{className:"text-xl font-black text-slate-900 tracking-tight",children:"LearnCare"})]}),(0,b.jsxs)("div",{className:"hidden md:flex gap-6 items-center",children:[(0,b.jsx)(c.default,{href:"/about",className:"text-sm font-semibold text-slate-600 hover:text-slate-900",children:"About"}),(0,b.jsx)(c.default,{href:"/#courses",className:"text-sm font-semibold text-slate-600 hover:text-slate-900",children:"Courses"}),(0,b.jsx)(c.default,{href:"/books",className:"text-sm font-semibold text-slate-600 hover:text-slate-900",children:"Books"}),(0,b.jsx)(c.default,{href:"/dashboard",className:"text-sm font-semibold text-emerald-600 hover:text-emerald-700",children:"Practice Hub"}),(0,b.jsx)(c.default,{href:"/login",className:"text-sm font-bold bg-slate-900 text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition",children:"Login"})]})]})})}])},407524,a=>{a.v("/_next/static/media/icon.16tyetjoh8_k5.svg"+(globalThis.NEXT_CLIENT_ASSET_SUFFIX||""))},839375,a=>{"use strict";let b={src:a.i(407524).default,width:32,height:32};a.s(["default",0,b])},529467,a=>{"use strict";var b=a.i(907997),c=a.i(305885),d=a.i(110356),e=a.i(495774);async function f(){let a=await (0,c.getDynamicPageContent)("TERMS_PRIVACY"),f=`
+        <div class="space-y-8 font-sans text-slate-800">
+            <div>
+                <h1 class="text-3xl font-black text-slate-950 mb-2">সেবার শর্তাবলী ও নীতিমালা (Terms & Conditions)</h1>
+                <p class="text-sm text-slate-500">সর্বশেষ আপডেট: অক্টোবর ২০২৬ | LearnCare Academy</p>
+            </div>
+
+            <div class="bg-indigo-50/60 border border-indigo-150 p-6 rounded-2xl text-sm leading-relaxed">
+                <p class="font-bold text-indigo-950 mb-1">স্বাগতম LearnCare Academy-তে!</p>
+                LearnCare Academy (learncarebd.com) বাংলাদেশের শিক্ষার্থীদের স্পোকেন ইংলিশ, ব্রিটিশ ফনেটিক্স (IPA) এবং Cambridge IELTS প্রস্তুতির জন্য একটি স্বয়ংক্রিয় এআই-চালিত ডিজিটাল শিক্ষা প্ল্যাটফর্ম। এই প্ল্যাটফর্ম ব্যবহার করে আপনি নিচের শর্তাবলী মেনে নিতে সম্মত হচ্ছেন।
+            </div>
+
+            <section class="space-y-4">
+                <h2 class="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2">১. শিক্ষার্থী অ্যাকাউন্ট ও প্রবেশাধিকার</h2>
+                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-700 leading-relaxed">
+                    <li>প্ল্যাটফর্মের সুবিধা নিতে শিক্ষার্থীকে তার সঠিক ইমেইল ও পাসওয়ার্ড দিয়ে একাউন্ট তৈরি করতে হবে।</li>
+                    <li>একটি অ্যাকাউন্ট কেবলমাত্র একজন শিক্ষার্থীর ব্যক্তিগত ব্যবহারের জন্য। অ্যাকাউন্টের অ্যাক্সেস অন্য কারো সাথে শেয়ার করা সম্পূর্ণ নিষিদ্ধ।</li>
+                    <li>অ্যাকাউন্টের পাসওয়ার্ড ও তথ্যের গোপনীয়তা রক্ষার দায়িত্ব শিক্ষার্থীর নিজের।</li>
+                </ul>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2">২. কোর্স ও সাবস্ক্রিপশন ফি (Payments)</h2>
+                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-700 leading-relaxed">
+                    <li>প্ল্যাটফর্মের প্রিমিয়াম ফিচার (Headway ডিকটেশন, AI Speaking, Writing ব্যান্ড স্কোরিং, Cambridge টেস্ট ইত্যাদি) অ্যাক্সেস পেতে নির্ধারিত মাসিক সাবস্ক্রিপশন বা কোর্স ফি বিকাশ/নগদে পরিশোধ করতে হবে।</li>
+                    <li>পেমেন্ট সম্পন্ন করার পর প্রাপ্ত ট্রানজেকশন আইডি (TrxID) দিয়ে সাবমিট করার পর আমাদের অটোমেটেড সিস্টেম বা অ্যাডমিন ভেরিফিকেশনের মাধ্যমে অ্যাক্সেস উন্মুক্ত করা হয়।</li>
+                </ul>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2">৩. রিফান্ড ও বাতিলকরণ পলিসি (Refund Policy)</h2>
+                <div class="bg-emerald-50/70 border border-emerald-200 p-5 rounded-2xl space-y-2 text-sm text-slate-800 leading-relaxed">
+                    <p class="font-bold text-emerald-950">আমাদের রিফান্ড অঙ্গীকার:</p>
+                    <p>LearnCare Academy শিক্ষার্থীদের সর্বোচ্চ সন্তুষ্টি নিশ্চিত করতে প্রতিশ্রুতিবদ্ধ। সাবস্ক্রিপশন ফি বা কোর্স ফি প্রদানের পর যদি কারিগরি কোনো সমস্যার কারণে সার্ভিস অ্যাক্সেস করতে না পারেন এবং আমাদের টেকনিক্যাল টিম ২৪ ঘণ্টার মধ্যে তা সমাধান করতে ব্যর্থ হয়, তবে আপনি রিফান্ডের আবেদন করতে পারবেন।</p>
+                    <p>বই অর্ডারের ক্ষেত্রে যদি ক্ষতিগ্রস্ত বা ভুল বই পৌঁছায়, তবে কোনো অতিরিক্ত ডেলিভারি চার্জ ছাড়াই ৩ দিনের মধ্যে বই পরিবর্তন অথবা সম্পূর্ণ অর্থ ফেরত দেওয়া হবে।</p>
+                    <p>রিফান্ডের আবেদনের জন্য ট্রানজেকশন বিবরণসহ ইমেইল করুন: <a href="mailto:learncareofficial@gmail.com" class="text-emerald-700 font-bold underline">learncareofficial@gmail.com</a> অথবা হোয়াটসঅ্যাপে যোগাযোগ করুন: <b>01714740430</b>।</p>
+                </div>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2">৪. মেধা ও কপিরাইট স্বত্ব (Intellectual Property)</h2>
+                <p class="text-sm text-slate-700 leading-relaxed">
+                    LearnCare Academy-র সকল স্টাডি ম্যাটেরিয়ালস, সফটওয়্যার কোড, ডিজাইন, অডিও ডিকটেশন ও এআই মডেলের আউটপুট কপিরাইট আইনের আওতায় সংরক্ষিত। কোনো কনটেন্ট বাণিজ্যিক উদ্দেশ্যে পুনঃউৎপাদন, পাইরেসি বা বিনা অনুমতিতে বিতরণ আইনত দণ্ডনীয়।
+                </p>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2">৫. যোগাযোগ ও হেল্পলাইন</h2>
+                <p class="text-sm text-slate-700 leading-relaxed">যেকোনো প্রশ্ন, অভিযোগ বা সহযোগিতার জন্য আমাদের হেল্পলাইনে যোগাযোগ করতে পারেন:</p>
+                <div class="text-sm text-slate-700 bg-slate-50 p-4 rounded-xl space-y-1">
+                    <p>📧 <b>ইমেইল:</b> learncareofficial@gmail.com</p>
+                    <p>📞 <b>হটলাইন / WhatsApp:</b> +8801714740430</p>
+                    <p>🌐 <b>ওয়েবসাইট:</b> learncarebd.com</p>
+                </div>
+            </section>
+        </div>
+    `,g=a?.html&&a.html.trim().length>50?a.html:f;return(0,b.jsxs)("div",{className:"min-h-screen flex flex-col bg-white",children:[(0,b.jsx)(d.default,{}),(0,b.jsx)("main",{className:"flex-1",children:(0,b.jsx)("div",{className:"max-w-4xl mx-auto px-6 py-12 md:py-20",children:(0,b.jsx)("div",{className:"prose prose-slate max-w-none",dangerouslySetInnerHTML:{__html:g}})})}),(0,b.jsx)(e.default,{})]})}a.s(["default",0,f,"metadata",0,{title:"Terms & Privacy - ILTES",description:"Terms of service and privacy policy for ILTES."}])},518315,a=>{a.n(a.i(529467))}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__0x0ib94._.js.map
