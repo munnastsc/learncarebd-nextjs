@@ -113,7 +113,16 @@ export default async function HomePage() {
                 className="h-10 sm:h-12 w-auto object-contain bg-white rounded-md p-1"
               />
             </a>
-            <nav className="hidden lg:flex items-center gap-8 text-[14px] font-bold text-slate-600">
+            <nav className="hidden lg:flex items-center gap-6 text-[14px] font-bold text-slate-600">
+              <a href="/dashboard/spoken-english" className="hover:text-emerald-600 transition">স্পোকেন হাব</a>
+              <a href="/dashboard/spoken-english/academy-labs" className="hover:text-emerald-600 transition flex items-center gap-1">
+                <span>একাডেমি ল্যাবস</span>
+                <span className="bg-emerald-500/10 text-emerald-600 text-[10px] font-black px-1.5 py-0.5 rounded-full border border-emerald-500/20">৪৭</span>
+              </a>
+              <a href="/dashboard/spoken-english/causative-verbs" className="hover:text-cyan-600 transition">কজেটিভ ভার্বস</a>
+              <a href="/dashboard/spoken-english/passive-voice" className="hover:text-teal-600 transition">প্যাসিভ ভয়েস</a>
+              <a href="/dashboard" className="hover:text-indigo-600 transition">IELTS প্র্যাকটিস</a>
+              <a href="#premium-courses" className="hover:text-slate-900 transition">কোর্সসমূহ</a>
               {menuLinks.map((link) => (
                 <a key={link.id} href={link.url} className="hover:text-emerald-600 transition flex items-center gap-1.5">
                   {link.label}
@@ -192,6 +201,22 @@ export default async function HomePage() {
               <p className="mt-6 text-sm sm:text-base text-slate-600 font-medium leading-relaxed max-w-2xl text-[15px] mx-auto">
                 {settings.hero?.subtitle || "সঠিক ব্রিটিশ উচ্চারণ (IPA), New Headway ডিকটেশন, Cambridge 9-20 রিয়েল অডিও টেস্ট এবং AI স্পিকিং-রাইটিং মূল্যায়নে সাবলীল ইংরেজি শিখুন ঘরে বসেই।"}
               </p>
+
+              {/* Quick Feature Badges in Hero */}
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-2.5 text-xs font-bold">
+                <Link href="/dashboard/spoken-english/academy-labs" className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 px-4 py-2 transition shadow-xs hover:scale-105">
+                  <span>🏛️ ৪৭টি একাডেমি ল্যাবস</span>
+                </Link>
+                <Link href="/dashboard/spoken-english/causative-verbs" className="inline-flex items-center gap-1.5 rounded-full bg-cyan-50 hover:bg-cyan-100 text-cyan-800 border border-cyan-300 px-4 py-2 transition shadow-xs hover:scale-105">
+                  <span>⚡ কজেটিভ ভার্বস মাস্টার</span>
+                </Link>
+                <Link href="/dashboard/spoken-english/passive-voice" className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-300 px-4 py-2 transition shadow-xs hover:scale-105">
+                  <span>🔄 স্পোকেন প্যাসিভ ভয়েস</span>
+                </Link>
+                <Link href="/dashboard" className="inline-flex items-center gap-1.5 rounded-full bg-indigo-50 hover:bg-indigo-100 text-indigo-800 border border-indigo-300 px-4 py-2 transition shadow-xs hover:scale-105">
+                  <span>🎯 Cambridge 9-20 টেস্ট</span>
+                </Link>
+              </div>
             </div>
             <div className="grid md:grid-cols-2 gap-6 lg:gap-10 max-w-5xl mx-auto">
               <a
@@ -679,6 +704,235 @@ export default async function HomePage() {
             </div>
           </div>
         </section>
+
+        {/* FLAGSHIP SHOWCASE: 47 ACADEMY MASTER LABS */}
+        <section id="academy-labs" className="py-24 bg-gradient-to-b from-white via-slate-50 to-white border-b border-slate-200 relative overflow-hidden">
+          <div className="absolute top-1/3 left-0 w-96 h-96 bg-teal-400/10 rounded-full blur-[120px] pointer-events-none" />
+          <div className="absolute top-1/3 right-0 w-96 h-96 bg-indigo-400/10 rounded-full blur-[120px] pointer-events-none" />
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="flex flex-col items-center text-center mb-14">
+              <span className="bg-gradient-to-r from-amber-500/15 via-rose-500/15 to-indigo-500/15 text-indigo-700 border border-indigo-200/80 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest flex items-center gap-2 mb-3 shadow-xs">
+                🏛️ LearnCare Academy Interactive Portal
+              </span>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
+                ৪৭টি ফুল ইন্টারঅ্যাক্টিভ স্পোকেন মাস্টার ল্যাব
+              </h2>
+              <p className="mt-4 text-sm sm:text-base text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                শুধু নিয়ম মুখস্থ নয় — নিজে টাইপ করে, সঠিক উচ্চারণ শুনে এবং শত শত বাক্যের বিকল্প ড্রপডাউন দেখে অনর্গল ইংরেজি শেখার অত্যাধুনিক ইন্টারেক্টিভ সিস্টেম।
+              </p>
+
+              {/* Stats Bar */}
+              <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl w-full">
+                <div className="p-3.5 rounded-2xl bg-white border border-slate-200 shadow-xs">
+                  <p className="text-2xl font-black text-emerald-600">৪৭টি</p>
+                  <p className="text-xs text-slate-500 font-bold mt-0.5">মাস্টার প্র্যাকটিস শিট</p>
+                </div>
+                <div className="p-3.5 rounded-2xl bg-white border border-slate-200 shadow-xs">
+                  <p className="text-2xl font-black text-indigo-600">৯০০+</p>
+                  <p className="text-xs text-slate-500 font-bold mt-0.5">বিকল্প সেন্টেন্স রূপ</p>
+                </div>
+                <div className="p-3.5 rounded-2xl bg-white border border-slate-200 shadow-xs">
+                  <p className="text-2xl font-black text-cyan-600">৫০০</p>
+                  <p className="text-xs text-slate-500 font-bold mt-0.5">ভার্বস কনজুগেশন ইঞ্জিন</p>
+                </div>
+                <div className="p-3.5 rounded-2xl bg-white border border-slate-200 shadow-xs">
+                  <p className="text-2xl font-black text-amber-600">১০০% ফ্রি</p>
+                  <p className="text-xs text-slate-500 font-bold mt-0.5">ইন্টারঅ্যাক্টিভ পরীক্ষা</p>
+                </div>
+              </div>
+            </div>
+
+            {/* 6 High-Impact Cards Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Card 1: Causative Verbs */}
+              <div className="group rounded-3xl bg-white border border-slate-200 hover:border-cyan-400 p-6 shadow-sm hover:shadow-xl hover:shadow-cyan-500/10 transition-all flex flex-col justify-between relative overflow-hidden">
+                <div className="absolute top-0 right-0 h-24 w-24 bg-cyan-100/50 rounded-full blur-xl group-hover:scale-150 transition pointer-events-none" />
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="bg-cyan-50 text-cyan-700 border border-cyan-200 text-[10px] font-black px-2.5 py-1 rounded-lg uppercase">
+                      ⚡ New Mega Lab
+                    </span>
+                    <span className="text-xl">⚡</span>
+                  </div>
+                  <h3 className="text-lg font-black text-slate-900 group-hover:text-cyan-700 transition">
+                    Causative Verbs Master Lab
+                  </h3>
+                  <p className="text-xs font-bold text-cyan-600 mt-0.5">Make, Have, Get, Let & Help</p>
+                  <p className="text-xs text-slate-600 mt-2.5 leading-relaxed">
+                    নিজে না করে অন্যকে দিয়ে কাজ করানোর বাস্তব কৌশল। Active ও Passive Causative ফর্মুলা, ৩০+ স্পোকেন ড্রিল এবং ৫০টি লাইভ টেস্ট।
+                  </p>
+                </div>
+                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                  <span className="text-[11px] font-bold text-slate-500">৫০ প্রশ্ন · লাইভ স্কোর</span>
+                  <Link
+                    href="/dashboard/spoken-english/causative-verbs"
+                    className="inline-flex items-center gap-1.5 bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-black px-3.5 py-2 rounded-xl transition shadow-sm"
+                  >
+                    ল্যাব শুরু করুন →
+                  </Link>
+                </div>
+              </div>
+
+              {/* Card 2: Spoken Passive */}
+              <div className="group rounded-3xl bg-white border border-slate-200 hover:border-teal-400 p-6 shadow-sm hover:shadow-xl hover:shadow-teal-500/10 transition-all flex flex-col justify-between relative overflow-hidden">
+                <div className="absolute top-0 right-0 h-24 w-24 bg-teal-100/50 rounded-full blur-xl group-hover:scale-150 transition pointer-events-none" />
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="bg-teal-50 text-teal-700 border border-teal-200 text-[10px] font-black px-2.5 py-1 rounded-lg uppercase">
+                      🔄 New Passive Lab
+                    </span>
+                    <span className="text-xl">🔄</span>
+                  </div>
+                  <h3 className="text-lg font-black text-slate-900 group-hover:text-teal-700 transition">
+                    Master Spoken Passive Sentences
+                  </h3>
+                  <p className="text-xs font-bold text-teal-600 mt-0.5">৮টি টেন্স ও নেটিভ Get-Passive</p>
+                  <p className="text-xs text-slate-600 mt-2.5 leading-relaxed">
+                    কথ্য ভাষায় কীভাবে সাবলীলভাবে প্যাসিভ বলবেন — ৮টি টেন্সের প্যাসিভ, মোডাল প্যাসিভ, নেটিভদের ইনফরমাল Get-Passive ও ৫০ নম্বরের ওয়ার্কবুক।
+                  </p>
+                </div>
+                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                  <span className="text-[11px] font-bold text-slate-500">৮ টেন্স · ৫০ টেস্ট</span>
+                  <Link
+                    href="/dashboard/spoken-english/passive-voice"
+                    className="inline-flex items-center gap-1.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-black px-3.5 py-2 rounded-xl transition shadow-sm"
+                  >
+                    ল্যাব শুরু করুন →
+                  </Link>
+                </div>
+              </div>
+
+              {/* Card 3: 300 Sentences + 3 Variations */}
+              <div className="group rounded-3xl bg-white border border-slate-200 hover:border-purple-400 p-6 shadow-sm hover:shadow-xl hover:shadow-purple-500/10 transition-all flex flex-col justify-between relative overflow-hidden">
+                <div className="absolute top-0 right-0 h-24 w-24 bg-purple-100/50 rounded-full blur-xl group-hover:scale-150 transition pointer-events-none" />
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="bg-purple-50 text-purple-700 border border-purple-200 text-[10px] font-black px-2.5 py-1 rounded-lg uppercase">
+                      💎 Flagship 900 Variations
+                    </span>
+                    <span className="text-xl">💎</span>
+                  </div>
+                  <h3 className="text-lg font-black text-slate-900 group-hover:text-purple-700 transition">
+                    300 Daily Sentences & 3 Variations
+                  </h3>
+                  <p className="text-xs font-bold text-purple-600 mt-0.5">Smart, Casual & Formal Forms</p>
+                  <p className="text-xs text-slate-600 mt-2.5 leading-relaxed">
+                    ৩০০টি নিত্যদিনের বাক্যের ৩টি বাস্তবসম্মত বিকল্প রূপ (মোট ৯০০টি রূপ), উচ্চারণ অডিও এবং ১০০ নম্বরের লাইভ স্পোকেন মাস্টারি পরীক্ষা!
+                  </p>
+                </div>
+                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                  <span className="text-[11px] font-bold text-slate-500">৩০০ বাক্য · ১০০ টেস্ট</span>
+                  <Link
+                    href="/dashboard/spoken-english/academy-labs/view?file=Master_300_Daily_Spoken_Sentences_Mega_Lab.html"
+                    className="inline-flex items-center gap-1.5 bg-purple-600 hover:bg-purple-500 text-white text-xs font-black px-3.5 py-2 rounded-xl transition shadow-sm"
+                  >
+                    মেগা টেস্ট দিন →
+                  </Link>
+                </div>
+              </div>
+
+              {/* Card 4: 100 & 200 Real Conversations */}
+              <div className="group rounded-3xl bg-white border border-slate-200 hover:border-emerald-400 p-6 shadow-sm hover:shadow-xl hover:shadow-emerald-500/10 transition-all flex flex-col justify-between relative overflow-hidden">
+                <div className="absolute top-0 right-0 h-24 w-24 bg-emerald-100/50 rounded-full blur-xl group-hover:scale-150 transition pointer-events-none" />
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-black px-2.5 py-1 rounded-lg uppercase">
+                      🗣️ 300+ Dialogues
+                    </span>
+                    <span className="text-xl">💬</span>
+                  </div>
+                  <h3 className="text-lg font-black text-slate-900 group-hover:text-emerald-700 transition">
+                    ১০০ ও ২০০ রিয়েল-লাইফ কনভারসেশন
+                  </h3>
+                  <p className="text-xs font-bold text-emerald-600 mt-0.5">সব বাস্তব সামাজিক ও পেশাদার পরিস্থিতি</p>
+                  <p className="text-xs text-slate-600 mt-2.5 leading-relaxed">
+                    অফিস, বিমানবন্দর, হোটেল, ডাক্তার, রেস্তোরাঁ ও দৈনন্দিন জীবনের ১০০টি ফুল অডিও ডায়ালগ এবং ২০০টি প্র্যাকটিক্যাল কোটেশন কনভারসেশন।
+                  </p>
+                </div>
+                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                  <span className="text-[11px] font-bold text-slate-500">অডিও · রোলপ্লে</span>
+                  <Link
+                    href="/dashboard/spoken-english/academy-labs/view?file=Real_Life_Everyday_Conversations_100_Master.html"
+                    className="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-black px-3.5 py-2 rounded-xl transition shadow-sm"
+                  >
+                    ডায়ালগ খুলুন →
+                  </Link>
+                </div>
+              </div>
+
+              {/* Card 5: All 12 Tenses */}
+              <div className="group rounded-3xl bg-white border border-slate-200 hover:border-indigo-400 p-6 shadow-sm hover:shadow-xl hover:shadow-indigo-500/10 transition-all flex flex-col justify-between relative overflow-hidden">
+                <div className="absolute top-0 right-0 h-24 w-24 bg-indigo-100/50 rounded-full blur-xl group-hover:scale-150 transition pointer-events-none" />
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="bg-indigo-50 text-indigo-700 border border-indigo-200 text-[10px] font-black px-2.5 py-1 rounded-lg uppercase">
+                      ⏳ 12 Tenses Engine
+                    </span>
+                    <span className="text-xl">⏳</span>
+                  </div>
+                  <h3 className="text-lg font-black text-slate-900 group-hover:text-indigo-700 transition">
+                    ১২টি টেন্স ও ৫০০ ভার্বস বিল্ডার
+                  </h3>
+                  <p className="text-xs font-bold text-indigo-600 mt-0.5">১২টি আলাদা শিট + ৫০০ ভার্বস ইঞ্জিন</p>
+                  <p className="text-xs text-slate-600 mt-2.5 leading-relaxed">
+                    প্রতিটি টেন্সের পৃথক মাস্টার শিট, ৫০০টি ইংরেজি ভার্বের তিন রূপ ও কনজুগেশন এবং নিজে বাক্য তৈরির লাইভ ইঞ্জিন।
+                  </p>
+                </div>
+                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                  <span className="text-[11px] font-bold text-slate-500">১২ শিট · ৫০০ ভার্বস</span>
+                  <Link
+                    href="/dashboard/spoken-english/academy-labs?category=tenses"
+                    className="inline-flex items-center gap-1.5 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-black px-3.5 py-2 rounded-xl transition shadow-sm"
+                  >
+                    টেন্স শিট দেখুন →
+                  </Link>
+                </div>
+              </div>
+
+              {/* Card 6: 22 Modals Encyclopedia */}
+              <div className="group rounded-3xl bg-white border border-slate-200 hover:border-rose-400 p-6 shadow-sm hover:shadow-xl hover:shadow-rose-500/10 transition-all flex flex-col justify-between relative overflow-hidden">
+                <div className="absolute top-0 right-0 h-24 w-24 bg-rose-100/50 rounded-full blur-xl group-hover:scale-150 transition pointer-events-none" />
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="bg-rose-50 text-rose-700 border border-rose-200 text-[10px] font-black px-2.5 py-1 rounded-lg uppercase">
+                      🛡️ 22 Modals Suite
+                    </span>
+                    <span className="text-xl">🛡️</span>
+                  </div>
+                  <h3 className="text-lg font-black text-slate-900 group-hover:text-rose-700 transition">
+                    ২২টি মোডাল ভার্বস এনসাইক্লোপিডিয়া
+                  </h3>
+                  <p className="text-xs font-bold text-rose-600 mt-0.5">সব মোডাল, সেমি-মোডাল ও পারফেক্ট মোডাল</p>
+                  <p className="text-xs text-slate-600 mt-2.5 leading-relaxed">
+                    Could have, Should have, Would rather, Had better, Be supposed to সহ ২২টি মোডালের তুলনামূলক পার্থক্য ও ড্রিল।
+                  </p>
+                </div>
+                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                  <span className="text-[11px] font-bold text-slate-500">২২ শিট · লাইভ কুইজ</span>
+                  <Link
+                    href="/dashboard/spoken-english/academy-labs?category=modals"
+                    className="inline-flex items-center gap-1.5 bg-rose-600 hover:bg-rose-500 text-white text-xs font-black px-3.5 py-2 rounded-xl transition shadow-sm"
+                  >
+                    মোডাল ল্যাব →
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom CTA to View All 47 Labs */}
+            <div className="mt-12 text-center">
+              <Link
+                href="/dashboard/spoken-english/academy-labs"
+                className="inline-flex items-center gap-2 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-black text-sm px-8 py-4 transition shadow-xl shadow-slate-900/10 hover:scale-[1.02]"
+              >
+                <span>সকল ৪৭টি একাডেমি ল্যাব ও শিট এক সাথে দেখুন</span>
+                <span className="bg-emerald-500 text-white text-[11px] font-bold px-2 py-0.5 rounded-full">All 47</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <section id="premium-courses" className="py-24 bg-[#f8fafc] border-b border-slate-200 relative overflow-hidden">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="flex flex-col items-center text-center mb-16">
@@ -772,6 +1026,56 @@ export default async function HomePage() {
               </p>
             </div>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-10">
+              {/* Causative Verbs */}
+              <div className="bg-[#f8fafc] border border-cyan-200 rounded-3xl p-6 hover:shadow-xl hover:border-cyan-400 transition-all group flex flex-col">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="h-12 w-12 rounded-2xl bg-cyan-100 text-cyan-700 flex items-center justify-center font-black text-xl">
+                    ⚡
+                  </div>
+                  <span className="bg-cyan-100 text-cyan-800 text-[10px] font-black px-2.5 py-1 rounded-lg uppercase">
+                    New Master Lab
+                  </span>
+                </div>
+                <h3 className="text-lg font-black text-slate-900 mb-1">
+                  Causative Verbs Master Lab
+                </h3>
+                <p className="text-xs font-bold text-cyan-600 mb-2">Make, Have, Get, Let & Help</p>
+                <p className="text-xs text-slate-600 mb-6 flex-1 leading-relaxed">
+                  নিজে না করে অন্যকে দিয়ে কাজ করানোর বাস্তব নিয়ম। Active ও Passive Causative, ৩০+ স্পোকেন ড্রিল এবং ৫০ নম্বরের লাইভ ওয়ার্কবুক।
+                </p>
+                <a
+                  className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-cyan-400 hover:text-cyan-700 w-full py-2.5 rounded-xl text-xs font-bold transition shadow-xs"
+                  href="/dashboard/spoken-english/causative-verbs"
+                >
+                  Start Causative Lab <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+              </div>
+
+              {/* Passive Voice */}
+              <div className="bg-[#f8fafc] border border-teal-200 rounded-3xl p-6 hover:shadow-xl hover:border-teal-400 transition-all group flex flex-col">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="h-12 w-12 rounded-2xl bg-teal-100 text-teal-700 flex items-center justify-center font-black text-xl">
+                    🔄
+                  </div>
+                  <span className="bg-teal-100 text-teal-800 text-[10px] font-black px-2.5 py-1 rounded-lg uppercase">
+                    New Passive Lab
+                  </span>
+                </div>
+                <h3 className="text-lg font-black text-slate-900 mb-1">
+                  Spoken Passive Sentences
+                </h3>
+                <p className="text-xs font-bold text-teal-600 mb-2">৮টি টেন্স ও নেটিভ Get-Passive</p>
+                <p className="text-xs text-slate-600 mb-6 flex-1 leading-relaxed">
+                  দৈনন্দিন স্পোকেন ইংলিশে প্যাসিভ বাক্যের সাবলীল ব্যবহার — ৮টি টেন্সের প্যাসিভ, মোডাল প্যাসিভ, Get-Passive এবং ৫০ নম্বরের লাইভ টেস্ট।
+                </p>
+                <a
+                  className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-teal-400 hover:text-teal-700 w-full py-2.5 rounded-xl text-xs font-bold transition shadow-xs"
+                  href="/dashboard/spoken-english/passive-voice"
+                >
+                  Start Passive Lab <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+              </div>
+
               <div className="bg-[#f8fafc] border border-slate-200 rounded-3xl p-6 hover:shadow-xl transition-all group flex flex-col">
                 <div className="flex items-center justify-between mb-4">
                   <div className="h-12 w-12 rounded-2xl bg-fuchsia-100 text-fuchsia-600 flex items-center justify-center">

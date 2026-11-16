@@ -49,8 +49,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="bn" suppressHydrationWarning>
-            <body suppressHydrationWarning className="antialiased bg-slate-50 text-slate-900">
+        <html lang="bn" suppressHydrationWarning className="font-bangla">
+            <body suppressHydrationWarning className="antialiased bg-slate-50 text-slate-900 font-bangla selection:bg-emerald-500 selection:text-white">
                 {children}
                 <ChatWidget />
                 <WhatsAppFloating />
