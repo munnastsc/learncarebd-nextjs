@@ -67,7 +67,7 @@ export default function AcademyLabsPortalPage() {
     }, [selectedCategory, selectedLevel, searchQuery]);
 
     const megaFeatured = useMemo(() => {
-        return ACADEMY_LABS_DATA.filter(item => item.featured).slice(0, 4);
+        return ACADEMY_LABS_DATA.filter(item => item.featured).slice(0, 6);
     }, []);
 
     return (
@@ -119,7 +119,7 @@ export default function AcademyLabsPortalPage() {
                             লার্ন কেয়ার একাডেমি স্পোকেন ইংলিশ মাস্টার ল্যাবস
                         </h2>
                         <p className="text-slate-300 text-sm sm:text-base font-medium leading-relaxed">
-                            ১০০ ও ২০০ রিয়েল-লাইফ কথোপকথন, ৩০০ স্পোকেন বাক্য ও ৩টি করে বিকল্প, ১২টি টেন্স প্র্যাকটিস শিট,
+                            ১০০ ও ২০০ রিয়েল-লাইফ কথোপকথন, ৩০০ স্পোকেন বাক্য ও ৩টি করে বিকল্প, কজেটিভ ভার্বস মাস্টার ল্যাব, স্পোকেন প্যাসিভ ভয়েস মেগা ল্যাব, ১২টি টেন্স প্র্যাকটিস শিট,
                             ৫০০ ভার্ব কনজুগেশন ইঞ্জিন এবং ২২টি মোডাল ভার্ব মাস্টার এনসাইক্লোপিডিয়া — সব এখন একটি সুবিন্যস্ত পোর্টালে!
                         </p>
                     </div>
@@ -127,7 +127,7 @@ export default function AcademyLabsPortalPage() {
                     {/* Quick Stats Pills */}
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
                         <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xs">
-                            <p className="text-2xl font-black text-teal-400">৪৫টি</p>
+                            <p className="text-2xl font-black text-teal-400">৪৭টি</p>
                             <p className="text-xs text-slate-300 font-medium">ইন্টারেক্টিভ ল্যাব ও শিট</p>
                         </div>
                         <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xs">

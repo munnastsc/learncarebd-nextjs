@@ -126,11 +126,11 @@ export default function SpokenEnglishDashboard() {
     const features = [
         {
             title: 'LearnCare Academy Master Labs & Sheets',
-            desc: '৩০০ স্পোকেন বাক্যের ৩টি বিকল্প ভ্যারিয়েশন, ১০০ ও ২০০ রিয়েল-লাইফ কনভারসেশন, ১২টি টেন্স ও ২২টি মোডাল ভার্ব শিট সহ ৪৫টি সম্পূর্ণ ইন্টার-অ্যাক্টিভ ল্যাব ও লেকচার শিট।',
+            desc: '৩০০ স্পোকেন বাক্যের ৩টি বিকল্প ভ্যারিয়েশন, কজেটিভ ভার্বস, স্পোকেন প্যাসিভ, ১০০ ও ২০০ রিয়েল-লাইফ কনভারসেশন, ১২টি টেন্স ও ২২টি মোডাল ভার্ব শিট সহ ৪৭টি সম্পূর্ণ ইন্টার-অ্যাক্টিভ ল্যাব ও লেকচার শিট।',
             href: '/dashboard/spoken-english/academy-labs',
             icon: <Sparkles className="text-amber-500" size={26} />,
             color: 'from-amber-50 via-orange-50 to-rose-50 border-amber-300 hover:border-amber-500 shadow-md ring-1 ring-amber-400/20',
-            badge: '🔥 45 INTERACTIVE MASTER LABS',
+            badge: '🔥 47 INTERACTIVE MASTER LABS',
             badgeColor: 'bg-amber-100 text-amber-900 border-amber-300'
         },
         {
@@ -469,11 +469,11 @@ export default function SpokenEnglishDashboard() {
                             LearnCare Academy <span className="bg-gradient-to-r from-amber-400 via-orange-300 to-amber-200 bg-clip-text text-transparent">Master Practice Labs & Sheets</span>
                         </h2>
                         <p className="mt-2 text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
-                            ৩০০ নিত্যদিনের বাক্যের ৩টি বিকল্প ভ্যারিয়েশন, ১০০ ও ২০০ রিয়েল-লাইফ কনভারসেশন, ১২টি টেন্স ও ২২টি মোডাল ভার্ব প্র্যাকটিস শিট সহ ৪৫টি সম্পূর্ণ ইন্টার-অ্যাক্টিভ স্পোকেন ল্যাব এবং প্রতিটি ইউনিটের অফিসিয়াল পিডিএফ লেকচার শিট।
+                            ৩০০ নিত্যদিনের বাক্যের ৩টি বিকল্প ভ্যারিয়েশন, কজেটিভ ভার্বস, স্পোকেন প্যাসিভ ভয়েস, ১০০ ও ২০০ রিয়েল-লাইফ কনভারসেশন, ১২টি টেন্স ও ২২টি মোডাল ভার্ব প্র্যাকটিস শিট সহ ৪৭টি সম্পূর্ণ ইন্টার-অ্যাক্টিভ স্পোকেন ল্যাব এবং প্রতিটি ইউনিটের অফিসিয়াল পিডিএফ লেকচার শিট।
                         </p>
 
                         {/* Quick Module Jump Pills */}
-                        <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                        <div className="mt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
                             <Link
                                 href="/dashboard/spoken-english/academy-labs/view?file=Master_300_Daily_Spoken_Sentences_Mega_Lab.html"
                                 className="p-3 rounded-2xl bg-white/5 hover:bg-amber-500/20 border border-white/10 hover:border-amber-400/50 transition group"
@@ -490,6 +490,24 @@ export default function SpokenEnglishDashboard() {
                                 <p className="text-[10px] font-bold text-emerald-400 uppercase">১০০ কনভারসেশন</p>
                                 <p className="text-xs font-black text-white group-hover:text-emerald-300 mt-0.5">১০০ রিয়েল ডায়ালগ</p>
                                 <p className="text-[10px] text-slate-400 mt-1">ফুল রোলপ্লে ড্রিল →</p>
+                            </Link>
+
+                            <Link
+                                href="/dashboard/spoken-english/academy-labs/view?file=Causative_Verbs_Master_Interactive_Practice_Lab.html"
+                                className="p-3 rounded-2xl bg-white/5 hover:bg-cyan-500/20 border border-white/10 hover:border-cyan-400/50 transition group"
+                            >
+                                <p className="text-[10px] font-bold text-cyan-400 uppercase">কজেটিভ ভার্বস</p>
+                                <p className="text-xs font-black text-white group-hover:text-cyan-300 mt-0.5">Make, Have, Get...</p>
+                                <p className="text-[10px] text-slate-400 mt-1">৫০ টেস্ট ও ফর্মুলা →</p>
+                            </Link>
+
+                            <Link
+                                href="/dashboard/spoken-english/academy-labs/view?file=Master_Passive_Voice_Spoken_Sentences_Mega_Lab.html"
+                                className="p-3 rounded-2xl bg-white/5 hover:bg-teal-500/20 border border-white/10 hover:border-teal-400/50 transition group"
+                            >
+                                <p className="text-[10px] font-bold text-teal-400 uppercase">স্পোকেন প্যাসিভ</p>
+                                <p className="text-xs font-black text-white group-hover:text-teal-300 mt-0.5">৮ টেন্স ও Get-Passive</p>
+                                <p className="text-[10px] text-slate-400 mt-1">৫০ ড্রিল ও স্কোর →</p>
                             </Link>
 
                             <Link

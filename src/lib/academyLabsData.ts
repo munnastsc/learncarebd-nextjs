@@ -17,8 +17,8 @@ export interface AcademyLabItem {
 }
 
 export const ACADEMY_LAB_CATEGORIES = [
-    { id: 'all', label: 'সকল ল্যাব (All 45)', icon: 'Layers' },
-    { id: 'mega-labs', label: '🔥 মেগা ল্যাবস ও মাস্টারক্লাস (8)', icon: 'Zap' },
+    { id: 'all', label: 'সকল ল্যাব (All 47)', icon: 'Layers' },
+    { id: 'mega-labs', label: '🔥 মেগা ল্যাবস ও মাস্টারক্লাস (10)', icon: 'Zap' },
     { id: 'conversations', label: '💬 ১০০ & ২০০ রিয়েল ডায়ালগ (2)', icon: 'MessageSquare' },
     { id: 'tenses', label: '⏳ ১২টি টেন্স প্র্যাকটিস শিট (13)', icon: 'Clock' },
     { id: 'modals', label: '🛡️ ২২টি মোডাল ভার্বস শিট (23)', icon: 'ShieldCheck' }
@@ -109,6 +109,38 @@ export const ACADEMY_LABS_DATA: AcademyLabItem[] = [
         "featured": true
     },
     {
+        "id": "causative-verbs-mega-lab",
+        "filename": "Causative_Verbs_Master_Interactive_Practice_Lab.html",
+        "title": "Causative Verbs Master Interactive Practice Lab (Make, Have, Get, Let, Help)",
+        "titleBn": "কজেটিভ ভার্বস মাস্টার ইন্টারঅ্যাক্টিভ প্র্যাকটিস ল্যাব (Make, Have, Get, Let, Help)",
+        "category": "mega-labs",
+        "categoryBn": "মেগা ল্যাবস",
+        "badge": "⚡ CAUSATIVE MASTERY",
+        "icon": "Zap",
+        "level": "Intermediate",
+        "description": "Master having others do work: Make, Have, Get, Let, and Help with Active/Passive formulas, 30+ drills, and 50 interactive workbook challenges.",
+        "descriptionBn": "নিজে না করে অন্যকে দিয়ে কাজ করানোর সম্পূর্ণ কৌশল — Make, Have, Get, Let ও Help-এর বাস্তব নিয়ম, ৫০টি ইন্টারঅ্যাক্টিভ টেস্ট ও অ্যানসার কি।",
+        "totalItems": "৫টি ভার্ব + ৫০টি টেস্ট প্রশ্ন",
+        "estimatedTime": "৪৫ মিনিট",
+        "featured": true
+    },
+    {
+        "id": "spoken-passive-sentences-mega-lab",
+        "filename": "Master_Passive_Voice_Spoken_Sentences_Mega_Lab.html",
+        "title": "Master Passive Voice & Spoken Passive Sentences Mega Lab",
+        "titleBn": "স্পোকেন প্যাসিভ ভয়েস ও ডেইলি প্যাসিভ সেন্টেন্সেস মেগা ল্যাব",
+        "category": "mega-labs",
+        "categoryBn": "মেগা ল্যাবস",
+        "badge": "🔄 SPOKEN PASSIVES",
+        "icon": "Layers",
+        "level": "Intermediate",
+        "description": "All 8 Tense Passives, Modals Passive, The Informal Get-Passive, and Reporting structures for real-life spoken fluency.",
+        "descriptionBn": "দৈনন্দিন স্পোকেন ইংলিশে প্যাসিভের সাবলীল ব্যবহার — ৮টি টেন্স, মোডাল প্যাসিভ, ইনফরমাল Get-Passive, ৫০টি টেস্ট ও স্কোরবোর্ড।",
+        "totalItems": "৮টি টেন্স + ৫০টি টেস্ট প্রশ্ন",
+        "estimatedTime": "৫০ মিনিট",
+        "featured": true
+    },
+    {
         "id": "extended-conversations-20min",
         "filename": "Mega_20_Min_Extended_Spoken_Conversations.html",
         "title": "20-Minute Extended Spoken English Conversations Masterclass",
@@ -166,9 +198,9 @@ export const ACADEMY_LABS_DATA: AcademyLabItem[] = [
         "badge": "🏛️ মাস্টার ইনডেক্স",
         "icon": "Library",
         "level": "All Levels",
-        "description": "The complete master index connecting all 45 interactive sheets and lecture modules.",
-        "descriptionBn": "একাডেমির সকল ৪৫টি ইন্টারঅ্যাক্টিভ লেকচার শিট ও প্র্যাকটিস ল্যাবের কেন্দ্রীয় মাস্টার পোর্টাল।",
-        "totalItems": "৪৫টি মডিউল সূচি",
+        "description": "The complete master index connecting all 47 interactive sheets and lecture modules.",
+        "descriptionBn": "একাডেমির সকল ৪৭টি ইন্টারঅ্যাক্টিভ লেকচার শিট ও প্র্যাকটিস ল্যাবের কেন্দ্রীয় মাস্টার পোর্টাল।",
+        "totalItems": "৪৭টি মডিউল সূচি",
         "estimatedTime": "১০ মিনিট",
         "featured": false
     },
