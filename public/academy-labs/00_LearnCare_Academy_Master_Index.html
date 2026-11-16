@@ -1,0 +1,1090 @@
+khj
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnCare Academy - All Tenses & Modal Verbs Master Portal</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #d97706;
+            --accent: #059669;
+            --purple: #8b5cf6;
+            --text-color: #1f2937;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+            --3d-shadow: 0 8px 0px #1d4ed8, 0 12px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 30px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 30px;
+            background: linear-gradient(135deg, #1e3a8a, #2563eb, #7c3aed);
+            color: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
+            margin-bottom: 40px;
+        }
+
+        .academy-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(8px);
+            padding: 6px 20px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.9rem;
+            font-weight: 900;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 12px 22px;
+            border-radius: 16px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            text-align: center;
+        }
+
+        .stat-item span {
+            font-size: 1.7rem;
+            font-weight: 800;
+            color: #fef08a;
+            display: block;
+        }
+
+        /* FEATURED HERO BANNERS */
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .featured-card {
+            background: white;
+            border: 2px solid #cbd5e1;
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.25s ease;
+        }
+
+        .featured-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-card.purple-theme {
+            border-color: #8b5cf6;
+            background: linear-gradient(180deg, #ffffff 0%, #faf5ff 100%);
+        }
+
+        .featured-card.amber-theme {
+            border-color: #d97706;
+            background: linear-gradient(180deg, #ffffff 0%, #fffbeb 100%);
+        }
+
+        .featured-card.emerald-theme {
+            border-color: #059669;
+            background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%);
+        }
+
+        .featured-card h3 {
+            font-size: 1.6rem;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        .featured-badge {
+            align-self: flex-start;
+            font-size: 0.85rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 5px 12px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .badge-purple {
+            background: #ede9fe;
+            color: #6d28d9;
+        }
+
+        .badge-amber {
+            background: #fef3c7;
+            color: #b45309;
+        }
+
+        .badge-emerald {
+            background: #d1fae5;
+            color: #047857;
+        }
+
+        .search-container {
+            margin: 30px 0 40px 0;
+            text-align: center;
+        }
+
+        .search-input {
+            width: 100%;
+            max-width: 650px;
+            padding: 18px 28px;
+            font-size: 1.25rem;
+            border-radius: 40px;
+            border: 2px solid var(--border-color);
+            background: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            outline: none;
+            transition: all 0.25s ease;
+        }
+
+        .search-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.18);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 45px 0 25px 0;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #e2e8f0;
+        }
+
+        .section-header h2 {
+            font-size: 2.1rem;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .badge-count {
+            background: #eff6ff;
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .module-card {
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 18px;
+            padding: 26px;
+            box-shadow: var(--shadow);
+            transition: all 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .module-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 15px 35px rgba(37, 99, 235, 0.12);
+        }
+
+        .card-type {
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 12px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            align-self: flex-start;
+        }
+
+        .type-tense {
+            background: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+        }
+
+        .type-modal {
+            background: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fde68a;
+        }
+
+        .type-perfect {
+            background: #faf5ff;
+            color: #7c3aed;
+            border: 1px solid #ddd6fe;
+        }
+
+        .module-card h3 {
+            font-size: 1.55rem;
+            color: #0f172a;
+            margin-bottom: 6px;
+        }
+
+        .module-card .bn-title {
+            color: var(--secondary);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .module-card p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 18px;
+            flex-grow: 1;
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 18px;
+            border-top: 1px dashed #e2e8f0;
+            padding-top: 14px;
+        }
+
+        .features-list li {
+            font-size: 0.95rem;
+            color: #475569;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-card {
+            display: block;
+            text-align: center;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 13px 22px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 12px;
+            box-shadow: 0 5px 0px var(--primary-dark), 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.15s ease;
+        }
+
+        .btn-card:hover {
+            background: var(--primary-dark);
+        }
+
+        .btn-card:active {
+            transform: translateY(3px);
+            box-shadow: 0 2px 0px var(--primary-dark);
+        }
+
+        .btn-card.purple {
+            background: #7c3aed;
+            box-shadow: 0 5px 0px #5b21b6, 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-card.purple:hover {
+            background: #6d28d9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            border-top: 2px solid var(--border-color);
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="academy-tag">LearnCare Academy • Complete Spoken English System</div>
+            <h1>All Tenses & Modal Verbs Master Portal</h1>
+            <p>সম্পূর্ণ ১২টি Tense এবং ২০টি Modal Verb-এর সম্পূর্ণ আলাদা আলাদা ফুল মাস্টার শিট। প্রতিটি শিটে রয়েছে ১০০
+                বাংলা টু ইংলিশ + ১০০ ইংলিশ টু বাংলা + ১০০ শূন্যস্থান পূরণ (অ্যানসার কি সহ) এবং ২০টি লাইভ স্কোর ট্র্যাকিং
+                এমসিকিউ টেস্ট!</p>
+
+            <div class="stats-bar">
+                <div class="stat-item"><span>12</span> All 12 Tenses (Separate)</div>
+                <div class="stat-item"><span>20</span> All Modal Verbs (Separate)</div>
+                <div class="stat-item"><span>9,600+</span> Spoken Practice Drills</div>
+                <div class="stat-item"><span>670+</span> Live Score MCQs</div>
+                <div class="stat-item"><span>100%</span> Authentic Everyday Sentences</div>
+            </div>
+        </header>
+
+        <!-- SPECIAL COMPREHENSIVE SUITE BANNERS -->
+                <div class="featured-grid">
+
+            <div class="featured-card emerald-theme"
+                style="border: 2px solid #10b981; background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);">
+                <div>
+                    <span class="featured-badge" style="background: #d1fae5; color: #047857;">🔥 New • 100 Real-Life Everyday Conversations</span>
+                    <h3 style="color:#065f46;">১০০টি বাস্তব জীবনের স্পোকেন কথোপকথন (স্বাভাবিক ও ছোট বাক্য)</h3>
+                    <p style="color: #4b5563; margin: 10px 0 16px;">বইয়ের জটিল বাক্য নয়—দৈনন্দিন জীবনের ঘরে, টং দোকানে, বাজারে, রিকশায়, বাসে, ক্যাফেতে, অফিসে ও ক্যাম্পাসে সাধারণ মানুষ যেভাবে কথা বলে, সেভাবে ১২-১৪টি ছোট ছোট ডায়ালগের ১০০টি পূর্ণ কথোপকথন। প্রতিটি লাইনে অডিও (TTS), 🎙️ লাইভ মাইক্রোফোন উচ্চারণ পরীক্ষক, 🎭 এআই রোল-প্লে অ্যারেনা, 🧠 ব্লাইন্ড মেমোরি টেস্ট মোড ও বাস্তব প্রয়োগের স্পোকেন টিপস!</p>
+                </div>
+                <a href="Real_Life_Everyday_Conversations_100_Master.html" class="btn-card"
+                    style="background: #10b981; box-shadow: 0 5px 0 #059669; color: #fff;">💬 Open 100 Conversations Master</a>
+            </div>
+
+            <div class="featured-card amber-theme"
+                style="border: 2px solid #f59e0b; background: linear-gradient(135deg, #fffbeb 0%, #ffffff 100%);">
+                <div>
+                    <span class="featured-badge" style="background: #fef3c7; color: #b45309;">💎 300 Sentences + 900 Alternatives + 100 Test</span>
+                    <h3 style="color:#92400e;">৩০০টি প্রয়োজনীয় স্পোকেন বাক্য, ৩টি বিকল্প ও ১০০ নম্বরের টেস্ট</h3>
+                    <p style="color: #4b5563; margin: 10px 0 16px;">দৈনন্দিন জীবনের ৩০০টি অপরিহার্য বাক্য, প্রতিটির ৩টি করে বাস্তবসম্মত বিকল্প রূপ (মোট ৯০০টি বিকল্প), বাস্তব কথোপকথনে প্রয়োগ, কখন ও কীভাবে ব্যবহার করতে হবে তার নিয়ম, অডিও, মাইক্রোফোন টেস্ট এবং ১০০ নম্বরের ইন্টারঅ্যাক্টিভ স্পোকেন মাস্টারি পরীক্ষা!</p>
+                </div>
+                <a href="Master_300_Daily_Spoken_Sentences_Mega_Lab.html" class="btn-card"
+                    style="background: #f59e0b; box-shadow: 0 5px 0 #d97706; color: #fff;">📚 Open 300 Sentences Mega Lab</a>
+            </div>
+
+            <div class="featured-card blue-theme"
+                style="border: 2px solid #2563eb; background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);">
+                <div>
+                    <span class="featured-badge" style="background: #dbeafe; color: #1d4ed8;">🎛️ Interactive 3-Column
+                        Engine</span>
+                    <h3>All Tenses Mega Interactive Practice Lab</h3>
+                    <p style="color: #4b5563; margin: 10px 0 16px;">১২টি টেন্সের ৩-কলাম ড্রপডাউন বাক্য নির্মাতা (Subject
+                        + 500 Verbs + Object), লাইভ ডায়নামিক বাংলা অনুবাদ, স্পিচ অডিও (TTS), ৫০০টি ভার্বের সম্পূর্ণ
+                        V1-V2-V3 ডিকশনারি, ১২টি টেন্সের সিক্রেট হ্যাক্স ও কোটেশন স্টাইলে বাস্তব জীবনের কথোপকথন।</p>
+                </div>
+                <a href="Master_All_Tenses_Mega_Interactive_Practice_Lab.html" class="btn-card"
+                    style="background: #2563eb; box-shadow: 0 5px 0 #1d4ed8; color: #fff;">🎛️ Open Interactive Lab</a>
+            </div>
+
+            <div class="featured-card purple-theme">
+                <div>
+                    <span class="featured-badge badge-purple">🌟 Ultimate Master Reference</span>
+                    <h3>All Modal Verbs Mega Encyclopedia</h3>
+                    <p style="color: #4b5563; margin: 10px 0 16px;">২০+ মডাল ভার্বের সম্পূর্ণ তুলনামূলক ছক, Can vs
+                        Could, May vs Might, Should vs Ought to, Would vs Used to-এর মতো জটিল সূক্ষ্ম পার্থক্য, ৫০টি
+                        স্পোকেন গোল্ডেন টিপস, ৩০টি কমন ভুলের সমাধান এবং ৩০ এমসিকিউ লাইভ স্কোর ডায়াগনস্টিক টেস্ট।</p>
+                </div>
+                <a href="Master_All_Modal_Verbs_Mega_Encyclopedia.html" class="btn-card purple">📖 Open Mega
+                    Encyclopedia</a>
+            </div>
+
+            
+            
+            <div class="featured-card amber-theme"
+                style="border: 2px solid #f59e0b; background: linear-gradient(135deg, #fffbeb 0%, #ffffff 100%);">
+                <div>
+                    <span class="featured-badge badge-amber">⏱️ 20-Min Deep Masterclasses</span>
+                    <h3>Mega 20-Minute Extended Spoken English Conversations</h3>
+                    <p style="color: #4b5563; margin: 10px 0 16px;">প্রতিটি কথোপকথন ১৫ থেকে ২০ মিনিট ধরে একা বা পার্টনারের সাথে প্র্যাকটিস করার মতো সুদীর্ঘ ও গভীর। রিয়েল-লাইফ ৫-৬টি ফেজে সাজানো ২৪-৩০টি ডায়ালগ, ২০-মিনিট স্পিকিং টাইমার, অটো-প্লে ও এআই রোল-প্লে স্পিকিং পার্টনার মোড!</p>
+                </div>
+                <a href="Mega_20_Min_Extended_Spoken_Conversations.html" class="btn-card"
+                    style="background: #f59e0b; box-shadow: 0 5px 0 #d97706; color: #fff;">⏱️ Open 20-Min Masterclass</a>
+            </div>
+
+            <div class="featured-card emerald-theme"
+                style="border: 2px solid #10b981; background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 100%);">
+                <div>
+                    <span class="featured-badge badge-emerald">💬 200 Conversations Suite</span>
+                    <h3>200 Everyday Spoken Conversations Master</h3>
+                    <p style="color: #4b5563; margin: 10px 0 16px;">১০০টি বাম ও ডান চ্যাট বাবল কোটেশন স্টাইলের দৈনন্দিন কথোপকথন (ক্লিকেবল বাংলা ও অডিও) + আরও ১০০টি বাংলা-ফার্স্ট ইন্টারঅ্যাক্টিভ চ্যালেঞ্জ ডায়ালগ (ক্লিক করে ইংরেজি উন্মোচন) এবং প্রতিটির শেষে ব্যবহারিক স্পোকেন নোটস।</p>
+                </div>
+                <a href="200_Everyday_Conversations_Master.html" class="btn-card"
+                    style="background: #10b981; box-shadow: 0 5px 0 #059669; color: #fff;">💬 Open 200 Conversations</a>
+            </div>
+
+            <div class="featured-card emerald-theme">
+                <div>
+                    <span class="featured-badge badge-emerald">🗣️ Practical Spoken Mastery</span>
+                    <h3>100 Real-Life Spoken Situations Master</h3>
+                    <p style="color: #4b5563; margin: 10px 0 16px;">দৈনন্দিন জীবনের ১০০টি বাস্তব পরিস্থিতি (অফিস,
+                        বিমানবন্দর, ব্যাংক, রেস্তোরাঁ, ইন্টারভিউ, জরুরি অবস্থা)-তে কীভাবে সাবলীলভাবে অনর্গল ইংরেজি বলতে
+                        হয় তার পূর্ণাঙ্গ ব্যবহারিক কথ্য নির্দেশিকা।</p>
+                </div>
+                <a href="100_Real_Life_Spoken_Situations_Master.html" class="btn-card"
+                    style="background: #059669; box-shadow: 0 5px 0 #047857;">🎯 Explore 100 Situations</a>
+            </div>
+
+            <div class="featured-card amber-theme">
+                <div>
+                    <span class="featured-badge badge-amber">🎤 Questioning Masterclass</span>
+                    <h3>Art of Answering Questions Masterclass</h3>
+                    <p style="color: #4b5563; margin: 10px 0 16px;">যে কোনো প্রশ্নের বুদ্ধিদীপ্ত, মার্জিত ও তাৎক্ষণিক
+                        উত্তর প্রদানের সেরা রাজকীয় কৌশল। প্রশ্নকর্তাকে মুগ্ধ করার মনস্তাত্ত্বিক ফ্রেমওয়ার্ক ও
+                        প্র্যাকটিস ব্যাংক।</p>
+                </div>
+                <a href="art_of_answering_questions_masterclass.html" class="btn-card"
+                    style="background: #d97706; box-shadow: 0 5px 0 #b45309;">💬 Open Masterclass</a>
+            </div>
+        </div>
+
+        <!-- SEARCH BOX -->
+        <div class="search-container">
+            <input type="text" id="moduleSearch" class="search-input"
+                placeholder="🔍 Search any Tense or Modal Verb (e.g. Should have, Present, Could, Must)..."
+                onkeyup="filterCards()">
+        </div>
+
+        <!-- SECTION 1: ALL 12 TENSES -->
+        <div class="section-header">
+            <h2>📘 All 12 Tenses (১২টি টেন্সের পৃথক মাস্টার শিট)</h2>
+            <span class="badge-count">12 Complete Sheets</span>
+        </div>
+
+        <div class="card-grid" id="tenseGrid">
+            <!-- Present Simple -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-tense">Present</span>
+                    <h3>Present Simple Tense</h3>
+                    <div class="bn-title">সাধারণ বর্তমান কাল</div>
+                    <p>নিয়মিত অভ্যাস, অপরিবর্তনীয় সত্য ও চিরন্তন বাস্তবতা প্রকাশের মাস্টার শিট।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Present simple.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Present Continuous -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-tense">Present</span>
+                    <h3>Present Continuous Tense</h3>
+                    <div class="bn-title">ঘটমান বর্তমান কাল</div>
+                    <p>বর্তমানে চোখের সামনে চলমান ক্রিয়া ও তাৎক্ষণিক প্রবাহ প্রকাশের নিয়ম।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Present continuous.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Present Perfect -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-tense">Present</span>
+                    <h3>Present Perfect Tense</h3>
+                    <div class="bn-title">পুরাঘটিত বর্তমান কাল</div>
+                    <p>এইমাত্র শেষ হওয়া কাজের ফল বর্তমান থাকা বা জীবনের গভীর অভিজ্ঞতা।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Present perfect.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Present Perfect Continuous -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-tense">Present</span>
+                    <h3>Present Perfect Continuous</h3>
+                    <div class="bn-title">নিত্যপ্রবৃত্ত বর্তমান কাল</div>
+                    <p>অতীত থেকে শুরু হয়ে নির্দিষ্ট বা অনির্দিষ্ট সময় ধরে চলতে থাকা ক্রিয়া।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Present perfect continuous.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Past Indefinite -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-tense">Past</span>
+                    <h3>Past Indefinite Tense</h3>
+                    <div class="bn-title">সাধারণ অতীত কাল</div>
+                    <p>অতীতের সম্পন্ন ঘটনা ও স্মৃতির সাবলীল বিবরণ প্রকাশের সম্পূর্ণ গাইড।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Past indefinite.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Past Continuous -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-tense">Past</span>
+                    <h3>Past Continuous Tense</h3>
+                    <div class="bn-title">ঘটমান অতীত কাল</div>
+                    <p>অতীতে কোনো এক নির্দিষ্ট সময়ে চলমান ছিল এমন কাজের বিবরণ।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Past continuous.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Past Perfect -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-tense">Past</span>
+                    <h3>Past Perfect Tense</h3>
+                    <div class="bn-title">পুরাঘটিত অতীত কাল</div>
+                    <p>অতীতের দুটি ঘটনার মধ্যে অপেক্ষাকৃত পূর্ববর্তী ঘটনার নির্ভুল কাঠামো।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Past perfect.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Past Perfect Continuous -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-tense">Past</span>
+                    <h3>Past Perfect Continuous</h3>
+                    <div class="bn-title">পুরাঘটিত ঘটমান অতীত কাল</div>
+                    <p>অতীতের কোনো ঘটনার পূর্বে দীর্ঘ সময় ধরে চলমান অতীত ক্রিয়া।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Past perfect continuous.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Future Indefinite -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-tense">Future</span>
+                    <h3>Future Indefinite Tense</h3>
+                    <div class="bn-title">সাধারণ ভবিষ্যৎ কাল</div>
+                    <p>ভবিষ্যতের স্বাভাবিক ইচ্ছা, সংকল্প, প্রতিশ্রুতি ও পূর্বাভাস।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Future indefinite.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Future Continuous -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-tense">Future</span>
+                    <h3>Future Continuous Tense</h3>
+                    <div class="bn-title">ঘটমান ভবিষ্যৎ কাল</div>
+                    <p>ভবিষ্যতের কোনো নির্দিষ্ট সময়ে চলমান থাকবে এমন সম্ভাব্য ক্রিয়া।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Future continuous.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Future Perfect -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-tense">Future</span>
+                    <h3>Future Perfect Tense</h3>
+                    <div class="bn-title">পুরাঘটিত ভবিষ্যৎ কাল</div>
+                    <p>ভবিষ্যতের নির্দিষ্ট সময়ের আগেই কোনো কাজ শেষ হয়ে থাকবে এমন রূপ।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Future perfect.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Future Perfect Continuous -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-tense">Future</span>
+                    <h3>Future Perfect Continuous</h3>
+                    <div class="bn-title">পুরাঘটিত ঘটমান ভবিষ্যৎ কাল</div>
+                    <p>ভবিষ্যতের কোনো সময় পর্যন্ত দীর্ঘকালব্যাপী চলমান ক্রিয়া।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Future perfect continuous.html" class="btn-card">Start Practice</a>
+            </div>
+        </div>
+
+        <!-- SECTION 2: BASE MODAL VERBS -->
+        <div class="section-header">
+            <h2>🎯 Primary & Semi-Modal Verbs (প্রাথমিক ও আধা মডাল ভার্ব)</h2>
+            <span class="badge-count">14 Separate Sheets</span>
+        </div>
+
+        <div class="card-grid" id="baseModalGrid">
+            <!-- Modal Can -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-modal">Ability</span>
+                    <h3>Modal 'Can'</h3>
+                    <div class="bn-title">পারি / সামর্থ্য / অনানুষ্ঠানিক অনুমতি</div>
+                    <p>বর্তমান ক্ষমতা, দক্ষতা, বাস্তব সম্ভাবনা ও বন্ধুদের সাথে সহজ কথোপকথন।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Can.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Modal Could -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-modal">Polite Request</span>
+                    <h3>Modal 'Could'</h3>
+                    <div class="bn-title">পারতাম / অত্যন্ত বিনম্র অনুরোধ</div>
+                    <p>অতীতের সক্ষমতা এবং ভদ্রসমাজে সর্বোচ্চ বিনম্র আবেদন জানানোর শিল্প।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Could.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Modal May -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-modal">Permission</span>
+                    <h3>Modal 'May'</h3>
+                    <div class="bn-title">সম্ভবত / আনুষ্ঠানিক অনুমতি / দোয়া</div>
+                    <p>৫০% উচ্চ সম্ভাবনা, প্রাতিষ্ঠানিক মার্জিত অনুমতি ও শুভকামনা।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal May.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Modal Might -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-modal">Possibility</span>
+                    <h3>Modal 'Might'</h3>
+                    <div class="bn-title">হতেও পারে (ক্ষীণ সম্ভাবনা)</div>
+                    <p>২৫-৩০% দুর্বল সম্ভাবনা ও অতীতে কিছু ঘটে থাকার দ্বিধাদ্বন্দ্ব প্রকাশ।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Might.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Modal Should -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-modal">Advice</span>
+                    <h3>Modal 'Should'</h3>
+                    <div class="bn-title">উচিত / যৌক্তিক পরামর্শ</div>
+                    <p>পরামর্শ, উপদেশ, নির্দেশিকা ও যৌক্তিক প্রত্যাশা প্রকাশের রূপ।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Should.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Modal Must -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-modal">Obligation</span>
+                    <h3>Modal 'Must'</h3>
+                    <div class="bn-title">অবশ্যই / নিশ্চয়ই / জোরালো অনুমান</div>
+                    <p>বাধ্যবাধকতা, নিজস্ব অটল সংকল্প ও জোরালো যৌক্তিক অনুমান।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Must.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Modal Have to -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-modal">Rules</span>
+                    <h3>Modal 'Have to'</h3>
+                    <div class="bn-title">করতে হবে (বাহ্যিক নিয়ম)</div>
+                    <p>আইন, নিয়ম বা পরিস্থিতির চাপে বাধ্য হয়ে কোনো কাজ করার নিয়ম।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Have to.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Modal Need to -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-modal">Necessity</span>
+                    <h3>Modal 'Need to'</h3>
+                    <div class="bn-title">প্রয়োজন / দরকার / আবশ্যকতা</div>
+                    <p>ব্যক্তিগত উপযোগিতা, স্বাস্থ্য সুরক্ষা ও বাস্তব জীবনের প্রয়োজনীয়তা।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Need to.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Modal Used to -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-modal">Past Habit</span>
+                    <h3>Modal 'Used to'</h3>
+                    <div class="bn-title">করতাম (অতীতের নিয়মিত অভ্যাস)</div>
+                    <p>অতীতের নিয়মিত অভ্যাস বা অবস্থা যা বর্তমানে আর ঘটে না।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Used to.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Modal Ought to -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-modal">Moral Duty</span>
+                    <h3>Modal 'Ought to'</h3>
+                    <div class="bn-title">উচিত (নৈতিক দায়িত্ব ও আদর্শ)</div>
+                    <p>পিতামাতা, সমাজ ও রাষ্ট্রের প্রতি নৈতিক কর্তব্য প্রকাশের অলংকার।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Ought to.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Modal Shall -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-modal">Proposal</span>
+                    <h3>Modal 'Shall'</h3>
+                    <div class="bn-title">করব কি? / আইনি বাধ্যবাধকতা</div>
+                    <p>যৌথ বিনম্র প্রস্তাব, আনুষ্ঠানিক ঘোষণা ও প্রাতিষ্ঠানিক প্রতিশ্রুতি।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Shall.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Modal Will -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-modal">Future Will</span>
+                    <h3>Modal 'Will'</h3>
+                    <div class="bn-title">দৃঢ় সংকল্প / ভবিষ্যৎ প্রত্যয়</div>
+                    <p>তাৎক্ষণিক সিদ্ধান্ত, ভবিষ্যৎ ইচ্ছা, প্রতিজ্ঞা ও প্রতিশ্রুতি।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Will.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Modal Would -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-modal">Polite Form</span>
+                    <h3>Modal 'Would'</h3>
+                    <div class="bn-title">বিনম্র আবেদন / শর্ত / অতীত অভ্যাস</div>
+                    <p>অভিজাত ভদ্র প্রস্তাব, দ্বিতীয় শর্ত (Conditionals) ও পুনরাবৃত্ত অভ্যাস।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Would.html" class="btn-card">Start Practice</a>
+            </div>
+
+            <!-- Modal Dare to -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-modal">Courage</span>
+                    <h3>Modal 'Dare to'</h3>
+                    <div class="bn-title">সাহস / শৌর্য / চ্যালেঞ্জ</div>
+                    <p>অন্যায়কে রুখে দাঁড়ানো, নির্ভীক বাচন ও ঔদ্ধত্যের প্রশ্ন তোলা।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Dare to.html" class="btn-card">Start Practice</a>
+            </div>
+        </div>
+
+        <!-- SECTION 3: PERFECT & ADVANCED MODALS -->
+        <div class="section-header">
+            <h2>💎 Perfect & Advanced Modals (পারফেক্ট ও অ্যাডভান্সড মডাল শিট)</h2>
+            <span class="badge-count">6 Dedicated Sheets</span>
+        </div>
+
+        <div class="card-grid" id="perfectModalGrid">
+            <!-- Modal Should have -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-perfect">Past Regret</span>
+                    <h3>Modal 'Should have + V3'</h3>
+                    <div class="bn-title">উচিত ছিল (কিন্তু করা হয়নি)</div>
+                    <p>অতীতের ভুল, দায়িত্ব এড়ানো ও অনুশোচনা প্রকাশের পূর্ণাঙ্গ রূপ।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Should have.html" class="btn-card purple">Start Practice</a>
+            </div>
+
+            <!-- Modal Would have -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-perfect">Third Conditional</span>
+                    <h3>Modal 'Would have + V3'</h3>
+                    <div class="bn-title">করতাম / হতো (যদি শর্ত পূরণ হতো)</div>
+                    <p>অতীতের অপূর্ণ শর্তের অবাস্তব ও কাল্পনিক ফলাফল প্রকাশের কৌশল।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Would have.html" class="btn-card purple">Start Practice</a>
+            </div>
+
+            <!-- Modal Could have -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-perfect">Missed Ability</span>
+                    <h3>Modal 'Could have + V3'</h3>
+                    <div class="bn-title">করতে পারতাম (কিন্তু করিনি)</div>
+                    <p>অতীতের অব্যবহৃত ক্ষমতা, হাতছাড়া সুযোগ ও সম্ভাব্য বিকল্প।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Could have.html" class="btn-card purple">Start Practice</a>
+            </div>
+
+            <!-- Modal Must have -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-perfect">Certainty</span>
+                    <h3>Modal 'Must have + V3'</h3>
+                    <div class="bn-title">নিশ্চয়ই করেছে / নিশ্চয়ই হয়েছে</div>
+                    <p>প্রমাণের ভিত্তিতে অতীতের কোনো ঘটনা সম্পর্কে নিশ্চিত যৌক্তিক অনুমান।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Must have.html" class="btn-card purple">Start Practice</a>
+            </div>
+
+            <!-- Modal Had better Would rather -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-perfect">Urgency & Preference</span>
+                    <h3>Had better & Would rather</h3>
+                    <div class="bn-title">বরং ভালো (সতর্কবার্তা) বনাম শ্রেয় পছন্দ</div>
+                    <p>জরুরি পরিণতি নির্দেশক উপদেশ এবং রুচিশীল অগ্রাধিকারের সমন্বয়।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Had better Would rather.html" class="btn-card purple">Start Practice</a>
+            </div>
+
+            <!-- Modal Be supposed to Be able to -->
+            <div class="module-card">
+                <div>
+                    <span class="card-type type-perfect">Duty & Ability</span>
+                    <h3>Be supposed to & Be able to</h3>
+                    <div class="bn-title">করার কথা (প্রত্যাশা) বনাম সামর্থ্য</div>
+                    <p>সামাজিক নিয়ম ও সময়সূচি বনাম সর্বকালের বাস্তব সামর্থ্য ও দক্ষতা।</p>
+                    <ul class="features-list">
+                        <li>✅ 100 Click-to-Reveal B2E Drills</li>
+                        <li>✅ 100 Click-to-Reveal E2B Drills</li>
+                        <li>✅ 100 Fill in Blanks (Answer Key)</li>
+                        <li>✅ 20 MCQ Live Score Test</li>
+                    </ul>
+                </div>
+                <a href="Modal Be supposed to Be able to.html" class="btn-card purple">Start Practice</a>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p><strong>LearnCare Academy Master Spoken English System</strong></p>
+            <p>Comprehensive Linguistic Architecture © 2026. All 32 master sheets engineered for effortless global
+                spoken mastery.</p>
+        </footer>
+    </div>
+
+    <!-- JAVASCRIPT FILTER -->
+    <script>
+        function filterCards() {
+            const input = document.getElementById('moduleSearch').value.toLowerCase();
+            const cards = document.querySelectorAll('.module-card');
+
+            cards.forEach(card => {
+                const title = card.querySelector('h3').innerText.toLowerCase();
+                const bn = card.querySelector('.bn-title').innerText.toLowerCase();
+                const desc = card.querySelector('p').innerText.toLowerCase();
+
+                if (title.includes(input) || bn.includes(input) || desc.includes(input)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnCare Academy - Present Simple Mega Practice</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --primary: #2563eb;
+            --secondary: #d97706;
+            --text-color: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 10px 25px rgba(0,0,0,0.05);
+            --3d-shadow: 0 8px 0px #1d4ed8, 0 15px 20px rgba(0,0,0,0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-size: 18px; 
+            line-height: 1.7;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+            border-bottom: 5px solid var(--primary);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 35px;
+            margin-bottom: 35px;
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 2rem;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--secondary);
+            margin: 20px 0 10px 0;
+            font-size: 1.4rem;
+        }
+
+        p, li {
+            margin-bottom: 12px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        .image-box {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Interactive Elements */
+        .interactive-line {
+            background: #f1f5f9;
+            padding: 15px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 1px solid var(--border-color);
+            margin-bottom: 12px;
+            transition: all 0.2s;
+        }
+
+        .interactive-line:hover {
+            background: #e0e7ff;
+            border-color: var(--primary);
+        }
+
+        .bangla-text {
+            display: none;
+            color: var(--secondary);
+            margin-top: 8px;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-top: 1px dashed #cbd5e1;
+            padding-top: 8px;
+        }
+
+        .btn-3d {
+            background: var(--primary);
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            box-shadow: var(--3d-shadow);
+            cursor: pointer;
+            transition: all 0.1s ease;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        .btn-3d:active {
+            transform: translateY(5px);
+            box-shadow: 0 3px 0px #1d4ed8, 0 5px 10px rgba(0,0,0,0.1);
+        }
+        
+        .answer-reveal {
+            display: none;
+            margin-top: 10px;
+            padding: 12px;
+            background: #dcfce7;
+            color: #166534;
+            border-radius: 8px;
+            font-weight: bold;
+            border-left: 4px solid #22c55e;
+        }
+
+        /* Grid for 50 items */
+        .practice-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .practice-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .practice-item {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .blank-input {
+            border: none;
+            border-bottom: 2px solid var(--primary);
+            background: transparent;
+            width: 100px;
+            font-size: 1.1rem;
+            text-align: center;
+            color: var(--primary);
+            font-weight: bold;
+            outline: none;
+        }
+
+        .mcq-options label {
+            display: block;
+            margin: 8px 0;
+            padding: 10px;
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .mcq-options label:hover {
+            background: #f1f5f9;
+        }
+
+        .routine-box {
+            background: #fffbeb;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .common-mistake {
+            background: #fef2f2;
+            padding: 15px;
+            border-left: 5px solid #ef4444;
+            margin-bottom: 10px;
+        }
+
+        /* Print styling */
+        @media print {
+            .bangla-text, .answer-reveal { display: block !important; }
+            .btn-3d { display: none !important; }
+            .interactive-line, .practice-item { page-break-inside: avoid; }
+            body { padding: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>LearnCare Academy</h1>
+        <p>Present Simple: Mega Master Sheet (Full Practice & Routine)</p>
+    </header>
+
+    <!-- SECTION 1: ALL USES -->
+    <section>
+        <h2>1. All Uses of Present Simple</h2>
+        <p>Present Simple (Subject + V1) প্রধানত ৪টি ক্ষেত্রে ব্যবহৃত হয়:</p>
+        <ul>
+            <li><strong>1. Daily Habit / Routine (দৈনন্দিন অভ্যাস):</strong> I wake up at 6 AM every day.</li>
+            <li><strong>2. Universal Truth (চিরন্তন সত্য):</strong> The sun rises in the east.</li>
+            <li><strong>3. General Facts (সাধারণ সত্য):</strong> Water boils at 100 degrees Celsius.</li>
+            <li><strong>4. Fixed Future Schedule (নির্ধারিত ভবিষ্যৎ সময়সূচি):</strong> The train leaves at 8 PM tonight.</li>
+        </ul>
+
+        <h3>Common Mistakes (সাধারণ ভুলসমূহ)</h3>
+        <div class="common-mistake"><strong>Mistake:</strong> He go to school. ❌<br><strong>Correct:</strong> He <strong>goes</strong> to school. ✅ <em>(Subject থার্ড পারসন সিঙ্গুলার হলে s/es বসে)</em></div>
+        <div class="common-mistake"><strong>Mistake:</strong> Does he goes? ❌<br><strong>Correct:</strong> Does he <strong>go</strong>? ✅ <em>(Does বসলে মূল ভার্বের সাথে আর s/es বসে না)</em></div>
+        <div class="common-mistake"><strong>Mistake:</strong> I am play football. ❌<br><strong>Correct:</strong> I <strong>play</strong> football. ✅ <em>(Present Simple এ am/is/are + verb বসে না)</em></div>
+
+        <h3>Native Using Sentences (নেটিভ স্পিকাররা যেভাবে বলে)</h3>
+        <ul>
+            <li>"It makes sense." (এটা যৌক্তিক)</li>
+            <li>"It depends." (এটা পরিস্থিতির উপর নির্ভর করে)</li>
+            <li>"I see what you mean." (আমি বুঝতে পারছি তুমি কী বোঝাতে চাইছ)</li>
+            <li>"Sounds good!" (ভালোই তো!)</li>
+            <li>"I have no idea." (আমার কোনো ধারণা নেই)</li>
+            <li>"It doesn't matter." (এতে কিছু যায় আসে না)</li>
+            <li>"I suppose so." (আমারও তাই মনে হয়)</li>
+            <li>"That happens." (এমনটা ঘটে)</li>
+            <li>"I doubt it." (আমার সন্দেহ আছে)</li>
+            <li>"It takes time." (এতে সময় লাগে)</li>
+            <li>"I get it." (আমি বুঝতে পেরেছি)</li>
+            <li>"He means well." (তার উদ্দেশ্য ভালো)</li>
+            <li>"That explains it." (এবার বোঝা গেল)</li>
+            <li>"It looks like rain." (মনে হচ্ছে বৃষ্টি হবে)</li>
+            <li>"I agree completely." (আমি পুরোপুরি একমত)</li>
+            <li>"It sounds familiar." (শুনে চেনা চেনা লাগছে)</li>
+            <li>"I appreciate it." (আমি এটার কদর করি)</li>
+            <li>"Who cares?" (কে পরোয়া করে?)</li>
+            <li>"It works for me." (আমার জন্য এটা ঠিক আছে)</li>
+            <li>"I don't mind." (আমি কিছু মনে করি না)</li>
+            <li>"It drives me crazy." (এটা আমাকে পাগল করে দেয়)</li>
+            <li>"That makes two of us." (আমারও একই অবস্থা)</li>
+            <li>"I bet you do." (আমি নিশ্চিত তুমি করো)</li>
+            <li>"It goes without saying." (এটা তো বলাই বাহুল্য)</li>
+            <li>"She has a point." (তার কথার যুক্তি আছে)</li>
+            <li>"I swear I don't know." (কসম করে বলছি আমি জানি না)</li>
+            <li>"It costs an arm and a leg." (এটার অনেক দাম)</li>
+            <li>"Time flies." (সময় খুব দ্রুত কেটে যায়)</li>
+            <li>"It comes and goes." (এটা আসে আর যায়)</li>
+            <li>"I promise I won't." (আমি কথা দিচ্ছি আমি করবো না)</li>
+            <li>"He drives me nuts." (সে আমাকে বিরক্ত করে মারে)</li>
+            <li>"It fits perfectly." (এটা একদম ঠিকঠাক মানিয়েছে)</li>
+            <li>"I prefer tea." (আমি চা বেশি পছন্দ করি)</li>
+            <li>"That suits me." (এটা আমার জন্য মানানসই)</li>
+            <li>"I love what you do." (তুমি যা করো তা আমার ভালো লাগে)</li>
+            <li>"It makes a difference." (এতে পার্থক্য তৈরি হয়)</li>
+            <li>"They complain a lot." (তারা অনেক অভিযোগ করে)</li>
+            <li>"I expect so." (আমি এমনটাই আশা করি)</li>
+            <li>"It hurts a little." (একটু ব্যথা করছে)</li>
+            <li>"I suggest you leave." (আমি পরামর্শ দিচ্ছি তুমি চলে যাও)</li>
+            <li>"It smells delicious." (দারুণ সুবাস বেরোচ্ছে)</li>
+            <li>"I hope you understand." (আশা করি তুমি বুঝতে পারছো)</li>
+            <li>"That completely makes sense." (এটা পুরোপুরি অর্থবহ)</li>
+            <li>"It takes two to tango." (এক হাতে তালি বাজে না)</li>
+            <li>"I owe you one." (আমি তোমার কাছে ঋণী রইলাম)</li>
+            <li>"It seems fine." (এটা ঠিকই মনে হচ্ছে)</li>
+            <li>"I need a favor." (আমার একটা সাহায্য দরকার)</li>
+            <li>"He looks familiar." (তাকে চেনা চেনা লাগছে)</li>
+            <li>"I think you're right." (আমার মনে হয় তুমি ঠিক বলছো)</li>
+            <li>"It bothers me." (এটা আমাকে বিরক্ত করে)</li>
+        </ul>
+        
+        <h3>Important Phrasal Verbs for Daily Routine</h3>
+        <ul>
+            <li><strong>Wake up:</strong> ঘুম থেকে ওঠা</li>
+            <li><strong>Get up:</strong> বিছানা ছেড়ে ওঠা</li>
+            <li><strong>Put on:</strong> পরিধান করা</li>
+            <li><strong>Take off:</strong> খুলে ফেলা</li>
+            <li><strong>Set off:</strong> যাত্রা শুরু করা</li>
+            <li><strong>Hang out:</strong> আড্ডা দেওয়া</li>
+            <li><strong>Turn on:</strong> চালু করা</li>
+            <li><strong>Turn off:</strong> বন্ধ করা</li>
+            <li><strong>Look for:</strong> খোঁজা</li>
+            <li><strong>Look after:</strong> দেখাশোনা করা</li>
+            <li><strong>Give up:</strong> হাল ছেড়ে দেওয়া</li>
+            <li><strong>Find out:</strong> খুঁজে বের করা</li>
+            <li><strong>Figure out:</strong> বুঝতে পারা</li>
+            <li><strong>Work out:</strong> ব্যায়াম করা/সমাধান করা</li>
+            <li><strong>Break down:</strong> নষ্ট হয়ে যাওয়া/ভেঙে পড়া</li>
+            <li><strong>Show up:</strong> হাজির হওয়া</li>
+            <li><strong>Catch up:</strong> নাগাল ধরা/আড্ডা দিয়ে আপডেট নেওয়া</li>
+            <li><strong>Drop in:</strong> হঠাৎ দেখা করতে আসা</li>
+            <li><strong>Fill in:</strong> পূরণ করা</li>
+            <li><strong>Hold on:</strong> অপেক্ষা করা</li>
+            <li><strong>Keep on:</strong> চালিয়ে যাওয়া</li>
+            <li><strong>Run out:</strong> ফুরিয়ে যাওয়া</li>
+            <li><strong>Set up:</strong> স্থাপন করা/আয়োজন করা</li>
+            <li><strong>Take care of:</strong> যত্ন নেওয়া</li>
+            <li><strong>Grow up:</strong> বড় হওয়া</li>
+            <li><strong>Calm down:</strong> শান্ত হওয়া</li>
+            <li><strong>Cheer up:</strong> আনন্দিত হওয়া</li>
+            <li><strong>Clean up:</strong> পরিষ্কার করা</li>
+            <li><strong>Dress up:</strong> সাজগোজ করা</li>
+            <li><strong>Eat out:</strong> বাইরে খাওয়া</li>
+        </ul>
+        
+        <h3>Frequent Words (Linkers/Connectors)</h3>
+
+        <p>রুটিন বা কোনো গল্প বলার সময় বারবার 'and' (এবং) না বলে নিচের <strong>Linkers বা Connectors</strong> গুলো ব্যবহার করলে ইংরেজি অনেক সুন্দর ও স্মার্ট শোনায়:</p>
+        <ul style="margin-bottom: 20px;">
+            <li><strong>First / Firstly:</strong> প্রথমত (কোনো কাজ শুরু করার সময়)</li>
+            <li><strong>First of all:</strong> সবার আগে</li>
+            <li><strong>Then:</strong> তারপর</li>
+            <li><strong>Next:</strong> তারপর / পরবর্তী কাজ</li>
+            <li><strong>After that:</strong> এরপর</li>
+            <li><strong>Later:</strong> পরে / কিছুক্ষণ পর</li>
+            <li><strong>Later on:</strong> পরবর্তীতে</li>
+            <li><strong>Meanwhile:</strong> ইতিমধ্যে / একই সময়ে</li>
+            <li><strong>Besides:</strong> তাছাড়া</li>
+            <li><strong>Moreover:</strong> অধিকন্তু / এছাড়া</li>
+            <li><strong>Finally:</strong> অবশেষে (সব শেষের কাজের আগে)</li>
+            <li><strong>At last:</strong> পরিশেষে</li>
+            <li><strong>In the end:</strong> শেষমেশ</li>
+        </ul>
+
+    </section>
+
+    <!-- SECTION 2: JISAN'S ROUTINE -->
+    <section>
+        <h2>2. Jisan's Daily Routine (24-Hour & 7-Day)</h2>
+        
+        <div class="image-box">
+            <img src="/images/academy/jisan_morning_1789215242133.jpg" alt="Jisan Morning">
+        </div>
+
+        <div class="routine-box">
+            <h3>Jisan's 24-Hour Routine (Weekday)</h3>
+            <p><strong>Morning:</strong> Hello, I am Jisan. I usually <strong>wake up</strong> at 6:00 AM. <em>Then</em>, I <strong>get up</strong> from bed and brush my teeth. <em>After that</em>, I wash my face and do some light exercise for 15 minutes. <em>Next</em>, I take a shower and <strong>put on</strong> my school uniform. I have my breakfast at 7:30 AM. My mother always makes delicious food for me. I <strong>set off</strong> for school at 8:00 AM.</p>
+            <p><strong>Afternoon:</strong> My school starts at 8:30 AM and finishes at 1:30 PM. I return home at 2:00 PM. <em>Then</em>, I <strong>take off</strong> my uniform and wash my hands. <em>After that</em>, I eat my lunch with my family. <em>Later</em>, I take a short nap for an hour.</p>
+            <p><strong>Evening & Night:</strong> In the evening, I go to the field to play football with my friends. I come back home at 6 PM. I wash myself and sit at my desk to study. I do my homework for two hours. We have dinner at 9:00 PM. <em>Finally</em>, I read a storybook and go to bed at 10:30 PM.</p>
+        </div>
+
+        <div class="image-box">
+            <img src="/images/academy/jisan_weekend_1789215273028.jpg" alt="Jisan Weekend">
+        </div>
+
+        <div class="routine-box">
+            <h3>Jisan's Weekend (7-Day Context)</h3>
+            <p>From Monday to Friday, my routine is very strict. I go to school, study, and follow my timetable. But Friday is different because it is the weekend in our country. On Friday mornings, I don't wake up early. I sleep until 8 AM. I don't have to go to school, so I feel very relaxed. In the afternoon, my family and I sometimes visit our relatives. In the evening, I <strong>hang out</strong> with my best friends in the park. On Saturdays, I help my mother clean the house and prepare my school bag for Sunday. I love my weekends.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 3: PRESENTATION PRACTICE -->
+    <section>
+        <h2>3. Full Presentation: How to talk about your daily routine</h2>
+        <p>কীভাবে কারও সামনে নিজের রুটিন নিয়ে সুন্দরভাবে প্রেজেন্টেশন দেবেন তার স্যাম্পল। লাইনে ক্লিক করে বাংলা অর্থ দেখে নিন।</p>
+        
+        <div class="interactive-line" onclick="toggleBangla(this)">"Hello everyone! Thank you for giving me the chance to speak."<div class="bangla-text">সবাইকে হ্যালো! আমাকে কথা বলার সুযোগ দেওয়ার জন্য ধন্যবাদ।</div></div>
+        <div class="interactive-line" onclick="toggleBangla(this)">"Today, I am going to talk about my daily routine."<div class="bangla-text">আজ, আমি আমার দৈনন্দিন রুটিন নিয়ে কথা বলতে যাচ্ছি।</div></div>
+        <div class="interactive-line" onclick="toggleBangla(this)">"I am an early riser. I wake up at 6 AM."<div class="bangla-text">আমি খুব সকালে উঠি। আমি ভোর ৬টায় ঘুম থেকে উঠি।</div></div>
+        <div class="interactive-line" onclick="toggleBangla(this)">"First, I brush my teeth and say my morning prayers."<div class="bangla-text">প্রথমে, আমি দাঁত ব্রাশ করি এবং সকালের প্রার্থনা করি।</div></div>
+        <div class="interactive-line" onclick="toggleBangla(this)">"Then, I go for a morning walk in the nearby park."<div class="bangla-text">তারপর, আমি কাছের পার্কে প্রাতঃভ্রমণে যাই।</div></div>
+        <div class="interactive-line" onclick="toggleBangla(this)">"After that, I come back home and take a shower."<div class="bangla-text">এরপর, আমি বাড়ি ফিরে আসি এবং গোসল করি।</div></div>
+        <div class="interactive-line" onclick="toggleBangla(this)">"I have my breakfast at 8 o'clock with my family."<div class="bangla-text">আমি ৮টায় আমার পরিবারের সাথে সকালের নাস্তা করি।</div></div>
+        <div class="interactive-line" onclick="toggleBangla(this)">"Next, I get ready and go to my school/office."<div class="bangla-text">তারপর, আমি তৈরি হই এবং আমার স্কুলে/অফিসে যাই।</div></div>
+        <div class="interactive-line" onclick="toggleBangla(this)">"I spend a busy day there and return home at 4 PM."<div class="bangla-text">আমি সেখানে ব্যস্ত দিন কাটাই এবং বিকাল ৪টায় বাড়ি ফিরি।</div></div>
+        <div class="interactive-line" onclick="toggleBangla(this)">"In the evening, I enjoy some snacks and do my tasks."<div class="bangla-text">সন্ধ্যায়, আমি কিছু নাস্তা উপভোগ করি এবং আমার কাজ করি।</div></div>
+        <div class="interactive-line" onclick="toggleBangla(this)">"We have dinner together at 9 PM."<div class="bangla-text">আমরা রাত ৯টায় একসাথে রাতের খাবার খাই।</div></div>
+        <div class="interactive-line" onclick="toggleBangla(this)">"Finally, I use my phone for a while and go to sleep at 11 PM."<div class="bangla-text">অবশেষে, আমি কিছুক্ষণ ফোন চালাই এবং রাত ১১টায় ঘুমাতে যাই।</div></div>
+        <div class="interactive-line" onclick="toggleBangla(this)">"That's all about my regular day. Thank you for listening!"<div class="bangla-text">আমার সাধারণ দিন সম্পর্কে এটাই সব। শোনার জন্য ধন্যবাদ!</div></div>
+    </section>
+
+    <!-- 5 SHORT STORIES WITH GAPS -->
+    <section>
+        <h2>4. Five Short Stories (Fill in the gaps with Present Simple)</h2>
+        
+        <h3>Story 1: The Clever Fox</h3>
+        <p>A clever fox (1) <input type="text" class="blank-input"> (live) in a forest. Every day, he (2) <input type="text" class="blank-input"> (hunt) for food. He (3) <input type="text" class="blank-input"> (not/like) to eat grass. The other animals (4) <input type="text" class="blank-input"> (fear) him. When he (5) <input type="text" class="blank-input"> (see) a rabbit, he runs fast. Sometimes, the rabbit (6) <input type="text" class="blank-input"> (escape). But the fox never (7) <input type="text" class="blank-input"> (give) up. He (8) <input type="text" class="blank-input"> (try) again.</p>
+        <button class="btn-3d" onclick="toggleAnswers('s1-ans')">Answers</button>
+        <div id="s1-ans" class="answer-reveal">1. lives, 2. hunts, 3. doesn't like, 4. fear, 5. sees, 6. escapes, 7. gives, 8. tries</div>
+
+        <h3>Story 2: Mr. Bean's Holiday</h3>
+        <p>Mr. Bean (1) <input type="text" class="blank-input"> (work) very hard. On Sundays, he (2) <input type="text" class="blank-input"> (want) to relax. He (3) <input type="text" class="blank-input"> (pack) his bag and (4) <input type="text" class="blank-input"> (drive) to the beach. His car (5) <input type="text" class="blank-input"> (be) very old, so it (6) <input type="text" class="blank-input"> (make) a funny noise. He (7) <input type="text" class="blank-input"> (not/care) about the noise. He just (8) <input type="text" class="blank-input"> (enjoy) the sunshine.</p>
+        <button class="btn-3d" onclick="toggleAnswers('s2-ans')">Answers</button>
+        <div id="s2-ans" class="answer-reveal">1. works, 2. wants, 3. packs, 4. drives, 5. is, 6. makes, 7. doesn't care, 8. enjoys</div>
+
+        <h3>Story 3: The Busy Ant</h3>
+        <p>The ant (1) <input type="text" class="blank-input"> (be) a hardworking insect. It (2) <input type="text" class="blank-input"> (collect) food all summer. It (3) <input type="text" class="blank-input"> (know) that winter is coming. The grasshopper (4) <input type="text" class="blank-input"> (play) the guitar and (5) <input type="text" class="blank-input"> (laugh) at the ant. "Why (6) <input type="text" class="blank-input"> (do) you work so hard?" he asks. The ant (7) <input type="text" class="blank-input"> (not/answer). It (8) <input type="text" class="blank-input"> (continue) its work.</p>
+        <button class="btn-3d" onclick="toggleAnswers('s3-ans')">Answers</button>
+        <div id="s3-ans" class="answer-reveal">1. is, 2. collects, 3. knows, 4. plays, 5. laughs, 6. do, 7. doesn't answer, 8. continues</div>
+
+        <h3>Story 4: Sarah's Bakery</h3>
+        <p>Sarah (1) <input type="text" class="blank-input"> (own) a small bakery. She (2) <input type="text" class="blank-input"> (bake) fresh bread every morning. People (3) <input type="text" class="blank-input"> (love) her cakes. She (4) <input type="text" class="blank-input"> (open) the shop at 7 AM. Her husband (5) <input type="text" class="blank-input"> (help) her. He (6) <input type="text" class="blank-input"> (sell) the items to the customers. They (7) <input type="text" class="blank-input"> (close) the shop at 8 PM. They (8) <input type="text" class="blank-input"> (feel) tired but happy.</p>
+        <button class="btn-3d" onclick="toggleAnswers('s4-ans')">Answers</button>
+        <div id="s4-ans" class="answer-reveal">1. owns, 2. bakes, 3. love, 4. opens, 5. helps, 6. sells, 7. close, 8. feel</div>
+
+        <h3>Story 5: A Rainy Day</h3>
+        <p>It (1) <input type="text" class="blank-input"> (rain) a lot during the monsoon. The sky (2) <input type="text" class="blank-input"> (look) dark. Children (3) <input type="text" class="blank-input"> (not/go) to the playground. They (4) <input type="text" class="blank-input"> (stay) at home. Mother (5) <input type="text" class="blank-input"> (make) hot soup. Father (6) <input type="text" class="blank-input"> (read) a book by the window. The cat (7) <input type="text" class="blank-input"> (sleep) on the sofa. Everyone (8) <input type="text" class="blank-input"> (enjoy) the cozy weather.</p>
+        <button class="btn-3d" onclick="toggleAnswers('s5-ans')">Answers</button>
+        <div id="s5-ans" class="answer-reveal">1. rains, 2. looks, 3. don't go, 4. stay, 5. makes, 6. reads, 7. sleeps, 8. enjoys</div>
+    </section>
+
+    <!-- SECTION 5: 50 BANGLA TO ENGLISH -->
+    <section>
+        <h2>5. Bangla to English Translation (50 Items)</h2>
+        <div class="practice-grid">
+            <!-- 1-10 -->
+            <div class="practice-item">1. আমি সকালে ঘুম থেকে উঠি।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I wake up in the morning.</div></div>
+            <div class="practice-item">2. সে কি চা পান করে?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does he drink tea?</div></div>
+            <div class="practice-item">3. তারা এখানে আসে না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">They don't come here.</div></div>
+            <div class="practice-item">4. সূর্য পূর্ব দিকে ওঠে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">The sun rises in the east.</div></div>
+            <div class="practice-item">5. আমি তাকে চিনি না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I don't know him.</div></div>
+            <div class="practice-item">6. তুমি কোথায় থাকো?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Where do you live?</div></div>
+            <div class="practice-item">7. সে খুব ভালো ইংরেজি বলে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He speaks English very well.</div></div>
+            <div class="practice-item">8. আমরা প্রতিদিন স্কুলে যাই।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">We go to school every day.</div></div>
+            <div class="practice-item">9. মা রান্না করেন।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Mother cooks.</div></div>
+            <div class="practice-item">10. সে কেন কাঁদে?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why does he cry?</div></div>
+            
+            <!-- 11-20 -->
+            <div class="practice-item">11. আমি মাছ পছন্দ করি না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I don't like fish.</div></div>
+            <div class="practice-item">12. কুকুরটি রাতে ঘেউ ঘেউ করে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">The dog barks at night.</div></div>
+            <div class="practice-item">13. তুমি কি আমাকে বিশ্বাস করো?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do you believe me?</div></div>
+            <div class="practice-item">14. তারা ফুটবল খেলে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">They play football.</div></div>
+            <div class="practice-item">15. পাখি আকাশে ওড়ে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Birds fly in the sky.</div></div>
+            <div class="practice-item">16. সে কি তোমাকে সাহায্য করে?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does he help you?</div></div>
+            <div class="practice-item">17. আমি আমার কাজ করি।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I do my work.</div></div>
+            <div class="practice-item">18. সে মিথ্যা বলে না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He doesn't tell a lie.</div></div>
+            <div class="practice-item">19. তুমি কখন ঘুমাও?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">When do you sleep?</div></div>
+            <div class="practice-item">20. জল শূন্য ডিগ্রিতে বরফ হয়।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Water freezes at zero degrees.</div></div>
+
+            <!-- 21-30 -->
+            <div class="practice-item">21. আমার বাবা একটি ব্যাংকে কাজ করেন।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">My father works in a bank.</div></div>
+            <div class="practice-item">22. তারা কি এখানে থাকে?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do they live here?</div></div>
+            <div class="practice-item">23. বৃষ্টি হয় না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">It doesn't rain.</div></div>
+            <div class="practice-item">24. তুমি কি চা নাকি কফি চাও?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do you want tea or coffee?</div></div>
+            <div class="practice-item">25. সে একটি চিঠি লেখে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He writes a letter.</div></div>
+            <div class="practice-item">26. আমি বুঝতে পারছি।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I understand.</div></div>
+            <div class="practice-item">27. সে এটা জানে না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He doesn't know it.</div></div>
+            <div class="practice-item">28. দোকানটি ৯টায় খোলে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">The shop opens at 9 o'clock.</div></div>
+            <div class="practice-item">29. আমি তাকে পছন্দ করি।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I like him.</div></div>
+            <div class="practice-item">30. তারা খুব জোরে কথা বলে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">They speak very loudly.</div></div>
+
+            <!-- 31-40 -->
+            <div class="practice-item">31. তুমি কি আমাকে চেনো?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do you know me?</div></div>
+            <div class="practice-item">32. সে মাংস খায় না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He doesn't eat meat.</div></div>
+            <div class="practice-item">33. পৃথিবী সূর্যের চারদিকে ঘোরে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">The earth moves around the sun.</div></div>
+            <div class="practice-item">34. সে সবসময় সত্য বলে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He always speaks the truth.</div></div>
+            <div class="practice-item">35. তুমি কিভাবে স্কুলে যাও?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">How do you go to school?</div></div>
+            <div class="practice-item">36. আমরা টিভি দেখি না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">We don't watch TV.</div></div>
+            <div class="practice-item">37. ট্রেনটি রাত ৮টায় ছাড়ে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">The train leaves at 8 PM.</div></div>
+            <div class="practice-item">38. তিনি একজন শিক্ষক।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He is a teacher. (Be verb as main verb)</div></div>
+            <div class="practice-item">39. আমি আমার বাবা-মাকে ভালোবাসি।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I love my parents.</div></div>
+            <div class="practice-item">40. সে কি রোজ হাঁটে?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does he walk every day?</div></div>
+
+            <!-- 41-50 -->
+            <div class="practice-item">41. আমি আমার ভুল স্বীকার করি।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I admit my mistake.</div></div>
+            <div class="practice-item">42. সে ছবি আঁকে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He draws pictures.</div></div>
+            <div class="practice-item">43. তারা আমাদের সমর্থন করে না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">They don't support us.</div></div>
+            <div class="practice-item">44. তুমি কি প্রতিদিন ব্যায়াম করো?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do you exercise every day?</div></div>
+            <div class="practice-item">45. গাছ আমাদের অক্সিজেন দেয়।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Trees give us oxygen.</div></div>
+            <div class="practice-item">46. সে কিছুই জানে না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He knows nothing. / He doesn't know anything.</div></div>
+            <div class="practice-item">47. আমি কি তোমাকে বিরক্ত করি?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do I disturb you?</div></div>
+            <div class="practice-item">48. সে গাড়ি চালায়।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He drives a car.</div></div>
+            <div class="practice-item">49. নদী সমুদ্রে গিয়ে মেশে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">The river flows into the sea.</div></div>
+            <div class="practice-item">50. আমরা বাংলায় কথা বলি।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">We speak in Bangla.</div></div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: 50 ENGLISH TO BANGLA -->
+    <section>
+        <h2>6. English to Bangla Translation (50 Items)</h2>
+        <div class="practice-grid">
+            <div class="practice-item">1. I agree with you.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমি তোমার সাথে একমত।</div></div>
+            <div class="practice-item">2. She reads a book.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে একটি বই পড়ে।</div></div>
+            <div class="practice-item">3. Do they study hard?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তারা কি কঠোর পড়াশোনা করে?</div></div>
+            <div class="practice-item">4. He doesn't waste time.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে সময় নষ্ট করে না।</div></div>
+            <div class="practice-item">5. We live in Dhaka.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমরা ঢাকায় বাস করি।</div></div>
+            <div class="practice-item">6. Does it work?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">এটা কি কাজ করে?</div></div>
+            <div class="practice-item">7. I want some water.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমি কিছু পানি চাই।</div></div>
+            <div class="practice-item">8. They don't play here.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তারা এখানে খেলে না।</div></div>
+            <div class="practice-item">9. The moon shines at night.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">চাঁদ রাতে আলো দেয়।</div></div>
+            <div class="practice-item">10. Why do you laugh?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তুমি হাসো কেন?</div></div>
+            
+            <div class="practice-item">11. I hope so.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমি তাই আশা করি।</div></div>
+            <div class="practice-item">12. He tries his best.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে তার সর্বোচ্চ চেষ্টা করে।</div></div>
+            <div class="practice-item">13. Ice floats on water.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">বরফ পানিতে ভাসে।</div></div>
+            <div class="practice-item">14. Do you need help?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তোমার কি সাহায্য প্রয়োজন?</div></div>
+            <div class="practice-item">15. She doesn't like cold weather.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে ঠান্ডা আবহাওয়া পছন্দ করে না।</div></div>
+            <div class="practice-item">16. We respect our teachers.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমরা আমাদের শিক্ষকদের সম্মান করি।</div></div>
+            <div class="practice-item">17. Where does he go?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কোথায় যায়?</div></div>
+            <div class="practice-item">18. I think you are right.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমি মনে করি তুমি সঠিক।</div></div>
+            <div class="practice-item">19. They build houses.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তারা বাড়ি তৈরি করে।</div></div>
+            <div class="practice-item">20. Does she sing well?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কি ভালো গায়?</div></div>
+
+            <!-- Skipping typing all 50 identical divs individually for space, summarizing using a script-like repetition. I will output full 50 manually to be strict. -->
+            <div class="practice-item">21. He hates loud noise.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে উচ্চ শব্দ ঘৃণা করে।</div></div>
+            <div class="practice-item">22. I don't care.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমি পরোয়া করি না।</div></div>
+            <div class="practice-item">23. Water is life.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">পানির অপর নাম জীবন।</div></div>
+            <div class="practice-item">24. What do you mean?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তুমি কী বোঝাতে চাইছ?</div></div>
+            <div class="practice-item">25. She always smiles.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে সবসময় হাসে।</div></div>
+            <div class="practice-item">26. We enjoy the movie.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমরা মুভিটি উপভোগ করি।</div></div>
+            <div class="practice-item">27. It doesn't matter.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">এতে কিছু যায় আসে না।</div></div>
+            <div class="practice-item">28. Do you remember me?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তোমার কি আমাকে মনে আছে?</div></div>
+            <div class="practice-item">29. The baby cries.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">বাচ্চাটি কাঁদে।</div></div>
+            <div class="practice-item">30. He drives too fast.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে খুব দ্রুত গাড়ি চালায়।</div></div>
+
+            <div class="practice-item">31. I forget easily.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমি সহজেই ভুলে যাই।</div></div>
+            <div class="practice-item">32. She makes tea for us.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে আমাদের জন্য চা বানায়।</div></div>
+            <div class="practice-item">33. Does the train stop here?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">ট্রেনটি কি এখানে থামে?</div></div>
+            <div class="practice-item">34. They don't fight.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তারা মারামারি করে না।</div></div>
+            <div class="practice-item">35. I trust my friends.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমি আমার বন্ধুদের বিশ্বাস করি।</div></div>
+            <div class="practice-item">36. He fixes computers.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কম্পিউটার ঠিক করে।</div></div>
+            <div class="practice-item">37. We learn from mistakes.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমরা ভুল থেকে শিখি।</div></div>
+            <div class="practice-item">38. Do you have a pen?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তোমার কি একটি কলম আছে?</div></div>
+            <div class="practice-item">39. It smells bad.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">এটার গন্ধ খারাপ।</div></div>
+            <div class="practice-item">40. She never lies.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কখনো মিথ্যা বলে না।</div></div>
+
+            <div class="practice-item">41. I run every morning.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমি প্রতিদিন সকালে দৌড়াই।</div></div>
+            <div class="practice-item">42. He passes the exam.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে পরীক্ষায় পাস করে।</div></div>
+            <div class="practice-item">43. Does it hurt?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">এটা কি ব্যথা করে?</div></div>
+            <div class="practice-item">44. They paint the wall.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তারা দেয়াল রঙ করে।</div></div>
+            <div class="practice-item">45. We need your help.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমাদের তোমার সাহায্য প্রয়োজন।</div></div>
+            <div class="practice-item">46. She misses her home.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে তার বাড়ির কথা মনে করে।</div></div>
+            <div class="practice-item">47. I don't mind.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমি কিছু মনে করি না।</div></div>
+            <div class="practice-item">48. Do you catch fish?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তুমি কি মাছ ধরো?</div></div>
+            <div class="practice-item">49. He buys a new phone.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে একটি নতুন ফোন কেনে।</div></div>
+            <div class="practice-item">50. Practice makes a man perfect.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">গাইতে গাইতে গায়েন। (চর্চা মানুষকে নিখুঁত করে)</div></div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: 50 FILL IN THE BLANKS -->
+    <section>
+        <h2>7. Fill in the Blanks (50 Items)</h2>
+        <p>Use correct form of verbs (s/es where necessary).</p>
+        <div class="practice-grid">
+            <div class="practice-item">1. I <input type="text" class="blank-input"> (go) to school.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">go</div></div>
+            <div class="practice-item">2. He <input type="text" class="blank-input"> (play) cricket.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">plays</div></div>
+            <div class="practice-item">3. They <input type="text" class="blank-input"> (not/watch) TV.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't watch</div></div>
+            <div class="practice-item">4. She <input type="text" class="blank-input"> (wash) the dishes.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">washes</div></div>
+            <div class="practice-item">5. <input type="text" class="blank-input"> you (know) him?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do you know</div></div>
+            <div class="practice-item">6. The dog <input type="text" class="blank-input"> (bark).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">barks</div></div>
+            <div class="practice-item">7. We <input type="text" class="blank-input"> (like) ice cream.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">like</div></div>
+            <div class="practice-item">8. <input type="text" class="blank-input"> he (eat) meat?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does he eat</div></div>
+            <div class="practice-item">9. It <input type="text" class="blank-input"> (not/rain) here.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">doesn't rain</div></div>
+            <div class="practice-item">10. Birds <input type="text" class="blank-input"> (fly) high.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">fly</div></div>
+
+            <div class="practice-item">11. My father <input type="text" class="blank-input"> (work) hard.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">works</div></div>
+            <div class="practice-item">12. The baby <input type="text" class="blank-input"> (cry) loudly.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">cries</div></div>
+            <div class="practice-item">13. Teachers <input type="text" class="blank-input"> (teach) students.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">teach</div></div>
+            <div class="practice-item">14. The sun <input type="text" class="blank-input"> (give) us light.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">gives</div></div>
+            <div class="practice-item">15. I <input type="text" class="blank-input"> (not/know) the answer.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't know</div></div>
+            <div class="practice-item">16. She <input type="text" class="blank-input"> (carry) a bag.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">carries</div></div>
+            <div class="practice-item">17. They <input type="text" class="blank-input"> (finish) their work.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">finish</div></div>
+            <div class="practice-item">18. <input type="text" class="blank-input"> it (hurt)?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does it hurt</div></div>
+            <div class="practice-item">19. He <input type="text" class="blank-input"> (fix) the car.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">fixes</div></div>
+            <div class="practice-item">20. We <input type="text" class="blank-input"> (not/believe) him.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't believe</div></div>
+
+            <div class="practice-item">21. You <input type="text" class="blank-input"> (look) great.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">look</div></div>
+            <div class="practice-item">22. The train <input type="text" class="blank-input"> (arrive) at 5.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">arrives</div></div>
+            <div class="practice-item">23. She <input type="text" class="blank-input"> (try) again.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">tries</div></div>
+            <div class="practice-item">24. <input type="text" class="blank-input"> they (live) here?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do they live</div></div>
+            <div class="practice-item">25. He <input type="text" class="blank-input"> (not/smoke).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">doesn't smoke</div></div>
+            <div class="practice-item">26. Water <input type="text" class="blank-input"> (boil) at 100°C.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">boils</div></div>
+            <div class="practice-item">27. I <input type="text" class="blank-input"> (understand) it.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">understand</div></div>
+            <div class="practice-item">28. The shop <input type="text" class="blank-input"> (open) early.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">opens</div></div>
+            <div class="practice-item">29. We <input type="text" class="blank-input"> (enjoy) the party.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">enjoy</div></div>
+            <div class="practice-item">30. <input type="text" class="blank-input"> she (cook)?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does she cook</div></div>
+
+            <div class="practice-item">31. He <input type="text" class="blank-input"> (pass) the ball.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">passes</div></div>
+            <div class="practice-item">32. I <input type="text" class="blank-input"> (not/want) this.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't want</div></div>
+            <div class="practice-item">33. They <input type="text" class="blank-input"> (buy) a house.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">buy</div></div>
+            <div class="practice-item">34. A doctor <input type="text" class="blank-input"> (treat) patients.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">treats</div></div>
+            <div class="practice-item">35. <input type="text" class="blank-input"> we (need) help?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do we need</div></div>
+            <div class="practice-item">36. She <input type="text" class="blank-input"> (miss) her bus.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">misses</div></div>
+            <div class="practice-item">37. You <input type="text" class="blank-input"> (not/listen).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't listen</div></div>
+            <div class="practice-item">38. It <input type="text" class="blank-input"> (smell) good.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">smells</div></div>
+            <div class="practice-item">39. I <input type="text" class="blank-input"> (think) so.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">think</div></div>
+            <div class="practice-item">40. The earth <input type="text" class="blank-input"> (move).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">moves</div></div>
+
+            <div class="practice-item">41. He <input type="text" class="blank-input"> (teach) math.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">teaches</div></div>
+            <div class="practice-item">42. We <input type="text" class="blank-input"> (not/care).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't care</div></div>
+            <div class="practice-item">43. <input type="text" class="blank-input"> you (agree)?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do you agree</div></div>
+            <div class="practice-item">44. She <input type="text" class="blank-input"> (brush) her teeth.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">brushes</div></div>
+            <div class="practice-item">45. They <input type="text" class="blank-input"> (run) fast.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">run</div></div>
+            <div class="practice-item">46. The cat <input type="text" class="blank-input"> (catch) mice.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">catches</div></div>
+            <div class="practice-item">47. I <input type="text" class="blank-input"> (not/mind).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't mind</div></div>
+            <div class="practice-item">48. He <input type="text" class="blank-input"> (fly) a kite.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">flies</div></div>
+            <div class="practice-item">49. <input type="text" class="blank-input"> it (work)?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does it work</div></div>
+            <div class="practice-item">50. She <input type="text" class="blank-input"> (always/smile).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">always smiles</div></div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: 50 GRAMMAR CORRECTIONS -->
+    <section>
+        <h2>8. Grammar Correction Task (50 Items)</h2>
+        <p>Find the mistake and write the correct sentence.</p>
+        <div class="practice-grid">
+            <div class="practice-item">1. He go to market.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He goes to market.</div></div>
+            <div class="practice-item">2. I doesn't know him.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I don't know him.</div></div>
+            <div class="practice-item">3. Does she cooks?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does she cook?</div></div>
+            <div class="practice-item">4. They playes football.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">They play football.</div></div>
+            <div class="practice-item">5. We is go to school.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">We go to school.</div></div>
+            <div class="practice-item">6. The sun rise in the east.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">The sun rises in the east.</div></div>
+            <div class="practice-item">7. Do he work here?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does he work here?</div></div>
+            <div class="practice-item">8. She carry a bag.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">She carries a bag.</div></div>
+            <div class="practice-item">9. I am like pizza.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I like pizza.</div></div>
+            <div class="practice-item">10. He don't smoke.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He doesn't smoke.</div></div>
+
+            <!-- Pattern continues... to save file size in one shot I'll put a representative set of 20 more distinct errors, representing the 50. But user asked for 50. I must fulfill 50. -->
+            <div class="practice-item">11. Water boil at 100 degrees.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Water boils at 100 degrees.</div></div>
+            <div class="practice-item">12. Do it rains?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does it rain?</div></div>
+            <div class="practice-item">13. The baby crys a lot.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">The baby cries a lot.</div></div>
+            <div class="practice-item">14. You doesn't understand.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">You don't understand.</div></div>
+            <div class="practice-item">15. She catch the ball.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">She catches the ball.</div></div>
+            <div class="practice-item">16. I has a pen.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I have a pen.</div></div>
+            <div class="practice-item">17. They doesn't care.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">They don't care.</div></div>
+            <div class="practice-item">18. He fix the computer.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He fixes the computer.</div></div>
+            <div class="practice-item">19. Does they agree?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do they agree?</div></div>
+            <div class="practice-item">20. The bird flys.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">The bird flies.</div></div>
+
+            <div class="practice-item">21. He brush his teeth.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He brushes his teeth.</div></div>
+            <div class="practice-item">22. I am play every day.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I play every day.</div></div>
+            <div class="practice-item">23. She don't like me.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">She doesn't like me.</div></div>
+            <div class="practice-item">24. What do he want?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">What does he want?</div></div>
+            <div class="practice-item">25. The shop open early.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">The shop opens early.</div></div>
+            <div class="practice-item">26. We is happy.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">We are happy.</div></div>
+            <div class="practice-item">27. My friends comes here.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">My friends come here.</div></div>
+            <div class="practice-item">28. Does it works?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does it work?</div></div>
+            <div class="practice-item">29. He try hard.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He tries hard.</div></div>
+            <div class="practice-item">30. I doesn't mind.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I don't mind.</div></div>
+
+            <div class="practice-item">31. She wash the clothes.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">She washes the clothes.</div></div>
+            <div class="practice-item">32. The train leave at 8.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">The train leaves at 8.</div></div>
+            <div class="practice-item">33. You is a student.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">You are a student.</div></div>
+            <div class="practice-item">34. Does she knows?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does she know?</div></div>
+            <div class="practice-item">35. They runs fast.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">They run fast.</div></div>
+            <div class="practice-item">36. He pass the exam.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He passes the exam.</div></div>
+            <div class="practice-item">37. I am agree.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I agree.</div></div>
+            <div class="practice-item">38. Where do she live?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Where does she live?</div></div>
+            <div class="practice-item">39. It don't matter.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">It doesn't matter.</div></div>
+            <div class="practice-item">40. Dogs barks.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Dogs bark. (or A dog barks)</div></div>
+
+            <div class="practice-item">41. The boy cry.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">The boy cries.</div></div>
+            <div class="practice-item">42. She teach English.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">She teaches English.</div></div>
+            <div class="practice-item">43. Does you want this?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do you want this?</div></div>
+            <div class="practice-item">44. I are going.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I go. / I am going (Present Continuous)</div></div>
+            <div class="practice-item">45. He miss his family.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He misses his family.</div></div>
+            <div class="practice-item">46. We believes him.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">We believe him.</div></div>
+            <div class="practice-item">47. He enjoy the music.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He enjoys the music.</div></div>
+            <div class="practice-item">48. Do it hurt?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does it hurt?</div></div>
+            <div class="practice-item">49. She watch TV.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">She watches TV.</div></div>
+            <div class="practice-item">50. I doesn't care.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I don't care.</div></div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: 50 MCQs -->
+    <section>
+        <h2>9. MCQ Test (50 Questions)</h2>
+        <div class="practice-grid">
+            <div class="practice-item">
+                <p>1. He ___ to school every day.</p>
+                <div class="mcq-options"><label>A) go</label><label>B) goes</label><label>C) going</label></div>
+                <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) goes</div>
+            </div>
+            <div class="practice-item">
+                <p>2. They ___ play football.</p>
+                <div class="mcq-options"><label>A) don't</label><label>B) doesn't</label><label>C) aren't</label></div>
+                <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A) don't</div>
+            </div>
+            <div class="practice-item">
+                <p>3. ___ she know you?</p>
+                <div class="mcq-options"><label>A) Do</label><label>B) Is</label><label>C) Does</label></div>
+                <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">C) Does</div>
+            </div>
+            <div class="practice-item">
+                <p>4. I ___ agree with him.</p>
+                <div class="mcq-options"><label>A) am not</label><label>B) don't</label><label>C) doesn't</label></div>
+                <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) don't</div>
+            </div>
+            <div class="practice-item">
+                <p>5. The sun ___ in the east.</p>
+                <div class="mcq-options"><label>A) rise</label><label>B) rises</label><label>C) is rise</label></div>
+                <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) rises</div>
+            </div>
+            <div class="practice-item">
+                <p>6. Water ___ at 100 degrees.</p>
+                <div class="mcq-options"><label>A) boil</label><label>B) boils</label><label>C) boiling</label></div>
+                <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) boils</div>
+            </div>
+            <div class="practice-item">
+                <p>7. My father ___ in a bank.</p>
+                <div class="mcq-options"><label>A) work</label><label>B) works</label><label>C) working</label></div>
+                <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) works</div>
+            </div>
+            <div class="practice-item">
+                <p>8. ___ you like tea?</p>
+                <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+                <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A) Do</div>
+            </div>
+            <div class="practice-item">
+                <p>9. He ___ a letter.</p>
+                <div class="mcq-options"><label>A) write</label><label>B) writes</label><label>C) is write</label></div>
+                <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) writes</div>
+            </div>
+            <div class="practice-item">
+                <p>10. She ___ understand.</p>
+                <div class="mcq-options"><label>A) don't</label><label>B) doesn't</label><label>C) isn't</label></div>
+                <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) doesn't</div>
+            </div>
+            
+            <div class="practice-item"><p>11. The baby ___ loudly.</p><div class="mcq-options"><label>A) cry</label><label>B) cries</label><label>C) crys</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) cries</div></div>
+            <div class="practice-item"><p>12. ___ it rain here?</p><div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Is</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) Does</div></div>
+            <div class="practice-item"><p>13. I ___ my homework.</p><div class="mcq-options"><label>A) do</label><label>B) does</label><label>C) am do</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A) do</div></div>
+            <div class="practice-item"><p>14. They ___ English well.</p><div class="mcq-options"><label>A) speaks</label><label>B) speak</label><label>C) speaking</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) speak</div></div>
+            <div class="practice-item"><p>15. She ___ the dishes.</p><div class="mcq-options"><label>A) wash</label><label>B) washes</label><label>C) washs</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) washes</div></div>
+            <div class="practice-item"><p>16. He ___ the bus.</p><div class="mcq-options"><label>A) miss</label><label>B) misses</label><label>C) misss</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) misses</div></div>
+            <div class="practice-item"><p>17. We ___ meat.</p><div class="mcq-options"><label>A) don't eat</label><label>B) doesn't eat</label><label>C) aren't eat</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A) don't eat</div></div>
+            <div class="practice-item"><p>18. ___ you remember?</p><div class="mcq-options"><label>A) Does</label><label>B) Are</label><label>C) Do</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">C) Do</div></div>
+            <div class="practice-item"><p>19. It ___ good.</p><div class="mcq-options"><label>A) smell</label><label>B) smells</label><label>C) smelling</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) smells</div></div>
+            <div class="practice-item"><p>20. The bird ___.</p><div class="mcq-options"><label>A) fly</label><label>B) flys</label><label>C) flies</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">C) flies</div></div>
+
+            <div class="practice-item"><p>21. I ___ an apple.</p><div class="mcq-options"><label>A) wants</label><label>B) want</label><label>C) wanting</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) want</div></div>
+            <div class="practice-item"><p>22. She ___ early.</p><div class="mcq-options"><label>A) wake up</label><label>B) wakes up</label><label>C) wake ups</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) wakes up</div></div>
+            <div class="practice-item"><p>23. He ___ fix the car.</p><div class="mcq-options"><label>A) don't</label><label>B) doesn't</label><label>C) isn't</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) doesn't</div></div>
+            <div class="practice-item"><p>24. ___ they work hard?</p><div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A) Do</div></div>
+            <div class="practice-item"><p>25. The shop ___ at 9.</p><div class="mcq-options"><label>A) open</label><label>B) opens</label><label>C) is open</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) opens</div></div>
+            <div class="practice-item"><p>26. Dogs ___.</p><div class="mcq-options"><label>A) bark</label><label>B) barks</label><label>C) barking</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A) bark</div></div>
+            <div class="practice-item"><p>27. A doctor ___ patients.</p><div class="mcq-options"><label>A) treat</label><label>B) treats</label><label>C) is treat</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) treats</div></div>
+            <div class="practice-item"><p>28. I ___ what you mean.</p><div class="mcq-options"><label>A) sees</label><label>B) see</label><label>C) seeing</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) see</div></div>
+            <div class="practice-item"><p>29. He ___ hard.</p><div class="mcq-options"><label>A) try</label><label>B) tries</label><label>C) trys</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) tries</div></div>
+            <div class="practice-item"><p>30. She ___ to music.</p><div class="mcq-options"><label>A) listen</label><label>B) listens</label><label>C) listening</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) listens</div></div>
+
+            <div class="practice-item"><p>31. We ___ time.</p><div class="mcq-options"><label>A) don't waste</label><label>B) doesn't waste</label><label>C) aren't waste</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A) don't waste</div></div>
+            <div class="practice-item"><p>32. ___ he drive?</p><div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Is</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) Does</div></div>
+            <div class="practice-item"><p>33. The train ___ at 6.</p><div class="mcq-options"><label>A) leave</label><label>B) leaves</label><label>C) leaving</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) leaves</div></div>
+            <div class="practice-item"><p>34. It ___ matter.</p><div class="mcq-options"><label>A) don't</label><label>B) doesn't</label><label>C) isn't</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) doesn't</div></div>
+            <div class="practice-item"><p>35. I ___ him.</p><div class="mcq-options"><label>A) trust</label><label>B) trusts</label><label>C) trusting</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A) trust</div></div>
+            <div class="practice-item"><p>36. She ___ her keys.</p><div class="mcq-options"><label>A) lose</label><label>B) loses</label><label>C) loss</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) loses</div></div>
+            <div class="practice-item"><p>37. They ___ us.</p><div class="mcq-options"><label>A) support</label><label>B) supports</label><label>C) supporting</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A) support</div></div>
+            <div class="practice-item"><p>38. ___ it hurt?</p><div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) Does</div></div>
+            <div class="practice-item"><p>39. He ___ fast.</p><div class="mcq-options"><label>A) run</label><label>B) runs</label><label>C) running</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) runs</div></div>
+            <div class="practice-item"><p>40. I ___ the truth.</p><div class="mcq-options"><label>A) speaks</label><label>B) speak</label><label>C) speaking</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) speak</div></div>
+
+            <div class="practice-item"><p>41. She ___ a lot.</p><div class="mcq-options"><label>A) talk</label><label>B) talks</label><label>C) talking</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) talks</div></div>
+            <div class="practice-item"><p>42. Ice ___ on water.</p><div class="mcq-options"><label>A) float</label><label>B) floats</label><label>C) floating</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) floats</div></div>
+            <div class="practice-item"><p>43. We ___ agree.</p><div class="mcq-options"><label>A) doesn't</label><label>B) don't</label><label>C) aren't</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) don't</div></div>
+            <div class="practice-item"><p>44. He ___ his hands.</p><div class="mcq-options"><label>A) wash</label><label>B) washes</label><label>C) washs</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) washes</div></div>
+            <div class="practice-item"><p>45. ___ you exercise?</p><div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A) Do</div></div>
+            <div class="practice-item"><p>46. The cat ___ mice.</p><div class="mcq-options"><label>A) catch</label><label>B) catches</label><label>C) catchs</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) catches</div></div>
+            <div class="practice-item"><p>47. I ___ TV.</p><div class="mcq-options"><label>A) watch</label><label>B) watches</label><label>C) watching</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A) watch</div></div>
+            <div class="practice-item"><p>48. She ___ perfectly.</p><div class="mcq-options"><label>A) sing</label><label>B) sings</label><label>C) singing</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) sings</div></div>
+            <div class="practice-item"><p>49. He ___ money.</p><div class="mcq-options"><label>A) save</label><label>B) saves</label><label>C) saving</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) saves</div></div>
+            <div class="practice-item"><p>50. ___ it snow here?</p><div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Is</label></div><button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B) Does</div></div>
+        </div>
+    </section>
+
+
+    <!-- NEW SECTION: 6 STRUCTURES -->
+    <section>
+        <h2>10. The 6 Structures Mega Practice (50 Items Each)</h2>
+        <p>Present Simple এর ৬টি স্ট্রাকচার (Affirmative, Negative, Interrogative, Negative Interrogative, WH, WH Negative) এর উপর ভিত্তি করে স্পেশাল প্র্যাকটিস।</p>
+        
+        <h3>A. Bangla to English (6 Structures)</h3>
+        <div class="practice-grid">
+            <div class="practice-item">1. তারা কাজ করে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">They work.</div></div>\n<div class="practice-item">2. তারা লেখে না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">They don't write.</div></div>\n<div class="practice-item">3. সে কি সাহায্য করে?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does He help?</div></div>\n<div class="practice-item">4. আমরা কি কাজ করি না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Don't We work?</div></div>\n<div class="practice-item">5. আমরা কেন খাই?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why do We eat?</div></div>\n<div class="practice-item">6. সে কেন লেখে না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why doesn't She write?</div></div>\n<div class="practice-item">7. আমি ঘুমাই।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I sleep.</div></div>\n<div class="practice-item">8. তুমি সাহায্য করো না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">You don't help.</div></div>\n<div class="practice-item">9. সে কি পড়ে?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does She read?</div></div>\n<div class="practice-item">10. সে কি কাজ করে না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Doesn't He work?</div></div>\n<div class="practice-item">11. তারা কেন খায়?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why do They eat?</div></div>\n<div class="practice-item">12. আমি কেন কাজ করি না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why don't I work?</div></div>\n<div class="practice-item">13. সে খেলে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">She plays.</div></div>\n<div class="practice-item">14. রহিম ঘুমায় না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Rahim doesn't sleep.</div></div>\n<div class="practice-item">15. সে কি যায়?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does She go?</div></div>\n<div class="practice-item">16. তারা কি সাহায্য করে না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Don't They help?</div></div>\n<div class="practice-item">17. আমরা কেন পড়ি?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why do We read?</div></div>\n<div class="practice-item">18. সে কেন খায় না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why doesn't He eat?</div></div>\n<div class="practice-item">19. তুমি লেখো।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">You write.</div></div>\n<div class="practice-item">20. সে ঘুমায় না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He doesn't sleep.</div></div>\n<div class="practice-item">21. রহিম কি খায়?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does Rahim eat?</div></div>\n<div class="practice-item">22. তারা কি সাহায্য করে না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Don't They help?</div></div>\n<div class="practice-item">23. আমি কেন যাই?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why do I go?</div></div>\n<div class="practice-item">24. আমরা কেন কাজ করি না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why don't We work?</div></div>\n<div class="practice-item">25. সে কাজ করে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">She works.</div></div>\n<div class="practice-item">26. তুমি ঘুমাও না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">You don't sleep.</div></div>\n<div class="practice-item">27. সে কি খেলে?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does She play?</div></div>\n<div class="practice-item">28. তুমি কি যাও না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Don't You go?</div></div>\n<div class="practice-item">29. তুমি কেন যাও?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why do You go?</div></div>\n<div class="practice-item">30. তারা কেন খায় না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why don't They eat?</div></div>\n<div class="practice-item">31. তুমি লেখো।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">You write.</div></div>\n<div class="practice-item">32. সে সাহায্য করে না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">She doesn't help.</div></div>\n<div class="practice-item">33. ছেলেরা কি যায়?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do The boys go?</div></div>\n<div class="practice-item">34. তারা কি সাহায্য করে না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Don't They help?</div></div>\n<div class="practice-item">35. আমরা কেন যাই?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why do We go?</div></div>\n<div class="practice-item">36. তারা কেন কাজ করে না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why don't They work?</div></div>\n<div class="practice-item">37. সে লেখে।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He writes.</div></div>\n<div class="practice-item">38. সে খায় না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He doesn't eat.</div></div>\n<div class="practice-item">39. সে কি পড়ে?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does She read?</div></div>\n<div class="practice-item">40. সে কি ঘুমায় না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Doesn't He sleep?</div></div>\n<div class="practice-item">41. সে কেন পড়ে?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why does He read?</div></div>\n<div class="practice-item">42. তুমি কেন সাহায্য করো না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why don't You help?</div></div>\n<div class="practice-item">43. আমি কাজ করি।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I work.</div></div>\n<div class="practice-item">44. তুমি খেলো না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">You don't play.</div></div>\n<div class="practice-item">45. আমরা কি যাই?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do We go?</div></div>\n<div class="practice-item">46. ছেলেরা কি খেলে না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Don't The boys play?</div></div>\n<div class="practice-item">47. আমরা কেন কাজ করি?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why do We work?</div></div>\n<div class="practice-item">48. সে কেন সাহায্য করে না?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Why doesn't He help?</div></div>\n<div class="practice-item">49. আমি পড়ি।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">I read.</div></div>\n<div class="practice-item">50. সে ঘুমায় না।<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">He doesn't sleep.</div></div>
+        </div>
+
+        <h3 style="margin-top: 40px;">B. English to Bangla (6 Structures)</h3>
+        <div class="practice-grid">
+            <div class="practice-item">1. They work.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তারা কাজ করে।</div></div>\n<div class="practice-item">2. They don't write.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তারা লেখে না।</div></div>\n<div class="practice-item">3. Does He help?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কি সাহায্য করে?</div></div>\n<div class="practice-item">4. Don't We work?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমরা কি কাজ করি না?</div></div>\n<div class="practice-item">5. Why do We eat?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমরা কেন খাই?</div></div>\n<div class="practice-item">6. Why doesn't She write?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কেন লেখে না?</div></div>\n<div class="practice-item">7. I sleep.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমি ঘুমাই।</div></div>\n<div class="practice-item">8. You don't help.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তুমি সাহায্য করো না।</div></div>\n<div class="practice-item">9. Does She read?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কি পড়ে?</div></div>\n<div class="practice-item">10. Doesn't He work?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কি কাজ করে না?</div></div>\n<div class="practice-item">11. Why do They eat?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তারা কেন খায়?</div></div>\n<div class="practice-item">12. Why don't I work?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমি কেন কাজ করি না?</div></div>\n<div class="practice-item">13. She plays.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে খেলে।</div></div>\n<div class="practice-item">14. Rahim doesn't sleep.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">রহিম ঘুমায় না।</div></div>\n<div class="practice-item">15. Does She go?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কি যায়?</div></div>\n<div class="practice-item">16. Don't They help?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তারা কি সাহায্য করে না?</div></div>\n<div class="practice-item">17. Why do We read?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমরা কেন পড়ি?</div></div>\n<div class="practice-item">18. Why doesn't He eat?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কেন খায় না?</div></div>\n<div class="practice-item">19. You write.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তুমি লেখো।</div></div>\n<div class="practice-item">20. He doesn't sleep.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে ঘুমায় না।</div></div>\n<div class="practice-item">21. Does Rahim eat?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">রহিম কি খায়?</div></div>\n<div class="practice-item">22. Don't They help?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তারা কি সাহায্য করে না?</div></div>\n<div class="practice-item">23. Why do I go?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমি কেন যাই?</div></div>\n<div class="practice-item">24. Why don't We work?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমরা কেন কাজ করি না?</div></div>\n<div class="practice-item">25. She works.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কাজ করে।</div></div>\n<div class="practice-item">26. You don't sleep.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তুমি ঘুমাও না।</div></div>\n<div class="practice-item">27. Does She play?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কি খেলে?</div></div>\n<div class="practice-item">28. Don't You go?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তুমি কি যাও না?</div></div>\n<div class="practice-item">29. Why do You go?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তুমি কেন যাও?</div></div>\n<div class="practice-item">30. Why don't They eat?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তারা কেন খায় না?</div></div>\n<div class="practice-item">31. You write.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তুমি লেখো।</div></div>\n<div class="practice-item">32. She doesn't help.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে সাহায্য করে না।</div></div>\n<div class="practice-item">33. Do The boys go?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">ছেলেরা কি যায়?</div></div>\n<div class="practice-item">34. Don't They help?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তারা কি সাহায্য করে না?</div></div>\n<div class="practice-item">35. Why do We go?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমরা কেন যাই?</div></div>\n<div class="practice-item">36. Why don't They work?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তারা কেন কাজ করে না?</div></div>\n<div class="practice-item">37. He writes.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে লেখে।</div></div>\n<div class="practice-item">38. He doesn't eat.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে খায় না।</div></div>\n<div class="practice-item">39. Does She read?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কি পড়ে?</div></div>\n<div class="practice-item">40. Doesn't He sleep?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কি ঘুমায় না?</div></div>\n<div class="practice-item">41. Why does He read?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কেন পড়ে?</div></div>\n<div class="practice-item">42. Why don't You help?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তুমি কেন সাহায্য করো না?</div></div>\n<div class="practice-item">43. I work.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমি কাজ করি।</div></div>\n<div class="practice-item">44. You don't play.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">তুমি খেলো না।</div></div>\n<div class="practice-item">45. Do We go?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমরা কি যাই?</div></div>\n<div class="practice-item">46. Don't The boys play?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">ছেলেরা কি খেলে না?</div></div>\n<div class="practice-item">47. Why do We work?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমরা কেন কাজ করি?</div></div>\n<div class="practice-item">48. Why doesn't He help?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে কেন সাহায্য করে না?</div></div>\n<div class="practice-item">49. I read.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">আমি পড়ি।</div></div>\n<div class="practice-item">50. He doesn't sleep.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">সে ঘুমায় না।</div></div>
+        </div>
+
+        <h3 style="margin-top: 40px;">C. Fill in the Blanks (6 Structures)</h3>
+        <div class="practice-grid">
+            <div class="practice-item">1. They <input type='text' class='blank-input'> (work).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">work</div></div>\n<div class="practice-item">2. They <input type='text' class='blank-input'> write.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't</div></div>\n<div class="practice-item">3. <input type='text' class='blank-input'> He help?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does</div></div>\n<div class="practice-item">4. <input type='text' class='blank-input'>n't We work?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do</div></div>\n<div class="practice-item">5. Why <input type='text' class='blank-input'> We eat?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">do</div></div>\n<div class="practice-item">6. Why <input type='text' class='blank-input'> She write?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">doesn't</div></div>\n<div class="practice-item">7. I <input type='text' class='blank-input'> (sleep).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">sleep</div></div>\n<div class="practice-item">8. You <input type='text' class='blank-input'> help.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't</div></div>\n<div class="practice-item">9. <input type='text' class='blank-input'> She read?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does</div></div>\n<div class="practice-item">10. <input type='text' class='blank-input'>n't He work?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does</div></div>\n<div class="practice-item">11. Why <input type='text' class='blank-input'> They eat?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">do</div></div>\n<div class="practice-item">12. Why <input type='text' class='blank-input'> I work?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't</div></div>\n<div class="practice-item">13. She <input type='text' class='blank-input'> (play).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">plays</div></div>\n<div class="practice-item">14. Rahim <input type='text' class='blank-input'> sleep.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">doesn't</div></div>\n<div class="practice-item">15. <input type='text' class='blank-input'> She go?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does</div></div>\n<div class="practice-item">16. <input type='text' class='blank-input'>n't They help?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do</div></div>\n<div class="practice-item">17. Why <input type='text' class='blank-input'> We read?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">do</div></div>\n<div class="practice-item">18. Why <input type='text' class='blank-input'> He eat?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">doesn't</div></div>\n<div class="practice-item">19. You <input type='text' class='blank-input'> (write).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">write</div></div>\n<div class="practice-item">20. He <input type='text' class='blank-input'> sleep.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">doesn't</div></div>\n<div class="practice-item">21. <input type='text' class='blank-input'> Rahim eat?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does</div></div>\n<div class="practice-item">22. <input type='text' class='blank-input'>n't They help?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do</div></div>\n<div class="practice-item">23. Why <input type='text' class='blank-input'> I go?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">do</div></div>\n<div class="practice-item">24. Why <input type='text' class='blank-input'> We work?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't</div></div>\n<div class="practice-item">25. She <input type='text' class='blank-input'> (work).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">works</div></div>\n<div class="practice-item">26. You <input type='text' class='blank-input'> sleep.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't</div></div>\n<div class="practice-item">27. <input type='text' class='blank-input'> She play?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does</div></div>\n<div class="practice-item">28. <input type='text' class='blank-input'>n't You go?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do</div></div>\n<div class="practice-item">29. Why <input type='text' class='blank-input'> You go?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">do</div></div>\n<div class="practice-item">30. Why <input type='text' class='blank-input'> They eat?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't</div></div>\n<div class="practice-item">31. You <input type='text' class='blank-input'> (write).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">write</div></div>\n<div class="practice-item">32. She <input type='text' class='blank-input'> help.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">doesn't</div></div>\n<div class="practice-item">33. <input type='text' class='blank-input'> The boys go?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do</div></div>\n<div class="practice-item">34. <input type='text' class='blank-input'>n't They help?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do</div></div>\n<div class="practice-item">35. Why <input type='text' class='blank-input'> We go?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">do</div></div>\n<div class="practice-item">36. Why <input type='text' class='blank-input'> They work?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't</div></div>\n<div class="practice-item">37. He <input type='text' class='blank-input'> (write).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">writes</div></div>\n<div class="practice-item">38. He <input type='text' class='blank-input'> eat.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">doesn't</div></div>\n<div class="practice-item">39. <input type='text' class='blank-input'> She read?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does</div></div>\n<div class="practice-item">40. <input type='text' class='blank-input'>n't He sleep?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Does</div></div>\n<div class="practice-item">41. Why <input type='text' class='blank-input'> He read?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">does</div></div>\n<div class="practice-item">42. Why <input type='text' class='blank-input'> You help?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't</div></div>\n<div class="practice-item">43. I <input type='text' class='blank-input'> (work).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">work</div></div>\n<div class="practice-item">44. You <input type='text' class='blank-input'> play.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">don't</div></div>\n<div class="practice-item">45. <input type='text' class='blank-input'> We go?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do</div></div>\n<div class="practice-item">46. <input type='text' class='blank-input'>n't The boys play?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">Do</div></div>\n<div class="practice-item">47. Why <input type='text' class='blank-input'> We work?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">do</div></div>\n<div class="practice-item">48. Why <input type='text' class='blank-input'> He help?<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">doesn't</div></div>\n<div class="practice-item">49. I <input type='text' class='blank-input'> (read).<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">read</div></div>\n<div class="practice-item">50. He <input type='text' class='blank-input'> sleep.<button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">doesn't</div></div>
+        </div>
+
+        <h3 style="margin-top: 40px;">D. MCQ Test (6 Structures)</h3>
+        <div class="practice-grid">
+            <div class="practice-item">
+            <p>1. They ___ (work).</p>
+            <div class="mcq-options"><label>A) work</label><label>B) works</label><label>C) is work</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>2. They ___ write.</p>
+            <div class="mcq-options"><label>A) don't</label><label>B) doesn't</label><label>C) aren't</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>3. ___ He help?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>4. ___n't We work?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>5. Why ___ We eat?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>6. Why ___ She write?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>7. I ___ (sleep).</p>
+            <div class="mcq-options"><label>A) sleep</label><label>B) sleeps</label><label>C) is sleep</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>8. You ___ help.</p>
+            <div class="mcq-options"><label>A) don't</label><label>B) doesn't</label><label>C) aren't</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>9. ___ She read?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>10. ___n't He work?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>11. Why ___ They eat?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>12. Why ___ I work?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>13. She ___ (play).</p>
+            <div class="mcq-options"><label>A) play</label><label>B) plays</label><label>C) is play</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>14. Rahim ___ sleep.</p>
+            <div class="mcq-options"><label>A) don't</label><label>B) doesn't</label><label>C) aren't</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>15. ___ She go?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>16. ___n't They help?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>17. Why ___ We read?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>18. Why ___ He eat?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>19. You ___ (write).</p>
+            <div class="mcq-options"><label>A) write</label><label>B) writes</label><label>C) is write</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>20. He ___ sleep.</p>
+            <div class="mcq-options"><label>A) don't</label><label>B) doesn't</label><label>C) aren't</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>21. ___ Rahim eat?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>22. ___n't They help?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>23. Why ___ I go?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>24. Why ___ We work?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>25. She ___ (work).</p>
+            <div class="mcq-options"><label>A) work</label><label>B) works</label><label>C) is work</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>26. You ___ sleep.</p>
+            <div class="mcq-options"><label>A) don't</label><label>B) doesn't</label><label>C) aren't</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>27. ___ She play?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>28. ___n't You go?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>29. Why ___ You go?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>30. Why ___ They eat?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>31. You ___ (write).</p>
+            <div class="mcq-options"><label>A) write</label><label>B) writes</label><label>C) is write</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>32. She ___ help.</p>
+            <div class="mcq-options"><label>A) don't</label><label>B) doesn't</label><label>C) aren't</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>33. ___ The boys go?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>34. ___n't They help?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>35. Why ___ We go?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>36. Why ___ They work?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>37. He ___ (write).</p>
+            <div class="mcq-options"><label>A) write</label><label>B) writes</label><label>C) is write</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>38. He ___ eat.</p>
+            <div class="mcq-options"><label>A) don't</label><label>B) doesn't</label><label>C) aren't</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>39. ___ She read?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>40. ___n't He sleep?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>41. Why ___ He read?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>42. Why ___ You help?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>43. I ___ (work).</p>
+            <div class="mcq-options"><label>A) work</label><label>B) works</label><label>C) is work</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>44. You ___ play.</p>
+            <div class="mcq-options"><label>A) don't</label><label>B) doesn't</label><label>C) aren't</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>45. ___ We go?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>46. ___n't The boys play?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>47. Why ___ We work?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>48. Why ___ He help?</p>
+            <div class="mcq-options"><label>A) Do</label><label>B) Does</label><label>C) Are</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>\n<div class="practice-item">
+            <p>49. I ___ (read).</p>
+            <div class="mcq-options"><label>A) read</label><label>B) reads</label><label>C) is read</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">A</div>
+        </div>\n<div class="practice-item">
+            <p>50. He ___ sleep.</p>
+            <div class="mcq-options"><label>A) don't</label><label>B) doesn't</label><label>C) aren't</label></div>
+            <button class="btn-3d" onclick="this.nextElementSibling.style.display='block'">Ans</button><div class="answer-reveal">B</div>
+        </div>
+        </div>
+    </section>
+
+</div>
+
+<script>
+    function toggleBangla(element) {
+        const banglaDiv = element.querySelector('.bangla-text');
+        if (banglaDiv.style.display === 'block') {
+            banglaDiv.style.display = 'none';
+        } else {
+            banglaDiv.style.display = 'block';
+        }
+    }
+
+    function toggleAnswers(id) {
+        const el = document.getElementById(id);
+        if (el.style.display === 'block') {
+            el.style.display = 'none';
+        } else {
+            el.style.display = 'block';
+        }
+    }
+</script>
+</body>
+</html>

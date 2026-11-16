@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnCare Academy - 'Have to & Need to' Master Sheet</title>
+    <style>
+        :root {
+            --bg-color: #fdfbf7;
+            --card-bg: #ffffff;
+            --primary: #2563eb;
+            --secondary: #d97706;
+            --text-color: #1f2937;
+            --text-muted: #4b5563;
+            --border-color: #e5e7eb;
+            --shadow: 0 15px 35px rgba(0,0,0,0.08);
+            --3d-shadow: 0 10px 0px #1d4ed8, 0 15px 25px rgba(0,0,0,0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-size: 20px; 
+            line-height: 1.8;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background: var(--card-bg);
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+            border-bottom: 6px solid var(--primary);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.3rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s ease;
+        }
+
+        section:hover {
+            transform: translateY(-3px);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 25px;
+            font-size: 2.2rem;
+            border-bottom: 3px solid #f3f4f6;
+            padding-bottom: 12px;
+        }
+
+        h3 {
+            color: var(--secondary);
+            margin: 25px 0 15px 0;
+            font-size: 1.5rem;
+        }
+
+        p, li {
+            margin-bottom: 15px;
+            color: var(--text-color);
+            font-size: 1.15rem;
+        }
+
+        ul, ol {
+            padding-left: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            padding: 16px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 1.1rem;
+        }
+
+        th {
+            background-color: #eff6ff;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        tr:hover {
+            background-color: #fafaf9;
+        }
+
+        .code-box {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 6px solid var(--secondary);
+            font-family: monospace;
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+
+        .use-case-box {
+            display: flex;
+            background: #fffbeb;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #fcd34d;
+            margin-bottom: 25px;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .use-case-box img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .use-case-text h4 {
+            color: #b45309;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        /* Interactive Elements with Clickable Bangla */
+        .interactive-line {
+            background: #f9fafb;
+            padding: 18px 22px;
+            border-radius: 12px;
+            cursor: pointer;
+            border: 2px solid var(--border-color);
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .interactive-line:hover {
+            background: #eff6ff;
+            border-color: var(--primary);
+        }
+
+        .bangla-text {
+            display: none;
+            color: var(--secondary);
+            margin-top: 8px;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 1.2rem;
+            border-top: 1px dashed #d1d5db;
+            padding-top: 8px;
+        }
+
+        .btn-3d {
+            background: var(--primary);
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            box-shadow: var(--3d-shadow);
+            cursor: pointer;
+            transition: all 0.1s ease;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        .btn-3d:active {
+            transform: translateY(6px);
+            box-shadow: 0 4px 0px #1d4ed8, 0 8px 15px rgba(0,0,0,0.15);
+        }
+
+        .task-box {
+            background: #f0f9ff;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 6px solid #0ea5e9;
+            margin: 25px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .task-box h4 {
+            color: #0369a1;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .fill-in-box {
+            background: #f0fdf4;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #bbf7d0;
+            margin: 20px 0;
+        }
+
+        .fill-in-item {
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+
+        .blank-input {
+            border: none;
+            border-bottom: 2px solid var(--primary);
+            background: transparent;
+            width: 120px;
+            font-size: 1.2rem;
+            text-align: center;
+            color: var(--primary);
+            font-weight: bold;
+            outline: none;
+        }
+
+        .mcq-box {
+            background: #f8fafc;
+            padding: 22px;
+            border-radius: 14px;
+            border: 2px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .mcq-options label {
+            display: block;
+            margin: 10px 0;
+            padding: 12px 16px;
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .mcq-options label:hover {
+            background: #eff6ff;
+            border-color: var(--primary);
+        }
+
+        .answer-reveal {
+            display: none;
+            margin-top: 12px;
+            padding: 10px 15px;
+            background: #d1fae5;
+            color: #065f46;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .sample-answer-box {
+            display: none; 
+            margin-top: 15px; 
+            padding: 20px; 
+            background: #e0f2fe; 
+            border-radius: 10px;
+            border-left: 5px solid var(--primary);
+            font-size: 1.15rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Print styling for PDF */
+        @media print {
+            .bangla-text,
+            .answer-reveal,
+            .sample-answer-box {
+                display: block !important;
+            }
+            .btn-3d {
+                display: none !important;
+            }
+            .interactive-line, .mcq-box, .task-box, .fill-in-box, .use-case-box {
+                page-break-inside: avoid;
+            }
+            body {
+                padding: 10px;
+            }
+        }
+    
+        /* LIVE SCORE TRACKER COMPONENT */
+        .score-card {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            padding: 25px;
+            border-radius: 18px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+            text-align: center;
+        }
+
+        .score-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .score-display {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin: 5px 0;
+        }
+
+        .score-percent {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .score-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: #10b981;
+            width: 0%;
+            border-radius: 10px;
+            transition: width 0.4s ease;
+        }
+
+        .option-btn {
+            background: white;
+            border: 2px solid var(--border-color, #e5e7eb);
+            border-radius: 10px;
+            padding: 14px 20px;
+            font-size: 1.15rem;
+            color: var(--text-color, #1f2937);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: left;
+            user-select: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .option-btn:hover {
+            background: #eff6ff;
+            border-color: var(--primary, #2563eb);
+            transform: translateX(4px);
+        }
+
+        .option-btn.user-correct {
+            background-color: #d1fae5 !important;
+            border-color: #10b981 !important;
+            color: #065f46 !important;
+            font-weight: 700;
+        }
+
+        .option-btn.user-wrong {
+            background-color: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b !important;
+            font-weight: 700;
+        }
+
+        .option-btn.correct-choice {
+            background-color: #d1fae5 !important;
+            border-color: #10b981 !important;
+            color: #065f46 !important;
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <h1>LearnCare Academy</h1>
+            <p>Ultimate Modern 3D Master Sheet: All Uses of "Have to" & "Need to"</p>
+        </header>
+
+        <!-- SECTION 1: ALL USES -->
+        <section>
+            <h2>1. Different Uses of "Have to" & "Need to"</h2>
+            <p><strong>Core Structure:</strong> Subject + have to / need to + V1 (Base Form) + Extension</p>
+            <p>এই দুটি ফ্রেজই 'প্রয়োজন' বা 'বাধ্যবাধকতা' বোঝাতে ব্যবহৃত হয়, কিন্তু এদের মধ্যে সূক্ষ্ম পার্থক্য আছে।</p>
+
+            <div class="use-case-box">
+                <img src="/images/academy/have_to_obligation_1788100891015.jpg" alt="Have to Obligation">
+                <div class="use-case-text">
+                    <h4>1. Have to (বাহ্যিক চাপ বা নিয়মের কারণে করতেই হবে)</h4>
+                    <p>কোনো কাজ করা আপনার নিজের ইচ্ছায় নয়, বরং বাইরের কোনো নিয়ম, বস, বা পরিস্থিতির কারণে করতে বাধ্য হলে <strong>Have to</strong> বসে। (হি/শি/ইট এর সাথে Has to বসে)</p>
+                    <ul>
+                        <li><strong>Example:</strong> I <strong>have to</strong> go to work at 9 AM. (অফিসের নিয়মের কারণে আমাকে যেতে হবে।)</li>
+                        <li><strong>Example:</strong> We <strong>have to</strong> wear a uniform at school. (স্কুলের নিয়মের কারণে পরতে হবে।)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="use-case-box">
+                <img src="/images/academy/need_to_necessity_1788100901751.jpg" alt="Need to Necessity">
+                <div class="use-case-text">
+                    <h4>2. Need to (নিজের কাছে প্রয়োজনীয় বা দরকারি মনে হওয়া)</h4>
+                    <p>কোনো কাজ করা আপনার নিজের ভালোর জন্য বা নিজের কাছে প্রয়োজনীয় মনে হলে <strong>Need to</strong> বসে। (হি/শি/ইট এর সাথে Needs to বসে)</p>
+                    <ul>
+                        <li><strong>Example:</strong> I am very thirsty. I <strong>need to</strong> drink water. (আমার নিজের শরীরের প্রয়োজনে পানি দরকার।)</li>
+                        <li><strong>Example:</strong> You <strong>need to</strong> practice English every day to be fluent. (তোমার নিজের ভালোর জন্য চর্চা করা দরকার।)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="use-case-box">
+                <div class="use-case-text">
+                    <h4>3. Don't have to / Don't need to (করার দরকার নেই)</h4>
+                    <p>এই দুটির অর্থ প্রায় একই। কাজটা করার কোনো বাধ্যবাধকতা বা প্রয়োজন নেই, তবে চাইলে করতে পারেন। (Must not এর সাথে এর পার্থক্য আছে। Must not মানে 'করা যাবেই না/নিষিদ্ধ', আর don't have to মানে 'করার দরকার নেই, চাইলে করতে পারো')</p>
+                    <ul>
+                        <li><strong>Example:</strong> Today is Friday. I <strong>don't have to</strong> go to the office. (আজ যাওয়ার দরকার নেই।)</li>
+                        <li><strong>Example:</strong> You <strong>don't need to</strong> bring money. The food is free. (তোমার টাকা আনার প্রয়োজন নেই।)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: SHORT TRICK & BASIC STRUCTURE -->
+        <section>
+            <h2>2. Short Trick & 4-Way Framework</h2>
+            <div class="code-box">
+                Golden Rules:<br>
+                **I/We/You/They + have to / need to + V1**<br>
+                **He/She/It (Singular) + has to / needs to + V1**<br>
+                করতেই হবে (Have to) / করা দরকার (Need to)
+            </div>
+
+            <h3>10 General Sentences:</h3>
+            <ul>
+                <li><strong>I have to finish</strong> this project today. (আমাকে আজই শেষ করতে হবে - Boss's rule)</li>
+                <li><strong>She has to cook</strong> for her family. (তাকে রান্না করতে হয় - Duty)</li>
+                <li><strong>I need to buy</strong> some medicines. (আমার কেনা দরকার - Personal need)</li>
+                <li><strong>He needs to sleep</strong> early. (তার ঘুমানো দরকার - For his health)</li>
+                <li><strong>You don't have to come</strong> tomorrow. (তোমার আসার দরকার নেই)</li>
+                <li><strong>She doesn't need to worry.</strong> (তার চিন্তা করার দরকার নেই)</li>
+                <li><strong>Do you have to go</strong> now? (তোমাকে কি এখনই যেতে হবে?)</li>
+                <li><strong>Does he need to stay</strong> here? (তার কি এখানে থাকা দরকার?)</li>
+                <li><strong>Why do I have to do</strong> this? (কেন আমাকে এটা করতে হবে?)</li>
+                <li><strong>They didn't have to pay</strong> the bill. (তাদের বিল দিতে হয়নি - Past)</li>
+            </ul>
+
+            <h3>The 4-Way Sentence Framework (Example: Have to / Need to):</h3>
+            <table>
+                <tr>
+                    <th>Form</th>
+                    <th>Structure (Have to)</th>
+                    <th>Structure (Need to)</th>
+                    <th>Bangla Meaning</th>
+                </tr>
+                <tr>
+                    <td>Affirmative</td>
+                    <td>I have to go</td>
+                    <td>I need to go</td>
+                    <td>আমাকে যেতে হবে / আমার যাওয়া দরকার</td>
+                </tr>
+                <tr>
+                    <td>Negative</td>
+                    <td>I don't have to go</td>
+                    <td>I don't need to go</td>
+                    <td>আমার যাওয়ার দরকার নেই</td>
+                </tr>
+                <tr>
+                    <td>Interrogative</td>
+                    <td>Do I have to go?</td>
+                    <td>Do I need to go?</td>
+                    <td>আমাকে কি যেতে হবে? / আমার কি যাওয়া দরকার?</td>
+                </tr>
+                <tr>
+                    <td>Negative Interrogative</td>
+                    <td>Don't I have to go?</td>
+                    <td>Don't I need to go?</td>
+                    <td>আমাকে কি যেতে হবে না? / আমার কি যাওয়া দরকার নেই?</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- SECTION 3: 20 PRACTICE TABLE -->
+        <section>
+            <h2>3. 20 Examples Practice Table (Focus: Have to)</h2>
+            <p><em>Note: Observe the use of "Has to" and "Doesn't have to" for He/She/It.</em></p>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Affirmative (করতে হবে)</th>
+                    <th>Negative (করার দরকার নেই)</th>
+                    <th>Interrogative (কি করতে হবে?)</th>
+                </tr>
+                <tr><td>1</td><td>I have to work.</td><td>I don't have to work.</td><td>Do I have to work?</td></tr>
+                <tr><td>2</td><td>We have to learn.</td><td>We don't have to learn.</td><td>Do we have to learn?</td></tr>
+                <tr><td>3</td><td>You have to run.</td><td>You don't have to run.</td><td>Do you have to run?</td></tr>
+                <tr><td>4</td><td>They have to swim.</td><td>They don't have to swim.</td><td>Do they have to swim?</td></tr>
+                <tr><td>5</td><td>He has to walk.</td><td>He doesn't have to walk.</td><td>Does he have to walk?</td></tr>
+                <tr><td>6</td><td>She has to cook.</td><td>She doesn't have to cook.</td><td>Does she have to cook?</td></tr>
+                <tr><td>7</td><td>It has to sleep.</td><td>It doesn't have to sleep.</td><td>Does it have to sleep?</td></tr>
+                <tr><td>8</td><td>Rahim has to help.</td><td>Rahim doesn't have to help.</td><td>Does Rahim have to help?</td></tr>
+                <tr><td>9</td><td>The boy has to read.</td><td>The boy doesn't have to read.</td><td>Does the boy have to read?</td></tr>
+                <tr><td>10</td><td>Birds have to fly.</td><td>Birds don't have to fly.</td><td>Do birds have to fly?</td></tr>
+                <tr><td>11</td><td>Students have to study.</td><td>Students don't have to study.</td><td>Do students have to study?</td></tr>
+                <tr><td>12</td><td>Farmers have to grow.</td><td>Farmers don't have to grow.</td><td>Do farmers have to grow?</td></tr>
+                <tr><td>13</td><td>We have to travel.</td><td>We don't have to travel.</td><td>Do we have to travel?</td></tr>
+                <tr><td>14</td><td>I have to draw.</td><td>I don't have to draw.</td><td>Do I have to draw?</td></tr>
+                <tr><td>15</td><td>Wind has to blow.</td><td>Wind doesn't have to blow.</td><td>Does wind have to blow?</td></tr>
+                <tr><td>16</td><td>Cats have to jump.</td><td>Cats don't have to jump.</td><td>Do cats have to jump?</td></tr>
+                <tr><td>17</td><td>Babies have to drink.</td><td>Babies don't have to drink.</td><td>Do babies have to drink?</td></tr>
+                <tr><td>18</td><td>Doctors have to treat.</td><td>Doctors don't have to treat.</td><td>Do doctors have to treat?</td></tr>
+                <tr><td>19</td><td>Teachers have to explain.</td><td>Teachers don't have to explain.</td><td>Do teachers have to explain?</td></tr>
+                <tr><td>20</td><td>Drivers have to drive.</td><td>Drivers don't have to drive.</td><td>Do drivers have to drive?</td></tr>
+            </table>
+        </section>
+
+        <!-- SECTION 4: 5 EASY PRESENTATIONS -->
+        <section>
+            <h2>4. Presentations (Based on different uses)</h2>
+
+            <h3>Presentation 1: Morning Routine (Have to / Duty)</h3>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I am a student, so I have a strict routine."<div class="bangla-text">বাংলা অর্থ: আমি একজন ছাত্র, তাই আমার একটি কড়া রুটিন আছে।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I have to wake up at 6 AM every day."<div class="bangla-text">বাংলা অর্থ: আমাকে প্রতিদিন সকাল ৬টায় ঘুম থেকে উঠতে হয়।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Then, I have to brush my teeth and wash my face."<div class="bangla-text">বাংলা অর্থ: তারপর, আমাকে দাঁত ব্রাশ করতে এবং মুখ ধুতে হয়।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"My mother has to cook breakfast for everyone."<div class="bangla-text">বাংলা অর্থ: আমার মাকে সবার জন্য সকালের নাস্তা বানাতে হয়।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I have to reach my school before 8 AM."<div class="bangla-text">বাংলা অর্থ: আমাকে সকাল ৮টার আগে স্কুলে পৌঁছাতে হয়।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"It is tough, but I have to do it."<div class="bangla-text">বাংলা অর্থ: এটি কঠিন, কিন্তু আমাকে এটি করতে হয়।</div></div>
+
+            <h3>Presentation 2: Improving English (Need to / Necessity)</h3>
+            <div class="interactive-line" onclick="toggleBangla(this)">"English is an international language."<div class="bangla-text">বাংলা অর্থ: ইংরেজি একটি আন্তর্জাতিক ভাষা।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I need to learn English for my future career."<div class="bangla-text">বাংলা অর্থ: আমার ভবিষ্যৎ ক্যারিয়ারের জন্য আমার ইংরেজি শেখা দরকার।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I need to practice speaking every single day."<div class="bangla-text">বাংলা অর্থ: আমার প্রতিদিন কথা বলার চর্চা করা দরকার।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Also, I need to read more English storybooks."<div class="bangla-text">বাংলা অর্থ: তাছাড়া, আমার আরও বেশি ইংরেজি গল্পের বই পড়া দরকার।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"My friend Ali also needs to improve his grammar."<div class="bangla-text">বাংলা অর্থ: আমার বন্ধু আলীরও তার গ্রামার উন্নত করা দরকার।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"We need to work hard to be fluent."<div class="bangla-text">বাংলা অর্থ: সাবলীল হওয়ার জন্য আমাদের কঠোর পরিশ্রম করা দরকার।</div></div>
+
+            <h3>Presentation 3: A Relaxing Sunday (Don't have to)</h3>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Sunday is my favorite day of the week."<div class="bangla-text">বাংলা অর্থ: রবিবার আমার সপ্তাহের সবচেয়ে প্রিয় দিন।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Because on Sunday, I don't have to go to school."<div class="bangla-text">বাংলা অর্থ: কারণ রবিবার আমাকে স্কুলে যেতে হয় না।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I don't have to wake up early in the morning."<div class="bangla-text">বাংলা অর্থ: আমাকে খুব সকালে ঘুম থেকে উঠতে হয় না।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"My father doesn't have to go to his office."<div class="bangla-text">বাংলা অর্থ: আমার বাবাকে তার অফিসে যেতে হয় না।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"We don't need to worry about time."<div class="bangla-text">বাংলা অর্থ: আমাদের সময় নিয়ে চিন্তা করার দরকার নেই।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"We can just relax and enjoy our holiday."<div class="bangla-text">বাংলা অর্থ: আমরা শুধু রিলাক্স করতে এবং আমাদের ছুটি উপভোগ করতে পারি।</div></div>
+
+            <h3>Presentation 4: Preparing for a Trip (Need to)</h3>
+            <div class="interactive-line" onclick="toggleBangla(this)">"We are going on a trip to Cox's Bazar."<div class="bangla-text">বাংলা অর্থ: আমরা কক্সবাজার ভ্রমণে যাচ্ছি।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I need to pack my bags tonight."<div class="bangla-text">বাংলা অর্থ: আমার আজ রাতে ব্যাগ গোছানো দরকার।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I need to buy some new clothes and sunglasses."<div class="bangla-text">বাংলা অর্থ: আমার কিছু নতুন কাপড় এবং সানগ্লাস কেনা দরকার।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"My brother needs to book the hotel room."<div class="bangla-text">বাংলা অর্থ: আমার ভাইয়ের হোটেলের রুম বুক করা দরকার।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"We need to leave the house at 6 AM."<div class="bangla-text">বাংলা অর্থ: আমাদের সকাল ৬টায় বাসা থেকে বের হওয়া দরকার।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I am very excited about this trip."<div class="bangla-text">বাংলা অর্থ: আমি এই ভ্রমণ নিয়ে খুব রোমাঞ্চিত।</div></div>
+
+            <h3>Presentation 5: Office Rules (Have to)</h3>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Working in an office has many rules."<div class="bangla-text">বাংলা অর্থ: অফিসে কাজ করার অনেক নিয়ম আছে।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Employees have to reach the office on time."<div class="bangla-text">বাংলা অর্থ: কর্মচারীদের সময়মতো অফিসে পৌঁছাতে হয়।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"They have to attend long meetings every Monday."<div class="bangla-text">বাংলা অর্থ: প্রতি সোমবার তাদের লম্বা মিটিংয়ে উপস্থিত থাকতে হয়।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"The manager has to check all the reports."<div class="bangla-text">বাংলা অর্থ: ম্যানেজারকে সব রিপোর্ট চেক করতে হয়।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"But they don't have to work on weekends."<div class="bangla-text">বাংলা অর্থ: তবে ছুটির দিনে তাদের কাজ করতে হয় না।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Rules are important for a good business."<div class="bangla-text">বাংলা অর্থ: ভালো ব্যবসার জন্য নিয়ম গুরুত্বপূর্ণ।</div></div>
+
+            <!-- STUDENT TASK FOR PRESENTATION -->
+            <div class="task-box">
+                <h4>🎓 Student Task: Make Your Own Presentation!</h4>
+                <p>Make a presentation (5-6 sentences) using "Have to" and "Need to". Follow the topics below!</p>
+                <ul>
+                    <li><strong>1. Staying Healthy (Need to):</strong> <em>(Hints: need to drink water, need to eat vegetables, need to exercise, need to sleep well)</em></li>
+                    <li><strong>2. House Chores (Have to):</strong> <em>(Hints: have to clean my room, have to wash dishes, my sister has to sweep, mother has to cook)</em></li>
+                    <li><strong>3. A Free Day (Don't have to):</strong> <em>(Hints: it's a holiday, don't have to study, don't have to wake up early, don't need to do homework)</em></li>
+                </ul>
+                <button class="btn-3d" onclick="toggleAnswers('pres-answers')">Show Sample Answers</button>
+                <div id="pres-answers" class="sample-answer-box">
+                    <p><strong>1. Staying Healthy:</strong> Hello everyone! Health is wealth. To stay healthy, we need to drink plenty of water. We need to eat fresh fruits and green vegetables. We also need to exercise every morning. We need to sleep at least eight hours a night. Good habits keep us strong.</p>
+                    <p><strong>2. House Chores:</strong> In our house, everyone shares the work. I have to clean my room every day. After dinner, I have to wash the dishes. My younger sister has to sweep the floor. My mother has to cook delicious food for us. We do it together happily.</p>
+                    <p><strong>3. A Free Day:</strong> Today is a national holiday. I am so happy. I don't have to study for my exams today. I don't have to wake up early in the cold morning. My brother doesn't need to do any homework. We can play video games all day long.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: 5 EASY STORIES -->
+        <section>
+            <h2>5. 5 Easy Short Stories (Focusing on 'Have to / Need to')</h2>
+            
+            <h3>Story 1: The Busy Baker (Have to)</h3>
+            <p>Mr. Tom is a baker. He owns a small bakery in the town. His life is very busy. He has to wake up at 4 AM every morning. He has to mix the flour and bake the fresh bread before 6 AM. His wife also helps him. She has to manage the customers and sell the cakes. They don't have to worry about money because their business is very good, but they have to work really hard.</p>
+            <p><strong>Bangla Summary:</strong> মিস্টার টম একজন বেকার (রুটি প্রস্তুতকারক)। শহরে তার একটি ছোট বেকারি আছে। তার জীবন খুব ব্যস্ত। তাকে প্রতিদিন ভোর ৪টায় ঘুম থেকে উঠতে হয়। সকাল ৬টার আগে তাকে ময়দা মাখাতে হয় এবং তাজা রুটি সেঁকতে হয়। তার স্ত্রীও তাকে সাহায্য করেন। তাকে গ্রাহকদের সামলাতে হয় এবং কেক বিক্রি করতে হয়। তাদের টাকা নিয়ে চিন্তা করার দরকার নেই কারণ তাদের ব্যবসা খুব ভালো, কিন্তু তাদের খুব কঠোর পরিশ্রম করতে হয়।</p>
+
+            <h3>Story 2: The Sick Boy (Need to)</h3>
+            <p>Rahim was playing football in the rain. The next day, he felt very weak. His mother checked his temperature. She said, "You have a high fever. You need to rest in bed. You need to drink warm water." Rahim said, "But I have to go to school! We have a match today." His mother replied, "No, health is more important. You don't have to play today. You need to take medicine." Rahim listened to his mother.</p>
+            <p><strong>Bangla Summary:</strong> রহিম বৃষ্টিতে ফুটবল খেলছিল। পরের দিন, সে খুব দুর্বল অনুভব করল। তার মা তার গায়ের তাপমাত্রা পরীক্ষা করলেন। তিনি বললেন, "তোমার প্রচণ্ড জ্বর আছে। তোমার বিছানায় বিশ্রাম নেওয়া দরকার। তোমার গরম পানি পান করা দরকার।" রহিম বলল, "কিন্তু আমাকে স্কুলে যেতে হবে! আজ আমাদের একটা ম্যাচ আছে।" তার মা উত্তর দিলেন, "না, স্বাস্থ্য বেশি গুরুত্বপূর্ণ। আজ তোমার খেলার দরকার নেই। তোমার ওষুধ খাওয়া দরকার।" রহিম তার মায়ের কথা শুনল।</p>
+
+            <h3>Story 3: A Magic Ticket (Don't have to)</h3>
+            <p>One day, Ali won a magic ticket from a contest. It was a "Free Food for a Year" ticket at a famous restaurant. Ali was overjoyed. He thought, "Now I don't have to cook dinner every night. I don't need to wash the dirty dishes anymore. My mother doesn't have to worry about buying groceries." He went to the restaurant and showed his ticket. The waiter said, "Sir, you don't have to pay for anything!"</p>
+            <p><strong>Bangla Summary:</strong> একদিন আলী একটি প্রতিযোগিতা থেকে একটি জাদুর টিকিট জিতল। এটি একটি বিখ্যাত রেস্তোরাঁয় "এক বছরের জন্য ফ্রি খাবার" এর টিকিট ছিল। আলী আনন্দে আত্মহারা হলো। সে ভাবল, "এখন আমাকে প্রতি রাতে রাতের খাবার রান্না করতে হবে না। আমার আর নোংরা থালাবাসন ধোয়ার দরকার নেই। আমার মাকে মুদি জিনিসপত্র কেনা নিয়ে চিন্তা করতে হবে না।" সে রেস্তোরাঁয় গেল এবং তার টিকিট দেখাল। ওয়েটার বলল, "স্যার, আপনাকে কোনো কিছুর জন্য টাকা দিতে হবে না!"</p>
+
+            <h3>Story 4: The Poor Farmer (Have to & Need to)</h3>
+            <p>Hasan was a poor farmer. His crops were destroyed by a flood. He was very sad. He said to his wife, "We have no food left. I have to find a job in the city. I need to earn money for our children." His wife cried and said, "You don't have to go alone. I will also work. We need to stay strong together." They went to the city, worked hard, and finally built a good life.</p>
+            <p><strong>Bangla Summary:</strong> হাসান একজন গরিব কৃষক ছিল। বন্যায় তার ফসল নষ্ট হয়ে গিয়েছিল। সে খুব দুঃখিত ছিল। সে তার স্ত্রীকে বলল, "আমাদের কোনো খাবার অবশিষ্ট নেই। আমাকে শহরে একটি চাকরি খুঁজতে হবে। আমাদের সন্তানদের জন্য আমার টাকা উপার্জন করা দরকার।" তার স্ত্রী কেঁদে বলল, "তোমাকে একা যেতে হবে না। আমিও কাজ করব। আমাদের একসাথে শক্ত থাকা দরকার।" তারা শহরে গেল, কঠোর পরিশ্রম করল এবং শেষ পর্যন্ত একটি ভালো জীবন গড়ে তুলল।</p>
+
+            <h3>Story 5: The Lazy Student (Need to)</h3>
+            <p>Kamal was a lazy student. He always watched TV and played games on his phone. His exams were only two weeks away. His friend told him, "Kamal, you are wasting time. You need to open your books. You need to practice math." Kamal didn't listen. On the exam day, he couldn't answer anything. He realized his mistake. He thought, "I failed because I didn't study. From now on, I have to work hard."</p>
+            <p><strong>Bangla Summary:</strong> কামাল একজন অলস ছাত্র ছিল। সে সবসময় টিভি দেখতো এবং তার ফোনে গেম খেলতো। তার পরীক্ষার মাত্র দুই সপ্তাহ বাকি ছিল। তার বন্ধু তাকে বলল, "কামাল, তুমি সময় নষ্ট করছো। তোমার বই খোলা দরকার। তোমার অংক চর্চা করা দরকার।" কামাল শুনল না। পরীক্ষার দিন, সে কোনো উত্তর দিতে পারল না। সে তার ভুল বুঝতে পারল। সে ভাবল, "আমি ফেল করেছি কারণ আমি পড়িনি। এখন থেকে আমাকে কঠোর পরিশ্রম করতে হবে।"</p>
+
+            <!-- STUDENT TASK FOR STORY -->
+            <div class="task-box">
+                <h4>✍️ Student Task: Complete the Story!</h4>
+                <p>Start writing a story using "have to" or "need to" from this starting line. Make at least 6-8 sentences!</p>
+                <p style="font-weight: bold; color: var(--primary);">Starting Line: "Our car broke down in the middle of a dark road..."</p>
+                <p><em>Hints: (need to fix it, have to push the car, need to call a mechanic, don't have to worry, have to wait for morning)</em></p>
+                <button class="btn-3d" onclick="toggleAnswers('story-answers')">Show Sample Answer</button>
+                <div id="story-answers" class="sample-answer-box">
+                    <p><strong>Sample Story:</strong> Our car broke down in the middle of a dark road. We were very scared. My father said, "I need to check the engine." He opened the hood but couldn't understand the problem. He said, "I think we need to call a mechanic." But there was no mobile network. I said, "Do we have to push the car?" My father smiled and said, "No, you don't have to push. We just have to wait inside the car until morning."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: 30 FILL IN THE BLANKS -->
+        <section>
+            <h2>6. 30 Fill in the Blanks (Have to / Need to)</h2>
+            <p>Fill in the blanks using proper forms: <strong>have to / has to / need to / needs to</strong>.</p>
+            <div class="fill-in-box">
+                <!-- Have to Affirmative -->
+                <h4 style="color:var(--secondary); margin-bottom:10px;">Structure 1: Have to / Has to (Affirmative)</h4>
+                <div class="fill-in-item">1. I <input type="text" class="blank-input" placeholder="..."> (go) to the bank today.</div>
+                <div class="fill-in-item">2. She <input type="text" class="blank-input" placeholder="..."> (finish) her homework. (singular subject)</div>
+                <div class="fill-in-item">3. We <input type="text" class="blank-input" placeholder="..."> (pay) the electricity bill.</div>
+                <div class="fill-in-item">4. He <input type="text" class="blank-input" placeholder="..."> (wake) up early for his job.</div>
+                <div class="fill-in-item">5. They <input type="text" class="blank-input" placeholder="..."> (wear) uniforms in school.</div>
+
+                <!-- Need to Affirmative -->
+                <h4 style="color:var(--secondary); margin-top:20px; margin-bottom:10px;">Structure 2: Need to / Needs to (Affirmative)</h4>
+                <div class="fill-in-item">6. I <input type="text" class="blank-input" placeholder="..."> (drink) some water right now.</div>
+                <div class="fill-in-item">7. You <input type="text" class="blank-input" placeholder="..."> (practice) more to win the game.</div>
+                <div class="fill-in-item">8. Rahim <input type="text" class="blank-input" placeholder="..."> (buy) a new laptop for his work.</div>
+                <div class="fill-in-item">9. The car is dirty. We <input type="text" class="blank-input" placeholder="..."> (wash) it.</div>
+                <div class="fill-in-item">10. My mother <input type="text" class="blank-input" placeholder="..."> (take) her medicine daily.</div>
+
+                <!-- Don't have to / Doesn't have to -->
+                <h4 style="color:var(--secondary); margin-top:20px; margin-bottom:10px;">Structure 3: Negative (Don't have to / Doesn't have to)</h4>
+                <div class="fill-in-item">11. Today is a holiday. You <input type="text" class="blank-input" placeholder="..."> (not / wake) up early.</div>
+                <div class="fill-in-item">12. She is very rich. She <input type="text" class="blank-input" placeholder="..."> (not / work) hard.</div>
+                <div class="fill-in-item">13. The food is free. We <input type="text" class="blank-input" placeholder="..."> (not / pay).</div>
+                <div class="fill-in-item">14. He has a car, so he <input type="text" class="blank-input" placeholder="..."> (not / walk) to the station.</div>
+                <div class="fill-in-item">15. I already cleaned it. You <input type="text" class="blank-input" placeholder="..."> (not / do) it again.</div>
+
+                <!-- Don't need to / Doesn't need to -->
+                <h4 style="color:var(--secondary); margin-top:20px; margin-bottom:10px;">Structure 4: Negative (Don't need to / Doesn't need to)</h4>
+                <div class="fill-in-item">16. I can hear you clearly. You <input type="text" class="blank-input" placeholder="..."> (not / shout).</div>
+                <div class="fill-in-item">17. He knows the address. He <input type="text" class="blank-input" placeholder="..."> (not / ask) anyone.</div>
+                <div class="fill-in-item">18. We have enough food. We <input type="text" class="blank-input" placeholder="..."> (not / buy) more.</div>
+                <div class="fill-in-item">19. Sara <input type="text" class="blank-input" placeholder="..."> (not / worry) about her exam; she is prepared.</div>
+                <div class="fill-in-item">20. You <input type="text" class="blank-input" placeholder="..."> (not / bring) an umbrella; it's sunny.</div>
+
+                <!-- Interrogative (Do/Does) -->
+                <h4 style="color:var(--secondary); margin-top:20px; margin-bottom:10px;">Structure 5: Interrogative (Do/Does + Sub + have to / need to)</h4>
+                <div class="fill-in-item">21. <input type="text" class="blank-input" placeholder="..."> you <input type="text" class="blank-input" placeholder="..."> (have to / go) now?</div>
+                <div class="fill-in-item">22. <input type="text" class="blank-input" placeholder="..."> she <input type="text" class="blank-input" placeholder="..."> (have to / cook) every day?</div>
+                <div class="fill-in-item">23. <input type="text" class="blank-input" placeholder="..."> we <input type="text" class="blank-input" placeholder="..."> (need to / book) the tickets?</div>
+                <div class="fill-in-item">24. <input type="text" class="blank-input" placeholder="..."> he <input type="text" class="blank-input" placeholder="..."> (need to / wait) here?</div>
+                <div class="fill-in-item">25. <input type="text" class="blank-input" placeholder="..."> they <input type="text" class="blank-input" placeholder="..."> (have to / pay) extra money?</div>
+
+                <!-- WH Question -->
+                <h4 style="color:var(--secondary); margin-top:20px; margin-bottom:10px;">Structure 6: WH Questions (WH + do/does + Sub + have to/need to)</h4>
+                <div class="fill-in-item">26. What <input type="text" class="blank-input" placeholder="..."> I <input type="text" class="blank-input" placeholder="..."> (have to / do) to pass?</div>
+                <div class="fill-in-item">27. Why <input type="text" class="blank-input" placeholder="..."> she <input type="text" class="blank-input" placeholder="..."> (have to / leave) early?</div>
+                <div class="fill-in-item">28. When <input type="text" class="blank-input" placeholder="..."> we <input type="text" class="blank-input" placeholder="..."> (need to / submit) the project?</div>
+                <div class="fill-in-item">29. Where <input type="text" class="blank-input" placeholder="..."> he <input type="text" class="blank-input" placeholder="..."> (need to / go)?</div>
+                <div class="fill-in-item">30. How much money <input type="text" class="blank-input" placeholder="..."> they <input type="text" class="blank-input" placeholder="..."> (have to / pay)?</div>
+            </div>
+            <button class="btn-3d" onclick="toggleAnswers('fill-answers')">Show Answers</button>
+            <div id="fill-answers" class="sample-answer-box">
+                <p><strong>Structure 1: Have to</strong><br>
+                1. have to go | 2. has to finish | 3. have to pay | 4. has to wake | 5. have to wear</p>
+                <p><strong>Structure 2: Need to</strong><br>
+                6. need to drink | 7. need to practice | 8. needs to buy | 9. need to wash | 10. needs to take</p>
+                <p><strong>Structure 3: Don't have to</strong><br>
+                11. don't have to wake | 12. doesn't have to work | 13. don't have to pay | 14. doesn't have to walk | 15. don't have to do</p>
+                <p><strong>Structure 4: Don't need to</strong><br>
+                16. don't need to shout | 17. doesn't need to ask | 18. don't need to buy | 19. doesn't need to worry | 20. don't need to bring</p>
+                <p><strong>Structure 5: Interrogative</strong><br>
+                21. Do ... have to go | 22. Does ... have to cook | 23. Do ... need to book | 24. Does ... need to wait | 25. Do ... have to pay</p>
+                <p><strong>Structure 6: WH Questions</strong><br>
+                26. do ... have to do | 27. does ... have to leave | 28. do ... need to submit | 29. does ... need to go | 30. do ... have to pay</p>
+            </div>
+        </section>
+
+        <!-- SECTION 7: 20 MCQ QUIZ -->
+        <section>
+            <h2>7. 20 MCQ Quiz (Click Button to Reveal Answers)</h2>
+            <p>Click your chosen answer for instant visual feedback. Your score, percentage, and mastery badge will be updated automatically in real-time!</p>
+
+            <!-- LIVE SCORE TRACKER COMPONENT -->
+            <div class="score-card" id="quiz-score-card">
+                <div class="score-title">⭐ Student Performance Scoreboard ⭐</div>
+                <div class="score-display">
+                    Score: <span id="score-points">0</span> / <span id="total-questions">20</span>
+                    <span class="score-percent" id="score-percent">(0%)</span>
+                </div>
+                <div class="score-badge" id="score-badge">Click an answer below to start the test!</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="score-progress"></div>
+                </div>
+                <div style="margin-top: 20px;">
+                    <button class="btn-3d" style="padding: 10px 22px; font-size: 1.05rem; margin-right: 12px; background: #3b82f6;" onclick="resetQuiz()">🔄 Retake / Reset Quiz</button>
+                    <button class="btn-3d" style="padding: 10px 22px; font-size: 1.05rem; background: #059669;" onclick="showAllAnswers()">👁️ Reveal All Answers</button>
+                </div>
+            </div>
+
+            <!-- MCQ ITEMS -->
+            <div class="mcq-box" id="q1" data-correct="B" data-answered="false">
+                <p><strong>1. "I ___ go to the office at 9 AM every day." (It's a rule)</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 1, 'A')">A) has to</div>
+                    <div class="option-btn" onclick="checkOption(this, 1, 'B')">B) have to</div>
+                    <div class="option-btn" onclick="checkOption(this, 1, 'C')">C) needs to</div>
+                </div>
+                <div class="answer-reveal" id="ans-1">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q2" data-correct="B" data-answered="false">
+                <p><strong>2. "She is very sick. She ___ go to a doctor." (Necessity)</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 2, 'A')">A) need to</div>
+                    <div class="option-btn" onclick="checkOption(this, 2, 'B')">B) needs to</div>
+                    <div class="option-btn" onclick="checkOption(this, 2, 'C')">C) have to</div>
+                </div>
+                <div class="answer-reveal" id="ans-2">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q3" data-correct="A" data-answered="false">
+                <p><strong>3. Translate: তোমার আসার দরকার নেই।</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 3, 'A')">A) You don't have to come.</div>
+                    <div class="option-btn" onclick="checkOption(this, 3, 'B')">B) You must not come.</div>
+                    <div class="option-btn" onclick="checkOption(this, 3, 'C')">C) You shouldn't come.</div>
+                </div>
+                <div class="answer-reveal" id="ans-3">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+            <div class="mcq-box" id="q4" data-correct="B" data-answered="false">
+                <p><strong>4. "He ___ work on Sundays. It's his day off."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 4, 'A')">A) don't have to</div>
+                    <div class="option-btn" onclick="checkOption(this, 4, 'B')">B) doesn't have to</div>
+                    <div class="option-btn" onclick="checkOption(this, 4, 'C')">C) didn't have to</div>
+                </div>
+                <div class="answer-reveal" id="ans-4">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q5" data-correct="B" data-answered="false">
+                <p><strong>5. Which one means "এটা করা বাধ্যতামূলক নয়, চাইলে করতে পারো"?</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 5, 'A')">A) You must not do it.</div>
+                    <div class="option-btn" onclick="checkOption(this, 5, 'B')">B) You don't have to do it.</div>
+                    <div class="option-btn" onclick="checkOption(this, 5, 'C')">C) You shouldn't do it.</div>
+                </div>
+                <div class="answer-reveal" id="ans-5">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q6" data-correct="C" data-answered="false">
+                <p><strong>6. "___ you have to leave so early?"</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 6, 'A')">A) Are</div>
+                    <div class="option-btn" onclick="checkOption(this, 6, 'B')">B) Does</div>
+                    <div class="option-btn" onclick="checkOption(this, 6, 'C')">C) Do</div>
+                </div>
+                <div class="answer-reveal" id="ans-6">
+                    <strong>✓ Correct Answer: C</strong> — Correct answer is C
+                </div>
+            </div>
+            <div class="mcq-box" id="q7" data-correct="A" data-answered="false">
+                <p><strong>7. "I bought enough milk, so you ___ buy any more."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 7, 'A')">A) don't need to</div>
+                    <div class="option-btn" onclick="checkOption(this, 7, 'B')">B) doesn't need to</div>
+                    <div class="option-btn" onclick="checkOption(this, 7, 'C')">C) hasn't to</div>
+                </div>
+                <div class="answer-reveal" id="ans-7">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+            <div class="mcq-box" id="q8" data-correct="C" data-answered="false">
+                <p><strong>8. Translate: তাকে কি রান্না করতে হবে?</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 8, 'A')">A) Do she have to cook?</div>
+                    <div class="option-btn" onclick="checkOption(this, 8, 'B')">B) Does she has to cook?</div>
+                    <div class="option-btn" onclick="checkOption(this, 8, 'C')">C) Does she have to cook?</div>
+                </div>
+                <div class="answer-reveal" id="ans-8">
+                    <strong>✓ Correct Answer: C</strong> — Correct answer is C (Does বসলে have to হয়)
+                </div>
+            </div>
+            <div class="mcq-box" id="q9" data-correct="B" data-answered="false">
+                <p><strong>9. "We are already late. We ___ hurry!"</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 9, 'A')">A) needs to</div>
+                    <div class="option-btn" onclick="checkOption(this, 9, 'B')">B) need to</div>
+                    <div class="option-btn" onclick="checkOption(this, 9, 'C')">C) has to</div>
+                </div>
+                <div class="answer-reveal" id="ans-9">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q10" data-correct="B" data-answered="false">
+                <p><strong>10. Find the mistake: "He don't have to go."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 10, 'A')">A) He</div>
+                    <div class="option-btn" onclick="checkOption(this, 10, 'B')">B) don't (should be doesn't)</div>
+                    <div class="option-btn" onclick="checkOption(this, 10, 'C')">C) have to</div>
+                </div>
+                <div class="answer-reveal" id="ans-10">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q11" data-correct="A" data-answered="false">
+                <p><strong>11. "My eyes are burning. I ___ sleep."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 11, 'A')">A) need to</div>
+                    <div class="option-btn" onclick="checkOption(this, 11, 'B')">B) has to</div>
+                    <div class="option-btn" onclick="checkOption(this, 11, 'C')">C) don't need to</div>
+                </div>
+                <div class="answer-reveal" id="ans-11">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+            <div class="mcq-box" id="q12" data-correct="B" data-answered="false">
+                <p><strong>12. "___ he need to bring his ID card?"</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 12, 'A')">A) Do</div>
+                    <div class="option-btn" onclick="checkOption(this, 12, 'B')">B) Does</div>
+                    <div class="option-btn" onclick="checkOption(this, 12, 'C')">C) Is</div>
+                </div>
+                <div class="answer-reveal" id="ans-12">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q13" data-correct="C" data-answered="false">
+                <p><strong>13. Which sentence is correct?</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 13, 'A')">A) I have to went.</div>
+                    <div class="option-btn" onclick="checkOption(this, 13, 'B')">B) I have to goes.</div>
+                    <div class="option-btn" onclick="checkOption(this, 13, 'C')">C) I have to go.</div>
+                </div>
+                <div class="answer-reveal" id="ans-13">
+                    <strong>✓ Correct Answer: C</strong> — Correct answer is C
+                </div>
+            </div>
+            <div class="mcq-box" id="q14" data-correct="B" data-answered="false">
+                <p><strong>14. "Why ___ she have to pay the bill?"</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 14, 'A')">A) do</div>
+                    <div class="option-btn" onclick="checkOption(this, 14, 'B')">B) does</div>
+                    <div class="option-btn" onclick="checkOption(this, 14, 'C')">C) is</div>
+                </div>
+                <div class="answer-reveal" id="ans-14">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q15" data-correct="C" data-answered="false">
+                <p><strong>15. Translate: আমাকে এটা করতে হবে।</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 15, 'A')">A) I need to do this.</div>
+                    <div class="option-btn" onclick="checkOption(this, 15, 'B')">B) I have to do this.</div>
+                    <div class="option-btn" onclick="checkOption(this, 15, 'C')">C) Both A and B are mostly correct depending on context.</div>
+                </div>
+                <div class="answer-reveal" id="ans-15">
+                    <strong>✓ Correct Answer: C</strong> — Correct answer is C
+                </div>
+            </div>
+            <div class="mcq-box" id="q16" data-correct="A" data-answered="false">
+                <p><strong>16. "I passed the test, so I ___ take it again."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 16, 'A')">A) don't have to</div>
+                    <div class="option-btn" onclick="checkOption(this, 16, 'B')">B) must not</div>
+                    <div class="option-btn" onclick="checkOption(this, 16, 'C')">C) shouldn't</div>
+                </div>
+                <div class="answer-reveal" id="ans-16">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+            <div class="mcq-box" id="q17" data-correct="A" data-answered="false">
+                <p><strong>17. "The boss said that everyone ___ attend the meeting."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 17, 'A')">A) has to</div>
+                    <div class="option-btn" onclick="checkOption(this, 17, 'B')">B) have to</div>
+                    <div class="option-btn" onclick="checkOption(this, 17, 'C')">C) needs to</div>
+                </div>
+                <div class="answer-reveal" id="ans-17">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A (Everyone takes singular verb)
+                </div>
+            </div>
+            <div class="mcq-box" id="q18" data-correct="A" data-answered="false">
+                <p><strong>18. "You ___ worry. I will fix the problem."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 18, 'A')">A) don't need to</div>
+                    <div class="option-btn" onclick="checkOption(this, 18, 'B')">B) doesn't need to</div>
+                    <div class="option-btn" onclick="checkOption(this, 18, 'C')">C) didn't need to</div>
+                </div>
+                <div class="answer-reveal" id="ans-18">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+            <div class="mcq-box" id="q19" data-correct="B" data-answered="false">
+                <p><strong>19. "What ___ they have to bring?"</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 19, 'A')">A) does</div>
+                    <div class="option-btn" onclick="checkOption(this, 19, 'B')">B) do</div>
+                    <div class="option-btn" onclick="checkOption(this, 19, 'C')">C) are</div>
+                </div>
+                <div class="answer-reveal" id="ans-19">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q20" data-correct="B" data-answered="false">
+                <p><strong>20. Which sentence shows INTERNAL necessity (নিজের ভেতর থেকে অনুভব করা প্রয়োজন)?</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 20, 'A')">A) I have to wear a uniform.</div>
+                    <div class="option-btn" onclick="checkOption(this, 20, 'B')">B) I need to drink water.</div>
+                    <div class="option-btn" onclick="checkOption(this, 20, 'C')">C) I must go to court today.</div>
+                </div>
+                <div class="answer-reveal" id="ans-20">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+</section>
+
+        <footer>
+            &copy; 2026 LearnCare Academy. Modern 3D Interactive Master Sheet. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        function toggleBangla(element) {
+            const banglaDiv = element.querySelector('.bangla-text');
+            if (banglaDiv.style.display === 'block') {
+                banglaDiv.style.display = 'none';
+            } else {
+                banglaDiv.style.display = 'block';
+            }
+        }
+
+        function toggleAnswers(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === 'block') {
+                el.style.display = 'none';
+            } else {
+                el.style.display = 'block';
+            }
+        }
+    
+        /* LIVE SCORE TRACKING ENGINE */
+        let userScore = 0;
+        let answeredQuestions = new Set();
+        let totalQuizQuestions = 20;
+
+        function checkOption(btn, qNum, chosenOption) {
+            const box = document.getElementById('q' + qNum);
+            if (!box || box.dataset.answered === 'true') return;
+            box.dataset.answered = 'true';
+            answeredQuestions.add(qNum);
+
+            const correctOption = box.dataset.correct;
+            const allOptions = box.querySelectorAll('.option-btn');
+
+            allOptions.forEach(opt => {
+                opt.style.pointerEvents = 'none';
+                if (opt.textContent.trim().startsWith(correctOption + ')')) {
+                    opt.classList.add('correct-choice');
+                }
+            });
+
+            if (chosenOption === correctOption) {
+                btn.classList.add('user-correct');
+                userScore++;
+            } else {
+                btn.classList.add('user-wrong');
+            }
+
+            const revealDiv = document.getElementById('ans-' + qNum);
+            if (revealDiv) revealDiv.style.display = 'block';
+
+            updateScoreCard();
+        }
+
+        function updateScoreCard() {
+            const scorePts = document.getElementById('score-points');
+            if (!scorePts) return;
+            scorePts.textContent = userScore;
+            const totalQ = parseInt(document.getElementById('total-questions').textContent) || 20;
+            const pct = Math.round((userScore / totalQ) * 100);
+            document.getElementById('score-percent').textContent = '(' + pct + '%)';
+            document.getElementById('score-progress').style.width = pct + '%';
+
+            const badge = document.getElementById('score-badge');
+            if (answeredQuestions.size === totalQ) {
+                if (userScore >= totalQ * 0.9) {
+                    badge.textContent = '🏆 Outstanding! Master of English!';
+                    badge.style.background = '#059669';
+                } else if (userScore >= totalQ * 0.7) {
+                    badge.textContent = '🌟 Excellent Job! Great Spoken Skills!';
+                    badge.style.background = '#2563eb';
+                } else if (userScore >= totalQ * 0.5) {
+                    badge.textContent = '👍 Good Effort! Revise and practice more!';
+                    badge.style.background = '#d97706';
+                } else {
+                    badge.textContent = '💡 Needs Practice! Please review the rules above.';
+                    badge.style.background = '#dc2626';
+                }
+            } else {
+                badge.textContent = 'Progress: ' + answeredQuestions.size + ' of ' + totalQ + ' answered';
+            }
+        }
+
+        function resetQuiz() {
+            userScore = 0;
+            answeredQuestions.clear();
+            document.querySelectorAll('.mcq-box').forEach(box => {
+                box.dataset.answered = 'false';
+                box.querySelectorAll('.option-btn').forEach(btn => {
+                    btn.classList.remove('user-correct', 'user-wrong', 'correct-choice');
+                    btn.style.pointerEvents = 'auto';
+                });
+                const qNum = box.id.replace('q', '');
+                const revealDiv = document.getElementById('ans-' + qNum);
+                if (revealDiv) revealDiv.style.display = 'none';
+            });
+            document.getElementById('score-points').textContent = '0';
+            document.getElementById('score-percent').textContent = '(0%)';
+            document.getElementById('score-progress').style.width = '0%';
+            document.getElementById('score-badge').textContent = 'Quiz Reset! Start answering questions.';
+            document.getElementById('score-badge').style.background = 'rgba(255,255,255,0.2)';
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.mcq-box').forEach(box => {
+                const correctOption = box.dataset.correct;
+                box.querySelectorAll('.option-btn').forEach(btn => {
+                    if (btn.textContent.trim().startsWith(correctOption + ')')) {
+                        btn.classList.add('correct-choice');
+                    }
+                });
+                const qNum = box.id.replace('q', '');
+                const revealDiv = document.getElementById('ans-' + qNum);
+                if (revealDiv) revealDiv.style.display = 'block';
+            });
+        }
+
+    </script>
+</body>
+</html>

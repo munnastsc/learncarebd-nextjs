@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnCare Academy - All Tenses Interactive Practice Lab & 500 Verbs Builder</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #d97706;
+            --accent: #059669;
+            --purple: #7c3aed;
+            --text-color: #0f172a;
+            --text-muted: #64748b;
+            --border-color: #cbd5e1;
+            --shadow: 0 10px 25px rgba(0,0,0,0.06);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-size: 19px;
+            line-height: 1.7;
+            padding: 25px 15px;
+        }
+
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb, #059669);
+            color: white;
+            text-align: center;
+            padding: 50px 25px;
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            margin-bottom: 35px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 960px;
+            margin: 0 auto 20px;
+        }
+
+        .badge-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .nav-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+        }
+
+        .nav-pill {
+            background: #f1f5f9;
+            color: #1e3a8a;
+            padding: 9px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            border: 1px solid #cbd5e1;
+        }
+
+        .nav-pill:hover {
+            background: #2563eb;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        section {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 35px 30px;
+            margin-bottom: 35px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 3px solid #e2e8f0;
+            padding-bottom: 12px;
+        }
+
+        h3 {
+            color: #2563eb;
+            font-size: 1.5rem;
+            margin: 25px 0 15px;
+        }
+
+        /* 3-COLUMN BUILDER ENGINE */
+        .builder-box {
+            background: linear-gradient(180deg, #f8fafc 0%, #eff6ff 100%);
+            border: 2px solid #93c5fd;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 25px 0;
+            box-shadow: 0 10px 25px rgba(37,99,235,0.08);
+        }
+
+        .controls-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .control-group label {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #1e3a8a;
+        }
+
+        .control-select, .control-input {
+            padding: 12px 16px;
+            border-radius: 10px;
+            border: 2px solid #cbd5e1;
+            font-size: 1.05rem;
+            background: white;
+            color: #1e293b;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        .control-select:focus, .control-input:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+        }
+
+        .columns-table {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 900px) {
+            .columns-table {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .col-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .col-title {
+            font-weight: 800;
+            font-size: 1.15rem;
+            color: #1e3a8a;
+            border-bottom: 2px solid #eff6ff;
+            padding-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .col-badge {
+            font-size: 0.8rem;
+            padding: 3px 8px;
+            border-radius: 6px;
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        /* LIVE RESULT DISPLAY */
+        .live-output-panel {
+            background: #ffffff;
+            border: 3px solid #3b82f6;
+            border-radius: 16px;
+            padding: 25px 30px;
+            margin-top: 25px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(37,99,235,0.12);
+        }
+
+        .sentence-display {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #1e3a8a;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .sentence-display span.sub-hl { color: #2563eb; background: #eff6ff; padding: 2px 8px; border-radius: 6px; }
+        .sentence-display span.aux-hl { color: #d97706; background: #fef3c7; padding: 2px 8px; border-radius: 6px; }
+        .sentence-display span.v-hl { color: #059669; background: #d1fae5; padding: 2px 8px; border-radius: 6px; }
+        .sentence-display span.obj-hl { color: #7c3aed; background: #faf5ff; padding: 2px 8px; border-radius: 6px; }
+
+        .meaning-display {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #059669;
+            margin-bottom: 14px;
+            border-left: 5px solid #10b981;
+            padding-left: 15px;
+        }
+
+        .formula-display {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #64748b;
+            background: #f8fafc;
+            padding: 8px 14px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .btn-action-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .btn-3d {
+            background: linear-gradient(180deg, #3b82f6, #1d4ed8);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 5px 0 #1e3a8a, 0 8px 15px rgba(0,0,0,0.12);
+            transition: all 0.1s ease;
+        }
+
+        .btn-3d:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 0 #1e3a8a, 0 10px 18px rgba(0,0,0,0.18);
+        }
+
+        .btn-3d:active {
+            transform: translateY(3px);
+            box-shadow: 0 2px 0 #1e3a8a;
+        }
+
+        .btn-3d.green {
+            background: linear-gradient(180deg, #10b981, #047857);
+            box-shadow: 0 5px 0 #064e3b, 0 8px 15px rgba(0,0,0,0.12);
+        }
+
+        .btn-3d.amber {
+            background: linear-gradient(180deg, #f59e0b, #b45309);
+            box-shadow: 0 5px 0 #78350f, 0 8px 15px rgba(0,0,0,0.12);
+        }
+
+        /* 500 VERBS TABLE */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 20px 0;
+            max-height: 550px;
+            border-radius: 14px;
+            border: 2px solid #cbd5e1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1rem;
+            background: white;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1e3a8a;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            font-weight: 700;
+        }
+
+        tr:nth-child(even) { background-color: #f8fafc; }
+        tr:hover { background-color: #eff6ff; }
+
+        /* SITUATIONAL DIALOGUE QUOTES */
+        .dialogue-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .situation-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 18px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+            transition: all 0.2s ease;
+        }
+
+        .situation-card:hover {
+            border-color: #2563eb;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(37,99,235,0.1);
+        }
+
+        .situation-badge {
+            display: inline-block;
+            background: #eff6ff;
+            color: #1e40af;
+            font-size: 0.85rem;
+            font-weight: 800;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            border: 1px solid #bfdbfe;
+        }
+
+        .quote-bubble {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            border-radius: 0 12px 12px 0;
+            padding: 14px 18px;
+            margin: 12px 0;
+            position: relative;
+        }
+
+        .quote-speaker {
+            font-weight: 800;
+            color: #1e3a8a;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .quote-en {
+            font-weight: 700;
+            color: #0f172a;
+            font-size: 1.05rem;
+            margin-bottom: 4px;
+        }
+
+        .quote-bn {
+            color: #059669;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        /* RULES & SECRETS CARDS */
+        .rule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .tense-rule-card {
+            background: white;
+            border: 1px solid #cbd5e1;
+            border-radius: 14px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border-top: 5px solid #2563eb;
+        }
+
+        .tense-rule-card.past { border-top-color: #d97706; }
+        .tense-rule-card.future { border-top-color: #059669; }
+
+        .tense-rule-card h4 {
+            color: #1e3a8a;
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+
+        .tense-rule-card p {
+            font-size: 0.95rem;
+            color: #334155;
+            margin-bottom: 10px;
+        }
+
+        .secret-pill {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 10px;
+            border-left: 4px solid #f59e0b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div style="font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; opacity: 0.9;">LearnCare Academy • Spoken English System</div>
+            <h1>🎯 All Tenses Interactive Practice Lab & 500 Verbs Builder</h1>
+            <p>সকল টেন্সের জন্য ৩-কলাম ড্রপডাউন বাক্য তৈরি ইঞ্জিন, ৫০০টি কমন স্পোকেন ভার্ব ডিকশনারি, ইনস্ট্যান্ট বাংলা অর্থ, লাইভ টেক্সট-টু-স্পিচ উচ্চারণ এবং বাস্তব জীবনের পরিস্থিতিভিত্তিক কোট ডায়লগ!</p>
+            <div class="badge-bar">
+                <span class="badge">🎛️ 3-Column Sentence Generator</span>
+                <span class="badge">📖 500 Common Spoken Verbs</span>
+                <span class="badge">🕒 All 12 Tenses Switcher</span>
+                <span class="badge">🔊 Real-time Pronunciation Audio</span>
+                <span class="badge">💬 10 Real-Life Situations in Quote Style</span>
+                <span class="badge">💡 Secret Rules & Stative Traps</span>
+            </div>
+        </header>
+
+        <!-- NAVIGATION -->
+        <div class="nav-pills">
+            <a href="#interactive-generator" class="nav-pill">🎛️ 1. Sentence Builder Table</a>
+            <a href="#verbs-library" class="nav-pill">📚 2. 500 Verbs Dictionary</a>
+            <a href="#tense-secrets" class="nav-pill">💡 3. Tense Secrets & Traps</a>
+            <a href="#situational-quotes" class="nav-pill">💬 4. Situational Dialogues</a>
+            <a href="00_LearnCare_Academy_Master_Index.html" class="nav-pill" style="background: #2563eb; color: white;">🏠 Portal Index</a>
+        </div>
+
+        <!-- SECTION 1: INTERACTIVE 3-COLUMN BUILDER -->
+        <section id="interactive-generator">
+            <h2>🎛️ 1. Interactive 3-Column Sentence Builder Engine (লাইভ ড্রপডাউন বাক্য নির্মাতা)</h2>
+            <p>নিচের ৩টি কলাম থেকে Subject, Verb এবং Object ড্রপডাউন সিলেক্ট করুন। সাথে সাথে আপনার নির্বাচিত Tense এবং Sentence Mode অনুযায়ী বাক্যটি তৈরি হবে এবং নিচে সঠিক বাংলা অর্থসহ ফুটে উঠবে:</p>
+
+            <div class="builder-box">
+                <!-- TOP CONTROLS: TENSE & MODE -->
+                <div class="controls-row">
+                    <div class="control-group">
+                        <label for="selectTense">🕒 Select Tense (টেন্স নির্বাচন করুন):</label>
+                        <select id="selectTense" class="control-select" onchange="generateSentence()">
+                            <optgroup label="Present Tenses">
+                                <option value="present_simple" selected>Present Simple (সাধারণ বর্তমান)</option>
+                                <option value="present_continuous">Present Continuous (ঘটমান বর্তমান)</option>
+                                <option value="present_perfect">Present Perfect (পুরাঘটিত বর্তমান)</option>
+                                <option value="present_perfect_cont">Present Perfect Continuous (নিত্যপ্রবৃত্ত বর্তমান)</option>
+                            </optgroup>
+                            <optgroup label="Past Tenses">
+                                <option value="past_indefinite">Past Indefinite (সাধারণ অতীত)</option>
+                                <option value="past_continuous">Past Continuous (ঘটমান অতীত)</option>
+                                <option value="past_perfect">Past Perfect (পুরাঘটিত অতীত)</option>
+                                <option value="past_perfect_cont">Past Perfect Continuous (পুরাঘটিত ঘটমান অতীত)</option>
+                            </optgroup>
+                            <optgroup label="Future Tenses">
+                                <option value="future_indefinite">Future Indefinite (সাধারণ ভবিষ্যৎ)</option>
+                                <option value="future_continuous">Future Continuous (ঘটমান ভবিষ্যৎ)</option>
+                                <option value="future_perfect">Future Perfect (পুরাঘটিত ভবিষ্যৎ)</option>
+                                <option value="future_perfect_cont">Future Perfect Continuous (পুরাঘটিত ঘটমান ভবিষ্যৎ)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="selectMode">⚖️ Sentence Mode (বাক্যের ধরন):</label>
+                        <select id="selectMode" class="control-select" onchange="generateSentence()">
+                            <option value="affirmative" selected>Affirmative (+) [হ্যাঁ-বোধক]</option>
+                            <option value="negative">Negative (-) [না-বোধক]</option>
+                            <option value="interrogative">Interrogative (?) [প্রশ্নবোধক]</option>
+                            <option value="neg_interrogative">Negative-Interrogative (?-) [না-প্রশ্নবোধক]</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="verbSearch">🔍 Search Verb (ভার্ব খুঁজুন):</label>
+                        <input type="text" id="verbSearch" class="control-input" placeholder="Type verb (e.g. speak, learn)..." onkeyup="filterVerbDropdown()">
+                    </div>
+                </div>
+
+                <!-- 3 COLUMNS -->
+                <div class="columns-table">
+                    <!-- Column 1: Subject -->
+                    <div class="col-card">
+                        <div class="col-title">
+                            <span>1. Subject (কর্তা)</span>
+                            <span class="col-badge">Column 1</span>
+                        </div>
+                        <p style="font-size: 0.9rem; color: #64748b;">ক্লিক করে সাবজেক্ট পরিবর্তন করুন:</p>
+                        <select id="selectSubject" class="control-select" onchange="generateSentence()">
+                            <option value="I" selected>I (আমি)</option>
+                            <option value="We">We (আমরা)</option>
+                            <option value="You">You (তুমি / আপনি / তোমরা)</option>
+                            <option value="They">They (তারা / তাহারা)</option>
+                            <option value="He">He (সে - পুরুষ)</option>
+                            <option value="She">She (সে - স্ত্রী)</option>
+                            <option value="It">It (ইহা / এটি)</option>
+                            <option value="Rahim">Rahim / My friend (আমার বন্ধু - একবচন)</option>
+                            <option value="The students">The students (ছাত্রছাত্রীরা - বহুবচন)</option>
+                        </select>
+                        <div style="font-size: 0.85rem; color: #64748b; margin-top: 5px;">
+                            💡 ৩য় পুরুষ একবচনে (He/She/Rahim) প্রেজেন্ট সিম্পলে ভার্বের সাথে 's/es' এবং হ্যাজ (has) বসে।
+                        </div>
+                    </div>
+
+                    <!-- Column 2: 500 Verbs -->
+                    <div class="col-card">
+                        <div class="col-title">
+                            <span>2. 500 Common Verbs</span>
+                            <span class="col-badge">Column 2</span>
+                        </div>
+                        <p style="font-size: 0.9rem; color: #64748b;">৫০০টি কমন ভার্ব থেকে বেছে নিন:</p>
+                        <select id="selectVerb" class="control-select" onchange="onVerbChange()">
+                            <!-- Generated via JavaScript -->
+                        </select>
+                        <div id="verbFormsPreview" style="font-size: 0.85rem; color: #1e40af; background: #eff6ff; padding: 6px 10px; border-radius: 6px;">
+                            V1: speak | V2: spoke | V3: spoken
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Object / Extension -->
+                    <div class="col-card">
+                        <div class="col-title">
+                            <span>3. Object / Complement</span>
+                            <span class="col-badge">Column 3</span>
+                        </div>
+                        <p style="font-size: 0.9rem; color: #64748b;">বাক্যের বাকি অংশ (কর্ম / পরিপূরক):</p>
+                        <select id="selectObject" class="control-select" onchange="generateSentence()">
+                            <option value="default" selected>Default Object (স্বাভাবিক কর্ম)</option>
+                            <option value="English fluently every day">English fluently every day (প্রতিদিন অনর্গল ইংরেজি)</option>
+                            <option value="early in the morning">early in the morning (খুব ভোরবেলা)</option>
+                            <option value="with my family and friends">with my family and friends (আমার পরিবার ও বন্ধুদের সাথে)</option>
+                            <option value="for the upcoming examination">for the upcoming examination (আসন্ন পরীক্ষার জন্য)</option>
+                            <option value="at the corporate office">at the corporate office (করপোরেট অফিসে)</option>
+                            <option value="on time without delay">on time without delay (দেরি না করে সময়মতো)</option>
+                            <option value="with extreme dedication">with extreme dedication (চরম একাগ্রতার সাথে)</option>
+                            <option value="a hot cup of tea">a hot cup of tea (এক কাপ গরম চা)</option>
+                            <option value="in the peaceful village">in the peaceful village (শান্ত সুন্দর গ্রামে)</option>
+                        </select>
+                        <input type="text" id="customObject" class="control-input" placeholder="Or type custom object..." oninput="generateSentence()" style="margin-top: 5px;">
+                    </div>
+                </div>
+
+                <!-- LIVE OUTPUT CARD -->
+                <div class="live-output-panel">
+                    <div style="font-size: 0.9rem; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">
+                        ✨ Generated Spoken Sentence (প্রস্তুতকৃত বাক্য):
+                    </div>
+                    <div class="sentence-display" id="sentenceOutput">
+                        <span class="sub-hl">I</span> <span class="v-hl">learn</span> <span class="obj-hl">English every day</span>.
+                    </div>
+                    <div class="meaning-display" id="meaningOutput">
+                        বাংলা অর্থ: আমি প্রতিদিন ইংরেজি শিখি।
+                    </div>
+                    <div class="formula-display" id="formulaOutput">
+                        📌 Formula: Subject + V1 (base) + Object / Extension
+                    </div>
+
+                    <!-- ACTION BUTTONS -->
+                    <div class="btn-action-row">
+                        <button class="btn-3d" onclick="speakCurrentSentence()">🔊 Listen Pronunciation (উচ্চারণ শুনুন)</button>
+                        <button class="btn-3d green" onclick="speakSlow()">🐢 Speak Slowly (ধীরে শুনুন)</button>
+                        <button class="btn-3d amber" onclick="randomDrill()">🎲 Surprise Random Sentence (এলোমেলো বাক্য)</button>
+                        <button class="btn-3d" style="background: #475569; box-shadow: 0 5px 0 #1e293b;" onclick="copySentence()">📋 Copy Sentence (কপি)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: 500 VERBS LIBRARY TABLE -->
+        <section id="verbs-library">
+            <h2>📚 2. 500 Common Spoken English Verbs Dictionary (সম্পূর্ণ কনজুগেশন টেবিল)</h2>
+            <p>দৈনন্দিন কথ্য ইংরেজিতে বহুল ব্যবহৃত ৫০০টি ক্রিয়া, তাদের বাংলা অর্থ এবং V1 (Base), V2 (Past), V3 (Past Participle), V-ing (Continuous), ও 3rd Person Singular (s/es) রূপ:</p>
+
+            <div style="margin: 15px 0;">
+                <input type="text" id="tableSearch" class="control-input" placeholder="🔍 Search any verb or Bengali meaning (e.g. go, eat, সাহায্য করা)..." onkeyup="filterVerbsTable()" style="max-width: 500px;">
+            </div>
+
+            <div class="table-responsive">
+                <table id="verbsTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>V1 (Base Form)</th>
+                            <th>বাংলা অর্থ (Meaning)</th>
+                            <th>V2 (Past Form)</th>
+                            <th>V3 (Past Participle)</th>
+                            <th>V-ing (Gerund/Cont.)</th>
+                            <th>V-s/es (3rd Person)</th>
+                            <th>Example Object</th>
+                        </tr>
+                    </thead>
+                    <tbody id="verbsTableBody">
+                        <!-- Populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECTION 3: TENSE SECRETS & SPECIAL RULES -->
+        <section id="tense-secrets">
+            <h2>💡 3. Master Secrets, Stative Traps & Native Spoken Hacks (১২টি টেন্সের গোপন নিয়ম)</h2>
+            <p>প্রতিটি টেন্সের এমন কিছু বিশেষ নিয়ম ও গোপনীয়তা রয়েছে যা জানলে আপনি কখনো ভুল বাক্য তৈরি করবেন না:</p>
+
+            <div class="rule-grid">
+                <!-- 1. Present Simple -->
+                <div class="tense-rule-card">
+                    <h4>1. Present Simple Tense</h4>
+                    <p><strong>Core Trigger:</strong> চিরন্তন সত্য, অভ্যাসগত কর্ম এবং ভবিষ্যৎ ট্রেনের সময়সূচি (Timetable Future)।</p>
+                    <p><strong>Signal Words:</strong> always, usually, often, daily, every day, rarely, never, sometimes.</p>
+                    <div class="secret-pill">
+                        ⚠️ <strong>The 3rd Person Trap:</strong> He/She/It এর ক্ষেত্রে ভার্বের শেষে 's' বা 'es' ভুলবেন না: <em>"He speaks"</em> (NOT <em>He speak</em>). প্রশ্নে <em>Does he speak?</em> হলে ভার্ব থেকে 's' উঠে যাবে!
+                    </div>
+                </div>
+
+                <!-- 2. Present Continuous -->
+                <div class="tense-rule-card">
+                    <h4>2. Present Continuous Tense</h4>
+                    <p><strong>Core Trigger:</strong> চোখের সামনে চলমান ক্রিয়া অথবা অদূর ভবিষ্যতের সুনিশ্চিত পরিকল্পনা (Arranged Future)।</p>
+                    <p><strong>Signal Words:</strong> now, right now, currently, at this moment, look!, listen!</p>
+                    <div class="secret-pill">
+                        🚫 <strong>Stative Verbs Trap:</strong> অনুভূতির ক্রিয়া (know, love, understand, like, believe, see, hear) কখনো continuous হয় না!<br>
+                        ❌ <em>I am knowing you.</em> ➔ ✔️ <em>I know you.</em>
+                    </div>
+                </div>
+
+                <!-- 3. Present Perfect -->
+                <div class="tense-rule-card">
+                    <h4>3. Present Perfect Tense</h4>
+                    <p><strong>Core Trigger:</strong> কাজ এইমাত্র শেষ হয়েছে কিন্তু তার ফলাফল বা প্রতিক্রিয়া এখনো বিদ্যমান, অথবা জীবনের অভিজ্ঞতা।</p>
+                    <p><strong>Signal Words:</strong> already, just, yet, ever, never, recently, so far.</p>
+                    <div class="secret-pill">
+                        ⚡ <strong>The Past Time Trap:</strong> বাক্যে অতীত সময়ের উল্লেখ (yesterday, last year, in 2010) থাকলে কখনোই Present Perfect হবে না; সরাসরি Past Indefinite হবে!<br>
+                        ❌ <em>I have seen him yesterday.</em> ➔ ✔️ <em>I saw him yesterday.</em>
+                    </div>
+                </div>
+
+                <!-- 4. Present Perfect Continuous -->
+                <div class="tense-rule-card">
+                    <h4>4. Present Perfect Continuous</h4>
+                    <p><strong>Core Trigger:</strong> অতীতে শুরু হয়ে নির্দিষ্ট বা অনির্দিষ্ট সময় ধরে এখনো চলছে।</p>
+                    <p><strong>Signal Words:</strong> since (নির্দিষ্ট শুরু বিন্দু: since morning, since 2015), for (সময়কাল: for 2 hours, for 5 days).</p>
+                    <div class="secret-pill">
+                        💡 <strong>Since vs For Secret:</strong> ঘড়ি বা ক্যালেন্ডারে যা সরাসরি দেখা যায় তার পূর্বে <strong>Since</strong> (Since 8 AM, Since Monday); আর যা গণনা করতে হয় তার পূর্বে <strong>For</strong> (For 3 hours)!
+                    </div>
+                </div>
+
+                <!-- 5. Past Indefinite -->
+                <div class="tense-rule-card past">
+                    <h4>5. Past Indefinite Tense</h4>
+                    <p><strong>Core Trigger:</strong> অতীতে কোনো নির্দিষ্ট সময়ে ঘটে যাওয়া শেষ ঘটনা।</p>
+                    <p><strong>Signal Words:</strong> yesterday, ago, last night, last year, in 1995, once.</p>
+                    <div class="secret-pill">
+                        ⚠️ <strong>Did + V1 Rule:</strong> Past Indefinite-এর নেগেটিভ বা প্রশ্নে 'did' ব্যবহার করার পর মূল ভার্বের সর্বদা V1 (Base Form) বসবে, V2 নয়!<br>
+                        ❌ <em>Did you went?</em> ➔ ✔️ <em>Did you go?</em>
+                    </div>
+                </div>
+
+                <!-- 6. Past Continuous -->
+                <div class="tense-rule-card past">
+                    <h4>6. Past Continuous Tense</h4>
+                    <p><strong>Core Trigger:</strong> অতীতে কোনো এক নির্দিষ্ট মুহূর্তে চলমান ছিল এমন কাজ।</p>
+                    <p><strong>Signal Words:</strong> while, when, at that time, all evening yesterday.</p>
+                    <div class="secret-pill">
+                        🤝 <strong>Interrupted Action:</strong> একটি দীর্ঘ কাজ চলাকালীন আরেকটি ছোট কাজ ঘটলে দীর্ঘ কাজে Past Continuous (was/were + V-ing) এবং আকস্মিক কাজে Past Indefinite (V2) বসে:<br>
+                        ✔️ <em>"While I was cooking, the phone rang."</em>
+                    </div>
+                </div>
+
+                <!-- 7. Past Perfect -->
+                <div class="tense-rule-card past">
+                    <h4>7. Past Perfect Tense</h4>
+                    <p><strong>Core Trigger:</strong> অতীতের দুটি সমাপ্ত কাজের মধ্যে অপেক্ষাকৃত পূর্বে সম্পন্ন কাজ।</p>
+                    <p><strong>Signal Words:</strong> before, after, by the time, already, until then.</p>
+                    <div class="secret-pill">
+                        🗝️ <strong>Before / After Golden Hack:</strong><br>
+                        • <strong>Before</strong>-এর আগে Past Perfect বসে: <em>"The train had left before we arrived."</em><br>
+                        • <strong>After</strong>-এর পরে Past Perfect বসে: <em>"We arrived after the train had left."</em>
+                    </div>
+                </div>
+
+                <!-- 8. Past Perfect Continuous -->
+                <div class="tense-rule-card past">
+                    <h4>8. Past Perfect Continuous</h4>
+                    <p><strong>Core Trigger:</strong> অতীতের একটি কাজের পূর্বে দীর্ঘ সময় ধরে চলমান অতীত ক্রিয়া।</p>
+                    <p><strong>Signal Words:</strong> had been + V-ing + for/since + past event.</p>
+                    <div class="secret-pill">
+                        🎯 <strong>Cause of Past State:</strong> অতীতের কোনো অবস্থার কারণ ব্যাখ্যায় দারুণ মানায়: <em>"His eyes were red because he had been crying for hours."</em>
+                    </div>
+                </div>
+
+                <!-- 9. Future Indefinite -->
+                <div class="tense-rule-card future">
+                    <h4>9. Future Indefinite Tense</h4>
+                    <p><strong>Core Trigger:</strong> ভবিষ্যতের ইচ্ছা, তাৎক্ষণিক সিদ্ধান্ত (Will) বনাম পূর্বপরিকল্পনা (Be going to)।</p>
+                    <p><strong>Signal Words:</strong> tomorrow, next week, soon, in future, probably.</p>
+                    <div class="secret-pill">
+                        🧠 <strong>Will vs Going to:</strong> কথা বলার মুহূর্তে তাৎক্ষণিক সিদ্ধান্তে <strong>Will</strong> (<em>"The phone is ringing, I'll get it"</em>); আগে থেকে নেওয়া পরিকল্পনায় <strong>Going to</strong> (<em>"I am going to buy a car next month"</em>)।
+                    </div>
+                </div>
+
+                <!-- 10. Future Continuous -->
+                <div class="tense-rule-card future">
+                    <h4>10. Future Continuous Tense</h4>
+                    <p><strong>Core Trigger:</strong> ভবিষ্যতের নির্দিষ্ট কোনো সময়ে চলমান থাকবে এমন কাজ।</p>
+                    <p><strong>Signal Words:</strong> this time tomorrow, at 10 AM next Monday.</p>
+                    <div class="secret-pill">
+                        ✈️ <strong>Polite Inquiries:</strong> অন্যের পরিকল্পনা বিনীতভাবে জানতে নেটিভরা এটি ব্যবহার করে: <em>"Will you be using your car tomorrow?"</em> (না চেয়েও পরোক্ষভাবে ধার চাওয়ার চমৎকার মার্জিত রূপ)।
+                    </div>
+                </div>
+
+                <!-- 11. Future Perfect -->
+                <div class="tense-rule-card future">
+                    <h4>11. Future Perfect Tense</h4>
+                    <p><strong>Core Trigger:</strong> ভবিষ্যতের কোনো নির্দিষ্ট সময় আসার আগেই একটি কাজ সম্পন্ন হয়ে থাকা।</p>
+                    <p><strong>Signal Words:</strong> by tomorrow, by 2030, by the end of this month.</p>
+                    <div class="secret-pill">
+                        ⏰ <strong>The 'By' Time Marker:</strong> এই টেন্সে সর্বদা <strong>'by + future time'</strong> নির্দেশক ক্লু থাকে: <em>"I will have finished the course by December."</em>
+                    </div>
+                </div>
+
+                <!-- 12. Future Perfect Continuous -->
+                <div class="tense-rule-card future">
+                    <h4>12. Future Perfect Continuous</h4>
+                    <p><strong>Core Trigger:</strong> ভবিষ্যতের কোনো নির্দিষ্ট সময় পর্যন্ত দীর্ঘ সময়ব্যাপী কোনো কাজের ধারাবাহিকতা।</p>
+                    <p><strong>Signal Words:</strong> will have been + V-ing + for ... by ...</p>
+                    <div class="secret-pill">
+                        🌟 <strong>Milestone Celebration:</strong> দীর্ঘ চাকরি বা অভিজ্ঞতার মাইলফলক বোঝাতে: <em>"By next month, I will have been working here for a decade!"</em>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: REAL-LIFE SITUATIONAL DIALOGUES (QUOTE STYLE) -->
+        <section id="situational-quotes">
+            <h2>💬 4. Real-Life Situations: Spoken Dialogues in Quote Style (বাস্তব জীবনের কথোপকথন)</h2>
+            <p>দৈনন্দিন বাস্তব জীবনে আমরা কীভাবে টেন্স ব্যবহার করে কথা বলি, তা নিচে ১০টি শীর্ষ বাস্তব পরিস্থিতির দৃষ্টিনন্দন কোট-ডায়লগ স্টাইলে সাজানো হয়েছে:</p>
+
+            <div class="dialogue-grid">
+                <!-- Situation 1: Airport Check-in -->
+                <div class="situation-card">
+                    <span class="situation-badge">✈️ Airport & Flight Check-in</span>
+                    <h4 style="color: #1e3a8a; margin-bottom: 8px;">বিমানবন্দরে বোর্ডিং পাস ও চেক-ইন</h4>
+                    
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">👨‍💼 Airline Officer:</div>
+                        <div class="quote-en">"Good morning, Sir. <strong>Where are you flying</strong> today?"</div>
+                        <div class="quote-bn">শুভ সকাল, স্যার। আপনি আজ কোথায় ভ্রমণ করছেন? (Present Continuous)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">🧳 Passenger:</div>
+                        <div class="quote-en">"I <strong>am flying</strong> to London. I <strong>have already checked in</strong> online."</div>
+                        <div class="quote-bn">আমি লন্ডনে যাচ্ছি। আমি আগেই অনলাইনে চেক-ইন করেছি। (Present Perfect)</div>
+                    </div>
+
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">👨‍💼 Airline Officer:</div>
+                        <div class="quote-en">"Wonderful. <strong>Did you pack</strong> your bags yourself?"</div>
+                        <div class="quote-bn">চমৎকার। আপনি কি নিজের ব্যাগ নিজেই গুছিয়েছেন? (Past Indefinite)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">🧳 Passenger:</div>
+                        <div class="quote-en">"Yes, I <strong>packed</strong> them this morning. <strong>What time will the gate open</strong>?"</div>
+                        <div class="quote-bn">হ্যাঁ, আজ সকালেই গুছিয়েছি। গেট কখন খুলবে? (Future Indefinite)</div>
+                    </div>
+                </div>
+
+                <!-- Situation 2: Job Interview -->
+                <div class="situation-card">
+                    <span class="situation-badge">💼 Professional Job Interview</span>
+                    <h4 style="color: #1e3a8a; margin-bottom: 8px;">চাকরির সাক্ষাৎকার ও অভিজ্ঞতা বিনিময়</h4>
+                    
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">👔 Interviewer:</div>
+                        <div class="quote-en">"Tell us about your background. <strong>How long have you been working</strong> in tech?"</div>
+                        <div class="quote-bn">আপনার অভিজ্ঞতা বলুন। আপনি তথ্যপ্রযুক্তিতে কতদিন ধরে কাজ করছেন? (Pres. Perf. Cont.)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">🎓 Candidate:</div>
+                        <div class="quote-en">"I <strong>have been developing</strong> software <strong>for five years</strong>."</div>
+                        <div class="quote-bn">আমি পাঁচ বছর ধরে সফটওয়্যার ডেভেলপ করছি। (Present Perfect Continuous)</div>
+                    </div>
+
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">👔 Interviewer:</div>
+                        <div class="quote-en">"What <strong>were you doing</strong> before joining your previous firm?"</div>
+                        <div class="quote-bn">আগের প্রতিষ্ঠানে যোগ দেওয়ার আগে আপনি কী করছিলেন? (Past Continuous)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">🎓 Candidate:</div>
+                        <div class="quote-en">"I <strong>had completed</strong> my university thesis before I <strong>joined</strong> them."</div>
+                        <div class="quote-bn">তাদের সাথে যোগ দেওয়ার আগেই আমি থিসিস শেষ করেছিলাম। (Past Perfect)</div>
+                    </div>
+                </div>
+
+                <!-- Situation 3: Doctor's Clinic -->
+                <div class="situation-card">
+                    <span class="situation-badge">🩺 Doctor's Consultation</span>
+                    <h4 style="color: #1e3a8a; margin-bottom: 8px;">ডাক্তারের চেম্বারে স্বাস্থ্য পরীক্ষা</h4>
+                    
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">👨‍⚕️ Doctor:</div>
+                        <div class="quote-en">"Hello Rahim. <strong>What seems</strong> to be the problem today?"</div>
+                        <div class="quote-bn">হ্যালো রহিম। আজ আপনার কী সমস্যা মনে হচ্ছে? (Present Simple)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">🤒 Patient:</div>
+                        <div class="quote-en">"Doctor, I <strong>have had</strong> a severe headache <strong>since yesterday</strong>."</div>
+                        <div class="quote-bn">ডাক্তারবাবু, গতকাল থেকে আমার তীব্র মাথাব্যথা হচ্ছে। (Present Perfect)</div>
+                    </div>
+
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">👨‍⚕️ Doctor:</div>
+                        <div class="quote-en">"<strong>Did you take</strong> any medication last night?"</div>
+                        <div class="quote-bn">গত রাতে কি কোনো ওষুধ খেয়েছিলেন? (Past Indefinite)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">🤒 Patient:</div>
+                        <div class="quote-en">"No, I <strong>was waiting</strong> to consult you first."</div>
+                        <div class="quote-bn">না, আমি আগে আপনার পরামর্শের জন্য অপেক্ষা করছিলাম। (Past Continuous)</div>
+                    </div>
+                </div>
+
+                <!-- Situation 4: Morning Family Breakfast -->
+                <div class="situation-card">
+                    <span class="situation-badge">☕ Morning Family Routine</span>
+                    <h4 style="color: #1e3a8a; margin-bottom: 8px;">সকালের পারিবারিক নাস্তার টেবিল</h4>
+                    
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">👩 Mother:</div>
+                        <div class="quote-en">"Breakfast is ready! <strong>Who wants</strong> scrambled eggs and hot tea?"</div>
+                        <div class="quote-bn">নাস্তা তৈরি! কে ডিম ভাজি ও গরম চা খাবে? (Present Simple)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">👦 Son:</div>
+                        <div class="quote-en">"I <strong>am getting</strong> ready, Mom! I <strong>will come</strong> downstairs in two minutes."</div>
+                        <div class="quote-bn">আমি তৈরি হচ্ছি, মা! আমি দুই মিনিটের মধ্যে নিচে আসছি। (Continuous & Future)</div>
+                    </div>
+
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">👨 Father:</div>
+                        <div class="quote-en">"<strong>Has the morning newspaper arrived</strong> yet?"</div>
+                        <div class="quote-bn">সকালের খবরের কাগজ কি এখনো এসেছে? (Present Perfect)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">👩 Mother:</div>
+                        <div class="quote-en">"Yes, the boy <strong>delivered</strong> it while you <strong>were showering</strong>."</div>
+                        <div class="quote-bn">হ্যাঁ, তুমি যখন গোসল করছিলে তখন হকার দিয়ে গেছে। (Past Indefinite & Cont.)</div>
+                    </div>
+                </div>
+
+                <!-- Situation 5: Office Project Meeting -->
+                <div class="situation-card">
+                    <span class="situation-badge">🏢 Corporate Project Deadline</span>
+                    <h4 style="color: #1e3a8a; margin-bottom: 8px;">অফিস টিম মিটিং ও কাজের অগ্রগতি</h4>
+                    
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">👩‍💼 Team Lead:</div>
+                        <div class="quote-en">"Team, <strong>have we finalized</strong> the client presentation?"</div>
+                        <div class="quote-bn">সবাই শোনো, আমরা কি ক্লায়েন্টের প্রেজেন্টেশন চূড়ান্ত করেছি? (Present Perfect)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">👨‍💻 Designer:</div>
+                        <div class="quote-en">"I <strong>am currently exporting</strong> the final high-res graphics."</div>
+                        <div class="quote-bn">আমি এই মুহূর্তে চূড়ান্ত গ্রাফিক্স এক্সপোর্ট করছি। (Present Continuous)</div>
+                    </div>
+
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">👩‍💼 Team Lead:</div>
+                        <div class="quote-en">"Great. <strong>Will you have submitted</strong> the files <strong>by 4 PM</strong>?"</div>
+                        <div class="quote-bn">দারুণ। বিকেল ৪টার আগেই কি ফাইল জমা শেষ হবে? (Future Perfect)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">👨‍💻 Designer:</div>
+                        <div class="quote-en">"Yes, we <strong>will have uploaded</strong> everything before 3:30 PM."</div>
+                        <div class="quote-bn">হ্যাঁ, সাড়ে ৩টার আগেই আমরা সবকিছু আপলোড করে ফেলব। (Future Perfect)</div>
+                    </div>
+                </div>
+
+                <!-- Situation 6: Restaurant Dining -->
+                <div class="situation-card">
+                    <span class="situation-badge">🍽️ Restaurant Ordering</span>
+                    <h4 style="color: #1e3a8a; margin-bottom: 8px;">রেস্তোরাঁয় খাবার অর্ডার ও পরিবেশন</h4>
+                    
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">🧑‍🍳 Waiter:</div>
+                        <div class="quote-en">"Good evening! <strong>Are you ready</strong> to order, or <strong>do you need</strong> more time?"</div>
+                        <div class="quote-bn">শুভ সন্ধ্যা! আপনারা কি অর্ডার দিতে প্রস্তুত নাকি আরেকটু সময় লাগবে? (Present Simple)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">🍽️ Customer:</div>
+                        <div class="quote-en">"We <strong>have decided</strong>. We <strong>will take</strong> the grilled fish and vegetable soup."</div>
+                        <div class="quote-bn">আমরা ঠিক করেছি। আমরা গ্রিলড মাছ ও সবজির স্যুপ নেব। (Pres. Perf. & Future)</div>
+                    </div>
+
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">🧑‍🍳 Waiter:</div>
+                        <div class="quote-en">"Excellent choice. The chef <strong>is preparing</strong> fresh ingredients right now."</div>
+                        <div class="quote-bn">চমৎকার পছন্দ। শেফ এই মুহূর্তে তাজা উপাদান প্রস্তুত করছেন। (Present Continuous)</div>
+                    </div>
+                </div>
+
+                <!-- Situation 7: University Campus -->
+                <div class="situation-card">
+                    <span class="situation-badge">🎓 University Campus Life</span>
+                    <h4 style="color: #1e3a8a; margin-bottom: 8px;">ক্যাম্পাসে সেমিনার ও পরীক্ষার প্রস্তুতি</h4>
+                    
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">🧑 Student A:</div>
+                        <div class="quote-en">"Hey, <strong>were you attending</strong> the economics lecture yesterday?"</div>
+                        <div class="quote-bn">আরে, তুমি কি গতকাল অর্থনীতির লেকচারে উপস্থিত ছিলে? (Past Continuous)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">👩 Student B:</div>
+                        <div class="quote-en">"No, I <strong>had fallen</strong> ill, so I <strong>stayed</strong> in the dormitory."</div>
+                        <div class="quote-bn">না, আমি অসুস্থ হয়ে পড়েছিলাম তাই হোস্টেলেই ছিলাম। (Past Perfect & Indefinite)</div>
+                    </div>
+
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">🧑 Student A:</div>
+                        <div class="quote-en">"Don't worry, I <strong>have taken</strong> detailed handwritten notes for you."</div>
+                        <div class="quote-bn">চিন্তা কোরো না, আমি তোমার জন্য বিস্তারিত নোট নিয়ে রেখেছি। (Present Perfect)</div>
+                    </div>
+                </div>
+
+                <!-- Situation 8: Shopping Mall -->
+                <div class="situation-card">
+                    <span class="situation-badge">🛍️ Shopping & Bargaining</span>
+                    <h4 style="color: #1e3a8a; margin-bottom: 8px;">মার্কেটে পণ্য পছন্দ ও কেনাকাটা</h4>
+                    
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">🛍️ Shopper:</div>
+                        <div class="quote-en">"Excuse me, <strong>how much does this leather jacket cost</strong>?"</div>
+                        <div class="quote-bn">মাফ করবেন, এই চামড়ার জ্যাকেটটির দাম কত? (Present Simple)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">🏪 Shopkeeper:</div>
+                        <div class="quote-en">"It <strong>costs</strong> fifty dollars, but we <strong>are offering</strong> a twenty percent discount today."</div>
+                        <div class="quote-bn">এর দাম ৫০ ডলার, তবে আজ আমরা ২০% ছাড় দিচ্ছি। (Present Simple & Cont.)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">🛍️ Shopper:</div>
+                        <div class="quote-en">"Perfect! I <strong>will buy</strong> it right now."</div>
+                        <div class="quote-bn">দারুণ! আমি এখনই এটি কিনব। (Future Indefinite)</div>
+                    </div>
+                </div>
+
+                <!-- Situation 9: Weekend Travel -->
+                <div class="situation-card">
+                    <span class="situation-badge">🏖️ Weekend Travel & Hotel</span>
+                    <h4 style="color: #1e3a8a; margin-bottom: 8px;">সাপ্তাহিক ছুটি ও অবকাশযাপন পরিকল্পনা</h4>
+                    
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">🚗 Friend 1:</div>
+                        <div class="quote-en">"<strong>Have you booked</strong> the beach cottage for the weekend?"</div>
+                        <div class="quote-bn">তুমি কি ছুটির দিনের জন্য সমুদ্রের কটেজ বুক করেছ? (Present Perfect)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">🌊 Friend 2:</div>
+                        <div class="quote-en">"Yes! By Saturday noon, we <strong>will be relaxing</strong> by the ocean waves."</div>
+                        <div class="quote-bn">হ্যাঁ! শনিবার দুপুর নাগাদ আমরা সাগরের ঢেউয়ের পাশে আরাম করব। (Future Continuous)</div>
+                    </div>
+
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">🚗 Friend 1:</div>
+                        <div class="quote-en">"Awesome! I <strong>have been looking forward</strong> to this vacation for months."</div>
+                        <div class="quote-bn">দারুণ! আমি কয়েক মাস ধরে এই ছুটির জন্য অধীর অপেক্ষায় আছি। (Pres. Perf. Cont.)</div>
+                    </div>
+                </div>
+
+                <!-- Situation 10: Emergency Helpline -->
+                <div class="situation-card">
+                    <span class="situation-badge">🚨 Emergency Helpline Call</span>
+                    <h4 style="color: #1e3a8a; margin-bottom: 8px;">জরুরি সেবা ও পুলিশ সহায়তা ডায়লগ</h4>
+                    
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">👮 Dispatcher:</div>
+                        <div class="quote-en">"Emergency Services. <strong>What is</strong> your urgent location?"</div>
+                        <div class="quote-bn">জরুরি সেবা। আপনার জরুরি অবস্থান কোথায়? (Present Simple)</div>
+                    </div>
+
+                    <div class="quote-bubble" style="border-left-color: #059669;">
+                        <div class="quote-speaker">📞 Caller:</div>
+                        <div class="quote-en">"A road collision <strong>has just occurred</strong> at the central crossroads."</div>
+                        <div class="quote-bn">কেন্দ্রীয় চৌরাস্তায় এইমাত্র একটি সড়ক দুর্ঘটনা ঘটেছে। (Present Perfect)</div>
+                    </div>
+
+                    <div class="quote-bubble">
+                        <div class="quote-speaker">👮 Dispatcher:</div>
+                        <div class="quote-en">"Stay calm. The ambulance <strong>has already dispatched</strong> and <strong>will arrive</strong> in three minutes."</div>
+                        <div class="quote-bn">শান্ত থাকুন। অ্যাম্বুলেন্স রওনা হয়েছে এবং তিন মিনিটের মধ্যে পৌঁছাবে। (Pres. Perf. & Future)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer style="text-align: center; margin-top: 50px; padding: 30px; color: #64748b; font-size: 1rem; border-top: 1px solid #cbd5e1;">
+            <p><strong>LearnCare Academy Master Spoken English System</strong></p>
+            <p>© 2026 LearnCare Academy. Engineered for effortless, intuitive, and fluent spoken mastery.</p>
+        </footer>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // 500 Verbs Database
+        const verbsData = [["accept", "গ্রহণ করা", "accepted", "accepted", "accepting", "accepts", "the challenge"], ["achieve", "অর্জন করা", "achieved", "achieved", "achieving", "achieves", "great success"], ["act", "অভিনয় করা / কাজ করা", "acted", "acted", "acting", "acts", "wisely"], ["add", "যোগ করা", "added", "added", "adding", "adds", "some sugar"], ["admire", "প্রশংসা করা", "admired", "admired", "admiring", "admires", "the beauty"], ["admit", "স্বীকার করা", "admitted", "admitted", "admitting", "admits", "the truth"], ["advise", "পরামর্শ দেওয়া", "advised", "advised", "advising", "advises", "the students"], ["afford", "সামর্থ্য থাকা", "afforded", "afforded", "affording", "affords", "a new car"], ["agree", "একমত হওয়া", "agreed", "agreed", "agreeing", "agrees", "with your plan"], ["allow", "অনুমতি দেওয়া", "allowed", "allowed", "allowing", "allows", "visitors inside"], ["announce", "ঘোষণা করা", "announced", "announced", "announcing", "announces", "the results"], ["answer", "উত্তর দেওয়া", "answered", "answered", "answering", "answers", "the question"], ["apologize", "ক্ষমা চাওয়া", "apologized", "apologized", "apologizing", "apologizes", "for the mistake"], ["appear", "হাজির হওয়া / মনে হওয়া", "appeared", "appeared", "appearing", "appears", "on television"], ["apply", "আবেদন করা / প্রয়োগ করা", "applied", "applied", "applying", "applies", "for the job"], ["appreciate", "মূল্যায়ন করা / কৃতজ্ঞ থাকা", "appreciated", "appreciated", "appreciating", "appreciates", "your kind help"], ["approve", "অনুমোদন করা", "approved", "approved", "approving", "approves", "the project proposal"], ["argue", "তর্ক করা", "argued", "argued", "arguing", "argues", "with colleagues"], ["arrange", "ব্যবস্থা করা / সাজানো", "arranged", "arranged", "arranging", "arranges", "a meeting"], ["arrive", "পৌঁছানো", "arrived", "arrived", "arriving", "arrives", "at the station"], ["ask", "জিজ্ঞাসা করা", "asked", "asked", "asking", "asks", "for directions"], ["assist", "সহায়তা করা", "assisted", "assisted", "assisting", "assists", "elderly citizens"], ["assure", "আশ্বস্ত করা", "assured", "assured", "assuring", "assures", "the clients"], ["attach", "সংযুক্ত করা", "attached", "attached", "attaching", "attaches", "the files to email"], ["attack", "আক্রমণ করা", "attacked", "attacked", "attacking", "attacks", "the enemy base"], ["attempt", "চেষ্টা করা", "attempted", "attempted", "attempting", "attempts", "to solve the puzzle"], ["attend", "উপস্থিত থাকা", "attended", "attended", "attending", "attends", "the classes regularly"], ["attract", "আকর্ষণ করা", "attracted", "attracted", "attracting", "attracts", "many tourists"], ["avoid", "এড়িয়ে চলা", "avoided", "avoided", "avoiding", "avoids", "unhealthy junk food"], ["bake", "বেক করা / সেঁকা", "baked", "baked", "baking", "bakes", "delicious cookies"], ["balance", "ভারসাম্য রাখা", "balanced", "balanced", "balancing", "balances", "work and family life"], ["ban", "নিষিদ্ধ করা", "banned", "banned", "banning", "bans", "plastic bags"], ["bark", "ঘেউ ঘেউ করা", "barked", "barked", "barking", "barks", "at strangers"], ["bathe", "গোসল করা", "bathed", "bathed", "bathing", "bathes", "in cold water"], ["beat", "হারানো / প্রহার করা", "beat", "beaten", "beating", "beats", "the rival team"], ["become", "হওয়া / পরিণত হওয়া", "became", "become", "becoming", "becomes", "a skilled engineer"], ["beg", "ভিক্ষা করা / মিনতি করা", "begged", "begged", "begging", "begs", "for mercy"], ["begin", "শুরু করা", "began", "begun", "beginning", "begins", "the journey"], ["behave", "আচরণ করা", "behaved", "behaved", "behaving", "behaves", "very politely"], ["believe", "বিশ্বাস করা", "believed", "believed", "believing", "believes", "in honest work"], ["belong", "মালিকানায় থাকা", "belonged", "belonged", "belonging", "belongs", "to our family"], ["bend", "বাঁকা করা / নত হওয়া", "bent", "bent", "bending", "bends", "the metal wire"], ["bet", "বাজি ধরা", "bet", "bet", "betting", "bets", "on the game"], ["bind", "বাঁধা", "bound", "bound", "binding", "binds", "the books carefully"], ["bite", "কামড় দেওয়া", "bit", "bitten", "biting", "bites", "an apple"], ["blame", "দোষ দেওয়া", "blamed", "blamed", "blaming", "blames", "others for failure"], ["bleed", "রক্তপাত হওয়া", "bled", "bled", "bleeding", "bleeds", "from the cut"], ["bless", "আশীর্বাদ করা", "blessed", "blessed", "blessing", "blesses", "the children"], ["blow", "বাতাস বওয়া / ফুঁ দেওয়া", "blew", "blown", "blowing", "blows", "the candle out"], ["boil", "ফুটানো", "boiled", "boiled", "boiling", "boils", "drinking water"], ["borrow", "ধার নেওয়া", "borrowed", "borrowed", "borrowing", "borrows", "books from library"], ["bother", "বিরক্ত করা", "bothered", "bothered", "bothering", "bothers", "no one in the house"], ["brake", "ব্রেক করা", "braked", "braked", "braking", "brakes", "at the traffic light"], ["breathe", "শ্বাস নেওয়া", "breathed", "breathed", "breathing", "breathes", "fresh mountain air"], ["breed", "প্রজনন করা / লালন করা", "bred", "bred", "breeding", "breeds", "pedigree cattle"], ["bring", "আনা", "brought", "brought", "bringing", "brings", "fresh vegetables"], ["broadcast", "সম্প্রচার করা", "broadcast", "broadcast", "broadcasting", "broadcasts", "live news"], ["build", "নির্মাণ করা", "built", "built", "building", "builds", "a modern hospital"], ["burn", "পোড়ানো / জ্বলা", "burned", "burned", "burning", "burns", "waste paper"], ["burst", "ফেটে যাওয়া", "burst", "burst", "bursting", "bursts", "into laughter"], ["bury", "কবর দেওয়া / সমাহিত করা", "buried", "buried", "burying", "buries", "the treasure"], ["buy", "কেনা", "bought", "bought", "buying", "buys", "groceries on weekends"], ["calculate", "গণনা করা", "calculated", "calculated", "calculating", "calculates", "the profit margin"], ["call", "ডাকা / ফোন করা", "called", "called", "calling", "calls", "his parents daily"], ["calm", "শান্ত করা", "calmed", "calmed", "calming", "calms", "the crying baby"], ["camp", "তাঁবু ফেলা", "camped", "camped", "camping", "camps", "under the stars"], ["cancel", "বাতিল করা", "canceled", "canceled", "canceling", "cancels", "the flight tickets"], ["capture", "বন্দী করা / ক্যামেরাবন্দী করা", "captured", "captured", "capturing", "captures", "the sunset image"], ["care", "যত্ন নেওয়া", "cared", "cared", "caring", "cares", "for sick patients"], ["carry", "বহন করা", "carried", "carried", "carrying", "carries", "a heavy backpack"], ["carve", "খোদাই করা", "carved", "carved", "carving", "carves", "wooden sculptures"], ["catch", "ধরা", "caught", "caught", "catching", "catches", "the morning train"], ["celebrate", "উদযাপন করা", "celebrated", "celebrated", "celebrating", "celebrates", "the anniversary"], ["challenge", "চ্যালেঞ্জ করা", "challenged", "challenged", "challenging", "challenges", "the champion"], ["change", "পরিবর্তন করা", "changed", "changed", "changing", "changes", "his lifestyle"], ["charge", "চার্জ করা / মূল্য নির্ধারণ করা", "charged", "charged", "charging", "charges", "the smartphone battery"], ["chase", "তাড়া করা", "chased", "chased", "chasing", "chases", "the speeding thief"], ["chat", "আড্ডা দেওয়া", "chatted", "chatted", "chatting", "chats", "with childhood friends"], ["cheat", "প্রতারণা করা", "cheated", "cheated", "cheating", "cheats", "in business dealings"], ["check", "যাচাই করা", "checked", "checked", "checking", "checks", "the passport details"], ["cheer", "উৎসাহিত করা", "cheered", "cheered", "cheering", "cheers", "for the home team"], ["chew", "চিবানো", "chewed", "chewed", "chewing", "chews", "food slowly"], ["choose", "বেছে নেওয়া", "chose", "chosen", "choosing", "chooses", "the best option"], ["clap", "হাততালি দেওয়া", "clapped", "clapped", "clapping", "claps", "after the concert"], ["clarify", "স্পষ্ট করা", "clarified", "clarified", "clarifying", "clarifies", "the confusing rule"], ["clean", "পরিষ্কার করা", "cleaned", "cleaned", "cleaning", "cleans", "the living room"], ["clear", "পরিস্কার করা / মুক্ত করা", "cleared", "cleared", "clearing", "clears", "the roadway debris"], ["climb", "আরোহণ করা", "climbed", "climbed", "climbing", "climbs", "the rocky peak"], ["close", "বন্ধ করা", "closed", "closed", "closing", "closes", "the main gate"], ["coach", "প্রশিক্ষণ দেওয়া", "coached", "coached", "coaching", "coaches", "junior cricketers"], ["collect", "সংগ্রহ করা", "collected", "collected", "collecting", "collects", "vintage postage stamps"], ["combine", "একত্রিত করা", "combined", "combined", "combining", "combines", "multiple ingredients"], ["comfort", "সান্ত্বনা দেওয়া", "comforted", "comforted", "comforting", "comforts", "grieving relatives"], ["command", "আদেশ দেওয়া", "commanded", "commanded", "commanding", "commands", "the military platoon"], ["communicate", "যোগাযোগ করা", "communicated", "communicated", "communicating", "communicates", "in fluent English"], ["compare", "তুলনা করা", "compared", "compared", "comparing", "compares", "market prices"], ["compel", "বাধ্য করা", "compelled", "compelled", "compelling", "compels", "them to surrender"], ["compete", "প্রতিযোগিতা করা", "competed", "competed", "competing", "competes", "in the tournament"], ["complain", "অভিযোগ করা", "complained", "complained", "complaining", "complains", "about poor service"], ["complete", "সম্পূর্ণ করা", "completed", "completed", "completing", "completes", "the assignment"], ["compose", "রচনা করা", "composed", "composed", "composing", "composes", "classical symphonies"], ["concentrate", "মনোনিবেশ করা", "concentrated", "concentrated", "concentrating", "concentrates", "on deep study"], ["conclude", "উপসংহার টানা", "concluded", "concluded", "concluding", "concludes", "the debate session"], ["conduct", "পরিচালনা করা", "conducted", "conducted", "conducting", "conducts", "scientific research"], ["confess", "স্বীকার করা", "confessed", "confessed", "confessing", "confesses", "the hidden crime"], ["confirm", "নিশ্চিত করা", "confirmed", "confirmed", "confirming", "confirms", "the hotel booking"], ["confront", "মুখোমুখি হওয়া", "confronted", "confronted", "confronting", "confronts", "the corrupt officials"], ["confuse", "বিভ্রান্ত করা", "confused", "confused", "confusing", "confuses", "the audience"], ["congratulate", "অভিনন্দন জানানো", "congratulated", "congratulated", "congratulating", "congratulates", "the victorious player"], ["connect", "যুক্ত করা", "connected", "connected", "connecting", "connects", "to high-speed Wi-Fi"], ["conquer", "জয় করা", "conquered", "conquered", "conquering", "conquers", "internal fears"], ["consider", "বিবেচনা করা", "considered", "considered", "considering", "considers", "the career offer"], ["consist", "গঠিত হওয়া", "consisted", "consisted", "consisting", "consists", "of five modules"], ["construct", "নির্মাণ করা", "constructed", "constructed", "constructing", "constructs", "a bamboo bridge"], ["consult", "পরামর্শ নেওয়া", "consulted", "consulted", "consulting", "consults", "an expert physician"], ["consume", "উপভোগ করা / খাওয়া", "consumed", "consumed", "consuming", "consumes", "balanced organic meals"], ["contact", "যোগাযোগ করা", "contacted", "contacted", "contacting", "contacts", "the customer care"], ["contain", "ধারণ করা", "contained", "contained", "containing", "contains", "valuable vitamins"], ["continue", "চালিয়ে যাওয়া", "continued", "continued", "continuing", "continues", "the daily practice"], ["contract", "সংকুচিত হওয়া / চুক্তি করা", "contracted", "contracted", "contracting", "contracts", "the muscles"], ["contribute", "অবদান রাখা", "contributed", "contributed", "contributing", "contributes", "to charity funds"], ["control", "নিয়ন্ত্রণ করা", "controlled", "controlled", "controlling", "controls", "his temper wisely"], ["convert", "রূপান্তর করা", "converted", "converted", "converting", "converts", "solar light to energy"], ["convey", "পৌঁছে দেওয়া", "conveyed", "conveyed", "conveying", "conveys", "respectful regards"], ["convince", "রাজি করানো", "convinced", "convinced", "convincing", "convinces", "the client board"], ["cook", "রান্না করা", "cooked", "cooked", "cooking", "cooks", "spicy chicken curry"], ["cool", "ঠান্ডা করা", "cooled", "cooled", "cooling", "cools", "the boiled milk"], ["cooperate", "সহযোগিতা করা", "cooperated", "cooperated", "cooperating", "cooperates", "with team members"], ["cope", "সামলে নেওয়া", "coped", "coped", "coping", "copes", "with exam pressure"], ["copy", "নকল করা", "copied", "copied", "copying", "copies", "the notes neatly"], ["correct", "সংশোধন করা", "corrected", "corrected", "correcting", "corrects", "spelling errors"], ["cost", "দাম পড়া", "cost", "cost", "costing", "costs", "five hundred dollars"], ["cough", "কাশি দেওয়া", "coughed", "coughed", "coughing", "coughs", "during the winter"], ["count", "গণনা করা", "counted", "counted", "counting", "counts", "the paper notes"], ["cover", "ঢেকে দেওয়া", "covered", "covered", "covering", "covers", "the cooked food"], ["crack", "ফাটা / ফাটল ধরা", "cracked", "cracked", "cracking", "cracks", "the walnut shell"], ["crash", "দুর্ঘটনায় পড়া", "crashed", "crashed", "crashing", "crashes", "into the tree"], ["create", "সৃষ্টি করা", "created", "created", "creating", "creates", "an artistic masterpiece"], ["creep", "হামাগুড়ি দেওয়া", "crept", "crept", "creeping", "creeps", "through the tall grass"], ["criticize", "সমালোচনা করা", "criticized", "criticized", "criticizing", "criticizes", "unethical actions"], ["cross", "পার হওয়া", "crossed", "crossed", "crossing", "crosses", "the busy street"], ["cry", "কাঁদা / চিৎকার করা", "cried", "cried", "crying", "cries", "in deep sorrow"], ["cultivate", "চাষ করা / লালন করা", "cultivated", "cultivated", "cultivating", "cultivates", "organic vegetables"], ["cure", "নিরাময় করা", "cured", "cured", "curing", "cures", "chronic ailments"], ["curl", "কুঁচকানো / কোঁকড়ানো", "curled", "curled", "curling", "curls", "her long hair"], ["cut", "কাটা", "cut", "cut", "cutting", "cuts", "the birthday cake"], ["damage", "ক্ষতিগ্রস্ত করা", "damaged", "damaged", "damaging", "damages", "the road bridge"], ["dance", "নাচা", "danced", "danced", "dancing", "dances", "to traditional folk beats"], ["dare", "সাহস করা", "dared", "dared", "daring", "dares", "to challenge authority"], ["deal", "লেনদেন করা / মোকাবিলা করা", "dealt", "dealt", "dealing", "deals", "with difficult clients"], ["decay", "ক্ষয়প্রাপ্ত হওয়া", "decayed", "decayed", "decaying", "decays", "over the centuries"], ["deceive", "প্রতারণা করা", "deceived", "deceived", "deceiving", "deceives", "innocent people"], ["decide", "সিদ্ধান্ত নেওয়া", "decided", "decided", "deciding", "decides", "to study abroad"], ["declare", "ঘোষণা করা", "declared", "declared", "declaring", "declares", "the public holiday"], ["decorate", "সাজানো", "decorated", "decorated", "decorating", "decorates", "the banquet hall"], ["decrease", "হ্রাস পাওয়া", "decreased", "decreased", "decreasing", "decreases", "production expenses"], ["dedicate", "উৎসর্গ করা", "dedicated", "dedicated", "dedicating", "dedicates", "his book to parents"], ["defeat", "পরাজিত করা", "defeated", "defeated", "defeating", "defeats", "the reigning champion"], ["defend", "রক্ষা করা", "defended", "defended", "defending", "defends", "the national border"], ["delay", "বিলম্ব করা", "delayed", "delayed", "delaying", "delays", "the train departure"], ["delete", "মুছে ফেলা", "deleted", "deleted", "deleting", "deletes", "unnecessary emails"], ["deliver", "পৌঁছে দেওয়া / বক্তৃতা দেওয়া", "delivered", "delivered", "delivering", "delivers", "an inspiring lecture"], ["demand", "দাবি করা", "demanded", "demanded", "demanding", "demands", "fair worker wages"], ["demonstrate", "প্রদর্শন করা", "demonstrated", "demonstrated", "demonstrating", "demonstrates", "the new software"], ["deny", "অস্বীকার করা", "denied", "denied", "denying", "denies", "all false charges"], ["depart", "প্রস্থান করা", "departed", "departed", "departing", "departs", "from terminal three"], ["depend", "নির্ভর করা", "depended", "depended", "depending", "depends", "on parents' support"], ["describe", "বর্ণনা করা", "described", "described", "describing", "describes", "the incident clearly"], ["deserve", "যোগ্য হওয়া", "deserved", "deserved", "deserving", "deserves", "the highest medal"], ["design", "নকশা করা", "designed", "designed", "designing", "designs", "modern skyscrapers"], ["destroy", "ধ্বংস করা", "destroyed", "destroyed", "destroying", "destroys", "the old fortress"], ["detect", "শনাক্ত করা", "detected", "detected", "detecting", "detects", "system errors"], ["determine", "দৃঢ়প্রতিজ্ঞ হওয়া", "determined", "determined", "determining", "determines", "the exact cause"], ["develop", "উন্নত করা / বিকাশ ঘটানো", "developed", "developed", "developing", "develops", "spoken English skills"], ["die", "মারা যাওয়া", "died", "died", "dying", "dies", "in deep old age"], ["differ", "ভিন্ন হওয়া", "differed", "differed", "differing", "differs", "from traditional views"], ["dig", "খনন করা", "dug", "dug", "digging", "digs", "a deep water well"], ["diminish", "কমে যাওয়া", "diminished", "diminished", "diminishing", "diminishes", "pain gradually"], ["dip", "ডুবানো", "dipped", "dipped", "dipping", "dips", "a biscuit into tea"], ["direct", "নির্দেশনা দেওয়া", "directed", "directed", "directing", "directs", "the award-winning movie"], ["disagree", "ভিন্নমত পোষণ করা", "disagreed", "disagreed", "disagreeing", "disagrees", "with unfair policies"], ["disappear", "অদৃশ্য হওয়া", "disappeared", "disappeared", "disappearing", "disappears", "into the mist"], ["discover", "আবিষ্কার করা", "discovered", "discovered", "discovering", "discovers", "an ancient tomb"], ["discuss", "আলোচনা করা", "discussed", "discussed", "discussing", "discusses", "the exam routine"], ["dismiss", "বরখাস্ত করা / বাতিল করা", "dismissed", "dismissed", "dismissing", "dismisses", "baseless rumors"], ["disobey", "অমান্য করা", "disobeyed", "disobeyed", "disobeying", "disobeys", "traffic regulations"], ["display", "প্রদর্শন করা", "displayed", "displayed", "displaying", "displays", "the golden trophy"], ["distribute", "বিতরণ করা", "distributed", "distributed", "distributing", "distributes", "warm blankets to poor"], ["disturb", "বিরক্ত করা", "disturbed", "disturbed", "disturbing", "disturbs", "the reading room peace"], ["dive", "ডুব দেওয়া / ঝাঁপ দেওয়া", "dove", "dived", "diving", "dives", "into the clear lake"], ["divide", "ভাগ করা", "divided", "divided", "dividing", "divides", "the fruits equally"], ["do", "করা", "did", "done", "doing", "does", "the homework every night"], ["dominate", "প্রভাব বিস্তার করা", "dominated", "dominated", "dominating", "dominates", "the game completely"], ["donate", "দান করা", "donated", "donated", "donating", "donates", "money to orphanage"], ["doubt", "সন্দেহ করা", "doubted", "doubted", "doubting", "doubts", "his fabricated story"], ["drag", "টেনে নেওয়া", "dragged", "dragged", "dragging", "drags", "the heavy suitcase"], ["drain", "নিষ্কাশন করা", "drained", "drained", "draining", "drains", "the flooded courtyard"], ["draw", "আঁকা / টানা", "drew", "drawn", "drawing", "draws", "a colorful landscape"], ["dream", "স্বপ্ন দেখা", "dreamed", "dreamt", "dreaming", "dreams", "of becoming an astronaut"], ["dress", "পোশাক পরা", "dressed", "dressed", "dressing", "dresses", "in traditional attire"], ["drink", "পান করা", "drank", "drunk", "drinking", "drinks", "a glass of warm milk"], ["drive", "গাড়ি চালানো", "drove", "driven", "driving", "drives", "carefully along highways"], ["drop", "ফেলে দেওয়া / নামানো", "dropped", "dropped", "dropping", "drops", "the pen on floor"], ["drown", "পানিতে ডুবে মারা যাওয়া", "drowned", "drowned", "drowning", "drowns", "in tidal waves"], ["dry", "শুকানো", "dried", "dried", "drying", "dries", "clothes under the sun"], ["dwell", "বাস করা", "dwelt", "dwelt", "dwelling", "dwells", "in a peaceful village"], ["earn", "উপার্জন করা", "earned", "earned", "earning", "earns", "an honest livelihood"], ["eat", "খাওয়া", "ate", "eaten", "eating", "eats", "fresh seasonal fruits"], ["educate", "শিক্ষিত করা", "educated", "educated", "educating", "educates", "underprivileged pupils"], ["elect", "নির্বাচিত করা", "elected", "elected", "electing", "elects", "the class leader"], ["eliminate", "দূর করা", "eliminated", "eliminated", "eliminating", "eliminates", "social prejudices"], ["embarrass", "বিব্রত করা", "embarrassed", "embarrassed", "embarrassing", "embarrasses", "his close friends"], ["embrace", "জড়িয়ে ধরা / গ্রহণ করা", "embraced", "embraced", "embracing", "embraces", "new opportunities"], ["emerge", "উঠে আসা / আবির্ভূত হওয়া", "emerged", "emerged", "emerging", "emerges", "victorious in contest"], ["emphasize", "জোর দেওয়া", "emphasized", "emphasized", "emphasizing", "emphasizes", "regular spoken practice"], ["employ", "চাকরি দেওয়া", "employed", "employed", "employing", "employs", "local technicians"], ["enable", "সক্ষম করা", "enabled", "enabled", "enabling", "enables", "smooth online payments"], ["encourage", "উৎসাহিত করা", "encouraged", "encouraged", "encouraging", "encourages", "young writers"], ["end", "শেষ করা", "ended", "ended", "ending", "ends", "the presentation gracefully"], ["endure", "সহ্য করা", "endured", "endured", "enduring", "endures", "severe winter cold"], ["enforce", "কার্যকর করা", "enforced", "enforced", "enforcing", "enforces", "strict discipline"], ["engage", "যুক্ত হওয়া", "engaged", "engaged", "engaging", "engages", "in constructive debates"], ["enjoy", "উপভোগ করা", "enjoyed", "enjoyed", "enjoying", "enjoys", "the scenic landscape"], ["enlarge", "বড় করা", "enlarged", "enlarged", "enlarging", "enlarges", "the living room window"], ["enquire", "অনুসন্ধান করা", "enquired", "enquired", "enquiring", "enquires", "about train schedules"], ["ensure", "নিশ্চিত করা", "ensured", "ensured", "ensuring", "ensures", "passenger safety"], ["enter", "প্রবেশ করা", "entered", "entered", "entering", "enters", "the conference hall"], ["entertain", "বিনোদন দেওয়া", "entertained", "entertained", "entertaining", "entertains", "the evening guests"], ["escape", "পালিয়ে যাওয়া", "escaped", "escaped", "escaping", "escapes", "from the cage"], ["establish", "প্রতিষ্ঠা করা", "established", "established", "establishing", "establishes", "a research institute"], ["estimate", "অনুমান করা", "estimated", "estimated", "estimating", "estimates", "the total expenditure"], ["evaluate", "মূল্যায়ন করা", "evaluated", "evaluated", "evaluating", "evaluates", "exam answer scripts"], ["evaporate", "বাষ্পীভূত হওয়া", "evaporated", "evaporated", "evaporating", "evaporates", "under scorching heat"], ["examine", "পরীক্ষা করা", "examined", "examined", "examining", "examines", "the patient thoroughly"], ["exchange", "বিনিময় করা", "exchanged", "exchanged", "exchanging", "exchanges", "foreign currency"], ["excite", "উত্তেজিত করা", "excited", "excited", "exciting", "excites", "the young children"], ["exclude", "বাদ দেওয়া", "excluded", "excluded", "excluding", "excludes", "unverified data"], ["excuse", "ক্ষমা করা", "excused", "excused", "excusing", "excuses", "accidental delays"], ["execute", "বাস্তবায়ন করা", "executed", "executed", "executing", "executes", "the strategic plan"], ["exercise", "ব্যায়াম করা / চর্চা করা", "exercised", "exercised", "exercising", "exercises", "every dawn"], ["exhibit", "প্রদর্শন করা", "exhibited", "exhibited", "exhibiting", "exhibits", "ancient clay pottery"], ["exist", "অস্তিত্ব থাকা", "existed", "existed", "existing", "exists", "in scientific reality"], ["expand", "প্রসারিত করা", "expanded", "expanded", "expanding", "expands", "the family enterprise"], ["expect", "প্রত্যাশা করা", "expected", "expected", "expecting", "expects", "positive exam results"], ["experience", "অভিজ্ঞতা অর্জন করা", "experienced", "experienced", "experiencing", "experiences", "scenic nature"], ["explain", "ব্যাখ্যা করা", "explained", "explained", "explaining", "explains", "the grammar formula"], ["explode", "বিস্ফোরিত হওয়া", "exploded", "exploded", "exploding", "explodes", "with loud noise"], ["explore", "অন্বেষণ করা", "explored", "explored", "exploring", "explores", "the limestone cave"], ["export", "রপ্তানি করা", "exported", "exported", "exporting", "exports", "organic tea abroad"], ["express", "প্রকাশ করা", "expressed", "expressed", "expressing", "expresses", "heartfelt emotions"], ["extend", "প্রসারিত করা / বাড়ানো", "extended", "extended", "extending", "extends", "the project deadline"], ["extinguish", "নেভানো", "extinguished", "extinguished", "extinguishing", "extinguishes", "the forest blaze"], ["face", "মুখোমুখি হওয়া", "faced", "faced", "facing", "faces", "arduous life trials"], ["fail", "ব্যর্থ হওয়া", "failed", "failed", "failing", "fails", "to answer on time"], ["faint", "অজ্ঞান হওয়া", "fainted", "fainted", "fainting", "faints", "from exhaustion"], ["fall", "পড়ে যাওয়া", "fell", "fallen", "falling", "falls", "from the bicycle"], ["fasten", "আটকানো / বাঁধা", "fastened", "fastened", "fastening", "fastens", "the car seatbelt"], ["fear", "ভয় পাওয়া", "feared", "feared", "fearing", "fears", "dark lonely paths"], ["feed", "খাওয়ানো", "fed", "fed", "feeding", "feeds", "the hungry birds"], ["feel", "অনুভব করা", "felt", "felt", "feeling", "feels", "immense happiness"], ["fight", "যুদ্ধ করা / লড়াই করা", "fought", "fought", "fighting", "fights", "for equal justice"], ["fill", "পূর্ণ করা", "filled", "filled", "filling", "fills", "the water bottle"], ["filter", "ছেঁকে নেওয়া", "filtered", "filtered", "filtering", "filters", "drinking water"], ["find", "খুঁজে পাওয়া", "found", "found", "finding", "finds", "the lost gold ring"], ["finish", "শেষ করা", "finished", "finished", "finishing", "finishes", "the novel tonight"], ["fire", "গুলি করা / বরখাস্ত করা", "fired", "fired", "firing", "fires", "at the shooting target"], ["fit", "খাপ খাওয়া", "fitted", "fitted", "fitting", "fits", "into the dress perfectly"], ["fix", "ঠিক করা / মেরামত করা", "fixed", "fixed", "fixing", "fixes", "the broken clock"], ["flee", "পালিয়ে যাওয়া", "fled", "fled", "fleeing", "flees", "from the battleground"], ["float", "ভাসা", "floated", "floated", "floating", "floats", "on calm water"], ["flood", "প্লাবিত করা", "flooded", "flooded", "flooding", "floods", "the low paddy fields"], ["flow", "প্রবাহিত হওয়া", "flowed", "flowed", "flowing", "flows", "into the deep sea"], ["fly", "উড়া", "flew", "flown", "flying", "flies", "across the ocean"], ["focus", "মনোযোগ নিবদ্ধ করা", "focused", "focused", "focusing", "focuses", "on pronunciation drills"], ["fold", "ভাঁজ করা", "folded", "folded", "folding", "folds", "the washed clothes"], ["follow", "অনুসরণ করা", "followed", "followed", "following", "follows", "the teacher's guidance"], ["forbid", "নিষেধ করা", "forbade", "forbidden", "forbidding", "forbids", "smoking in halls"], ["force", "বাধ্য করা", "forced", "forced", "forcing", "forces", "the heavy door open"], ["forecast", "পূর্বাভাস দেওয়া", "forecast", "forecast", "forecasting", "forecasts", "heavy monsoon rain"], ["foresee", "আগে থেকে দেখা", "foresaw", "foreseen", "foreseeing", "foresees", "future economic trends"], ["forget", "ভুলে যাওয়া", "forgot", "forgotten", "forgetting", "forgets", "the account password"], ["forgive", "ক্ষমা করা", "forgave", "forgiven", "forgiving", "forgives", "past personal mistakes"], ["form", "গঠন করা", "formed", "formed", "forming", "forms", "a debate club"], ["freeze", "জমে যাওয়া", "froze", "frozen", "freezing", "freezes", "during harsh winter"], ["fry", "ভাজা", "fried", "fried", "frying", "fries", "crispy potato chips"], ["fulfill", "পূরণ করা", "fulfilled", "fulfilled", "fulfilling", "fulfills", "his father's dreams"], ["gain", "অর্জন করা", "gained", "gained", "gaining", "gains", "fluent spoken speed"], ["gather", "একত্রিত করা", "gathered", "gathered", "gathering", "gathers", "autumn fallen leaves"], ["generate", "উৎপন্ন করা", "generated", "generated", "generating", "generates", "clean electricity"], ["get", "পাওয়া", "got", "gotten", "getting", "gets", "an official scholarship"], ["give", "দেওয়া", "gave", "given", "giving", "gives", "a thoughtful gift"], ["glance", "একপলক তাকানো", "glanced", "glanced", "glancing", "glances", "at the wrist watch"], ["glow", "জ্বলজ্বল করা", "glowed", "glowed", "glowing", "glows", "in the dark"], ["go", "যাওয়া", "went", "gone", "going", "goes", "to university early"], ["govern", "শাসন করা", "governed", "governed", "governing", "governs", "the state democratically"], ["grab", "ঝাপটে ধরা / লুফে নেওয়া", "grabbed", "grabbed", "grabbing", "grabs", "the golden chance"], ["graduate", "স্নাতক পাস করা", "graduated", "graduated", "graduating", "graduates", "with highest honors"], ["grant", "মঞ্জুর করা", "granted", "granted", "granting", "grants", "seven days' leave"], ["grasp", "ধরা / অনুধাবন করা", "grasped", "grasped", "grasping", "grasps", "the deep philosophy"], ["greet", "অভিবাদন জানানো", "greeted", "greeted", "greeting", "greets", "guests with a smile"], ["grind", "পেষা / গুঁড়া করা", "ground", "ground", "grinding", "grinds", "coffee beans finely"], ["grow", "বৃদ্ধি পাওয়া / চাষ করা", "grew", "grown", "growing", "grows", "roses in garden"], ["guarantee", "নিশ্চয়তা দেওয়া", "guaranteed", "guaranteed", "guaranteeing", "guarantees", "one year service"], ["guard", "পাহারা দেওয়া", "guarded", "guarded", "guarding", "guards", "the royal palace"], ["guess", "অনুমান করা", "guessed", "guessed", "guessing", "guesses", "the riddle answer"], ["guide", "পথ প্রদর্শন করা", "guided", "guided", "guiding", "guides", "foreign tourist groups"], ["handle", "সামলানো", "handled", "handled", "handling", "handles", "customer grievances"], ["hang", "ঝুলানো", "hung", "hung", "hanging", "hangs", "paintings on the wall"], ["happen", "ঘটা", "happened", "happened", "happening", "happens", "quite unexpectedly"], ["harm", "ক্ষতি করা", "harmed", "harmed", "harming", "harms", "no living creature"], ["harvest", "ফসল তোলা", "harvested", "harvested", "harvesting", "harvests", "golden wheat fields"], ["hate", "ঘৃণা করা", "hated", "hated", "hating", "hates", "hypocrisy and deceit"], ["heal", "নিরাময় হওয়া", "healed", "healed", "healing", "heals", "the deep wound"], ["hear", "শোনা", "heard", "heard", "hearing", "hears", "the morning bells"], ["heat", "উত্তপ্ত করা", "heated", "heated", "heating", "heats", "the vegetable broth"], ["help", "সাহায্য করা", "helped", "helped", "helping", "helps", "poor neighborhood families"], ["hesitate", "দ্বিধা করা", "hesitated", "hesitated", "hesitating", "hesitates", "to ask questions"], ["hide", "লুকানো", "hid", "hidden", "hiding", "hides", "behind the thick curtains"], ["hike", "পায়ে হেঁটে ভ্রমণ করা", "hiked", "hiked", "hiking", "hikes", "up steep mountain trails"], ["hit", "আঘাত করা", "hit", "hit", "hitting", "hits", "the tennis ball hard"], ["hold", "ধরা / আয়োজন করা", "held", "held", "holding", "holds", "an international seminar"], ["honor", "সম্মান জানানো", "honored", "honored", "honoring", "honors", "the valiant martyrs"], ["hope", "আশা করা", "hoped", "hoped", "hoping", "hopes", "for lasting world peace"], ["hug", "আলিঙ্গন করা", "hugged", "hugged", "hugging", "hugs", "his beloved mother"], ["hunt", "শিকার করা", "hunted", "hunted", "hunting", "hunts", "wild boars in woods"], ["hurry", "তাড়াহুড়ো করা", "hurried", "hurried", "hurrying", "hurries", "to catch the bus"], ["hurt", "আঘাত দেওয়া / ব্যথা পাওয়া", "hurt", "hurt", "hurting", "hurts", "his right shoulder"], ["identify", "শনাক্ত করা", "identified", "identified", "identifying", "identifies", "the genuine diamond"], ["ignore", "উপেক্ষা করা", "ignored", "ignored", "ignoring", "ignores", "petty arguments"], ["illuminate", "আলোকিত করা", "illuminated", "illuminated", "illuminating", "illuminates", "the night boulevard"], ["illustrate", "উদাহরণ দিয়ে বোঝানো", "illustrated", "illustrated", "illustrating", "illustrates", "with vivid diagrams"], ["imagine", "কল্পনা করা", "imagined", "imagined", "imagining", "imagines", "flying across galaxies"], ["imitate", "অনুকরণ করা", "imitated", "imitated", "imitating", "imitates", "bird whistle calls"], ["implement", "বাস্তবায়ন করা", "implemented", "implemented", "implementing", "implements", "strict city laws"], ["imply", "ইঙ্গিত করা", "implied", "implied", "implying", "implies", "deep underlying meaning"], ["import", "আমদানি করা", "imported", "imported", "importing", "imports", "crude petroleum oil"], ["impress", "মুগ্ধ করা", "impressed", "impressed", "impressing", "impresses", "all interview judges"], ["improve", "উন্নত করা", "improved", "improved", "improving", "improves", "every day constantly"], ["include", "অন্তর্ভুক্ত করা", "included", "included", "including", "includes", "all tax charges"], ["increase", "বৃদ্ধি করা", "increased", "increased", "increasing", "increases", "daily work output"], ["indicate", "নির্দেশ করা", "indicated", "indicated", "indicating", "indicates", "the correct path"], ["inform", "অবহিত করা", "informed", "informed", "informing", "informs", "the police department"], ["inherit", "উত্তরাধিকার সূত্রে পাওয়া", "inherited", "inherited", "inheriting", "inherits", "the ancestral manor"], ["injure", "আহত করা", "injured", "injured", "injuring", "injures", "the knee ligament"], ["insist", "জেদ করা", "insisted", "insisted", "insisting", "insists", "on paying dinner bills"], ["inspect", "পরিদর্শন করা", "inspected", "inspected", "inspecting", "inspects", "the engine components"], ["inspire", "অনুপ্রাণিত করা", "inspired", "inspired", "inspiring", "inspires", "millions of youths"], ["install", "স্থাপন করা", "installed", "installed", "installing", "installs", "rooftop solar panels"], ["instruct", "নির্দেশ দেওয়া", "instructed", "instructed", "instructing", "instructs", "the new recruits"], ["insult", "অপমান করা", "insulted", "insulted", "insulting", "insults", "no hardworking man"], ["intend", "উদ্দেশ্য থাকা", "intended", "intended", "intending", "intends", "to pursue medicine"], ["interfere", "হস্তক্ষেপ করা", "interfered", "interfered", "interfering", "interferes", "with others' privacy"], ["interpret", "অনুবাদ বা ব্যাখ্যা করা", "interpreted", "interpreted", "interpreting", "interprets", "classical poetry"], ["interrupt", "বাধা দেওয়া", "interrupted", "interrupted", "interrupting", "interrupts", "the ongoing lecture"], ["introduce", "পরিচয় করিয়ে দেওয়া", "introduced", "introduced", "introducing", "introduces", "the guest speaker"], ["invent", "উদ্ভাবন করা", "invented", "invented", "inventing", "invents", "eco-friendly gadgets"], ["invest", "বিনিয়োগ করা", "invested", "invested", "investing", "invests", "in renewable assets"], ["investigate", "তদন্ত করা", "investigated", "investigated", "investigating", "investigates", "the sudden burglary"], ["invite", "আমন্ত্রণ জানানো", "invited", "invited", "inviting", "invites", "all relatives home"], ["iron", "ইস্ত্রি করা", "ironed", "ironed", "ironing", "irons", "cotton shirts neatly"], ["irritate", "বিরক্ত করা", "irritated", "irritated", "irritating", "irritates", "his senior manager"], ["isolate", "বিচ্ছিন্ন করা", "isolated", "isolated", "isolating", "isolates", "the chemical sample"], ["join", "যোগ দেওয়া", "joined", "joined", "joining", "joins", "the spoken club"], ["joke", "মশকরা করা", "joked", "joked", "joking", "jokes", "with batch companions"], ["judge", "বিচার করা", "judged", "judged", "judging", "judges", "the debate fairly"], ["jump", "লাফ দেওয়া", "jumped", "jumped", "jumping", "jumps", "across the narrow ditch"], ["justify", "ন্যায্যতা প্রমাণ করা", "justified", "justified", "justifying", "justifies", "his strict actions"], ["keep", "রাখা", "kept", "kept", "keeping", "keeps", "the confidential secret"], ["kick", "লাথি দেওয়া", "kicked", "kicked", "kicking", "kicks", "the football goalwards"], ["kill", "হত্যা করা", "killed", "killed", "killing", "kills", "the poisonous insect"], ["kiss", "চুমু খাওয়া", "kissed", "kissed", "kissing", "kisses", "the newborn infant"], ["kneel", "হাঁটু গেড়ে বসা", "knelt", "knelt", "kneeling", "kneels", "in humble prayer"], ["knit", "বোনা", "knitted", "knitted", "knitting", "knits", "a warm woolen sweater"], ["knock", "নক করা / ধাক্কা দেওয়া", "knocked", "knocked", "knocking", "knocks", "on the wooden door"], ["know", "জানা", "knew", "known", "knowing", "knows", "fluent spoken grammar"], ["label", "লেবেল লাগানো", "labeled", "labeled", "labeling", "labels", "all medicine jars"], ["lack", "ঘাটতি থাকা", "lacked", "lacked", "lacking", "lacks", "prior work experience"], ["last", "টিকে থাকা", "lasted", "lasted", "lasting", "lasts", "for three full hours"], ["laugh", "হাসা", "laughed", "laughed", "laughing", "laughs", "at funny jokes"], ["launch", "উদ্বোধন করা / উৎক্ষেপণ করা", "launched", "launched", "launching", "launches", "the rocket into space"], ["lay", "শোয়ানো / ডিম পাড়া", "laid", "laid", "laying", "lays", "the baby on the cot"], ["lead", "নেতৃত্ব দেওয়া", "led", "led", "leading", "leads", "the campaign successfully"], ["leak", "ফুটো দিয়ে ঝরা", "leaked", "leaked", "leaking", "leaks", "from the pipe joint"], ["lean", "হেলান দেওয়া", "leaned", "leaned", "leaning", "leans", "against the railing"], ["leap", "লাফিয়ে চলা", "leapt", "leapt", "leaping", "leaps", "over high hurdles"], ["learn", "শেখা", "learned", "learnt", "learning", "learns", "English every evening"], ["leave", "ত্যাগ করা / রওনা হওয়া", "left", "left", "leaving", "leaves", "for the office early"], ["lend", "ধার দেওয়া", "lent", "lent", "lending", "lends", "his bicycle to Rahim"], ["let", "অনুমতি দেওয়া", "let", "let", "letting", "lets", "the cat outside"], ["lick", "চাটা", "licked", "licked", "licking", "licks", "ice cream greedily"], ["lie", "মিথ্যা বলা / শোয়া", "lied", "lied", "lying", "lies", "about his age"], ["lift", "উত্তোলন করা", "lifted", "lifted", "lifting", "lifts", "the heavy weight bar"], ["light", "জ্বালানো", "lit", "lit", "lighting", "lights", "the evening oil lamp"], ["like", "পছন্দ করা", "liked", "liked", "liking", "likes", "drinking warm herbal tea"], ["limit", "সীমাবদ্ধ করা", "limited", "limited", "limiting", "limits", "daily screen time"], ["link", "সংযুক্ত করা", "linked", "linked", "linking", "links", "the database records"], ["listen", "মনোযোগ দিয়ে শোনা", "listened", "listened", "listening", "listens", "to classical melodies"], ["live", "বাস করা", "lived", "lived", "living", "lives", "in a clean village"], ["load", "বোঝাই করা", "loaded", "loaded", "loading", "loads", "the cargo truck"], ["loan", "ধার দেওয়া", "loaned", "loaned", "loaning", "loans", "money without interest"], ["lock", "তালা লাগানো", "locked", "locked", "locking", "locks", "the front entry door"], ["log", "লগ ইন করা / লিখে রাখা", "logged", "logged", "logging", "logs", "into the student portal"], ["look", "তাকানো / দেখা", "looked", "looked", "looking", "looks", "at the night stars"], ["lose", "হারানো", "lost", "lost", "losing", "loses", "his precious time"], ["love", "ভালোবাসা", "loved", "loved", "loving", "loves", "traditional folk music"], ["maintain", "বজায় রাখা", "maintained", "maintained", "maintaining", "maintains", "peaceful calm dignity"], ["make", "তৈরি করা", "made", "made", "making", "makes", "a hot cup of tea"], ["manage", "ব্যবস্থাপনা করা", "managed", "managed", "managing", "manages", "the office personnel"], ["manufacture", "উৎপাদন করা", "manufactured", "manufactured", "manufacturing", "manufactures", "cotton garment items"], ["march", "পদযাত্রা করা", "marched", "marched", "marching", "marches", "in military precision"], ["mark", "চিহ্নিত করা", "marked", "marked", "marking", "marks", "important book chapters"], ["marry", "বিয়ে করা", "married", "married", "marrying", "marries", "his beloved friend"], ["match", "মেলানো", "matched", "matched", "matching", "matches", "the correct answers"], ["matter", "গুরুত্বপূর্ণ হওয়া", "mattered", "mattered", "mattering", "matters", "to all of us"], ["mean", "অর্থ প্রকাশ করা", "meant", "meant", "meaning", "means", "what he promises"], ["measure", "পরিমাপ করা", "measured", "measured", "measuring", "measures", "the land boundaries"], ["meditate", "ধ্যান করা", "meditated", "meditated", "meditating", "meditates", "at early sunrise"], ["meet", "সাক্ষাৎ করা", "met", "met", "meeting", "meets", "the honorable minister"], ["melt", "গলে যাওয়া", "melted", "melted", "melting", "melts", "under direct sunshine"], ["memorize", "মুখস্থ করা", "memorized", "memorized", "memorizing", "memorizes", "the English drills"], ["mend", "মেরামত করা", "mended", "mended", "mending", "mends", "the torn fishing net"], ["mention", "উল্লেখ করা", "mentioned", "mentioned", "mentioning", "mentions", "the previous incident"], ["migrate", "স্থানান্তরিত হওয়া", "migrated", "migrated", "migrating", "migrates", "to southern lakes"], ["milk", "দুধ দোয়ানো", "milked", "milked", "milking", "milks", "the dairy cow"], ["mind", "আপত্তি করা / মনে নেওয়া", "minded", "minded", "minding", "minds", "no constructive critique"], ["miss", "মিস করা / হাতছাড়া করা", "missed", "missed", "missing", "misses", "the evening express"], ["mistake", "ভুল বোঝা", "mistook", "mistaken", "mistaking", "mistakes", "a rope for a snake"], ["mix", "মিশ্রিত করা", "mixed", "mixed", "mixing", "mixes", "oil with hot spices"], ["modify", "পরিমার্জন করা", "modified", "modified", "modifying", "modifies", "the architectural draft"], ["monitor", "নজরদারি করা", "monitored", "monitored", "monitoring", "monitors", "system server logs"], ["motivate", "অনুপ্রাণিত করা", "motivated", "motivated", "motivating", "motivates", "hesitant students"], ["mount", "আরোহণ করা", "mounted", "mounted", "mounting", "mounts", "the galloping horse"], ["mourn", "শোক প্রকাশ করা", "mourned", "mourned", "mourning", "mourns", "the departed mentor"], ["move", "স্থানান্তরিত হওয়া / নড়া", "moved", "moved", "moving", "moves", "to a new flat"], ["multiply", "গুণ করা / বহুগুণ বাড়া", "multiplied", "multiplied", "multiplying", "multiplies", "investment returns"], ["murder", "হত্যা করা", "murdered", "murdered", "murdering", "murders", "the innocent victim"], ["name", "নামকরণ করা", "named", "named", "naming", "names", "the newborn child"], ["navigate", "দিকনির্দেশনা নিয়ে চলা", "navigated", "navigated", "navigating", "navigates", "across stormy seas"], ["need", "প্রয়োজন হওয়া", "needed", "needed", "needing", "needs", "proper medical rest"], ["neglect", "অবহেলা করা", "neglected", "neglected", "neglecting", "neglects", "his school studies"], ["negotiate", "দরকষাকষি করা", "negotiated", "negotiated", "negotiating", "negotiates", "the export contract"], ["nod", "মাথা নাড়া", "nodded", "nodded", "nodding", "nods", "in quiet agreement"], ["nominate", "মনোনীত করা", "nominated", "nominated", "nominating", "nominates", "the young candidate"], ["note", "টুকে রাখা", "noted", "noted", "noting", "notes", "all salient points"], ["notice", "লক্ষ্য করা", "noticed", "noticed", "noticing", "notices", "the subtle change"], ["notify", "বিজ্ঞপ্তি দিয়ে জানানো", "notified", "notified", "notifying", "notifies", "the family members"], ["nourish", "পুষ্টি জোগানো", "nourished", "nourished", "nourishing", "nourishes", "the growing plant"], ["obey", "মান্য করা", "obeyed", "obeyed", "obeying", "obeys", "his parents always"], ["object", "আপত্তি জানানো", "objected", "objected", "objecting", "objects", "to corrupt practices"], ["observe", "পর্যবেক্ষণ করা", "observed", "observed", "observing", "observes", "the solar eclipse"], ["obtain", "অর্জন করা / পাওয়া", "obtained", "obtained", "obtaining", "obtains", "valid visa clearance"], ["occupy", "দখল করা", "occupied", "occupied", "occupying", "occupies", "the prime corner seat"], ["occur", "ঘটা", "occurred", "occurred", "occurring", "occurs", "without any warning"], ["offend", "ক্ষুব্ধ বা আঘাত করা", "offended", "offended", "offending", "offends", "no humble people"], ["offer", "প্রস্তাব দেওয়া", "offered", "offered", "offering", "offers", "a cup of green tea"], ["open", "খোলা", "opened", "opened", "opening", "opens", "the library window"], ["operate", "পরিচালনা করা / অস্ত্রোপচার করা", "operated", "operated", "operating", "operates", "the heavy machine"], ["order", "আদেশ দেওয়া / অর্ডার করা", "ordered", "ordered", "ordering", "orders", "hot vegetable soup"], ["organize", "সংগঠিত করা", "organized", "organized", "organizing", "organizes", "the annual tournament"], ["overcome", "জয় করা / কাটিয়ে ওঠা", "overcame", "overcome", "overcoming", "overcomes", "every spoken barrier"], ["overtake", "অতিক্রম করা", "overtook", "overtaken", "overtaking", "overtakes", "the slow truck"], ["owe", "ঋণী থাকা", "owed", "owed", "owing", "owes", "everything to parents"], ["paint", "রং করা / আঁকা", "painted", "painted", "painting", "paints", "a scenic mountain view"], ["participate", "অংশগ্রহণ করা", "participated", "participated", "participating", "participates", "in sports events"], ["pass", "উত্তীর্ণ হওয়া / পার হওয়া", "passed", "passed", "passing", "passes", "the board examination"], ["pay", "পরিশোধ করা", "paid", "paid", "paying", "pays", "the house electricity bill"], ["perform", "পরিবেশন করা / সম্পাদন করা", "performed", "performed", "performing", "performs", "on the stage"], ["permit", "অনুমতি দেওয়া", "permitted", "permitted", "permitting", "permits", "photography in park"], ["persuade", "প্ররোচিত করা / রাজি করানো", "persuaded", "persuaded", "persuading", "persuades", "the hesitant friend"], ["pick", "তোলা / নির্বাচন করা", "picked", "picked", "picking", "picks", "ripe sweet mangoes"], ["plant", "রোপণ করা", "planted", "planted", "planting", "plants", "fifty fruit saplings"], ["play", "খেলা করা / বাজানো", "played", "played", "playing", "plays", "football every afternoon"], ["point", "নির্দেশ করা", "pointed", "pointed", "pointing", "points", "towards the hilltop"], ["polish", "পালিশ করা", "polished", "polished", "polishing", "polishes", "his formal shoes"], ["pollute", "দূষিত করা", "polluted", "polluted", "polluting", "pollutes", "the freshwater river"], ["pour", "ঢালা", "poured", "poured", "pouring", "pours", "hot tea into cups"], ["practice", "অনুশীলন করা", "practiced", "practiced", "practicing", "practices", "spoken English daily"], ["praise", "প্রশংসা করা", "praised", "praised", "praising", "praises", "the diligent student"], ["pray", "প্রার্থনা করা", "prayed", "prayed", "praying", "prays", "for universal peace"], ["predict", "ভবিষ্যদ্বাণী করা", "predicted", "predicted", "predicting", "predicts", "economic recovery"], ["prefer", "বেশি পছন্দ করা", "preferred", "preferred", "preferring", "prefers", "coffee to tea"], ["prepare", "প্রস্তুতি নেওয়া", "prepared", "prepared", "preparing", "prepares", "the presentation slides"], ["present", "উপস্থাপন করা", "presented", "presented", "presenting", "presents", "the research findings"], ["preserve", "সংরক্ষণ করা", "preserved", "preserved", "preserving", "preserves", "ancient manuscripts"], ["press", "চাপা দেওয়া", "pressed", "pressed", "pressing", "presses", "the elevator button"], ["prevent", "প্রতিরোধ করা", "prevented", "prevented", "preventing", "prevents", "fatal accidents"], ["print", "ছাপানো", "printed", "printed", "printing", "prints", "the project report"], ["proceed", "সামনে এগিয়ে যাওয়া", "proceeded", "proceeded", "proceeding", "proceeds", "with the meeting"], ["produce", "উৎপাদন করা", "produced", "produced", "producing", "produces", "high quality cotton"], ["promise", "প্রতিশ্রুতি দেওয়া", "promised", "promised", "promising", "promises", "to return soon"], ["promote", "পদোন্নতি দেওয়া / প্রচার করা", "promoted", "promoted", "promoting", "promotes", "meritorious staff"], ["protect", "রক্ষা করা", "protected", "protected", "protecting", "protects", "the endangered species"], ["protest", "প্রতিবাদ করা", "protested", "protested", "protesting", "protests", "against corruption"], ["prove", "প্রমাণ করা", "proved", "proven", "proving", "proves", "his innocence clearly"], ["provide", "সরবরাহ করা", "provided", "provided", "providing", "provides", "free educational books"], ["publish", "প্রকাশ করা", "published", "published", "publishing", "publishes", "the poetry volume"], ["pull", "টানা", "pulled", "pulled", "pulling", "pulls", "the heavy wooden gate"], ["punish", "শাস্তি দেওয়া", "punished", "punished", "punishing", "punishes", "the rowdy offenders"], ["purchase", "ক্রয় করা", "purchased", "purchased", "purchasing", "purchases", "a new laptop"], ["pursue", "অনুসরণ করা / সাধনা করা", "pursued", "pursued", "pursuing", "pursues", "his higher education"]];
+
+        // Tense Conjugation Rules
+        const tenseFormulas = {
+            "present_simple": {
+                name: "Present Simple",
+                formula: "Subject + V1 (or V-s/es) + Object",
+                build: (sub, v, obj, mode) => {
+                    const is3rd = (sub === "He" || sub === "She" || sub === "It" || sub === "Rahim");
+                    const v1 = is3rd ? v[5] : v[0]; // v[5] is s/es
+                    const auxDo = is3rd ? "does" : "do";
+                    const auxNot = is3rd ? "doesn't" : "don't";
+                    
+                    if (mode === "affirmative") {
+                        return {
+                            en: `${sub} ${v1} ${obj}.`,
+                            bn: `${getSubjectBn(sub)} ${v[1]} (${obj})।`,
+                            rule: `Subject (${sub}) + Verb (${v1}) + Object`
+                        };
+                    } else if (mode === "negative") {
+                        return {
+                            en: `${sub} ${auxNot} ${v[0]} ${obj}.`,
+                            bn: `${getSubjectBn(sub)} ${obj} ${v[1]} না।`,
+                            rule: `Subject + ${auxNot} + V1 (${v[0]}) + Object`
+                        };
+                    } else if (mode === "interrogative") {
+                        return {
+                            en: `${capitalize(auxDo)} ${sub.toLowerCase() === 'i' ? 'I' : sub} ${v[0]} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি ${obj} ${v[1]}?`,
+                            rule: `${capitalize(auxDo)} + Subject + V1 (${v[0]}) + Object?`
+                        };
+                    } else {
+                        return {
+                            en: `${capitalize(auxNot)} ${sub.toLowerCase() === 'i' ? 'I' : sub} ${v[0]} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি ${obj} ${v[1]} না?`,
+                            rule: `${capitalize(auxNot)} + Subject + V1 (${v[0]}) + Object?`
+                        };
+                    }
+                }
+            },
+            "present_continuous": {
+                name: "Present Continuous",
+                formula: "Subject + am/is/are + V-ing + Object",
+                build: (sub, v, obj, mode) => {
+                    const be = (sub === "I") ? "am" : (sub === "He" || sub === "She" || sub === "It" || sub === "Rahim") ? "is" : "are";
+                    const ving = v[4];
+                    if (mode === "affirmative") {
+                        return {
+                            en: `${sub} ${be} ${ving} ${obj}.`,
+                            bn: `${getSubjectBn(sub)} ${obj} ${v[1].replace(' করা', ' করছে').replace(' হওয়া', ' হচ্ছে')}।`,
+                            rule: `Subject + ${be} + V-ing (${ving}) + Object`
+                        };
+                    } else if (mode === "negative") {
+                        return {
+                            en: `${sub} ${be} not ${ving} ${obj}.`,
+                            bn: `${getSubjectBn(sub)} ${obj} ${v[1]} করছে না।`,
+                            rule: `Subject + ${be} not + V-ing (${ving}) + Object`
+                        };
+                    } else if (mode === "interrogative") {
+                        return {
+                            en: `${capitalize(be)} ${sub.toLowerCase() === 'i' ? 'I' : sub} ${ving} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি ${obj} ${v[1]} করছে?`,
+                            rule: `${capitalize(be)} + Subject + V-ing (${ving}) + Object?`
+                        };
+                    } else {
+                        return {
+                            en: `${capitalize(be)}n't ${sub.toLowerCase() === 'i' ? 'I' : sub} ${ving} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি ${obj} ${v[1]} করছে না?`,
+                            rule: `${capitalize(be)}n't + Subject + V-ing (${ving}) + Object?`
+                        };
+                    }
+                }
+            },
+            "present_perfect": {
+                name: "Present Perfect",
+                formula: "Subject + have/has + V3 + Object",
+                build: (sub, v, obj, mode) => {
+                    const have = (sub === "He" || sub === "She" || sub === "It" || sub === "Rahim") ? "has" : "have";
+                    const v3 = v[3];
+                    if (mode === "affirmative") {
+                        return {
+                            en: `${sub} ${have} ${v3} ${obj}.`,
+                            bn: `${getSubjectBn(sub)} এইমাত্র ${obj} ${v[1].replace(' করা', ' করেছে').replace(' হওয়া', ' হয়েছে')}।`,
+                            rule: `Subject + ${have} + V3 (${v3}) + Object`
+                        };
+                    } else if (mode === "negative") {
+                        return {
+                            en: `${sub} ${have} not ${v3} ${obj}.`,
+                            bn: `${getSubjectBn(sub)} এখনো ${obj} ${v[1]} করেনি।`,
+                            rule: `Subject + ${have} not + V3 (${v3}) + Object`
+                        };
+                    } else if (mode === "interrogative") {
+                        return {
+                            en: `${capitalize(have)} ${sub.toLowerCase() === 'i' ? 'I' : sub} ${v3} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি ${obj} ${v[1]} করেছে?`,
+                            rule: `${capitalize(have)} + Subject + V3 (${v3}) + Object?`
+                        };
+                    } else {
+                        return {
+                            en: `${capitalize(have)}n't ${sub.toLowerCase() === 'i' ? 'I' : sub} ${v3} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি ${obj} ${v[1]} করেনি?`,
+                            rule: `${capitalize(have)}n't + Subject + V3 (${v3}) + Object?`
+                        };
+                    }
+                }
+            },
+            "present_perfect_cont": {
+                name: "Present Perfect Continuous",
+                formula: "Subject + have/has been + V-ing + Object + since/for...",
+                build: (sub, v, obj, mode) => {
+                    const have = (sub === "He" || sub === "She" || sub === "It" || sub === "Rahim") ? "has" : "have";
+                    const ving = v[4];
+                    if (mode === "affirmative") {
+                        return {
+                            en: `${sub} ${have} been ${ving} ${obj} for two hours.`,
+                            bn: `${getSubjectBn(sub)} দুই ঘণ্টা ধরে ${obj} ${v[1]} করছে।`,
+                            rule: `Subject + ${have} been + V-ing (${ving}) + Object + for two hours`
+                        };
+                    } else if (mode === "negative") {
+                        return {
+                            en: `${sub} ${have} not been ${ving} ${obj} for two hours.`,
+                            bn: `${getSubjectBn(sub)} দুই ঘণ্টা ধরে ${obj} ${v[1]} করছে না।`,
+                            rule: `Subject + ${have} not been + V-ing + Object`
+                        };
+                    } else if (mode === "interrogative") {
+                        return {
+                            en: `${capitalize(have)} ${sub.toLowerCase() === 'i' ? 'I' : sub} been ${ving} ${obj} for two hours?`,
+                            bn: `${getSubjectBn(sub)} কি দুই ঘণ্টা ধরে ${obj} ${v[1]} করছে?`,
+                            rule: `${capitalize(have)} + Subject + been + V-ing + Object?`
+                        };
+                    } else {
+                        return {
+                            en: `${capitalize(have)}n't ${sub.toLowerCase() === 'i' ? 'I' : sub} been ${ving} ${obj} for two hours?`,
+                            bn: `${getSubjectBn(sub)} কি দুই ঘণ্টা ধরে ${obj} ${v[1]} করছে না?`,
+                            rule: `${capitalize(have)}n't + Subject + been + V-ing + Object?`
+                        };
+                    }
+                }
+            },
+            "past_indefinite": {
+                name: "Past Indefinite",
+                formula: "Subject + V2 (past) + Object",
+                build: (sub, v, obj, mode) => {
+                    const v2 = v[2];
+                    if (mode === "affirmative") {
+                        return {
+                            en: `${sub} ${v2} ${obj}.`,
+                            bn: `${getSubjectBn(sub)} অতীতে ${obj} ${v[1].replace(' করা', ' করেছিল/করেছিলাম').replace(' হওয়া', ' হয়েছিল')}।`,
+                            rule: `Subject + V2 (${v2}) + Object`
+                        };
+                    } else if (mode === "negative") {
+                        return {
+                            en: `${sub} didn't ${v[0]} ${obj}.`,
+                            bn: `${getSubjectBn(sub)} ${obj} ${v[1]} করেনি।`,
+                            rule: `Subject + didn't + V1 (${v[0]}) + Object`
+                        };
+                    } else if (mode === "interrogative") {
+                        return {
+                            en: `Did ${sub.toLowerCase() === 'i' ? 'I' : sub} ${v[0]} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি ${obj} ${v[1]} করেছিল?`,
+                            rule: `Did + Subject + V1 (${v[0]}) + Object?`
+                        };
+                    } else {
+                        return {
+                            en: `Didn't ${sub.toLowerCase() === 'i' ? 'I' : sub} ${v[0]} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি ${obj} ${v[1]} করেনি?`,
+                            rule: `Didn't + Subject + V1 (${v[0]}) + Object?`
+                        };
+                    }
+                }
+            },
+            "past_continuous": {
+                name: "Past Continuous",
+                formula: "Subject + was/were + V-ing + Object",
+                build: (sub, v, obj, mode) => {
+                    const was = (sub === "I" || sub === "He" || sub === "She" || sub === "It" || sub === "Rahim") ? "was" : "were";
+                    const ving = v[4];
+                    if (mode === "affirmative") {
+                        return {
+                            en: `${sub} ${was} ${ving} ${obj}.`,
+                            bn: `${getSubjectBn(sub)} তখন ${obj} ${v[1]} করছিল/করছিলাম।`,
+                            rule: `Subject + ${was} + V-ing (${ving}) + Object`
+                        };
+                    } else if (mode === "negative") {
+                        return {
+                            en: `${sub} ${was} not ${ving} ${obj}.`,
+                            bn: `${getSubjectBn(sub)} তখন ${obj} ${v[1]} করছিল না।`,
+                            rule: `Subject + ${was} not + V-ing + Object`
+                        };
+                    } else if (mode === "interrogative") {
+                        return {
+                            en: `${capitalize(was)} ${sub.toLowerCase() === 'i' ? 'I' : sub} ${ving} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি তখন ${obj} ${v[1]} করছিল?`,
+                            rule: `${capitalize(was)} + Subject + V-ing + Object?`
+                        };
+                    } else {
+                        return {
+                            en: `${capitalize(was)}n't ${sub.toLowerCase() === 'i' ? 'I' : sub} ${ving} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি তখন ${obj} ${v[1]} করছিল না?`,
+                            rule: `${capitalize(was)}n't + Subject + V-ing + Object?`
+                        };
+                    }
+                }
+            },
+            "past_perfect": {
+                name: "Past Perfect",
+                formula: "Subject + had + V3 + Object + before...",
+                build: (sub, v, obj, mode) => {
+                    const v3 = v[3];
+                    if (mode === "affirmative") {
+                        return {
+                            en: `${sub} had ${v3} ${obj} before they arrived.`,
+                            bn: `তারা পৌঁছানোর পূর্বেই ${getSubjectBn(sub)} ${obj} ${v[1]} সম্পন্ন করেছিল।`,
+                            rule: `Subject + had + V3 (${v3}) + Object + before they arrived`
+                        };
+                    } else if (mode === "negative") {
+                        return {
+                            en: `${sub} had not ${v3} ${obj} before they arrived.`,
+                            bn: `তারা পৌঁছানোর পূর্বে ${getSubjectBn(sub)} ${obj} ${v[1]} করেনি।`,
+                            rule: `Subject + had not + V3 + Object`
+                        };
+                    } else if (mode === "interrogative") {
+                        return {
+                            en: `Had ${sub.toLowerCase() === 'i' ? 'I' : sub} ${v3} ${obj} before they arrived?`,
+                            bn: `তারা পৌঁছানোর পূর্বেই কি ${getSubjectBn(sub)} ${obj} ${v[1]} করেছিল?`,
+                            rule: `Had + Subject + V3 + Object?`
+                        };
+                    } else {
+                        return {
+                            en: `Hadn't ${sub.toLowerCase() === 'i' ? 'I' : sub} ${v3} ${obj} before they arrived?`,
+                            bn: `তারা পৌঁছানোর পূর্বেই কি ${getSubjectBn(sub)} ${obj} ${v[1]} করেনি?`,
+                            rule: `Hadn't + Subject + V3 + Object?`
+                        };
+                    }
+                }
+            },
+            "past_perfect_cont": {
+                name: "Past Perfect Continuous",
+                formula: "Subject + had been + V-ing + Object",
+                build: (sub, v, obj, mode) => {
+                    const ving = v[4];
+                    if (mode === "affirmative") {
+                        return {
+                            en: `${sub} had been ${ving} ${obj} for months.`,
+                            bn: `${getSubjectBn(sub)} কয়েকমাস ধরে ${obj} ${v[1]} করছিল।`,
+                            rule: `Subject + had been + V-ing (${ving}) + Object`
+                        };
+                    } else if (mode === "negative") {
+                        return {
+                            en: `${sub} had not been ${ving} ${obj}.`,
+                            bn: `${getSubjectBn(sub)} দীর্ঘদিন ধরে ${obj} ${v[1]} করছিল না।`,
+                            rule: `Subject + had not been + V-ing + Object`
+                        };
+                    } else if (mode === "interrogative") {
+                        return {
+                            en: `Had ${sub.toLowerCase() === 'i' ? 'I' : sub} been ${ving} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি দীর্ঘ সময় ধরে ${obj} ${v[1]} করছিল?`,
+                            rule: `Had + Subject + been + V-ing + Object?`
+                        };
+                    } else {
+                        return {
+                            en: `Hadn't ${sub.toLowerCase() === 'i' ? 'I' : sub} been ${ving} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি দীর্ঘ সময় ধরে ${obj} ${v[1]} করছিল না?`,
+                            rule: `Hadn't + Subject + been + V-ing + Object?`
+                        };
+                    }
+                }
+            },
+            "future_indefinite": {
+                name: "Future Indefinite",
+                formula: "Subject + will + V1 + Object",
+                build: (sub, v, obj, mode) => {
+                    if (mode === "affirmative") {
+                        return {
+                            en: `${sub} will ${v[0]} ${obj}.`,
+                            bn: `${getSubjectBn(sub)} ভবিষ্যতে ${obj} ${v[1].replace(' করা', ' করবে/করব')}।`,
+                            rule: `Subject + will + V1 (${v[0]}) + Object`
+                        };
+                    } else if (mode === "negative") {
+                        return {
+                            en: `${sub} won't ${v[0]} ${obj}.`,
+                            bn: `${getSubjectBn(sub)} ${obj} ${v[1]} করবে না।`,
+                            rule: `Subject + won't + V1 (${v[0]}) + Object`
+                        };
+                    } else if (mode === "interrogative") {
+                        return {
+                            en: `Will ${sub.toLowerCase() === 'i' ? 'I' : sub} ${v[0]} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি ${obj} ${v[1]} করবে?`,
+                            rule: `Will + Subject + V1 (${v[0]}) + Object?`
+                        };
+                    } else {
+                        return {
+                            en: `Won't ${sub.toLowerCase() === 'i' ? 'I' : sub} ${v[0]} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি ${obj} ${v[1]} করবে না?`,
+                            rule: `Won't + Subject + V1 (${v[0]}) + Object?`
+                        };
+                    }
+                }
+            },
+            "future_continuous": {
+                name: "Future Continuous",
+                formula: "Subject + will be + V-ing + Object",
+                build: (sub, v, obj, mode) => {
+                    const ving = v[4];
+                    if (mode === "affirmative") {
+                        return {
+                            en: `${sub} will be ${ving} ${obj}.`,
+                            bn: `${getSubjectBn(sub)} তখন ${obj} ${v[1]} করতে থাকবে।`,
+                            rule: `Subject + will be + V-ing (${ving}) + Object`
+                        };
+                    } else if (mode === "negative") {
+                        return {
+                            en: `${sub} won't be ${ving} ${obj}.`,
+                            bn: `${getSubjectBn(sub)} তখন ${obj} ${v[1]} করতে থাকবে না।`,
+                            rule: `Subject + won't be + V-ing + Object`
+                        };
+                    } else if (mode === "interrogative") {
+                        return {
+                            en: `Will ${sub.toLowerCase() === 'i' ? 'I' : sub} be ${ving} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি তখন ${obj} ${v[1]} করতে থাকবে?`,
+                            rule: `Will + Subject + be + V-ing + Object?`
+                        };
+                    } else {
+                        return {
+                            en: `Won't ${sub.toLowerCase() === 'i' ? 'I' : sub} be ${ving} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি তখন ${obj} ${v[1]} করতে থাকবে না?`,
+                            rule: `Won't + Subject + be + V-ing + Object?`
+                        };
+                    }
+                }
+            },
+            "future_perfect": {
+                name: "Future Perfect",
+                formula: "Subject + will have + V3 + Object + by tomorrow...",
+                build: (sub, v, obj, mode) => {
+                    const v3 = v[3];
+                    if (mode === "affirmative") {
+                        return {
+                            en: `${sub} will have ${v3} ${obj} by tomorrow.`,
+                            bn: `আগামীকালের মধ্যেই ${getSubjectBn(sub)} ${obj} ${v[1]} শেষ করে থাকবে।`,
+                            rule: `Subject + will have + V3 (${v3}) + Object + by tomorrow`
+                        };
+                    } else if (mode === "negative") {
+                        return {
+                            en: `${sub} won't have ${v3} ${obj} by tomorrow.`,
+                            bn: `আগামীকালের মধ্যে ${getSubjectBn(sub)} ${obj} ${v[1]} শেষ করতে পারবে না।`,
+                            rule: `Subject + won't have + V3 + Object`
+                        };
+                    } else if (mode === "interrogative") {
+                        return {
+                            en: `Will ${sub.toLowerCase() === 'i' ? 'I' : sub} have ${v3} ${obj} by tomorrow?`,
+                            bn: `আগামীকালের মধ্যেই কি ${getSubjectBn(sub)} ${obj} ${v[1]} শেষ করে থাকবে?`,
+                            rule: `Will + Subject + have + V3 + Object?`
+                        };
+                    } else {
+                        return {
+                            en: `Won't ${sub.toLowerCase() === 'i' ? 'I' : sub} have ${v3} ${obj} by tomorrow?`,
+                            bn: `আগামীকালের মধ্যেই কি ${getSubjectBn(sub)} ${obj} ${v[1]} শেষ করে থাকবে না?`,
+                            rule: `Won't + Subject + have + V3 + Object?`
+                        };
+                    }
+                }
+            },
+            "future_perfect_cont": {
+                name: "Future Perfect Continuous",
+                formula: "Subject + will have been + V-ing + Object",
+                build: (sub, v, obj, mode) => {
+                    const ving = v[4];
+                    if (mode === "affirmative") {
+                        return {
+                            en: `${sub} will have been ${ving} ${obj} for five years by 2030.`,
+                            bn: `২০৩০ সাল নাগাদ ${getSubjectBn(sub)} পাঁচ বছর ধরে ${obj} ${v[1]} করতে থাকবে।`,
+                            rule: `Subject + will have been + V-ing (${ving}) + Object`
+                        };
+                    } else if (mode === "negative") {
+                        return {
+                            en: `${sub} won't have been ${ving} ${obj} by then.`,
+                            bn: `${getSubjectBn(sub)} তখন পর্যন্ত দীর্ঘ সময় ধরে ${obj} ${v[1]} করতে থাকবে না।`,
+                            rule: `Subject + won't have been + V-ing + Object`
+                        };
+                    } else if (mode === "interrogative") {
+                        return {
+                            en: `Will ${sub.toLowerCase() === 'i' ? 'I' : sub} have been ${ving} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি দীর্ঘ সময় ধরে ${obj} ${v[1]} করতে থাকবে?`,
+                            rule: `Will + Subject + have been + V-ing + Object?`
+                        };
+                    } else {
+                        return {
+                            en: `Won't ${sub.toLowerCase() === 'i' ? 'I' : sub} have been ${ving} ${obj}?`,
+                            bn: `${getSubjectBn(sub)} কি দীর্ঘ সময় ধরে ${obj} ${v[1]} করতে থাকবে না?`,
+                            rule: `Won't + Subject + have been + V-ing + Object?`
+                        };
+                    }
+                }
+            }
+        };
+
+        function getSubjectBn(sub) {
+            switch(sub) {
+                case 'I': return 'আমি';
+                case 'We': return 'আমরা';
+                case 'You': return 'তুমি / আপনি';
+                case 'They': return 'তারা';
+                case 'He': return 'সে';
+                case 'She': return 'সে';
+                case 'It': return 'এটি';
+                case 'Rahim': return 'রহিম';
+                case 'The students': return 'শিক্ষার্থীরা';
+                default: return sub;
+            }
+        }
+
+        function capitalize(str) {
+            return str.charAt(0).toUpperCase() + str.slice(1);
+        }
+
+        // Initialize Dropdown & Table
+        function initApp() {
+            populateVerbDropdown(verbsData);
+            populateVerbsTable(verbsData);
+            generateSentence();
+        }
+
+        function populateVerbDropdown(list) {
+            const select = document.getElementById('selectVerb');
+            select.innerHTML = '';
+            list.forEach((v, index) => {
+                const opt = document.createElement('option');
+                opt.value = index;
+                opt.innerText = `${v[0]} (${v[1]})`;
+                select.appendChild(opt);
+            });
+        }
+
+        function populateVerbsTable(list) {
+            const tbody = document.getElementById('verbsTableBody');
+            tbody.innerHTML = '';
+            list.forEach((v, i) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td><strong>${i + 1}</strong></td>
+                    <td><strong style="color: #1e3a8a;">${v[0]}</strong></td>
+                    <td style="color: #059669; font-weight: 600;">${v[1]}</td>
+                    <td>${v[2]}</td>
+                    <td>${v[3]}</td>
+                    <td>${v[4]}</td>
+                    <td>${v[5]}</td>
+                    <td style="color: #64748b;">${v[6]}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function filterVerbDropdown() {
+            const query = document.getElementById('verbSearch').value.toLowerCase().trim();
+            const select = document.getElementById('selectVerb');
+            select.innerHTML = '';
+            
+            const filtered = verbsData.filter(v => v[0].toLowerCase().includes(query) || v[1].includes(query));
+            filtered.forEach((v) => {
+                const opt = document.createElement('option');
+                const origIdx = verbsData.indexOf(v);
+                opt.value = origIdx;
+                opt.innerText = `${v[0]} (${v[1]})`;
+                select.appendChild(opt);
+            });
+
+            if (filtered.length > 0) {
+                onVerbChange();
+            }
+        }
+
+        function filterVerbsTable() {
+            const q = document.getElementById('tableSearch').value.toLowerCase().trim();
+            const rows = document.querySelectorAll('#verbsTableBody tr');
+            rows.forEach(r => {
+                const text = r.innerText.toLowerCase();
+                r.style.display = text.includes(q) ? '' : 'none';
+            });
+        }
+
+        function onVerbChange() {
+            const verbIdx = parseInt(document.getElementById('selectVerb').value) || 0;
+            const v = verbsData[verbIdx];
+            if (v) {
+                document.getElementById('verbFormsPreview').innerText = 
+                    `V1: ${v[0]} | V2: ${v[2]} | V3: ${v[3]} | V-ing: ${v[4]} | V-s/es: ${v[5]}`;
+            }
+            generateSentence();
+        }
+
+        let currentSentenceText = "";
+
+        function generateSentence() {
+            const tenseKey = document.getElementById('selectTense').value;
+            const mode = document.getElementById('selectMode').value;
+            const sub = document.getElementById('selectSubject').value;
+            const verbIdx = parseInt(document.getElementById('selectVerb').value) || 0;
+            const v = verbsData[verbIdx] || verbsData[0];
+            
+            let obj = document.getElementById('customObject').value.trim();
+            if (!obj) {
+                const objSelect = document.getElementById('selectObject').value;
+                obj = (objSelect === "default") ? v[6] : objSelect;
+            }
+
+            const builder = tenseFormulas[tenseKey];
+            if (!builder) return;
+
+            const res = builder.build(sub, v, obj, mode);
+            currentSentenceText = res.en;
+
+            // Highlight words
+            const words = res.en.split(' ');
+            document.getElementById('sentenceOutput').innerHTML = `
+                <span class="sub-hl">${words[0]}</span> ${words.slice(1).join(' ')}
+            `;
+            document.getElementById('meaningOutput').innerText = res.bn;
+            document.getElementById('formulaOutput').innerText = `📌 Formula: ${res.rule}`;
+        }
+
+        function speakCurrentSentence() {
+            if (!currentSentenceText) return;
+            window.speechSynthesis.cancel();
+            const utter = new SpeechSynthesisUtterance(currentSentenceText);
+            utter.lang = 'en-US';
+            utter.rate = 0.95;
+            window.speechSynthesis.speak(utter);
+        }
+
+        function speakSlow() {
+            if (!currentSentenceText) return;
+            window.speechSynthesis.cancel();
+            const utter = new SpeechSynthesisUtterance(currentSentenceText);
+            utter.lang = 'en-US';
+            utter.rate = 0.65;
+            window.speechSynthesis.speak(utter);
+        }
+
+        function randomDrill() {
+            const tenseKeys = Object.keys(tenseFormulas);
+            const modes = ["affirmative", "negative", "interrogative", "neg_interrogative"];
+            const subs = ["I", "We", "You", "They", "He", "She", "It", "Rahim", "The students"];
+
+            document.getElementById('selectTense').value = tenseKeys[Math.floor(Math.random() * tenseKeys.length)];
+            document.getElementById('selectMode').value = modes[Math.floor(Math.random() * modes.length)];
+            document.getElementById('selectSubject').value = subs[Math.floor(Math.random() * subs.length)];
+            
+            const randVerbIdx = Math.floor(Math.random() * verbsData.length);
+            document.getElementById('selectVerb').value = randVerbIdx;
+            onVerbChange();
+        }
+
+        function copySentence() {
+            if (!currentSentenceText) return;
+            navigator.clipboard.writeText(currentSentenceText).then(() => {
+                alert("Sentence copied to clipboard: " + currentSentenceText);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', initApp);
+    </script>
+</body>
+</html>

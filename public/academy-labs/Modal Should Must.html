@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnCare Academy - Modal 'Should & Must' Master Sheet</title>
+    <style>
+        :root {
+            --bg-color: #fdfbf7;
+            --card-bg: #ffffff;
+            --primary: #2563eb;
+            --secondary: #d97706;
+            --text-color: #1f2937;
+            --text-muted: #4b5563;
+            --border-color: #e5e7eb;
+            --shadow: 0 15px 35px rgba(0,0,0,0.08);
+            --3d-shadow: 0 10px 0px #1d4ed8, 0 15px 25px rgba(0,0,0,0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-size: 20px; 
+            line-height: 1.8;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background: var(--card-bg);
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+            border-bottom: 6px solid var(--primary);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.3rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s ease;
+        }
+
+        section:hover {
+            transform: translateY(-3px);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 25px;
+            font-size: 2.2rem;
+            border-bottom: 3px solid #f3f4f6;
+            padding-bottom: 12px;
+        }
+
+        h3 {
+            color: var(--secondary);
+            margin: 25px 0 15px 0;
+            font-size: 1.5rem;
+        }
+
+        p, li {
+            margin-bottom: 15px;
+            color: var(--text-color);
+            font-size: 1.15rem;
+        }
+
+        ul, ol {
+            padding-left: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            padding: 16px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 1.1rem;
+        }
+
+        th {
+            background-color: #eff6ff;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        tr:hover {
+            background-color: #fafaf9;
+        }
+
+        .code-box {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 6px solid var(--secondary);
+            font-family: monospace;
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+
+        .use-case-box {
+            display: flex;
+            background: #fffbeb;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #fcd34d;
+            margin-bottom: 25px;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .use-case-box img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .use-case-text h4 {
+            color: #b45309;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        /* Interactive Elements with Clickable Bangla */
+        .interactive-line {
+            background: #f9fafb;
+            padding: 18px 22px;
+            border-radius: 12px;
+            cursor: pointer;
+            border: 2px solid var(--border-color);
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .interactive-line:hover {
+            background: #eff6ff;
+            border-color: var(--primary);
+        }
+
+        .bangla-text {
+            display: none;
+            color: var(--secondary);
+            margin-top: 8px;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 1.2rem;
+            border-top: 1px dashed #d1d5db;
+            padding-top: 8px;
+        }
+
+        .btn-3d {
+            background: var(--primary);
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            box-shadow: var(--3d-shadow);
+            cursor: pointer;
+            transition: all 0.1s ease;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        .btn-3d:active {
+            transform: translateY(6px);
+            box-shadow: 0 4px 0px #1d4ed8, 0 8px 15px rgba(0,0,0,0.15);
+        }
+
+        .task-box {
+            background: #f0f9ff;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 6px solid #0ea5e9;
+            margin: 25px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .task-box h4 {
+            color: #0369a1;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .fill-in-box {
+            background: #f0fdf4;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #bbf7d0;
+            margin: 20px 0;
+        }
+
+        .fill-in-item {
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+
+        .blank-input {
+            border: none;
+            border-bottom: 2px solid var(--primary);
+            background: transparent;
+            width: 120px;
+            font-size: 1.2rem;
+            text-align: center;
+            color: var(--primary);
+            font-weight: bold;
+            outline: none;
+        }
+
+        .mcq-box {
+            background: #f8fafc;
+            padding: 22px;
+            border-radius: 14px;
+            border: 2px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .mcq-options label {
+            display: block;
+            margin: 10px 0;
+            padding: 12px 16px;
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .mcq-options label:hover {
+            background: #eff6ff;
+            border-color: var(--primary);
+        }
+
+        .answer-reveal {
+            display: none;
+            margin-top: 12px;
+            padding: 10px 15px;
+            background: #d1fae5;
+            color: #065f46;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .sample-answer-box {
+            display: none; 
+            margin-top: 15px; 
+            padding: 20px; 
+            background: #e0f2fe; 
+            border-radius: 10px;
+            border-left: 5px solid var(--primary);
+            font-size: 1.15rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Print styling for PDF */
+        @media print {
+            .bangla-text,
+            .answer-reveal,
+            .sample-answer-box {
+                display: block !important;
+            }
+            .btn-3d {
+                display: none !important;
+            }
+            .interactive-line, .mcq-box, .task-box, .fill-in-box, .use-case-box {
+                page-break-inside: avoid;
+            }
+            body {
+                padding: 10px;
+            }
+        }
+    
+        /* LIVE SCORE TRACKER COMPONENT */
+        .score-card {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            padding: 25px;
+            border-radius: 18px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+            text-align: center;
+        }
+
+        .score-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .score-display {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin: 5px 0;
+        }
+
+        .score-percent {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .score-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: #10b981;
+            width: 0%;
+            border-radius: 10px;
+            transition: width 0.4s ease;
+        }
+
+        .option-btn {
+            background: white;
+            border: 2px solid var(--border-color, #e5e7eb);
+            border-radius: 10px;
+            padding: 14px 20px;
+            font-size: 1.15rem;
+            color: var(--text-color, #1f2937);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: left;
+            user-select: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .option-btn:hover {
+            background: #eff6ff;
+            border-color: var(--primary, #2563eb);
+            transform: translateX(4px);
+        }
+
+        .option-btn.user-correct {
+            background-color: #d1fae5 !important;
+            border-color: #10b981 !important;
+            color: #065f46 !important;
+            font-weight: 700;
+        }
+
+        .option-btn.user-wrong {
+            background-color: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b !important;
+            font-weight: 700;
+        }
+
+        .option-btn.correct-choice {
+            background-color: #d1fae5 !important;
+            border-color: #10b981 !important;
+            color: #065f46 !important;
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <h1>LearnCare Academy</h1>
+            <p>Ultimate Modern 3D Master Sheet: All Uses of Modal "Should" & "Must"</p>
+        </header>
+
+        <!-- SECTION 1: ALL USES OF SHOULD AND MUST -->
+        <section>
+            <h2>1. Different Uses of "Should" & "Must" (Situations)</h2>
+            <p><strong>Core Structure:</strong> Subject + should/must + V1 (Base Form) + Extension</p>
+            <p>Should (উচিত) এবং Must (অবশ্যই/বাধ্যতামূলক) ইংরেজি গ্রামারের সবচেয়ে প্রয়োজনীয় দুটি মোডাল।</p>
+
+            <div class="use-case-box">
+                <img src="/images/academy/should_advice_1788100523769.jpg" alt="Advice">
+                <div class="use-case-text">
+                    <h4>1. Advice & Suggestion (উপদেশ ও পরামর্শ - Should)</h4>
+                    <p>কারো কোনো কিছু করা ভালো বা করা উচিত বোঝাতে Should বসে। এটি কোনো কঠোর নির্দেশ নয়, শুধু পরামর্শ।</p>
+                    <ul>
+                        <li><strong>Example:</strong> You <strong>should read</strong> more books. (তোমার আরো বেশি বই পড়া উচিত।)</li>
+                        <li><strong>Example:</strong> We <strong>should respect</strong> our parents. (আমাদের পিতামাতাকে সম্মান করা উচিত।)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="use-case-box">
+                <img src="/images/academy/must_obligation_1788100631687.jpg" alt="Obligation">
+                <div class="use-case-text">
+                    <h4>2. Strong Obligation & Rule (বাধ্যবাধকতা ও নিয়ম - Must)</h4>
+                    <p>কোনো কাজ করতেই হবে বা করা বাধ্যতামূলক বোঝাতে Must বসে। এটি না করলে সমস্যা হতে পারে।</p>
+                    <ul>
+                        <li><strong>Example:</strong> You <strong>must wear</strong> a helmet while driving. (গাড়ি চালানোর সময় তোমাকে অবশ্যই হেলমেট পরতে হবে।)</li>
+                        <li><strong>Example:</strong> We <strong>must obey</strong> the traffic rules. (আমাদের অবশ্যই ট্রাফিক নিয়ম মেনে চলতে হবে।)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="use-case-box">
+                <div class="use-case-text">
+                    <h4>3. Certainty / Logical Deduction (নিশ্চয়তা বা ধারণা - Must)</h4>
+                    <p>কোনো প্রমাণ দেখে কোনো বিষয়ে প্রায় ১০০% নিশ্চিত হলে Must ব্যবহৃত হয়।</p>
+                    <ul>
+                        <li><strong>Example:</strong> He has a big house and 3 cars. He <strong>must be</strong> rich. (সে অবশ্যই ধনী।)</li>
+                        <li><strong>Example:</strong> You have worked all day. You <strong>must be</strong> tired. (তুমি সারাদিন কাজ করেছ। তুমি নিশ্চয়ই ক্লান্ত।)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="use-case-box">
+                <div class="use-case-text">
+                    <h4>4. Expectation (আশা করা - Should)</h4>
+                    <p>কোনো কিছু ঘটার কথা বা এমনটি হওয়া উচিত—এমনটা আশা করলে Should বসে।</p>
+                    <ul>
+                        <li><strong>Example:</strong> He left an hour ago. He <strong>should be</strong> here by now. (তার এতক্ষণে এখানে থাকার কথা/উচিত।)</li>
+                        <li><strong>Example:</strong> This dress <strong>should fit</strong> you perfectly. (এই ড্রেসটা তোমার ঠিকঠাক হওয়া উচিত।)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: SHORT TRICK & BASIC STRUCTURE -->
+        <section>
+            <h2>2. Short Trick & 4-Way Framework</h2>
+            <div class="code-box">
+                Golden Rules:<br>
+                **Subject + should + V1** = করা উচিত (Advice/Suggestion)<br>
+                **Subject + must + V1** = অবশ্যই করতে হবে (Strong Obligation)
+            </div>
+
+            <h3>10 General Sentences (Mixed Uses):</h3>
+            <ul>
+                <li><strong>You should study</strong> hard for your exam. (পড়া উচিত - Advice)</li>
+                <li><strong>You must submit</strong> the paper tomorrow. (অবশ্যই জমা দিতে হবে - Rule)</li>
+                <li><strong>We shouldn't waste</strong> time. (নষ্ট করা উচিত নয় - Advice)</li>
+                <li><strong>Students must not cheat</strong> in the exam. (অবশ্যই চিট করবে না - Strict Rule)</li>
+                <li><strong>What should I</strong> do now? (আমার এখন কী করা উচিত? - Asking for advice)</li>
+                <li><strong>He must be</strong> sleeping right now. (সে নিশ্চয়ই ঘুমাচ্ছে - Certainty)</li>
+                <li><strong>Should we go</strong> by bus or train? (আমাদের কি যাওয়া উচিত? - Suggestion)</li>
+                <li><strong>You must try</strong> this cake, it's delicious! (তোমার অবশ্যই ট্রাই করা উচিত - Strong Recommendation)</li>
+                <li><strong>I should call</strong> my mother tonight. (আমার কল করা উচিত - Duty)</li>
+                <li><strong>They must know</strong> the secret. (তারা অবশ্যই গোপন বিষয়টি জানে - Certainty)</li>
+            </ul>
+
+            <h3>The 4-Way Sentence Framework (Example: Should & Must):</h3>
+            <table>
+                <tr>
+                    <th>Form</th>
+                    <th>Structure (Should)</th>
+                    <th>Meaning</th>
+                    <th>Structure (Must)</th>
+                    <th>Meaning</th>
+                </tr>
+                <tr>
+                    <td>Affirmative</td>
+                    <td>I should go</td>
+                    <td>আমার যাওয়া উচিত</td>
+                    <td>I must go</td>
+                    <td>আমাকে অবশ্যই যেতে হবে</td>
+                </tr>
+                <tr>
+                    <td>Negative</td>
+                    <td>I shouldn't go</td>
+                    <td>আমার যাওয়া উচিত না</td>
+                    <td>I must not go</td>
+                    <td>আমি অবশ্যই যাবো না</td>
+                </tr>
+                <tr>
+                    <td>Interrogative</td>
+                    <td>Should I go?</td>
+                    <td>আমার কি যাওয়া উচিত?</td>
+                    <td>Must I go?</td>
+                    <td>আমাকে কি অবশ্যই যেতে হবে?</td>
+                </tr>
+                <tr>
+                    <td>Negative Interrogative</td>
+                    <td>Shouldn't I go?</td>
+                    <td>আমার কি যাওয়া উচিত না?</td>
+                    <td>Mustn't I go?</td>
+                    <td>আমাকে কি অবশ্যই যেতে হবে না?</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- SECTION 3: 20 PRACTICE TABLE -->
+        <section>
+            <h2>3. 20 Examples Practice Table (Focus: Should)</h2>
+            <p><em>Note: For strict rules, replace 'should' with 'must'.</em></p>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Affirmative (করা উচিত)</th>
+                    <th>Negative (উচিত না)</th>
+                    <th>Interrogative (কি উচিত?)</th>
+                </tr>
+                <tr><td>1</td><td>I should work.</td><td>I shouldn't work.</td><td>Should I work?</td></tr>
+                <tr><td>2</td><td>We should learn.</td><td>We shouldn't learn.</td><td>Should we learn?</td></tr>
+                <tr><td>3</td><td>You should run.</td><td>You shouldn't run.</td><td>Should you run?</td></tr>
+                <tr><td>4</td><td>They should swim.</td><td>They shouldn't swim.</td><td>Should they swim?</td></tr>
+                <tr><td>5</td><td>He should walk.</td><td>He shouldn't walk.</td><td>Should he walk?</td></tr>
+                <tr><td>6</td><td>She should cook.</td><td>She shouldn't cook.</td><td>Should she cook?</td></tr>
+                <tr><td>7</td><td>It should sleep.</td><td>It shouldn't sleep.</td><td>Should it sleep?</td></tr>
+                <tr><td>8</td><td>Rahim should help.</td><td>Rahim shouldn't help.</td><td>Should Rahim help?</td></tr>
+                <tr><td>9</td><td>The boy should read.</td><td>The boy shouldn't read.</td><td>Should the boy read?</td></tr>
+                <tr><td>10</td><td>Birds should fly.</td><td>Birds shouldn't fly.</td><td>Should birds fly?</td></tr>
+                <tr><td>11</td><td>Students should study.</td><td>Students shouldn't study.</td><td>Should students study?</td></tr>
+                <tr><td>12</td><td>Farmers should grow.</td><td>Farmers shouldn't grow.</td><td>Should farmers grow?</td></tr>
+                <tr><td>13</td><td>We should travel.</td><td>We shouldn't travel.</td><td>Should we travel?</td></tr>
+                <tr><td>14</td><td>I should draw.</td><td>I shouldn't draw.</td><td>Should I draw?</td></tr>
+                <tr><td>15</td><td>Wind should blow.</td><td>Wind shouldn't blow.</td><td>Should wind blow?</td></tr>
+                <tr><td>16</td><td>Cats should jump.</td><td>Cats shouldn't jump.</td><td>Should cats jump?</td></tr>
+                <tr><td>17</td><td>Babies should drink milk.</td><td>Babies shouldn't drink tea.</td><td>Should babies drink milk?</td></tr>
+                <tr><td>18</td><td>Doctors should treat.</td><td>Doctors shouldn't ignore.</td><td>Should doctors treat?</td></tr>
+                <tr><td>19</td><td>Teachers should guide.</td><td>Teachers shouldn't scold.</td><td>Should teachers guide?</td></tr>
+                <tr><td>20</td><td>Drivers should wait.</td><td>Drivers shouldn't rush.</td><td>Should drivers wait?</td></tr>
+            </table>
+        </section>
+
+        <!-- SECTION 4: 5 EASY PRESENTATIONS -->
+        <section>
+            <h2>4. Presentations (Based on different uses of Should & Must)</h2>
+
+            <h3>Presentation 1: Health Rules (Advice - Should)</h3>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Health is the most important thing for us."<div class="bangla-text">বাংলা অর্থ: স্বাস্থ্য আমাদের জন্য সবচেয়ে গুরুত্বপূর্ণ বিষয়।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"We should drink plenty of pure water every day."<div class="bangla-text">বাংলা অর্থ: আমাদের প্রতিদিন প্রচুর বিশুদ্ধ পানি পান করা উচিত।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"We should eat fresh fruits and green vegetables."<div class="bangla-text">বাংলা অর্থ: আমাদের তাজা ফলমূল ও সবুজ শাকসবজি খাওয়া উচিত।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"People shouldn't eat too much junk food."<div class="bangla-text">বাংলা অর্থ: মানুষের খুব বেশি জাঙ্ক ফুড খাওয়া উচিত নয়।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"We should sleep at least 8 hours a night."<div class="bangla-text">বাংলা অর্থ: আমাদের রাতে অন্তত ৮ ঘণ্টা ঘুমানো উচিত।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"We should also exercise to stay fit."<div class="bangla-text">বাংলা অর্থ: সুস্থ থাকার জন্য আমাদের ব্যায়ামও করা উচিত।</div></div>
+
+            <h3>Presentation 2: Traffic Rules (Obligation - Must)</h3>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Traffic rules are for our own safety."<div class="bangla-text">বাংলা অর্থ: ট্রাফিক নিয়ম আমাদের নিজেদের নিরাপত্তার জন্য।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Drivers must stop when the red light is on."<div class="bangla-text">বাংলা অর্থ: লাল বাতি জ্বললে চালকদের অবশ্যই থামতে হবে।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"You must wear a seatbelt while driving a car."<div class="bangla-text">বাংলা অর্থ: গাড়ি চালানোর সময় তোমাকে অবশ্যই সিটবেল্ট বাঁধতে হবে।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Motorcyclists must wear a helmet."<div class="bangla-text">বাংলা অর্থ: মোটরসাইকেল আরোহীদের অবশ্যই হেলমেট পরতে হবে।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"We must not cross the road carelessly."<div class="bangla-text">বাংলা অর্থ: আমাদের অবশ্যই অসতর্কভাবে রাস্তা পার হওয়া উচিত নয়।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"If we obey rules, we can avoid accidents."<div class="bangla-text">বাংলা অর্থ: নিয়ম মেনে চললে আমরা দুর্ঘটনা এড়াতে পারি।</div></div>
+
+            <h3>Presentation 3: Exam Preparation (Advice & Obligation)</h3>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Exams are coming very soon."<div class="bangla-text">বাংলা অর্থ: পরীক্ষা খুব তাড়াতাড়ি চলে আসছে।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"You should make a daily study routine."<div class="bangla-text">বাংলা অর্থ: তোমার একটি প্রতিদিনের পড়ার রুটিন বানানো উচিত।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"You should revise all your old notes."<div class="bangla-text">বাংলা অর্থ: তোমার সব পুরোনো নোট রিভিশন দেওয়া উচিত।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"But remember, you must not cheat in the exam hall."<div class="bangla-text">বাংলা অর্থ: কিন্তু মনে রেখো, পরীক্ষার হলে তুমি অবশ্যই নকল করবে না।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"You must bring your own pen and admit card."<div class="bangla-text">বাংলা অর্থ: তোমাকে অবশ্যই নিজের কলম এবং অ্যাডমিট কার্ড আনতে হবে।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Best of luck for your exams!"<div class="bangla-text">বাংলা অর্থ: তোমার পরীক্ষার জন্য শুভকামনা!</div></div>
+
+            <h3>Presentation 4: Solving a Problem (Seeking Advice - Should)</h3>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I am facing a big problem right now."<div class="bangla-text">বাংলা অর্থ: আমি এখন একটি বড় সমস্যার সম্মুখীন হচ্ছি।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I lost my friend's favorite book."<div class="bangla-text">বাংলা অর্থ: আমি আমার বন্ধুর সবচেয়ে প্রিয় বইটি হারিয়ে ফেলেছি।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"What should I do now?"<div class="bangla-text">বাংলা অর্থ: আমার এখন কী করা উচিত?</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Should I tell him the truth immediately?"<div class="bangla-text">বাংলা অর্থ: আমার কি তাকে এখনই সত্যিটা বলে দেওয়া উচিত?</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Or should I buy a new copy first?"<div class="bangla-text">বাংলা অর্থ: নাকি আমার প্রথমে একটি নতুন কপি কেনা উচিত?</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I think I should apologize to him first."<div class="bangla-text">বাংলা অর্থ: আমি মনে করি আমার প্রথমে তার কাছে ক্ষমা চাওয়া উচিত।</div></div>
+
+            <h3>Presentation 5: The Mystery Guest (Certainty - Must)</h3>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Look at that man stepping out of the big car."<div class="bangla-text">বাংলা অর্থ: বড় গাড়ি থেকে নামা ওই লোকটির দিকে তাকাও।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"He is wearing a very expensive suit."<div class="bangla-text">বাংলা অর্থ: তিনি একটি খুব দামি স্যুট পরে আছেন।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"He has three bodyguards around him."<div class="bangla-text">বাংলা অর্থ: তার চারপাশে তিনজন বডিগার্ড আছে।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"He must be a very important person."<div class="bangla-text">বাংলা অর্থ: তিনি নিশ্চয়ই খুব গুরুত্বপূর্ণ কোনো ব্যক্তি হবেন।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"He must be the owner of this company."<div class="bangla-text">বাংলা অর্থ: তিনি নিশ্চয়ই এই কোম্পানির মালিক।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Let's go and greet him properly."<div class="bangla-text">বাংলা অর্থ: চলো গিয়ে তাকে ঠিকমতো অভিবাদন জানাই।</div></div>
+
+            <!-- STUDENT TASK FOR PRESENTATION -->
+            <div class="task-box">
+                <h4>🎓 Student Task: Make Your Own Presentation!</h4>
+                <p>Make a presentation (5-6 sentences) using "Should" and "Must". Follow the topics below!</p>
+                <ul>
+                    <li><strong>1. School Rules (Must & Shouldn't):</strong> <em>(Hints: must wear uniform, must reach on time, shouldn't make noise, must respect teachers)</em></li>
+                    <li><strong>2. Good Environment (Should):</strong> <em>(Hints: should plant trees, shouldn't throw plastic, should keep city clean, should save water)</em></li>
+                    <li><strong>3. Friendship Advice (Should):</strong> <em>(Hints: should help friends, shouldn't lie, should keep secrets, should support in bad times)</em></li>
+                </ul>
+                <button class="btn-3d" onclick="toggleAnswers('pres-answers')">Show Sample Answers</button>
+                <div id="pres-answers" class="sample-answer-box">
+                    <p><strong>1. School Rules:</strong> Every student must follow the school rules. You must wear the correct uniform. You must reach the school on time. You shouldn't make loud noise in the classroom. You must respect your teachers. Rules make a school disciplined.</p>
+                    <p><strong>2. Good Environment:</strong> Our environment is getting polluted. We should plant more trees every year. We shouldn't throw plastic bags in the river. We should keep our city clean. We should also save drinking water. It is our duty to protect the earth.</p>
+                    <p><strong>3. Friendship Advice:</strong> Friendship is a beautiful bond. We should always help our friends. We shouldn't lie to them. We should keep their secrets safe. If a friend is in danger, we should support them. A true friend is a great blessing.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: 5 EASY STORIES -->
+        <section>
+            <h2>5. 5 Easy Short Stories (Focusing on 'Should/Must')</h2>
+            
+            <h3>Story 1: The Wise Teacher (Advice - Should)</h3>
+            <p>Raju was a lazy student. He didn't want to study. One day, his teacher called him. She said, "Raju, you have a bright mind. You should read books every day. You shouldn't waste time playing games all day. If you study hard, you will be successful." Raju realized his mistake. He thought, "I should listen to my teacher." From that day, he started studying hard.</p>
+            <p><strong>Bangla Summary:</strong> রাজু একজন অলস ছাত্র ছিল। সে পড়তে চাইতো না। একদিন তার শিক্ষিকা তাকে ডাকলেন। তিনি বললেন, "রাজু, তোমার একটি ভালো মস্তিষ্ক আছে। তোমার প্রতিদিন বই পড়া উচিত। সারাদিন গেম খেলে তোমার সময় নষ্ট করা উচিত নয়। যদি তুমি কঠোর পড়াশোনা করো, তুমি সফল হবে।" রাজু তার ভুল বুঝতে পারল। সে ভাবল, "আমার শিক্ষিকার কথা শোনা উচিত।" সেদিন থেকে সে কঠোর পড়াশোনা শুরু করল।</p>
+
+            <h3>Story 2: The Strict Police Officer (Obligation - Must)</h3>
+            <p>It was a busy morning. A young man was riding a motorcycle very fast. He was not wearing a helmet. A traffic police officer stopped him. The officer said, "You must not drive so fast on this road! And where is your helmet? You must wear a helmet for your own safety." The young man was sorry. He said, "I will not do it again." The officer gave him a fine because rules must be followed.</p>
+            <p><strong>Bangla Summary:</strong> এটি একটি ব্যস্ত সকাল ছিল। এক যুবক খুব দ্রুত মোটরসাইকেল চালাচ্ছিল। সে হেলমেট পরেনি। একজন ট্রাফিক পুলিশ তাকে থামাল। অফিসার বললেন, "তোমার এই রাস্তায় এত দ্রুত গাড়ি চালানো উচিত নয় (অবশ্যই চালাবে না)! এবং তোমার হেলমেট কোথায়? নিজের নিরাপত্তার জন্য তোমাকে অবশ্যই হেলমেট পরতে হবে।" যুবকটি দুঃখিত হলো। সে বলল, "আমি আর এমন করবো না।" অফিসার তাকে জরিমানা করলেন কারণ নিয়ম অবশ্যই মেনে চলতে হবে।</p>
+
+            <h3>Story 3: The Broken Window (Seeking Advice - Should)</h3>
+            <p>While playing cricket, Hasan hit the ball very hard. Crash! The ball broke their neighbor's window. Hasan was scared. He asked his friend, "What should we do? Should we run away?" His friend replied, "No, we shouldn't run away. That is bad. We should go and say sorry to Mr. Ali." They went to Mr. Ali and told him the truth. Mr. Ali was angry but he forgave them because they were honest.</p>
+            <p><strong>Bangla Summary:</strong> ক্রিকেট খেলার সময় হাসান খুব জোরে বলে আঘাত করল। ক্র্যাশ! বলটি তাদের প্রতিবেশীর জানালা ভেঙে ফেলল। হাসান ভয় পেয়ে গেল। সে তার বন্ধুকে জিজ্ঞেস করল, "আমাদের কী করা উচিত? আমাদের কি পালিয়ে যাওয়া উচিত?" তার বন্ধু উত্তর দিল, "না, আমাদের পালানো উচিত নয়। ওটা খারাপ। আমাদের গিয়ে মিস্টার আলীকে স্যরি বলা উচিত।" তারা মিস্টার আলীর কাছে গেল এবং সত্যিটা বলল। মিস্টার আলী রেগে গিয়েছিলেন তবে তারা সৎ হওয়ার কারণে তিনি তাদের ক্ষমা করে দিয়েছিলেন।</p>
+
+            <h3>Story 4: The Mystery Gift (Certainty - Must)</h3>
+            <p>Sara woke up on her birthday. She saw a huge box wrapped in red paper on her table. There was no name on it. She thought, "Who sent this? It must be from my father because he knows I love red. The box is very heavy. It must be the big dollhouse I asked for." When she opened it, she was right! It was a beautiful dollhouse. She was very happy.</p>
+            <p><strong>Bangla Summary:</strong> সারা তার জন্মদিনে ঘুম থেকে উঠল। সে তার টেবিলে লাল কাগজে মোড়ানো একটি বিশাল বাক্স দেখল। এতে কোনো নাম ছিল না। সে ভাবল, "এটা কে পাঠিয়েছে? এটা নিশ্চয়ই আমার বাবার কাছ থেকে এসেছে কারণ তিনি জানেন আমি লাল রঙ ভালোবাসি। বাক্সটি খুব ভারী। এটি নিশ্চয়ই সেই বড় ডলহাউস যা আমি চেয়েছিলাম।" যখন সে এটি খুলল, সে সঠিক ছিল! এটি একটি সুন্দর ডলহাউস ছিল। সে খুব খুশি হলো।</p>
+
+            <h3>Story 5: The Doctor's Advice (Strong Recommendation - Must/Should)</h3>
+            <p>Mr. Kamal was very sick. He went to the doctor. The doctor checked him and said, "You are very weak. You should take a rest for a few days. You must not eat oily food from outside. And you must take these medicines on time. If you don't listen, your condition will get worse." Mr. Kamal nodded. He knew he must follow the doctor's rules to get well.</p>
+            <p><strong>Bangla Summary:</strong> মিস্টার কামাল খুব অসুস্থ ছিলেন। তিনি ডাক্তারের কাছে গেলেন। ডাক্তার তাকে পরীক্ষা করলেন এবং বললেন, "আপনি খুব দুর্বল। আপনার কয়েকদিন বিশ্রাম নেওয়া উচিত। আপনার অবশ্যই বাইরের তেলযুক্ত খাবার খাওয়া উচিত নয় (খাবেন না)। এবং আপনাকে অবশ্যই সময়মতো এই ওষুধগুলো খেতে হবে। আপনি যদি কথা না শোনেন, আপনার অবস্থা আরও খারাপ হবে।" মিস্টার কামাল মাথা নাড়লেন। তিনি জানতেন সুস্থ হওয়ার জন্য তাকে অবশ্যই ডাক্তারের নিয়ম মেনে চলতে হবে।</p>
+
+            <!-- STUDENT TASK FOR STORY -->
+            <div class="task-box">
+                <h4>✍️ Student Task: Complete the Story!</h4>
+                <p>Start writing a story using "should" or "must" from this starting line. Make at least 6-8 sentences!</p>
+                <p style="font-weight: bold; color: var(--primary);">Starting Line: "We were in the middle of a deep forest. Suddenly, we heard a loud roar..."</p>
+                <p><em>Hints: (must be a tiger/lion, we should climb a tree, we must not make a sound, should we run?, we shouldn't panic)</em></p>
+                <button class="btn-3d" onclick="toggleAnswers('story-answers')">Show Sample Answer</button>
+                <div id="story-answers" class="sample-answer-box">
+                    <p><strong>Sample Story:</strong> We were in the middle of a deep forest. Suddenly, we heard a loud roar. My friend said, "That must be a hungry lion!" We were very scared. I asked, "What should we do? Should we run?" He said, "No, we shouldn't run. The lion might chase us. We should climb a tall tree quickly." We climbed a big tree. We thought we must not make any sound. We waited there until the lion went away.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: 30 FILL IN THE BLANKS -->
+        <section>
+            <h2>6. 30 Fill in the Blanks (Should & Must)</h2>
+            <p>Fill in the blanks using proper forms: <strong>should/must + V1 (Base verb)</strong>.</p>
+            <div class="fill-in-box">
+                <!-- Advice / Suggestion (Should) -->
+                <h4 style="color:var(--secondary); margin-bottom:10px;">Structure 1: Advice/Suggestion (Should)</h4>
+                <div class="fill-in-item">1. You look tired. You <input type="text" class="blank-input" placeholder="..."> (take) some rest.</div>
+                <div class="fill-in-item">2. He <input type="text" class="blank-input" placeholder="..."> (listen) to his parents.</div>
+                <div class="fill-in-item">3. We <input type="text" class="blank-input" placeholder="..."> (help) the poor people.</div>
+                <div class="fill-in-item">4. Students <input type="text" class="blank-input" placeholder="..."> (read) everyday.</div>
+                <div class="fill-in-item">5. You <input type="text" class="blank-input" placeholder="..."> (not / waste) your money.</div>
+
+                <!-- Obligation / Rule (Must) -->
+                <h4 style="color:var(--secondary); margin-top:20px; margin-bottom:10px;">Structure 2: Obligation/Rule (Must)</h4>
+                <div class="fill-in-item">6. You <input type="text" class="blank-input" placeholder="..."> (stop) at the red traffic light.</div>
+                <div class="fill-in-item">7. Everyone <input type="text" class="blank-input" placeholder="..."> (wear) a uniform in this school.</div>
+                <div class="fill-in-item">8. You <input type="text" class="blank-input" placeholder="..."> (show) your passport at the airport.</div>
+                <div class="fill-in-item">9. We <input type="text" class="blank-input" placeholder="..."> (protect) our environment.</div>
+                <div class="fill-in-item">10. You <input type="text" class="blank-input" placeholder="..."> (not / touch) the hot wire. (strict rule)</div>
+
+                <!-- Asking for Advice -->
+                <h4 style="color:var(--secondary); margin-top:20px; margin-bottom:10px;">Structure 3: Asking for Advice (Should I...?)</h4>
+                <div class="fill-in-item">11. What <input type="text" class="blank-input" placeholder="..."> I <input type="text" class="blank-input" placeholder="..."> (do) now?</div>
+                <div class="fill-in-item">12. <input type="text" class="blank-input" placeholder="..."> we <input type="text" class="blank-input" placeholder="..."> (call) the police?</div>
+                <div class="fill-in-item">13. Where <input type="text" class="blank-input" placeholder="..."> I <input type="text" class="blank-input" placeholder="..."> (put) this box?</div>
+                <div class="fill-in-item">14. <input type="text" class="blank-input" placeholder="..."> I <input type="text" class="blank-input" placeholder="..."> (tell) him the secret?</div>
+                <div class="fill-in-item">15. How much water <input type="text" class="blank-input" placeholder="..."> I <input type="text" class="blank-input" placeholder="..."> (drink) daily?</div>
+
+                <!-- Certainty (Must be) -->
+                <h4 style="color:var(--secondary); margin-top:20px; margin-bottom:10px;">Structure 4: Certainty / Deduction (Must be)</h4>
+                <div class="fill-in-item">16. He didn't eat all day. He <input type="text" class="blank-input" placeholder="..."> (be) very hungry.</div>
+                <div class="fill-in-item">17. They have walked 10 miles. They <input type="text" class="blank-input" placeholder="..."> (be) tired.</div>
+                <div class="fill-in-item">18. The light is on. Someone <input type="text" class="blank-input" placeholder="..."> (be) in the room.</div>
+                <div class="fill-in-item">19. It is freezing cold outside. It <input type="text" class="blank-input" placeholder="..."> (be) winter.</div>
+                <div class="fill-in-item">20. She got an A+. She <input type="text" class="blank-input" placeholder="..."> (be) very smart.</div>
+
+                <!-- Expectation (Should be) -->
+                <h4 style="color:var(--secondary); margin-top:20px; margin-bottom:10px;">Structure 5: Expectation (Should)</h4>
+                <div class="fill-in-item">21. The train left 2 hours ago. It <input type="text" class="blank-input" placeholder="..."> (arrive) soon.</div>
+                <div class="fill-in-item">22. They practiced a lot. They <input type="text" class="blank-input" placeholder="..."> (win) the match easily.</div>
+                <div class="fill-in-item">23. This puzzle <input type="text" class="blank-input" placeholder="..."> (not / be) too difficult for you.</div>
+                <div class="fill-in-item">24. He sent the letter yesterday. You <input type="text" class="blank-input" placeholder="..."> (get) it today.</div>
+                <div class="fill-in-item">25. The road is clear, so we <input type="text" class="blank-input" placeholder="..."> (reach) there in an hour.</div>
+
+                <!-- Mixed Challenge -->
+                <h4 style="color:var(--secondary); margin-top:20px; margin-bottom:10px;">Structure 6: Mixed Challenge</h4>
+                <div class="fill-in-item">26. You <input type="text" class="blank-input" placeholder="..."> (not / talk) loudly in the library. (Rule)</div>
+                <div class="fill-in-item">27. He has a lot of properties. He <input type="text" class="blank-input" placeholder="..."> (be) a millionaire. (Certainty)</div>
+                <div class="fill-in-item">28. I think you <input type="text" class="blank-input" placeholder="..."> (apologize) to her. (Advice)</div>
+                <div class="fill-in-item">29. We <input type="text" class="blank-input" placeholder="..."> (pay) taxes to the government. (Obligation)</div>
+                <div class="fill-in-item">30. <input type="text" class="blank-input" placeholder="..."> we <input type="text" class="blank-input" placeholder="..."> (buy) this red dress or the blue one? (Asking advice)</div>
+            </div>
+            <button class="btn-3d" onclick="toggleAnswers('fill-answers')">Show Answers</button>
+            <div id="fill-answers" class="sample-answer-box">
+                <p><strong>Structure 1: Advice</strong><br>
+                1. should take | 2. should listen | 3. should help | 4. should read | 5. shouldn't waste</p>
+                <p><strong>Structure 2: Obligation/Rule</strong><br>
+                6. must stop | 7. must wear | 8. must show | 9. must protect | 10. must not touch</p>
+                <p><strong>Structure 3: Asking Advice</strong><br>
+                11. should ... do | 12. Should ... call | 13. should ... put | 14. Should ... tell | 15. should ... drink</p>
+                <p><strong>Structure 4: Certainty</strong><br>
+                16. must be | 17. must be | 18. must be | 19. must be | 20. must be</p>
+                <p><strong>Structure 5: Expectation</strong><br>
+                21. should arrive | 22. should win | 23. shouldn't be | 24. should get | 25. should reach</p>
+                <p><strong>Structure 6: Mixed</strong><br>
+                26. must not talk | 27. must be | 28. should apologize | 29. must pay | 30. Should ... buy</p>
+            </div>
+        </section>
+
+        <!-- SECTION 7: 20 MCQ QUIZ -->
+        <section>
+            <h2>7. 20 MCQ Quiz (Click Button to Reveal Answers)</h2>
+            <p>Click your chosen answer for instant visual feedback. Your score, percentage, and mastery badge will be updated automatically in real-time!</p>
+
+            <!-- LIVE SCORE TRACKER COMPONENT -->
+            <div class="score-card" id="quiz-score-card">
+                <div class="score-title">⭐ Student Performance Scoreboard ⭐</div>
+                <div class="score-display">
+                    Score: <span id="score-points">0</span> / <span id="total-questions">20</span>
+                    <span class="score-percent" id="score-percent">(0%)</span>
+                </div>
+                <div class="score-badge" id="score-badge">Click an answer below to start the test!</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="score-progress"></div>
+                </div>
+                <div style="margin-top: 20px;">
+                    <button class="btn-3d" style="padding: 10px 22px; font-size: 1.05rem; margin-right: 12px; background: #3b82f6;" onclick="resetQuiz()">🔄 Retake / Reset Quiz</button>
+                    <button class="btn-3d" style="padding: 10px 22px; font-size: 1.05rem; background: #059669;" onclick="showAllAnswers()">👁️ Reveal All Answers</button>
+                </div>
+            </div>
+
+            <!-- MCQ ITEMS -->
+            <div class="mcq-box" id="q1" data-correct="B" data-answered="false">
+                <p><strong>1. Which sentence expresses a strong rule or obligation?</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 1, 'A')">A) You should drink water.</div>
+                    <div class="option-btn" onclick="checkOption(this, 1, 'B')">B) You must wear a seatbelt.</div>
+                    <div class="option-btn" onclick="checkOption(this, 1, 'C')">C) What should I do?</div>
+                </div>
+                <div class="answer-reveal" id="ans-1">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q2" data-correct="C" data-answered="false">
+                <p><strong>2. "You look sick. You ___ go to the doctor." (Friendly advice)</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 2, 'A')">A) will</div>
+                    <div class="option-btn" onclick="checkOption(this, 2, 'B')">B) must</div>
+                    <div class="option-btn" onclick="checkOption(this, 2, 'C')">C) should</div>
+                </div>
+                <div class="answer-reveal" id="ans-2">
+                    <strong>✓ Correct Answer: C</strong> — Correct answer is C
+                </div>
+            </div>
+            <div class="mcq-box" id="q3" data-correct="C" data-answered="false">
+                <p><strong>3. "He has been working for 12 hours. He ___ be very tired." (Certainty)</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 3, 'A')">A) might</div>
+                    <div class="option-btn" onclick="checkOption(this, 3, 'B')">B) should</div>
+                    <div class="option-btn" onclick="checkOption(this, 3, 'C')">C) must</div>
+                </div>
+                <div class="answer-reveal" id="ans-3">
+                    <strong>✓ Correct Answer: C</strong> — Correct answer is C
+                </div>
+            </div>
+            <div class="mcq-box" id="q4" data-correct="B" data-answered="false">
+                <p><strong>4. "___ I call him now or later?" (Asking for advice)</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 4, 'A')">A) Must</div>
+                    <div class="option-btn" onclick="checkOption(this, 4, 'B')">B) Should</div>
+                    <div class="option-btn" onclick="checkOption(this, 4, 'C')">C) Will</div>
+                </div>
+                <div class="answer-reveal" id="ans-4">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q5" data-correct="C" data-answered="false">
+                <p><strong>5. Which one means "এটা তোমার করা একদম উচিত না / নিষিদ্ধ"?</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 5, 'A')">A) You shouldn't do this.</div>
+                    <div class="option-btn" onclick="checkOption(this, 5, 'B')">B) You might not do this.</div>
+                    <div class="option-btn" onclick="checkOption(this, 5, 'C')">C) You must not do this.</div>
+                </div>
+                <div class="answer-reveal" id="ans-5">
+                    <strong>✓ Correct Answer: C</strong> — Correct answer is C
+                </div>
+            </div>
+            <div class="mcq-box" id="q6" data-correct="B" data-answered="false">
+                <p><strong>6. "All passengers ___ show their tickets." (Official Rule)</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 6, 'A')">A) could</div>
+                    <div class="option-btn" onclick="checkOption(this, 6, 'B')">B) must</div>
+                    <div class="option-btn" onclick="checkOption(this, 6, 'C')">C) should</div>
+                </div>
+                <div class="answer-reveal" id="ans-6">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q7" data-correct="C" data-answered="false">
+                <p><strong>7. I think we ___ leave now before it rains.</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 7, 'A')">A) must</div>
+                    <div class="option-btn" onclick="checkOption(this, 7, 'B')">B) would</div>
+                    <div class="option-btn" onclick="checkOption(this, 7, 'C')">C) should</div>
+                </div>
+                <div class="answer-reveal" id="ans-7">
+                    <strong>✓ Correct Answer: C</strong> — Correct answer is C
+                </div>
+            </div>
+            <div class="mcq-box" id="q8" data-correct="B" data-answered="false">
+                <p><strong>8. Translate: তোমার ধূমপান করা উচিত নয়।</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 8, 'A')">A) You must not smoke.</div>
+                    <div class="option-btn" onclick="checkOption(this, 8, 'B')">B) You shouldn't smoke.</div>
+                    <div class="option-btn" onclick="checkOption(this, 8, 'C')">C) You could not smoke.</div>
+                </div>
+                <div class="answer-reveal" id="ans-8">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q9" data-correct="B" data-answered="false">
+                <p><strong>9. "She speaks fluent French. She ___ be from France."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 9, 'A')">A) should</div>
+                    <div class="option-btn" onclick="checkOption(this, 9, 'B')">B) must</div>
+                    <div class="option-btn" onclick="checkOption(this, 9, 'C')">C) can</div>
+                </div>
+                <div class="answer-reveal" id="ans-9">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q10" data-correct="B" data-answered="false">
+                <p><strong>10. Find the mistake: "You must to go now."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 10, 'A')">A) must</div>
+                    <div class="option-btn" onclick="checkOption(this, 10, 'B')">B) to (should not be there)</div>
+                    <div class="option-btn" onclick="checkOption(this, 10, 'C')">C) go</div>
+                </div>
+                <div class="answer-reveal" id="ans-10">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q11" data-correct="C" data-answered="false">
+                <p><strong>11. "This movie is amazing. You ___ watch it!" (Strong recommendation)</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 11, 'A')">A) might</div>
+                    <div class="option-btn" onclick="checkOption(this, 11, 'B')">B) could</div>
+                    <div class="option-btn" onclick="checkOption(this, 11, 'C')">C) must</div>
+                </div>
+                <div class="answer-reveal" id="ans-11">
+                    <strong>✓ Correct Answer: C</strong> — Correct answer is C
+                </div>
+            </div>
+            <div class="mcq-box" id="q12" data-correct="A" data-answered="false">
+                <p><strong>12. "They practiced every day. They ___ win the game today." (Expectation)</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 12, 'A')">A) should</div>
+                    <div class="option-btn" onclick="checkOption(this, 12, 'B')">B) must</div>
+                    <div class="option-btn" onclick="checkOption(this, 12, 'C')">C) have</div>
+                </div>
+                <div class="answer-reveal" id="ans-12">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+            <div class="mcq-box" id="q13" data-correct="C" data-answered="false">
+                <p><strong>13. Which sentence is correct?</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 13, 'A')">A) I should studying.</div>
+                    <div class="option-btn" onclick="checkOption(this, 13, 'B')">B) I should studied.</div>
+                    <div class="option-btn" onclick="checkOption(this, 13, 'C')">C) I should study.</div>
+                </div>
+                <div class="answer-reveal" id="ans-13">
+                    <strong>✓ Correct Answer: C</strong> — Correct answer is C
+                </div>
+            </div>
+            <div class="mcq-box" id="q14" data-correct="B" data-answered="false">
+                <p><strong>14. "We ___ respect our teachers." (Moral duty)</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 14, 'A')">A) might</div>
+                    <div class="option-btn" onclick="checkOption(this, 14, 'B')">B) should</div>
+                    <div class="option-btn" onclick="checkOption(this, 14, 'C')">C) can</div>
+                </div>
+                <div class="answer-reveal" id="ans-14">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q15" data-correct="B" data-answered="false">
+                <p><strong>15. Translate: আমাকে অবশ্যই এখন যেতে হবে।</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 15, 'A')">A) I should go now.</div>
+                    <div class="option-btn" onclick="checkOption(this, 15, 'B')">B) I must go now.</div>
+                    <div class="option-btn" onclick="checkOption(this, 15, 'C')">C) I might go now.</div>
+                </div>
+                <div class="answer-reveal" id="ans-15">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q16" data-correct="C" data-answered="false">
+                <p><strong>16. "What ___ I wear for the party?"</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 16, 'A')">A) must</div>
+                    <div class="option-btn" onclick="checkOption(this, 16, 'B')">B) would</div>
+                    <div class="option-btn" onclick="checkOption(this, 16, 'C')">C) should</div>
+                </div>
+                <div class="answer-reveal" id="ans-16">
+                    <strong>✓ Correct Answer: C</strong> — Correct answer is C
+                </div>
+            </div>
+            <div class="mcq-box" id="q17" data-correct="A" data-answered="false">
+                <p><strong>17. "You ___ not enter this room. It is highly restricted."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 17, 'A')">A) must</div>
+                    <div class="option-btn" onclick="checkOption(this, 17, 'B')">B) should</div>
+                    <div class="option-btn" onclick="checkOption(this, 17, 'C')">C) might</div>
+                </div>
+                <div class="answer-reveal" id="ans-17">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+            <div class="mcq-box" id="q18" data-correct="C" data-answered="false">
+                <p><strong>18. "It is 8 PM. He left at 7 PM. He ___ be home by now." (Logical expectation)</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 18, 'A')">A) must</div>
+                    <div class="option-btn" onclick="checkOption(this, 18, 'B')">B) should</div>
+                    <div class="option-btn" onclick="checkOption(this, 18, 'C')">C) both A and B can fit</div>
+                </div>
+                <div class="answer-reveal" id="ans-18">
+                    <strong>✓ Correct Answer: C</strong> — Correct answer is C
+                </div>
+            </div>
+            <div class="mcq-box" id="q19" data-correct="B" data-answered="false">
+                <p><strong>19. "___ we take a taxi? It's raining."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 19, 'A')">A) Must</div>
+                    <div class="option-btn" onclick="checkOption(this, 19, 'B')">B) Should</div>
+                    <div class="option-btn" onclick="checkOption(this, 19, 'C')">C) Will</div>
+                </div>
+                <div class="answer-reveal" id="ans-19">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q20" data-correct="C" data-answered="false">
+                <p><strong>20. Which sentence expresses 100% certainty?</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 20, 'A')">A) He should be the thief.</div>
+                    <div class="option-btn" onclick="checkOption(this, 20, 'B')">B) He might be the thief.</div>
+                    <div class="option-btn" onclick="checkOption(this, 20, 'C')">C) He must be the thief.</div>
+                </div>
+                <div class="answer-reveal" id="ans-20">
+                    <strong>✓ Correct Answer: C</strong> — Correct answer is C
+                </div>
+            </div>
+</section>
+
+        <footer>
+            &copy; 2026 LearnCare Academy. Modern 3D Interactive Master Sheet. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        function toggleBangla(element) {
+            const banglaDiv = element.querySelector('.bangla-text');
+            if (banglaDiv.style.display === 'block') {
+                banglaDiv.style.display = 'none';
+            } else {
+                banglaDiv.style.display = 'block';
+            }
+        }
+
+        function toggleAnswers(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === 'block') {
+                el.style.display = 'none';
+            } else {
+                el.style.display = 'block';
+            }
+        }
+    
+        /* LIVE SCORE TRACKING ENGINE */
+        let userScore = 0;
+        let answeredQuestions = new Set();
+        let totalQuizQuestions = 20;
+
+        function checkOption(btn, qNum, chosenOption) {
+            const box = document.getElementById('q' + qNum);
+            if (!box || box.dataset.answered === 'true') return;
+            box.dataset.answered = 'true';
+            answeredQuestions.add(qNum);
+
+            const correctOption = box.dataset.correct;
+            const allOptions = box.querySelectorAll('.option-btn');
+
+            allOptions.forEach(opt => {
+                opt.style.pointerEvents = 'none';
+                if (opt.textContent.trim().startsWith(correctOption + ')')) {
+                    opt.classList.add('correct-choice');
+                }
+            });
+
+            if (chosenOption === correctOption) {
+                btn.classList.add('user-correct');
+                userScore++;
+            } else {
+                btn.classList.add('user-wrong');
+            }
+
+            const revealDiv = document.getElementById('ans-' + qNum);
+            if (revealDiv) revealDiv.style.display = 'block';
+
+            updateScoreCard();
+        }
+
+        function updateScoreCard() {
+            const scorePts = document.getElementById('score-points');
+            if (!scorePts) return;
+            scorePts.textContent = userScore;
+            const totalQ = parseInt(document.getElementById('total-questions').textContent) || 20;
+            const pct = Math.round((userScore / totalQ) * 100);
+            document.getElementById('score-percent').textContent = '(' + pct + '%)';
+            document.getElementById('score-progress').style.width = pct + '%';
+
+            const badge = document.getElementById('score-badge');
+            if (answeredQuestions.size === totalQ) {
+                if (userScore >= totalQ * 0.9) {
+                    badge.textContent = '🏆 Outstanding! Master of English!';
+                    badge.style.background = '#059669';
+                } else if (userScore >= totalQ * 0.7) {
+                    badge.textContent = '🌟 Excellent Job! Great Spoken Skills!';
+                    badge.style.background = '#2563eb';
+                } else if (userScore >= totalQ * 0.5) {
+                    badge.textContent = '👍 Good Effort! Revise and practice more!';
+                    badge.style.background = '#d97706';
+                } else {
+                    badge.textContent = '💡 Needs Practice! Please review the rules above.';
+                    badge.style.background = '#dc2626';
+                }
+            } else {
+                badge.textContent = 'Progress: ' + answeredQuestions.size + ' of ' + totalQ + ' answered';
+            }
+        }
+
+        function resetQuiz() {
+            userScore = 0;
+            answeredQuestions.clear();
+            document.querySelectorAll('.mcq-box').forEach(box => {
+                box.dataset.answered = 'false';
+                box.querySelectorAll('.option-btn').forEach(btn => {
+                    btn.classList.remove('user-correct', 'user-wrong', 'correct-choice');
+                    btn.style.pointerEvents = 'auto';
+                });
+                const qNum = box.id.replace('q', '');
+                const revealDiv = document.getElementById('ans-' + qNum);
+                if (revealDiv) revealDiv.style.display = 'none';
+            });
+            document.getElementById('score-points').textContent = '0';
+            document.getElementById('score-percent').textContent = '(0%)';
+            document.getElementById('score-progress').style.width = '0%';
+            document.getElementById('score-badge').textContent = 'Quiz Reset! Start answering questions.';
+            document.getElementById('score-badge').style.background = 'rgba(255,255,255,0.2)';
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.mcq-box').forEach(box => {
+                const correctOption = box.dataset.correct;
+                box.querySelectorAll('.option-btn').forEach(btn => {
+                    if (btn.textContent.trim().startsWith(correctOption + ')')) {
+                        btn.classList.add('correct-choice');
+                    }
+                });
+                const qNum = box.id.replace('q', '');
+                const revealDiv = document.getElementById('ans-' + qNum);
+                if (revealDiv) revealDiv.style.display = 'block';
+            });
+        }
+
+    </script>
+</body>
+</html>

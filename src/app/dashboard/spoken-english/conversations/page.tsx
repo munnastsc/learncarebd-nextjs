@@ -245,14 +245,38 @@ export default function SituationalConversationsPage() {
                     <div className="absolute right-0 top-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
                     <div className="relative z-10 max-w-3xl">
                         <span className="inline-flex items-center gap-1.5 rounded-full border border-teal-400/30 bg-teal-500/20 px-3.5 py-1 text-[11px] font-black uppercase tracking-wider text-teal-300 mb-3">
-                            <Sparkles size={12} /> 100% FREE · 40 REAL-LIFE SITUATIONAL CONVERSATIONS
+                            <Sparkles size={12} /> 100% FREE · {SITUATIONAL_CONVERSATIONS.length} REAL-LIFE SITUATIONAL CONVERSATIONS
                         </span>
                         <h1 className="text-2xl sm:text-4xl font-black tracking-tight leading-tight">
-                            Real-Life Conversation Lab: <span className="text-teal-400">৪০টি বাস্তব পরিস্থিতি ও লাইভ ডায়ালগ</span>
+                            Real-Life Conversation Lab: <span className="text-teal-400">{SITUATIONAL_CONVERSATIONS.length}টি বাস্তব পরিস্থিতি ও লাইভ ডায়ালগ</span>
                         </h1>
                         <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
                             কফি শপ, হোটেল, রেস্তোরাঁ, ডাক্তারখানা, এয়ারপোর্ট, জব ইন্টারভিউ, ব্যাংক, কেনাকাটা ও বন্ধুত্ব—প্রতিটি পরিস্থিতির দৃশ্যপট ব্যাখ্যা, চরিত্র ভূমিকা, চ্যাট বাবল ডায়ালগ, উচ্চারণ ও নেটিভ ফ্রেজ।
                         </p>
+                    </div>
+
+                    {/* LearnCare Academy Labs Direct Banner */}
+                    <div className="mt-5 pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs">
+                        <div className="flex items-center gap-2 text-teal-200">
+                            <span className="bg-amber-400/20 text-amber-300 border border-amber-400/30 px-2 py-0.5 rounded-full text-[10px] font-black uppercase">
+                                নতুন একাডেমি ল্যাব
+                            </span>
+                            <span>আরও গভীর প্র্যাকটিসের জন্য ১০০ ও ২০০ কনভারসেশন মাস্টার শিট দেখতে চান?</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <Link
+                                href="/dashboard/spoken-english/academy-labs/view?file=Real_Life_Everyday_Conversations_100_Master.html"
+                                className="inline-flex items-center gap-1 bg-teal-500/20 hover:bg-teal-500/40 text-teal-200 border border-teal-400/40 px-3 py-1.5 rounded-xl font-bold transition"
+                            >
+                                🗣️ ১০০ কনভারসেশন ল্যাব →
+                            </Link>
+                            <Link
+                                href="/dashboard/spoken-english/academy-labs"
+                                className="inline-flex items-center gap-1 bg-amber-500 hover:bg-amber-400 text-slate-950 px-3.5 py-1.5 rounded-xl font-black transition shadow-sm"
+                            >
+                                ⚡ ৪৫টি একাডেমি ল্যাব দেখুন →
+                            </Link>
+                        </div>
                     </div>
                 </div>
 
@@ -306,7 +330,7 @@ export default function SituationalConversationsPage() {
                     <div className="w-full lg:w-72 flex-shrink-0 space-y-3 sticky top-4">
                         <div className="flex items-center justify-between text-xs font-black text-slate-700 px-1">
                             <span>বাস্তব পরিস্থিতি ({filteredConversations.length} টি)</span>
-                            <span className="text-[11px] text-teal-600 font-bold">৪০টি পরিস্থিতি</span>
+                            <span className="text-[11px] text-teal-600 font-bold">{SITUATIONAL_CONVERSATIONS.length}টি পরিস্থিতি</span>
                         </div>
 
                         {/* Search Input */}

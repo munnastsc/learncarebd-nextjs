@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnCare Academy - All Modal Verbs Mega Master Encyclopedia</title>
+    <style>
+        :root {
+            --bg-color: #fdfbf7;
+            --card-bg: #ffffff;
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #d97706;
+            --accent: #8b5cf6;
+            --text-color: #1f2937;
+            --text-muted: #4b5563;
+            --border-color: #e5e7eb;
+            --shadow: 0 15px 35px rgba(0,0,0,0.08);
+            --correct-bg: #d1fae5;
+            --correct-border: #10b981;
+            --correct-text: #065f46;
+            --wrong-bg: #fee2e2;
+            --wrong-border: #ef4444;
+            --wrong-text: #991b1b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-size: 19px; 
+            line-height: 1.8;
+            padding: 20px 10px;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 45px 25px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 900px;
+            margin: 0 auto 20px;
+        }
+
+        .badge-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .nav-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin: 25px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+        }
+
+        .nav-pill {
+            background: #f1f5f9;
+            color: #1e3a8a;
+            padding: 8px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            border: 1px solid #cbd5e1;
+        }
+
+        .nav-pill:hover {
+            background: #2563eb;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        section {
+            background: var(--card-bg);
+            border-radius: 18px;
+            padding: 35px 30px;
+            margin-bottom: 35px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: #1e3a8a;
+            font-size: 1.9rem;
+            margin-bottom: 22px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 3px solid #e2e8f0;
+            padding-bottom: 12px;
+        }
+
+        h3 {
+            color: #2563eb;
+            font-size: 1.45rem;
+            margin: 25px 0 15px;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 12px;
+            border: 1px solid #cbd5e1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 1.05rem;
+            background: white;
+        }
+
+        th, td {
+            padding: 14px 18px;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #1e3a8a;
+            color: white;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        tr:hover {
+            background-color: #eff6ff;
+        }
+
+        .tag-modal {
+            background: #dbeafe;
+            color: #1e40af;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 6px;
+            display: inline-block;
+            font-size: 0.95rem;
+        }
+
+        .rule-card {
+            background: #f8fafc;
+            border-left: 5px solid #2563eb;
+            border-radius: 0 12px 12px 0;
+            padding: 20px 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .rule-card.warning {
+            border-left-color: #d97706;
+            background: #fffbeb;
+        }
+
+        .rule-card.success {
+            border-left-color: #10b981;
+            background: #f0fdf4;
+        }
+
+        .rule-card.purple {
+            border-left-color: #8b5cf6;
+            background: #faf5ff;
+        }
+
+        .tip-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .tip-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.2s ease;
+        }
+
+        .tip-card:hover {
+            border-color: #2563eb;
+            box-shadow: 0 6px 18px rgba(37,99,235,0.1);
+            transform: translateY(-2px);
+        }
+
+        .tip-number {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: #2563eb;
+            color: white;
+            text-align: center;
+            line-height: 32px;
+            border-radius: 50%;
+            font-weight: 800;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .directory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+            margin-top: 25px;
+        }
+
+        .directory-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 18px;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.2s ease;
+        }
+
+        .directory-card:hover {
+            border-color: #2563eb;
+            box-shadow: 0 8px 20px rgba(37,99,235,0.12);
+            transform: translateY(-3px);
+            background: #f8fafc;
+        }
+
+        .directory-card h4 {
+            color: #1e3a8a;
+            font-size: 1.15rem;
+            margin-bottom: 6px;
+        }
+
+        .directory-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .directory-badge {
+            align-self: flex-start;
+            margin-top: 10px;
+            font-size: 0.8rem;
+            padding: 3px 8px;
+            background: #dbeafe;
+            color: #1e40af;
+            border-radius: 4px;
+            font-weight: 700;
+        }
+
+        /* MCQ QUIZ STYLES */
+        .mcq-container {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            margin-top: 25px;
+        }
+
+        .mcq-card {
+            background: #f8fafc;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 22px;
+            transition: all 0.2s ease;
+        }
+
+        .mcq-card.answered-correct {
+            border-color: var(--correct-border);
+            background-color: var(--correct-bg);
+        }
+
+        .mcq-card.answered-wrong {
+            border-color: var(--wrong-border);
+            background-color: var(--wrong-bg);
+        }
+
+        .mcq-question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1e3a8a;
+            font-size: 1.15rem;
+        }
+
+        .mcq-options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .mcq-option {
+            background: white;
+            border: 1px solid #cbd5e1;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .mcq-option:hover {
+            background: #eff6ff;
+            border-color: #3b82f6;
+        }
+
+        .mcq-option input {
+            margin-right: 12px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .feedback-text {
+            margin-top: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: none;
+        }
+
+        .btn-3d {
+            background: linear-gradient(180deg, #3b82f6, #1d4ed8);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 6px 0 #1e3a8a, 0 10px 15px rgba(0,0,0,0.15);
+            transition: all 0.1s;
+        }
+
+        .btn-3d:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 0 #1e3a8a, 0 12px 20px rgba(0,0,0,0.2);
+        }
+
+        .btn-3d:active {
+            transform: translateY(4px);
+            box-shadow: 0 2px 0 #1e3a8a, 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .score-board {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            background: #1e3a8a;
+            color: white;
+            padding: 20px 25px;
+            border-radius: 14px;
+            margin-bottom: 25px;
+            gap: 15px;
+        }
+
+        .score-num {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #fbbf24;
+        }
+
+        .score-badge {
+            background: #d97706;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+
+        .score-progress {
+            width: 100%;
+            height: 12px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 6px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .score-bar {
+            height: 100%;
+            width: 0%;
+            background: #fbbf24;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <h1>🌟 All Modal Verbs Mega Master Encyclopedia</h1>
+            <p>ইংরেজি মডাল ভার্বের পূর্ণাঙ্গ বিশ্বকোষ: ২০+ মডাল ভার্ব, তুলনামূলক বিশ্লেষণ, সূক্ষ্ম ব্যাকরণিক পার্থক্য, গোল্ডেন স্পোকেন টিপস ও ট্রিকস এবং কথ্য বাচনের চূড়ান্ত মাস্টার গাইড</p>
+            <div class="badge-bar">
+                <span class="badge">📘 20+ Modal Verbs Covered</span>
+                <span class="badge">📊 Full Comparative Matrices</span>
+                <span class="badge">💡 50 Spoken Golden Tips</span>
+                <span class="badge">⚠️ 30 Common Bengali Mistakes Solved</span>
+                <span class="badge">🏆 30 MCQ Diagnostic Spoken Test</span>
+                <span class="badge">🎯 LearnCare Academy System</span>
+            </div>
+        </header>
+
+        <!-- NAVIGATION PILLS -->
+        <div class="nav-pills">
+            <a href="#master-matrix" class="nav-pill">📊 1. Master Matrix</a>
+            <a href="#nuanced-distinctions" class="nav-pill">🔍 2. Nuanced Distinctions</a>
+            <a href="#golden-tips" class="nav-pill">💡 3. 50 Golden Tips</a>
+            <a href="#common-mistakes" class="nav-pill">⚠️ 4. 30 Common Mistakes</a>
+            <a href="#diagnostic-test" class="nav-pill">🏆 5. Diagnostic Test (30 MCQ)</a>
+            <a href="#lessons-directory" class="nav-pill">📚 6. All Lessons Directory</a>
+            <a href="00_LearnCare_Academy_Master_Index.html" class="nav-pill" style="background: #2563eb; color: white;">🏠 Portal Index</a>
+        </div>
+
+        <!-- SECTION 1: MASTER MATRIX -->
+        <section id="master-matrix">
+            <h2>📊 1. Master Modal Verbs Comprehensive Matrix (২০+ মডাল ভার্ব)</h2>
+            <p>ইংরেজি ভাষার সমস্ত প্রধান (Primary), আধা (Semi/Quasi), এবং পারফেক্ট (Perfect) মডাল ভার্বের পূর্ণাঙ্গ রূপরেখা এক নজরে:</p>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Modal Verb</th>
+                            <th>বাংলা ভাবার্থ</th>
+                            <th>প্রধান কাজ (Core Function)</th>
+                            <th>বাক্য গঠন (Structure)</th>
+                            <th>বাস্তব উদাহরণ (Real Spoken Example)</th>
+                            <th>রেজিস্টার (Register)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="tag-modal">Can</span></td>
+                            <td>পারি / পারে / সক্ষম</td>
+                            <td>বর্তমান সামর্থ্য, অনানুষ্ঠানিক অনুমতি, সাধারণ সম্ভাবনা</td>
+                            <td>Sub + can + V1</td>
+                            <td>I <strong>can solve</strong> this puzzle in seconds.</td>
+                            <td>Informal / Neutral</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Could</span></td>
+                            <td>পারতাম / পারত / বিনম্র আবেদন</td>
+                            <td>অতীতের সাধারণ সামর্থ্য, অত্যন্ত বিনম্র অনুরোধ, বর্তমানের সম্ভাবনা</td>
+                            <td>Sub + could + V1</td>
+                            <td><strong>Could you</strong> pass the salt, please?</td>
+                            <td>Polite / Formal</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">May</span></td>
+                            <td>সম্ভবত / পারি কি (অনুমতি)</td>
+                            <td>আনুষ্ঠানিক অনুমতি, উচ্চ সম্ভাবনা (৫০%), শুভেচ্ছা/প্রার্থনা</td>
+                            <td>Sub + may + V1</td>
+                            <td>It <strong>may rain</strong> later this afternoon.</td>
+                            <td>Formal / Respectful</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Might</span></td>
+                            <td>হতেও পারে (ক্ষীণ সম্ভাবনা)</td>
+                            <td>ক্ষীণ সম্ভাবনা (২৫-৩০%), অতীত সম্ভাবনা, অতি-বিনম্র প্রস্তাব</td>
+                            <td>Sub + might + V1</td>
+                            <td>He <strong>might arrive</strong> late due to traffic.</td>
+                            <td>Formal / Tentative</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Should</span></td>
+                            <td>উচিত / প্রত্যাশিত</td>
+                            <td>পরামর্শ, নৈতিক উপদেশ, সাধারণ প্রত্যাশা বা যৌক্তিক অনুমান</td>
+                            <td>Sub + should + V1</td>
+                            <td>You <strong>should drink</strong> plenty of water.</td>
+                            <td>Neutral / Advice</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Must</span></td>
+                            <td>অবশ্যই / নিশ্চয়ই</td>
+                            <td>তীব্র বাধ্যবাধকতা, ব্যক্তিগত জোরালো সংকল্প, অত্যন্ত যৌক্তিক অনুমান</td>
+                            <td>Sub + must + V1</td>
+                            <td>You <strong>must wear</strong> a seatbelt while driving.</td>
+                            <td>Strong / Urgent</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Have to</span></td>
+                            <td>করতে হবে (বাহ্যিক নিয়ম)</td>
+                            <td>বাহ্যিক নিয়ম, আইন, বা পরিস্থিতির চাপে আরোপিত বাধ্যবাধকতা</td>
+                            <td>Sub + have/has to + V1</td>
+                            <td>I <strong>have to reach</strong> office before 9 AM.</td>
+                            <td>Everyday / Rules</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Need to</span></td>
+                            <td>প্রয়োজন / দরকার</td>
+                            <td>ব্যক্তিগত প্রয়োজনীয়তা বা উপযোগিতা বোঝাতে</td>
+                            <td>Sub + need/needs to + V1</td>
+                            <td>You <strong>need to recharge</strong> your phone.</td>
+                            <td>Casual / Necessity</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Used to</span></td>
+                            <td>করতাম (অতীতের নিয়মিত অভ্যাস)</td>
+                            <td>অতীতের নিয়মিত অভ্যাস বা অবস্থা যা এখন আর বিদ্যমান নেই</td>
+                            <td>Sub + used to + V1</td>
+                            <td>I <strong>used to play</strong> football in my school days.</td>
+                            <td>Past Habit / State</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Ought to</span></td>
+                            <td>উচিত (নৈতিক দায়িত্ব)</td>
+                            <td>সামাজিক, মানবিক বা ধর্মীয় নৈতিক দায়িত্ব ও আদর্শিক কর্তব্য</td>
+                            <td>Sub + ought to + V1</td>
+                            <td>We <strong>ought to respect</strong> our teachers and elders.</td>
+                            <td>Moral / Formal</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Shall</span></td>
+                            <td>করব কি? / আনুষ্ঠানিক নির্দেশ</td>
+                            <td>প্রথম পুরুষে (I/We) বিনম্র প্রস্তাব, আইনি বাধ্যবাধকতা ও প্রতিশ্রুতি</td>
+                            <td>Shall I/we + V1?</td>
+                            <td><strong>Shall we begin</strong> today's session now?</td>
+                            <td>Formal / Legal</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Will</span></td>
+                            <td>করব / দৃঢ় সংকল্প / ভবিষ্যৎ</td>
+                            <td>ভবিষ্যৎ সংকল্প, তাৎক্ষণিক সিদ্ধান্ত, প্রতিশ্রুতি, সাধারণ অনুরোধ</td>
+                            <td>Sub + will + V1</td>
+                            <td>I <strong>will definitely help</strong> you with your luggage.</td>
+                            <td>General / Definite</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Would</span></td>
+                            <td>করতাম / বিনম্র ইচ্ছা / শর্ত</td>
+                            <td>অতি-বিনম্র প্রস্তাব, কাল্পনিক শর্ত (Conditional), অতীতের পুনরাবৃত্ত অভ্যাস</td>
+                            <td>Would you like + to V1?</td>
+                            <td><strong>Would you care</strong> for a cup of brewed tea?</td>
+                            <td>Polite / Diplomatic</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Dare / Dare to</span></td>
+                            <td>সাহস করা / কীভাবে সাহস হলো</td>
+                            <td>সাহস দেখানো, চ্যালেঞ্জ গ্রহণ করা, ঔদ্ধত্য প্রশ্ন করা (How dare you)</td>
+                            <td>Sub + dare + V1</td>
+                            <td>How <strong>dare you speak</strong> to me in that tone?</td>
+                            <td>Courage / Audacity</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Should have + V3</span></td>
+                            <td>উচিত ছিল (কিন্তু করা হয়নি)</td>
+                            <td>অতীতের কাজের ব্যাপারে অনুশোচনা, আক্ষেপ বা গঠনমূলক সমালোচনা</td>
+                            <td>Sub + should have + V3</td>
+                            <td>You <strong>should have studied</strong> harder for the exam.</td>
+                            <td>Past Regret</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Would have + V3</span></td>
+                            <td>করতাম / হতো (যদি শর্ত পূরণ হতো)</td>
+                            <td>অতীতের কোনো অপূর্ণ শর্তের কাল্পনিক ফলাফল (Third Conditional)</td>
+                            <td>If + past perf, Sub + would have + V3</td>
+                            <td>If you had called, I <strong>would have come</strong>.</td>
+                            <td>Past Imaginary</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Could have + V3</span></td>
+                            <td>করতে পারতাম (কিন্তু করিনি)</td>
+                            <td>অতীতের অব্যবহৃত সামর্থ্য, হাতছাড়া সুযোগ, বা অতীতের সম্ভাবনা</td>
+                            <td>Sub + could have + V3</td>
+                            <td>We <strong>could have caught</strong> the train if we hurried.</td>
+                            <td>Missed Opportunity</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Must have + V3</span></td>
+                            <td>নিশ্চয়ই করেছে / হয়েছে</td>
+                            <td>অতীতের কোনো ঘটনার ব্যাপারে প্রমাণের ভিত্তিতে অকাট্য যৌক্তিক অনুমান</td>
+                            <td>Sub + must have + V3</td>
+                            <td>He <strong>must have missed</strong> the morning flight.</td>
+                            <td>Strong Past Deduction</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Had better</span></td>
+                            <td>বরং ভালো (নইলে বিপদ)</td>
+                            <td>জরুরি ও জোরালো উপদেশ; না মানলে নেতিবাচক পরিণতি নিশ্চিত</td>
+                            <td>Sub + had better + V1</td>
+                            <td>You <strong>had better leave</strong> now or you'll be late.</td>
+                            <td>Urgent Warning</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Would rather</span></td>
+                            <td>বরং পছন্দ করা / অমুকের চেয়ে তমুক শ্রেয়</td>
+                            <td>দুটি বিকল্পের মধ্যে একটিকে বেশি পছন্দ বা অগ্রাধিকার দেওয়া</td>
+                            <td>Sub + would rather + V1 (than)</td>
+                            <td>I <strong>would rather walk</strong> than take a crowded bus.</td>
+                            <td>Preference</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Be supposed to</span></td>
+                            <td>করার কথা / হওয়ার কথা</td>
+                            <td>সামাজিক নিয়ম, দায়িত্ব, সময়সূচি বা অন্যের প্রত্যাশা অনুযায়ী হওয়ার কথা</td>
+                            <td>Sub + is/am/are/was/were supposed to + V1</td>
+                            <td>I <strong>am supposed to meet</strong> the manager at 10 AM.</td>
+                            <td>Expectation / Duty</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-modal">Be able to</span></td>
+                            <td>করতে পারা / সক্ষম হওয়া</td>
+                            <td>যে কোনো কালে (Present, Past, Future, Perfect) সামর্থ্য প্রকাশ</td>
+                            <td>Sub + will be able to + V1</td>
+                            <td>Through practice, you <strong>will be able to speak</strong> fluently.</td>
+                            <td>All-Tense Ability</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECTION 2: NUANCED DISTINCTIONS -->
+        <section id="nuanced-distinctions">
+            <h2>🔍 2. Nuanced Distinctions & Head-to-Head Comparisons (সূক্ষ্ম ব্যাকরণিক পার্থক্য)</h2>
+            <p>বাংলা ভাষাভাষী শিক্ষার্থীদের ইংরেজি বলার সময় সবচেয়ে বেশি বিভ্রান্তি তৈরি করে এই সূক্ষ্ম পার্থক্যগুলো। প্রতিটি পার্থক্য উদাহরণসহ গভীরভাবে বুঝুন:</p>
+
+            <!-- PART A -->
+            <div class="rule-card">
+                <h3>A. Can vs. Could (অনুরোধ ও সামর্থ্যের পার্থক্য)</h3>
+                <p><strong>1. সামর্থ্য (Ability):</strong> <em>Can</em> বর্তমান বা চিরন্তন সামর্থ্য বোঝায় (I can swim). <em>Could</em> অতীতের সাধারণ সামর্থ্য বোঝায় (When I was ten, I could swim across this river).</p>
+                <p><strong>2. অনুরোধে বিনম্রতা (Polite Requests):</strong> <em>Can you open the door?</em> (অনানুষ্ঠানিক — বন্ধু বা ছোটদের সাথে). <em>Could you open the door, please?</em> (অত্যন্ত বিনম্র ও মার্জিত — অপরিচিত, শিক্ষক বা গুরুজনদের সাথে).</p>
+                <div style="background: white; padding: 12px 18px; border-radius: 8px; margin-top: 10px; border-left: 4px solid #2563eb;">
+                    💡 <strong>Pro Tip:</strong> চাকরির ইন্টারভিউ, অফিসিয়াল বৈঠক বা ভদ্রসমাজে 'Can I have' না বলে সর্বদা <strong>'Could I have'</strong> বা <strong>'May I have'</strong> বলুন।
+                </div>
+            </div>
+
+            <!-- PART B -->
+            <div class="rule-card purple">
+                <h3>B. May vs. Might (সম্ভাবনার তীব্রতা: ৫০% বনাম ২৫%)</h3>
+                <p><strong>May</strong> বোঝায় ভালো সম্ভাবনা (প্রায় ৫০% সুযোগ আছে): <em>"It may rain tonight."</em> (আকাশে কালো মেঘ দেখা যাচ্ছে, বৃষ্টি হওয়ার জোরালো সম্ভাবনা আছে)।</p>
+                <p><strong>Might</strong> বোঝায় ক্ষীণ বা দুর্বল সম্ভাবনা (মাত্র ২৫-৩০% সুযোগ): <em>"He might come to the party."</em> (তার আসার সম্ভাবনা খুব কম, তবে একেবারে উড়িয়ে দেওয়া যাচ্ছে না)।</p>
+                <div style="background: white; padding: 12px 18px; border-radius: 8px; margin-top: 10px; border-left: 4px solid #8b5cf6;">
+                    💡 <strong>Pro Tip:</strong> অতীতে কোনো ক্ষীণ সম্ভাবনা বোঝাতে <strong>Might have + V3</strong> ব্যবহার করা হয়: <em>"He might have forgotten the meeting."</em> (সে হয়তো মিটিংটির কথা ভুলে গিয়ে থাকতে পারে)।
+                </div>
+            </div>
+
+            <!-- PART C -->
+            <div class="rule-card warning">
+                <h3>C. The Obligation Ladder: Should vs. Ought to vs. Must vs. Have to vs. Had better</h3>
+                <p>বাধ্যবাধকতা ও উপদেশের তীব্রতা অনুযায়ী ক্রমবিন্যাস:</p>
+                <ol style="margin-left: 25px; margin-top: 10px;">
+                    <li><strong>Should (পরামর্শ):</strong> "You should read this book." (পড়া উচিত, তবে না পড়লে কোনো শাস্তি নেই — সাধারণ উপদেশ)।</li>
+                    <li><strong>Ought to (নৈতিক কর্তব্য):</strong> "We ought to respect our parents." (নৈতিক ও সামাজিক মূল্যবোধজনিত দায়িত্ব)।</li>
+                    <li><strong>Have to (বাহ্যিক নিয়ম/আইন):</strong> "I have to wear a uniform." (প্রতিষ্ঠানের নিয়ম বা আইনের কারণে বাধ্যতামূলক)।</li>
+                    <li><strong>Must (ব্যক্তিগত তীব্র প্রত্যয়/আইন):</strong> "I must pass this exam." (নিজের ভেতরের অটল সংকল্প) অথবা "You must not smoke here" (কড়া নিষেধাজ্ঞা)।</li>
+                    <li><strong>Had better (জরুরি সতর্কবার্তা):</strong> "You had better leave now or you'll miss the train." (না মানলে তাৎক্ষণিক ক্ষতি বা বিপদ অনিবার্য)।</li>
+                </ol>
+            </div>
+
+            <!-- PART D -->
+            <div class="rule-card success">
+                <h3>D. Past Habits: Used to vs. Would (ক্রিয়াত্মক অভ্যাস বনাম অবস্থা)</h3>
+                <p><strong>স্বর্ণালী নিয়ম (The Golden Rule):</strong></p>
+                <ul style="margin-left: 25px; margin-top: 8px;">
+                    <li><strong>Action Verbs (কর্মভিত্তিক ক্রিয়া):</strong> <em>Used to</em> এবং <em>Would</em> উভয়ই ব্যবহার করা যায়!<br>
+                    ✔️ <em>"In my childhood, I used to play cricket every afternoon."</em> = <em>"In my childhood, I would play cricket every afternoon."</em></li>
+                    <li><strong>Stative Verbs (অবস্থা বা অস্তিত্ববাচক ক্রিয়া — live, be, know, have, love):</strong> শুধুমাত্র <strong>Used to</strong> ব্যবহার করা যাবে, <em>Would</em> কখনই ব্যবহার করা যাবে না!<br>
+                    ✔️ <em>"I used to live in London."</em> (আমি লন্ডনে থাকতাম)<br>
+                    ❌ <em>"I would live in London."</em> (সম্পূর্ণ ভুল!)<br>
+                    ✔️ <em>"He used to have long hair."</em> | ❌ <em>"He would have long hair."</em></li>
+                </ul>
+            </div>
+
+            <!-- PART E -->
+            <div class="rule-card">
+                <h3>E. The Fantastic Four Perfect Modals: Should have vs. Would have vs. Could have vs. Must have</h3>
+                <div class="table-responsive" style="margin-top: 10px;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Perfect Modal</th>
+                                <th>বাংলা অর্থ</th>
+                                <th>মূল ভাবার্থ (Core Psychology)</th>
+                                <th>বাস্তব উদাহরণ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Should have + V3</strong></td>
+                                <td>উচিত ছিল (করিনি)</td>
+                                <td>অতীতের কোনো কাজে অনুশোচনা বা ভুলের অনুভূতি</td>
+                                <td>I <strong>should have told</strong> you earlier. (তোমাকে আগে বলা উচিত ছিল)।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Would have + V3</strong></td>
+                                <td>করতাম (যদি হতো)</td>
+                                <td>অতীতের কাল্পনিক শর্ত পূরণ হলে কাজটি হতো</td>
+                                <td>If you had asked, I <strong>would have helped</strong>. (বললে সাহায্য করতাম)।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Could have + V3</strong></td>
+                                <td>করতে পারতাম (করিনি)</td>
+                                <td>সামর্থ্য ছিল কিন্তু সুযোগ হাতছাড়া করা হয়েছে</td>
+                                <td>You <strong>could have won</strong> the race easily. (সহজেই জিততে পারতে)।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Must have + V3</strong></td>
+                                <td>নিশ্চয়ই করেছে/হয়েছে</td>
+                                <td>প্রমাণের ভিত্তিতে অতীতে ঘটনাটি নিশ্চিতভাবে ঘটেছে</td>
+                                <td>He <strong>must have missed</strong> the train. (সে নিশ্চয়ই ট্রেন মিস করেছে)।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- PART F -->
+            <div class="rule-card purple">
+                <h3>F. Preferences & Choices: Would rather vs. Prefer</h3>
+                <p><strong>1. Would rather + V1 (than + V1):</strong> <em>"I would rather walk than take a bus."</em> (দুটি কাজের মধ্যে একটিকে বেশি প্রাধান্য দেওয়া)।</p>
+                <p><strong>2. Prefer + Noun/V-ing (to + Noun/V-ing):</strong> <em>"I prefer walking to riding the bus."</em> (মনে রাখবেন: Prefer-এর সাথে সর্বদাই <strong>'to'</strong> বসে, কখনো 'than' বসে না)।</p>
+            </div>
+        </section>
+
+        <!-- SECTION 3: 50 GOLDEN TIPS -->
+        <section id="golden-tips">
+            <h2>💡 3. 50 Spoken Golden Tips & Tricks (বাংলা ভাষাভাষীদের জন্য বিশেষ গোপন টেকনিক)</h2>
+            <p>অনর্গল কথ্য ইংরেজি বাচনে আত্মবিশ্বাস ও প্রাঞ্জলতা আনতে এই ৫০টি প্রমাণিত স্পোকেন টেকনিক আপনার জিহ্বায় আয়ত্ত করুন:</p>
+
+            <div class="tip-grid">
+                <div class="tip-card">
+                    <span class="tip-number">1</span>
+                    <h4>The Bare Infinitive Rule</h4>
+                    <p>মডাল ভার্বের পর সর্বদা মূল ভার্বের বেস ফর্ম (V1) বসে। কখনোই 'to' যোগ করবেন না: <em>"I must go"</em> (NOT <em>I must to go</em>).</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">2</span>
+                    <h4>No '-s' for Third Person</h4>
+                    <p>He/She থাকলেও মডাল ভার্বের সাথে কখনোই 's' বা 'es' যুক্ত হয় না: <em>"He can swim"</em> (NOT <em>He cans swim</em>).</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">3</span>
+                    <h4>Connected Speech: 'Coulda'</h4>
+                    <p>দ্রুত কথ্য ইংরেজিতে নেটিভ স্পিকাররা <strong>could have</strong>-কে উচ্চারণ করে <em>'coulda'</em> (/kʊdə/): <em>"You coulda told me!"</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">4</span>
+                    <h4>Connected Speech: 'Woulda'</h4>
+                    <p>একইভাবে <strong>would have</strong> দ্রুত গতিতে উচ্চারিত হয় <em>'woulda'</em> (/wʊdə/): <em>"I woulda done it."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">5</span>
+                    <h4>Connected Speech: 'Shoulda'</h4>
+                    <p><strong>Should have</strong> স্বাভাবিক কথোপকথনে হয়ে যায় <em>'shoulda'</em> (/ʃʊdə/): <em>"We shoulda left earlier."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">6</span>
+                    <h4>Connected Speech: 'Musta'</h4>
+                    <p><strong>Must have</strong> উচ্চারিত হয় <em>'musta'</em> (/mʌstə/): <em>"He musta forgotten his keys."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">7</span>
+                    <h4>Hafta & Hasta</h4>
+                    <p>কথ্য রূপ: <em>have to</em> উচ্চারিত হয় <strong>"hafta"</strong> এবং <em>has to</em> উচ্চারিত হয় <strong>"hasta"</strong>: <em>"I hafta go now."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">8</span>
+                    <h4>Gotta = Have got to</h4>
+                    <p>জরুরি কিছু করতে হবে বোঝাতে ইনফরমাল স্পোকেনে নেটিভরা বলে <strong>"gotta"</strong>: <em>"I gotta study tonight."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">9</span>
+                    <h4>Mustn't vs. Don't have to</h4>
+                    <p><strong>Mustn't:</strong> কঠোর নিষেধ (You mustn't smoke here = ধূমপান করা সম্পূর্ণ নিষিদ্ধ)।<br>
+                    <strong>Don't have to:</strong> কোনো বাধ্যবাধকতা নেই, চাইলে করতে পারো (You don't have to come = না এলেও চলবে)।</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">10</span>
+                    <h4>Had better Always Takes V1</h4>
+                    <p><em>Had better</em> দেখতে অতীতের মনে হলেও এর অর্থ বর্তমান বা ভবিষ্যৎ উপদেশ, এবং এর পরে সরাসরি V1 বসে: <em>"You had better leave"</em> (NOT <em>had better to leave</em>).</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">11</span>
+                    <h4>Negative of Had Better</h4>
+                    <p>নেগেটিভ রূপ হলো <strong>had better not</strong> (NOT <em>had not better</em>): <em>"You had better not tell anyone."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">12</span>
+                    <h4>Would you mind + V-ing</h4>
+                    <p><em>"Would you mind..."</em>-এর পর সর্বদা ভার্বের সাথে <strong>-ing</strong> যুক্ত করতে হয়: <em>"Would you mind closing the door?"</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">13</span>
+                    <h4>Answering "Would you mind?"</h4>
+                    <p>যদি আপনার কোনো আপত্তি না থাকে (অর্থাৎ আপনি কাজটি করবেন), তবে উত্তর হবে <strong>"Not at all"</strong> বা <strong>"Certainly not"</strong> (কখনোই 'Yes' বলবেন না, কারণ 'Yes' বললে বোঝায় আপনার ঘোর আপত্তি আছে)!</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">14</span>
+                    <h4>Polite Softener: 'Could I possibly...'</h4>
+                    <p>যেকোনো সংবেদনশীল অনুরোধে <em>"Could I possibly borrow your car?"</em> ব্যবহার করলে শ্রোতা কখনোই প্রত্যাখ্যান করতে পারেন না।</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">15</span>
+                    <h4>Can't have + V3 (অসম্ভব অনুমান)</h4>
+                    <p>অতীতে কোনো ঘটনা ঘটা সম্পূর্ণ অসম্ভব বোঝাতে <strong>Can't have + V3</strong> ব্যবহৃত হয়: <em>"He can't have stolen the money, he was with me!"</em> (সে কখনোই টাকা চুরি করতে পারে না)।</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">16</span>
+                    <h4>Inversion with Modals for Drama</h4>
+                    <p>নাটকীয় ও শক্তিশালী বাচনে মডাল আগে চলে আসে: <em>"Never shall I forget this moment."</em> | <em>"Seldom could we witness such beauty."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">17</span>
+                    <h4>Be able to for Future & Perfect</h4>
+                    <p>'Can'-এর কোনো Future বা Perfect রূপ নেই। ভবিষ্যতে বা পারফেক্টে সামর্থ্য বোঝাতে সর্বদা <strong>will be able to</strong> বা <strong>have been able to</strong> ব্যবহার করুন।</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">18</span>
+                    <h4>Used to vs. Be used to</h4>
+                    <p><strong>Used to + V1:</strong> অতীতের অভ্যাস (I used to wake up early).<br>
+                    <strong>Be used to + V-ing:</strong> অভ্যস্ত থাকা (I am used to waking up early).</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">19</span>
+                    <h4>Get used to + V-ing</h4>
+                    <p>কোনো নতুন পরিস্থিতিতে খাপ খাইয়ে বা অভ্যস্ত হয়ে ওঠা: <em>"You will soon get used to living here."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">20</span>
+                    <h4>Shall for Promises & Legal Decrees</h4>
+                    <p>আনুষ্ঠানিক বা আইনি নথিতে 'Shall' অপরিবর্তনীয় দায়িত্ব বোঝায়: <em>"The tenant shall pay the rent on the first of every month."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">21</span>
+                    <h4>Shall I / Shall we for Suggestions</h4>
+                    <p>প্রস্তাব বা মতামত জানতে: <em>"Shall we grab a coffee?"</em> (আমরা কি একটু কফি খেতে পারি?)।</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">22</span>
+                    <h4>May as well / Might as well</h4>
+                    <p>অন্য কোনো বিকল্প না থাকায় বরং এটি করাই ভালো: <em>"The bus is late, so we might as well walk."</em> (বাস দেরিতে আসবে, তাই আমাদের বরং হেঁটে যাওয়াই ভালো)।</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">23</span>
+                    <h4>How dare you + V1</h4>
+                    <p>কারও আচরণে তীব্র ক্ষোভ বা প্রতিবাদ জানাতে: <em>"How dare you accuse me without evidence?"</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">24</span>
+                    <h4>I dare say (ধারণা / সম্ভবত)</h4>
+                    <p>ভদ্রভাবে নিজের বিশ্বাস ব্যক্ত করতে: <em>"I dare say, he will succeed."</em> (আমার বিশ্বাস, সে অবশ্যই সফল হবে)।</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">25</span>
+                    <h4>Be supposed to = Planned / Expected</h4>
+                    <p>সময়সূচি অনুযায়ী হওয়ার কথা ছিল: <em>"The train was supposed to arrive at 5 PM."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">26</span>
+                    <h4>Not supposed to = Rules Forbidden</h4>
+                    <p>নিয়ম অনুযায়ী নিষেধ: <em>"You are not supposed to walk on the grass."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">27</span>
+                    <h4>Will you vs. Would you</h4>
+                    <p><em>Will you</em> সাধারণ অনুরোধ; <em>Would you</em> অনেক বেশি মার্জিত ও বিনম্র। অফিসে বা অপরিচিতদের সাথে <em>Would you</em> ব্যবহার করাই বুদ্ধিমানের কাজ।</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">28</span>
+                    <h4>Won't for Machine Refusal</h4>
+                    <p>কোনো জড়বস্তু বা মেশিন কাজ করতে অস্বীকৃতি জানালে 'won't' ব্যবহৃত হয়: <em>"The car won't start!"</em> (গাড়িটি স্টার্ট নিচ্ছে না)।</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">29</span>
+                    <h4>Wouldn't for Past Refusal</h4>
+                    <p>অতীতের অনড় আচরণ: <em>"I begged him, but he wouldn't listen."</em> (আমি অনেক অনুনয় করেছিলাম, কিন্তু সে কিছুতেই শুনল না)।</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">30</span>
+                    <h4>Needn't have + V3</h4>
+                    <p>কাজটি করা হয়েছিল, কিন্তু বাস্তবে করার কোনো প্রয়োজন ছিল না: <em>"You needn't have brought an umbrella, it didn't rain!"</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">31</span>
+                    <h4>Didn't need to + V1</h4>
+                    <p>প্রয়োজন ছিল না, তাই কাজটি করাও হয়নি: <em>"It was a holiday, so I didn't need to wake up early."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">32</span>
+                    <h4>Ought not to have + V3</h4>
+                    <p>অতীতের কোনো অনৈতিক বা অনুচিত কাজের জন্য মৃদু তিরস্কার: <em>"You ought not to have spoken so rudely to your mother."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">33</span>
+                    <h4>May you live long!</h4>
+                    <p>প্রার্থনা ও শুভকামনা জানাতে অপটেটিভ বাক্যে 'May' সর্বপ্রথমে বসে: <em>"May Allah bless your noble efforts!"</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">34</span>
+                    <h4>Must be + V-ing for Ongoing Deduction</h4>
+                    <p>বর্তমানে নিশ্চয়ই কোনো কাজ ঘটছে বলে অনুমান: <em>"Listen, someone is playing music; they must be celebrating."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">35</span>
+                    <h4>Can't be true!</h4>
+                    <p>বর্তমান কোনো খবর সম্পূর্ণ অবিশ্বাস্য মনে হলে: <em>"That simply can't be true!"</em> (এটি কখনই সত্যি হতে পারে না)।</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">36</span>
+                    <h4>Could be (সম্ভাবনা)</h4>
+                    <p>বর্তমান বা ভবিষ্যতের মাঝারি সম্ভাবনা: <em>"Where is John? He could be in the library."</em> (সে হয়তো লাইব্রেরিতে থাকতে পারে)।</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">37</span>
+                    <h4>Should be (যৌক্তিক প্রত্যাশা)</h4>
+                    <p>স্বাভাবিক নিয়মে এতক্ষণে যা ঘটার কথা: <em>"He left two hours ago; he should be home by now."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">38</span>
+                    <h4>Would like to + V1</h4>
+                    <p>ভদ্রভাবে কোনো ইচ্ছা প্রকাশ করতে: <em>"I would like to ask a question."</em> (আমি একটি প্রশ্ন করতে চাই)।</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">39</span>
+                    <h4>Would rather not</h4>
+                    <p>ভদ্রভাবে কোনো কাজ করতে অনিচ্ছা প্রকাশ: <em>"I would rather not discuss personal matters right now."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">40</span>
+                    <h4>Had better not delay</h4>
+                    <p>সময় নষ্ট না করার চরম সতর্কবার্তা: <em>"We had better not delay, the deadline is midnight."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">41</span>
+                    <h4>Must have been tired</h4>
+                    <p>অতীতের অবস্থা সম্পর্কে জোরালো অনুমান: <em>"After running twenty miles, he must have been utterly exhausted."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">42</span>
+                    <h4>Could have been worse</h4>
+                    <p>সান্ত্বনা দিতে ইংরেজি বাগধারা: <em>"The accident was bad, but it could have been worse."</em> (পরিস্থিতি আরও মারাত্মক হতে পারত)।</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">43</span>
+                    <h4>Would have loved to</h4>
+                    <p>কোনো আমন্ত্রণ ভদ্রভাবে রক্ষা করতে না পারার মিষ্টি আফসোস: <em>"I would have loved to join, but I had prior commitments."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">44</span>
+                    <h4>Should have known better</h4>
+                    <p>নিজের বা অন্যের অভিজ্ঞতা সত্ত্বেও ভুলের সমালোচনা: <em>"He should have known better than to trust that scammer."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">45</span>
+                    <h4>Shall I carry your bags?</h4>
+                    <p>কাউকে স্বপ্রণোদিত হয়ে সাহায্য করার সেরা রাজকীয় বাচনভঙ্গি।</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">46</span>
+                    <h4>Can do vs. Able to do</h4>
+                    <p>নির্দিষ্ট কোনো সংকটময় মুহূর্তে একক প্রচেষ্টা বোঝাতে 'was able to' বেশি ব্যবহৃত হয়, 'could' নয়: <em>"Despite the fire, he was able to escape."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">47</span>
+                    <h4>Supposed to be a secret</h4>
+                    <p>কোনো তথ্য যা গোপন থাকার কথা ছিল: <em>"It was supposed to be a secret, but everyone knows it now!"</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">48</span>
+                    <h4>Daren't utter a word</h4>
+                    <p>ভয়ে টু শব্দটি করারও সাহস না পাওয়া: <em>"The frightened witness daren't utter a single syllable."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">49</span>
+                    <h4>Might have been avoided</h4>
+                    <p>প্যাসিভ পারফেক্ট মডাল: <em>"The tragedy might have been avoided with early precautions."</em></p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">50</span>
+                    <h4>Daily LearnCare Spoken Immersion</h4>
+                    <p>প্রতিদিন উচ্চস্বরে মডাল ভার্বের ২০টি করে বাক্য বলুন। আপনার মস্তিষ্কের ভাষাগত নিউরনগুলো চিন্তা ছাড়াই সঠিক মডাল বেছে নিতে বাধ্য হবে!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: 30 COMMON BENGALI MISTAKES -->
+        <section id="common-mistakes">
+            <h2>⚠️ 4. Top 30 Common Bengali Speaker Modal Mistakes & Instant Corrections</h2>
+            <p>বাঙালি শিক্ষার্থীরা ইংরেজি বলার সময় যে মারাত্মক ভুলগুলো সচরাচর করে থাকেন, তার নিখুঁত বৈজ্ঞানিক ব্যাখ্যা ও সংশোধন:</p>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>বাংলা ভাবনা</th>
+                            <th>ভুল ইংরেজি (Common Error)</th>
+                            <th>সঠিক ইংরেজি (Accurate English)</th>
+                            <th>ভুলের কারণ ও টেকনিক্যাল ব্যাখ্যা</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>আমার যাওয়া উচিত।</td>
+                            <td style="color: #dc2626;">❌ I should to go.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ I should go.</td>
+                            <td>মডাল ভার্বের পর কখনো 'to' বসে না (Bare infinitive)।</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>সে সাঁতার কাটতে পারে।</td>
+                            <td style="color: #dc2626;">❌ He cans swim.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ He can swim.</td>
+                            <td>মডাল ভার্বের সাথে কখনোই Third Person 's/es' যুক্ত হয় না।</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>তোমার বরং বের হওয়া ভালো।</td>
+                            <td style="color: #dc2626;">❌ You had better to leave.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ You had better leave.</td>
+                            <td>'Had better'-এর পর সরাসরি V1 বসে, 'to' বসে না।</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>সে অতীতে লন্ডনে থাকত।</td>
+                            <td style="color: #dc2626;">❌ He would live in London.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ He used to live in London.</td>
+                            <td>Stative Verb (live, be, know)-এর ক্ষেত্রে 'would' নিষিদ্ধ, 'used to' আবশ্যক।</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>আমি চা পানের চেয়ে কফি পছন্দ করি।</td>
+                            <td style="color: #dc2626;">❌ I prefer coffee than tea.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ I prefer coffee to tea.</td>
+                            <td>'Prefer'-এর সাথে সর্বদা 'to' বসে, কখনোই 'than' নয়।</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>তোমার আমাকে বলা উচিত ছিল।</td>
+                            <td style="color: #dc2626;">❌ You should have tell me.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ You should have told me.</td>
+                            <td>'Should have'-এর পর সর্বদা মূল ভার্বের V3 (Past Participle) বসে।</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>সে নিশ্চয়ই ট্রেন মিস করেছে।</td>
+                            <td style="color: #dc2626;">❌ He must missed the train.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ He must have missed the train.</td>
+                            <td>অতীতের নিশ্চয়তামূলক অনুমানে 'Must have + V3' আবশ্যক।</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>আমি বৃষ্টিতে না ভেজা পছন্দ করব।</td>
+                            <td style="color: #dc2626;">❌ I would rather not to go.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ I would rather not go.</td>
+                            <td>'Would rather'-এর পরে কখনোই 'to' বসে না।</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>দরজাটা বন্ধ করলে কি কিছু মনে করবেন?</td>
+                            <td style="color: #dc2626;">❌ Would you mind close the door?</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ Would you mind closing the door?</td>
+                            <td>'Would you mind'-এর পর ক্রিয়াটির সাথে -ing যুক্ত করতে হয়।</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>তোমার ওখানে না যাওয়াই ভালো।</td>
+                            <td style="color: #dc2626;">❌ You hadn't better go.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ You had better not go.</td>
+                            <td>'Had better'-এর নেগেটিভ রূপ সর্বদা 'had better not'।</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>আমার আজ মিটিংয়ে থাকার কথা।</td>
+                            <td style="color: #dc2626;">❌ I suppose to attend meeting.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ I am supposed to attend the meeting.</td>
+                            <td>'Be supposed to' স্ট্রাকচারে Be-verb (am/is/are/was/were) এবং '-d' আবশ্যক।</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>আমি ভবিষ্যতে কাজটি করতে পারব।</td>
+                            <td style="color: #dc2626;">❌ I will can do the work.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ I will be able to do the work.</td>
+                            <td>দুটি মোডাল ভার্ব পাশাপাশি বসে না; ভবিষ্যতের সামর্থ্যে 'will be able to' বসে।</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>সে সাঁতার কাটতে পারত।</td>
+                            <td style="color: #dc2626;">❌ He could to swim.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ He could swim.</td>
+                            <td>'Could'-এর পর সরাসরি V1 বসে, 'to' নয়।</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>আমি কাজটি করতে পারতাম (কিন্তু করিনি)।</td>
+                            <td style="color: #dc2626;">❌ I could finish it yesterday.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ I could have finished it yesterday.</td>
+                            <td>অতীতের অপূর্ণ সামর্থ্য বোঝাতে 'Could have + V3' ব্যবহৃত হয়।</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>তোমার ধূমপান করা নিষিদ্ধ।</td>
+                            <td style="color: #dc2626;">❌ You don't have to smoke here.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ You mustn't smoke here.</td>
+                            <td>কঠোর নিষেধাজ্ঞায় 'mustn't' হয়; 'don't have to' মানে 'না করলেও চলবে'।</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>সে প্রতিদিন সকালে দৌড়াত।</td>
+                            <td style="color: #dc2626;">❌ He used to ran every morning.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ He used to run every morning.</td>
+                            <td>'Used to'-এর পর সর্বদা মূল ভার্বের বেস ফর্ম (V1) বসে, V2 নয়।</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>তোমার সাহস কীভাবে হলো?</td>
+                            <td style="color: #dc2626;">❌ How you dare say that?</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ How dare you say that?</td>
+                            <td>প্রশ্নবোধক বাক্যে মডাল 'dare' সাবজেক্টের পূর্বে চলে আসে।</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>আমরা কি কফি খেতে পারি?</td>
+                            <td style="color: #dc2626;">❌ Will we have a coffee?</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ Shall we have a coffee?</td>
+                            <td>প্রথম পুরুষে (We) যৌথ প্রস্তাব উত্থাপনে 'Shall we' সবচেয়ে মার্জিত।</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>তুমি ডাকলে আমি আসতাম।</td>
+                            <td style="color: #dc2626;">❌ If you called, I would have came.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ If you had called, I would have come.</td>
+                            <td>Third Conditional-এ 'had + V3' এবং অপর অংশে 'would have + V3' বসে।</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>গাড়িটি স্টার্ট নিচ্ছে না।</td>
+                            <td style="color: #dc2626;">❌ The car is not starting.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ The car won't start.</td>
+                            <td>যান্ত্রিক অনীহা বা কাজ না করা বোঝাতে কথ্য ইংরেজিতে 'won't' সবচেয়ে স্বাভাবিক।</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>তোমার সাহায্যের জন্য কৃতজ্ঞ থাকব।</td>
+                            <td style="color: #dc2626;">❌ I will to be grateful.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ I will be grateful.</td>
+                            <td>'Will'-এর পর সরাসরি V1 'be' বসে।</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>আমার কি সেখানে যাওয়া দরকার?</td>
+                            <td style="color: #dc2626;">❌ Do I need go there?</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ Do I need to go there? / Need I go there?</td>
+                            <td>সাধারণ ক্রিয়া হিসেবে 'Do I need to go', অথবা মোডাল হিসেবে 'Need I go'।</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>সে হয়তো আজ আসবে।</td>
+                            <td style="color: #dc2626;">❌ He maybe come today.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ He may come today. / Maybe he will come.</td>
+                            <td>'Maybe' একটি Adverb; ভার্ব হিসেবে মোডাল 'may' ব্যবহার করতে হবে।</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>আমি তাকে সাহায্য করতে বাধ্য ছিলাম।</td>
+                            <td style="color: #dc2626;">❌ I musted help him.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ I had to help him.</td>
+                            <td>'Must'-এর কোনো অতীত কাল নেই; অতীতের বাধ্যবাধকতায় 'had to' বসে।</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>তার আসার কথা ছিল।</td>
+                            <td style="color: #dc2626;">❌ He was suppose to come.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ He was supposed to come.</td>
+                            <td>'supposed'-এ 'd' বাদ দেওয়া যাবে না।</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>তুমি কি গান গাইতে পারো?</td>
+                            <td style="color: #dc2626;">❌ Do you can sing?</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ Can you sing?</td>
+                            <td>মডাল ভার্বের প্রশ্নে 'Do/Does' ব্যবহার করা সম্পূর্ণ ভুল।</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>আমাদের দেশের আইন মানা উচিত।</td>
+                            <td style="color: #dc2626;">❌ We ought respect the law.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ We ought to respect the law.</td>
+                            <td>'Ought'-এর সাথে সর্বদা 'to' অবিচ্ছেদ্য অংশ হিসেবে থাকে।</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>আমি একা থাকতে পছন্দ করব।</td>
+                            <td style="color: #dc2626;">❌ I would rather to be alone.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ I would rather be alone.</td>
+                            <td>'Would rather'-এর পরে কখনো 'to' বসে না।</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>সে অসুস্থ হতে পারে।</td>
+                            <td style="color: #dc2626;">❌ She can be sick.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ She may be sick. / She might be sick.</td>
+                            <td>নির্দিষ্ট মুহূর্তে সম্ভাব্য অবস্থা বোঝাতে 'can' নয়, 'may' বা 'might' বসে।</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>আমি নিশ্চিত সে পাস করেছে।</td>
+                            <td style="color: #dc2626;">❌ He should have passed.</td>
+                            <td style="color: #16a34a; font-weight: 700;">✔️ He must have passed.</td>
+                            <td>প্রমাণের ভিত্তিতে নিশ্চিত সিদ্ধান্তে 'Must have + V3' হয়; 'Should have' মানে আফসোস।</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECTION 5: 30 MCQ DIAGNOSTIC SPOKEN TEST -->
+        <section id="diagnostic-test">
+            <h2>🏆 5. 30 MCQ All-Modal Diagnostic Spoken Test (Live Score System)</h2>
+            <p>আপনার মডাল ভার্বের সর্বাঙ্গীণ প্রস্তুতি যাচাই করতে নিচের ৩০টি প্রশ্নের সঠিক বিকল্প বেছে নিন। প্রতিটি উত্তরের সাথে সাথে রিয়েল-টাইম স্কোর এবং বিস্তারিত ব্যাখ্যা প্রদর্শিত হবে:</p>
+
+            <!-- SCORE BOARD -->
+            <div class="score-board">
+                <div>
+                    <div style="font-size: 1.1rem; opacity: 0.9;">Your Overall Modal Mastery Score</div>
+                    <div class="score-num" id="score-text">0 / 30</div>
+                </div>
+                <div>
+                    <span class="score-badge" id="badge-text">Beginner Explorer</span>
+                </div>
+                <div class="score-progress">
+                    <div class="score-bar" id="score-bar"></div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <button class="btn-3d" onclick="resetQuiz()">🔄 Reset Diagnostic Quiz</button>
+            </div>
+
+            <!-- MCQ CONTAINER -->
+            <div class="mcq-container" id="mcq-box">
+                <!-- Javascript will render 30 questions -->
+            </div>
+        </section>
+
+        <!-- SECTION 6: LESSONS DIRECTORY -->
+        <section id="lessons-directory">
+            <h2>📚 6. All Master Sheets Directory (সরাসরি অনুশীলনের জন্য ক্লিক করুন)</h2>
+            <p>লার্নকেয়ার একাডেমির ৩২টি পৃথক ফুল-মাস্টার শিটের সরাসরি লিংক। প্রতিটি শিটে রয়েছে ১০০ বাংলা টু ইংলিশ, ১০০ ইংলিশ টু বাংলা, ১০০ শূন্যস্থান পূরণ এবং ২০টি লাইভ স্কোর এমসিকিউ:</p>
+
+            <h3 style="color: #1e3a8a; border-left: 4px solid #2563eb; padding-left: 10px;">🕒 The 12 Master Tenses (১২টি টেন্স)</h3>
+            <div class="directory-grid">
+                <a href="Present simple.html" class="directory-card">
+                    <h4>Present Simple</h4>
+                    <p>নিয়মিত অভ্যাস, চিরন্তন সত্য ও সাধারণ বর্তমান ক্রিয়া।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Present continuous.html" class="directory-card">
+                    <h4>Present Continuous</h4>
+                    <p>বর্তমানে চোখের সামনে চলমান ক্রিয়া ও তাৎক্ষণিক প্রবাহ।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Present perfect.html" class="directory-card">
+                    <h4>Present Perfect</h4>
+                    <p>এইমাত্র শেষ হওয়া কাজের ফল বর্তমান থাকা বা জীবনের অভিজ্ঞতা।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Present perfect continuous.html" class="directory-card">
+                    <h4>Present Perfect Continuous</h4>
+                    <p>অতীত থেকে শুরু হয়ে নির্দিষ্ট বা অনির্দিষ্ট সময় ধরে চলা।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Past indefinite.html" class="directory-card">
+                    <h4>Past Indefinite</h4>
+                    <p>অতীতের সম্পন্ন ঘটনা ও দৈনন্দিন স্মৃতিচারণ।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Past continuous.html" class="directory-card">
+                    <h4>Past Continuous</h4>
+                    <p>অতীতে কোনো এক নির্দিষ্ট সময়ে চলমান ছিল এমন কাজ।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Past perfect.html" class="directory-card">
+                    <h4>Past Perfect</h4>
+                    <p>অতীতের দুটি ঘটনার মধ্যে অপেক্ষাকৃত পূর্ববর্তী ঘটনা।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Past perfect continuous.html" class="directory-card">
+                    <h4>Past Perfect Continuous</h4>
+                    <p>অতীতের কোনো ঘটনার পূর্বে দীর্ঘ সময় ধরে চলা ক্রিয়া।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Future indefinite.html" class="directory-card">
+                    <h4>Future Indefinite</h4>
+                    <p>ভবিষ্যতের সংকল্প, তাৎক্ষণিক সিদ্ধান্ত ও প্রতিশ্রুতি।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Future continuous.html" class="directory-card">
+                    <h4>Future Continuous</h4>
+                    <p>ভবিষ্যতের নির্দিষ্ট কোনো মুহূর্তে চলমান থাকবে এমন কাজ।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Future perfect.html" class="directory-card">
+                    <h4>Future Perfect</h4>
+                    <p>ভবিষ্যতের নির্দিষ্ট সময়ের আগেই কোনো কাজ সম্পন্ন হয়ে থাকা।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Future perfect continuous.html" class="directory-card">
+                    <h4>Future Perfect Continuous</h4>
+                    <p>ভবিষ্যতের কোনো সময় পর্যন্ত দীর্ঘকালব্যাপী চলমান ক্রিয়া।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+            </div>
+
+            <h3 style="color: #1e3a8a; border-left: 4px solid #d97706; padding-left: 10px; margin-top: 35px;">💎 The 20 Master Modal Verbs (২০টি মডাল ভার্ব)</h3>
+            <div class="directory-grid">
+                <a href="Modal Can.html" class="directory-card">
+                    <h4>Modal Can</h4>
+                    <p>বর্তমান সামর্থ্য, অনানুষ্ঠানিক অনুমতি ও সাধারণ সম্ভাবনা।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Could.html" class="directory-card">
+                    <h4>Modal Could</h4>
+                    <p>অতীত সামর্থ্য, অত্যন্ত বিনম্র অনুরোধ ও ভদ্র আবেদন।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal May.html" class="directory-card">
+                    <h4>Modal May</h4>
+                    <p>আনুষ্ঠানিক অনুমতি, উচ্চ সম্ভাবনা ও শুভকামনা।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Might.html" class="directory-card">
+                    <h4>Modal Might</h4>
+                    <p>ক্ষীণ সম্ভাবনা (২৫%), অতীত সম্ভাবনা ও মার্জিত দ্বিধা।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Should.html" class="directory-card">
+                    <h4>Modal Should</h4>
+                    <p>পরামর্শ, যৌক্তিক প্রত্যাশা ও নৈতিক আচরণ।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Must.html" class="directory-card">
+                    <h4>Modal Must</h4>
+                    <p>তীব্র বাধ্যবাধকতা, ব্যক্তিগত সংকল্প ও অকাট্য যৌক্তিক অনুমান।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Have to.html" class="directory-card">
+                    <h4>Modal Have to</h4>
+                    <p>বাহ্যিক নিয়ম, আইন ও পরিস্থিতির বাধ্যবাধকতা।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Need to.html" class="directory-card">
+                    <h4>Modal Need to</h4>
+                    <p>ব্যক্তিগত উপযোগিতা ও বাস্তব প্রয়োজনীয়তা।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Used to.html" class="directory-card">
+                    <h4>Modal Used to</h4>
+                    <p>অতীতের নিয়মিত অভ্যাস ও অবস্থা যা এখন অতীত।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Ought to.html" class="directory-card">
+                    <h4>Modal Ought to</h4>
+                    <p>নৈতিক দায়িত্ব, সামাজিক আদর্শ ও মানবিক কর্তব্য।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Shall.html" class="directory-card">
+                    <h4>Modal Shall</h4>
+                    <p>বিনম্র যৌথ প্রস্তাব, প্রাতিষ্ঠানিক নির্দেশ ও প্রতিশ্রুতি।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Will.html" class="directory-card">
+                    <h4>Modal Will</h4>
+                    <p>ভবিষ্যৎ প্রত্যয়, তাত্ক্ষণিক সিদ্ধান্ত ও সংকল্প।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Would.html" class="directory-card">
+                    <h4>Modal Would</h4>
+                    <p>বিনম্র আবেদন, শর্তসাপেক্ষ কাল্পনিক বাচন ও অতীত অভ্যাস।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Dare to.html" class="directory-card">
+                    <h4>Modal Dare to</h4>
+                    <p>শৌর্য, চ্যালেঞ্জ গ্রহণ, নির্ভীকতা ও ঔদ্ধত্যের প্রশ্ন।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Should have.html" class="directory-card">
+                    <h4>Modal Should have + V3</h4>
+                    <p>অতীতের কাজের ব্যাপারে অনুশোচনা ও গঠনমূলক আক্ষেপ।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Would have.html" class="directory-card">
+                    <h4>Modal Would have + V3</h4>
+                    <p>অতীতের কাল্পনিক অপূর্ণ শর্তের অবাস্তব ফলাফল।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Could have.html" class="directory-card">
+                    <h4>Modal Could have + V3</h4>
+                    <p>অতীতের হাতছাড়া সুযোগ ও অব্যবহৃত পূর্ণ সামর্থ্য।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Must have.html" class="directory-card">
+                    <h4>Modal Must have + V3</h4>
+                    <p>অতীতের কোনো ঘটনার ব্যাপারে নিশ্চিত ও জোরালো অনুমান।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Had better Would rather.html" class="directory-card">
+                    <h4>Had better & Would rather</h4>
+                    <p>জরুরি সতর্কবার্তা বনাম রুচিশীল অগ্রাধিকার ও পছন্দ।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+                <a href="Modal Be supposed to Be able to.html" class="directory-card">
+                    <h4>Be supposed to & Be able to</h4>
+                    <p>দায়িত্ব ও প্রত্যাশা বনাম সর্বকালের সামর্থ্য ও দক্ষতা।</p>
+                    <span class="directory-badge">300 Drills + 20 MCQs</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer style="text-align: center; margin-top: 40px; padding: 25px; color: #64748b; font-size: 1rem; border-top: 1px solid #e2e8f0;">
+            <p>© 2026 LearnCare Academy — Master Spoken English System. All Rights Reserved.</p>
+            <p>Designed for complete, effortless, and royal fluency in English speech.</p>
+        </footer>
+    </div>
+
+    <!-- JAVASCRIPT FOR DIAGNOSTIC QUIZ -->
+    <script>
+        const quizData = [
+            {
+                q: "1. You look exhausted after working in the garden all day. You _____ take a short rest.",
+                options: ["should", "should to", "ought", "must have"],
+                correct: 0,
+                exp: "'Should' expresses friendly advice and takes base verb V1 without 'to'."
+            },
+            {
+                q: "2. The sky is completely overcast with thick dark clouds. It _____ rain this afternoon.",
+                options: ["can", "may", "ought", "dare"],
+                correct: 1,
+                exp: "'May' is used to express high factual probability (around 50%)."
+            },
+            {
+                q: "3. When my grandfather was young, he _____ swim across the wide river effortlessly.",
+                options: ["can", "could", "should have", "must"],
+                correct: 1,
+                exp: "'Could' indicates general past ability."
+            },
+            {
+                q: "4. You _____ leave right now, or you will miss your flight.",
+                options: ["had better", "had better to", "would rather", "would rather to"],
+                correct: 0,
+                exp: "'Had better + V1' gives an urgent warning with negative consequences if ignored."
+            },
+            {
+                q: "5. I _____ walk in the fresh evening air than take a crowded bus.",
+                options: ["had better", "would rather", "prefer", "should have"],
+                correct: 1,
+                exp: "'Would rather + V1 (than)' indicates a preference between two alternatives."
+            },
+            {
+                q: "6. You _____ me about the change of venue! I waited at the old hall for an hour.",
+                options: ["should tell", "should have told", "must tell", "would tell"],
+                correct: 1,
+                exp: "'Should have + V3' expresses past regret or criticism of an unfulfilled duty."
+            },
+            {
+                q: "7. Look, the street is completely soaking wet! It _____ rained heavily last night.",
+                options: ["must have", "should have", "could", "would have"],
+                correct: 0,
+                exp: "'Must have + V3' expresses a strong logical deduction based on present evidence."
+            },
+            {
+                q: "8. If you had informed me in advance, I _____ you at the railway station.",
+                options: ["would meet", "would have met", "must meet", "could meet"],
+                correct: 1,
+                exp: "In the Third Conditional (past unfulfilled condition), we use 'would have + V3'."
+            },
+            {
+                q: "9. We _____ the championship easily if our striker hadn't been injured.",
+                options: ["could have won", "can win", "must have won", "shall win"],
+                correct: 0,
+                exp: "'Could have + V3' indicates past missed opportunity or unutilized capacity."
+            },
+            {
+                q: "10. In our childhood, we _____ in that quaint village by the river.",
+                options: ["used to live", "would live", "used to living", "was used to live"],
+                correct: 0,
+                exp: "For stative verbs (live, be, have, know), only 'used to' can be used for past states, never 'would'."
+            },
+            {
+                q: "11. Would you mind _____ the window? It is getting chilly.",
+                options: ["close", "to close", "closing", "closed"],
+                correct: 2,
+                exp: "The polite expression 'Would you mind' is strictly followed by a gerund (V-ing)."
+            },
+            {
+                q: "12. How _____ you enter my private study without knocking?",
+                options: ["dare", "dare to", "dared", "daring"],
+                correct: 0,
+                exp: "In questions expressing indignation, 'dare' acts as a modal auxiliary: 'How dare you + V1?'"
+            },
+            {
+                q: "13. I _____ attend the executive meeting at 10 AM; it's on my calendar.",
+                options: ["supposed to", "am supposed to", "was able to", "have to be"],
+                correct: 1,
+                exp: "'Be supposed to' requires the auxiliary be-verb ('am/is/are/was/were')."
+            },
+            {
+                q: "14. Through daily oral drills, you _____ speak English with commanding fluency.",
+                options: ["will can", "will be able to", "would can", "could to"],
+                correct: 1,
+                exp: "'Can' lacks a future tense; future ability is expressed via 'will be able to'."
+            },
+            {
+                q: "15. _____ we begin our review session now, gentlemen?",
+                options: ["Will", "Shall", "Must", "Ought"],
+                correct: 1,
+                exp: "'Shall we' is the most courteous and standard way to make joint suggestions."
+            },
+            {
+                q: "16. You _____ touch those high-voltage wires; it is extremely fatal!",
+                options: ["don't have to", "mustn't", "needn't", "ought not"],
+                correct: 1,
+                exp: "'Mustn't' indicates strict prohibition, whereas 'don't have to' means lack of necessity."
+            },
+            {
+                q: "17. We _____ to respect and care for our elderly citizens.",
+                options: ["should", "must", "ought", "had better"],
+                correct: 2,
+                exp: "'Ought to' is the only modal here that grammatically incorporates 'to' for moral duty."
+            },
+            {
+                q: "18. He _____ be at home right now; I just saw him boarding a plane five minutes ago!",
+                options: ["can't", "mustn't", "shouldn't", "might not"],
+                correct: 0,
+                exp: "'Can't' expresses complete logical impossibility in the present."
+            },
+            {
+                q: "19. The stubborn car engine simply _____ start, despite all my efforts.",
+                options: ["won't", "mustn't", "shouldn't", "shall not"],
+                correct: 0,
+                exp: "'Won't' is idiomatically used for an inanimate object's refusal to function."
+            },
+            {
+                q: "20. I asked him repeatedly to assist us, but he _____ budge an inch.",
+                options: ["wouldn't", "won't", "shouldn't", "can't"],
+                correct: 0,
+                exp: "'Wouldn't' indicates past obstinate refusal."
+            },
+            {
+                q: "21. You _____ brought an umbrella! Look, the sun is shining brilliantly.",
+                options: ["needn't have", "didn't need to", "must have", "should have"],
+                correct: 0,
+                exp: "'Needn't have + V3' means an action was performed, but proved completely unnecessary."
+            },
+            {
+                q: "22. Since yesterday was a national holiday, I _____ wake up early.",
+                options: ["needn't have", "didn't need to", "mustn't", "shouldn't"],
+                correct: 1,
+                exp: "'Didn't need to' means there was no obligation, so the action was not done."
+            },
+            {
+                q: "23. _____ I possibly borrow your fountain pen for a moment, Sir?",
+                options: ["Can", "Could", "Must", "Should"],
+                correct: 1,
+                exp: "'Could I possibly...' is the hallmark of elevated, aristocratic polite request."
+            },
+            {
+                q: "24. Never _____ I forget the kindness you showed during my hardest times.",
+                options: ["will", "shall", "must", "can"],
+                correct: 1,
+                exp: "Inverted literary English with 'Never' uses 'shall' for emotional and solemn declaration."
+            },
+            {
+                q: "25. He _____ to have spoken so harshly to his venerable teacher.",
+                options: ["shouldn't", "ought not", "must not", "had better not"],
+                correct: 1,
+                exp: "'Ought not to + V1' expresses moral impropriety with 'to'."
+            },
+            {
+                q: "26. I _____ prefer black coffee _____ sweet sodas.",
+                options: ["would / than", "would / to", "- / to", "- / than"],
+                correct: 2,
+                exp: "The verb 'prefer' takes the preposition 'to' between two compared items."
+            },
+            {
+                q: "27. She was admitted to the hospital, so she _____ take the final exam yesterday.",
+                options: ["wasn't able to", "couldn't have", "mustn't", "might not"],
+                correct: 0,
+                exp: "For a specific past inability on a particular occasion, 'was not able to' is precise."
+            },
+            {
+                q: "28. You had better _____ your shoes before stepping onto the sacred rug.",
+                options: ["remove", "to remove", "removing", "removed"],
+                correct: 0,
+                exp: "'Had better' is followed strictly by the bare infinitive V1 ('remove')."
+            },
+            {
+                q: "29. It's late evening; the children _____ asleep by now.",
+                options: ["can be", "should be", "could have been", "would have been"],
+                correct: 1,
+                exp: "'Should be' expresses reasonable expectation based on standard routine."
+            },
+            {
+                q: "30. He worked round the clock for three months; he _____ thoroughly exhausted.",
+                options: ["must have been", "should have been", "could be", "can have been"],
+                correct: 0,
+                exp: "'Must have been + adj' expresses strong certainty about a past state."
+            }
+        ];
+
+        let userAnswers = {};
+
+        function renderQuiz() {
+            const container = document.getElementById('mcq-box');
+            container.innerHTML = '';
+
+            quizData.forEach((item, qIndex) => {
+                const card = document.createElement('div');
+                card.className = 'mcq-card';
+                card.id = `card-${qIndex}`;
+
+                let optionsHtml = '';
+                item.options.forEach((opt, optIndex) => {
+                    optionsHtml += `
+                        <label class="mcq-option" onclick="handleSelect(${qIndex}, ${optIndex})">
+                            <input type="radio" name="q${qIndex}" value="${optIndex}" ${userAnswers[qIndex] === optIndex ? 'checked' : ''}>
+                            <span>${opt}</span>
+                        </label>
+                    `;
+                });
+
+                card.innerHTML = `
+                    <div class="mcq-question">${item.q}</div>
+                    <div class="mcq-options">${optionsHtml}</div>
+                    <div class="feedback-text" id="feedback-${qIndex}"></div>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        function handleSelect(qIndex, optIndex) {
+            userAnswers[qIndex] = optIndex;
+            const item = quizData[qIndex];
+            const card = document.getElementById(`card-${qIndex}`);
+            const feedback = document.getElementById(`feedback-${qIndex}`);
+
+            feedback.style.display = 'block';
+            if (optIndex === item.correct) {
+                card.className = 'mcq-card answered-correct';
+                feedback.style.color = '#065f46';
+                feedback.innerHTML = `✅ Correct! ${item.exp}`;
+            } else {
+                card.className = 'mcq-card answered-wrong';
+                feedback.style.color = '#991b1b';
+                feedback.innerHTML = `❌ Incorrect. Correct answer: <strong>${item.options[item.correct]}</strong>.<br>${item.exp}`;
+            }
+
+            calculateScore();
+        }
+
+        function calculateScore() {
+            let correctCount = 0;
+            const total = quizData.length;
+
+            quizData.forEach((item, index) => {
+                if (userAnswers[index] === item.correct) {
+                    correctCount++;
+                }
+            });
+
+            const scoreText = document.getElementById('score-text');
+            const badgeText = document.getElementById('badge-text');
+            const scoreBar = document.getElementById('score-bar');
+
+            scoreText.innerText = `${correctCount} / ${total}`;
+            const pct = Math.round((correctCount / total) * 100);
+            scoreBar.style.width = `${pct}%`;
+
+            if (correctCount === total) {
+                badgeText.innerText = '👑 Grand Modal Master (100%)';
+                badgeText.style.background = '#10b981';
+            } else if (correctCount >= 24) {
+                badgeText.innerText = '🌟 Advanced Spoken Scholar (' + pct + '%)';
+                badgeText.style.background = '#2563eb';
+            } else if (correctCount >= 15) {
+                badgeText.innerText = '🚀 Intermediate Speaker (' + pct + '%)';
+                badgeText.style.background = '#d97706';
+            } else {
+                badgeText.innerText = '🌱 Beginner Explorer (' + pct + '%)';
+                badgeText.style.background = '#64748b';
+            }
+        }
+
+        function resetQuiz() {
+            userAnswers = {};
+            renderQuiz();
+            calculateScore();
+        }
+
+        // Initialize quiz on load
+        document.addEventListener('DOMContentLoaded', () => {
+            renderQuiz();
+            calculateScore();
+        });
+    </script>
+</body>
+</html>

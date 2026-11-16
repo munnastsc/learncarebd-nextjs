@@ -540,6 +540,18 @@
       "namedRegex": "^/dashboard/spoken\\-english(?:/)?$"
     },
     {
+      "page": "/dashboard/spoken-english/academy-labs",
+      "regex": "^/dashboard/spoken\\-english/academy\\-labs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/spoken\\-english/academy\\-labs(?:/)?$"
+    },
+    {
+      "page": "/dashboard/spoken-english/academy-labs/view",
+      "regex": "^/dashboard/spoken\\-english/academy\\-labs/view(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/spoken\\-english/academy\\-labs/view(?:/)?$"
+    },
+    {
       "page": "/dashboard/spoken-english/common-mistakes",
       "regex": "^/dashboard/spoken\\-english/common\\-mistakes(?:/)?$",
       "routeKeys": {},

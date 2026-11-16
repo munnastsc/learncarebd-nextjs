@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnCare Academy | ইংরেজিতে প্রশ্নের উত্তর দেওয়ার পূর্ণাঙ্গ মাস্টারক্লাস</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Hind Siliguri & Noto Sans Bengali for Bangla + Plus Jakarta Sans for English -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            bangla: ['"Hind Siliguri"', '"Noto Sans Bengali"', 'sans-serif'],
+            english: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            navy: {
+              900: '#0f172a',
+              800: '#1e293b',
+              700: '#334155',
+            },
+            teal: {
+              600: '#0d9488',
+              700: '#0f766e',
+              50: '#f0fdfa',
+            },
+            amber: {
+              600: '#d97706',
+              500: '#f59e0b',
+              50: '#fffbeb',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      scroll-behavior: smooth;
+    }
+    .en {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .bn {
+      font-family: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+    }
+    /* Custom subtle pattern for header */
+    .academic-pattern {
+      background-color: #0f172a;
+      background-image: radial-gradient(rgba(13, 148, 136, 0.22) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    /* Print Optimization for A4 Lecture Sheet */
+    @media print {
+      @page {
+        size: A4;
+        margin: 12mm;
+      }
+      body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        font-size: 11pt;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .print-break-inside-avoid {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      .print-page-break {
+        break-before: page;
+        page-break-before: always;
+      }
+      .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl {
+        box-shadow: none !important;
+      }
+      .border-print {
+        border: 1px solid #cbd5e1 !important;
+      }
+      #qa-container {
+        display: block !important;
+      }
+      .qa-card {
+        display: block !important;
+        margin-bottom: 12px !important;
+        border: 1px solid #cbd5e1 !important;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-teal-600 selection:text-white">
+
+  <!-- Sticky Navigation Bar (Screen Only) -->
+  <nav class="no-print sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-navy-900 to-teal-600 flex items-center justify-center text-white font-bold shadow">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div>
+          <span class="font-bold text-navy-900 text-base sm:text-lg block leading-none">LearnCare Academy</span>
+          <span class="text-xs text-teal-700 font-semibold">Spoken & Grammar Master Sheet</span>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center gap-5 text-sm font-semibold text-slate-600">
+        <a href="#module-1" class="hover:text-teal-600 transition">১. গোল্ডেন রুলস</a>
+        <a href="#module-2" class="hover:text-teal-600 transition">২. A.R.E.A. পিরামিড</a>
+        <a href="#module-3" class="hover:text-teal-600 transition">৩. প্রশ্নের ধরন ও ফর্মুলা</a>
+        <a href="#module-4" class="hover:text-teal-600 transition">৪. ১০০টি Q&A ব্যাংক</a>
+        <a href="#module-5" class="hover:text-teal-600 transition">৫. প্র্যাকটিস শিট</a>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button onclick="window.print()" class="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-xl shadow transition cursor-pointer">
+          <i class="fa-solid fa-print"></i>
+          <span>প্রিন্ট / PDF সেভ</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Document Container -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 space-y-10">
+
+    <!-- ===================================================================== -->
+    <!-- HEADER & BRANDING                                                     -->
+    <!-- ===================================================================== -->
+    <header class="academic-pattern text-white rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden border border-slate-800 print-break-inside-avoid">
+      <!-- Decorative Glow -->
+      <div class="absolute -top-24 -right-24 w-72 h-72 bg-teal-500/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-amber-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+        <div class="space-y-3 max-w-3xl">
+          <div class="inline-flex flex-wrap items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium text-teal-300">
+            <i class="fa-solid fa-award text-amber-400"></i>
+            <span>লার্ন কেয়ার একাডেমি (LearnCare Academy) • অফিশিয়াল লেকচার শিট #০২</span>
+          </div>
+
+          <h1 class="text-2xl sm:text-4xl lg:text-[40px] font-bold leading-tight tracking-tight">
+            ইংরেজিতে যেকোনো প্রশ্নের উত্তর দেওয়ার পূর্ণাঙ্গ কাঠামো ও মাস্টারক্লাস
+          </h1>
+          <p class="en text-teal-200 text-base sm:text-xl font-semibold">
+            The Art & Science of Answering Questions in English: From Basic to Advanced
+          </p>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            আগের লেকচার শিটে আমরা শিখেছি কীভাবে বেসিক থেকে অ্যাডভান্সড প্রশ্ন করতে হয়। এই শিটে আমরা শিখব—যেকোনো প্রশ্ন শোনার বা পড়ার পর ঘাবড়ে না গিয়ে কীভাবে মুহূর্তের মধ্যে <strong>সঠিক টেন্সে</strong> উত্তর তৈরি করতে হয়, কীভাবে ১ লাইনের উত্তরকে টেনে ৩-৪ লাইনে <strong>স্মার্ট ও অ্যাডভান্সড</strong> করতে হয় এবং একই উত্তর কীভাবে <strong>বিভিন্ন ভঙ্গিতে (Multiple Styles)</strong> দেওয়া যায়।
+          </p>
+        </div>
+
+        <!-- Quick Stats Card -->
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-5 shrink-0 lg:w-72 space-y-3">
+          <div class="text-xs uppercase tracking-wider text-amber-300 font-bold">এই লেকচার শিটে যা থাকছে:</div>
+          <ul class="space-y-2 text-sm text-slate-100">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-teal-400"></i> প্রশ্ন থেকে উত্তর চুরির গোল্ডেন রুল</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-teal-400"></i> উত্তর বড় করার <strong>A.R.E.A.</strong> পিরামিড</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-teal-400"></i> Yes/No ও WH-প্রশ্নের স্মার্ট ফর্মুলা</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-amber-400"></i> <strong>১০০টি পূর্ণাঙ্গ Q&A ডেমো (৩টি লেভেলে)</strong></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================================================================== -->
+    <!-- MODULE 1: THE CORE PHILOSOPHY & GOLDEN RULES                          -->
+    <!-- ===================================================================== -->
+    <section id="module-1" class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6 print-break-inside-avoid">
+      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3 py-1 rounded-full">মডিউল ০১ • মূল দর্শন</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-navy-900 mt-2">উত্তর দেওয়ার মূল দর্শন ও ৩টি গোল্ডেন রুল (Golden Rules)</h2>
+        </div>
+        <span class="en text-xs font-semibold text-slate-400">The Question-to-Answer Mirror Principle</span>
+      </div>
+
+      <p class="text-slate-700 leading-relaxed">
+        আমাদের দেশের শিক্ষার্থীদের সবচেয়ে বড় সমস্যা হলো—প্রশ্ন করা হয় <strong>Past Tense</strong>-এ, আর তারা উত্তর দেয় <strong>Present Tense</strong>-এ! মনে রাখবেন, <strong>“প্রশ্নের ভেতরেই উত্তরের ৫০% শব্দ ও ব্যাকরণ লুকিয়ে থাকে।”</strong> একে লার্ন কেয়ার একাডেমির ভাষায় বলা হয় <strong>“প্রশ্ন থেকে উত্তর চুরি করার কৌশল (Mirroring Technique)”</strong>।
+      </p>
+
+      <!-- 3 Golden Rules Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200 space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-navy-900 text-white flex items-center justify-center font-bold text-lg">১</div>
+          <h3 class="font-bold text-lg text-navy-900">টেন্স ক্লু ধরুন (Catch the Tense Clue)</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            প্রশ্নের প্রথম ২টি শব্দেই (Auxiliary Verb) টেন্স লুকিয়ে থাকে। প্রশ্ন <strong>Do/Does</strong> দিয়ে হলে উত্তর Present Indefinite; <strong>Did</strong> দিয়ে হলে উত্তর Past Indefinite; <strong>Will</strong> দিয়ে হলে উত্তর Future হবে।
+          </p>
+        </div>
+
+        <div class="bg-teal-50/70 rounded-2xl p-5 border border-teal-200 space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-teal-600 text-white flex items-center justify-center font-bold text-lg">২</div>
+          <h3 class="font-bold text-lg text-navy-900">সাবজেক্ট পরিবর্তন করুন (Pronoun Flip)</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            প্রশ্নে <strong>You</strong> থাকলে উত্তরে <strong>I / We</strong> হবে। প্রশ্নে <strong>Your</strong> থাকলে উত্তরে <strong>My / Our</strong> হবে। যেমন: <span class="en font-semibold text-teal-800">"Where do <u>you</u> live?" &rarr; "<u>I</u> live in..."</span>
+          </p>
+        </div>
+
+        <div class="bg-amber-50/70 rounded-2xl p-5 border border-amber-200 space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-amber-600 text-white flex items-center justify-center font-bold text-lg">৩</div>
+          <h3 class="font-bold text-lg text-navy-900">সোজাসুজি উত্তর দিন (Direct First)</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            ইংরেজিতে কখনোই ঘুরিয়ে কথা শুরু করবেন না। প্রথমেই মূল উত্তরটি (Direct Answer) দিন, তারপর ‘কেন’ বা ‘কীভাবে’ যোগ করে উত্তরটি বড় করুন।
+          </p>
+        </div>
+      </div>
+
+      <!-- Custom SVG Flowchart: Question-to-Answer Mirror Engine -->
+      <div class="bg-slate-900 rounded-2xl p-4 sm:p-6 text-white overflow-x-auto">
+        <div class="text-center mb-3">
+          <span class="text-xs uppercase tracking-widest text-teal-400 font-bold">ভিজ্যুয়াল ফ্লোচার্ট ডায়াগ্রাম</span>
+          <h3 class="text-base sm:text-lg font-bold">প্রশ্ন থেকে উত্তর তৈরির মিরর ইঞ্জিন (The Question-to-Answer Mirror Engine)</h3>
+        </div>
+
+        <svg viewBox="0 0 920 270" class="w-full min-w-[680px] h-auto mx-auto" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrowTeal" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L0,6 L9,3 z" fill="#2dd4bf" />
+            </marker>
+            <marker id="arrowAmber" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L0,6 L9,3 z" fill="#fbbf24" />
+            </marker>
+          </defs>
+
+          <!-- Step 1: Question Box -->
+          <rect x="15" y="25" width="250" height="95" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
+          <text x="140" y="50" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="bold">ধাপ ১: প্রশ্নটি শুনুন ও বিশ্লেষণ করুন</text>
+          <text x="140" y="75" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold" font-family="Plus Jakarta Sans, sans-serif">"When did you arrive?"</text>
+          <text x="140" y="98" text-anchor="middle" fill="#94a3b8" font-size="12">(তুমি কখন পৌঁছেছিলে?)</text>
+
+          <!-- Arrow 1 -> 2 -->
+          <line x1="265" y1="72" x2="325" y2="72" stroke="#2dd4bf" stroke-width="2.5" marker-end="url(#arrowTeal)" />
+
+          <!-- Step 2: Engine Decoding -->
+          <rect x="335" y="15" width="250" height="115" rx="16" fill="#0f766e" stroke="#2dd4bf" stroke-width="2" />
+          <text x="460" y="38" text-anchor="middle" fill="#ccfbf1" font-size="12" font-weight="bold">ধাপ ২: মিরর ইঞ্জিনে রূপান্তর</text>
+          <text x="460" y="60" text-anchor="middle" fill="#ffffff" font-size="12.5">• When = সময় চাইছে (At 5 PM)</text>
+          <text x="460" y="80" text-anchor="middle" fill="#fde68a" font-size="12.5" font-weight="bold">• did + arrive = Past (arrived)</text>
+          <text x="460" y="100" text-anchor="middle" fill="#ffffff" font-size="12.5">• you &rarr; I (সাবজেক্ট বদল)</text>
+          <text x="460" y="118" text-anchor="middle" fill="#a7f3d0" font-size="11.5">ফর্মুলা: Sub + V2 + Time</text>
+
+          <!-- Arrow 2 -> 3 -->
+          <line x1="585" y1="72" x2="645" y2="72" stroke="#fbbf24" stroke-width="2.5" marker-end="url(#arrowAmber)" />
+
+          <!-- Step 3: Output Levels -->
+          <rect x="655" y="15" width="250" height="115" rx="16" fill="#1e293b" stroke="#fbbf24" stroke-width="2" />
+          <text x="780" y="38" text-anchor="middle" fill="#fbbf24" font-size="12" font-weight="bold">ধাপ ৩: স্মার্ট আউটপুট (উত্তর)</text>
+          <text x="780" y="62" text-anchor="middle" fill="#e2e8f0" font-size="12" font-family="Plus Jakarta Sans, sans-serif">Basic: "At 5 PM."</text>
+          <text x="780" y="84" text-anchor="middle" fill="#5eead4" font-size="12" font-weight="bold" font-family="Plus Jakarta Sans, sans-serif">Inter: "I arrived at 5 PM."</text>
+          <text x="780" y="106" text-anchor="middle" fill="#fde68a" font-size="11.5" font-family="Plus Jakarta Sans, sans-serif">Adv: "I arrived at 5 PM by train..."</text>
+
+          <!-- Bottom Tense Decoder Strip -->
+          <rect x="15" y="155" width="890" height="98" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+          <text x="460" y="178" text-anchor="middle" fill="#fbbf24" font-size="13" font-weight="bold">কুইক টেন্স চিট-কোড (Auxiliary Verb দেখেই উত্তর চিনুন)</text>
+
+          <rect x="30" y="190" width="165" height="50" rx="8" fill="#0f172a" />
+          <text x="112" y="210" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="bold">Do / Does + V1?</text>
+          <text x="112" y="229" text-anchor="middle" fill="#e2e8f0" font-size="11.5">&rarr; Sub + V1 (s/es)</text>
+
+          <rect x="205" y="190" width="165" height="50" rx="8" fill="#0f172a" />
+          <text x="287" y="210" text-anchor="middle" fill="#34d399" font-size="12" font-weight="bold">Did + V1?</text>
+          <text x="287" y="229" text-anchor="middle" fill="#e2e8f0" font-size="11.5">&rarr; Sub + V2 (Past)</text>
+
+          <rect x="380" y="190" width="165" height="50" rx="8" fill="#0f172a" />
+          <text x="462" y="210" text-anchor="middle" fill="#fbbf24" font-size="12" font-weight="bold">Am/Is/Are + V-ing?</text>
+          <text x="462" y="229" text-anchor="middle" fill="#e2e8f0" font-size="11.5">&rarr; I am / He is + V-ing</text>
+
+          <rect x="555" y="190" width="165" height="50" rx="8" fill="#0f172a" />
+          <text x="637" y="210" text-anchor="middle" fill="#f472b6" font-size="12" font-weight="bold">Have / Has + V3?</text>
+          <text x="637" y="229" text-anchor="middle" fill="#e2e8f0" font-size="11.5">&rarr; I have / He has + V3</text>
+
+          <rect x="730" y="190" width="160" height="50" rx="8" fill="#0f172a" />
+          <text x="810" y="210" text-anchor="middle" fill="#a78bfa" font-size="12" font-weight="bold">Will / Can + V1?</text>
+          <text x="810" y="229" text-anchor="middle" fill="#e2e8f0" font-size="11.5">&rarr; I will / I can + V1</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- MODULE 2: THE 4-STEP ANSWER EXPANSION MODEL (A.R.E.A. PYRAMID)        -->
+    <!-- ===================================================================== -->
+    <section id="module-2" class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6 print-break-inside-avoid">
+      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full">মডিউল ০২ • উত্তর বড় করার ম্যাজিক</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-navy-900 mt-2">উত্তর ছোট থেকে টেনে বড় করার ৪-স্তরের পিরামিড (A.R.E.A. Framework)</h2>
+        </div>
+        <span class="en text-xs font-semibold text-slate-400">Answer Expansion System</span>
+      </div>
+
+      <p class="text-slate-700 leading-relaxed">
+        অনেক শিক্ষার্থী বলেন, “স্যার, আমি শুধু <strong>Yes</strong> বা <strong>I like reading</strong> বলেই আটকে যাই, উত্তর টেনে বড় করতে পারি না!” এই সমস্যার স্থায়ী সমাধান হলো লার্ন কেয়ার একাডেমির <strong>A.R.E.A. পিরামিড মডেল</strong>। যেকোনো উত্তরকে ৪টি ধাপে ধাপে ধাপে বড় করা যায়:
+      </p>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        <!-- SVG Pyramid Graphic -->
+        <div class="lg:col-span-6 bg-slate-50 rounded-2xl p-4 border border-slate-200">
+          <svg viewBox="0 0 520 360" class="w-full h-auto" xmlns="http://www.w3.org/2000/svg">
+            <!-- Level 1: Top Peak -->
+            <polygon points="260,20 195,95 325,95" fill="#0f172a" />
+            <text x="260" y="66" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">Level 1: Direct</text>
+            <text x="260" y="83" text-anchor="middle" fill="#5eead4" font-size="10.5">(১-৩ শব্দে সরাসরি উত্তর)</text>
+
+            <!-- Level 2 -->
+            <polygon points="190,102 330,102 385,177 135,177" fill="#0f766e" />
+            <text x="260" y="135" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">Level 2: Complete Sentence</text>
+            <text x="260" y="156" text-anchor="middle" fill="#ccfbf1" font-size="11.5">(পূর্ণবাক্যে উত্তর • Subject + Verb)</text>
+
+            <!-- Level 3 -->
+            <polygon points="130,184 390,184 445,259 75,259" fill="#0d9488" />
+            <text x="260" y="216" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">Level 3: Reason / Detail (R)</text>
+            <text x="260" y="238" text-anchor="middle" fill="#fef3c7" font-size="11.5">(কারণ বা বিবরণ যোগ • Because / Since / As)</text>
+
+            <!-- Level 4: Base -->
+            <polygon points="70,266 450,266 505,342 15,342" fill="#d97706" />
+            <text x="260" y="298" text-anchor="middle" fill="#ffffff" font-size="13.5" font-weight="bold">Level 4: A.R.E.A. Master Expansion</text>
+            <text x="260" y="321" text-anchor="middle" fill="#fffbeb" font-size="11.5">(উদাহরণ + অভিজ্ঞতা + ভবিষ্যৎ/বিকল্প মতামত)</text>
+          </svg>
+        </div>
+
+        <!-- A.R.E.A. Breakdown Cards -->
+        <div class="lg:col-span-6 space-y-3">
+          <div class="p-4 rounded-2xl bg-navy-900 text-white flex items-start gap-3.5">
+            <span class="en w-9 h-9 rounded-xl bg-teal-500 text-navy-900 font-extrabold flex items-center justify-center shrink-0 text-lg">A</span>
+            <div>
+              <h4 class="font-bold text-base"><span class="en">Answer</span> (সরাসরি মূল উত্তর)</h4>
+              <p class="text-xs sm:text-sm text-slate-300 mt-0.5">প্রথমেই প্রশ্নটির সরাসরি উত্তর পূর্ণবাক্যে বলুন। (যেমন: <span class="en text-teal-300">Yes, I really enjoy reading books.</span>)</p>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-teal-50 border border-teal-200 flex items-start gap-3.5">
+            <span class="en w-9 h-9 rounded-xl bg-teal-600 text-white font-extrabold flex items-center justify-center shrink-0 text-lg">R</span>
+            <div>
+              <h4 class="font-bold text-base text-navy-900"><span class="en">Reason</span> (কারণ দর্শানো)</h4>
+              <p class="text-xs sm:text-sm text-slate-700 mt-0.5"><strong>Because / Since / The main reason is that...</strong> ব্যবহার করে কেন এমনটি মনে করেন তা বলুন।</p>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 flex items-start gap-3.5">
+            <span class="en w-9 h-9 rounded-xl bg-amber-600 text-white font-extrabold flex items-center justify-center shrink-0 text-lg">E</span>
+            <div>
+              <h4 class="font-bold text-base text-navy-900"><span class="en">Example / Experience</span> (উদাহরণ বা নিজের অভিজ্ঞতা)</h4>
+              <p class="text-xs sm:text-sm text-slate-700 mt-0.5"><strong>For example / For instance / Recently...</strong> দিয়ে একটি বাস্তব উদাহরণ বা নিজের অভিজ্ঞতা যোগ করুন।</p>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-100 border border-slate-300 flex items-start gap-3.5">
+            <span class="en w-9 h-9 rounded-xl bg-navy-800 text-white font-extrabold flex items-center justify-center shrink-0 text-lg">A</span>
+            <div>
+              <h4 class="font-bold text-base text-navy-900"><span class="en">Alternative / Future Outlook</span> (বিকল্প দিক বা উপসংহার)</h4>
+              <p class="text-xs sm:text-sm text-slate-700 mt-0.5"><strong>However / On the other hand / In the future...</strong> দিয়ে অন্য দিক বা ভবিষ্যতের পরিকল্পনা বলে শেষ করুন।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Demo Table of 1 Question across 4 Levels -->
+      <div class="overflow-x-auto rounded-2xl border border-slate-200">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-navy-900 text-white text-xs sm:text-sm">
+              <th class="p-3.5 w-40">লেভেল (Level)</th>
+              <th class="p-3.5">প্রশ্ন: <span class="en text-amber-300">"Do you like living in a big city?"</span> (তুমি কি বড় শহরে থাকতে পছন্দ করো?)</th>
+              <th class="p-3.5 w-48 hidden sm:table-cell">কৌশল (Technique)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-sm">
+            <tr class="bg-white">
+              <td class="p-3.5 font-bold text-slate-700">Level 1: Basic</td>
+              <td class="p-3.5 en font-medium text-navy-900">"Yes, I do." <span class="bn text-slate-500 text-xs block">(হ্যাঁ, আমি করি।)</span></td>
+              <td class="p-3.5 text-xs text-slate-600 hidden sm:table-cell">শুধু Auxiliary Verb দিয়ে সংক্ষিপ্ত উত্তর।</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3.5 font-bold text-teal-700">Level 2: Elementary</td>
+              <td class="p-3.5 en font-medium text-navy-900">"Yes, I really like living in a big city." <span class="bn text-slate-500 text-xs block">(হ্যাঁ, আমি বড় শহরে থাকতে খুব পছন্দ করি।)</span></td>
+              <td class="p-3.5 text-xs text-slate-600 hidden sm:table-cell">প্রশ্নের শব্দ নিয়ে পূর্ণবাক্য তৈরি।</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="p-3.5 font-bold text-teal-800">Level 3: Intermediate</td>
+              <td class="p-3.5 en font-medium text-navy-900">"Yes, I really like living in a big city <strong>because</strong> it offers better education, healthcare, and job opportunities." <span class="bn text-slate-500 text-xs block">(হ্যাঁ, কারণ এখানে ভালো শিক্ষা, চিকিৎসা ও চাকরির সুযোগ রয়েছে।)</span></td>
+              <td class="p-3.5 text-xs text-slate-600 hidden sm:table-cell"><strong>Because</strong> যোগ করে কারণ যুক্ত করা।</td>
+            </tr>
+            <tr class="bg-amber-50/60">
+              <td class="p-3.5 font-bold text-amber-800">Level 4: Advanced (A.R.E.A.)</td>
+              <td class="p-3.5 en font-medium text-navy-900">"<strong>[A]</strong> Definitely, I enjoy living in a bustling city. <strong>[R]</strong> The main reason is that everything is easily accessible and career prospects are much brighter here. <strong>[E]</strong> For instance, since moving to Dhaka, I have been able to attend top skill-development workshops. <strong>[A]</strong> However, I sometimes miss the peace and fresh air of village life during weekends."</td>
+              <td class="p-3.5 text-xs text-amber-900 font-medium hidden sm:table-cell">A.R.E.A. ফর্মুলায় পূর্ণাঙ্গ ও স্মার্ট উপস্থাপন।</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- MODULE 3: ANSWERING FORMULAS BY QUESTION TYPE & MULTIPLE STYLES       -->
+    <!-- ===================================================================== -->
+    <section id="module-3" class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-8 print-break-inside-avoid">
+      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3 py-1 rounded-full">মডিউল ০৩ • প্রশ্নের ধরন ও বহুমুখী স্টাইল</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-navy-900 mt-2">প্রশ্নের ধরন অনুযায়ী উত্তর দেওয়ার ফর্মুলা ও বিভিন্নভাবে বলার কৌশল</h2>
+        </div>
+        <span class="en text-xs font-semibold text-slate-400">Multi-Style Answering Matrix</span>
+      </div>
+
+      <!-- Type A: Smart Ways to say Yes or No -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-bold text-navy-900 flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg bg-teal-600 text-white text-sm flex items-center justify-center">A</span>
+          Yes/No প্রশ্নের উত্তর: শুধু “Yes” বা “No” না বলে ১০টি স্মার্ট ভঙ্গিতে উত্তর দিন
+        </h3>
+        <p class="text-sm text-slate-600">নেটিভ স্পিকাররা কখনোই শুষ্কভাবে শুধু <span class="en font-semibold">Yes</span> বা <span class="en font-semibold">No</span> বলেন না। পরিস্থিতি অনুযায়ী নিচের অভিব্যক্তিগুলো ব্যবহার করুন:</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Positive Ways -->
+          <div class="rounded-2xl border border-emerald-200 bg-emerald-50/50 p-4 space-y-2">
+            <div class="font-bold text-emerald-800 text-sm flex items-center gap-2">
+              <i class="fa-solid fa-thumbs-up"></i> ইতিবাচক (Smart YES)
+            </div>
+            <ul class="space-y-1.5 text-xs sm:text-sm text-slate-800">
+              <li><span class="en font-semibold text-emerald-900">1. Definitely / Absolutely!</span> (নিঃসন্দেহে / অবশ্যই!)</li>
+              <li><span class="en font-semibold text-emerald-900">2. Yes, without a doubt.</span> (হ্যাঁ, কোনো সন্দেহ ছাড়াই।)</li>
+              <li><span class="en font-semibold text-emerald-900">3. Of course, I’d love to.</span> (অবশ্যই, আমি সানন্দে করব।)</li>
+              <li><span class="en font-semibold text-emerald-900">4. For sure / You bet!</span> (নিশ্চিতভাবেই! - ইনফরমাল)</li>
+            </ul>
+          </div>
+
+          <!-- Negative Ways -->
+          <div class="rounded-2xl border border-rose-200 bg-rose-50/50 p-4 space-y-2">
+            <div class="font-bold text-rose-800 text-sm flex items-center gap-2">
+              <i class="fa-solid fa-thumbs-down"></i> নেতিবাচক ও ভদ্রভাবে না (Polite NO)
+            </div>
+            <ul class="space-y-1.5 text-xs sm:text-sm text-slate-800">
+              <li><span class="en font-semibold text-rose-900">1. Not really.</span> (ঠিক তেমনটা নয়। - সবচেয়ে ন্যাচারাল)</li>
+              <li><span class="en font-semibold text-rose-900">2. I’m afraid not.</span> (দুঃখিত, তা নয়। - ভদ্রভাবে)</li>
+              <li><span class="en font-semibold text-rose-900">3. Not at all.</span> (একদমই না।)</li>
+              <li><span class="en font-semibold text-rose-900">4. Unfortunately, I can't.</span> (দুর্ভাগ্যবশত, আমি পারছি না।)</li>
+            </ul>
+          </div>
+
+          <!-- Diplomatic / Thinking Time -->
+          <div class="rounded-2xl border border-amber-200 bg-amber-50/50 p-4 space-y-2">
+            <div class="font-bold text-amber-800 text-sm flex items-center gap-2">
+              <i class="fa-solid fa-scale-balanced"></i> কৌশলী / ভাবার সময় নেওয়া (Diplomatic)
+            </div>
+            <ul class="space-y-1.5 text-xs sm:text-sm text-slate-800">
+              <li><span class="en font-semibold text-amber-900">1. It depends on the situation.</span> (এটা পরিস্থিতির ওপর নির্ভর করে।)</li>
+              <li><span class="en font-semibold text-amber-900">2. Well, to be honest...</span> (আসলে, সত্যি বলতে কী...)</li>
+              <li><span class="en font-semibold text-amber-900">3. That’s an interesting question.</span> (খুব সুন্দর প্রশ্ন করেছেন।)</li>
+              <li><span class="en font-semibold text-amber-900">4. Let me think for a second.</span> (আমাকে একটু ভাবতে দিন।)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Type B: WH-Question Formula Grid -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-bold text-navy-900 flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg bg-navy-900 text-white text-sm flex items-center justify-center">B</span>
+          WH-প্রশ্নের উত্তর দেওয়ার সঠিক সূত্র ও Preposition ম্যাচিং
+        </h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50">
+            <div class="font-bold text-teal-700 en">1. WHAT (কী / কোনটি)</div>
+            <p class="text-xs text-slate-600 mt-1">বস্তু, কাজ বা তথ্য জানতে চায়। উত্তরে Noun বা Clause বসে।</p>
+            <p class="en text-xs font-semibold text-navy-900 mt-2">Q: What do you do? &rarr; A: I work as a teacher.</p>
+          </div>
+
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50">
+            <div class="font-bold text-teal-700 en">2. WHERE (কোথায়)</div>
+            <p class="text-xs text-slate-600 mt-1">স্থান জানতে চায়। উত্তরে অবশ্যই <strong>in / at / on / near</strong> ব্যবহার করবেন।</p>
+            <p class="en text-xs font-semibold text-navy-900 mt-2">Q: Where is the bank? &rarr; A: It’s <u>next to</u> the post office.</p>
+          </div>
+
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50">
+            <div class="font-bold text-teal-700 en">3. WHEN (কখন)</div>
+            <p class="text-xs text-slate-600 mt-1">সময় জানতে চায়। ঘড়ির সময়ে <strong>at</strong>, দিনে <strong>on</strong>, মাসে/বছরে <strong>in</strong> বসে।</p>
+            <p class="en text-xs font-semibold text-navy-900 mt-2">Q: When is your exam? &rarr; A: It’s <u>on</u> Monday <u>at</u> 10 AM.</p>
+          </div>
+
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50">
+            <div class="font-bold text-teal-700 en">4. WHY (কেন)</div>
+            <p class="text-xs text-slate-600 mt-1">কারণ জানতে চায়। উত্তরে <strong>Because / To + V1 / Due to</strong> ব্যবহার করুন।</p>
+            <p class="en text-xs font-semibold text-navy-900 mt-2">Q: Why are you late? &rarr; A: <u>Because</u> I got stuck in traffic.</p>
+          </div>
+
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50">
+            <div class="font-bold text-teal-700 en">5. WHO / WHOM / WHOSE</div>
+            <p class="text-xs text-slate-600 mt-1">ব্যক্তি বা মালিকানা জানতে চায়। Whose-এর উত্তরে <strong>my / mine / John's</strong> বসে।</p>
+            <p class="en text-xs font-semibold text-navy-900 mt-2">Q: Whose pen is this? &rarr; A: It’s <u>mine</u> / It belongs to me.</p>
+          </div>
+
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50">
+            <div class="font-bold text-teal-700 en">6. HOW + (Long / Often / Much)</div>
+            <p class="text-xs text-slate-600 mt-1"><strong>How long</strong> (সময়কাল: for 2 hours), <strong>How often</strong> (কতবার: twice a week), <strong>How</strong> (পদ্ধতি: by bus)।</p>
+            <p class="en text-xs font-semibold text-navy-900 mt-2">Q: How often do you exercise? &rarr; A: Three times a week.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Type C & D: Choice Questions & Opinion Openers -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="p-5 rounded-2xl bg-indigo-50/60 border border-indigo-200 space-y-2">
+          <h4 class="font-bold text-navy-900 text-base"><span class="text-indigo-700">Type C:</span> বিকল্প প্রশ্ন (Choice / "Or" Questions)</h4>
+          <p class="text-xs sm:text-sm text-slate-700">যখন প্রশ্নে <strong>"or"</strong> থাকে (যেমন: <span class="en font-semibold">Tea or coffee?</span>), তখন কখনোই Yes/No বলবেন না! যেকোনো একটি বেছে নিন অথবা দুটিই বলুন:</p>
+          <ul class="text-xs sm:text-sm space-y-1 text-slate-800 pl-4 list-disc">
+            <li><span class="en font-semibold">I’d prefer tea, please.</span> (আমি চা পছন্দ করব।)</li>
+            <li><span class="en font-semibold">Actually, either is fine with me.</span> (আসলে, যেকোনো একটি হলেই চলবে।)</li>
+            <li><span class="en font-semibold">Neither, thank you. I just had water.</span> (কোনোটাই না, ধন্যবাদ।)</li>
+          </ul>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-teal-50/60 border border-teal-200 space-y-2">
+          <h4 class="font-bold text-navy-900 text-base"><span class="text-teal-700">Type D:</span> মতামত ও অ্যাডভান্সড প্রশ্ন (Opinion Openers)</h4>
+          <p class="text-xs sm:text-sm text-slate-700">অ্যাডভান্সড প্রশ্নে বারবার <span class="en font-semibold">"I think..."</span> না বলে নিচের স্মার্ট স্টার্টারগুলো ব্যবহার করুন:</p>
+          <ul class="text-xs sm:text-sm space-y-1 text-slate-800 pl-4 list-disc">
+            <li><span class="en font-semibold">From my perspective / In my view...</span> (আমার দৃষ্টিভঙ্গি থেকে...)</li>
+            <li><span class="en font-semibold">I firmly believe that...</span> (আমি দৃঢ়ভাবে বিশ্বাস করি যে...)</li>
+            <li><span class="en font-semibold">As far as I’m concerned...</span> (আমার জানামতে / আমার ক্ষেত্রে...)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- MODULE 4: 100 Q&A MASTER DEMO BANK (ALL 100 ITEMS RENDERED)           -->
+    <!-- ===================================================================== -->
+    <section id="module-4" class="space-y-6">
+      <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-5">
+        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full">মডিউল ০৪ • ১০০টি পূর্ণাঙ্গ ডেমো</span>
+            <h2 class="text-xl sm:text-2xl font-bold text-navy-900 mt-2">১০০টি প্রশ্নের উত্তর দেওয়ার পূর্ণাঙ্গ ডেমো ব্যাংক (Basic, Intermediate & Advanced)</h2>
+          </div>
+          <div class="text-xs sm:text-sm font-semibold text-teal-700 bg-teal-50 px-3.5 py-1.5 rounded-xl border border-teal-200">
+            মোট প্রশ্ন ও উত্তর: <span id="visible-count" class="font-bold">১০০</span>টি
+          </div>
+        </div>
+
+        <p class="text-sm sm:text-base text-slate-700">
+          নিচের প্রতিটি প্রশ্নের নিচে <strong>৩টি ভিন্ন স্টাইল ও লেভেলে</strong> উত্তর সাজানো হয়েছে:
+          <span class="inline-block bg-slate-100 text-slate-800 px-2 py-0.5 rounded font-semibold text-xs">১. Basic (সরাসরি ও সংক্ষিপ্ত)</span>
+          <span class="inline-block bg-teal-100 text-teal-900 px-2 py-0.5 rounded font-semibold text-xs">২. Intermediate (কারণসহ সাবলীল)</span>
+          <span class="inline-block bg-amber-100 text-amber-900 px-2 py-0.5 rounded font-semibold text-xs">৩. Advanced (বিস্তারিত / A.R.E.A. / বিকল্প ভঙ্গি)</span>।
+          প্রিন্ট করলে ১০০টি প্রশ্নই সুন্দরভাবে A4 পেজে সাজানো থাকবে।
+        </p>
+
+        <!-- Interactive Filter & Search Controls (Hidden on Print) -->
+        <div class="no-print bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-4">
+          <div class="flex flex-col sm:flex-row gap-3">
+            <div class="relative flex-1">
+              <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+              <input
+                type="text"
+                id="qa-search"
+                oninput="filterQA()"
+                placeholder="যেকোনো ইংরেজি বা বাংলা শব্দ লিখে খুঁজুন (যেমন: hobby, future, traffic, tea, money)..."
+                class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-teal-600"
+              />
+            </div>
+            <button onclick="resetFilters()" class="px-4 py-2.5 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 text-sm font-semibold transition cursor-pointer shrink-0">
+              <i class="fa-solid fa-rotate-left mr-1"></i> রিসেট
+            </button>
+          </div>
+
+          <div class="flex flex-wrap gap-2" id="category-buttons">
+            <button onclick="setCategory('all', this)" class="cat-btn active px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-navy-900 text-white transition cursor-pointer">
+              সবগুলো (১-১০০)
+            </button>
+            <button onclick="setCategory('basic-yn', this)" class="cat-btn px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 transition cursor-pointer">
+              ১. Basic Yes/No ও পরিচিতি (১-২০)
+            </button>
+            <button onclick="setCategory('basic-wh', this)" class="cat-btn px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 transition cursor-pointer">
+              ২. Basic WH ও দৈনন্দিন (২১-৪৫)
+            </button>
+            <button onclick="setCategory('intermediate', this)" class="cat-btn px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 transition cursor-pointer">
+              ৩. Intermediate লাইফস্টাইল ও অভিজ্ঞতা (৪৬-৭০)
+            </button>
+            <button onclick="setCategory('advanced', this)" class="cat-btn px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 transition cursor-pointer">
+              ৪. Advanced মতামত, ক্যারিয়ার ও বিশ্লেষণ (৭১-১০০)
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container where all 100 Q&As are rendered -->
+      <div id="qa-container" class="grid grid-cols-1 gap-4"></div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- MODULE 5: SELF-PRACTICE WORKSHEET & EXPANSION DRILLS                  -->
+    <!-- ===================================================================== -->
+    <section id="module-5" class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6 print-page-break print-break-inside-avoid">
+      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3 py-1 rounded-full">মডিউল ০৫ • শিক্ষার্থীদের অনুশীলন শিট</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-navy-900 mt-2">ক্লাসরুম ও সেলফ-প্র্যাকটিস ওয়ার্কশিট (Answer Expansion Drills)</h2>
+        </div>
+        <span class="en text-xs font-semibold text-slate-400">LearnCare Practice Lab</span>
+      </div>
+
+      <p class="text-sm sm:text-base text-slate-700">
+        শিক্ষার্থীরা নিচের ৫টি প্রশ্নের উত্তর <strong>A.R.E.A. মডেল</strong> অনুসরণ করে ধাপে ধাপে লিখে বা মুখে বলে প্র্যাকটিস করবে:
+      </p>
+
+      <div class="space-y-4">
+        <div class="p-4 rounded-2xl border border-slate-300 bg-slate-50/70 space-y-2">
+          <div class="font-bold text-navy-900 en">Drill 1: "Do you prefer studying alone or in a group?"</div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs text-slate-600">
+            <div class="p-2.5 bg-white rounded-xl border border-dashed border-slate-300"><strong>1. Basic:</strong> I prefer studying...</div>
+            <div class="p-2.5 bg-white rounded-xl border border-dashed border-slate-300"><strong>2. Reason (Because):</strong> _______________________</div>
+            <div class="p-2.5 bg-white rounded-xl border border-dashed border-slate-300"><strong>3. Example (For instance):</strong> _______________________</div>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl border border-slate-300 bg-slate-50/70 space-y-2">
+          <div class="font-bold text-navy-900 en">Drill 2: "How has technology changed the way people learn English?"</div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs text-slate-600">
+            <div class="p-2.5 bg-white rounded-xl border border-dashed border-slate-300"><strong>1. Direct Answer:</strong> Technology has made...</div>
+            <div class="p-2.5 bg-white rounded-xl border border-dashed border-slate-300"><strong>2. Reason & Detail:</strong> _______________________</div>
+            <div class="p-2.5 bg-white rounded-xl border border-dashed border-slate-300"><strong>3. Alternative / Caution:</strong> However, _______________</div>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl border border-slate-300 bg-slate-50/70 space-y-2">
+          <div class="font-bold text-navy-900 en">Drill 3: "What is one skill you want to master this year?"</div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs text-slate-600">
+            <div class="p-2.5 bg-white rounded-xl border border-dashed border-slate-300"><strong>1. Direct Answer:</strong> _______________________</div>
+            <div class="p-2.5 bg-white rounded-xl border border-dashed border-slate-300"><strong>2. Why it matters:</strong> _______________________</div>
+            <div class="p-2.5 bg-white rounded-xl border border-dashed border-slate-300"><strong>3. Action Plan:</strong> _______________________</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Signature -->
+      <div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div class="font-semibold text-navy-900">
+          &copy; LearnCare Academy (লার্ন কেয়ার একাডেমি) • ইংরেজি ভাষা ও দক্ষতা উন্নয়ন বিভাগ
+        </div>
+        <div>
+          সূত্র: মিরর টেকনিক ও A.R.E.A. উত্তর সম্প্রসারণ মডেল (সংস্করণ ২.০)
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- COMPLETE 100 Q&A DATASET & INTERACTIVE RENDER SCRIPT                  -->
+  <!-- ===================================================================== -->
+  <script>
+    const qaData = [
+      // ==================== 1 to 20: BASIC YES/NO & GREETINGS ====================
+      {
+        id: 1, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "How are you doing today?",
+        qBn: "আপনি আজ কেমন আছেন?",
+        basic: "I'm fine, thank you.",
+        inter: "I'm doing very well, thanks for asking. How about you?",
+        adv: "I'm feeling energetic and productive today, especially because I had a great morning routine. How has your day been going so far?"
+      },
+      {
+        id: 2, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Are you a student?",
+        qBn: "তুমি কি একজন শিক্ষার্থী?",
+        basic: "Yes, I am. / No, I'm not.",
+        inter: "Yes, I'm currently studying English and Business at university.",
+        adv: "Yes, I am a final-year undergraduate student, and alongside my academic studies, I am also taking spoken English classes at LearnCare Academy to boost my communication skills."
+      },
+      {
+        id: 3, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Do you speak English?",
+        qBn: "আপনি কি ইংরেজিতে কথা বলেন?",
+        basic: "Yes, a little.",
+        inter: "Yes, I can speak English fairly well, and I'm practicing every day to improve.",
+        adv: "Yes, I can communicate comfortably in English, though I'm constantly working on expanding my vocabulary and sounding more natural in professional conversations."
+      },
+      {
+        id: 4, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Did you have your breakfast?",
+        qBn: "তুমি কি সকালের নাশতা করেছ?",
+        basic: "Yes, I did. / Not yet.",
+        inter: "Yes, I had bread, eggs, and a cup of tea about an hour ago.",
+        adv: "Actually, I haven't had a proper breakfast yet because I was in a rush this morning, so I just grabbed a banana and a quick cup of coffee on my way out."
+      },
+      {
+        id: 5, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Can you swim?",
+        qBn: "তুমি কি সাঁতার কাটতে পারো?",
+        basic: "Yes, I can. / No, I can't.",
+        inter: "Yes, I can swim quite well. My father taught me when I was a child.",
+        adv: "Yes, I'm a confident swimmer. Growing up near a river, swimming became one of my favorite summer activities, and I still try to go to the pool whenever I get free time."
+      },
+      {
+        id: 6, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Do you like tea or coffee?",
+        qBn: "তুমি কি চা পছন্দ করো নাকি কফি?",
+        basic: "I like tea.",
+        inter: "I definitely prefer tea because it refreshes me without making me feel jittery.",
+        adv: "While I enjoy an occasional cup of coffee in the morning, I'm a true tea lover at heart—especially traditional milk tea with ginger in the evening."
+      },
+      {
+        id: 7, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Have you ever been to Cox's Bazar?",
+        qBn: "তুমি কি কখনো কক্সবাজার গিয়েছ?",
+        basic: "Yes, I have. / No, never.",
+        inter: "Yes, I have been there twice with my family, and I loved the sea beach.",
+        adv: "Yes, I visited Cox's Bazar last winter. Walking along the world's longest unbroken sandy beach at sunset was truly an unforgettable experience for me."
+      },
+      {
+        id: 8, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Is it raining outside?",
+        qBn: "বাইরে কি বৃষ্টি হচ্ছে?",
+        basic: "Yes, it is. / No, it's sunny.",
+        inter: "No, it stopped raining a few minutes ago, though the sky is still cloudy.",
+        adv: "Not right now, actually. It was drizzling earlier this morning, which cooled down the weather nicely, so you probably won't need an umbrella at the moment."
+      },
+      {
+        id: 9, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Will you come to the class tomorrow?",
+        qBn: "তুমি কি আগামীকাল ক্লাসে আসবে?",
+        basic: "Yes, I will.",
+        inter: "Yes, I will definitely attend the class because we have an important speaking session.",
+        adv: "Without a doubt! I never like missing classes, especially tomorrow's session, since we're going to practice real-life question-and-answer drills."
+      },
+      {
+        id: 10, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Do you have any siblings?",
+        qBn: "তোমার কি কোনো ভাই-বোন আছে?",
+        basic: "Yes, I have one brother.",
+        inter: "Yes, I have an elder brother and a younger sister. We are very close.",
+        adv: "Yes, I come from a family of three children—I have an older brother who works as an engineer and a younger sister who is currently in high school."
+      },
+      {
+        id: 11, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Are you feeling tired?",
+        qBn: "তুমি কি ক্লান্ত বোধ করছ?",
+        basic: "A little bit.",
+        inter: "Yes, I'm a bit exhausted because I've been working since early morning.",
+        adv: "To be honest, I'm slightly drained after a long, hectic day of classes and assignments, so a good night's sleep is exactly what I need right now."
+      },
+      {
+        id: 12, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Did you enjoy the movie?",
+        qBn: "তুমি কি সিনেমাটি উপভোগ করেছ?",
+        basic: "Yes, it was great.",
+        inter: "Yes, I really enjoyed it because the storyline was thrilling and unpredictable.",
+        adv: "Absolutely! It exceeded my expectations. Not only was the acting phenomenal, but the background score also kept me on the edge of my seat until the very end."
+      },
+      {
+        id: 13, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Can you help me with this bag?",
+        qBn: "তুমি কি এই ব্যাগটি নিয়ে আমাকে সাহায্য করতে পারবে?",
+        basic: "Sure, no problem.",
+        inter: "Of course! Let me carry it for you; it looks quite heavy.",
+        adv: "I'd be more than happy to help. Please hand it over—let's take it upstairs together so you don't strain your back."
+      },
+      {
+        id: 14, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Do you cook at home?",
+        qBn: "তুমি কি বাসায় রান্না করো?",
+        basic: "Sometimes.",
+        inter: "Yes, I cook occasionally, especially on weekends when I have extra time.",
+        adv: "I wouldn't call myself a master chef, but I do cook basic meals regularly. In fact, preparing my own food helps me eat healthier and save money."
+      },
+      {
+        id: 15, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Are you busy right now?",
+        qBn: "তুমি কি এখন ব্যস্ত আছ?",
+        basic: "No, I'm free.",
+        inter: "Not really, I just finished my task. How can I help you?",
+        adv: "I'm completely free for the next half hour before my next meeting starts, so please feel free to share whatever is on your mind."
+      },
+      {
+        id: 16, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Do you like spicy food?",
+        qBn: "তুমি কি ঝাল খাবার পছন্দ করো?",
+        basic: "Yes, very much.",
+        inter: "Yes, I love spicy food, especially traditional Bangladeshi curries.",
+        adv: "Definitely! Being Bangladeshi, spicy food is an essential part of my palate. However, I try to keep it moderate so it doesn't upset my stomach."
+      },
+      {
+        id: 17, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Have you finished your homework?",
+        qBn: "তুমি কি তোমার বাড়ির কাজ শেষ করেছ?",
+        basic: "Yes, I have.",
+        inter: "Yes, I completed all my assignments last night before going to bed.",
+        adv: "Yes, I wrapped it up earlier this afternoon, and I even double-checked my grammar to make sure there aren't any silly mistakes."
+      },
+      {
+        id: 18, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Would you like some water?",
+        qBn: "তুমি কি একটু পানি খাবে?",
+        basic: "Yes, please.",
+        inter: "Yes, thank you. A glass of cold water would be great right now.",
+        adv: "That would be wonderful, thank you so much! I've been walking in the heat for twenty minutes, so I'm quite thirsty."
+      },
+      {
+        id: 19, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Do you wake up early in the morning?",
+        qBn: "তুমি কি সকালে তাড়াতাড়ি ঘুম থেকে ওঠো?",
+        basic: "Yes, at 6 AM.",
+        inter: "Yes, I usually wake up around 6 AM to say my prayers and go for a walk.",
+        adv: "I try my best to be an early riser. Waking up at 6 AM gives me quiet, uninterrupted hours to plan my day and study before the city gets noisy."
+      },
+      {
+        id: 20, cat: 'basic-yn', catLabel: 'Basic Yes/No',
+        q: "Is English difficult for you?",
+        qBn: "ইংরেজি কি তোমার কাছে কঠিন মনে হয়?",
+        basic: "Not anymore.",
+        inter: "It used to be difficult, but regular practice has made it much easier.",
+        adv: "Initially, speaking English felt intimidating because I was afraid of making mistakes. However, once I learned proper sentence structures, it became an enjoyable skill."
+      },
+
+      // ==================== 21 to 45: BASIC WH & DAILY LIFE ====================
+      {
+        id: 21, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "What is your full name?",
+        qBn: "তোমার পূর্ণ নাম কী?",
+        basic: "My name is Tanvir Ahmed.",
+        inter: "My full name is Tanvir Ahmed, and you can simply call me Tanvir.",
+        adv: "My full name is Tanvir Ahmed, though my friends and colleagues usually call me Tanvir for short. It's a pleasure to meet you."
+      },
+      {
+        id: 22, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "Where are you from?",
+        qBn: "তোমার দেশের বাড়ি কোথায়?",
+        basic: "I'm from Satkhira.",
+        inter: "I'm originally from Satkhira, which is in the Khulna division of Bangladesh.",
+        adv: "I hail from Satkhira, a peaceful district in southwestern Bangladesh famous for the Sundarbans mangrove forest and delicious mangoes."
+      },
+      {
+        id: 23, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "What do you do for a living?",
+        qBn: "তুমি জীবিকার জন্য কী করো?",
+        basic: "I'm a teacher.",
+        inter: "I work as an English instructor at LearnCare Academy.",
+        adv: "I am an English language educator by profession. I help students overcome their fear of speaking English by teaching practical communication frameworks."
+      },
+      {
+        id: 24, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "What are your hobbies?",
+        qBn: "তোমার শখগুলো কী কী?",
+        basic: "Reading and traveling.",
+        inter: "In my free time, I enjoy reading self-development books and exploring new places.",
+        adv: "I have a few hobbies that keep me balanced—primarily reading non-fiction books to gain new perspectives, and traveling whenever I get a break to refresh my mind."
+      },
+      {
+        id: 25, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "When is your birthday?",
+        qBn: "তোমার জন্মদিন কবে?",
+        basic: "On 15th October.",
+        inter: "My birthday falls on the 15th of October every year.",
+        adv: "I was born on October 15th. Usually, I prefer celebrating it quietly with my close family members and a homemade dinner rather than throwing a big party."
+      },
+      {
+        id: 26, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "How do you go to your workplace or college?",
+        qBn: "তুমি কীভাবে তোমার কর্মস্থল বা কলেজে যাও?",
+        basic: "By bus.",
+        inter: "I usually commute by public bus because it is affordable and convenient.",
+        adv: "Most days, I take the local bus since there is a direct route from my neighborhood, although I occasionally use a ride-sharing bike if I'm running late."
+      },
+      {
+        id: 27, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "Who is your favorite person in your family?",
+        qBn: "তোমার পরিবারে তোমার সবচেয়ে প্রিয় মানুষ কে?",
+        basic: "My mother.",
+        inter: "I love everyone, but I'm closest to my mother because she always supports me.",
+        adv: "Without a doubt, my mother is my greatest inspiration. Her patience, wisdom, and unconditional support have shaped who I am today."
+      },
+      {
+        id: 28, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "What is your favorite food?",
+        qBn: "তোমার প্রিয় খাবার কী?",
+        basic: "Biryani.",
+        inter: "My all-time favorite dish is chicken biryani, especially when it's homemade.",
+        adv: "If I had to pick just one dish, it would definitely be traditional Kacchi Biryani. The aroma of the spices and tender meat makes it irresistible during special occasions."
+      },
+      {
+        id: 29, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "What time do you usually go to bed?",
+        qBn: "তুমি সাধারণত কয়টার সময় ঘুমাতে যাও?",
+        basic: "Around 11 PM.",
+        inter: "I usually go to bed around 11:00 PM so I can get seven hours of sleep.",
+        adv: "I try to maintain a consistent sleep schedule by turning off my phone at 10:30 PM and falling asleep by 11:00 PM, which keeps me energized the next day."
+      },
+      {
+        id: 30, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "Where did you buy this shirt?",
+        qBn: "তুমি এই শার্টটি কোথা থেকে কিনেছ?",
+        basic: "From a local market.",
+        inter: "I bought it from a clothing store in New Market last week.",
+        adv: "I actually picked this up from a boutique shop in Dhanmondi during a weekend sale. I really liked the cotton fabric because it's breathable in hot weather."
+      },
+      {
+        id: 31, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "How many languages can you speak?",
+        qBn: "তুমি কয়টি ভাষায় কথা বলতে পারো?",
+        basic: "Two languages.",
+        inter: "I can speak two languages fluently: Bengali, which is my mother tongue, and English.",
+        adv: "Currently, I am bilingual—I speak native Bengali and fluent English. However, I can also understand basic Hindi, and I'd love to learn Arabic in the future."
+      },
+      {
+        id: 32, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "Why are you learning English?",
+        qBn: "তুমি কেন ইংরেজি শিখছ?",
+        basic: "For a better job.",
+        inter: "I'm learning English to improve my career prospects and communicate globally.",
+        adv: "English is no longer just a subject; it's a vital life skill. Mastering it will open doors to international job opportunities and allow me to access global knowledge effortlessly."
+      },
+      {
+        id: 33, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "What is the weather like today?",
+        qBn: "আজকের আবহাওয়া কেমন?",
+        basic: "It's warm and sunny.",
+        inter: "Today the weather is quite pleasant with a gentle breeze and clear blue skies.",
+        adv: "It's a gorgeous day—warm with bright sunshine, yet not overly humid thanks to a cool afternoon breeze. It's ideal weather for an evening stroll."
+      },
+      {
+        id: 34, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "How long have you been living here?",
+        qBn: "তুমি কতদিন ধরে এখানে বসবাস করছ?",
+        basic: "For five years.",
+        inter: "I've been living in this neighborhood for about five years now.",
+        adv: "I moved here nearly five years ago for my studies, and over time, this area has truly started feeling like a second home to me."
+      },
+      {
+        id: 35, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "Which season do you like the most?",
+        qBn: "তুমি কোন ঋতু সবচেয়ে বেশি পছন্দ করো?",
+        basic: "Winter.",
+        inter: "I love winter the most because the weather is cool and comfortable.",
+        adv: "Winter is hands down my favorite season in Bangladesh. Not only do we get a relief from the scorching heat, but we also enjoy traditional pithas and outdoor picnics."
+      },
+      {
+        id: 36, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "What did you do last weekend?",
+        qBn: "গত সপ্তাহান্তে (ছুটির দিনে) তুমি কী করেছিলে?",
+        basic: "I stayed at home.",
+        inter: "Last weekend, I visited my grandparents and spent quality time with my family.",
+        adv: "I had a very relaxing weekend. On Friday, I caught up on some pending reading, and on Saturday, I met up with old school friends for dinner."
+      },
+      {
+        id: 37, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "Whose phone is on the table?",
+        qBn: "টেবিলের ওপর কার ফোন রাখা আছে?",
+        basic: "It's mine.",
+        inter: "That's my phone. I left it there while charging it.",
+        adv: "Oh, that belongs to me! I put it on silent mode so it wouldn't disturb anyone during our discussion."
+      },
+      {
+        id: 38, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "How much does this book cost?",
+        qBn: "এই বইটির দাম কত?",
+        basic: "300 Taka.",
+        inter: "This book costs 300 Taka, which is quite reasonable for its content.",
+        adv: "I bought it for 300 Taka after a 15% discount at the book fair. Considering how practical the lessons inside are, it's definitely worth every penny."
+      },
+      {
+        id: 39, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "What kind of music do you listen to?",
+        qBn: "তুমি কোন ধরনের গান শুনতে পছন্দ করো?",
+        basic: "Soft and classical music.",
+        inter: "I mostly listen to soft acoustic songs and Rabindra Sangeet when I want to relax.",
+        adv: "My music taste depends on my mood, though I generally gravitate toward soulful melodies and instrumental tracks that help me concentrate while working."
+      },
+      {
+        id: 40, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "Where can I find a good pharmacy nearby?",
+        qBn: "কাছাকাছি একটি ভালো ফার্মেসি আমি কোথায় পেতে পারি?",
+        basic: "Right across the street.",
+        inter: "There is a 24-hour pharmacy just two minutes down the road on your left.",
+        adv: "If you walk straight down this street for about 100 meters, you'll see a large green signboard on the corner—that's the most reliable pharmacy in this area."
+      },
+      {
+        id: 41, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "Who taught you how to use a computer?",
+        qBn: "তোমাকে কম্পিউটার চালানো কে শিখিয়েছে?",
+        basic: "My elder brother.",
+        inter: "My elder brother taught me the basics, and then I learned more through YouTube.",
+        adv: "Initially, my cousin introduced me to basic computer operations during my school days, and later I sharpened my skills through online tutorials and hands-on practice."
+      },
+      {
+        id: 42, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "How often do you exercise?",
+        qBn: "তুমি কতদিন পরপর ব্যায়াম করো?",
+        basic: "Three times a week.",
+        inter: "I try to work out at least four days a week to stay fit and active.",
+        adv: "I maintain a routine of exercising five mornings a week—mostly brisk walking and light stretching—because it significantly boosts my mental focus."
+      },
+      {
+        id: 43, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "What is your dream job?",
+        qBn: "তোমার স্বপ্নের পেশা কী?",
+        basic: "Becoming an entrepreneur.",
+        inter: "My dream is to run my own educational tech company and help thousands of students.",
+        adv: "I aspire to become an educational entrepreneur where I can combine technology and modern teaching methods to make quality learning accessible across Bangladesh."
+      },
+      {
+        id: 44, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "When will the train arrive?",
+        qBn: "ট্রেনটি কখন পৌঁছাবে?",
+        basic: "At 4:30 PM.",
+        inter: "According to the schedule, the train is supposed to arrive at 4:30 PM.",
+        adv: "The scheduled arrival time is 4:30 PM, though considering slight evening delays, we should expect it around 4:45 PM."
+      },
+      {
+        id: 45, cat: 'basic-wh', catLabel: 'Basic WH',
+        q: "Why did you choose this subject?",
+        qBn: "তুমি কেন এই বিষয়টি বেছে নিয়েছ?",
+        basic: "Because I love it.",
+        inter: "I chose this subject because I've always been passionate about it and it has strong career growth.",
+        adv: "The primary reason I opted for this field is that it aligns naturally with my analytical strengths while offering diverse opportunities in the modern job market."
+      },
+
+      // ==================== 46 to 70: INTERMEDIATE LIFESTYLE & EXPERIENCE ====================
+      {
+        id: 46, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "How do you usually spend your free time?",
+        qBn: "তুমি সাধারণত তোমার অবসর সময় কীভাবে কাটাও?",
+        basic: "I watch videos or read.",
+        inter: "In my leisure time, I usually read insightful articles, watch documentaries, or chat with my family.",
+        adv: "I try to make my free time both relaxing and enriching. Usually, I split it between reading books on personal growth and catching up with close friends over a cup of tea."
+      },
+      {
+        id: 47, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "Can you describe your hometown in a few sentences?",
+        qBn: "তুমি কি কয়েকটি বাক্যে তোমার নিজ শহরের বর্ণনা দিতে পারবে?",
+        basic: "It is a small and clean town.",
+        inter: "My hometown is a peaceful, green district known for its friendly people, rivers, and agricultural richness.",
+        adv: "My hometown is a charming blend of natural beauty and warm hospitality. Unlike overcrowded metropolises, life moves at a calm pace there, surrounded by lush greenery and fresh air."
+      },
+      {
+        id: 48, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "What is your daily routine like?",
+        qBn: "তোমার দৈনন্দিন রুটিন কেমন?",
+        basic: "I study, work, and sleep.",
+        inter: "My day starts at 6 AM with morning prayers and exercise, followed by classes, work, and evening self-study.",
+        adv: "I follow a structured yet flexible routine. Mornings are dedicated to health and focused study, afternoons to professional responsibilities, and evenings to family time and reflection."
+      },
+      {
+        id: 49, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "Have you ever faced a difficult situation and overcome it?",
+        qBn: "তুমি কি কখনো কঠিন পরিস্থিতির সম্মুখীন হয়ে তা কাটিয়ে উঠেছ?",
+        basic: "Yes, during my exams.",
+        inter: "Yes, I once fell sick right before my final exams, but with proper planning, I still scored well.",
+        adv: "Definitely. Last year, I had to deliver a major presentation with very little preparation time. By breaking the topic into key bullet points and practicing calmly, I turned a stressful moment into a success."
+      },
+      {
+        id: 50, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "Do you prefer online shopping or traditional shopping?",
+        qBn: "তুমি কি অনলাইন শপিং পছন্দ করো নাকি দোকানে গিয়ে কেনাকাটা?",
+        basic: "I prefer online shopping.",
+        inter: "I prefer online shopping for books and gadgets because it saves time and offers great discounts.",
+        adv: "It actually depends on what I'm buying. For electronics and books, online shopping is unbeatable in terms of convenience, whereas for clothes, I prefer physical stores to check the fabric quality."
+      },
+      {
+        id: 51, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "What kind of books do you enjoy reading?",
+        qBn: "তুমি কোন ধরনের বই পড়তে ভালোবাসো?",
+        basic: "Storybooks and biographies.",
+        inter: "I enjoy reading biographies of successful people and books on psychology and communication.",
+        adv: "I'm particularly drawn to non-fiction—especially books on human psychology, leadership, and real-life biographies—because they offer practical lessons I can apply directly to my life."
+      },
+      {
+        id: 52, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "How do you deal with stress?",
+        qBn: "তুমি মানসিক চাপ কীভাবে সামলাও?",
+        basic: "I take rest and listen to music.",
+        inter: "Whenever I feel stressed, I step away from screens, take a short walk, and practice deep breathing.",
+        adv: "When pressure builds up, I've learned to pause rather than panic. Going for a brisk walk outdoors, organizing my to-do list by priority, and talking to a trusted mentor always help me regain clarity."
+      },
+      {
+        id: 53, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "What makes a good friend according to you?",
+        qBn: "তোমার মতে একজন ভালো বন্ধুর কী কী গুণ থাকা উচিত?",
+        basic: "Honesty and kindness.",
+        inter: "A good friend is someone who is honest, trustworthy, and stands by you during tough times.",
+        adv: "To me, true friendship is built on mutual respect, honesty, and empathy. A great friend not only celebrates your victories with you but also offers constructive advice when you're off track."
+      },
+      {
+        id: 54, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "Do you think social media is helpful or harmful?",
+        qBn: "তুমি কি মনে করো সোশ্যাল মিডিয়া উপকারী নাকি ক্ষতিকর?",
+        basic: "It is both.",
+        inter: "Social media is very helpful for learning and networking if we use it with self-control.",
+        adv: "I view social media as a double-edged sword. On one hand, it democratizes education and global connectivity; on the other hand, mindless scrolling can severely damage our focus and mental health."
+      },
+      {
+        id: 55, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "What is the most memorable trip you have ever taken?",
+        qBn: "তোমার জীবনের সবচেয়ে স্মরণীয় ভ্রমণ কোনটি?",
+        basic: "My trip to Sylhet.",
+        inter: "My trip to Sylhet last year was unforgettable because of the lush tea gardens and waterfalls.",
+        adv: "Without a doubt, my trip to Sreemangal and Sylhet stands out the most. Waking up to misty tea estates and exploring crystal-clear streams felt like stepping into a painting."
+      },
+      {
+        id: 56, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "How important is time management in a student's life?",
+        qBn: "একজন শিক্ষার্থীর জীবনে সময়ের সদ্ব্যবহার কতটা গুরুত্বপূর্ণ?",
+        basic: "It is very important.",
+        inter: "Time management is crucial because it helps students balance studies, skills, and rest without stress.",
+        adv: "Effective time management is the cornerstone of academic and personal success. Students who prioritize their tasks early avoid last-minute cramming and achieve far better results with less anxiety."
+      },
+      {
+        id: 57, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "Would you like to live abroad in the future?",
+        qBn: "তুমি কি ভবিষ্যতে বিদেশে বসবাস করতে চাও?",
+        basic: "Maybe for a few years.",
+        inter: "I would love to go abroad for higher studies and global exposure, then return to contribute to my country.",
+        adv: "Ideally, I'd love to spend a few years abroad pursuing postgraduate studies and gaining international work experience, before returning home to apply that expertise locally."
+      },
+      {
+        id: 58, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "What is your biggest strength?",
+        qBn: "তোমার সবচেয়ে বড় শক্তি বা ইতিবাচক দিক কী?",
+        basic: "I am a fast learner.",
+        inter: "My biggest strength is adaptability and consistency—I never give up until I master a skill.",
+        adv: "I consider my resilience and eagerness to learn as my core strengths. Whenever I encounter a new challenge, I break it down systematically and stay committed until I find a solution."
+      },
+      {
+        id: 59, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "What is one habit you would like to improve?",
+        qBn: "তোমার কোন অভ্যাসটি তুমি উন্নত করতে চাও?",
+        basic: "My screen time.",
+        inter: "I'm working on reducing my late-night smartphone usage so I can sleep even better.",
+        adv: "One area I'm actively improving is avoiding overthinking minor details. I'm training myself to make quicker decisions and focus on progress rather than perfection."
+      },
+      {
+        id: 60, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "Do you prefer working alone or in a team?",
+        qBn: "তুমি কি একা কাজ করতে পছন্দ করো নাকি দলগতভাবে?",
+        basic: "I like working in a team.",
+        inter: "I enjoy teamwork because sharing ideas brings better results, though I also value quiet solo focus.",
+        adv: "I'm comfortable with both, depending on the task. Brainstorming and creative problem-solving thrive in a collaborative team, whereas deep research and writing require uninterrupted solo focus."
+      },
+      {
+        id: 61, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "How do you stay motivated when learning something new?",
+        qBn: "নতুন কিছু শেখার সময় তুমি কীভাবে নিজেকে অনুপ্রাণিত রাখো?",
+        basic: "I set small goals.",
+        inter: "I stay motivated by breaking big goals into small daily milestones and tracking my progress.",
+        adv: "Motivation naturally fluctuates, so I rely on systems rather than willpower alone—such as setting weekly micro-goals, surrounding myself with growth-minded peers, and celebrating small wins."
+      },
+      {
+        id: 62, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "What role does sports play in our lives?",
+        qBn: "আমাদের জীবনে খেলাধুলার ভূমিকা কী?",
+        basic: "It keeps us healthy.",
+        inter: "Sports keep us physically fit and teach us discipline, teamwork, and how to handle failure.",
+        adv: "Beyond physical fitness, sports build mental toughness and leadership. Whether winning or losing on the field, athletes learn resilience and collaboration that transfer directly to real life."
+      },
+      {
+        id: 63, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "Tell me about a teacher who inspired you.",
+        qBn: "তোমাকে অনুপ্রাণিত করেছেন এমন একজন শিক্ষকের কথা বলো।",
+        basic: "My high school English teacher.",
+        inter: "My high school English teacher inspired me because he explained complex rules with patience and humor.",
+        adv: "One mentor who deeply influenced me was my English teacher. Instead of forcing us to memorize grammar rules, he encouraged us to express our thoughts fearlessly, which transformed my confidence."
+      },
+      {
+        id: 64, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "How has your life changed in the last two years?",
+        qBn: "গত দুই বছরে তোমার জীবনে কী কী পরিবর্তন এসেছে?",
+        basic: "I have become more confident.",
+        inter: "Over the past two years, I've become much more disciplined, independent, and focused on my career.",
+        adv: "The last two years have been a period of immense personal growth for me. I've shifted from passive learning to actively building practical skills, which has made me far more self-assured."
+      },
+      {
+        id: 65, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "What is your favorite way to celebrate a festival?",
+        qBn: "উৎসব উদযাপন করার তোমার প্রিয় উপায় কী?",
+        basic: "Spending time with family.",
+        inter: "My favorite way to celebrate Eid or any festival is wearing new clothes, enjoying festive meals, and visiting relatives.",
+        adv: "For me, the true essence of any festival lies in togetherness. Sharing traditional meals with family, reconnecting with old friends, and helping those in need make the celebration truly meaningful."
+      },
+      {
+        id: 66, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "Do you think reading newspapers is still relevant?",
+        qBn: "তুমি কি মনে করো সংবাদপত্র পড়া এখনো প্রাসঙ্গিক?",
+        basic: "Yes, especially online.",
+        inter: "Yes, reading reliable newspapers keeps us well-informed and improves our vocabulary and critical thinking.",
+        adv: "Absolutely. Even though most people now read digital editions rather than print, verified journalism remains essential for understanding global affairs deeply and avoiding social media misinformation."
+      },
+      {
+        id: 67, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "What would you do if you won a large sum of money?",
+        qBn: "তুমি যদি অনেক টাকা জিতে যাও তবে কী করবে?",
+        basic: "I would help my family and invest.",
+        inter: "First, I would secure my family's future, donate a portion to charity, and invest the rest in education.",
+        adv: "If I ever received a windfall, I'd approach it thoughtfully: first clearing any family obligations, then establishing a scholarship fund for underprivileged students, and investing the remainder wisely."
+      },
+      {
+        id: 68, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "Why is traffic congestion a big problem in cities?",
+        qBn: "শহরগুলোতে যানজট কেন একটি বড় সমস্যা?",
+        basic: "Because there are too many cars.",
+        inter: "Traffic jams happen due to rapid urbanization, narrow roads, and a lack of strict traffic rule enforcement.",
+        adv: "Urban traffic congestion stems from multiple factors, including overpopulation, insufficient public transit infrastructure, and poor lane discipline—all of which waste millions of productive hours daily."
+      },
+      {
+        id: 69, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "How can we protect our environment in daily life?",
+        qBn: "দৈনন্দিন জীবনে আমরা কীভাবে আমাদের পরিবেশ রক্ষা করতে পারি?",
+        basic: "By planting trees and reducing plastic.",
+        inter: "We can protect the environment by using reusable bags, saving electricity, and planting more trees.",
+        adv: "Meaningful environmental change starts with small daily habits—such as cutting down on single-use plastics, conserving water and electricity at home, and supporting community tree-plantation drives."
+      },
+      {
+        id: 70, cat: 'intermediate', catLabel: 'Intermediate',
+        q: "What advice would you give to someone who is shy about speaking English?",
+        qBn: "যারা ইংরেজিতে কথা বলতে লজ্জা পায় তাদের তুমি কী পরামর্শ দেবে?",
+        basic: "Don't be afraid of mistakes.",
+        inter: "I would advise them to practice daily in front of a mirror and remember that mistakes are part of learning.",
+        adv: "My best advice is to shift focus from perfection to communication. Nobody speaks flawlessly on day one—join a supportive practice community, speak a little every day, and treat every mistake as a stepping stone."
+      },
+
+      // ==================== 71 to 100: ADVANCED OPINION, CAREER & ABSTRACT ====================
+      {
+        id: 71, cat: 'advanced', catLabel: 'Advanced',
+        q: "How is Artificial Intelligence (AI) shaping the future of education?",
+        qBn: "কৃত্রিম বুদ্ধিমত্তা (AI) কীভাবে শিক্ষার ভবিষ্যৎকে বদলে দিচ্ছে?",
+        basic: "It makes learning faster and easier.",
+        inter: "AI is transforming education by offering personalized tutoring, instant feedback, and accessible resources for students worldwide.",
+        adv: "Artificial Intelligence is revolutionizing education by shifting it from a one-size-fits-all model to personalized learning. For instance, students can now practice languages with AI tools 24/7; however, human mentorship remains irreplaceable for critical thinking and emotional intelligence."
+      },
+      {
+        id: 72, cat: 'advanced', catLabel: 'Advanced',
+        q: "Do you think academic degrees are enough to get a good job today?",
+        qBn: "তুমি কি মনে করো আজকের দিনে ভালো চাকরি পাওয়ার জন্য শুধু একাডেমিক ডিগ্রিই যথেষ্ট?",
+        basic: "No, skills are also needed.",
+        inter: "Not anymore. While degrees provide theoretical knowledge, employers today prioritize practical skills and communication.",
+        adv: "From my perspective, a university degree merely gets your foot in the door, whereas practical skills—such as fluency in English, digital literacy, and problem-solving—are what actually secure and grow a career in today's competitive market."
+      },
+      {
+        id: 73, cat: 'advanced', catLabel: 'Advanced',
+        q: "What is the key to effective leadership?",
+        qBn: "কার্যকর নেতৃত্বের মূল চাবিকাঠি কী?",
+        basic: "Listening and guiding others.",
+        inter: "Effective leadership requires empathy, clear communication, and leading by example rather than just giving orders.",
+        adv: "True leadership isn't about authority; it's about empowerment. A great leader communicates a clear vision, listens actively to team members, takes accountability during setbacks, and inspires others to perform at their best."
+      },
+      {
+        id: 74, cat: 'advanced', catLabel: 'Advanced',
+        q: "How can young people develop strong communication skills?",
+        qBn: "তরুণরা কীভাবে শক্তিশালী যোগাযোগ দক্ষতা গড়ে তুলতে পারে?",
+        basic: "By practicing speaking and listening.",
+        inter: "Young people can improve communication by active listening, reading widely, and participating in public speaking clubs.",
+        adv: "Developing strong communication requires deliberate practice on two fronts: active listening to understand others' perspectives, and structured speaking—like joining debate clubs or language academies—to articulate thoughts clearly and persuasively."
+      },
+      {
+        id: 75, cat: 'advanced', catLabel: 'Advanced',
+        q: "Is failure necessary for success? Why or why not?",
+        qBn: "সাফল্যের জন্য কি ব্যর্থতা প্রয়োজন? কেন বা কেন নয়?",
+        basic: "Yes, because we learn from mistakes.",
+        inter: "Yes, failure is often the best teacher because it reveals our weaknesses and builds resilience.",
+        adv: "I firmly believe that failure is an indispensable stepping stone to meaningful success. Every setback provides invaluable feedback that theory alone can never teach, provided we analyze what went wrong and adapt our strategy."
+      },
+      {
+        id: 76, cat: 'advanced', catLabel: 'Advanced',
+        q: "How does globalization affect local cultures?",
+        qBn: "বিশ্বায়ন কীভাবে স্থানীয় সংস্কৃতিকে প্রভাবিত করে?",
+        basic: "It mixes different cultures together.",
+        inter: "Globalization brings cultural exchange and economic opportunities, though it can sometimes threaten local traditions.",
+        adv: "Globalization creates a fascinating cultural dynamic. While it enables cross-cultural understanding and access to global innovations, communities must consciously preserve their native language and heritage so they aren't overshadowed by mainstream global trends."
+      },
+      {
+        id: 77, cat: 'advanced', catLabel: 'Advanced',
+        q: "What is your view on remote work versus office work?",
+        qBn: "রিমোট ওয়ার্ক (বাসা থেকে কাজ) বনাম অফিস ওয়ার্ক সম্পর্কে তোমার মতামত কী?",
+        basic: "I prefer a mix of both.",
+        inter: "Remote work saves commuting time and increases flexibility, while office work encourages better teamwork.",
+        adv: "In my view, a hybrid model offers the best of both worlds. Remote work eliminates exhausting commutes and boosts deep focus, whereas occasional in-person office days foster spontaneous collaboration and company culture."
+      },
+      {
+        id: 78, cat: 'advanced', catLabel: 'Advanced',
+        q: "Why do some people struggle to achieve their New Year resolutions?",
+        qBn: "কেন কিছু মানুষ তাদের নতুন বছরের সংকল্প পূরণ করতে হিমশিম খায়?",
+        basic: "Because they set unrealistic goals.",
+        inter: "Most people fail because they rely on temporary excitement instead of building sustainable daily habits.",
+        adv: "The primary reason resolutions fizzle out by February is that people aim for drastic overnight transformations without changing their daily environment. Sustainable growth happens when we focus on tiny, consistent systems rather than massive, vague goals."
+      },
+      {
+        id: 79, cat: 'advanced', catLabel: 'Advanced',
+        q: "How important is financial literacy for young adults?",
+        qBn: "তরুণদের জন্য আর্থিক সাক্ষরতা (Financial Literacy) কতটা গুরুত্বপূর্ণ?",
+        basic: "It is extremely important.",
+        inter: "Financial literacy is essential so young adults can budget, save, and avoid unnecessary debt early in life.",
+        adv: "Financial literacy is arguably one of the most crucial life skills rarely taught in traditional classrooms. Understanding budgeting, compounding, and smart investing early empowers young adults to achieve long-term independence and security."
+      },
+      {
+        id: 80, cat: 'advanced', catLabel: 'Advanced',
+        q: "Can money buy happiness? Give your honest opinion.",
+        qBn: "টাকা কি সুখ কিনতে পারে? তোমার সৎ মতামত দাও।",
+        basic: "Not completely, but it helps.",
+        inter: "Money can't buy true love or inner peace, but it provides security and removes financial stress.",
+        adv: "While money alone cannot guarantee emotional fulfillment, financial stability certainly eliminates a huge source of daily anxiety. Once basic needs, healthcare, and security are met, true happiness comes from meaningful relationships and purpose."
+      },
+      {
+        id: 81, cat: 'advanced', catLabel: 'Advanced',
+        q: "What are the qualities of a good teacher in the 21st century?",
+        qBn: "একবিংশ শতাব্দীতে একজন ভালো শিক্ষকের কী কী গুণাবলি থাকা উচিত?",
+        basic: "Patience, knowledge, and friendliness.",
+        inter: "A modern teacher must be adaptable, empathetic, tech-savvy, and able to make complex topics simple.",
+        adv: "In the 21st century, a great teacher acts less like a lecturer and more like a facilitator. Beyond subject mastery, they must possess empathy, digital fluency, and the ability to ignite curiosity so students become lifelong independent learners."
+      },
+      {
+        id: 82, cat: 'advanced', catLabel: 'Advanced',
+        q: "How does reading fiction benefit the human brain?",
+        qBn: "গল্প-উপন্যাস (Fiction) পড়া মানুষের মস্তিষ্কের কী উপকার করে?",
+        basic: "It improves imagination and vocabulary.",
+        inter: "Reading fiction enhances creativity, strengthens vocabulary, and helps us understand different human emotions.",
+        adv: "Numerous cognitive studies show that reading literary fiction actually boosts empathy and emotional intelligence. By stepping into the shoes of diverse characters, readers sharpen their imagination and analytical thinking simultaneously."
+      },
+      {
+        id: 83, cat: 'advanced', catLabel: 'Advanced',
+        q: "Should school uniforms be mandatory? Why?",
+        qBn: "স্কুল ইউনিফর্ম কি বাধ্যতামূলক হওয়া উচিত? কেন?",
+        basic: "Yes, because everyone looks equal.",
+        inter: "Yes, uniforms promote equality among students from different financial backgrounds and maintain discipline.",
+        adv: "I strongly support mandatory school uniforms because they eliminate visible socioeconomic divides among students, reduce peer pressure over fashion, and foster a unified sense of belonging and focus on academics."
+      },
+      {
+        id: 84, cat: 'advanced', catLabel: 'Advanced',
+        q: "How can a country encourage entrepreneurship among youth?",
+        qBn: "একটি দেশ কীভাবে তরুণদের মধ্যে উদ্যোক্তা হওয়ার প্রবণতা বাড়াতে পারে?",
+        basic: "By giving loans and training.",
+        inter: "Governments can support young entrepreneurs through startup grants, practical business training, and simpler regulations.",
+        adv: "To cultivate a thriving youth startup ecosystem, a nation needs three pillars: accessible seed funding without heavy collateral, practical mentorship programs, and streamlined business registration policies that reward innovation."
+      },
+      {
+        id: 85, cat: 'advanced', catLabel: 'Advanced',
+        q: "What is the biggest challenge facing our generation today?",
+        qBn: "আজকের দিনে আমাদের প্রজন্মের সবচেয়ে বড় চ্যালেঞ্জ কী?",
+        basic: "Job competition and climate change.",
+        inter: "Our generation faces intense job market competition alongside rapid technological disruption and climate challenges.",
+        adv: "One of the defining challenges for our generation is navigating rapid technological disruption while maintaining mental well-being. Constant upskilling is mandatory just to stay relevant in a fast-evolving global economy."
+      },
+      {
+        id: 86, cat: 'advanced', catLabel: 'Advanced',
+        q: "Do you think people are becoming too dependent on smartphones?",
+        qBn: "তুমি কি মনে করো মানুষ স্মার্টফোনের ওপর অতিরিক্ত নির্ভরশীল হয়ে পড়ছে?",
+        basic: "Yes, very much.",
+        inter: "Yes, many people check their phones constantly, which reduces face-to-face communication and attention spans.",
+        adv: "Undoubtedly, smartphone dependency has reached an alarming level. While these devices are incredible productivity tools, compulsive usage often erodes deep focus, disrupts sleep quality, and weakens genuine in-person conversations."
+      },
+      {
+        id: 87, cat: 'advanced', catLabel: 'Advanced',
+        q: "How do you define 'success' in your own words?",
+        qBn: "তোমার নিজের ভাষায় 'সাফল্য'-এর সংজ্ঞা কী?",
+        basic: "Achieving my goals and being happy.",
+        inter: "To me, success means achieving financial independence while maintaining good health and strong family relationships.",
+        adv: "I define success holistically—it's not merely a job title or bank balance, but the peace of mind that comes from continuous self-improvement, uplifting others, and maintaining a healthy balance between work and loved ones."
+      },
+      {
+        id: 88, cat: 'advanced', catLabel: 'Advanced',
+        q: "What is the importance of learning a second language?",
+        qBn: "দ্বিতীয় একটি ভাষা শেখার গুরুত্ব কী?",
+        basic: "It helps us talk to more people.",
+        inter: "Learning a second language boosts brain power, opens international career doors, and connects us with new cultures.",
+        adv: "Acquiring a second language like English acts as a passport to the world. Cognitively, it sharpens memory and multitasking abilities; professionally, it unlocks global career pathways and cross-cultural collaboration."
+      },
+      {
+        id: 89, cat: 'advanced', catLabel: 'Advanced',
+        q: "How can we bridge the generation gap between parents and children?",
+        qBn: "বাবা-মা এবং সন্তানদের মধ্যকার জেনারেশন গ্যাপ কীভাবে কমানো যায়?",
+        basic: "By talking openly with each other.",
+        inter: "Open, respectful conversations and mutual patience help both generations understand each other's perspectives.",
+        adv: "Bridging the generation gap requires empathy from both sides. When parents listen without immediate judgment and children respect their elders' life experiences, honest dialogue naturally replaces misunderstanding."
+      },
+      {
+        id: 90, cat: 'advanced', catLabel: 'Advanced',
+        q: "Is competition always a good thing in education?",
+        qBn: "শিক্ষাক্ষেত্রে প্রতিযোগিতা কি সবসময় ভালো?",
+        basic: "Healthy competition is good.",
+        inter: "Healthy competition motivates students to work harder, but extreme pressure can harm their confidence.",
+        adv: "While healthy competition pushes students to strive for excellence, an obsession with grades alone can stifle creativity and trigger severe anxiety. Ideally, schools should encourage students to compete primarily against their own past performance."
+      },
+      {
+        id: 91, cat: 'advanced', catLabel: 'Advanced',
+        q: "Where do you see yourself five years from now?",
+        qBn: "আগামী পাঁচ বছর পর তুমি নিজেকে কোথায় দেখতে চাও?",
+        basic: "In a good leadership position.",
+        inter: "In five years, I see myself as a seasoned professional leading impactful projects and mentoring juniors.",
+        adv: "Over the next five years, my goal is to master my domain, take on strategic leadership responsibilities, and build educational initiatives that create measurable positive impact for thousands of learners."
+      },
+      {
+        id: 92, cat: 'advanced', catLabel: 'Advanced',
+        q: "How can tourism benefit a developing country?",
+        qBn: "পর্যটন কীভাবে একটি উন্নয়নশীল দেশের উপকার করতে পারে?",
+        basic: "It brings money and creates jobs.",
+        inter: "Tourism boosts the local economy, creates hospitality jobs, and promotes cultural heritage globally.",
+        adv: "Sustainable tourism serves as a powerful economic catalyst for developing nations—generating foreign exchange, creating employment in local communities, and incentivizing the preservation of natural landmarks."
+      },
+      {
+        id: 93, cat: 'advanced', catLabel: 'Advanced',
+        q: "What makes a presentation or speech truly engaging?",
+        qBn: "একটি প্রেজেন্টেশন বা বক্তৃতা কীভাবে সত্যিকার অর্থে আকর্ষণীয় হয়?",
+        basic: "Clear voice and good examples.",
+        inter: "An engaging speech combines storytelling, clear structure, confident body language, and audience interaction.",
+        adv: "What separates a memorable speech from a boring lecture is storytelling and clarity. When a speaker opens with a relatable hook, structures ideas logically, and uses authentic vocal modulation, the audience stays effortlessly engaged."
+      },
+      {
+        id: 94, cat: 'advanced', catLabel: 'Advanced',
+        q: "Should volunteer work be encouraged among university students?",
+        qBn: "বিশ্ববিদ্যালয়ের শিক্ষার্থীদের মধ্যে স্বেচ্ছাসেবী কাজ কি উৎসাহিত করা উচিত?",
+        basic: "Yes, it builds character.",
+        inter: "Yes, volunteering teaches empathy, teamwork, and real-world problem-solving outside textbooks.",
+        adv: "Without a doubt. Engaging in community service exposes university students to real societal challenges, cultivates civic responsibility, and builds practical leadership skills that employers value highly."
+      },
+      {
+        id: 95, cat: 'advanced', catLabel: 'Advanced',
+        q: "How does diet affect our productivity and mood?",
+        qBn: "খাদ্যাভ্যাস কীভাবে আমাদের কর্মক্ষমতা এবং মেজাজকে প্রভাবিত করে?",
+        basic: "Healthy food gives us more energy.",
+        inter: "A balanced diet keeps our energy steady and improves concentration, whereas junk food causes sluggishness.",
+        adv: "There is a direct link between nutrition and cognitive performance. Whole foods rich in nutrients stabilize blood sugar and sharpen mental clarity, while excessive sugar and processed snacks often lead to afternoon energy crashes."
+      },
+      {
+        id: 96, cat: 'advanced', catLabel: 'Advanced',
+        q: "What is the difference between hearing and active listening?",
+        qBn: "শুধু শোনা (Hearing) এবং মনোযোগ দিয়ে শোনার (Active Listening) মধ্যে পার্থক্য কী?",
+        basic: "Listening means paying full attention.",
+        inter: "Hearing is just perceiving sound passively, whereas active listening means fully understanding and responding thoughtfully.",
+        adv: "Hearing is an involuntary physical sense, whereas active listening is a conscious communication skill. When you listen actively, you focus entirely on the speaker's words, tone, and intent rather than just waiting for your turn to talk."
+      },
+      {
+        id: 97, cat: 'advanced', catLabel: 'Advanced',
+        q: "Why is lifelong learning essential in the modern world?",
+        qBn: "আধুনিক বিশ্বে আজীবন শেখা (Lifelong Learning) কেন অপরিহার্য?",
+        basic: "Because the world changes fast.",
+        inter: "Because industries and technologies evolve rapidly, continuous learning keeps our skills relevant and sharp.",
+        adv: "In an era where knowledge doubles rapidly and entire industries transform within a decade, formal education is merely the starting line. Adopting a mindset of lifelong learning ensures adaptability, intellectual vitality, and career longevity."
+      },
+      {
+        id: 98, cat: 'advanced', catLabel: 'Advanced',
+        q: "How can public libraries stay attractive in the digital age?",
+        qBn: "ডিজিটাল যুগে গণগ্রন্থাগারগুলো কীভাবে তাদের আকর্ষণ ধরে রাখতে পারে?",
+        basic: "By offering free Wi-Fi and workshops.",
+        inter: "Libraries can modernize by adding e-books, quiet co-working spaces, and community learning events.",
+        adv: "Modern libraries can thrive by evolving from silent book warehouses into vibrant community hubs—offering high-speed internet, digital archives, book clubs, and skill-building workshops for local residents."
+      },
+      {
+        id: 99, cat: 'advanced', catLabel: 'Advanced',
+        q: "What is one change you would like to see in your community?",
+        qBn: "তোমার সমাজে বা এলাকায় তুমি কোন একটি পরিবর্তন দেখতে চাও?",
+        basic: "Cleaner streets and more parks.",
+        inter: "I would love to see better waste management and more green parks where children and elders can walk safely.",
+        adv: "If I could spearhead one local initiative, it would be creating well-maintained green parks alongside strict waste-recycling bins. Cleaner surroundings and safe recreational spaces dramatically elevate a community's quality of life."
+      },
+      {
+        id: 100, cat: 'advanced', catLabel: 'Advanced',
+        q: "How has LearnCare Academy helped you improve your English?",
+        qBn: "লার্ন কেয়ার একাডেমি তোমাকে ইংরেজি উন্নত করতে কীভাবে সাহায্য করেছে?",
+        basic: "It gave me confidence to speak.",
+        inter: "LearnCare Academy taught me structured formulas for asking and answering questions naturally without hesitation.",
+        adv: "LearnCare Academy completely transformed how I approach English. Instead of memorizing random sentences, I learned systematic frameworks—like the Mirror Technique and the A.R.E.A. expansion model—which allow me to answer any question fluently and confidently."
+      }
+    ];
+
+    let currentCategory = 'all';
+
+    function renderQA() {
+      const container = document.getElementById('qa-container');
+      const searchQuery = document.getElementById('qa-search').value.toLowerCase().trim();
+      container.innerHTML = '';
+
+      let count = 0;
+
+      qaData.forEach(item => {
+        const matchesCat = currentCategory === 'all' || item.cat === currentCategory;
+        const searchableText = `${item.id} ${item.q} ${item.qBn} ${item.basic} ${item.inter} ${item.adv}`.toLowerCase();
+        const matchesSearch = !searchQuery || searchableText.includes(searchQuery);
+
+        if (matchesCat && matchesSearch) {
+          count++;
+          const badgeColors = {
+            'basic-yn': 'bg-sky-100 text-sky-800 border-sky-200',
+            'basic-wh': 'bg-teal-100 text-teal-800 border-teal-200',
+            'intermediate': 'bg-indigo-100 text-indigo-800 border-indigo-200',
+            'advanced': 'bg-amber-100 text-amber-800 border-amber-200'
+          };
+
+          const card = document.createElement('article');
+          card.className = 'qa-card bg-white rounded-2xl p-5 shadow-sm border border-slate-200 hover:border-teal-400 transition print-break-inside-avoid';
+          card.innerHTML = `
+            <div class="flex flex-wrap items-start justify-between gap-2 pb-3 border-b border-slate-100">
+              <div class="flex items-start gap-3">
+                <span class="en w-8 h-8 rounded-xl bg-navy-900 text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
+                  #${item.id}
+                </span>
+                <div>
+                  <h3 class="en font-bold text-base sm:text-lg text-navy-900 leading-snug">Q: ${item.q}</h3>
+                  <p class="bn text-xs sm:text-sm text-slate-500 font-medium mt-0.5">${item.qBn}</p>
+                </div>
+              </div>
+              <span class="en text-[11px] font-bold px-2.5 py-1 rounded-full border ${badgeColors[item.cat]}">
+                ${item.catLabel}
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 mt-3.5 text-sm">
+              <!-- Way 1: Basic -->
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+                <div class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1 flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-slate-500"></span> ১. Basic (সরাসরি ও সংক্ষিপ্ত)
+                </div>
+                <p class="en font-medium text-slate-800 leading-relaxed">"${item.basic}"</p>
+              </div>
+
+              <!-- Way 2: Intermediate -->
+              <div class="p-3.5 rounded-xl bg-teal-50/60 border border-teal-200/80">
+                <div class="text-[11px] font-bold uppercase tracking-wider text-teal-700 mb-1 flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-teal-600"></span> ২. Intermediate (কারণসহ সাবলীল)
+                </div>
+                <p class="en font-medium text-navy-900 leading-relaxed">"${item.inter}"</p>
+              </div>
+
+              <!-- Way 3: Advanced -->
+              <div class="p-3.5 rounded-xl bg-amber-50/60 border border-amber-200/80">
+                <div class="text-[11px] font-bold uppercase tracking-wider text-amber-800 mb-1 flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-amber-600"></span> ৩. Advanced (বিস্তারিত / A.R.E.A.)
+                </div>
+                <p class="en font-medium text-navy-900 leading-relaxed">"${item.adv}"</p>
+              </div>
+            </div>
+          `;
+          container.appendChild(card);
+        }
+      });
+
+      if (count === 0) {
+        container.innerHTML = `
+          <div class="bg-white rounded-2xl p-10 text-center border border-slate-200 space-y-2">
+            <i class="fa-solid fa-folder-open text-3xl text-slate-300"></i>
+            <p class="font-bold text-slate-700">দুঃখিত, আপনার খোঁজা শব্দটির সাথে কোনো প্রশ্ন মেলেনি।</p>
+            <button onclick="resetFilters()" class="mt-2 px-4 py-2 bg-teal-600 text-white rounded-xl text-sm font-semibold">সব ১০০টি প্রশ্ন দেখুন</button>
+          </div>
+        `;
+      }
+
+      document.getElementById('visible-count').textContent = count;
+    }
+
+    function setCategory(cat, btnElement) {
+      currentCategory = cat;
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        btn.classList.remove('bg-navy-900', 'text-white');
+        btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-300');
+      });
+      btnElement.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-300');
+      btnElement.classList.add('bg-navy-900', 'text-white');
+      renderQA();
+    }
+
+    function filterQA() {
+      renderQA();
+    }
+
+    function resetFilters() {
+      document.getElementById('qa-search').value = '';
+      const firstBtn = document.querySelector('.cat-btn');
+      setCategory('all', firstBtn);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderQA();
+    });
+  </script>
+</body>
+</html>

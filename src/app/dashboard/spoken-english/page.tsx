@@ -105,11 +105,43 @@ export default function SpokenEnglishDashboard() {
             icon: '🎧',
             actionText: 'লিসেনিং শুরু করুন',
         },
+        {
+            id: 'm_labs_0',
+            title: 'LearnCare একাডেমি ল্যাব: ১টি টেন্স বা মোডাল শিট প্র্যাকটিস করুন',
+            link: '/dashboard/spoken-english/academy-labs',
+            icon: '🔬',
+            actionText: 'ল্যাব খুলুন',
+        },
+        {
+            id: 'm_labs_1',
+            title: '৩০০ স্পোকেন বাক্যের ৩টি বিকল্প ভ্যারিয়েশন মেগা ল্যাবে টেস্ট দিন',
+            link: '/dashboard/spoken-english/academy-labs/view?file=Master_300_Daily_Spoken_Sentences_Mega_Lab.html',
+            icon: '⚡',
+            actionText: 'মেগা ল্যাব',
+        },
     ];
 
     const completedMissionCount = Object.values(completedMissions).filter(Boolean).length;
 
     const features = [
+        {
+            title: 'LearnCare Academy Master Labs & Sheets',
+            desc: '৩০০ স্পোকেন বাক্যের ৩টি বিকল্প ভ্যারিয়েশন, ১০০ ও ২০০ রিয়েল-লাইফ কনভারসেশন, ১২টি টেন্স ও ২২টি মোডাল ভার্ব শিট সহ ৪৫টি সম্পূর্ণ ইন্টার-অ্যাক্টিভ ল্যাব ও লেকচার শিট।',
+            href: '/dashboard/spoken-english/academy-labs',
+            icon: <Sparkles className="text-amber-500" size={26} />,
+            color: 'from-amber-50 via-orange-50 to-rose-50 border-amber-300 hover:border-amber-500 shadow-md ring-1 ring-amber-400/20',
+            badge: '🔥 45 INTERACTIVE MASTER LABS',
+            badgeColor: 'bg-amber-100 text-amber-900 border-amber-300'
+        },
+        {
+            title: '300 Daily Sentences & 3 Variations Mega Lab',
+            desc: 'প্রতিটি বাংলা বাক্যের জন্য ৩টি চমৎকার ইংরেজি বিকল্প (Smart, Casual, Formal), অডিও লিসেনিং ড্রিল ও লাইভ মাল্টিপল চয়েস টেস্ট।',
+            href: '/dashboard/spoken-english/academy-labs/view?file=Master_300_Daily_Spoken_Sentences_Mega_Lab.html',
+            icon: <Zap className="text-purple-600" size={26} />,
+            color: 'from-purple-50 via-indigo-50 to-blue-50 border-purple-200 hover:border-purple-400 shadow-sm',
+            badge: '⚡ 3-VARIATION ENGINE & TEST',
+            badgeColor: 'bg-purple-100 text-purple-800 border-purple-200'
+        },
         {
             title: 'Step-by-Step Spoken English Mastery',
             desc: 'am/is/are থেকে শুরু করে সকল Tense, Modals ও Spoken Structures — ৬-ধাপের বাক্য রূপান্তর (+, -, ?, ?-, WH+, WH-), নেটিভ স্টাইল, প্রশ্নোত্তর ও সেন্টেন্স বিল্ডার।',
@@ -120,12 +152,12 @@ export default function SpokenEnglishDashboard() {
             badgeColor: 'bg-indigo-100 text-indigo-800 border-indigo-300'
         },
         {
-            title: '40 Real-Life Situations Lab',
-            desc: 'সহজ থেকে ইন্টারমিডিয়েট ৪০টি বাস্তব জীবনের দৃশ্যপট (প্রতিটিতে ১০টি ডায়ালগ ও উচ্চারণ) — কথা শুরু করার ৩টি বাক্য (Ice Breakers), টার্ন-বাই-টার্ন রোলপ্লে ও লাইভ মাইক টেস্ট।',
+            title: '50 Real-Life Situations Lab',
+            desc: 'সহজ থেকে ইন্টারমিডিয়েট ৫০টি বাস্তব জীবনের দৃশ্যপট (প্রতিটিতে ১০টি ডায়ালগ ও উচ্চারণ) — কথা শুরু করার ৩টি বাক্য (Ice Breakers), টার্ন-বাই-টার্ন রোলপ্লে ও লাইভ মাইক টেস্ট।',
             href: '/dashboard/spoken-english/conversations',
             icon: <MessageSquare className="text-emerald-600" size={26} />,
             color: 'from-emerald-50 via-teal-50 to-green-50 border-emerald-200 hover:border-emerald-400 shadow-sm',
-            badge: '🎭 40 SITUATIONS ROLEPLAY',
+            badge: '🎭 50 SITUATIONS ROLEPLAY',
             badgeColor: 'bg-emerald-100 text-emerald-800 border-emerald-300'
         },
         {
@@ -329,7 +361,7 @@ export default function SpokenEnglishDashboard() {
                         <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md px-5 py-3.5 flex items-center gap-3">
                             <Target size={22} className="text-teal-400" />
                             <div>
-                                <p className="text-2xl font-black">{completedMissionCount} / 4</p>
+                                <p className="text-2xl font-black">{completedMissionCount} / {dailyMissions.length}</p>
                                 <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Today's Missions</p>
                             </div>
                         </div>
@@ -356,12 +388,12 @@ export default function SpokenEnglishDashboard() {
                         </div>
                         <div className="text-right">
                             <p className="text-xs font-bold text-slate-500 mb-1">
-                                অগ্রগতি: {completedMissionCount} of 4 সম্পন্ন
+                                অগ্রগতি: {completedMissionCount} of {dailyMissions.length} সম্পন্ন
                             </p>
                             <div className="w-36 h-2 bg-slate-100 rounded-full overflow-hidden">
                                 <div
                                     className="h-full bg-gradient-to-r from-teal-500 to-emerald-500 transition-all duration-500"
-                                    style={{ width: `${(completedMissionCount / 4) * 100}%` }}
+                                    style={{ width: `${(completedMissionCount / dailyMissions.length) * 100}%` }}
                                 />
                             </div>
                         </div>
@@ -411,8 +443,79 @@ export default function SpokenEnglishDashboard() {
                 </div>
             </div>
 
-            {/* New Flagship Courses Showcase */}
+            {/* Premier Academy Master Labs Banner */}
             <div className="mx-auto max-w-6xl px-6 pt-12">
+                <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-amber-950/70 to-slate-950 p-6 sm:p-8 text-white border-2 border-amber-500/40 shadow-2xl">
+                    <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+                    <div className="relative z-10">
+                        <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
+                            <div className="flex items-center gap-2">
+                                <span className="rounded-full bg-amber-400 text-slate-950 px-3 py-1 text-xs font-black uppercase tracking-wider shadow-sm flex items-center gap-1.5">
+                                    <Sparkles size={13} /> LearnCare Academy Exclusive
+                                </span>
+                                <span className="rounded-full bg-white/10 text-amber-300 border border-amber-400/30 px-3 py-1 text-xs font-bold">
+                                    ৪৫টি ইন্টারঅ্যাক্টিভ মাস্টার ল্যাব
+                                </span>
+                            </div>
+                            <Link
+                                href="/dashboard/spoken-english/academy-labs"
+                                className="inline-flex items-center gap-2 text-xs font-black text-amber-300 hover:text-white bg-white/10 hover:bg-white/20 border border-amber-400/40 px-4 py-2 rounded-xl transition"
+                            >
+                                সব ৪৫টি একাডেমি ল্যাব দেখুন <ArrowUpRight size={15} />
+                            </Link>
+                        </div>
+
+                        <h2 className="text-2xl sm:text-4xl font-black text-white leading-tight">
+                            LearnCare Academy <span className="bg-gradient-to-r from-amber-400 via-orange-300 to-amber-200 bg-clip-text text-transparent">Master Practice Labs & Sheets</span>
+                        </h2>
+                        <p className="mt-2 text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
+                            ৩০০ নিত্যদিনের বাক্যের ৩টি বিকল্প ভ্যারিয়েশন, ১০০ ও ২০০ রিয়েল-লাইফ কনভারসেশন, ১২টি টেন্স ও ২২টি মোডাল ভার্ব প্র্যাকটিস শিট সহ ৪৫টি সম্পূর্ণ ইন্টার-অ্যাক্টিভ স্পোকেন ল্যাব এবং প্রতিটি ইউনিটের অফিসিয়াল পিডিএফ লেকচার শিট।
+                        </p>
+
+                        {/* Quick Module Jump Pills */}
+                        <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                            <Link
+                                href="/dashboard/spoken-english/academy-labs/view?file=Master_300_Daily_Spoken_Sentences_Mega_Lab.html"
+                                className="p-3 rounded-2xl bg-white/5 hover:bg-amber-500/20 border border-white/10 hover:border-amber-400/50 transition group"
+                            >
+                                <p className="text-[10px] font-bold text-amber-400 uppercase">মেগা ল্যাব</p>
+                                <p className="text-xs font-black text-white group-hover:text-amber-300 mt-0.5">৩০০ বাক্য ও ৩ বিকল্প</p>
+                                <p className="text-[10px] text-slate-400 mt-1">লিসেনিং + লাইভ টেস্ট →</p>
+                            </Link>
+
+                            <Link
+                                href="/dashboard/spoken-english/academy-labs/view?file=Real_Life_Everyday_Conversations_100_Master.html"
+                                className="p-3 rounded-2xl bg-white/5 hover:bg-emerald-500/20 border border-white/10 hover:border-emerald-400/50 transition group"
+                            >
+                                <p className="text-[10px] font-bold text-emerald-400 uppercase">১০০ কনভারসেশন</p>
+                                <p className="text-xs font-black text-white group-hover:text-emerald-300 mt-0.5">১০০ রিয়েল ডায়ালগ</p>
+                                <p className="text-[10px] text-slate-400 mt-1">ফুল রোলপ্লে ড্রিল →</p>
+                            </Link>
+
+                            <Link
+                                href="/dashboard/spoken-english/academy-labs?category=tenses"
+                                className="p-3 rounded-2xl bg-white/5 hover:bg-indigo-500/20 border border-white/10 hover:border-indigo-400/50 transition group"
+                            >
+                                <p className="text-[10px] font-bold text-indigo-400 uppercase">টেন্স মাস্টার ল্যাব</p>
+                                <p className="text-xs font-black text-white group-hover:text-indigo-300 mt-0.5">১২টি Tenses শিট</p>
+                                <p className="text-[10px] text-slate-400 mt-1">৫০০ Verbs ইঞ্জিন →</p>
+                            </Link>
+
+                            <Link
+                                href="/dashboard/spoken-english/academy-labs?category=modals"
+                                className="p-3 rounded-2xl bg-white/5 hover:bg-rose-500/20 border border-white/10 hover:border-rose-400/50 transition group"
+                            >
+                                <p className="text-[10px] font-bold text-rose-400 uppercase">মোডাল ভার্বস</p>
+                                <p className="text-xs font-black text-white group-hover:text-rose-300 mt-0.5">২২টি Modals শিট</p>
+                                <p className="text-[10px] text-slate-400 mt-1">এনসাইক্লোপিডিয়া ড্রিল →</p>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* New Flagship Courses Showcase */}
+            <div className="mx-auto max-w-6xl px-6 pt-8">
                 <div className="grid md:grid-cols-2 gap-6">
                     {/* Course 1: Step-by-Step Spoken English Mastery */}
                     <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-900 via-indigo-950 to-slate-900 p-8 text-white border-2 border-indigo-500/30 shadow-xl flex flex-col justify-between">
@@ -448,7 +551,7 @@ export default function SpokenEnglishDashboard() {
                         </div>
                     </div>
 
-                    {/* Course 2: 20 Real-Life Situations Lab */}
+                    {/* Course 2: 50 Real-Life Situations Lab */}
                     <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-teal-900 via-emerald-950 to-slate-900 p-8 text-white border-2 border-teal-500/30 shadow-xl flex flex-col justify-between">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-teal-500/10 rounded-full blur-2xl pointer-events-none" />
                         <div>
@@ -457,19 +560,19 @@ export default function SpokenEnglishDashboard() {
                                     🎭 রিয়েল-লাইফ কনভারসেশন ল্যাব
                                 </span>
                                 <span className="rounded-full bg-amber-500/20 text-amber-300 border border-amber-400/30 px-2.5 py-0.5 text-[10px] font-bold">
-                                    ২০টি দৃশ্যপট
+                                    ৫০টি দৃশ্যপট
                                 </span>
                             </div>
                             <h3 className="text-2xl font-black text-white leading-tight">
-                                ২০টি বাস্তব জীবনের কনভারসেশন সিমুলেটর
+                                ৫০টি বাস্তব জীবনের কনভারসেশন সিমুলেটর
                             </h3>
                             <p className="mt-2 text-xs sm:text-sm text-teal-200/90 leading-relaxed">
-                                কফি শপ, হোটেল, রেস্টুরেন্ট, ইন্টারভিউ, ডাক্তার ও এয়ারপোর্ট। কথা শুরু করার বাক্য (Ice Breakers), লাইভ মাইক দিয়ে টার্ন-বাই-টার্ন রোলপ্লে এবং ভদ্রভাবে কথা শেষ করার কৌশল।
+                                কফি শপ, হোটেল, রেস্তোরাঁ, ইন্টারভিউ, ডাক্তার, এয়ারপোর্ট, ফ্রিল্যান্সিং, ভিসা ইন্টারভিউ ও শপিং। কথা শুরু করার বাক্য (Ice Breakers), লাইভ মাইক দিয়ে টার্ন-বাই-টার্ন রোলপ্লে এবং প্রতিটি ডায়ালগের ৩টি বিকল্প ড্রপডাউন এক্সপ্রেশন।
                             </p>
                             <div className="mt-4 flex flex-wrap gap-2 text-[11px] text-teal-300">
                                 <span className="bg-white/10 px-2.5 py-1 rounded-lg">🚀 ৩টি Conversation Starter</span>
                                 <span className="bg-white/10 px-2.5 py-1 rounded-lg">🎙️ Speaker A / B রোলপ্লে</span>
-                                <span className="bg-white/10 px-2.5 py-1 rounded-lg">💡 নেটিভ ফ্রেজ ও ইডিয়ম</span>
+                                <span className="bg-white/10 px-2.5 py-1 rounded-lg">💡 ৩টি বিকল্প অভিব্যক্তি ড্রপডাউন</span>
                             </div>
                         </div>
                         <div className="mt-6">
@@ -539,7 +642,7 @@ export default function SpokenEnglishDashboard() {
                         </p>
                     </div>
                     <span className="text-xs font-bold text-teal-700 bg-teal-50 border border-teal-200 px-3 py-1 rounded-full">
-                        ✨ 10টি পাওয়ারফুল টুল সক্রিয়
+                        ✨ {features.length}টি পাওয়ারফুল টুল ও মাস্টার ল্যাব সক্রিয়
                     </span>
                 </div>
 

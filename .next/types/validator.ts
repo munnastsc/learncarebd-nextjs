@@ -371,6 +371,24 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../src/app/dashboard/spoken-english/academy-labs/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/dashboard/spoken-english/academy-labs">> = Specific
+  const handler = {} as typeof import("../../src/app/dashboard/spoken-english/academy-labs/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/dashboard/spoken-english/academy-labs/view/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/dashboard/spoken-english/academy-labs/view">> = Specific
+  const handler = {} as typeof import("../../src/app/dashboard/spoken-english/academy-labs/view/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../src/app/dashboard/spoken-english/common-mistakes/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/dashboard/spoken-english/common-mistakes">> = Specific

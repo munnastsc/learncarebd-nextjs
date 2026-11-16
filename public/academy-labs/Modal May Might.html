@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnCare Academy - Modal 'May & Might' Master Sheet</title>
+    <style>
+        :root {
+            --bg-color: #fdfbf7;
+            --card-bg: #ffffff;
+            --primary: #2563eb;
+            --secondary: #d97706;
+            --text-color: #1f2937;
+            --text-muted: #4b5563;
+            --border-color: #e5e7eb;
+            --shadow: 0 15px 35px rgba(0,0,0,0.08);
+            --3d-shadow: 0 10px 0px #1d4ed8, 0 15px 25px rgba(0,0,0,0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-size: 20px; 
+            line-height: 1.8;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background: var(--card-bg);
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+            border-bottom: 6px solid var(--primary);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.3rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s ease;
+        }
+
+        section:hover {
+            transform: translateY(-3px);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 25px;
+            font-size: 2.2rem;
+            border-bottom: 3px solid #f3f4f6;
+            padding-bottom: 12px;
+        }
+
+        h3 {
+            color: var(--secondary);
+            margin: 25px 0 15px 0;
+            font-size: 1.5rem;
+        }
+
+        p, li {
+            margin-bottom: 15px;
+            color: var(--text-color);
+            font-size: 1.15rem;
+        }
+
+        ul, ol {
+            padding-left: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            padding: 16px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 1.1rem;
+        }
+
+        th {
+            background-color: #eff6ff;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        tr:hover {
+            background-color: #fafaf9;
+        }
+
+        .code-box {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 6px solid var(--secondary);
+            font-family: monospace;
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+
+        .use-case-box {
+            display: flex;
+            background: #fffbeb;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #fcd34d;
+            margin-bottom: 25px;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .use-case-box img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .use-case-text h4 {
+            color: #b45309;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        /* Interactive Elements with Clickable Bangla */
+        .interactive-line {
+            background: #f9fafb;
+            padding: 18px 22px;
+            border-radius: 12px;
+            cursor: pointer;
+            border: 2px solid var(--border-color);
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .interactive-line:hover {
+            background: #eff6ff;
+            border-color: var(--primary);
+        }
+
+        .bangla-text {
+            display: none;
+            color: var(--secondary);
+            margin-top: 8px;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 1.2rem;
+            border-top: 1px dashed #d1d5db;
+            padding-top: 8px;
+        }
+
+        .btn-3d {
+            background: var(--primary);
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            box-shadow: var(--3d-shadow);
+            cursor: pointer;
+            transition: all 0.1s ease;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        .btn-3d:active {
+            transform: translateY(6px);
+            box-shadow: 0 4px 0px #1d4ed8, 0 8px 15px rgba(0,0,0,0.15);
+        }
+
+        .task-box {
+            background: #f0f9ff;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 6px solid #0ea5e9;
+            margin: 25px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .task-box h4 {
+            color: #0369a1;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .fill-in-box {
+            background: #f0fdf4;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #bbf7d0;
+            margin: 20px 0;
+        }
+
+        .fill-in-item {
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+
+        .blank-input {
+            border: none;
+            border-bottom: 2px solid var(--primary);
+            background: transparent;
+            width: 120px;
+            font-size: 1.2rem;
+            text-align: center;
+            color: var(--primary);
+            font-weight: bold;
+            outline: none;
+        }
+
+        .mcq-box {
+            background: #f8fafc;
+            padding: 22px;
+            border-radius: 14px;
+            border: 2px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .mcq-options label {
+            display: block;
+            margin: 10px 0;
+            padding: 12px 16px;
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .mcq-options label:hover {
+            background: #eff6ff;
+            border-color: var(--primary);
+        }
+
+        .answer-reveal {
+            display: none;
+            margin-top: 12px;
+            padding: 10px 15px;
+            background: #d1fae5;
+            color: #065f46;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .sample-answer-box {
+            display: none; 
+            margin-top: 15px; 
+            padding: 20px; 
+            background: #e0f2fe; 
+            border-radius: 10px;
+            border-left: 5px solid var(--primary);
+            font-size: 1.15rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Print styling for PDF */
+        @media print {
+            .bangla-text,
+            .answer-reveal,
+            .sample-answer-box {
+                display: block !important;
+            }
+            .btn-3d {
+                display: none !important;
+            }
+            .interactive-line, .mcq-box, .task-box, .fill-in-box, .use-case-box {
+                page-break-inside: avoid;
+            }
+            body {
+                padding: 10px;
+            }
+        }
+    
+        /* LIVE SCORE TRACKER COMPONENT */
+        .score-card {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            padding: 25px;
+            border-radius: 18px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+            text-align: center;
+        }
+
+        .score-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .score-display {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin: 5px 0;
+        }
+
+        .score-percent {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .score-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: #10b981;
+            width: 0%;
+            border-radius: 10px;
+            transition: width 0.4s ease;
+        }
+
+        .option-btn {
+            background: white;
+            border: 2px solid var(--border-color, #e5e7eb);
+            border-radius: 10px;
+            padding: 14px 20px;
+            font-size: 1.15rem;
+            color: var(--text-color, #1f2937);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: left;
+            user-select: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .option-btn:hover {
+            background: #eff6ff;
+            border-color: var(--primary, #2563eb);
+            transform: translateX(4px);
+        }
+
+        .option-btn.user-correct {
+            background-color: #d1fae5 !important;
+            border-color: #10b981 !important;
+            color: #065f46 !important;
+            font-weight: 700;
+        }
+
+        .option-btn.user-wrong {
+            background-color: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b !important;
+            font-weight: 700;
+        }
+
+        .option-btn.correct-choice {
+            background-color: #d1fae5 !important;
+            border-color: #10b981 !important;
+            color: #065f46 !important;
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <h1>LearnCare Academy</h1>
+            <p>Ultimate Modern 3D Master Sheet: All Uses of Modal "May" & "Might"</p>
+        </header>
+
+        <!-- SECTION 1: ALL USES OF MAY AND MIGHT -->
+        <section>
+            <h2>1. Different Uses of "May" & "Might" (Situations)</h2>
+            <p><strong>Core Structure:</strong> Subject + may/might + V1 (Base Form) + Extension</p>
+            <p>May এবং Might প্রধানত সম্ভাবনা (Possibility) বোঝাতে ব্যবহৃত হয়, তবে এদের আরো কিছু বিশেষ ব্যবহার আছে!</p>
+
+            <div class="use-case-box">
+                <img src="/images/academy/might_possibility_1788095160413.jpg" alt="Possibility">
+                <div class="use-case-text">
+                    <h4>1. Possibility (সম্ভাবনা - May vs Might)</h4>
+                    <p>কোনো কিছু ঘটার সম্ভাবনা থাকলে May বা Might বসে।<br>
+                    <strong>May</strong> = সম্ভাবনা একটু বেশি (প্রায় ৫০%)।<br>
+                    <strong>Might</strong> = সম্ভাবনা খুব কম (প্রায় ২০-৩০%)।</p>
+                    <ul>
+                        <li><strong>Example:</strong> Look at the dark clouds. It <strong>may rain</strong> today. (বৃষ্টি হওয়ার সম্ভাবনা বেশি।)</li>
+                        <li><strong>Example:</strong> The sky is clear, but it <strong>might rain</strong> later. (বৃষ্টি হওয়ার সম্ভাবনা খুবই কম, তবে হতেও পারে।)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="use-case-box">
+                <img src="/images/academy/may_permission_1788095146797.jpg" alt="Permission">
+                <div class="use-case-text">
+                    <h4>2. Permission (অনুমতি চাওয়া বা দেওয়া)</h4>
+                    <p>খুব ভদ্রভাবে বা ফরমাল জায়গায় কারো কাছে অনুমতি চাইতে May ব্যবহৃত হয়। (Might সাধারণত অনুমতি চাইতে ব্যবহৃত হয় না)</p>
+                    <ul>
+                        <li><strong>Request:</strong> <strong>May I</strong> come in, sir? (আমি কি ভেতরে আসতে পারি, স্যার?)</li>
+                        <li><strong>Granting:</strong> Yes, you <strong>may go</strong> now. (হ্যাঁ, তুমি এখন যেতে পারো।)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="use-case-box">
+                <div class="use-case-text">
+                    <h4>3. Wish or Prayer (প্রার্থনা বা আশীর্বাদ)</h4>
+                    <p>কারো জন্য দোয়া, প্রার্থনা বা শুভকামনা জানাতে বাক্যের শুরুতে May বসে।</p>
+                    <ul>
+                        <li><strong>Example:</strong> <strong>May you</strong> live long. (তুমি দীর্ঘজীবী হও।)</li>
+                        <li><strong>Example:</strong> <strong>May God</strong> bless you. (আল্লাহ তোমার মঙ্গল করুন।)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="use-case-box">
+                <div class="use-case-text">
+                    <h4>4. Purpose (উদ্দেশ্য - so that)</h4>
+                    <p>কোনো কাজ করার উদ্দেশ্য বোঝাতে "so that" এর পরে present tense এ May এবং past tense এ Might বসে।</p>
+                    <ul>
+                        <li><strong>Example:</strong> We eat good food <em>so that</em> we <strong>may stay</strong> healthy. (আমরা ভালো খাবার খাই যাতে আমরা সুস্থ থাকতে পারি।)</li>
+                        <li><strong>Example:</strong> He worked hard <em>so that</em> he <strong>might pass</strong> the exam. (সে কঠোর পরিশ্রম করেছিল যাতে সে পরীক্ষায় পাস করতে পারে।)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: SHORT TRICK & BASIC STRUCTURE -->
+        <section>
+            <h2>2. Short Trick & 4-Way Framework</h2>
+            <div class="code-box">
+                Golden Rule: **Subject + may/might + V1**<br>
+                হতে পারে/করতে পারে (Possibility) / আমি কি পারি? (Permission)
+            </div>
+
+            <h3>10 General Sentences (Mixed Uses):</h3>
+            <ul>
+                <li><strong>It may rain</strong> tonight. (হতে পারে - Possibility)</li>
+                <li><strong>He might come</strong> tomorrow, but I am not sure. (আসতেও পারে - Weak Possibility)</li>
+                <li><strong>May I use</strong> your phone? (আমি কি ব্যবহার করতে পারি? - Permission)</li>
+                <li><strong>You may leave</strong> the room now. (তুমি যেতে পারো - Permission given)</li>
+                <li><strong>May you be</strong> happy in life. (তুমি সুখী হও - Wish)</li>
+                <li><strong>She may know</strong> the answer. (সে হয়তো জানে - Possibility)</li>
+                <li><strong>I might buy</strong> a car next year. (আমি হয়তো কিনবো - Weak Possibility)</li>
+                <li><strong>May God forgive</strong> us. (আল্লাহ আমাদের ক্ষমা করুন - Prayer)</li>
+                <li><strong>He may not</strong> agree with us. (সে হয়তো রাজি হবে না - Negative Possibility)</li>
+                <li><strong>They might not</strong> find the address. (তারা হয়তো খুঁজে পাবে না - Negative Possibility)</li>
+            </ul>
+
+            <h3>The 4-Way Sentence Framework (Example: Possibility):</h3>
+            <table>
+                <tr>
+                    <th>Form</th>
+                    <th>Structure</th>
+                    <th>Example</th>
+                    <th>Bangla Meaning</th>
+                </tr>
+                <tr>
+                    <td>Affirmative</td>
+                    <td>Subject + may/might + V1 + Obj</td>
+                    <td>He may go</td>
+                    <td>সে হয়তো যাবে / সে যেতে পারে</td>
+                </tr>
+                <tr>
+                    <td>Negative</td>
+                    <td>Subject + may/might not + V1</td>
+                    <td>He may not go</td>
+                    <td>সে হয়তো যাবে না</td>
+                </tr>
+                <tr>
+                    <td>Interrogative (May)</td>
+                    <td>May + Subject + V1?</td>
+                    <td>May I go?</td>
+                    <td>আমি কি যেতে পারি? (অনুমতি)</td>
+                </tr>
+                <tr>
+                    <td>Negative Interrogative</td>
+                    <td>May + Subject + not + V1?</td>
+                    <td>May I not go?</td>
+                    <td>আমি কি যেতে পারি না?</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- SECTION 3: 20 PRACTICE TABLE -->
+        <section>
+            <h2>3. 20 Examples Practice Table (Focus: Possibility)</h2>
+            <p><em>Note: You can replace 'may' with 'might' in affirmative/negative to make the possibility weaker.</em></p>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Affirmative (হয়তো করবে)</th>
+                    <th>Negative (হয়তো করবে না)</th>
+                    <th>Interrogative (Permission)</th>
+                </tr>
+                <tr><td>1</td><td>I may work.</td><td>I may not work.</td><td>May I work?</td></tr>
+                <tr><td>2</td><td>We may learn.</td><td>We may not learn.</td><td>May we learn?</td></tr>
+                <tr><td>3</td><td>You may run.</td><td>You may not run.</td><td>May I run?</td></tr>
+                <tr><td>4</td><td>They may swim.</td><td>They may not swim.</td><td>May they swim?</td></tr>
+                <tr><td>5</td><td>He may walk.</td><td>He may not walk.</td><td>May he walk?</td></tr>
+                <tr><td>6</td><td>She may cook.</td><td>She may not cook.</td><td>May she cook?</td></tr>
+                <tr><td>7</td><td>It may sleep.</td><td>It may not sleep.</td><td>May it sleep?</td></tr>
+                <tr><td>8</td><td>Rahim may help.</td><td>Rahim may not help.</td><td>May Rahim help?</td></tr>
+                <tr><td>9</td><td>The boy may read.</td><td>The boy may not read.</td><td>May the boy read?</td></tr>
+                <tr><td>10</td><td>Birds may sing.</td><td>Birds may not sing.</td><td>May birds sing?</td></tr>
+                <tr><td>11</td><td>Students may ask.</td><td>Students may not ask.</td><td>May students ask?</td></tr>
+                <tr><td>12</td><td>Farmers may grow.</td><td>Farmers may not grow.</td><td>May farmers grow?</td></tr>
+                <tr><td>13</td><td>We may travel.</td><td>We may not travel.</td><td>May we travel?</td></tr>
+                <tr><td>14</td><td>I may draw.</td><td>I may not draw.</td><td>May I draw?</td></tr>
+                <tr><td>15</td><td>Wind may blow.</td><td>Wind may not blow.</td><td>May wind blow?</td></tr>
+                <tr><td>16</td><td>Cats may jump.</td><td>Cats may not jump.</td><td>May cats jump?</td></tr>
+                <tr><td>17</td><td>Babies may cry.</td><td>Babies may not cry.</td><td>May babies cry?</td></tr>
+                <tr><td>18</td><td>Doctors may treat.</td><td>Doctors may not treat.</td><td>May doctors treat?</td></tr>
+                <tr><td>19</td><td>Teachers may explain.</td><td>Teachers may not explain.</td><td>May teachers explain?</td></tr>
+                <tr><td>20</td><td>Drivers may drive.</td><td>Drivers may not drive.</td><td>May drivers drive?</td></tr>
+            </table>
+        </section>
+
+        <!-- SECTION 4: 5 EASY PRESENTATIONS -->
+        <section>
+            <h2>4. Presentations (Based on different uses of May & Might)</h2>
+
+            <h3>Presentation 1: Uncertain Weekend Plans (Possibility)</h3>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I am not sure about my plans for this weekend."<div class="bangla-text">বাংলা অর্থ: এই ছুটির দিনে আমার পরিকল্পনার বিষয়ে আমি নিশ্চিত নই।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I may visit my grandmother's house."<div class="bangla-text">বাংলা অর্থ: আমি হয়তো আমার দাদির বাড়িতে যেতে পারি।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"My friends might invite me to play cricket."<div class="bangla-text">বাংলা অর্থ: আমার বন্ধুরা হয়তো আমাকে ক্রিকেট খেলতে দাওয়াত দিতে পারে (সম্ভাবনা কম)।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"If it rains, I may just stay at home."<div class="bangla-text">বাংলা অর্থ: যদি বৃষ্টি হয়, আমি হয়তো বাড়িতেই থাকবো।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I might read a new storybook in the evening."<div class="bangla-text">বাংলা অর্থ: আমি হয়তো সন্ধ্যায় একটি নতুন গল্পের বই পড়বো।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Let's see what happens!"<div class="bangla-text">বাংলা অর্থ: দেখা যাক কী হয়!</div></div>
+
+            <h3>Presentation 2: In the Classroom (Permission & Prayers)</h3>
+            <div class="interactive-line" onclick="toggleBangla(this)">"May I come in, sir?"<div class="bangla-text">বাংলা অর্থ: আমি কি ভেতরে আসতে পারি, স্যার?</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Yes, you may come in and take your seat."<div class="bangla-text">বাংলা অর্থ: হ্যাঁ, তুমি ভেতরে আসতে পারো এবং তোমার সিটে বসতে পারো।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Sir, may I ask a question about this math?"<div class="bangla-text">বাংলা অর্থ: স্যার, আমি কি এই অংকের বিষয়ে একটি প্রশ্ন করতে পারি?</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Of course, you may ask any question."<div class="bangla-text">বাংলা অর্থ: অবশ্যই, তুমি যেকোনো প্রশ্ন করতে পারো।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Thank you, sir. May God bless you."<div class="bangla-text">বাংলা অর্থ: ধন্যবাদ স্যার। আল্লাহ আপনার মঙ্গল করুন।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"May you shine in life, my student."<div class="bangla-text">বাংলা অর্থ: তুমি জীবনে উন্নতি করো, আমার ছাত্র।</div></div>
+
+            <h3>Presentation 3: The Weather Forecast (Possibility)</h3>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Welcome to today's weather forecast."<div class="bangla-text">বাংলা অর্থ: আজকের আবহাওয়ার পূর্বাভাসে স্বাগতম।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Today, the sky is very cloudy."<div class="bangla-text">বাংলা অর্থ: আজ আকাশ খুব মেঘলা।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"It may rain heavily in the afternoon."<div class="bangla-text">বাংলা অর্থ: বিকেলে হয়তো ভারী বৃষ্টি হতে পারে।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"A strong storm might hit the coastal areas."<div class="bangla-text">বাংলা অর্থ: উপকূলীয় এলাকায় হয়তো একটি শক্তিশালী ঝড় আঘাত হানতে পারে (সম্ভাবনা কম)।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"People may face traffic jams in the city."<div class="bangla-text">বাংলা অর্থ: শহরের মানুষ হয়তো যানজটের সম্মুখীন হতে পারে।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Please take your umbrella when you go out."<div class="bangla-text">বাংলা অর্থ: বাইরে যাওয়ার সময় দয়া করে ছাতা নিয়ে যাবেন।</div></div>
+
+            <h3>Presentation 4: Finding a Lost Item (Possibility)</h3>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I cannot find my keys anywhere."<div class="bangla-text">বাংলা অর্থ: আমি আমার চাবিগুলো কোথাও খুঁজে পাচ্ছি না।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I may have left them on the dining table."<div class="bangla-text">বাংলা অর্থ: আমি হয়তো সেগুলো ডাইনিং টেবিলে রেখে এসেছি।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"My little brother might have taken them to play."<div class="bangla-text">বাংলা অর্থ: আমার ছোট ভাই হয়তো সেগুলো খেলার জন্য নিয়ে থাকতে পারে।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"They might be in my jacket pocket."<div class="bangla-text">বাংলা অর্থ: সেগুলো হয়তো আমার জ্যাকেটের পকেটে থাকতে পারে।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I may need to ask my mother."<div class="bangla-text">বাংলা অর্থ: আমার হয়তো আমার মাকে জিজ্ঞেস করা লাগতে পারে।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"I hope I find them soon."<div class="bangla-text">বাংলা অর্থ: আশা করি আমি দ্রুত সেগুলো খুঁজে পাব।</div></div>
+
+            <h3>Presentation 5: Birthday Wishes (Prayers)</h3>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Happy birthday to my dearest friend!"<div class="bangla-text">বাংলা অর্থ: আমার প্রিয় বন্ধুকে শুভ জন্মদিন!</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"May all your dreams come true."<div class="bangla-text">বাংলা অর্থ: তোমার সব স্বপ্ন যেন সত্যি হয়।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"May you find happiness in every step of your life."<div class="bangla-text">বাংলা অর্থ: তুমি যেন জীবনের প্রতিটি পদক্ষেপে সুখ পাও।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"May God give you good health and success."<div class="bangla-text">বাংলা অর্থ: আল্লাহ যেন তোমাকে সুস্বাস্থ্য এবং সাফল্য দেন।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"May we always remain best friends."<div class="bangla-text">বাংলা অর্থ: আমরা যেন সবসময় সেরা বন্ধু থাকি।</div></div>
+            <div class="interactive-line" onclick="toggleBangla(this)">"Enjoy your special day!"<div class="bangla-text">বাংলা অর্থ: তোমার বিশেষ দিনটি উপভোগ করো!</div></div>
+
+            <!-- STUDENT TASK FOR PRESENTATION -->
+            <div class="task-box">
+                <h4>🎓 Student Task: Make Your Own Presentation!</h4>
+                <p>Make a presentation (5-6 sentences) using "May" and "Might". Remember the uses (Possibility, Permission, Wish)!</p>
+                <ul>
+                    <li><strong>1. Future Career (Possibility):</strong> <em>(Hints: I may become a doctor, I might study in abroad, I may work in a hospital, I might discover a medicine)</em></li>
+                    <li><strong>2. Formal Meeting (Permission):</strong> <em>(Hints: may I sit here, may I share my idea, may I drink some water, may we start)</em></li>
+                    <li><strong>3. New Year Wishes (Wish):</strong> <em>(Hints: happy new year, may this year bring joy, may you be successful, may God protect you)</em></li>
+                </ul>
+                <button class="btn-3d" onclick="toggleAnswers('pres-answers')">Show Sample Answers</button>
+                <div id="pres-answers" class="sample-answer-box">
+                    <p><strong>1. Future Career:</strong> Hello everyone! I want to talk about my future. I may become a doctor in the future. I might study in a famous university abroad. I may work in a big village hospital to help poor people. I might even discover a new medicine. Let's see what happens!</p>
+                    <p><strong>2. Formal Meeting:</strong> Good morning sir. May I come in? May I sit on this chair? Thank you. May we start the meeting now? Sir, may I share my new ideas for the project? May I have a glass of water, please? Thank you for your time.</p>
+                    <p><strong>3. New Year Wishes:</strong> Hello everyone! Happy New Year to you all! May this year bring joy to your family. May you be successful in your studies. May God protect you from all dangers. May we spend this year happily together.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: 5 EASY STORIES -->
+        <section>
+            <h2>5. 5 Easy Short Stories (Focusing on 'May/Might')</h2>
+            
+            <h3>Story 1: The Dark Clouds (Possibility)</h3>
+            <p>One afternoon, the sky became very dark. Rahim said to his friend, "Look at the sky. It may rain heavily today." His friend Karim replied, "You are right. We may not be able to play football." Karim's mother said, "Take an umbrella. A storm might hit the village." They took the umbrella. As they were walking, it started raining. They thought, "We might get wet if we don't run." They ran back home safely.</p>
+            <p><strong>Bangla Summary:</strong> একদিন বিকেলে আকাশ খুব কালো হয়ে গেল। রহিম তার বন্ধুকে বলল, "আকাশের দিকে তাকাও। আজ ভারী বৃষ্টি হতে পারে।" তার বন্ধু করিম উত্তর দিল, "তুমি ঠিক বলেছো। আমরা হয়তো ফুটবল খেলতে পারবো না।" করিমের মা বললেন, "একটি ছাতা নিয়ে যাও। গ্রামে হয়তো ঝড় আঘাত হানতে পারে।" তারা ছাতাটি নিল। হাঁটতে হাঁটতেই বৃষ্টি শুরু হলো। তারা ভাবল, "আমরা যদি না দৌড়াই তবে আমরা হয়তো ভিজে যাব।" তারা নিরাপদে দৌড়ে বাড়ি ফিরে এল।</p>
+
+            <h3>Story 2: The Polite Student (Permission)</h3>
+            <p>Ali was a very polite student. One day, he was late for school. He stood outside the classroom. The teacher was teaching. Ali knocked on the door and said softly, "Sir, may I come in?" The teacher asked, "Why are you late, Ali?" Ali replied, "Sir, my mother was sick. I had to buy medicine." The teacher smiled and said, "You are a good boy. Yes, you may come in. Take your seat." Ali was happy.</p>
+            <p><strong>Bangla Summary:</strong> আলী খুব ভদ্র একজন ছাত্র ছিল। একদিন তার স্কুলে দেরি হয়েছিল। সে ক্লাসরুমের বাইরে দাঁড়িয়ে ছিল। শিক্ষক পড়াচ্ছিলেন। আলী দরজায় টোকা দিয়ে নম্রভাবে বলল, "স্যার, আমি কি ভেতরে আসতে পারি?" শিক্ষক জিজ্ঞেস করলেন, "তোমার দেরি হলো কেন, আলী?" আলী উত্তর দিল, "স্যার, আমার মা অসুস্থ ছিলেন। আমাকে ওষুধ কিনতে হয়েছিল।" শিক্ষক হাসলেন এবং বললেন, "তুমি একটি ভালো ছেলে। হ্যাঁ, তুমি ভেতরে আসতে পারো। তোমার সিটে বসো।" আলী খুশি হলো।</p>
+
+            <h3>Story 3: The Lottery Ticket (Weak Possibility)</h3>
+            <p>Mr. Bean bought a lottery ticket. He looked at the ticket and smiled. He thought, "I might win the first prize. If I win, I might buy a big house. I might also travel to Paris." His friend saw him and said, "Don't dream too much. You may not win anything. Millions of people buy tickets." Mr. Bean replied, "I know, but a miracle might happen!" They both laughed.</p>
+            <p><strong>Bangla Summary:</strong> মিস্টার বিন একটি লটারির টিকিট কিনলেন। তিনি টিকিটের দিকে তাকিয়ে হাসলেন। তিনি ভাবলেন, "আমি হয়তো প্রথম পুরস্কার জিততে পারি। যদি আমি জিতি, আমি হয়তো একটি বড় বাড়ি কিনবো। আমি হয়তো প্যারিসেও ঘুরতে যাব।" তার বন্ধু তাকে দেখে বলল, "এত স্বপ্ন দেখো না। তুমি হয়তো কিছুই জিতবে না। লক্ষ লক্ষ মানুষ টিকিট কেনে।" মিস্টার বিন উত্তর দিলেন, "আমি জানি, কিন্তু কোনো অলৌকিক ঘটনা তো ঘটতেও পারে!" তারা দুজনেই হাসলো।</p>
+
+            <h3>Story 4: The Old Man's Blessing (Wish/Prayer)</h3>
+            <p>A poor boy found a lost wallet on the street. It had a lot of money. He looked inside and found an ID card. He went to the address and returned the wallet to an old man. The old man was very surprised. He said, "You are an honest boy. May God bless you! May you become a great man in the future. May your life be filled with happiness." The boy felt very proud of his honesty.</p>
+            <p><strong>Bangla Summary:</strong> এক গরিব ছেলে রাস্তায় একটি হারানো মানিব্যাগ পেল। এতে অনেক টাকা ছিল। সে ভেতরে দেখল এবং একটি আইডি কার্ড পেল। সে ঠিকানায় গিয়ে এক বৃদ্ধকে মানিব্যাগটি ফিরিয়ে দিল। বৃদ্ধ খুব অবাক হলেন। তিনি বললেন, "তুমি একজন সৎ ছেলে। আল্লাহ তোমার মঙ্গল করুন! তুমি যেন ভবিষ্যতে একজন বড় মানুষ হও। তোমার জীবন যেন সুখে ভরে ওঠে।" ছেলেটি তার সততার জন্য খুব গর্বিত বোধ করল।</p>
+
+            <h3>Story 5: The Hardworking Farmer (Purpose)</h3>
+            <p>Once there was a farmer in a village. He worked in the field from morning to evening. One day, a traveler asked him, "Why do you work so hard in this hot sun?" The farmer wiped his sweat and smiled. He said, "I work hard so that my children may get a good education. I save money so that they might not suffer like me." The traveler was touched by his love for his children.</p>
+            <p><strong>Bangla Summary:</strong> এক গ্রামে একজন কৃষক ছিল। সে সকাল থেকে সন্ধ্যা পর্যন্ত মাঠে কাজ করতো। একদিন এক পথচারী তাকে জিজ্ঞেস করল, "তুমি এই কড়া রোদে এত কঠোর পরিশ্রম কেন করো?" কৃষক ঘাম মুছে হাসল। সে বলল, "আমি কঠোর পরিশ্রম করি যাতে আমার সন্তানরা ভালো শিক্ষা পেতে পারে। আমি টাকা জমাই যাতে তারা আমার মতো কষ্ট না পায়।" পথচারী তার সন্তানদের প্রতি তার ভালোবাসা দেখে মুগ্ধ হলেন।</p>
+
+            <!-- STUDENT TASK FOR STORY -->
+            <div class="task-box">
+                <h4>✍️ Student Task: Complete the Story!</h4>
+                <p>Start writing a story using "may" or "might" (focusing on possibility) from this starting line. Make at least 6-8 sentences!</p>
+                <p style="font-weight: bold; color: var(--primary);">Starting Line: "We planned to go for a picnic in the forest. But..."</p>
+                <p><em>Hints: (it may rain, the road might be blocked, we might face wild animals, we may cancel the plan, we might go next week)</em></p>
+                <button class="btn-3d" onclick="toggleAnswers('story-answers')">Show Sample Answer</button>
+                <div id="story-answers" class="sample-answer-box">
+                    <p><strong>Sample Story:</strong> We planned to go for a picnic in the forest. But looking at the dark sky, we became worried. My father said, "It may rain very soon." My uncle added, "The forest roads might become very muddy and slippery." My little sister said, "We might also face dangerous wild animals in the dark!" So, we discussed again. We thought we might be in danger. Finally, my father said, "We may cancel the plan for today. We might go next week if the weather is good."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: 30 FILL IN THE BLANKS -->
+        <section>
+            <h2>6. 30 Fill in the Blanks (May & Might)</h2>
+            <p>Fill in the blanks using proper forms: <strong>may or might + V1 (Base verb)</strong>.</p>
+            <div class="fill-in-box">
+                <!-- Possibility Affirmative -->
+                <h4 style="color:var(--secondary); margin-bottom:10px;">Structure 1: Possibility (May/Might)</h4>
+                <div class="fill-in-item">1. It is very cloudy. It <input type="text" class="blank-input" placeholder="..."> (rain) today.</div>
+                <div class="fill-in-item">2. He is studying hard. He <input type="text" class="blank-input" placeholder="..."> (pass) the exam.</div>
+                <div class="fill-in-item">3. I am not sure, but I <input type="text" class="blank-input" placeholder="..."> (buy) a new phone.</div>
+                <div class="fill-in-item">4. She is very talented. She <input type="text" class="blank-input" placeholder="..."> (become) famous.</div>
+                <div class="fill-in-item">5. We <input type="text" class="blank-input" placeholder="..."> (visit) our grandparents next week.</div>
+
+                <!-- Possibility Negative -->
+                <h4 style="color:var(--secondary); margin-top:20px; margin-bottom:10px;">Structure 2: Negative Possibility (May not/Might not)</h4>
+                <div class="fill-in-item">6. He is sick. He <input type="text" class="blank-input" placeholder="..."> (not / come) to school.</div>
+                <div class="fill-in-item">7. The traffic is bad. We <input type="text" class="blank-input" placeholder="..."> (not / reach) on time.</div>
+                <div class="fill-in-item">8. They <input type="text" class="blank-input" placeholder="..."> (not / like) the food we cooked.</div>
+                <div class="fill-in-item">9. The plan <input type="text" class="blank-input" placeholder="..."> (not / work) properly.</div>
+                <div class="fill-in-item">10. I <input type="text" class="blank-input" placeholder="..."> (not / go) to the party tonight.</div>
+
+                <!-- Permission -->
+                <h4 style="color:var(--secondary); margin-top:20px; margin-bottom:10px;">Structure 3: Permission (May I...?)</h4>
+                <div class="fill-in-item">11. <input type="text" class="blank-input" placeholder="..."> I <input type="text" class="blank-input" placeholder="..."> (ask) you a question?</div>
+                <div class="fill-in-item">12. <input type="text" class="blank-input" placeholder="..."> I <input type="text" class="blank-input" placeholder="..."> (use) your dictionary?</div>
+                <div class="fill-in-item">13. Yes, you <input type="text" class="blank-input" placeholder="..."> (go) outside now.</div>
+                <div class="fill-in-item">14. <input type="text" class="blank-input" placeholder="..."> we <input type="text" class="blank-input" placeholder="..."> (sit) here, please?</div>
+                <div class="fill-in-item">15. You <input type="text" class="blank-input" placeholder="..."> (start) the exam.</div>
+
+                <!-- Wish/Prayer -->
+                <h4 style="color:var(--secondary); margin-top:20px; margin-bottom:10px;">Structure 4: Wish or Prayer (May you...)</h4>
+                <div class="fill-in-item">16. <input type="text" class="blank-input" placeholder="..."> you <input type="text" class="blank-input" placeholder="..."> (live) long!</div>
+                <div class="fill-in-item">17. <input type="text" class="blank-input" placeholder="..."> God <input type="text" class="blank-input" placeholder="..."> (bless) you!</div>
+                <div class="fill-in-item">18. <input type="text" class="blank-input" placeholder="..."> our country <input type="text" class="blank-input" placeholder="..."> (prosper)!</div>
+                <div class="fill-in-item">19. <input type="text" class="blank-input" placeholder="..."> you <input type="text" class="blank-input" placeholder="..."> (find) peace!</div>
+                <div class="fill-in-item">20. <input type="text" class="blank-input" placeholder="..."> all your dreams <input type="text" class="blank-input" placeholder="..."> (come) true!</div>
+
+                <!-- Purpose -->
+                <h4 style="color:var(--secondary); margin-top:20px; margin-bottom:10px;">Structure 5: Purpose (so that + Sub + may/might)</h4>
+                <div class="fill-in-item">21. He studies hard so that he <input type="text" class="blank-input" placeholder="..."> (get) A+.</div>
+                <div class="fill-in-item">22. They ran fast so that they <input type="text" class="blank-input" placeholder="..."> (catch) the bus (past).</div>
+                <div class="fill-in-item">23. We eat so that we <input type="text" class="blank-input" placeholder="..."> (live).</div>
+                <div class="fill-in-item">24. She saved money so that she <input type="text" class="blank-input" placeholder="..."> (buy) a book.</div>
+                <div class="fill-in-item">25. Speak loudly so that everyone <input type="text" class="blank-input" placeholder="..."> (hear) you.</div>
+
+                <!-- Mixed / Challenge -->
+                <h4 style="color:var(--secondary); margin-top:20px; margin-bottom:10px;">Structure 6: Mixed Challenge</h4>
+                <div class="fill-in-item">26. Where are my keys? They <input type="text" class="blank-input" placeholder="..."> (be) in the car.</div>
+                <div class="fill-in-item">27. Sir, <input type="text" class="blank-input" placeholder="..."> I <input type="text" class="blank-input" placeholder="..."> (borrow) this book?</div>
+                <div class="fill-in-item">28. I studied hard so that I <input type="text" class="blank-input" placeholder="..."> (not / fail).</div>
+                <div class="fill-in-item">29. The sky is clear, but it <input type="text" class="blank-input" placeholder="..."> (rain) later. (weak possibility)</div>
+                <div class="fill-in-item">30. <input type="text" class="blank-input" placeholder="..."> you <input type="text" class="blank-input" placeholder="..."> (be) successful!</div>
+            </div>
+            <button class="btn-3d" onclick="toggleAnswers('fill-answers')">Show Answers</button>
+            <div id="fill-answers" class="sample-answer-box">
+                <p><strong>Structure 1: Possibility</strong><br>
+                1. may/might rain | 2. may pass | 3. may/might buy | 4. may become | 5. may visit</p>
+                <p><strong>Structure 2: Negative Possibility</strong><br>
+                6. may not come | 7. may not reach | 8. may not like | 9. may not work | 10. may not go</p>
+                <p><strong>Structure 3: Permission</strong><br>
+                11. May ... ask | 12. May ... use | 13. may go | 14. May ... sit | 15. may start</p>
+                <p><strong>Structure 4: Wish/Prayer</strong><br>
+                16. May ... live | 17. May ... bless | 18. May ... prosper | 19. May ... find | 20. May ... come</p>
+                <p><strong>Structure 5: Purpose</strong><br>
+                21. may get | 22. might catch (past tense erokom hole might bose) | 23. may live | 24. might buy | 25. may hear</p>
+                <p><strong>Structure 6: Mixed</strong><br>
+                26. may/might be | 27. May ... borrow | 28. might not fail | 29. might rain | 30. May ... be</p>
+            </div>
+        </section>
+
+        <!-- SECTION 7: 20 MCQ QUIZ -->
+        <section>
+            <h2>7. 20 MCQ Quiz (Click Button to Reveal Answers)</h2>
+            <p>Click your chosen answer for instant visual feedback. Your score, percentage, and mastery badge will be updated automatically in real-time!</p>
+
+            <!-- LIVE SCORE TRACKER COMPONENT -->
+            <div class="score-card" id="quiz-score-card">
+                <div class="score-title">⭐ Student Performance Scoreboard ⭐</div>
+                <div class="score-display">
+                    Score: <span id="score-points">0</span> / <span id="total-questions">20</span>
+                    <span class="score-percent" id="score-percent">(0%)</span>
+                </div>
+                <div class="score-badge" id="score-badge">Click an answer below to start the test!</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="score-progress"></div>
+                </div>
+                <div style="margin-top: 20px;">
+                    <button class="btn-3d" style="padding: 10px 22px; font-size: 1.05rem; margin-right: 12px; background: #3b82f6;" onclick="resetQuiz()">🔄 Retake / Reset Quiz</button>
+                    <button class="btn-3d" style="padding: 10px 22px; font-size: 1.05rem; background: #059669;" onclick="showAllAnswers()">👁️ Reveal All Answers</button>
+                </div>
+            </div>
+
+            <!-- MCQ ITEMS -->
+            <div class="mcq-box" id="q1" data-correct="B" data-answered="false">
+                <p><strong>1. Which sentence expresses a wish or prayer?</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 1, 'A')">A) May I come in?</div>
+                    <div class="option-btn" onclick="checkOption(this, 1, 'B')">B) May you live long.</div>
+                    <div class="option-btn" onclick="checkOption(this, 1, 'C')">C) It may rain today.</div>
+                </div>
+                <div class="answer-reveal" id="ans-1">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q2" data-correct="B" data-answered="false">
+                <p><strong>2. "___ I use your pen, sir?" (Formal Permission)</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 2, 'A')">A) Will</div>
+                    <div class="option-btn" onclick="checkOption(this, 2, 'B')">B) May</div>
+                    <div class="option-btn" onclick="checkOption(this, 2, 'C')">C) Might</div>
+                </div>
+                <div class="answer-reveal" id="ans-2">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q3" data-correct="A" data-answered="false">
+                <p><strong>3. "The sky is blue and clear, but it ___ rain later." (Weak possibility)</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 3, 'A')">A) might</div>
+                    <div class="option-btn" onclick="checkOption(this, 3, 'B')">B) must</div>
+                    <div class="option-btn" onclick="checkOption(this, 3, 'C')">C) can</div>
+                </div>
+                <div class="answer-reveal" id="ans-3">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+            <div class="mcq-box" id="q4" data-correct="B" data-answered="false">
+                <p><strong>4. "He ran fast so that he ___ win the race." (Past purpose)</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 4, 'A')">A) may</div>
+                    <div class="option-btn" onclick="checkOption(this, 4, 'B')">B) might</div>
+                    <div class="option-btn" onclick="checkOption(this, 4, 'C')">C) can</div>
+                </div>
+                <div class="answer-reveal" id="ans-4">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q5" data-correct="B" data-answered="false">
+                <p><strong>5. Which one is a negative possibility?</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 5, 'A')">A) May you not fail.</div>
+                    <div class="option-btn" onclick="checkOption(this, 5, 'B')">B) They may not come today.</div>
+                    <div class="option-btn" onclick="checkOption(this, 5, 'C')">C) May I not go?</div>
+                </div>
+                <div class="answer-reveal" id="ans-5">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q6" data-correct="C" data-answered="false">
+                <p><strong>6. "___ God bless you with success."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 6, 'A')">A) Can</div>
+                    <div class="option-btn" onclick="checkOption(this, 6, 'B')">B) Might</div>
+                    <div class="option-btn" onclick="checkOption(this, 6, 'C')">C) May</div>
+                </div>
+                <div class="answer-reveal" id="ans-6">
+                    <strong>✓ Correct Answer: C</strong> — Correct answer is C
+                </div>
+            </div>
+            <div class="mcq-box" id="q7" data-correct="A" data-answered="false">
+                <p><strong>7. I am not sure where Rahim is. He ___ be at the library.</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 7, 'A')">A) might</div>
+                    <div class="option-btn" onclick="checkOption(this, 7, 'B')">B) will</div>
+                    <div class="option-btn" onclick="checkOption(this, 7, 'C')">C) should</div>
+                </div>
+                <div class="answer-reveal" id="ans-7">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+            <div class="mcq-box" id="q8" data-correct="B" data-answered="false">
+                <p><strong>8. Translate: আজ বৃষ্টি হতে পারে।</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 8, 'A')">A) It will rain today.</div>
+                    <div class="option-btn" onclick="checkOption(this, 8, 'B')">B) It may rain today.</div>
+                    <div class="option-btn" onclick="checkOption(this, 8, 'C')">C) It can rain today.</div>
+                </div>
+                <div class="answer-reveal" id="ans-8">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q9" data-correct="A" data-answered="false">
+                <p><strong>9. "We eat good food so that we ___ stay healthy."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 9, 'A')">A) may</div>
+                    <div class="option-btn" onclick="checkOption(this, 9, 'B')">B) might</div>
+                    <div class="option-btn" onclick="checkOption(this, 9, 'C')">C) would</div>
+                </div>
+                <div class="answer-reveal" id="ans-9">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+            <div class="mcq-box" id="q10" data-correct="B" data-answered="false">
+                <p><strong>10. Find the mistake: "May you lives long."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 10, 'A')">A) May</div>
+                    <div class="option-btn" onclick="checkOption(this, 10, 'B')">B) lives (should be live)</div>
+                    <div class="option-btn" onclick="checkOption(this, 10, 'C')">C) long</div>
+                </div>
+                <div class="answer-reveal" id="ans-10">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q11" data-correct="A" data-answered="false">
+                <p><strong>11. "He ___ not know the answer. Let's ask someone else."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 11, 'A')">A) might</div>
+                    <div class="option-btn" onclick="checkOption(this, 11, 'B')">B) must</div>
+                    <div class="option-btn" onclick="checkOption(this, 11, 'C')">C) are</div>
+                </div>
+                <div class="answer-reveal" id="ans-11">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+            <div class="mcq-box" id="q12" data-correct="B" data-answered="false">
+                <p><strong>12. "___ I help you with those bags?"</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 12, 'A')">A) Might</div>
+                    <div class="option-btn" onclick="checkOption(this, 12, 'B')">B) May</div>
+                    <div class="option-btn" onclick="checkOption(this, 12, 'C')">C) Have</div>
+                </div>
+                <div class="answer-reveal" id="ans-12">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q13" data-correct="A" data-answered="false">
+                <p><strong>13. Which sentence has the STRONGEST possibility?</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 13, 'A')">A) He will come.</div>
+                    <div class="option-btn" onclick="checkOption(this, 13, 'B')">B) He may come.</div>
+                    <div class="option-btn" onclick="checkOption(this, 13, 'C')">C) He might come.</div>
+                </div>
+                <div class="answer-reveal" id="ans-13">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+            <div class="mcq-box" id="q14" data-correct="A" data-answered="false">
+                <p><strong>14. "I don't know my plans yet. I ___ go to Dhaka."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 14, 'A')">A) might</div>
+                    <div class="option-btn" onclick="checkOption(this, 14, 'B')">B) did</div>
+                    <div class="option-btn" onclick="checkOption(this, 14, 'C')">C) had</div>
+                </div>
+                <div class="answer-reveal" id="ans-14">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+            <div class="mcq-box" id="q15" data-correct="B" data-answered="false">
+                <p><strong>15. Translate: আমি কি ভেতরে আসতে পারি?</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 15, 'A')">A) Can I coming in?</div>
+                    <div class="option-btn" onclick="checkOption(this, 15, 'B')">B) May I come in?</div>
+                    <div class="option-btn" onclick="checkOption(this, 15, 'C')">C) Will I come in?</div>
+                </div>
+                <div class="answer-reveal" id="ans-15">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q16" data-correct="C" data-answered="false">
+                <p><strong>16. What is the past form of May?</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 16, 'A')">A) Could</div>
+                    <div class="option-btn" onclick="checkOption(this, 16, 'B')">B) Would</div>
+                    <div class="option-btn" onclick="checkOption(this, 16, 'C')">C) Might</div>
+                </div>
+                <div class="answer-reveal" id="ans-16">
+                    <strong>✓ Correct Answer: C</strong> — Correct answer is C
+                </div>
+            </div>
+            <div class="mcq-box" id="q17" data-correct="A" data-answered="false">
+                <p><strong>17. "The exam is very hard. Many students ___ fail."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 17, 'A')">A) may</div>
+                    <div class="option-btn" onclick="checkOption(this, 17, 'B')">B) should</div>
+                    <div class="option-btn" onclick="checkOption(this, 17, 'C')">C) can</div>
+                </div>
+                <div class="answer-reveal" id="ans-17">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+            <div class="mcq-box" id="q18" data-correct="B" data-answered="false">
+                <p><strong>18. "She took medicine so that she ___ recover." (Past)</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 18, 'A')">A) may</div>
+                    <div class="option-btn" onclick="checkOption(this, 18, 'B')">B) might</div>
+                    <div class="option-btn" onclick="checkOption(this, 18, 'C')">C) will</div>
+                </div>
+                <div class="answer-reveal" id="ans-18">
+                    <strong>✓ Correct Answer: B</strong> — Correct answer is B
+                </div>
+            </div>
+            <div class="mcq-box" id="q19" data-correct="A" data-answered="false">
+                <p><strong>19. "___ all your wishes come true."</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 19, 'A')">A) May</div>
+                    <div class="option-btn" onclick="checkOption(this, 19, 'B')">B) Might</div>
+                    <div class="option-btn" onclick="checkOption(this, 19, 'C')">C) Will</div>
+                </div>
+                <div class="answer-reveal" id="ans-19">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+            <div class="mcq-box" id="q20" data-correct="A" data-answered="false">
+                <p><strong>20. Which sentence uses 'might' for weak possibility?</strong></p>
+                <div class="mcq-options">
+                    <div class="option-btn" onclick="checkOption(this, 20, 'A')">A) He might be at home, but I doubt it.</div>
+                    <div class="option-btn" onclick="checkOption(this, 20, 'B')">B) Might you live long.</div>
+                    <div class="option-btn" onclick="checkOption(this, 20, 'C')">C) Might I come in?</div>
+                </div>
+                <div class="answer-reveal" id="ans-20">
+                    <strong>✓ Correct Answer: A</strong> — Correct answer is A
+                </div>
+            </div>
+</section>
+
+        <footer>
+            &copy; 2026 LearnCare Academy. Modern 3D Interactive Master Sheet. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        function toggleBangla(element) {
+            const banglaDiv = element.querySelector('.bangla-text');
+            if (banglaDiv.style.display === 'block') {
+                banglaDiv.style.display = 'none';
+            } else {
+                banglaDiv.style.display = 'block';
+            }
+        }
+
+        function toggleAnswers(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === 'block') {
+                el.style.display = 'none';
+            } else {
+                el.style.display = 'block';
+            }
+        }
+    
+        /* LIVE SCORE TRACKING ENGINE */
+        let userScore = 0;
+        let answeredQuestions = new Set();
+        let totalQuizQuestions = 20;
+
+        function checkOption(btn, qNum, chosenOption) {
+            const box = document.getElementById('q' + qNum);
+            if (!box || box.dataset.answered === 'true') return;
+            box.dataset.answered = 'true';
+            answeredQuestions.add(qNum);
+
+            const correctOption = box.dataset.correct;
+            const allOptions = box.querySelectorAll('.option-btn');
+
+            allOptions.forEach(opt => {
+                opt.style.pointerEvents = 'none';
+                if (opt.textContent.trim().startsWith(correctOption + ')')) {
+                    opt.classList.add('correct-choice');
+                }
+            });
+
+            if (chosenOption === correctOption) {
+                btn.classList.add('user-correct');
+                userScore++;
+            } else {
+                btn.classList.add('user-wrong');
+            }
+
+            const revealDiv = document.getElementById('ans-' + qNum);
+            if (revealDiv) revealDiv.style.display = 'block';
+
+            updateScoreCard();
+        }
+
+        function updateScoreCard() {
+            const scorePts = document.getElementById('score-points');
+            if (!scorePts) return;
+            scorePts.textContent = userScore;
+            const totalQ = parseInt(document.getElementById('total-questions').textContent) || 20;
+            const pct = Math.round((userScore / totalQ) * 100);
+            document.getElementById('score-percent').textContent = '(' + pct + '%)';
+            document.getElementById('score-progress').style.width = pct + '%';
+
+            const badge = document.getElementById('score-badge');
+            if (answeredQuestions.size === totalQ) {
+                if (userScore >= totalQ * 0.9) {
+                    badge.textContent = '🏆 Outstanding! Master of English!';
+                    badge.style.background = '#059669';
+                } else if (userScore >= totalQ * 0.7) {
+                    badge.textContent = '🌟 Excellent Job! Great Spoken Skills!';
+                    badge.style.background = '#2563eb';
+                } else if (userScore >= totalQ * 0.5) {
+                    badge.textContent = '👍 Good Effort! Revise and practice more!';
+                    badge.style.background = '#d97706';
+                } else {
+                    badge.textContent = '💡 Needs Practice! Please review the rules above.';
+                    badge.style.background = '#dc2626';
+                }
+            } else {
+                badge.textContent = 'Progress: ' + answeredQuestions.size + ' of ' + totalQ + ' answered';
+            }
+        }
+
+        function resetQuiz() {
+            userScore = 0;
+            answeredQuestions.clear();
+            document.querySelectorAll('.mcq-box').forEach(box => {
+                box.dataset.answered = 'false';
+                box.querySelectorAll('.option-btn').forEach(btn => {
+                    btn.classList.remove('user-correct', 'user-wrong', 'correct-choice');
+                    btn.style.pointerEvents = 'auto';
+                });
+                const qNum = box.id.replace('q', '');
+                const revealDiv = document.getElementById('ans-' + qNum);
+                if (revealDiv) revealDiv.style.display = 'none';
+            });
+            document.getElementById('score-points').textContent = '0';
+            document.getElementById('score-percent').textContent = '(0%)';
+            document.getElementById('score-progress').style.width = '0%';
+            document.getElementById('score-badge').textContent = 'Quiz Reset! Start answering questions.';
+            document.getElementById('score-badge').style.background = 'rgba(255,255,255,0.2)';
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.mcq-box').forEach(box => {
+                const correctOption = box.dataset.correct;
+                box.querySelectorAll('.option-btn').forEach(btn => {
+                    if (btn.textContent.trim().startsWith(correctOption + ')')) {
+                        btn.classList.add('correct-choice');
+                    }
+                });
+                const qNum = box.id.replace('q', '');
+                const revealDiv = document.getElementById('ans-' + qNum);
+                if (revealDiv) revealDiv.style.display = 'block';
+            });
+        }
+
+    </script>
+</body>
+</html>

@@ -78,6 +78,8 @@
   "/dashboard/reading/[book]/[test]/page": "app/dashboard/reading/[book]/[test]/page.js",
   "/dashboard/reading/page": "app/dashboard/reading/page.js",
   "/dashboard/speaking/page": "app/dashboard/speaking/page.js",
+  "/dashboard/spoken-english/academy-labs/page": "app/dashboard/spoken-english/academy-labs/page.js",
+  "/dashboard/spoken-english/academy-labs/view/page": "app/dashboard/spoken-english/academy-labs/view/page.js",
   "/dashboard/spoken-english/common-mistakes/page": "app/dashboard/spoken-english/common-mistakes/page.js",
   "/dashboard/spoken-english/conversations/page": "app/dashboard/spoken-english/conversations/page.js",
   "/dashboard/spoken-english/grammar-academy/page": "app/dashboard/spoken-english/grammar-academy/page.js",
