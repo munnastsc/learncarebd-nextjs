@@ -739,3 +739,4 @@ with open(dest_ts, 'w', encoding='utf-8') as f:
     f.write(ts_content)
 
 print(f'Generated {dest_ts} with {len(labs_data)} items!')
+
