@@ -5,7 +5,7 @@ import { useState } from 'react';
 import {
     ArrowUpRight, BarChart3, Bot, CircleHelp, FilePenLine,
     Headphones, BookOpen, PenLine, Mic, Layers3, Sparkles,
-    BookMarked, FlaskConical, SendHorizonal, ChevronRight, GraduationCap, Zap, Radio, MessageSquare, ClipboardList, Award, SpellCheck, TrendingUp, Pencil, Library,
+    BookMarked, FlaskConical, SendHorizonal, ChevronRight, GraduationCap, Zap, Radio, MessageSquare, ClipboardList, Award, SpellCheck, TrendingUp, Pencil, Library, Repeat,
 } from 'lucide-react';
 import ExamCountdown from '../../components/ExamCountdown';
 import DailyStudyPlan from '../../components/DailyStudyPlan';
@@ -147,6 +147,14 @@ export default function DashboardPage() {
                             <Link href="/dashboard/spoken-english/patterns"
                                 className="inline-flex items-center gap-2 rounded-xl border border-amber-500/40 bg-amber-500/10 px-4 py-2.5 text-sm font-bold text-amber-300 hover:bg-amber-500/20 transition">
                                 <Layers3 size={15} /> Sentence Formulas
+                            </Link>
+                            <Link href="/dashboard/spoken-english/causative-verbs"
+                                className="inline-flex items-center gap-2 rounded-xl border border-cyan-500/40 bg-cyan-500/10 px-4 py-2.5 text-sm font-bold text-cyan-300 hover:bg-cyan-500/20 transition">
+                                ⚡ Causative Verbs
+                            </Link>
+                            <Link href="/dashboard/spoken-english/passive-voice"
+                                className="inline-flex items-center gap-2 rounded-xl border border-teal-500/40 bg-teal-500/10 px-4 py-2.5 text-sm font-bold text-teal-300 hover:bg-teal-500/20 transition">
+                                🔄 Spoken Passive
                             </Link>
                             <Link href="/dashboard/ai-tutor"
                                 className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-bold text-white hover:bg-indigo-500 transition shadow-lg shadow-indigo-900/30">
@@ -292,6 +300,34 @@ export default function DashboardPage() {
                             <p className="text-xs text-slate-500 mt-0.5">Ground-up lessons & practice for IELTS</p>
                         </div>
                         <ChevronRight size={16} className="text-slate-300 group-hover:text-violet-500 transition" />
+                    </Link>
+                    <Link href="/dashboard/spoken-english/causative-verbs"
+                        className="group flex items-center gap-4 rounded-2xl border border-cyan-100 bg-white p-5 shadow-sm hover:shadow-md hover:border-cyan-300 transition-all">
+                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-cyan-100 group-hover:bg-cyan-200 transition">
+                            <Zap size={22} className="text-cyan-700" />
+                        </div>
+                        <div className="flex-1">
+                            <div className="flex items-center gap-2">
+                                <p className="font-black text-slate-900">Causative Verbs Lab</p>
+                                <span className="rounded-full bg-cyan-100 px-2 py-0.5 text-[10px] font-black text-cyan-700">NEW</span>
+                            </div>
+                            <p className="text-xs text-slate-500 mt-0.5">Make, Have, Get, Let, Help</p>
+                        </div>
+                        <ChevronRight size={16} className="text-slate-300 group-hover:text-cyan-500 transition" />
+                    </Link>
+                    <Link href="/dashboard/spoken-english/passive-voice"
+                        className="group flex items-center gap-4 rounded-2xl border border-teal-100 bg-white p-5 shadow-sm hover:shadow-md hover:border-teal-300 transition-all">
+                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-teal-100 group-hover:bg-teal-200 transition">
+                            <Repeat size={22} className="text-teal-700" />
+                        </div>
+                        <div className="flex-1">
+                            <div className="flex items-center gap-2">
+                                <p className="font-black text-slate-900">Spoken Passive Lab</p>
+                                <span className="rounded-full bg-teal-100 px-2 py-0.5 text-[10px] font-black text-teal-700">NEW</span>
+                            </div>
+                            <p className="text-xs text-slate-500 mt-0.5">৮ টেন্সের প্যাসিভ ও Get-Passive</p>
+                        </div>
+                        <ChevronRight size={16} className="text-slate-300 group-hover:text-teal-500 transition" />
                     </Link>
                     <Link href="/dashboard/paraphrase"
                         className="group flex items-center gap-4 rounded-2xl border border-indigo-100 bg-white p-5 shadow-sm hover:shadow-md hover:border-indigo-300 transition-all">

@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import {
     ArrowLeft, ArrowUpRight, Radio, MessageSquare, Library, Pencil, PenLine,
     SpellCheck, BookOpen, Zap, Flame, Trophy, Sparkles, Award, Layers,
-    CheckCircle2, Compass, CheckSquare, Target, Play, AlertTriangle, Mic
+    CheckCircle2, Compass, CheckSquare, Target, Play, AlertTriangle, Mic, Repeat
 } from 'lucide-react';
 
 export default function SpokenEnglishDashboard() {
@@ -141,6 +141,24 @@ export default function SpokenEnglishDashboard() {
             color: 'from-purple-50 via-indigo-50 to-blue-50 border-purple-200 hover:border-purple-400 shadow-sm',
             badge: '⚡ 3-VARIATION ENGINE & TEST',
             badgeColor: 'bg-purple-100 text-purple-800 border-purple-200'
+        },
+        {
+            title: 'Causative Verbs Master Lab',
+            desc: 'নিজে না করে অন্যকে দিয়ে কাজ করানোর সম্পূর্ণ ৫টি ফর্মুলা (Make, Have, Get, Let, Help), Active ও Passive Causative এবং ৫০টি টেস্ট।',
+            href: '/dashboard/spoken-english/causative-verbs',
+            icon: <Zap className="text-cyan-600" size={26} />,
+            color: 'from-cyan-50 via-sky-50 to-blue-50 border-cyan-200 hover:border-cyan-400 shadow-sm',
+            badge: '⚡ NEW CAUSATIVE LAB',
+            badgeColor: 'bg-cyan-100 text-cyan-800 border-cyan-200'
+        },
+        {
+            title: 'Spoken Passive Voice & Daily Sentences',
+            desc: 'দৈনন্দিন স্পোকেন ইংলিশে ৮টি টেন্সের প্যাসিভ, মোডাল প্যাসিভ, নেটিভদের ইনফরমাল Get-Passive এবং ৫০ নম্বরের লাইভ ওয়ার্কবুক।',
+            href: '/dashboard/spoken-english/passive-voice',
+            icon: <Repeat className="text-teal-600" size={26} />,
+            color: 'from-teal-50 via-emerald-50 to-cyan-50 border-teal-200 hover:border-teal-400 shadow-sm',
+            badge: '🔄 NEW PASSIVE LAB',
+            badgeColor: 'bg-teal-100 text-teal-800 border-teal-200'
         },
         {
             title: 'Step-by-Step Spoken English Mastery',
@@ -493,7 +511,7 @@ export default function SpokenEnglishDashboard() {
                             </Link>
 
                             <Link
-                                href="/dashboard/spoken-english/academy-labs/view?file=Causative_Verbs_Master_Interactive_Practice_Lab.html"
+                                href="/dashboard/spoken-english/causative-verbs"
                                 className="p-3 rounded-2xl bg-white/5 hover:bg-cyan-500/20 border border-white/10 hover:border-cyan-400/50 transition group"
                             >
                                 <p className="text-[10px] font-bold text-cyan-400 uppercase">কজেটিভ ভার্বস</p>
@@ -502,7 +520,7 @@ export default function SpokenEnglishDashboard() {
                             </Link>
 
                             <Link
-                                href="/dashboard/spoken-english/academy-labs/view?file=Master_Passive_Voice_Spoken_Sentences_Mega_Lab.html"
+                                href="/dashboard/spoken-english/passive-voice"
                                 className="p-3 rounded-2xl bg-white/5 hover:bg-teal-500/20 border border-white/10 hover:border-teal-400/50 transition group"
                             >
                                 <p className="text-[10px] font-bold text-teal-400 uppercase">স্পোকেন প্যাসিভ</p>
@@ -556,7 +574,8 @@ export default function SpokenEnglishDashboard() {
                             <div className="mt-4 flex flex-wrap gap-2 text-[11px] text-indigo-300">
                                 <span className="bg-white/10 px-2.5 py-1 rounded-lg">🔄 ৬-ধাপের রূপান্তর (+, -, ?, ?-, WH+, WH-)</span>
                                 <span className="bg-white/10 px-2.5 py-1 rounded-lg">🎙️ ব্রিটিশ অডিও ও লাইভ মাইক টেস্ট</span>
-                                <span className="bg-white/10 px-2.5 py-1 rounded-lg">❓ ৪-রকমের প্রশ্নোত্তর ড্রিল</span>
+                                <Link href="/dashboard/spoken-english/causative-verbs" className="bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 border border-cyan-400/40 px-2.5 py-1 rounded-lg transition font-bold">⚡ লেসন ২৭: কজেটিভ ভার্বস →</Link>
+                                <Link href="/dashboard/spoken-english/passive-voice" className="bg-teal-500/20 hover:bg-teal-500/30 text-teal-300 border border-teal-400/40 px-2.5 py-1 rounded-lg transition font-bold">🔄 লেসন ২৮: স্পোকেন প্যাসিভ →</Link>
                             </div>
                         </div>
                         <div className="mt-6">
