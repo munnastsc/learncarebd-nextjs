@@ -57,6 +57,13 @@ export default function SpokenEnglishDashboard() {
 
     const dailyMissions = [
         {
+            id: 'm_online_test_100',
+            title: '🎯 ১০০ নম্বরের মেগা অনলাইন টেস্ট (৩০ মিনিট): টেন্সেস ও মোডাল ভার্বস লাইভ পরীক্ষা দিন',
+            link: '/dashboard/spoken-english/online-test',
+            icon: '🏆',
+            actionText: 'টেস্ট দিন',
+        },
+        {
             id: 'm0',
             title: 'স্টেপ-বাই-স্টেপ ১টি লেসনের ৬-ধাপের রূপান্তর প্র্যাকটিস করুন',
             link: '/dashboard/spoken-english/lessons',

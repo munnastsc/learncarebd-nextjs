@@ -11,7 +11,8 @@ import {
     Users, 
     Settings,
     Menu,
-    X
+    X,
+    Award
 } from 'lucide-react';
 import { useState } from 'react';
 import LogoutButton from './LogoutButton';
@@ -22,6 +23,7 @@ export default function AdminSidebar() {
 
     const navItems = [
         { name: 'Dashboard', href: '/ai-26', icon: LayoutDashboard },
+        { name: 'Exam Submissions', href: '/ai-26/exam-submissions', icon: Award, highlight: true },
         { name: 'Homepage Editor', href: '/ai-26/homepage', icon: Home, highlight: true },
         { name: 'Dynamic Pages', href: '/ai-26/pages', icon: Settings, highlight: true },
         { name: 'Posts & Courses', href: '/ai-26/content', icon: FileText },

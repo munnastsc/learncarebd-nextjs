@@ -132,6 +132,10 @@ export default function DashboardPage() {
                             </p>
                         </div>
                         <div className="flex flex-wrap gap-2">
+                                                        <Link href="/dashboard/spoken-english/online-test"
+                                className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 px-4 py-2.5 text-sm font-black text-white hover:opacity-95 transition shadow-lg shadow-purple-900/30">
+                                <Award size={15} /> 🎯 ১০০ নম্বরের অনলাইন টেস্ট (৩০ মিনিট)
+                            </Link>
                             <Link href="/dashboard/spoken-english"
                                 className="inline-flex items-center gap-2 rounded-xl bg-teal-600 px-4 py-2.5 text-sm font-black text-white hover:bg-teal-500 transition shadow-lg shadow-teal-900/30">
                                 <Radio size={15} /> Spoken English Hub

@@ -17,7 +17,7 @@ export interface AcademyLabItem {
 }
 
 export const ACADEMY_LAB_CATEGORIES = [
-    { id: 'all', label: 'সকল ল্যাব (All 47)', icon: 'Layers' },
+    { id: 'all', label: 'সকল ল্যাব (All 48)', icon: 'Layers' },
     { id: 'mega-labs', label: '🔥 মেগা ল্যাবস ও মাস্টারক্লাস (10)', icon: 'Zap' },
     { id: 'conversations', label: '💬 ১০০ & ২০০ রিয়েল ডায়ালগ (2)', icon: 'MessageSquare' },
     { id: 'tenses', label: '⏳ ১২টি টেন্স প্র্যাকটিস শিট (13)', icon: 'Clock' },
@@ -25,6 +25,22 @@ export const ACADEMY_LAB_CATEGORIES = [
 ] as const;
 
 export const ACADEMY_LABS_DATA: AcademyLabItem[] = [
+    {
+        "id": "tenses-modals-100-exam",
+        "filename": "Tenses_and_Modals_100_Master_Exam_Lab.html",
+        "title": "100 Questions Tenses & Modals 30-Minute Master Online Exam",
+        "titleBn": "১০০ নম্বরের টেন্সেস ও মোডাল ভার্বস মেগা অনলাইন এক্সাম (৩০ মিনিট)",
+        "category": "mega-labs",
+        "categoryBn": "মেগা ল্যাবস",
+        "badge": "🎯 ১০০ মার্কস • ৩০ মিনিট এক্সাম",
+        "icon": "Award",
+        "level": "All Levels",
+        "description": "30-min 100-question comprehensive timed examination covering 9 core Tenses & all Modal verbs with live AI evaluation & weakness diagnosis.",
+        "descriptionBn": "প্রেজেন্ট, পাস্ট ও ফিউচার (সিম্পল, কন্টিনিউয়াস, পারফেক্ট) এবং সকল মোডাল ভার্বসের উপর ১০০টি রিয়েল-লাইফ বাক্য, ৩০ মিনিটের টাইমার, স্বয়ংক্রিয় মার্কস ও উইকনেস অ্যানালাইসিস।",
+        "totalItems": "১০০টি প্রশ্ন • ৩০ মিনিট",
+        "estimatedTime": "৩০ মিনিট",
+        "featured": true
+    },
     {
         "id": "real-life-conversations-100",
         "filename": "Real_Life_Everyday_Conversations_100_Master.html",

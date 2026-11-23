@@ -34,14 +34,25 @@
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-size: 20px; 
+            font-size: 18px; 
             line-height: 1.8;
-            padding: 40px;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            overflow-x: hidden;
         }
 
         .container {
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 900px) {
+            body { padding: 12px; font-size: 16px; }
+            section { padding: 20px 14px !important; }
+            .fill-in-item { padding: 12px 14px !important; }
         }
 
         header {
@@ -2841,7 +2852,6 @@
                         <div class="answer-key-item"><strong>100.</strong> <span style="color: #1e3a8a; font-weight: 700;">have mastered</span></div>
                     </div>
                 </div>
-            </div>
         </section>
     
 
