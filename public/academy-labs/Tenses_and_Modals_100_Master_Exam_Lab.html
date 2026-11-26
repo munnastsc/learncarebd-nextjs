@@ -2377,7 +2377,10 @@ export const EXAM_100_QUESTIONS: ExamQuestion[] = [
 
             // Sync to API in background if online
             try {
-                fetch('/api/exam-submissions', {
+                const submitEndpoint = (window.location.protocol === 'file:' || !window.location.origin.includes('learncarebd.com'))
+                    ? 'https://learncarebd.com/api/exam-submissions'
+                    : '/api/exam-submissions';
+                fetch(submitEndpoint, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({

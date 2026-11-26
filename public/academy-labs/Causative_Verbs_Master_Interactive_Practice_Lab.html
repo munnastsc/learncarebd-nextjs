@@ -837,13 +837,13 @@
 
         <!-- SECTION 6: 100 FILL IN THE BLANKS WORKBOOK -->
         <section id="workbook">
-            <h2>✍️ ৬. ১০০টি ব্ল্যাঙ্ক ফিলিং প্র্যাকটিস ও লাইভ স্কোর ট্র্যাকার</h2>
+            <h2>✍️ ৬. ২৫টি সহজ শর্ট ব্ল্যাঙ্ক ফিলিং প্র্যাকটিস ও লাইভ স্কোর ট্র্যাকার</h2>
             <p>উপযুক্ত Causative Verb ফর্ম দিয়ে শূন্যস্থান পূরণ করুন। আপনি单个 বাক্যের 'Check' বাটনে ক্লিক করে সাথে সাথে চেক করতে পারেন, অথবা সবার শেষে এক ক্লিকে পুরো স্কোর দেখতে পারেন:</p>
 
             <div class="gap-dashboard-card">
                 <div class="gap-stats-grid">
                     <div class="gap-stat-box">
-                        <div class="gap-stat-num" id="gap-score">0 / 100</div>
+                        <div class="gap-stat-num" id="gap-score">0 / 25</div>
                         <div class="gap-stat-label">🎯 আপনার স্কোর</div>
                     </div>
                     <div class="gap-stat-box">
@@ -851,7 +851,7 @@
                         <div class="gap-stat-label">📊 সঠিকতার হার</div>
                     </div>
                     <div class="gap-stat-box">
-                        <div class="gap-stat-num" id="gap-attempted">0 / 100</div>
+                        <div class="gap-stat-num" id="gap-attempted">0 / 25</div>
                         <div class="gap-stat-label">✍️ সম্পন্ন করেছেন</div>
                     </div>
                 </div>
@@ -871,7 +871,7 @@
 
             <!-- Answer Key Container -->
             <div id="answer-key-box" style="display: none;">
-                <h3 style="color: #2563eb; margin-top: 30px;">🔑 ১০০টি প্রশ্নের অফিশিয়াল উত্তরমালা:</h3>
+                <h3 style="color: #2563eb; margin-top: 30px;">🔑 ২৫টি সহজ প্রশ্নের অফিশিয়াল উত্তরমালা:</h3>
                 <div class="answer-key-grid" id="answer-key-list"></div>
             </div>
         </section>
@@ -923,56 +923,31 @@
 
         // 100 Blanks Questions
         const BLANKS_DATA = [
-            { qid: 1, text: "The strict teacher made the students ___ (write) the essay again.", ans: "write", hint: "Make এর পর V1 (Base Form) বসে" },
-            { qid: 2, text: "I will have my secretary ___ (call) you tomorrow morning.", ans: "call", hint: "Have + Person + V1" },
-            { qid: 3, text: "She finally got her brother ___ (lend) her his car.", ans: "to lend", hint: "Get + Person + TO + V1" },
-            { qid: 4, text: "Please let me ___ (know) as soon as you land in London.", ans: "know", hint: "Let + Person + V1" },
-            { qid: 5, text: "Can you help me ___ (solve) this complicated math problem?", ans: "solve", hint: "Help + Person + V1" },
-            { qid: 6, text: "I need to get my watch ___ (repair) before the interview.", ans: "repaired", hint: "Get + Object + V3 (Passive Causative)" },
-            { qid: 7, text: "The emotional song made everyone in the hall ___ (cry).", ans: "cry", hint: "Make + Person + V1" },
-            { qid: 8, text: "We had the technician ___ (install) the high-speed router.", ans: "install", hint: "Have + Person + V1" },
-            { qid: 9, text: "How did you get him ___ (agree) to your demanding proposal?", ans: "to agree", hint: "Get + Person + TO + V1" },
-            { qid: 10, text: "Don't let fear ___ (stop) you from achieving your dreams.", ans: "stop", hint: "Let + Person + V1" },
-            { qid: 11, text: "He had his blood pressure ___ (check) by the physician.", ans: "checked", hint: "Have + Object + V3" },
-            { qid: 12, text: "The police made the driver ___ (blow) into the breathalyzer.", ans: "blow", hint: "Make + Person + V1" },
-            { qid: 13, text: "I can't get this stubborn jar ___ (open).", ans: "to open", hint: "Get + Object + TO + V1" },
-            { qid: 14, text: "Let us ___ (celebrate) this momentous achievement together.", ans: "celebrate", hint: "Let + Us + V1" },
-            { qid: 15, text: "Regular meditation helps your brain ___ (focus) better.", ans: "focus", hint: "Help + Person + V1" },
-            { qid: 16, text: "The supervisor had the workers ___ (clean) the warehouse.", ans: "clean", hint: "Have + Person + V1" },
-            { qid: 17, text: "She got her passport ___ (renew) last Monday.", ans: "renewed", hint: "Get + Object + V3" },
-            { qid: 18, text: "The heavy thunderstorm made us ___ (cancel) the outdoor game.", ans: "cancel", hint: "Make + Person + V1" },
-            { qid: 19, text: "He managed to get his landlord ___ (reduce) the monthly rent.", ans: "to reduce", hint: "Get + Person + TO + V1" },
-            { qid: 20, text: "Her kind words helped me ___ (regain) my lost confidence.", ans: "regain", hint: "Help + Person + V1" },
-            { qid: 21, text: "The manager had the invoice ___ (send) to the accounting department.", ans: "sent", hint: "Have + Object + V3" },
-            { qid: 22, text: "Why did you make your younger sister ___ (apologize)?", ans: "apologize", hint: "Make + Person + V1" },
-            { qid: 23, text: "Our parents never let us ___ (stay) out past midnight.", ans: "stay", hint: "Let + Person + V1" },
-            { qid: 24, text: "I will get my friend ___ (review) my resume before applying.", ans: "to review", hint: "Get + Person + TO + V1" },
-            { qid: 25, text: "We had the old air conditioner ___ (serviced) yesterday.", ans: "serviced", hint: "Have + Object + V3" },
-            { qid: 26, text: "Does reading books help you ___ (improve) your vocabulary?", ans: "improve", hint: "Help + Person + V1" },
-            { qid: 27, text: "The funny comedian made the entire audience ___ (burst) into laughter.", ans: "burst", hint: "Make + Person + V1" },
-            { qid: 28, text: "I must get my car ___ (wash) this afternoon.", ans: "washed", hint: "Get + Object + V3" },
-            { qid: 29, text: "The CEO had his chief advisor ___ (draft) the strategic agreement.", ans: "draft", hint: "Have + Person + V1" },
-            { qid: 30, text: "Don't let toxic people ___ (ruin) your inner peace.", ans: "ruin", hint: "Let + Person + V1" },
-            { qid: 31, text: "She got her daughter ___ (eat) all the fresh vegetables.", ans: "to eat", hint: "Get + Person + TO + V1" },
-            { qid: 32, text: "I will have the catering team ___ (prepare) a vegetarian feast.", ans: "prepare", hint: "Have + Person + V1" },
-            { qid: 33, text: "Can you help me ___ (translate) this Bengali passage into English?", ans: "translate", hint: "Help + Person + V1" },
-            { qid: 34, text: "The court made the witness ___ (swear) on oath.", ans: "swear", hint: "Make + Person + V1" },
-            { qid: 35, text: "We had our house ___ (painted) right before Eid.", ans: "painted", hint: "Have + Object + V3" },
-            { qid: 36, text: "He got the bank manager ___ (waive) the penalty fee.", ans: "to waive", hint: "Get + Person + TO + V1" },
-            { qid: 37, text: "Let the tea ___ (cool) down before taking a sip.", ans: "cool", hint: "Let + Object + V1" },
-            { qid: 38, text: "Drinking warm water helps ___ (soothe) a sore throat.", ans: "soothe", hint: "Help + V1" },
-            { qid: 39, text: "The commanding officer made the soldiers ___ (march) ten miles.", ans: "march", hint: "Make + Person + V1" },
-            { qid: 40, text: "I got my eyes ___ (examine) by a specialist yesterday.", ans: "examined", hint: "Get + Object + V3" },
-            { qid: 41, text: "She had the dressmaker ___ (shorten) the hem of her gown.", ans: "shorten", hint: "Have + Person + V1" },
-            { qid: 42, text: "Never let failure ___ (define) your future success.", ans: "define", hint: "Let + Object + V1" },
-            { qid: 43, text: "We got the electrician ___ (replace) the faulty circuit breaker.", ans: "to replace", hint: "Get + Person + TO + V1" },
-            { qid: 44, text: "This software will help you ___ (organize) your daily tasks.", ans: "organize", hint: "Help + Person + V1" },
-            { qid: 45, text: "He had his tooth ___ (extracted) at the dental clinic.", ans: "extracted", hint: "Have + Object + V3" },
-            { qid: 46, text: "The coach made the athletes ___ (run) five extra laps.", ans: "run", hint: "Make + Person + V1" },
-            { qid: 47, text: "Can you get the printer ___ (work) properly?", ans: "to work", hint: "Get + Object + TO + V1" },
-            { qid: 48, text: "Let me ___ (carry) those heavy grocery bags for you.", ans: "carry", hint: "Let + Person + V1" },
-            { qid: 49, text: "I had my luggage ___ (weigh) at the airport check-in counter.", ans: "weighed", hint: "Have + Object + V3" },
-            { qid: 50, text: "Good mentors help you ___ (reach) your highest potential.", ans: "reach", hint: "Help + Person + V1" }
+            { qid: 1, text: "He made me ___ (laugh) with his funny story.", ans: "laugh", hint: "Make + Person + V1 (Base Verb)" },
+            { qid: 2, text: "She made her brother ___ (clean) the table.", ans: "clean", hint: "Make + Person + V1" },
+            { qid: 3, text: "Mom made me ___ (eat) all the vegetables.", ans: "eat", hint: "Make + Person + V1" },
+            { qid: 4, text: "Don't make her ___ (cry).", ans: "cry", hint: "Make + Person + V1" },
+            { qid: 5, text: "The movie made everyone ___ (smile).", ans: "smile", hint: "Make + Person + V1" },
+            { qid: 6, text: "I had him ___ (call) you yesterday.", ans: "call", hint: "Have + Person + V1" },
+            { qid: 7, text: "I will have the mechanic ___ (fix) the bike.", ans: "fix", hint: "Have + Person + V1" },
+            { qid: 8, text: "We had the painter ___ (paint) the room.", ans: "paint", hint: "Have + Person + V1" },
+            { qid: 9, text: "I had my hair ___ (cut) this morning.", ans: "cut", hint: "Have + Object + V3 (প্যাসিভ)" },
+            { qid: 10, text: "She had her car ___ (wash) at the station.", ans: "washed", hint: "Have + Object + V3" },
+            { qid: 11, text: "I got him ___ (agree) to the plan.", ans: "to agree", hint: "Get + Person + TO + V1" },
+            { qid: 12, text: "She got her friend ___ (help) with the homework.", ans: "to help", hint: "Get + Person + TO + V1" },
+            { qid: 13, text: "Can you get him ___ (come) to the party?", ans: "to come", hint: "Get + Person + TO + V1" },
+            { qid: 14, text: "I got my phone ___ (repair) yesterday.", ans: "repaired", hint: "Get + Object + V3 (প্যাসিভ)" },
+            { qid: 15, text: "He got his laptop ___ (fix) at the shop.", ans: "fixed", hint: "Get + Object + V3" },
+            { qid: 16, text: "Please let me ___ (go) home now.", ans: "go", hint: "Let + Person + V1 (No 'to')" },
+            { qid: 17, text: "Let me ___ (see) your new phone.", ans: "see", hint: "Let + Person + V1" },
+            { qid: 18, text: "Mom lets him ___ (drive) her car.", ans: "drive", hint: "Let + Person + V1" },
+            { qid: 19, text: "Don't let fear ___ (stop) you.", ans: "stop", hint: "Let + Person + V1" },
+            { qid: 20, text: "Please let us ___ (know) your decision.", ans: "know", hint: "Let + Us + V1" },
+            { qid: 21, text: "He helped me ___ (carry) this heavy box.", ans: "carry", hint: "Help + Person + V1" },
+            { qid: 22, text: "This app helps me ___ (learn) spoken English.", ans: "learn", hint: "Help + Person + V1" },
+            { qid: 23, text: "Can you help me ___ (cook) dinner tonight?", ans: "cook", hint: "Help + Person + V1" },
+            { qid: 24, text: "The music makes me ___ (feel) relaxed.", ans: "feel", hint: "Make + Person + V1" },
+            { qid: 25, text: "I had my assistant ___ (send) the invoice.", ans: "send", hint: "Have + Person + V1" }
         ];
 
         // 20 MCQ Questions
