@@ -1,814 +1,1026 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LearnCare Academy - Causative Verbs (সহজ প্র্যাকটিস ও মাস্টার ল্যাব)</title>
-    <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #0891b2;
-            --primary-dark: #0e7490;
-            --primary-light: #ecfeff;
-            --accent: #f59e0b;
-            --text-main: #0f172a;
-            --text-muted: #64748b;
-            --bg-body: #f8fafc;
-            --card-bg: #ffffff;
-            --border: #e2e8f0;
-            --success: #10b981;
-            --error: #ef4444;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LearnCare Academy - Causative Verbs (পূর্ণাঙ্গ মাস্টার ল্যাব ও স্পোকেন ড্রিলস)</title>
+<link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
+<style>
+:root {
+    --primary: #0891b2;
+    --primary-dark: #0e7490;
+    --primary-light: #ecfeff;
+    --accent: #f59e0b;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --bg-body: #f8fafc;
+    --card-bg: #ffffff;
+    --border: #e2e8f0;
+    --success: #10b981;
+    --error: #ef4444;
+}
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Kalpurush', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kalpurush', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-        body {
-            background-color: var(--bg-body);
-            color: var(--text-main);
-            line-height: 1.7;
-            padding: 20px 15px 60px;
-        }
+body {
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.7;
+    padding: 20px 15px 80px;
+}
 
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
-        /* HEADER */
-        header {
-            text-align: center;
-            background: linear-gradient(135deg, #0f172a 0%, #164e63 50%, #0f172a 100%);
-            color: white;
-            padding: 35px 20px;
-            border-radius: 24px;
-            margin-bottom: 25px;
-            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
-            border-bottom: 5px solid var(--primary);
-        }
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #0f172a 0%, #164e63 50%, #0f172a 100%);
+    color: white;
+    padding: 35px 20px;
+    border-radius: 24px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
+    border-bottom: 5px solid var(--primary);
+}
 
-        .badge-pill {
-            display: inline-block;
-            background: rgba(6, 182, 212, 0.2);
-            color: #67e8f9;
-            padding: 5px 16px;
-            border-radius: 30px;
-            font-size: 0.85rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            border: 1px solid rgba(6, 182, 212, 0.4);
-            margin-bottom: 12px;
-            text-transform: uppercase;
-        }
+.badge-pill {
+    display: inline-block;
+    background: rgba(6, 182, 212, 0.2);
+    color: #67e8f9;
+    padding: 5px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    border: 1px solid rgba(6, 182, 212, 0.4);
+}
 
-        header h1 {
-            font-size: 2.1rem;
-            margin-bottom: 10px;
-            font-weight: 900;
-        }
+header h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
 
-        header p {
-            color: #cffafe;
-            font-size: 1.05rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+header p {
+    font-size: 1rem;
+    color: #cbd5e1;
+    max-width: 700px;
+    margin: 0 auto;
+}
 
-        /* QUICK RULE CARDS */
-        .rule-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 12px;
-            margin-bottom: 25px;
-        }
+.formula-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 25px;
+}
 
-        .rule-card {
-            background: white;
-            border: 2px solid var(--border);
-            border-radius: 18px;
-            padding: 16px;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-            transition: transform 0.2s ease;
-        }
+.formula-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 14px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
 
-        .rule-card:hover {
-            transform: translateY(-2px);
-            border-color: var(--primary);
-        }
+.formula-card strong {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--primary-dark);
+    margin-bottom: 3px;
+}
 
-        .rule-card h4 {
-            font-size: 1.25rem;
-            color: var(--primary-dark);
-            margin-bottom: 4px;
-            font-weight: 900;
-        }
+.formula-card span {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    display: block;
+}
 
-        .rule-tag {
-            display: inline-block;
-            font-size: 0.75rem;
-            font-weight: 800;
-            padding: 3px 10px;
-            border-radius: 12px;
-            margin-top: 6px;
-            background: #e0f2fe;
-            color: #0369a1;
-        }
+.formula-card .badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 6px;
+    font-family: monospace;
+}
 
-        /* SESSION SECTIONS */
-        .session-box {
-            background: white;
-            border: 2px solid var(--border);
-            border-radius: 24px;
-            padding: 28px 24px;
-            margin-bottom: 30px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.04);
-        }
+.nav-tabs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
 
-        .session-header {
-            border-bottom: 2px solid #f1f5f9;
-            padding-bottom: 14px;
-            margin-bottom: 20px;
-        }
+.nav-tab {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--text-muted);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
 
-        .session-header h3 {
-            font-size: 1.35rem;
-            color: #0f172a;
-            font-weight: 900;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
+.nav-tab:hover {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+}
 
-        .session-tag {
-            font-size: 0.75rem;
-            font-weight: 800;
-            color: var(--primary-dark);
-            text-transform: uppercase;
-        }
+.nav-tab.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(8, 145, 178, 0.25);
+}
 
-        /* 1. BUILDER */
-        .builder-output {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            color: white;
-            padding: 22px 24px;
-            border-radius: 20px;
-            margin-bottom: 20px;
-            border: 1px solid #334155;
-        }
+.session-panel {
+    display: none;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    margin-bottom: 30px;
+}
 
-        .builder-output .sentence {
-            font-size: 1.8rem;
-            font-weight: 900;
-            color: #38bdf8;
-            margin: 8px 0;
-            font-family: 'Segoe UI', sans-serif;
-        }
+.session-panel.active {
+    display: block;
+}
 
-        .builder-output .bangla {
-            font-size: 1.1rem;
-            color: #e2e8f0;
-        }
+.session-header {
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+}
 
-        .chip-group {
-            margin-bottom: 15px;
-        }
+.session-tag {
+    display: inline-block;
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
 
-        .chip-label {
-            font-size: 0.85rem;
-            font-weight: 800;
-            color: var(--text-muted);
-            margin-bottom: 6px;
-            display: block;
-        }
+.session-header h3 {
+    font-size: 1.35rem;
+    color: var(--text-main);
+    font-weight: 900;
+}
 
-        .chips {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
+.chip-row {
+    margin-bottom: 16px;
+}
 
-        .chip-btn {
-            background: #f8fafc;
-            border: 2px solid var(--border);
-            border-radius: 12px;
-            padding: 8px 16px;
-            font-size: 0.95rem;
-            font-weight: 800;
-            color: #334155;
-            cursor: pointer;
-            transition: all 0.15s ease;
-        }
+.chip-row label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
 
-        .chip-btn:hover {
-            border-color: var(--primary);
-            background: #ecfeff;
-        }
+.chip-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
 
-        .chip-btn.active {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-            box-shadow: 0 4px 10px rgba(8, 145, 178, 0.3);
-        }
+.chip-btn {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #334155;
+    cursor: pointer;
+    transition: all 0.2s;
+}
 
-        /* 2. QUICK QUIZ */
-        .quiz-card {
-            background: #f8fafc;
-            border: 2px solid var(--border);
-            border-radius: 20px;
-            padding: 25px;
-            text-align: center;
-            max-width: 650px;
-            margin: 0 auto;
-        }
+.chip-btn:hover {
+    background: #e2e8f0;
+}
 
-        .quiz-question {
-            font-size: 1.5rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            font-family: 'Segoe UI', sans-serif;
-        }
+.chip-btn.selected {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    box-shadow: 0 2px 8px rgba(8, 145, 178, 0.3);
+}
 
-        .quiz-options {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            max-width: 420px;
-            margin: 0 auto 15px;
-        }
+.builder-output {
+    background: linear-gradient(135deg, #0f172a 0%, #164e63 100%);
+    color: white;
+    border-radius: 18px;
+    padding: 22px;
+    margin-top: 20px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.15);
+}
 
-        .quiz-opt-btn {
-            background: white;
-            border: 2px solid #cbd5e1;
-            border-radius: 14px;
-            padding: 14px;
-            font-size: 1.1rem;
-            font-weight: 900;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-family: 'Segoe UI', sans-serif;
-        }
+.builder-output .out-en {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #67e8f9;
+    font-family: monospace;
+    margin-bottom: 6px;
+}
 
-        .quiz-opt-btn:hover {
-            border-color: var(--primary);
-            background: #ecfeff;
-        }
+.builder-output .out-bn {
+    font-size: 1rem;
+    color: #e2e8f0;
+    margin-bottom: 10px;
+}
 
-        .quiz-opt-btn.correct {
-            background: #ecfdf5;
-            border-color: var(--success);
-            color: #065f46;
-        }
+.speaker-btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    transition: 0.2s;
+}
 
-        .quiz-opt-btn.wrong {
-            background: #fef2f2;
-            border-color: var(--error);
-            color: #991b1b;
-        }
+.speaker-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
 
-        .quiz-feedback {
-            padding: 12px;
-            border-radius: 12px;
-            background: #ecfeff;
-            color: #0e7490;
-            font-size: 0.95rem;
-            font-weight: 700;
-            margin-top: 12px;
-            display: none;
-        }
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 15px;
+}
 
-        /* 3. SPOKEN CARDS */
-        .filter-bar {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 16px;
-        }
+.drill-card {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-        .filter-btn {
-            background: #f1f5f9;
-            border: none;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 800;
-            cursor: pointer;
-            transition: all 0.15s ease;
-        }
+.drill-card .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
-        .filter-btn.active {
-            background: var(--primary);
-            color: white;
-        }
+.drill-card .card-en {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 8px;
+}
 
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 14px;
-        }
+.drill-card .card-bn {
+    font-size: 0.85rem;
+    color: #0369a1;
+    background: #f0f9ff;
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: none;
+}
 
-        .drill-card {
-            background: #f8fafc;
-            border: 2px solid var(--border);
-            border-radius: 16px;
-            padding: 16px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
+.drill-card .card-rule {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-family: monospace;
+    background: #f8fafc;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid #f1f5f9;
+}
 
-        .drill-card:hover {
-            border-color: var(--primary);
-            background: white;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.04);
-        }
+.quiz-box {
+    max-width: 650px;
+    margin: 0 auto;
+}
 
-        .drill-badge {
-            font-size: 0.7rem;
-            font-weight: 800;
-            background: #cffafe;
-            color: #0e7490;
-            padding: 2px 8px;
-            border-radius: 8px;
-            text-transform: uppercase;
-        }
+.progress-bar-bg {
+    background: #e2e8f0;
+    height: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
 
-        .drill-en {
-            font-size: 1.15rem;
-            font-weight: 900;
-            color: #0f172a;
-            margin: 6px 0;
-            font-family: 'Segoe UI', sans-serif;
-        }
+.progress-bar-fill {
+    background: var(--primary);
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+}
 
-        .drill-bn {
-            font-size: 0.95rem;
-            color: #475569;
-            display: none;
-            border-top: 1px dashed #cbd5e1;
-            padding-top: 6px;
-            margin-top: 6px;
-        }
+.quiz-q {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
 
-        .drill-card.revealed .drill-bn {
-            display: block;
-        }
+.quiz-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 18px;
+}
 
-        .btn-audio {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 4px 8px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            cursor: pointer;
-            float: right;
-        }
+.quiz-btn {
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 800;
+    border: 2px solid var(--border);
+    background: white;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
 
-        .btn-audio:hover {
-            background: #ecfeff;
-            color: var(--primary);
-        }
+.quiz-btn:hover {
+    border-color: var(--primary);
+    background: var(--primary-light);
+}
 
-        /* 4. CHIP BLANKS */
-        .blanks-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 14px;
-        }
+.quiz-btn.correct {
+    background: #ecfdf5;
+    border-color: var(--success);
+    color: #065f46;
+}
 
-        .blank-item {
-            background: #f8fafc;
-            border: 2px solid var(--border);
-            border-radius: 16px;
-            padding: 16px;
-        }
+.quiz-btn.wrong {
+    background: #fef2f2;
+    border-color: var(--error);
+    color: #991b1b;
+}
 
-        .blank-text {
-            font-size: 1.1rem;
-            font-weight: 900;
-            margin-bottom: 10px;
-            font-family: 'Segoe UI', sans-serif;
-        }
+.quiz-exp {
+    display: none;
+    background: #ecfeff;
+    border: 1px solid #a5f3fc;
+    color: #0e7490;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-top: 15px;
+}
 
-        .blank-bn {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-bottom: 8px;
-        }
+.error-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 15px;
+}
 
-        .blank-chips {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
+.error-card {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 16px;
+    background: white;
+}
 
-        .b-chip {
-            background: white;
-            border: 2px solid #cbd5e1;
-            border-radius: 10px;
-            padding: 5px 12px;
-            font-size: 0.85rem;
-            font-weight: 800;
-            cursor: pointer;
-        }
+.box-wrong {
+    background: #fff1f2;
+    border: 1px solid #fecdd3;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
 
-        .b-chip.correct {
-            background: #10b981;
-            color: white;
-            border-color: #10b981;
-        }
+.box-wrong p {
+    color: #9f1239;
+    font-weight: 800;
+    text-decoration: line-through;
+    font-size: 0.95rem;
+}
 
-        .b-chip.wrong {
-            background: #ef4444;
-            color: white;
-            border-color: #ef4444;
-        }
-    </style>
+.box-correct {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.box-correct p {
+    color: #166534;
+    font-weight: 800;
+    font-size: 0.95rem;
+}
+
+.dialogue-card {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px;
+    margin-bottom: 12px;
+}
+
+.dialogue-speaker {
+    font-weight: 900;
+    color: var(--primary-dark);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <!-- HEADER -->
-        <header>
-            <div class="badge-pill">LearnCare Academy • Spoken English System</div>
-            <h1>🎯 কজেটিভ ভার্বস (Causative Verbs) সহজ মাস্টার ল্যাব</h1>
-            <p>নিজে না করে অন্যকে দিয়ে কাজ করানোর সহজ ৫টি ভার্ব (Make, Have, Get, Let, Help)। ছোট ছোট বাক্যে ১০০% ক্লিক-টু-প্র্যাকটিস!</p>
-        </header>
 
-        <!-- QUICK 5 VERBS SUMMARY -->
-        <div class="rule-grid">
-            <div class="rule-card">
-                <h4>1. MAKE</h4>
-                <p>বাধ্য করা / হাসানো / কাঁদানো</p>
-                <span class="rule-tag">No 'to' (Base Verb)</span>
+<div class="container">
+    <header>
+        <span class="badge-pill">LearnCare Academy • Spoken English Master Lab</span>
+        <h1>Causative Verbs (পূর্ণাঙ্গ ল্যাব ও প্র্যাকটিস)</h1>
+        <p>Make, Have, Get, Let, Help ও অন্যান্য কজেটিভ ভার্বস কোনো কঠিন নিয়ম ছাড়া ছোট ছোট সহজ বাক্যে শিখুন</p>
+    </header>
+
+    <div class="formula-grid">
+        <div class="formula-card">
+            <strong>1. MAKE</strong>
+            <span>বাধ্য করা / হাসানো</span>
+            <span class="badge" style="background:#cffafe;color:#0e7490;">No 'to' (Base)</span>
+        </div>
+        <div class="formula-card">
+            <strong>2. HAVE</strong>
+            <span>দায়িত্ব দেওয়া / সেবা</span>
+            <span class="badge" style="background:#e0e7ff;color:#3730a3;">No 'to' (Base)</span>
+        </div>
+        <div class="formula-card">
+            <strong>3. GET</strong>
+            <span>রাজি করানো</span>
+            <span class="badge" style="background:#fef3c7;color:#92400e;">অবশ্যই 'TO' হবে</span>
+        </div>
+        <div class="formula-card">
+            <strong>4. LET</strong>
+            <span>অনুমতি দেওয়া</span>
+            <span class="badge" style="background:#d1fae5;color:#065f46;">No 'to' (Base)</span>
+        </div>
+        <div class="formula-card">
+            <strong>5. HELP</strong>
+            <span>সাহায্য করা</span>
+            <span class="badge" style="background:#fce7f3;color:#9d174d;">Base / To V1</span>
+        </div>
+    </div>
+
+    <div class="nav-tabs">
+        <button class="nav-tab active" onclick="switchTab('guide', this)">১. বেসিক গাইড ও রুলস</button>
+        <button class="nav-tab" onclick="switchTab('builder', this)">২. ৩-ক্লিক সেন্টেন্স মেকার</button>
+        <button class="nav-tab" onclick="switchTab('spoken', this)">৩. ৬০টি স্পোকেন ড্রিলস</button>
+        <button class="nav-tab" onclick="switchTab('quiz', this)">৪. ১-ট্যাপ কুইজ (২০টি)</button>
+        <button class="nav-tab" onclick="switchTab('chips', this)">৫. ফিল-ইন-চিপস (২০টি)</button>
+        <button class="nav-tab" onclick="switchTab('errors', this)">৬. ভুল বনাম সঠিক (১০টি)</button>
+        <button class="nav-tab" onclick="switchTab('pairs', this)">৭. একটিভ বনাম প্যাসিভ</button>
+        <button class="nav-tab" onclick="switchTab('dialogues', this)">৮. স্পোকেন ডায়ালগ</button>
+    </div>
+
+    <!-- 1. GUIDE -->
+    <div id="panel-guide" class="session-panel active">
+        <div class="session-header">
+            <span class="session-tag">বেসিক ধারণা</span>
+            <h3>Causative Verbs কী ও কেন ব্যবহার হয়?</h3>
+        </div>
+        <p style="margin-bottom:15px; color:#475569;">
+            যখন কোনো ব্যক্তি নিজে কাজটি না করে <strong>অন্য কাউকে দিয়ে কাজটি করায় বা ঘটায়</strong>, তখন ইংরেজি ব্যাকরণে Causative Verbs (প্রযোজক ক্রিয়া) ব্যবহৃত হয়।
+        </p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:20px;">
+            <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:12px; border-radius:12px;">
+                <span style="font-size:0.75rem; font-weight:bold; color:#64748b;">সাধারণ বাক্য</span>
+                <p style="font-weight:bold; margin-top:4px;">I repaired my car. (আমি নিজে গাড়ি ঠিক করেছি)</p>
             </div>
-            <div class="rule-card">
-                <h4>2. HAVE</h4>
-                <p>দায়িত্ব দেওয়া / করিয়ে নেওয়া</p>
-                <span class="rule-tag">ব্যক্তি: Base | বস্তু: V3</span>
+            <div style="background:#ecfeff; border:1px solid #a5f3fc; padding:12px; border-radius:12px;">
+                <span style="font-size:0.75rem; font-weight:bold; color:#0e7490;">কজেটিভ বাক্য</span>
+                <p style="font-weight:bold; margin-top:4px; color:#0891b2;">I had the mechanic repair my car. (মেকানিককে দিয়ে করালাম)</p>
             </div>
-            <div class="rule-card" style="border-color: var(--accent);">
-                <h4>3. GET</h4>
-                <p>অনুরোধ / বুঝিয়ে রাজি করানো</p>
-                <span class="rule-tag" style="background: #fef3c7; color: #b45309; font-weight: 900;">অবশ্যই 'TO' হবে!</span>
-            </div>
-            <div class="rule-card">
-                <h4>4. LET</h4>
-                <p>অনুমতি দেওয়া / সুযোগ দেওয়া</p>
-                <span class="rule-tag">No 'to' (Base Verb)</span>
-            </div>
-            <div class="rule-card">
-                <h4>5. HELP</h4>
-                <p>সাহায্য করা</p>
-                <span class="rule-tag">Base Verb</span>
+        </div>
+        <h4 style="font-size:1.1rem; margin-bottom:10px;">ম্যাজিক ফর্মুলা টেবিল:</h4>
+        <table style="width:100%; border-collapse:collapse; font-size:0.85rem; text-align:left;">
+            <thead>
+                <tr style="background:#f1f5f9;">
+                    <th style="padding:10px; border:1px solid #cbd5e1;">ভার্ব</th>
+                    <th style="padding:10px; border:1px solid #cbd5e1;">ব্যবহার</th>
+                    <th style="padding:10px; border:1px solid #cbd5e1;">ফর্মুলা</th>
+                    <th style="padding:10px; border:1px solid #cbd5e1;">উদাহরণ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding:8px; border:1px solid #e2e8f0; font-weight:bold; color:#0891b2;">MAKE</td>
+                    <td style="padding:8px; border:1px solid #e2e8f0;">বাধ্য করা / হাসানো</td>
+                    <td style="padding:8px; border:1px solid #e2e8f0; font-family:monospace;">Make + Person + Base Verb</td>
+                    <td style="padding:8px; border:1px solid #e2e8f0;">He made me laugh.</td>
+                </tr>
+                <tr>
+                    <td style="padding:8px; border:1px solid #e2e8f0; font-weight:bold; color:#4f46e5;">HAVE</td>
+                    <td style="padding:8px; border:1px solid #e2e8f0;">দায়িত্ব দেওয়া / সেবা নেওয়া</td>
+                    <td style="padding:8px; border:1px solid #e2e8f0; font-family:monospace;">Have + Person + Base Verb</td>
+                    <td style="padding:8px; border:1px solid #e2e8f0;">I had him call you.</td>
+                </tr>
+                <tr>
+                    <td style="padding:8px; border:1px solid #e2e8f0; font-weight:bold; color:#d97706;">GET</td>
+                    <td style="padding:8px; border:1px solid #e2e8f0;">বুঝিয়ে রাজি করানো</td>
+                    <td style="padding:8px; border:1px solid #e2e8f0; font-family:monospace; font-weight:bold; color:#b45309;">Get + Person + TO + Base Verb</td>
+                    <td style="padding:8px; border:1px solid #e2e8f0;">I got him to help me.</td>
+                </tr>
+                <tr>
+                    <td style="padding:8px; border:1px solid #e2e8f0; font-weight:bold; color:#059669;">LET</td>
+                    <td style="padding:8px; border:1px solid #e2e8f0;">অনুমতি দেওয়া</td>
+                    <td style="padding:8px; border:1px solid #e2e8f0; font-family:monospace;">Let + Person + Base Verb</td>
+                    <td style="padding:8px; border:1px solid #e2e8f0;">Let him speak.</td>
+                </tr>
+                <tr>
+                    <td style="padding:8px; border:1px solid #e2e8f0; font-weight:bold; color:#db2777;">HELP</td>
+                    <td style="padding:8px; border:1px solid #e2e8f0;">সাহায্য করা</td>
+                    <td style="padding:8px; border:1px solid #e2e8f0; font-family:monospace;">Help + Person + (to) Base Verb</td>
+                    <td style="padding:8px; border:1px solid #e2e8f0;">He helped me carry it.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 2. BUILDER -->
+    <div id="panel-builder" class="session-panel">
+        <div class="session-header">
+            <span class="session-tag">নো টাইপিং • জাস্ট ক্লিক</span>
+            <h3>৩-ক্লিক সেন্টেন্স মেকার</h3>
+        </div>
+        <p style="font-size:0.85rem; color:#64748b; margin-bottom:15px;">চিপগুলোতে ট্যাপ করে নিজের ইচ্ছেমতো বাক্য তৈরি করুন ও অডিও শুনুন:</p>
+
+        <div class="chip-row">
+            <label>১. সাবজেক্ট (Subject):</label>
+            <div class="chip-container" id="b-sub-chips">
+                <button class="chip-btn selected" onclick="setBuilderSub('I', this)">I</button>
+                <button class="chip-btn" onclick="setBuilderSub('He', this)">He</button>
+                <button class="chip-btn" onclick="setBuilderSub('She', this)">She</button>
+                <button class="chip-btn" onclick="setBuilderSub('Mom', this)">Mom</button>
+                <button class="chip-btn" onclick="setBuilderSub('The boss', this)">The boss</button>
+                <button class="chip-btn" onclick="setBuilderSub('We', this)">We</button>
+                <button class="chip-btn" onclick="setBuilderSub('They', this)">They</button>
             </div>
         </div>
 
-        <!-- SESSION 1: 3-CLICK BUILDER -->
-        <div class="session-box">
-            <div class="session-header">
-                <span class="session-tag">সেশন ১ • নো টাইপিং</span>
-                <h3>🎛️ ৩-ক্লিক সেন্টেন্স মেকার (Interactive Sentence Builder)</h3>
-            </div>
-
-            <!-- LIVE OUTPUT -->
-            <div class="builder-output">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <span style="font-size: 0.85rem; color: #94a3b8; font-weight: bold;">তৈরি হওয়া ইংরেজি বাক্য:</span>
-                    <button class="btn-audio" onclick="speakCurrentSentence()">🔊 উচ্চারণ শুনুন</button>
-                </div>
-                <div class="sentence" id="builder-sentence">He made me laugh.</div>
-                <div class="bangla" id="builder-bangla">বাংলা অর্থ: <strong>সে আমাকে হাসাল।</strong></div>
-            </div>
-
-            <!-- CONTROLS -->
-            <div class="chip-group">
-                <span class="chip-label">১. কর্তা (Subject) নির্বাচন করুন:</span>
-                <div class="chips" id="chips-sub">
-                    <button class="chip-btn active" onclick="setSub(this, 'He')">He</button>
-                    <button class="chip-btn" onclick="setSub(this, 'She')">She</button>
-                    <button class="chip-btn" onclick="setSub(this, 'I')">I</button>
-                    <button class="chip-btn" onclick="setSub(this, 'Mom')">Mom</button>
-                    <button class="chip-btn" onclick="setSub(this, 'The boss')">The boss</button>
-                </div>
-            </div>
-
-            <div class="chip-group">
-                <span class="chip-label">২. কজেটিভ ভার্ব (Causative Verb) নির্বাচন করুন:</span>
-                <div class="chips" id="chips-verb">
-                    <button class="chip-btn active" onclick="setVerb(this, 'made')">made (বাধ্য করল/হাসাল)</button>
-                    <button class="chip-btn" onclick="setVerb(this, 'had')">had (করিয়ে নিল)</button>
-                    <button class="chip-btn" onclick="setVerb(this, 'got')">got (রাজি করাল - To)</button>
-                    <button class="chip-btn" onclick="setVerb(this, 'let')">let (অনুমতি দিল)</button>
-                    <button class="chip-btn" onclick="setVerb(this, 'helped')">helped (সাহায্য করল)</button>
-                </div>
-            </div>
-
-            <div class="chip-group">
-                <span class="chip-label">৩. কাকে দিয়ে করাবেন (Person):</span>
-                <div class="chips" id="chips-per">
-                    <button class="chip-btn active" onclick="setPer(this, 'me')">me</button>
-                    <button class="chip-btn" onclick="setPer(this, 'him')">him</button>
-                    <button class="chip-btn" onclick="setPer(this, 'us')">us</button>
-                    <button class="chip-btn" onclick="setPer(this, 'the boy')">the boy</button>
-                </div>
-            </div>
-
-            <div class="chip-group">
-                <span class="chip-label">৪. মূল কাজ (Action Verb):</span>
-                <div class="chips" id="chips-act">
-                    <button class="chip-btn active" onclick="setAct(this, 'laugh')">laugh (হাসা)</button>
-                    <button class="chip-btn" onclick="setAct(this, 'cry')">cry (কাঁদা)</button>
-                    <button class="chip-btn" onclick="setAct(this, 'clean the room')">clean the room (ঘর পরিষ্কার)</button>
-                    <button class="chip-btn" onclick="setAct(this, 'eat vegetables')">eat vegetables (খাওয়া)</button>
-                    <button class="chip-btn" onclick="setAct(this, 'call you')">call you (কল করা)</button>
-                </div>
+        <div class="chip-row">
+            <label>২. কজেটিভ ভার্ব (Causative Verb):</label>
+            <div class="chip-container" id="b-verb-chips">
+                <button class="chip-btn selected" onclick="setBuilderVerb('made', this)">made (বাধ্য/হাসানো)</button>
+                <button class="chip-btn" onclick="setBuilderVerb('had', this)">had (দায়িত্ব/সেবা)</button>
+                <button class="chip-btn" onclick="setBuilderVerb('got', this)">got (রাজি করানো - to হবে)</button>
+                <button class="chip-btn" onclick="setBuilderVerb('let', this)">let (অনুমতি দেওয়া)</button>
+                <button class="chip-btn" onclick="setBuilderVerb('helped', this)">helped (সাহায্য করা)</button>
             </div>
         </div>
 
-        <!-- SESSION 2: 1-TAP QUICK QUIZ -->
-        <div class="session-box">
-            <div class="session-header">
-                <span class="session-tag">সেশন ২ • কুইক কুইজ</span>
-                <h3>⚡ 'To' নাকি 'Base Verb'? (১-ট্যাপ কুইজ)</h3>
-            </div>
-
-            <div class="quiz-card">
-                <div style="font-size: 0.9rem; color: #64748b; font-weight: bold; margin-bottom: 8px;" id="q-counter">প্রশ্ন ১ / ৫</div>
-                <div class="quiz-question" id="q-text">He made me ___ (smile).</div>
-                <div class="quiz-options">
-                    <button class="quiz-opt-btn" onclick="answerQuiz(this, 'smile')">smile</button>
-                    <button class="quiz-opt-btn" onclick="answerQuiz(this, 'to smile')">to smile</button>
-                </div>
-                <div class="quiz-feedback" id="q-fb"></div>
-                <button class="btn-audio" id="q-next-btn" style="float: none; margin-top: 15px; display: none; padding: 8px 20px; font-size: 0.95rem; background: var(--primary); color: white;" onclick="nextQuiz()">পরবর্তী প্রশ্ন ➔</button>
+        <div class="chip-row">
+            <label>৩. ব্যক্তি বা বস্তু (Person / Object):</label>
+            <div class="chip-container" id="b-per-chips">
+                <button class="chip-btn selected" onclick="setBuilderPer('me', this)">me (আমাকে)</button>
+                <button class="chip-btn" onclick="setBuilderPer('him', this)">him (তাকে)</button>
+                <button class="chip-btn" onclick="setBuilderPer('us', this)">us (আমাদের)</button>
+                <button class="chip-btn" onclick="setBuilderPer('the car', this)">the car (গাড়ি)</button>
+                <button class="chip-btn" onclick="setBuilderPer('my laptop', this)">my laptop (ল্যাপটপ)</button>
+                <button class="chip-btn" onclick="setBuilderPer('my hair', this)">my hair (চুল)</button>
             </div>
         </div>
 
-        <!-- SESSION 3: 28 SHORT SPOKEN DRILLS -->
-        <div class="session-box">
-            <div class="session-header">
-                <span class="session-tag">সেশন ৩ • স্পোকেন ড্রিলস</span>
-                <h3>🗣️ ২৮টি অতি সহজ নিত্যদিনের স্পোকেন বাক্য</h3>
-                <p style="font-size: 0.9rem; color: #64748b; margin-top: 4px;">কার্ডে ক্লিক করলেই বাংলা অর্থ দেখতে পাবেন এবং স্পিকারে চেপে সঠিক উচ্চারণ শুনতে পাবেন:</p>
-            </div>
-
-            <div class="filter-bar">
-                <button class="filter-btn active" onclick="filterCards(this, 'all')">সকল বাক্য</button>
-                <button class="filter-btn" onclick="filterCards(this, 'make')">Make (৬)</button>
-                <button class="filter-btn" onclick="filterCards(this, 'have')">Have (৬)</button>
-                <button class="filter-btn" onclick="filterCards(this, 'get')">Get (৬)</button>
-                <button class="filter-btn" onclick="filterCards(this, 'let')">Let (৬)</button>
-                <button class="filter-btn" onclick="filterCards(this, 'help')">Help (৪)</button>
-            </div>
-
-            <div class="cards-grid" id="cards-container">
-                <!-- Dynamically filled by JS -->
+        <div class="chip-row">
+            <label>৪. মূল কাজ (Action):</label>
+            <div class="chip-container" id="b-act-chips">
+                <button class="chip-btn selected" onclick="setBuilderAct('laugh', this)">laugh (হাসা)</button>
+                <button class="chip-btn" onclick="setBuilderAct('cry', this)">cry (কাঁদা)</button>
+                <button class="chip-btn" onclick="setBuilderAct('clean the room', this)">clean the room (পরিষ্কার)</button>
+                <button class="chip-btn" onclick="setBuilderAct('wash the car', this)">wash the car (ধোয়া)</button>
+                <button class="chip-btn" onclick="setBuilderAct('fix the phone', this)">fix the phone (ঠিক করা)</button>
             </div>
         </div>
 
-        <!-- SESSION 4: CHIP BLANKS PRACTICE -->
-        <div class="session-box">
-            <div class="session-header">
-                <span class="session-tag">সেশন ৪ • নো টাইপিং চিপস</span>
-                <h3>🧩 ক্লিক করে শূন্যস্থান পূরণ করুন</h3>
+        <div class="builder-output">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span style="font-size:0.75rem; text-transform:uppercase; color:#67e8f9; font-weight:bold;">তৈরি হওয়া বাক্য:</span>
+                <button class="speaker-btn" onclick="speakText(currentBuilderEn)">🔊 শুনুন</button>
             </div>
+            <div class="out-en" id="builder-en">I made me laugh.</div>
+            <div class="out-bn" id="builder-bn">আমি আমাকে হাসালাম।</div>
+            <div id="builder-rule" style="font-size:0.75rem; color:#a5f3fc;">রুল: Make + Person + Base Verb</div>
+        </div>
+    </div>
 
-            <div class="blanks-grid" id="blanks-container">
-                <!-- Dynamically filled by JS -->
+    <!-- 3. SPOKEN FLASHCARDS -->
+    <div id="panel-spoken" class="session-panel">
+        <div class="session-header">
+            <span class="session-tag">স্পোকেন ড্রিলস</span>
+            <h3>৬০টি নিত্যদিনের স্পোকেন সেন্টেন্সেস</h3>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px;">
+            <button class="chip-btn selected" onclick="filterSpoken('all', this)">সবগুলো (৬০)</button>
+            <button class="chip-btn" onclick="filterSpoken('make', this)">Make (১০)</button>
+            <button class="chip-btn" onclick="filterSpoken('have', this)">Have (১০)</button>
+            <button class="chip-btn" onclick="filterSpoken('get', this)">Get (১০)</button>
+            <button class="chip-btn" onclick="filterSpoken('let', this)">Let (১০)</button>
+            <button class="chip-btn" onclick="filterSpoken('help', this)">Help (১০)</button>
+            <button class="chip-btn" onclick="filterSpoken('advanced', this)">Advanced (১০)</button>
+        </div>
+        <div class="cards-grid" id="spoken-cards-container"></div>
+    </div>
+
+    <!-- 4. QUIZ -->
+    <div id="panel-quiz" class="session-panel">
+        <div class="session-header">
+            <span class="session-tag">স্পিড টেস্ট</span>
+            <h3>১-ট্যাপ কুইজ (২০টি প্রশ্ন)</h3>
+        </div>
+        <div class="quiz-box">
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="quiz-progress"></div>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; font-weight:bold; color:#64748b; margin-bottom:12px;">
+                <span id="quiz-counter">প্রশ্ন ১ / ২০</span>
+                <span id="quiz-score-badge">স্কোর: ০</span>
+            </div>
+            <div class="quiz-q" id="quiz-question">Mom made me _____ my room.</div>
+            <div class="quiz-options" id="quiz-options-box"></div>
+            <div class="quiz-exp" id="quiz-exp-box"></div>
+            <div style="text-align:right; margin-top:15px; display:none;" id="quiz-next-container">
+                <button class="chip-btn selected" onclick="nextQuiz()">পরবর্তী প্রশ্ন ➔</button>
+            </div>
+            <div id="quiz-result-box" style="display:none; text-align:center; padding:30px;">
+                <h2 style="color:var(--primary); font-size:1.8rem; margin-bottom:10px;">কুইজ সম্পন্ন হয়েছে!</h2>
+                <p style="font-size:1.1rem; margin-bottom:20px;" id="quiz-final-score"></p>
+                <button class="chip-btn selected" onclick="restartQuiz()">পুনরায় পরীক্ষা দিন ↺</button>
             </div>
         </div>
     </div>
 
-    <script>
-        // 1. BUILDER LOGIC
-        let curSub = 'He';
-        let curVerb = 'made';
-        let curPer = 'me';
-        let curAct = 'laugh';
+    <!-- 5. CHIPS FILL -->
+    <div id="panel-chips" class="session-panel">
+        <div class="session-header">
+            <span class="session-tag">শূন্যস্থান পূরণ</span>
+            <h3>চিপে ট্যাপ করে উত্তর পূরণ করুন (২০টি বাক্য)</h3>
+        </div>
+        <div class="cards-grid" id="chip-fill-container"></div>
+    </div>
 
-        function setSub(btn, val) {
-            document.querySelectorAll('#chips-sub .chip-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            curSub = val;
-            updateBuilder();
-        }
-        function setVerb(btn, val) {
-            document.querySelectorAll('#chips-verb .chip-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            curVerb = val;
-            updateBuilder();
-        }
-        function setPer(btn, val) {
-            document.querySelectorAll('#chips-per .chip-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            curPer = val;
-            updateBuilder();
-        }
-        function setAct(btn, val) {
-            document.querySelectorAll('#chips-act .chip-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            curAct = val;
-            updateBuilder();
-        }
+    <!-- 6. SPOT ERRORS -->
+    <div id="panel-errors" class="session-panel">
+        <div class="session-header">
+            <span class="session-tag">ভুল সমাধান</span>
+            <h3>স্পট দ্য মিসটেক (১০টি প্রচলিত ভুল)</h3>
+        </div>
+        <div class="error-grid" id="errors-container"></div>
+    </div>
 
-        function updateBuilder() {
-            let actForm = curAct;
-            if (curVerb === 'got') {
-                actForm = 'to ' + curAct;
-            }
-            const en = `${curSub} ${curVerb} ${curPer} ${actForm}.`;
-            document.getElementById('builder-sentence').innerText = en;
+    <!-- 7. PAIRS -->
+    <div id="panel-pairs" class="session-panel">
+        <div class="session-header">
+            <span class="session-tag">তুলনামূলক পার্থক্য</span>
+            <h3>অ্যাক্টিভ বনাম প্যাসিভ কজেটিভ পেয়ার্স</h3>
+        </div>
+        <div id="pairs-container"></div>
+    </div>
 
-            let subBn = curSub === 'He' ? 'সে' : (curSub === 'She' ? 'সে' : (curSub === 'I' ? 'আমি' : (curSub === 'Mom' ? 'মা' : 'বস')));
-            let perBn = curPer === 'me' ? 'আমাকে' : (curPer === 'him' ? 'তাকে' : (curPer === 'us' ? 'আমাদের' : 'ছেলেটিকে'));
-            let verbMeaning = curVerb === 'made' ? 'করিয়ে নিল/হাসাল/বাধ্য করল' : (curVerb === 'got' ? 'রাজি করিয়ে করাল' : (curVerb === 'let' ? 'করতে দিল' : (curVerb === 'had' ? 'দিয়ে করাল' : 'সাহায্য করল')));
+    <!-- 8. DIALOGUES -->
+    <div id="panel-dialogues" class="session-panel">
+        <div class="session-header">
+            <span class="session-tag">রিয়েল-লাইফ স্পোকেন</span>
+            <h3>বাস্তব জীবনের কথোপকথন</h3>
+        </div>
+        <div id="dialogues-container"></div>
+    </div>
+</div>
 
-            document.getElementById('builder-bangla').innerHTML = `বাংলা অর্থ: <strong>${subBn} ${perBn} দিয়ে কাজটি ${verbMeaning}।</strong>`;
-        }
+<script>
+const SPOKEN_DATA = [{"id": 1, "verb": "make", "verbName": "Make", "en": "He makes me laugh.", "bn": "সে আমাকে হাসায়।", "rule": "Make + Person + Base Verb (হাসানো/আবেগ)"}, {"id": 2, "verb": "make", "verbName": "Make", "en": "She made me cry.", "bn": "সে আমাকে কাঁড়াল।", "rule": "Make + Person + Base Verb"}, {"id": 3, "verb": "make", "verbName": "Make", "en": "Mom made me eat vegetables.", "bn": "মা আমাকে শাকসবজি খাওয়ালেন।", "rule": "Make + Person + Base Verb (বাধ্য করা)"}, {"id": 4, "verb": "make", "verbName": "Make", "en": "Don't make me angry.", "bn": "আমাকে রাগিও না।", "rule": "Make + Person + Adjective"}, {"id": 5, "verb": "make", "verbName": "Make", "en": "The teacher made us write the essay.", "bn": "শিক্ষক আমাদের প্রবন্ধটি লেখালেন।", "rule": "Make + Person + Base Verb"}, {"id": 6, "verb": "make", "verbName": "Make", "en": "He made his brother clean the room.", "bn": "সে তার ভাইকে দিয়ে ঘরটি পরিষ্কার করাল।", "rule": "Make + Person + Base Verb"}, {"id": 7, "verb": "make", "verbName": "Make", "en": "The movie made me feel happy.", "bn": "সিনেমাটি আমাকে আনন্দিত করল।", "rule": "Make + Person + Base Verb"}, {"id": 8, "verb": "make", "verbName": "Make", "en": "The coach makes the players run every morning.", "bn": "কোচ খেলোয়াড়দের প্রতি সকালে দৌড়ান।", "rule": "Make + Person + Base Verb"}, {"id": 9, "verb": "make", "verbName": "Make", "en": "You can't make him change his mind.", "bn": "তুমি তাকে তার মত পরিবর্তন করাতে পারবে না।", "rule": "Make + Person + Base Verb"}, {"id": 10, "verb": "make", "verbName": "Make", "en": "She was made to wait outside.", "bn": "তাকে বাইরে অপেক্ষা করানো হয়েছিল।", "rule": "প্যাসিভ: Be made TO + Base Verb (পরীক্ষার জন্য গুরুত্বপূর্ণ!)"}, {"id": 11, "verb": "have", "verbName": "Have", "en": "I had the mechanic check my car.", "bn": "আমি মেকানিককে দিয়ে আমার গাড়ি চেক করালাম।", "rule": "Have + Person + Base Verb (দায়িত্ব/টাকা দিয়ে করানো)"}, {"id": 12, "verb": "have", "verbName": "Have", "en": "I had my car checked.", "bn": "আমি আমার গাড়ি চেক করিয়ে নিলাম।", "rule": "Have + Object + V3 (প্যাসিভ)"}, {"id": 13, "verb": "have", "verbName": "Have", "en": "She had the doctor examine her son.", "bn": "সে ডাক্তারকে দিয়ে তার ছেলেকে পরীক্ষা করাল।", "rule": "Have + Person + Base Verb"}, {"id": 14, "verb": "have", "verbName": "Have", "en": "We will have the plumber fix the pipe.", "bn": "আমরা প্লাম্বারকে দিয়ে পাইপটি মেরামত করাব।", "rule": "Have + Person + Base Verb"}, {"id": 15, "verb": "have", "verbName": "Have", "en": "I had my hair cut yesterday.", "bn": "আমি গতকাল চুল কাটিয়েছি।", "rule": "Have + Object + V3 (Cut এর V3 হলো Cut)"}, {"id": 16, "verb": "have", "verbName": "Have", "en": "He will have the assistant print the documents.", "bn": "সে সহকারীকে দিয়ে কাগজপত্র প্রিন্ট করাবে।", "rule": "Have + Person + Base Verb"}, {"id": 17, "verb": "have", "verbName": "Have", "en": "I had my laptop repaired.", "bn": "আমি আমার ল্যাপটপ মেরামত করিয়ে নিলাম।", "rule": "Have + Object + V3"}, {"id": 18, "verb": "have", "verbName": "Have", "en": "She had the tailor stitch her dress.", "bn": "সে দর্জিকে দিয়ে তার জামা সেলাই করাল।", "rule": "Have + Person + Base Verb"}, {"id": 19, "verb": "have", "verbName": "Have", "en": "We had the house painted last week.", "bn": "আমরা গত সপ্তাহে বাড়ি রঙ করিয়েছি।", "rule": "Have + Object + V3"}, {"id": 20, "verb": "have", "verbName": "Have", "en": "The manager had the security guard lock the gate.", "bn": "ম্যানেজার সিকিউরিটি গার্ডকে দিয়ে গেট বন্ধ করালেন।", "rule": "Have + Person + Base Verb"}, {"id": 21, "verb": "get", "verbName": "Get", "en": "I got him to agree to my proposal.", "bn": "আমি তাকে আমার প্রস্তাবে রাজি করালাম।", "rule": "Get + Person + TO + Base Verb (Get আসলেই TO হবে!)"}, {"id": 22, "verb": "get", "verbName": "Get", "en": "She got her friend to help with homework.", "bn": "সে তার বন্ধুকে রাজি করিয়ে হোমওয়ার্কে সাহায্য নিল।", "rule": "Get + Person + TO + Base Verb"}, {"id": 23, "verb": "get", "verbName": "Get", "en": "I got my watch repaired.", "bn": "আমি আমার ঘড়ি মেরামত করিয়েছি।", "rule": "Get + Object + V3 (প্যাসিভ)"}, {"id": 24, "verb": "get", "verbName": "Get", "en": "Can you get the baby to sleep?", "bn": "তুমি কি বাচ্চাকে ঘুমাতে রাজি করাতে পারবে?", "rule": "Get + Person + TO + Base Verb"}, {"id": 25, "verb": "get", "verbName": "Get", "en": "He got the technician to install the software.", "bn": "সে টেকনিশিয়ানকে দিয়ে সফটওয়্যার ইনস্টল করাল।", "rule": "Get + Person + TO + Base Verb"}, {"id": 26, "verb": "get", "verbName": "Get", "en": "I need to get my passport renewed.", "bn": "আমার পাসপোর্ট রিনিউ করাতে হবে।", "rule": "Get + Object + V3"}, {"id": 27, "verb": "get", "verbName": "Get", "en": "She got her brother to drive her to the station.", "bn": "সে তার ভাইকে দিয়ে স্টেশনে ড্রাইভ করিয়ে নিল।", "rule": "Get + Person + TO + Base Verb"}, {"id": 28, "verb": "get", "verbName": "Get", "en": "How did you get them to sign the contract?", "bn": "তুমি তাদের কীভাবে চুক্তিতে স্বাক্ষর করালে?", "rule": "Get + Person + TO + Base Verb"}, {"id": 29, "verb": "get", "verbName": "Get", "en": "I got my eyes tested today.", "bn": "আমি আজ চোখ পরীক্ষা করিয়েছি।", "rule": "Get + Object + V3"}, {"id": 30, "verb": "get", "verbName": "Get", "en": "We got the students to submit their projects early.", "bn": "আমরা শিক্ষার্থীদের দিয়ে প্রজেক্টগুলো তাড়াতাড়ি জমা করালাম।", "rule": "Get + Person + TO + Base Verb"}, {"id": 31, "verb": "let", "verbName": "Let", "en": "Let me go.", "bn": "আমাকে যেতে দাও।", "rule": "Let + Person + Base Verb (অনুমতি দেওয়া, কোনো 'to' নেই)"}, {"id": 32, "verb": "let", "verbName": "Let", "en": "Let him speak first.", "bn": "তাকে প্রথমে কথা বলতে দাও।", "rule": "Let + Person + Base Verb"}, {"id": 33, "verb": "let", "verbName": "Let", "en": "Mom lets me drive her car on weekends.", "bn": "মা আমাকে ছুটির দিনে তার গাড়ি চালাতে দেন।", "rule": "Let + Person + Base Verb"}, {"id": 34, "verb": "let", "verbName": "Let", "en": "Please let us know your decision.", "bn": "দয়া করে আমাদের আপনার সিদ্ধান্তটি জানান।", "rule": "Let + Person + Base Verb"}, {"id": 35, "verb": "let", "verbName": "Let", "en": "Don't let them enter the room.", "bn": "তাদের ঘরে ঢুকতে দিও না।", "rule": "Let + Person + Base Verb"}, {"id": 36, "verb": "let", "verbName": "Let", "en": "The teacher let the students leave early.", "bn": "শিক্ষক শিক্ষার্থীদের তাড়াতাড়ি যেতে দিলেন।", "rule": "Let + Person + Base Verb"}, {"id": 37, "verb": "let", "verbName": "Let", "en": "Let me help you with those bags.", "bn": "আমাকে ওই ব্যাগগুলোতে তোমাকে সাহায্য করতে দাও।", "rule": "Let + Person + Base Verb"}, {"id": 38, "verb": "let", "verbName": "Let", "en": "She never lets anyone touch her computer.", "bn": "সে কাউকে তার কম্পিউটার স্পর্শ করতে দেয় না।", "rule": "Let + Person + Base Verb"}, {"id": 39, "verb": "let", "verbName": "Let", "en": "Let's take a short break.", "bn": "চলো আমরা একটা ছোট বিরতি নেই।", "rule": "Let's = Let us + Base Verb"}, {"id": 40, "verb": "let", "verbName": "Let", "en": "My father let me choose my career.", "bn": "আমার বাবা আমাকে আমার ক্যারিয়ার বেছে নিতে দিয়েছিলেন।", "rule": "Let + Person + Base Verb"}, {"id": 41, "verb": "help", "verbName": "Help", "en": "He helped me carry the heavy box.", "bn": "সে আমাকে ভারী বাক্সটি বহন করতে সাহায্য করেছিল।", "rule": "Help + Person + Base Verb (বা to carry উভয়ই সঠিক)"}, {"id": 42, "verb": "help", "verbName": "Help", "en": "She helped me to solve the puzzle.", "bn": "সে আমাকে ধাঁধাটি সমাধান করতে সাহায্য করেছিল।", "rule": "Help + Person + TO + Base Verb"}, {"id": 43, "verb": "help", "verbName": "Help", "en": "This app helps people learn English faster.", "bn": "এই অ্যাপটি মানুষকে দ্রুত ইংরেজি শিখতে সাহায্য করে।", "rule": "Help + Person + Base Verb"}, {"id": 44, "verb": "help", "verbName": "Help", "en": "Can you help me find my keys?", "bn": "তুমি কি আমার চাবিগুলো খুঁজে পেতে সাহায্য করতে পারবে?", "rule": "Help + Person + Base Verb"}, {"id": 45, "verb": "help", "verbName": "Help", "en": "Regular exercise helps reduce stress.", "bn": "নিয়মিত ব্যায়াম মানসিক চাপ কমাতে সাহায্য করে।", "rule": "Help + Base Verb"}, {"id": 46, "verb": "help", "verbName": "Help", "en": "The doctor helped him recover from illness.", "bn": "ডাক্তার তাকে অসুস্থতা থেকে সেরে উঠতে সাহায্য করেছিলেন।", "rule": "Help + Person + Base Verb"}, {"id": 47, "verb": "help", "verbName": "Help", "en": "Reading books helps you build vocabulary.", "bn": "বই পড়া আপনার শব্দভাণ্ডার গড়ে তুলতে সাহায্য করে।", "rule": "Help + Person + Base Verb"}, {"id": 48, "verb": "help", "verbName": "Help", "en": "She helped her mother cook dinner.", "bn": "সে তার মাকে রাতের খাবার রান্না করতে সাহায্য করেছিল।", "rule": "Help + Person + Base Verb"}, {"id": 49, "verb": "help", "verbName": "Help", "en": "My teacher helped me prepare for the exam.", "bn": "আমার শিক্ষক আমাকে পরীক্ষার প্রস্তুতিতে সাহায্য করেছিলেন।", "rule": "Help + Person + Base Verb"}, {"id": 50, "verb": "help", "verbName": "Help", "en": "Vitamin C helps protect against infections.", "bn": "ভিটামিন সি সংক্রমণ থেকে রক্ষা করতে সাহায্য করে।", "rule": "Help + Base Verb"}, {"id": 51, "verb": "advanced", "verbName": "Cause", "en": "The storm caused the trees to fall.", "bn": "ঝড়টি গাছগুলো ফেলে দিয়েছিল।", "rule": "Cause + Object + TO + Base Verb"}, {"id": 52, "verb": "advanced", "verbName": "Force", "en": "The rain forced us to cancel the match.", "bn": "বৃষ্টি আমাদের ম্যাচ বাতিল করতে বাধ্য করেছিল।", "rule": "Force + Object + TO + Base Verb"}, {"id": 53, "verb": "advanced", "verbName": "Allow", "en": "The rules allow students to use calculators.", "bn": "নিয়মটি শিক্ষার্থীদের ক্যালকুলেটর ব্যবহার করতে দেয়।", "rule": "Allow + Object + TO + Base Verb"}, {"id": 54, "verb": "advanced", "verbName": "Enable", "en": "Internet enables us to connect globally.", "bn": "ইন্টারনেট আমাদের বিশ্বব্যাপী সংযুক্ত হতে সক্ষম করে।", "rule": "Enable + Object + TO + Base Verb"}, {"id": 55, "verb": "advanced", "verbName": "Require", "en": "The company requires workers to wear helmets.", "bn": "কোম্পানি কর্মীদের হেলমেট পরা বাধ্যতামূলক করে।", "rule": "Require + Object + TO + Base Verb"}, {"id": 56, "verb": "advanced", "verbName": "Persuade", "en": "His advice persuaded me to change my job.", "bn": "তার পরামর্শ আমাকে চাকরি পরিবর্তন করতে রাজি করাল।", "rule": "Persuade + Object + TO + Base Verb"}, {"id": 57, "verb": "advanced", "verbName": "Order", "en": "The police ordered the driver to stop.", "bn": "পুলিশ চালককে থামার নির্দেশ দিল।", "rule": "Order + Object + TO + Base Verb"}, {"id": 58, "verb": "advanced", "verbName": "Encourage", "en": "The government encouraged citizens to plant trees.", "bn": "সরকার নাগরিকদের বৃক্ষরোপণ করতে উৎসাহিত করল।", "rule": "Encourage + Object + TO + Base Verb"}, {"id": 59, "verb": "advanced", "verbName": "Lead", "en": "Curiosity led him to discover the truth.", "bn": "কৌতূহল তাকে সত্য আবিষ্কারে পরিচালিত করল।", "rule": "Lead + Object + TO + Base Verb"}, {"id": 60, "verb": "advanced", "verbName": "Cause", "en": "Careless driving caused the accident to happen.", "bn": "অসতর্ক ড্রাইভিং দুর্ঘটনা ঘটার কারণ হলো।", "rule": "Cause + Object + TO + Base Verb"}];
+const QUIZ_DATA = [{"id": 1, "q": "Mom made me _____ my room before going out.", "options": ["clean", "to clean"], "correct": "clean", "exp": "Make + ব্যক্তি এর পর সর্বদা Base Verb বসে, 'to' বসে না।"}, {"id": 2, "q": "I got the mechanic _____ the brakes of my car.", "options": ["to check", "check"], "correct": "to check", "exp": "Get + ব্যক্তি থাকলে অবশ্যই 'to + Base Verb' হবে।"}, {"id": 3, "q": "I had my hair _____ yesterday at the new salon.", "options": ["cut", "cutting"], "correct": "cut", "exp": "Have + বস্তু (চুল) হলে Passive অর্থে V3 বসে। Cut এর V3 হলো Cut।"}, {"id": 4, "q": "Please let him _____ his speech without interruption.", "options": ["finish", "to finish"], "correct": "finish", "exp": "Let এর পর সরাসরি Base Verb বসে, কোনো 'to' বসে না।"}, {"id": 5, "q": "She was made _____ the fine by the traffic officer.", "options": ["to pay", "pay"], "correct": "to pay", "exp": "Make যখন Passive Voice-এ যায় (was made), তখন 'to + Base Verb' বসে!"}, {"id": 6, "q": "I will have my assistant _____ the urgent email today.", "options": ["send", "to send"], "correct": "send", "exp": "Have + ব্যক্তি (সহকারী) কাজ করলে Base Verb (send) বসে।"}, {"id": 7, "q": "She got her laptop _____ at the computer shop.", "options": ["repaired", "repair"], "correct": "repaired", "exp": "Get + বস্তু (ল্যাপটপ) থাকলে Passive অর্থে V3 (repaired) বসে।"}, {"id": 8, "q": "Don't let the dog _____ into the bedroom.", "options": ["come", "to come"], "correct": "come", "exp": "Let এর পর 'to' ছাড়া সরাসরি Base Verb বসে।"}, {"id": 9, "q": "The teacher made the students _____ the grammar rules.", "options": ["memorize", "to memorize"], "correct": "memorize", "exp": "Make + Person এর পর Base Verb বসে।"}, {"id": 10, "q": "Can you help me _____ this heavy luggage?", "options": ["carry", "carried"], "correct": "carry", "exp": "Help এর পর Base Verb (বা to carry) বসে।"}, {"id": 11, "q": "He got his friend _____ his car yesterday.", "options": ["to wash", "wash"], "correct": "to wash", "exp": "Get + Person থাকলেই 'to + V1' বসে।"}, {"id": 12, "q": "We had our house _____ before Eid.", "options": ["painted", "paint"], "correct": "painted", "exp": "Have + Object (বাড়ি) হলে V3 (painted) বসে।"}, {"id": 13, "q": "The emotional movie made everyone _____.", "options": ["cry", "to cry"], "correct": "cry", "exp": "Make এর পর কোনো 'to' বসে না।"}, {"id": 14, "q": "Did you have the plumber _____ the water leak?", "options": ["fix", "fixed"], "correct": "fix", "exp": "Have + Person (প্লাম্বার) নিজে কাজ করলে Base Verb (fix) বসে।"}, {"id": 15, "q": "She got her brother _____ her to the railway station.", "options": ["to drive", "drive"], "correct": "to drive", "exp": "Get + Person থাকলে 'to + Base Verb' হয়।"}, {"id": 16, "q": "I will have the important parcel _____ tomorrow morning.", "options": ["delivered", "deliver"], "correct": "delivered", "exp": "Have + Object (পার্সেল) হলে V3 (delivered) বসে।"}, {"id": 17, "q": "The boss let all employees _____ early on Friday.", "options": ["leave", "to leave"], "correct": "leave", "exp": "Let এর পর সরাসরি Base Verb বসে।"}, {"id": 18, "q": "Heavy storm caused the flight _____ delayed.", "options": ["to be", "be"], "correct": "to be", "exp": "Cause এর পর সর্বদাই 'to + Base Verb' বসে।"}, {"id": 19, "q": "He was made _____ the truth under oath in court.", "options": ["to speak", "speak"], "correct": "to speak", "exp": "Passive ভয়েসে 'be made to speak' হয়।"}, {"id": 20, "q": "I went to the clinic and got my teeth _____.", "options": ["cleaned", "clean"], "correct": "cleaned", "exp": "Get + Object (দাঁত) হলে প্যাসিভ অর্থে V3 (cleaned) বসে।"}];
+const CHIP_DATA = [{"id": 1, "sentence": "The strict teacher made all students _____ the homework twice.", "bn": "কঠোর শিক্ষক সকল ছাত্র-ছাত্রীকে দুইবার হোমওয়ার্ক করালেন।", "options": ["rewrite", "to rewrite", "rewritten"], "correctAns": "rewrite", "rule": "Make + Person + Base Verb (কোনো 'to' বা 'ing' নেই)"}, {"id": 2, "sentence": "I persuaded him and got him _____ with us to the picnic.", "bn": "আমি তাকে রাজি করিয়ে আমাদের সাথে পিকনিকে নিয়ে গেলাম।", "options": ["to come", "come", "came"], "correctAns": "to come", "rule": "Get + Person থাকলে অবশ্যই 'to + Base Verb' হবে"}, {"id": 3, "sentence": "My mobile screen was cracked, so I had it _____.", "bn": "আমার মোবাইলের স্ক্রিন ভেঙে গিয়েছিল, তাই আমি তা ঠিক করিয়ে নিয়েছি।", "options": ["replaced", "replace", "to replace"], "correctAns": "replaced", "rule": "Have + Object (মোবাইল) হলে Passive অর্থে V3 বসে"}, {"id": 4, "sentence": "Mom never lets me _____ out alone late at night.", "bn": "মা আমাকে কখনো গভীর রাতে একা বাইরে যেতে দেন না।", "options": ["stay", "to stay", "staying"], "correctAns": "stay", "rule": "Let + Person + Base Verb"}, {"id": 5, "sentence": "The funny clown made the little children _____ loudly.", "bn": "মজার জোকারটি ছোট বাচ্চাদের জোরে জোরে হাসাল।", "options": ["laugh", "to laugh", "laughed"], "correctAns": "laugh", "rule": "Make + Person + Base Verb"}, {"id": 6, "sentence": "She managed to get her dad _____ her a new laptop.", "bn": "সে তার বাবাকে রাজি করিয়ে একটি নতুন ল্যাপটপ কিনে নিল।", "options": ["to buy", "buy", "bought"], "correctAns": "to buy", "rule": "Get + Person + TO + Base Verb"}, {"id": 7, "sentence": "We will have our new house _____ by professional painters.", "bn": "আমরা প্রফেশনাল পেইন্টারদের দিয়ে আমাদের নতুন বাড়ি রঙ করাব।", "options": ["painted", "paint", "to paint"], "correctAns": "painted", "rule": "Have + Object + V3"}, {"id": 8, "sentence": "Could you please let me _____ your dictionary for a minute?", "bn": "আপনি কি দয়া করে আমাকে এক মিনিটের জন্য আপনার ডিকশনারিটি ব্যবহার করতে দেবেন?", "options": ["use", "to use", "using"], "correctAns": "use", "rule": "Let + Person + Base Verb"}, {"id": 9, "sentence": "He helped the old blind man _____ the busy street.", "bn": "সে অন্ধ বৃদ্ধ লোকটিকে ব্যস্ত রাস্তা পার হতে সাহায্য করেছিল।", "options": ["cross", "crossed", "crossing"], "correctAns": "cross", "rule": "Help + Person + Base Verb"}, {"id": 10, "sentence": "The bank manager had the cashier _____ the cash carefully.", "bn": "ব্যাংক ম্যানেজার ক্যাশিয়ারকে দিয়ে টাকাগুলো যত্নসহকারে গণনা করালেন।", "options": ["count", "to count", "counted"], "correctAns": "count", "rule": "Have + Person + Base Verb"}, {"id": 11, "sentence": "I must get my broken car _____ before the long trip.", "bn": "লম্বা ভ্রমণের আগে আমাকে অবশ্যই ভাঙা গাড়িটি মেরামত করিয়ে নিতে হবে।", "options": ["serviced", "service", "to service"], "correctAns": "serviced", "rule": "Get + Object + V3"}, {"id": 12, "sentence": "Bad road condition caused the truck _____ over.", "bn": "খারাপ রাস্তার কারণে ট্রাকটি উল্টে গিয়েছিল।", "options": ["to roll", "roll", "rolled"], "correctAns": "to roll", "rule": "Cause + Object + TO + Base Verb"}, {"id": 13, "sentence": "The security guard didn't let anyone _____ the building without an ID.", "bn": "আইডি কার্ড ছাড়া সিকিউরিটি গার্ড কাউকে ভবনে প্রবেশ করতে দেয়নি।", "options": ["enter", "to enter", "entering"], "correctAns": "enter", "rule": "Let + Person + Base Verb"}, {"id": 14, "sentence": "The kidnapper was made _____ where the victim was kept.", "bn": "অপহরণকারীকে বলতে বাধ্য করা হয়েছিল ভিকটিমকে কোথায় রাখা হয়েছিল।", "options": ["to confess", "confess", "confessed"], "correctAns": "to confess", "rule": "Be made (প্যাসিভ) এর পর 'to + Base Verb' বসে"}, {"id": 15, "sentence": "She has her assistant _____ all her travel tickets.", "bn": "সে তার সহকারীকে দিয়ে তার সব ভ্রমণের টিকিট বুক করায়।", "options": ["book", "to book", "booked"], "correctAns": "book", "rule": "Have + Person + Base Verb"}, {"id": 16, "sentence": "Can you get your sister _____ us some fresh tea?", "bn": "তুমি কি তোমার বোনকে দিয়ে আমাদের জন্য কিছুটা চা বানিয়ে দিতে রাজি করাতে পারবে?", "options": ["to make", "make", "made"], "correctAns": "to make", "rule": "Get + Person + TO + Base Verb"}, {"id": 17, "sentence": "I will get my suit _____ before the wedding ceremony.", "bn": "বিয়ের অনুষ্ঠানের আগে আমি আমার স্যুটটি ড্রাই ক্লিন করিয়ে নেব।", "options": ["dry-cleaned", "dry-clean", "to dry-clean"], "correctAns": "dry-cleaned", "rule": "Get + Object + V3"}, {"id": 18, "sentence": "The sergeant made the soldiers _____ ten miles with backpacks.", "bn": "সার্জেন্ট সেনাদের ব্যাকপ্যাক নিয়ে দশ মাইল মার্চ করালেন।", "options": ["march", "to march", "marched"], "correctAns": "march", "rule": "Make + Person + Base Verb"}, {"id": 19, "sentence": "Please help us _____ these heavy desks to the next room.", "bn": "দয়া করে এই ভারী ডেস্কগুলো পাশের রুমে নিয়ে যেতে আমাদের সাহায্য করুন।", "options": ["move", "moved", "moving"], "correctAns": "move", "rule": "Help + Person + Base Verb"}, {"id": 20, "sentence": "The company allows staff _____ from home twice a week.", "bn": "কোম্পানি কর্মীদের সপ্তাহে দুই দিন বাসা থেকে কাজ করার অনুমতি দেয়।", "options": ["to work", "work", "worked"], "correctAns": "to work", "rule": "Allow + Person + TO + Base Verb"}];
+const ERROR_DATA = [{"id": 1, "wrong": "She made me to cry with her harsh words.", "correct": "She made me cry with her harsh words.", "bn": "সে তার কড়া কথায় আমাকে কাঁড়াল।", "exp": "Make এর পর 'to' বসে না, সরাসরি Base Verb (cry) বসে।"}, {"id": 2, "wrong": "I got him clean my room yesterday.", "correct": "I got him to clean my room yesterday.", "bn": "আমি তাকে দিয়ে আমার ঘর পরিষ্কার করালাম।", "exp": "Get + ব্যক্তি থাকলে অবশ্যই 'to' যুক্ত করতে হবে (to clean)।"}, {"id": 3, "wrong": "I had my hair cutted at the barber shop.", "correct": "I had my hair cut at the barber shop.", "bn": "আমি সেলুনে চুল কাটিয়েছি।", "exp": "'Cut'-এর Past Participle (V3) রূপও 'Cut', 'Cutted' কোনো ইংরেজি শব্দ নয়।"}, {"id": 4, "wrong": "Please let him to speak his opinion.", "correct": "Please let him speak his opinion.", "bn": "দয়া করে তাকে তার মতামত বলতে দিন।", "exp": "Let এর পর কখনো 'to' বসে না (Bare Infinitive)।"}, {"id": 5, "wrong": "The thief was made confess the crime.", "correct": "The thief was made to confess the crime.", "bn": "চোরটিকে অপরাধ স্বীকার করতে বাধ্য করা হয়েছিল।", "exp": "Make যখন Passive Voice-এ ব্যবহৃত হয় (was made), তখন 'to' বসাতে হয়!"}, {"id": 6, "wrong": "I made my laptop repaired.", "correct": "I had my laptop repaired. (বা got my laptop repaired)", "bn": "আমি আমার ল্যাপটপ মেরামত করিয়ে নিলাম।", "exp": "বস্তু বা প্যাসিভ সার্ভিসের ক্ষেত্রে 'Make' বসে না, 'Have' বা 'Get' ব্যবহার করতে হয়।"}, {"id": 7, "wrong": "She helped me for doing the difficult task.", "correct": "She helped me do the difficult task. (বা to do)", "bn": "সে আমাকে কঠিন কাজটি করতে সাহায্য করেছিল।", "exp": "Help এর পর 'for doing' নয়, সরাসরি Base Verb (do) অথবা 'to do' বসে।"}, {"id": 8, "wrong": "The police forced him sign the confession.", "correct": "The police forced him to sign the confession.", "bn": "পুলিশ তাকে স্বীকারোক্তিতে স্বাক্ষর করতে বাধ্য করেছিল।", "exp": "Force এর পর সর্বদাই 'to + Base Verb' বসে।"}, {"id": 9, "wrong": "I will have my dirty car wash today.", "correct": "I will have my dirty car washed today.", "bn": "আমি আজ আমার নোংরা গাড়িটি ধুইয়ে নেব।", "exp": "Have + বস্তু (গাড়ি) হলে V3 (washed) হবে, কারণ গাড়ি নিজে ধোয় না, তাকে ধোয়ানো হয়।"}, {"id": 10, "wrong": "He got his secretary type the urgent letter.", "correct": "He got his secretary to type the urgent letter.", "bn": "সে তার সেক্রেটারিকে দিয়ে জরুরি চিঠিটি টাইপ করাল।", "exp": "Get + Person এর সাথে সর্বদাই 'to + V1' বসে।"}];
+const PAIR_DATA = [{"id": 1, "active": "I had the mechanic service my motorcycle.", "activeBn": "আমি মেকানিককে দিয়ে আমার মোটরসাইকেল সার্ভিস করালাম।", "passive": "I had my motorcycle serviced.", "passiveBn": "আমি আমার মোটরসাইকেল সার্ভিস করিয়ে নিলাম।", "note": "অ্যাক্টিভে ব্যক্তি (মেকানিক) থাকায় 'service' (V1), প্যাসিভে বস্তু (বাইক) থাকায় 'serviced' (V3)।"}, {"id": 2, "active": "She got the dentist to clean her teeth.", "activeBn": "সে ডেন্টিস্টকে রাজি করিয়ে দাঁত পরিষ্কার করাল।", "passive": "She got her teeth cleaned.", "passiveBn": "সে দাঁত পরিষ্কার করিয়ে নিল।", "note": "Get + Person হলে 'to clean', কিন্তু Get + Object (teeth) হলে V3 'cleaned'।"}, {"id": 3, "active": "We will have the painter paint our living room.", "activeBn": "আমরা পেইন্টারকে দিয়ে বসার ঘর রঙ করাব।", "passive": "We will have our living room painted.", "passiveBn": "আমরা বসার ঘর রঙ করিয়ে নেব।", "note": "Have + Person = Base Verb | Have + Thing = V3"}, {"id": 4, "active": "He got the tailor to stitch his suit.", "activeBn": "সে দর্জিকে দিয়ে তার স্যুট সেলাই করাল।", "passive": "He got his suit stitched.", "passiveBn": "সে তার স্যুট সেলাই করিয়ে নিল।", "note": "Get + Person = to stitch | Get + Thing = stitched"}, {"id": 5, "active": "I had the technician repair my refrigerator.", "activeBn": "আমি টেকনিশিয়ানকে দিয়ে ফ্রিজ মেরামত করালাম।", "passive": "I had my refrigerator repaired.", "passiveBn": "আমি আমার ফ্রিজ মেরামত করিয়ে নিলাম।", "note": "Have + Person = repair | Have + Object = repaired"}, {"id": 6, "active": "Mom will get the maid to mop the entire floor.", "activeBn": "মা গৃহপরিচারিকাকে দিয়ে পুরো মেঝে মোছাবেন।", "passive": "Mom will get the entire floor mopped.", "passiveBn": "মা পুরো মেঝে মুছিয়ে নেবেন।", "note": "Get + Person = to mop | Get + Object = mopped"}, {"id": 7, "active": "I will have the delivery boy deliver the parcel.", "activeBn": "আমি ডেলিভারি বয়কে দিয়ে পার্সেলটি পৌঁছে দেব।", "passive": "I will have the parcel delivered.", "passiveBn": "আমি পার্সেলটি পৌঁছে দেওয়ার ব্যবস্থা করাব।", "note": "Have + Person = deliver | Have + Object = delivered"}, {"id": 8, "active": "She got the photographer to take her pictures.", "activeBn": "সে ফটোগ্রাফারকে দিয়ে তার ছবি তোলাল।", "passive": "She got her pictures taken.", "passiveBn": "সে তার ছবি তোলিয়ে নিল।", "note": "Get + Person = to take | Get + Object = taken (V3)"}, {"id": 9, "active": "The boss had the clerk photocopy the report.", "activeBn": "বস ক্লার্ককে দিয়ে রিপোর্টটি ফটোকপি করালেন।", "passive": "The boss had the report photocopied.", "passiveBn": "বস রিপোর্টটি ফটোকপি করিয়ে নিলেন।", "note": "Have + Person = photocopy | Have + Object = photocopied"}, {"id": 10, "active": "I got the optician to check my eyesight.", "activeBn": "আমি অপটিশিয়ানকে দিয়ে আমার দৃষ্টিশক্তি পরীক্ষা করালাম।", "passive": "I got my eyesight checked.", "passiveBn": "আমি আমার দৃষ্টিশক্তি পরীক্ষা করিয়ে নিলাম।", "note": "Get + Person = to check | Get + Object = checked"}];
+const DIALOGUE_DATA = [{"id": 1, "title": "গাড়ির মেকানিকের দোকানে (At the Car Repair Shop)", "lines": [{"speaker": "Customer", "en": "Hi, I need to have my car checked today.", "bn": "হ্যালো, আজ আমার গাড়িটি একটু চেক করিয়ে নেওয়া দরকার।", "causative": "have my car checked"}, {"speaker": "Mechanic", "en": "Sure! Did you have someone replace the engine oil recently?", "bn": "অবশ্যই! সম্প্রতি কাউকে দিয়ে ইঞ্জিন অয়েল পরিবর্তন করিয়েছিলেন?", "causative": "have someone replace"}, {"speaker": "Customer", "en": "No, I had my brother check it last month, but he couldn't get the engine to start properly.", "bn": "না, গত মাসে ভাইকে দিয়ে দেখিয়েছিলাম, কিন্তু সে ইঞ্জিন ঠিকমতো স্টার্ট করাতে পারেনি।", "causative": "get the engine to start"}, {"speaker": "Mechanic", "en": "Don't worry. I will have my assistant inspect the battery right away.", "bn": "চিন্তা করবেন না। আমি এখনই সহকারীকে দিয়ে ব্যাটারি পরীক্ষা করাচ্ছি।", "causative": "have my assistant inspect"}]}, {"id": 2, "title": "অফিসে বস ও সহকারীর কথোপকথন (At the Office)", "lines": [{"speaker": "Boss", "en": "Rahim, please have the finance team prepare the annual report.", "bn": "রহিম, দয়া করে ফিন্যান্স টিমকে দিয়ে বার্ষিক রিপোর্টটি প্রস্তুত করাও।", "causative": "have the finance team prepare"}, {"speaker": "Rahim", "en": "Yes sir. Should I also get the designer to design the cover page?", "bn": "হ্যাঁ স্যার। ডিজাইনারকে দিয়ে কি কভার পেজটিও ডিজাইন করিয়ে নেব?", "causative": "get the designer to design"}, {"speaker": "Boss", "en": "Yes, and don't let anyone see the draft until it's finalized.", "bn": "হ্যাঁ, এবং চূড়ান্ত হওয়ার আগে কাউকে ড্রাফটটি দেখতে দেবে না।", "causative": "don't let anyone see"}, {"speaker": "Rahim", "en": "Understood! I will get the printed copies delivered to your desk by 4 PM.", "bn": "বুঝেছি! আমি বিকাল ৪টার মধ্যে প্রিন্ট কপি আপনার টেবিলে পৌঁছে দেওয়ার ব্যবস্থা করব।", "causative": "get the printed copies delivered"}]}, {"id": 3, "title": "সেলুনে চুল কাটানো (At the Barber Shop)", "lines": [{"speaker": "Customer", "en": "Hello, I want to have my hair cut short.", "bn": "হ্যালো, আমি আমার চুল ছোট করে কাটাতে চাই।", "causative": "have my hair cut"}, {"speaker": "Barber", "en": "Certainly sir! Would you also like to have your beard trimmed?", "bn": "অবশ্যই স্যার! আপনি কি দাড়িও ট্রিম করিয়ে নিতে চান?", "causative": "have your beard trimmed"}, {"speaker": "Customer", "en": "Yes please. And don't make it too short, just keep it neat.", "bn": "হ্যাঁ দয়া করে। এবং খুব বেশি ছোট করবেন না, শুধু পরিপাটি রাখুন।", "causative": "don't make it too short"}, {"speaker": "Barber", "en": "Got it! Relax and let me do the styling.", "bn": "ঠিক আছে! রিল্যাক্স করুন এবং আমাকে স্টাইলিং করতে দিন।", "causative": "let me do"}]}, {"id": 4, "title": "বাসায় মা ও সন্তানের কথোপকথন (At Home with Mom)", "lines": [{"speaker": "Mom", "en": "Tanvir, your room is a mess! I will make you clean it right now.", "bn": "তানভীর, তোমার ঘর পুরো অগোছালো! আমি এখনই তোমাকে দিয়ে এটা পরিষ্কার করাব।", "causative": "make you clean"}, {"speaker": "Tanvir", "en": "Mom, please let me finish this level of the video game first!", "bn": "মা, দয়া করে আমাকে আগে ভিডিও গেমের এই লেভেলটা শেষ করতে দাও!", "causative": "let me finish"}, {"speaker": "Mom", "en": "No more excuses! Yesterday you got your sister to do your homework.", "bn": "আর কোনো অজুহাত নয়! গতকাল তুমি তোমার বোনকে দিয়ে তোমার হোমওয়ার্ক করিয়ে নিয়েছিলে।", "causative": "got your sister to do"}, {"speaker": "Tanvir", "en": "Okay Mom, I'm cleaning it. Will you help me fold the blankets?", "bn": "আচ্ছা মা, পরিষ্কার করছি। তুমি কি কম্বল ভাজ করতে আমাকে সাহায্য করবে?", "causative": "help me fold"}]}];
 
-        function speakCurrentSentence() {
-            const text = document.getElementById('builder-sentence').innerText;
-            speak(text);
-        }
+function speakText(text) {
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = 'en-US';
+        u.rate = 0.9;
+        window.speechSynthesis.speak(u);
+    }
+}
 
-        function speak(text) {
-            if ('speechSynthesis' in window) {
-                window.speechSynthesis.cancel();
-                const u = new SpeechSynthesisUtterance(text);
-                u.lang = 'en-US';
-                u.rate = 0.9;
-                window.speechSynthesis.speak(u);
-            }
-        }
+function switchTab(tabId, btn) {
+    document.querySelectorAll('.session-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
+    const target = document.getElementById('panel-' + tabId);
+    if (target) target.classList.add('active');
+    if (btn) btn.classList.add('active');
+}
 
-        // 2. QUICK QUIZ LOGIC
-        const quizData = [
-            { q: "He made me ___ (smile).", opts: ["smile", "to smile"], ans: "smile", tip: "💡 'Make'-এর পর কখনো 'to' বসে না! Base Verb হবে।" },
-            { q: "I got him ___ (help) me.", opts: ["help", "to help"], ans: "to help", tip: "💡 'Get' আসলেই 'TO' বসবে! (Got him to help)" },
-            { q: "Please let me ___ (go) now.", opts: ["go", "to go"], ans: "go", tip: "💡 'Let'-এর পরে কোনোদিন 'to' বসে না, শুধু Base Verb।" },
-            { q: "I had him ___ (call) you.", opts: ["call", "to call"], ans: "call", tip: "💡 'Have + ব্যক্তি' থাকলে Base Verb বসবে।" },
-            { q: "I had my hair ___ (cut) yesterday.", opts: ["cut", "to cut"], ans: "cut", tip: "💡 চুল নিজে কাটেননি, কাটিয়েছেন (প্যাসিভ)—তাই V3 (cut)!" }
-        ];
+// BUILDER
+let bSub = 'I';
+let bVerb = 'made';
+let bPer = 'me';
+let bAct = 'laugh';
+let currentBuilderEn = 'I made me laugh.';
 
-        let curQ = 0;
-        let answered = false;
+function updateBuilder() {
+    let actForm = bAct;
+    let isPassive = ['the car', 'my laptop', 'my hair'].includes(bPer);
+    if (isPassive) {
+        if (bAct.includes('wash')) actForm = 'washed';
+        else if (bAct.includes('clean')) actForm = 'cleaned';
+        else if (bAct.includes('fix') || bAct.includes('repair')) actForm = 'repaired';
+        else actForm = 'done';
+    } else {
+        if (bVerb === 'got') actForm = 'to ' + bAct;
+    }
+    currentBuilderEn = bSub + ' ' + bVerb + ' ' + bPer + ' ' + actForm + '.';
+    document.getElementById('builder-en').innerText = currentBuilderEn;
+    
+    let subBn = bSub === 'I' ? 'আমি' : bSub === 'He' ? 'সে' : bSub === 'She' ? 'সে' : bSub === 'Mom' ? 'মা' : bSub === 'The boss' ? 'বস' : 'তারা';
+    let perBn = bPer === 'me' ? 'আমাকে' : bPer === 'him' ? 'তাকে' : bPer === 'us' ? 'আমাদের' : bPer;
+    let bn = isPassive ? subBn + ' ' + perBn + ' করিয়ে নিল/নেবে।' : subBn + ' ' + perBn + ' দিয়ে কাজটি করাল।';
+    document.getElementById('builder-bn').innerText = bn;
+    document.getElementById('builder-rule').innerText = isPassive ? 'রুল: অবজেক্ট (বস্তু) থাকায় V3 ব্যবহার হয়েছে!' : (bVerb === 'got' ? 'রুল: Get + Person এর পর অবশ্যই \'to\' যোগ করা হয়েছে!' : 'রুল: Base Verb ব্যবহৃত হয়েছে।');
+}
 
-        function renderQuiz() {
-            const item = quizData[curQ];
-            document.getElementById('q-counter').innerText = `প্রশ্ন ${curQ + 1} / ${quizData.length}`;
-            document.getElementById('q-text').innerText = item.q;
-            const btns = document.querySelectorAll('.quiz-options .quiz-opt-btn');
-            btns[0].innerText = item.opts[0];
-            btns[0].className = 'quiz-opt-btn';
-            btns[1].innerText = item.opts[1];
-            btns[1].className = 'quiz-opt-btn';
-            document.getElementById('q-fb').style.display = 'none';
-            document.getElementById('q-next-btn').style.display = 'none';
-            answered = false;
-        }
+function setBuilderSub(val, btn) {
+    bSub = val;
+    highlightChip(btn, 'b-sub-chips');
+    updateBuilder();
+}
+function setBuilderVerb(val, btn) {
+    bVerb = val;
+    highlightChip(btn, 'b-verb-chips');
+    updateBuilder();
+}
+function setBuilderPer(val, btn) {
+    bPer = val;
+    highlightChip(btn, 'b-per-chips');
+    updateBuilder();
+}
+function setBuilderAct(val, btn) {
+    bAct = val;
+    highlightChip(btn, 'b-act-chips');
+    updateBuilder();
+}
+function highlightChip(btn, containerId) {
+    document.querySelectorAll('#' + containerId + ' .chip-btn').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+}
 
-        function answerQuiz(btn, chosen) {
-            if (answered) return;
-            answered = true;
-            const item = quizData[curQ];
-            const fb = document.getElementById('q-fb');
-            fb.style.display = 'block';
-            fb.innerText = item.tip;
+// SPOKEN CARDS
+function renderSpokenCards(filter) {
+    const container = document.getElementById('spoken-cards-container');
+    container.innerHTML = '';
+    const filtered = filter === 'all' ? SPOKEN_DATA : SPOKEN_DATA.filter(s => s.verb === filter);
+    filtered.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'drill-card';
+        card.innerHTML = `
+            <div>
+                <div class="card-top">
+                    <span style="font-size:0.75rem; font-weight:bold; color:#0e7490; background:#cffafe; padding:2px 8px; border-radius:6px;">#${item.id} • ${item.verbName}</span>
+                    <button class="speaker-btn" style="color:#0891b2; background:#e0f2fe;" onclick="speakText('${item.en.replace(/'/g, "\\'")}');">🔊 শুনুন</button>
+                </div>
+                <div class="card-en">${item.en}</div>
+                <button class="chip-btn" style="padding:4px 10px; font-size:0.75rem; margin-bottom:8px;" onclick="this.nextElementSibling.style.display = 'block'; this.style.display = 'none';">বাংলা অর্থ দেখুন</button>
+                <div class="card-bn">${item.bn}</div>
+            </div>
+            <div class="card-rule">${item.rule}</div>
+        `;
+        container.appendChild(card);
+    });
+}
 
-            if (chosen === item.ans) {
-                btn.classList.add('correct');
-            } else {
-                btn.classList.add('wrong');
-                document.querySelectorAll('.quiz-options .quiz-opt-btn').forEach(b => {
-                    if (b.innerText === item.ans) b.classList.add('correct');
-                });
-            }
-            document.getElementById('q-next-btn').style.display = 'inline-block';
-        }
+function filterSpoken(verb, btn) {
+    document.querySelectorAll('#panel-spoken .chip-btn').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    renderSpokenCards(verb);
+}
 
-        function nextQuiz() {
-            curQ = (curQ + 1) % quizData.length;
-            renderQuiz();
-        }
+// QUIZ
+let qIdx = 0;
+let qScore = 0;
+let qAnswered = false;
 
-        // 3. SPOKEN CARDS DATA
-        const spokenList = [
-            { v: 'make', en: 'He makes me laugh.', bn: 'সে আমাকে হাসায়।' },
-            { v: 'make', en: 'She made me cry.', bn: 'সে আমাকে কাঁদাল।' },
-            { v: 'make', en: 'Mom made me eat.', bn: 'মা আমাকে খাওয়ালেন।' },
-            { v: 'make', en: 'Don\'t make me angry.', bn: 'আমাকে রাগিও না।' },
-            { v: 'make', en: 'He made me clean it.', bn: 'সে আমাকে দিয়ে পরিষ্কার করাল।' },
-            { v: 'make', en: 'The boss made us stay.', bn: 'বস আমাদের থাকতে বাধ্য করলেন।' },
+function loadQuizQuestion() {
+    qAnswered = false;
+    document.getElementById('quiz-next-container').style.display = 'none';
+    document.getElementById('quiz-exp-box').style.display = 'none';
+    if (qIdx >= QUIZ_DATA.length) {
+        document.getElementById('quiz-question').style.display = 'none';
+        document.getElementById('quiz-options-box').style.display = 'none';
+        document.getElementById('quiz-result-box').style.display = 'block';
+        document.getElementById('quiz-final-score').innerText = 'আপনার মোট স্কোর: ' + qScore + ' / ' + QUIZ_DATA.length;
+        return;
+    }
+    const cur = QUIZ_DATA[qIdx];
+    document.getElementById('quiz-counter').innerText = 'প্রশ্ন ' + (qIdx + 1) + ' / ' + QUIZ_DATA.length;
+    document.getElementById('quiz-score-badge').innerText = 'স্কোর: ' + qScore;
+    document.getElementById('quiz-progress').style.width = ((qIdx + 1) / QUIZ_DATA.length * 100) + '%';
+    document.getElementById('quiz-question').innerText = cur.q;
+    
+    const optBox = document.getElementById('quiz-options-box');
+    optBox.innerHTML = '';
+    cur.options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className = 'quiz-btn';
+        btn.innerText = opt;
+        btn.onclick = () => handleQuizSelect(opt, btn);
+        optBox.appendChild(btn);
+    });
+}
 
-            { v: 'have', en: 'I had him call you.', bn: 'আমি তাকে দিয়ে তোমাকে কল করালাম।' },
-            { v: 'have', en: 'I will have him fix it.', bn: 'আমি তাকে দিয়ে এটা ঠিক করাব।' },
-            { v: 'have', en: 'I had my hair cut.', bn: 'আমি চুল কাটিয়েছি।' },
-            { v: 'have', en: 'I had my car washed.', bn: 'আমি গাড়ি ধুইয়ে নিয়েছি।' },
-            { v: 'have', en: 'She had her laptop fixed.', bn: 'সে ল্যাপটপ ঠিক করিয়ে নিল।' },
-            { v: 'have', en: 'We had the room painted.', bn: 'আমরা ঘর রঙ করিয়ে নিলাম।' },
+function handleQuizSelect(opt, btn) {
+    if (qAnswered) return;
+    qAnswered = true;
+    const cur = QUIZ_DATA[qIdx];
+    const isRight = opt === cur.correct;
+    if (isRight) {
+        qScore++;
+        btn.classList.add('correct');
+        btn.innerText = opt + ' ✔️';
+    } else {
+        btn.classList.add('wrong');
+        btn.innerText = opt + ' ❌';
+        document.querySelectorAll('.quiz-btn').forEach(b => {
+            if (b.innerText === cur.correct) b.classList.add('correct');
+        });
+    }
+    const expBox = document.getElementById('quiz-exp-box');
+    expBox.innerHTML = '💡 <strong>ব্যাখ্যা:</strong> ' + cur.exp;
+    expBox.style.display = 'block';
+    document.getElementById('quiz-next-container').style.display = 'block';
+}
 
-            { v: 'get', en: 'I got him to agree.', bn: 'আমি তাকে রাজি করালাম।' },
-            { v: 'get', en: 'She got him to help.', bn: 'সে তাকে দিয়ে সাহায্য করিয়ে নিল।' },
-            { v: 'get', en: 'I got my friend to come.', bn: 'আমি বন্ধুকে আসতে রাজি করালাম।' },
-            { v: 'get', en: 'Can you get him to listen?', bn: 'তুমি কি তাকে দিয়ে শোনাতে পারবে?' },
-            { v: 'get', en: 'I got my phone repaired.', bn: 'আমি ফোন ঠিক করিয়েছি।' },
-            { v: 'get', en: 'I got my room cleaned.', bn: 'আমি ঘর পরিষ্কার করিয়ে নিলাম।' },
+function nextQuiz() {
+    qIdx++;
+    loadQuizQuestion();
+}
 
-            { v: 'let', en: 'Let me go.', bn: 'আমাকে যেতে দাও।' },
-            { v: 'let', en: 'Let me see.', bn: 'আমাকে দেখতে দাও।' },
-            { v: 'let', en: 'Mom lets me drive.', bn: 'মা আমাকে গাড়ি চালাতে দেন।' },
-            { v: 'let', en: 'Please let me speak.', bn: 'দয়া করে আমাকে বলতে দিন।' },
-            { v: 'let', en: 'Don\'t let him enter.', bn: 'তাকে ঢুকতে দিও না।' },
-            { v: 'let', en: 'Let them play outside.', bn: 'তাদের বাইরে খেলতে দাও।' },
+function restartQuiz() {
+    qIdx = 0;
+    qScore = 0;
+    document.getElementById('quiz-question').style.display = 'block';
+    document.getElementById('quiz-options-box').style.display = 'grid';
+    document.getElementById('quiz-result-box').style.display = 'none';
+    loadQuizQuestion();
+}
 
-            { v: 'help', en: 'He helped me do it.', bn: 'সে আমাকে এটা করতে সাহায্য করল।' },
-            { v: 'help', en: 'Can you help me carry this?', bn: 'আমাকে এটা তুলতে সাহায্য করবে?' },
-            { v: 'help', en: 'This helps me learn English.', bn: 'এটা আমাকে ইংরেজি শিখতে সাহায্য করে।' },
-            { v: 'help', en: 'She helped me cook dinner.', bn: 'সে আমাকে রান্না করতে সাহায্য করল।' }
-        ];
+// CHIP FILL
+function renderChipFills() {
+    const container = document.getElementById('chip-fill-container');
+    container.innerHTML = '';
+    CHIP_DATA.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'drill-card';
+        div.innerHTML = `
+            <div>
+                <span style="font-size:0.75rem; font-weight:bold; color:#64748b;">#${item.id}</span>
+                <div class="card-en" style="margin-top:6px;" id="chip-q-${item.id}">${item.sentence}</div>
+                <div style="font-size:0.8rem; color:#64748b; margin-bottom:10px;">বাংলা: ${item.bn}</div>
+                <div style="display:flex; flex-wrap:wrap; gap:8px;" id="chip-opts-${item.id}">
+                    ${item.options.map(o => `<button class="chip-btn" onclick="selectChipAnswer(${item.id}, '${o}', this)">${o}</button>`).join('')}
+                </div>
+            </div>
+            <div id="chip-rule-${item.id}" style="font-size:0.75rem; color:#0e7490; background:#ecfeff; padding:6px; border-radius:6px; margin-top:10px; display:none;">
+                নিয়ম: ${item.rule}
+            </div>
+        `;
+        container.appendChild(div);
+    });
+}
 
-        function renderCards(filter = 'all') {
-            const container = document.getElementById('cards-container');
-            container.innerHTML = '';
-            spokenList.forEach(item => {
-                if (filter !== 'all' && item.v !== filter) return;
-                const div = document.createElement('div');
-                div.className = 'drill-card';
-                div.onclick = function() { this.classList.toggle('revealed'); };
-                div.innerHTML = `
+function selectChipAnswer(id, opt, btn) {
+    const item = CHIP_DATA.find(x => x.id === id);
+    const isRight = opt === item.correctAns;
+    document.querySelectorAll('#chip-opts-' + id + ' .chip-btn').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    btn.style.background = isRight ? '#10b981' : '#ef4444';
+    btn.style.color = '#fff';
+    
+    document.getElementById('chip-rule-' + id).style.display = 'block';
+}
+
+// ERROR SPOTS
+function renderErrorSpots() {
+    const container = document.getElementById('errors-container');
+    container.innerHTML = '';
+    ERROR_DATA.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'error-card';
+        div.innerHTML = `
+            <span style="font-size:0.75rem; font-weight:bold; color:#64748b;">ভুল #${item.id}</span>
+            <div class="box-wrong">
+                <p>❌ ${item.wrong}</p>
+            </div>
+            <div class="box-correct">
+                <p>✔️ ${item.correct}</p>
+                <span style="font-size:0.8rem; color:#15803d;">বাংলা: ${item.bn}</span>
+            </div>
+            <div style="font-size:0.8rem; color:#475569; background:#f8fafc; padding:8px; border-radius:8px;">
+                💡 <strong>কারণ:</strong> ${item.exp}
+            </div>
+        `;
+        container.appendChild(div);
+    });
+}
+
+// PAIRS
+function renderPairs() {
+    const container = document.getElementById('pairs-container');
+    container.innerHTML = '';
+    PAIR_DATA.forEach(p => {
+        const div = document.createElement('div');
+        div.style.background = 'white';
+        div.style.border = '1px solid #e2e8f0';
+        div.style.borderRadius = '16px';
+        div.style.padding = '16px';
+        div.style.marginBottom = '12px';
+        div.innerHTML = `
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:8px;">
+                <div style="background:#f8fafc; padding:12px; border-radius:10px; border:1px solid #e2e8f0;">
+                    <span style="font-size:0.7rem; font-weight:bold; color:#64748b; text-transform:uppercase;">অ্যাক্টিভ (ব্যক্তি নিজে করছে)</span>
+                    <p style="font-weight:bold; margin-top:4px;">${p.active}</p>
+                    <span style="font-size:0.8rem; color:#64748b;">${p.activeBn}</span>
+                </div>
+                <div style="background:#ecfeff; padding:12px; border-radius:10px; border:1px solid #a5f3fc;">
+                    <span style="font-size:0.7rem; font-weight:bold; color:#0e7490; text-transform:uppercase;">প্যাসিভ (কাজ করিয়ে নেওয়া হচ্ছে)</span>
+                    <p style="font-weight:bold; margin-top:4px; color:#0891b2;">${p.passive}</p>
+                    <span style="font-size:0.8rem; color:#0e7490;">${p.passiveBn}</span>
+                </div>
+            </div>
+            <div style="font-size:0.78rem; color:#64748b;">💡 ${p.note}</div>
+        `;
+        container.appendChild(div);
+    });
+}
+
+// DIALOGUES
+function renderDialogues() {
+    const container = document.getElementById('dialogues-container');
+    container.innerHTML = '';
+    DIALOGUE_DATA.forEach(d => {
+        const div = document.createElement('div');
+        div.style.background = 'white';
+        div.style.border = '1px solid #e2e8f0';
+        div.style.borderRadius = '16px';
+        div.style.padding = '20px';
+        div.style.marginBottom = '18px';
+        div.innerHTML = `
+            <h4 style="font-size:1.1rem; color:var(--text-main); margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:8px;">${d.title}</h4>
+            ${d.lines.map(l => `
+                <div class="dialogue-card">
                     <div style="display:flex; justify-content:space-between; align-items:center;">
-                        <span class="drill-badge">${item.v}</span>
-                        <button class="btn-audio" onclick="event.stopPropagation(); speak('${item.en.replace(/'/g, "\\'")}');">🔊 শুনুন</button>
+                        <span class="dialogue-speaker">${l.speaker}</span>
+                        <button class="speaker-btn" style="color:#0891b2; background:#e0f2fe; padding:2px 8px; font-size:0.7rem;" onclick="speakText('${l.en.replace(/'/g, "\\'")}');">🔊</button>
                     </div>
-                    <div class="drill-en">${item.en}</div>
-                    <div class="drill-bn">বাংলা: <strong>${item.bn}</strong></div>
-                    <div style="font-size:0.75rem; color:#94a3b8; margin-top:4px;">👉 ট্যাপ করে অর্থ দেখুন</div>
-                `;
-                container.appendChild(div);
-            });
-        }
+                    <div style="font-weight:bold; margin-top:4px;">${l.en}</div>
+                    <div style="font-size:0.8rem; color:#64748b;">বাংলা: ${l.bn}</div>
+                    <span style="display:inline-block; font-size:0.7rem; background:#cffafe; color:#0e7490; padding:2px 6px; border-radius:4px; font-family:monospace; margin-top:4px;">কজেটিভ: ${l.causative}</span>
+                </div>
+            `).join('')}
+        `;
+        container.appendChild(div);
+    });
+}
 
-        function filterCards(btn, v) {
-            document.querySelectorAll('.filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            renderCards(v);
-        }
+// Init
+window.onload = function() {
+    updateBuilder();
+    renderSpokenCards('all');
+    loadQuizQuestion();
+    renderChipFills();
+    renderErrorSpots();
+    renderPairs();
+    renderDialogues();
+};
+</script>
 
-        // 4. BLANKS CHIPS DATA
-        const blanksData = [
-            { en_pre: "She made me", en_post: ".", bn: "সে আমাকে কাঁদাল।", opts: ["cry", "to cry"], ans: "cry" },
-            { en_pre: "I got him", en_post: ".", bn: "আমি তাকে আসতে রাজি করালাম।", opts: ["come", "to come"], ans: "to come" },
-            { en_pre: "Please let me", en_post: ".", bn: "আমাকে যেতে দাও।", opts: ["go", "to go"], ans: "go" },
-            { en_pre: "I had him", en_post: "you.", bn: "আমি তাকে দিয়ে তোমাকে কল করালাম।", opts: ["call", "to call"], ans: "call" },
-            { en_pre: "I got my phone", en_post: ".", bn: "আমি ফোন ঠিক করিয়েছি।", opts: ["fixed", "fix"], ans: "fixed" },
-            { en_pre: "He helped me", en_post: "this.", bn: "সে আমাকে এটা তুলতে সাহায্য করল।", opts: ["carry", "carried"], ans: "carry" }
-        ];
-
-        function renderBlanks() {
-            const container = document.getElementById('blanks-container');
-            container.innerHTML = '';
-            blanksData.forEach((item, idx) => {
-                const div = document.createElement('div');
-                div.className = 'blank-item';
-                div.innerHTML = `
-                    <div class="blank-bn">বাংলা: ${item.bn}</div>
-                    <div class="blank-text" id="btext-${idx}">
-                        ${item.en_pre} <span style="border-bottom:2px solid var(--primary); padding:0 10px; color:var(--primary);" id="bspan-${idx}">___</span> ${item.en_post}
-                    </div>
-                    <div class="blank-chips">
-                        ${item.opts.map(opt => `
-                            <button class="b-chip" onclick="answerBlank(this, ${idx}, '${opt}', '${item.ans}')">${opt}</button>
-                        `).join('')}
-                    </div>
-                `;
-                container.appendChild(div);
-            });
-        }
-
-        function answerBlank(btn, idx, chosen, correct) {
-            const span = document.getElementById(`bspan-${idx}`);
-            span.innerText = chosen;
-            if (chosen === correct) {
-                btn.className = 'b-chip correct';
-                span.style.color = '#10b981';
-            } else {
-                btn.className = 'b-chip wrong';
-                span.style.color = '#ef4444';
-            }
-        }
-
-        // INIT
-        window.onload = function() {
-            updateBuilder();
-            renderQuiz();
-            renderCards('all');
-            renderBlanks();
-        };
-    </script>
 </body>
 </html>
