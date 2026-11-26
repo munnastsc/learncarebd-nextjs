@@ -1,0 +1,830 @@
+import os
+
+html_content = """<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnCare Academy - Causative Verbs (সহজ প্র্যাকটিস ও মাস্টার ল্যাব)</title>
+    <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0891b2;
+            --primary-dark: #0e7490;
+            --primary-light: #ecfeff;
+            --accent: #f59e0b;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --bg-body: #f8fafc;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+            --success: #10b981;
+            --error: #ef4444;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Kalpurush', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 20px 15px 60px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* HEADER */
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #0f172a 0%, #164e63 50%, #0f172a 100%);
+            color: white;
+            padding: 35px 20px;
+            border-radius: 24px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
+            border-bottom: 5px solid var(--primary);
+        }
+
+        .badge-pill {
+            display: inline-block;
+            background: rgba(6, 182, 212, 0.2);
+            color: #67e8f9;
+            padding: 5px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            border: 1px solid rgba(6, 182, 212, 0.4);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        header h1 {
+            font-size: 2.1rem;
+            margin-bottom: 10px;
+            font-weight: 900;
+        }
+
+        header p {
+            color: #cffafe;
+            font-size: 1.05rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* QUICK RULE CARDS */
+        .rule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .rule-card {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 18px;
+            padding: 16px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            transition: transform 0.2s ease;
+        }
+
+        .rule-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary);
+        }
+
+        .rule-card h4 {
+            font-size: 1.25rem;
+            color: var(--primary-dark);
+            margin-bottom: 4px;
+            font-weight: 900;
+        }
+
+        .rule-tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 800;
+            padding: 3px 10px;
+            border-radius: 12px;
+            margin-top: 6px;
+            background: #e0f2fe;
+            color: #0369a1;
+        }
+
+        /* SESSION SECTIONS */
+        .session-box {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 24px;
+            padding: 28px 24px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+        }
+
+        .session-header {
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 14px;
+            margin-bottom: 20px;
+        }
+
+        .session-header h3 {
+            font-size: 1.35rem;
+            color: #0f172a;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .session-tag {
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            text-transform: uppercase;
+        }
+
+        /* 1. BUILDER */
+        .builder-output {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 22px 24px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #334155;
+        }
+
+        .builder-output .sentence {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #38bdf8;
+            margin: 8px 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .builder-output .bangla {
+            font-size: 1.1rem;
+            color: #e2e8f0;
+        }
+
+        .chip-group {
+            margin-bottom: 15px;
+        }
+
+        .chip-label {
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .chip-btn {
+            background: #f8fafc;
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 8px 16px;
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: #334155;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .chip-btn:hover {
+            border-color: var(--primary);
+            background: #ecfeff;
+        }
+
+        .chip-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            box-shadow: 0 4px 10px rgba(8, 145, 178, 0.3);
+        }
+
+        /* 2. QUICK QUIZ */
+        .quiz-card {
+            background: #f8fafc;
+            border: 2px solid var(--border);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .quiz-question {
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .quiz-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            max-width: 420px;
+            margin: 0 auto 15px;
+        }
+
+        .quiz-opt-btn {
+            background: white;
+            border: 2px solid #cbd5e1;
+            border-radius: 14px;
+            padding: 14px;
+            font-size: 1.1rem;
+            font-weight: 900;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .quiz-opt-btn:hover {
+            border-color: var(--primary);
+            background: #ecfeff;
+        }
+
+        .quiz-opt-btn.correct {
+            background: #ecfdf5;
+            border-color: var(--success);
+            color: #065f46;
+        }
+
+        .quiz-opt-btn.wrong {
+            background: #fef2f2;
+            border-color: var(--error);
+            color: #991b1b;
+        }
+
+        .quiz-feedback {
+            padding: 12px;
+            border-radius: 12px;
+            background: #ecfeff;
+            color: #0e7490;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-top: 12px;
+            display: none;
+        }
+
+        /* 3. SPOKEN CARDS */
+        .filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .filter-btn {
+            background: #f1f5f9;
+            border: none;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 14px;
+        }
+
+        .drill-card {
+            background: #f8fafc;
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            padding: 16px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .drill-card:hover {
+            border-color: var(--primary);
+            background: white;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.04);
+        }
+
+        .drill-badge {
+            font-size: 0.7rem;
+            font-weight: 800;
+            background: #cffafe;
+            color: #0e7490;
+            padding: 2px 8px;
+            border-radius: 8px;
+            text-transform: uppercase;
+        }
+
+        .drill-en {
+            font-size: 1.15rem;
+            font-weight: 900;
+            color: #0f172a;
+            margin: 6px 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .drill-bn {
+            font-size: 0.95rem;
+            color: #475569;
+            display: none;
+            border-top: 1px dashed #cbd5e1;
+            padding-top: 6px;
+            margin-top: 6px;
+        }
+
+        .drill-card.revealed .drill-bn {
+            display: block;
+        }
+
+        .btn-audio {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 4px 8px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            cursor: pointer;
+            float: right;
+        }
+
+        .btn-audio:hover {
+            background: #ecfeff;
+            color: var(--primary);
+        }
+
+        /* 4. CHIP BLANKS */
+        .blanks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 14px;
+        }
+
+        .blank-item {
+            background: #f8fafc;
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            padding: 16px;
+        }
+
+        .blank-text {
+            font-size: 1.1rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .blank-bn {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .blank-chips {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .b-chip {
+            background: white;
+            border: 2px solid #cbd5e1;
+            border-radius: 10px;
+            padding: 5px 12px;
+            font-size: 0.85rem;
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+        .b-chip.correct {
+            background: #10b981;
+            color: white;
+            border-color: #10b981;
+        }
+
+        .b-chip.wrong {
+            background: #ef4444;
+            color: white;
+            border-color: #ef4444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="badge-pill">LearnCare Academy • Spoken English System</div>
+            <h1>🎯 কজেটিভ ভার্বস (Causative Verbs) সহজ মাস্টার ল্যাব</h1>
+            <p>নিজে না করে অন্যকে দিয়ে কাজ করানোর সহজ ৫টি ভার্ব (Make, Have, Get, Let, Help)। ছোট ছোট বাক্যে ১০০% ক্লিক-টু-প্র্যাকটিস!</p>
+        </header>
+
+        <!-- QUICK 5 VERBS SUMMARY -->
+        <div class="rule-grid">
+            <div class="rule-card">
+                <h4>1. MAKE</h4>
+                <p>বাধ্য করা / হাসানো / কাঁদানো</p>
+                <span class="rule-tag">No 'to' (Base Verb)</span>
+            </div>
+            <div class="rule-card">
+                <h4>2. HAVE</h4>
+                <p>দায়িত্ব দেওয়া / করিয়ে নেওয়া</p>
+                <span class="rule-tag">ব্যক্তি: Base | বস্তু: V3</span>
+            </div>
+            <div class="rule-card" style="border-color: var(--accent);">
+                <h4>3. GET</h4>
+                <p>অনুরোধ / বুঝিয়ে রাজি করানো</p>
+                <span class="rule-tag" style="background: #fef3c7; color: #b45309; font-weight: 900;">অবশ্যই 'TO' হবে!</span>
+            </div>
+            <div class="rule-card">
+                <h4>4. LET</h4>
+                <p>অনুমতি দেওয়া / সুযোগ দেওয়া</p>
+                <span class="rule-tag">No 'to' (Base Verb)</span>
+            </div>
+            <div class="rule-card">
+                <h4>5. HELP</h4>
+                <p>সাহায্য করা</p>
+                <span class="rule-tag">Base Verb</span>
+            </div>
+        </div>
+
+        <!-- SESSION 1: 3-CLICK BUILDER -->
+        <div class="session-box">
+            <div class="session-header">
+                <span class="session-tag">সেশন ১ • নো টাইপিং</span>
+                <h3>🎛️ ৩-ক্লিক সেন্টেন্স মেকার (Interactive Sentence Builder)</h3>
+            </div>
+
+            <!-- LIVE OUTPUT -->
+            <div class="builder-output">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 0.85rem; color: #94a3b8; font-weight: bold;">তৈরি হওয়া ইংরেজি বাক্য:</span>
+                    <button class="btn-audio" onclick="speakCurrentSentence()">🔊 উচ্চারণ শুনুন</button>
+                </div>
+                <div class="sentence" id="builder-sentence">He made me laugh.</div>
+                <div class="bangla" id="builder-bangla">বাংলা অর্থ: <strong>সে আমাকে হাসাল।</strong></div>
+            </div>
+
+            <!-- CONTROLS -->
+            <div class="chip-group">
+                <span class="chip-label">১. কর্তা (Subject) নির্বাচন করুন:</span>
+                <div class="chips" id="chips-sub">
+                    <button class="chip-btn active" onclick="setSub(this, 'He')">He</button>
+                    <button class="chip-btn" onclick="setSub(this, 'She')">She</button>
+                    <button class="chip-btn" onclick="setSub(this, 'I')">I</button>
+                    <button class="chip-btn" onclick="setSub(this, 'Mom')">Mom</button>
+                    <button class="chip-btn" onclick="setSub(this, 'The boss')">The boss</button>
+                </div>
+            </div>
+
+            <div class="chip-group">
+                <span class="chip-label">২. কজেটিভ ভার্ব (Causative Verb) নির্বাচন করুন:</span>
+                <div class="chips" id="chips-verb">
+                    <button class="chip-btn active" onclick="setVerb(this, 'made')">made (বাধ্য করল/হাসাল)</button>
+                    <button class="chip-btn" onclick="setVerb(this, 'had')">had (করিয়ে নিল)</button>
+                    <button class="chip-btn" onclick="setVerb(this, 'got')">got (রাজি করাল - To)</button>
+                    <button class="chip-btn" onclick="setVerb(this, 'let')">let (অনুমতি দিল)</button>
+                    <button class="chip-btn" onclick="setVerb(this, 'helped')">helped (সাহায্য করল)</button>
+                </div>
+            </div>
+
+            <div class="chip-group">
+                <span class="chip-label">৩. কাকে দিয়ে করাবেন (Person):</span>
+                <div class="chips" id="chips-per">
+                    <button class="chip-btn active" onclick="setPer(this, 'me')">me</button>
+                    <button class="chip-btn" onclick="setPer(this, 'him')">him</button>
+                    <button class="chip-btn" onclick="setPer(this, 'us')">us</button>
+                    <button class="chip-btn" onclick="setPer(this, 'the boy')">the boy</button>
+                </div>
+            </div>
+
+            <div class="chip-group">
+                <span class="chip-label">৪. মূল কাজ (Action Verb):</span>
+                <div class="chips" id="chips-act">
+                    <button class="chip-btn active" onclick="setAct(this, 'laugh')">laugh (হাসা)</button>
+                    <button class="chip-btn" onclick="setAct(this, 'cry')">cry (কাঁদা)</button>
+                    <button class="chip-btn" onclick="setAct(this, 'clean the room')">clean the room (ঘর পরিষ্কার)</button>
+                    <button class="chip-btn" onclick="setAct(this, 'eat vegetables')">eat vegetables (খাওয়া)</button>
+                    <button class="chip-btn" onclick="setAct(this, 'call you')">call you (কল করা)</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SESSION 2: 1-TAP QUICK QUIZ -->
+        <div class="session-box">
+            <div class="session-header">
+                <span class="session-tag">সেশন ২ • কুইক কুইজ</span>
+                <h3>⚡ 'To' নাকি 'Base Verb'? (১-ট্যাপ কুইজ)</h3>
+            </div>
+
+            <div class="quiz-card">
+                <div style="font-size: 0.9rem; color: #64748b; font-weight: bold; margin-bottom: 8px;" id="q-counter">প্রশ্ন ১ / ৫</div>
+                <div class="quiz-question" id="q-text">He made me ___ (smile).</div>
+                <div class="quiz-options">
+                    <button class="quiz-opt-btn" onclick="answerQuiz(this, 'smile')">smile</button>
+                    <button class="quiz-opt-btn" onclick="answerQuiz(this, 'to smile')">to smile</button>
+                </div>
+                <div class="quiz-feedback" id="q-fb"></div>
+                <button class="btn-audio" id="q-next-btn" style="float: none; margin-top: 15px; display: none; padding: 8px 20px; font-size: 0.95rem; background: var(--primary); color: white;" onclick="nextQuiz()">পরবর্তী প্রশ্ন ➔</button>
+            </div>
+        </div>
+
+        <!-- SESSION 3: 28 SHORT SPOKEN DRILLS -->
+        <div class="session-box">
+            <div class="session-header">
+                <span class="session-tag">সেশন ৩ • স্পোকেন ড্রিলস</span>
+                <h3>🗣️ ২৮টি অতি সহজ নিত্যদিনের স্পোকেন বাক্য</h3>
+                <p style="font-size: 0.9rem; color: #64748b; margin-top: 4px;">কার্ডে ক্লিক করলেই বাংলা অর্থ দেখতে পাবেন এবং স্পিকারে চেপে সঠিক উচ্চারণ শুনতে পাবেন:</p>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" onclick="filterCards(this, 'all')">সকল বাক্য</button>
+                <button class="filter-btn" onclick="filterCards(this, 'make')">Make (৬)</button>
+                <button class="filter-btn" onclick="filterCards(this, 'have')">Have (৬)</button>
+                <button class="filter-btn" onclick="filterCards(this, 'get')">Get (৬)</button>
+                <button class="filter-btn" onclick="filterCards(this, 'let')">Let (৬)</button>
+                <button class="filter-btn" onclick="filterCards(this, 'help')">Help (৪)</button>
+            </div>
+
+            <div class="cards-grid" id="cards-container">
+                <!-- Dynamically filled by JS -->
+            </div>
+        </div>
+
+        <!-- SESSION 4: CHIP BLANKS PRACTICE -->
+        <div class="session-box">
+            <div class="session-header">
+                <span class="session-tag">সেশন ৪ • নো টাইপিং চিপস</span>
+                <h3>🧩 ক্লিক করে শূন্যস্থান পূরণ করুন</h3>
+            </div>
+
+            <div class="blanks-grid" id="blanks-container">
+                <!-- Dynamically filled by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 1. BUILDER LOGIC
+        let curSub = 'He';
+        let curVerb = 'made';
+        let curPer = 'me';
+        let curAct = 'laugh';
+
+        function setSub(btn, val) {
+            document.querySelectorAll('#chips-sub .chip-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            curSub = val;
+            updateBuilder();
+        }
+        function setVerb(btn, val) {
+            document.querySelectorAll('#chips-verb .chip-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            curVerb = val;
+            updateBuilder();
+        }
+        function setPer(btn, val) {
+            document.querySelectorAll('#chips-per .chip-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            curPer = val;
+            updateBuilder();
+        }
+        function setAct(btn, val) {
+            document.querySelectorAll('#chips-act .chip-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            curAct = val;
+            updateBuilder();
+        }
+
+        function updateBuilder() {
+            let actForm = curAct;
+            if (curVerb === 'got') {
+                actForm = 'to ' + curAct;
+            }
+            const en = `${curSub} ${curVerb} ${curPer} ${actForm}.`;
+            document.getElementById('builder-sentence').innerText = en;
+
+            let subBn = curSub === 'He' ? 'সে' : (curSub === 'She' ? 'সে' : (curSub === 'I' ? 'আমি' : (curSub === 'Mom' ? 'মা' : 'বস')));
+            let perBn = curPer === 'me' ? 'আমাকে' : (curPer === 'him' ? 'তাকে' : (curPer === 'us' ? 'আমাদের' : 'ছেলেটিকে'));
+            let verbMeaning = curVerb === 'made' ? 'করিয়ে নিল/হাসাল/বাধ্য করল' : (curVerb === 'got' ? 'রাজি করিয়ে করাল' : (curVerb === 'let' ? 'করতে দিল' : (curVerb === 'had' ? 'দিয়ে করাল' : 'সাহায্য করল')));
+
+            document.getElementById('builder-bangla').innerHTML = `বাংলা অর্থ: <strong>${subBn} ${perBn} দিয়ে কাজটি ${verbMeaning}।</strong>`;
+        }
+
+        function speakCurrentSentence() {
+            const text = document.getElementById('builder-sentence').innerText;
+            speak(text);
+        }
+
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const u = new SpeechSynthesisUtterance(text);
+                u.lang = 'en-US';
+                u.rate = 0.9;
+                window.speechSynthesis.speak(u);
+            }
+        }
+
+        // 2. QUICK QUIZ LOGIC
+        const quizData = [
+            { q: "He made me ___ (smile).", opts: ["smile", "to smile"], ans: "smile", tip: "💡 'Make'-এর পর কখনো 'to' বসে না! Base Verb হবে।" },
+            { q: "I got him ___ (help) me.", opts: ["help", "to help"], ans: "to help", tip: "💡 'Get' আসলেই 'TO' বসবে! (Got him to help)" },
+            { q: "Please let me ___ (go) now.", opts: ["go", "to go"], ans: "go", tip: "💡 'Let'-এর পরে কোনোদিন 'to' বসে না, শুধু Base Verb।" },
+            { q: "I had him ___ (call) you.", opts: ["call", "to call"], ans: "call", tip: "💡 'Have + ব্যক্তি' থাকলে Base Verb বসবে।" },
+            { q: "I had my hair ___ (cut) yesterday.", opts: ["cut", "to cut"], ans: "cut", tip: "💡 চুল নিজে কাটেননি, কাটিয়েছেন (প্যাসিভ)—তাই V3 (cut)!" }
+        ];
+
+        let curQ = 0;
+        let answered = false;
+
+        function renderQuiz() {
+            const item = quizData[curQ];
+            document.getElementById('q-counter').innerText = `প্রশ্ন ${curQ + 1} / ${quizData.length}`;
+            document.getElementById('q-text').innerText = item.q;
+            const btns = document.querySelectorAll('.quiz-options .quiz-opt-btn');
+            btns[0].innerText = item.opts[0];
+            btns[0].className = 'quiz-opt-btn';
+            btns[1].innerText = item.opts[1];
+            btns[1].className = 'quiz-opt-btn';
+            document.getElementById('q-fb').style.display = 'none';
+            document.getElementById('q-next-btn').style.display = 'none';
+            answered = false;
+        }
+
+        function answerQuiz(btn, chosen) {
+            if (answered) return;
+            answered = true;
+            const item = quizData[curQ];
+            const fb = document.getElementById('q-fb');
+            fb.style.display = 'block';
+            fb.innerText = item.tip;
+
+            if (chosen === item.ans) {
+                btn.classList.add('correct');
+            } else {
+                btn.classList.add('wrong');
+                document.querySelectorAll('.quiz-options .quiz-opt-btn').forEach(b => {
+                    if (b.innerText === item.ans) b.classList.add('correct');
+                });
+            }
+            document.getElementById('q-next-btn').style.display = 'inline-block';
+        }
+
+        function nextQuiz() {
+            curQ = (curQ + 1) % quizData.length;
+            renderQuiz();
+        }
+
+        // 3. SPOKEN CARDS DATA
+        const spokenList = [
+            { v: 'make', en: 'He makes me laugh.', bn: 'সে আমাকে হাসায়।' },
+            { v: 'make', en: 'She made me cry.', bn: 'সে আমাকে কাঁদাল।' },
+            { v: 'make', en: 'Mom made me eat.', bn: 'মা আমাকে খাওয়ালেন।' },
+            { v: 'make', en: 'Don\\'t make me angry.', bn: 'আমাকে রাগিও না।' },
+            { v: 'make', en: 'He made me clean it.', bn: 'সে আমাকে দিয়ে পরিষ্কার করাল।' },
+            { v: 'make', en: 'The boss made us stay.', bn: 'বস আমাদের থাকতে বাধ্য করলেন।' },
+
+            { v: 'have', en: 'I had him call you.', bn: 'আমি তাকে দিয়ে তোমাকে কল করালাম।' },
+            { v: 'have', en: 'I will have him fix it.', bn: 'আমি তাকে দিয়ে এটা ঠিক করাব।' },
+            { v: 'have', en: 'I had my hair cut.', bn: 'আমি চুল কাটিয়েছি।' },
+            { v: 'have', en: 'I had my car washed.', bn: 'আমি গাড়ি ধুইয়ে নিয়েছি।' },
+            { v: 'have', en: 'She had her laptop fixed.', bn: 'সে ল্যাপটপ ঠিক করিয়ে নিল।' },
+            { v: 'have', en: 'We had the room painted.', bn: 'আমরা ঘর রঙ করিয়ে নিলাম।' },
+
+            { v: 'get', en: 'I got him to agree.', bn: 'আমি তাকে রাজি করালাম।' },
+            { v: 'get', en: 'She got him to help.', bn: 'সে তাকে দিয়ে সাহায্য করিয়ে নিল।' },
+            { v: 'get', en: 'I got my friend to come.', bn: 'আমি বন্ধুকে আসতে রাজি করালাম।' },
+            { v: 'get', en: 'Can you get him to listen?', bn: 'তুমি কি তাকে দিয়ে শোনাতে পারবে?' },
+            { v: 'get', en: 'I got my phone repaired.', bn: 'আমি ফোন ঠিক করিয়েছি।' },
+            { v: 'get', en: 'I got my room cleaned.', bn: 'আমি ঘর পরিষ্কার করিয়ে নিলাম।' },
+
+            { v: 'let', en: 'Let me go.', bn: 'আমাকে যেতে দাও।' },
+            { v: 'let', en: 'Let me see.', bn: 'আমাকে দেখতে দাও।' },
+            { v: 'let', en: 'Mom lets me drive.', bn: 'মা আমাকে গাড়ি চালাতে দেন।' },
+            { v: 'let', en: 'Please let me speak.', bn: 'দয়া করে আমাকে বলতে দিন।' },
+            { v: 'let', en: 'Don\\'t let him enter.', bn: 'তাকে ঢুকতে দিও না।' },
+            { v: 'let', en: 'Let them play outside.', bn: 'তাদের বাইরে খেলতে দাও।' },
+
+            { v: 'help', en: 'He helped me do it.', bn: 'সে আমাকে এটা করতে সাহায্য করল।' },
+            { v: 'help', en: 'Can you help me carry this?', bn: 'আমাকে এটা তুলতে সাহায্য করবে?' },
+            { v: 'help', en: 'This helps me learn English.', bn: 'এটা আমাকে ইংরেজি শিখতে সাহায্য করে।' },
+            { v: 'help', en: 'She helped me cook dinner.', bn: 'সে আমাকে রান্না করতে সাহায্য করল।' }
+        ];
+
+        function renderCards(filter = 'all') {
+            const container = document.getElementById('cards-container');
+            container.innerHTML = '';
+            spokenList.forEach(item => {
+                if (filter !== 'all' && item.v !== filter) return;
+                const div = document.createElement('div');
+                div.className = 'drill-card';
+                div.onclick = function() { this.classList.toggle('revealed'); };
+                div.innerHTML = `
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span class="drill-badge">${item.v}</span>
+                        <button class="btn-audio" onclick="event.stopPropagation(); speak('${item.en.replace(/'/g, "\\\\'")}');">🔊 শুনুন</button>
+                    </div>
+                    <div class="drill-en">${item.en}</div>
+                    <div class="drill-bn">বাংলা: <strong>${item.bn}</strong></div>
+                    <div style="font-size:0.75rem; color:#94a3b8; margin-top:4px;">👉 ট্যাপ করে অর্থ দেখুন</div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function filterCards(btn, v) {
+            document.querySelectorAll('.filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderCards(v);
+        }
+
+        // 4. BLANKS CHIPS DATA
+        const blanksData = [
+            { en_pre: "She made me", en_post: ".", bn: "সে আমাকে কাঁদাল।", opts: ["cry", "to cry"], ans: "cry" },
+            { en_pre: "I got him", en_post: ".", bn: "আমি তাকে আসতে রাজি করালাম।", opts: ["come", "to come"], ans: "to come" },
+            { en_pre: "Please let me", en_post: ".", bn: "আমাকে যেতে দাও।", opts: ["go", "to go"], ans: "go" },
+            { en_pre: "I had him", en_post: "you.", bn: "আমি তাকে দিয়ে তোমাকে কল করালাম।", opts: ["call", "to call"], ans: "call" },
+            { en_pre: "I got my phone", en_post: ".", bn: "আমি ফোন ঠিক করিয়েছি।", opts: ["fixed", "fix"], ans: "fixed" },
+            { en_pre: "He helped me", en_post: "this.", bn: "সে আমাকে এটা তুলতে সাহায্য করল।", opts: ["carry", "carried"], ans: "carry" }
+        ];
+
+        function renderBlanks() {
+            const container = document.getElementById('blanks-container');
+            container.innerHTML = '';
+            blanksData.forEach((item, idx) => {
+                const div = document.createElement('div');
+                div.className = 'blank-item';
+                div.innerHTML = `
+                    <div class="blank-bn">বাংলা: ${item.bn}</div>
+                    <div class="blank-text" id="btext-${idx}">
+                        ${item.en_pre} <span style="border-bottom:2px solid var(--primary); padding:0 10px; color:var(--primary);" id="bspan-${idx}">___</span> ${item.en_post}
+                    </div>
+                    <div class="blank-chips">
+                        ${item.opts.map(opt => `
+                            <button class="b-chip" onclick="answerBlank(this, ${idx}, '${opt}', '${item.ans}')">${opt}</button>
+                        `).join('')}
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function answerBlank(btn, idx, chosen, correct) {
+            const span = document.getElementById(`bspan-${idx}`);
+            span.innerText = chosen;
+            if (chosen === correct) {
+                btn.className = 'b-chip correct';
+                span.style.color = '#10b981';
+            } else {
+                btn.className = 'b-chip wrong';
+                span.style.color = '#ef4444';
+            }
+        }
+
+        // INIT
+        window.onload = function() {
+            updateBuilder();
+            renderQuiz();
+            renderCards('all');
+            renderBlanks();
+        };
+    </script>
+</body>
+</html>
+"""
+
+paths = [
+    r'E:\antigravity\ILTES\public\academy-labs\Causative_Verbs_Master_Interactive_Practice_Lab.html',
+    r'F:\LearnCare Academy\html code\Causative_Verbs_Master_Interactive_Practice_Lab.html'
+]
+
+for p in paths:
+    try:
+        with open(p, 'w', encoding='utf-8') as f:
+            f.write(html_content)
+        print(f"Successfully generated new easy lab: {p}")
+    except Exception as e:
+        print(f"Error {p}: {e}")
